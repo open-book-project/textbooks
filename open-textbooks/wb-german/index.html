@@ -1,0 +1,987 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-german/index.html">
+<link rel="prev" href="../wb-principles-of-economics/list-of-contributors.html">
+<link rel="next" href="introduction.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">German</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.00: Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="wie-heit-du.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.01: Wie heißt du?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="freizeit.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.02: Freizeit
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="essen.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.03: Essen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="review-1.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 1.01
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="kleidung.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.04: Kleidung
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="volk-und-familie.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.05: Volk und Familie
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="schule.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.06: Schule
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="review-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 1.02
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="das-fest.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.07: Das Fest
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="privileg-und-verantwortung.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.08: Privileg und Verantwortung
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="wetter.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.09: Wetter
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="review-3.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 1.03
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="zu-hause-essen.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.10: Zu Hause Essen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="das-haus.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 1.12: Das Haus
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="review-4.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 1.04
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-1.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.01: Einfache Gespräche unter Freunden
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.02: Fremde und Freunde
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-3.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.03: Die Zahlen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-4.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.04: Eine Geschichte über Zürich
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-5.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 2.01
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-6.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.05: Die Wohnung
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-7.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.06: Mathematik
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-8.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.07: Mein, Dein, und Sein
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-9.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.08: Einkaufen gehen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-10.html" class="md-nav__link">
+<span class="md-ellipsis">
+Review 2.02
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lesson-11.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 2.09: Verbtempus und Wortstellung
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gesprache-unter-geschaftsmannern.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 3.02: Gespräche unter Geschäftsmännern
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mach-dir-keine-sorgen.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 3.03: Mach dir keine Sorgen!
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="die-geschaftsleute.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 3.04: Die Geschäftsleute
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="der-englander-in-osterreich.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 3.05: Der Engländer in Österreich
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="tour-de-france.html" class="md-nav__link">
+<span class="md-ellipsis">
+Lesson 3.06: Tour de France
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="adjectives-and-adverbs.html" class="md-nav__link">
+<span class="md-ellipsis">
+Adjectives and Adverbs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nouns.html" class="md-nav__link">
+<span class="md-ellipsis">
+Nouns
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pronouns.html" class="md-nav__link">
+<span class="md-ellipsis">
+Pronouns
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sentences.html" class="md-nav__link">
+<span class="md-ellipsis">
+Sentences
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="verbs.html" class="md-nav__link">
+<span class="md-ellipsis">
+Verbs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alphabet-and-pronunciation.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix A. Das Alphabet
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="phrasebook.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix B. Phrase Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="grammar-i.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix C. Grammar Reference Table I
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="grammar-ii.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix D. Grammar Reference Table II
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="resources.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix E. Webseiten and other resources
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="names.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix F. Namen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="false-friends.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix G. False Friends
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vocabulary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix H. Level I Vocabulary
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-german" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="introduction.html" style="--cv-bg:#2b2d42;--cv-accent:#ef233c;--cv-fg:#edf2f4;--cv-n:20;--cv-rot:62deg;--cv-x:50%;--cv-y:67%" aria-label="Start reading German"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">German</span><span class="vol-sub">A course in the German language</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>German</h1>
+<p class="pk-book-sub">A course in the German language</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Lessons in German from the first greetings, set in Berlin, Vienna and Bern, with grammar, vocabulary, reading and reviews.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/world-languages.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4.5h10.5A1.5 1.5 0 0 1 16 6v6a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 12V6A1.5 1.5 0 0 1 4 4.5zM18.5 8.5H20A1.5 1.5 0 0 1 21.5 10v6a1.5 1.5 0 0 1-1.5 1.5h-1V20l-3-2.5h-4.5"/></svg><span class="pk-chip-cat">Language &amp; Literature &rsaquo;</span> World Languages</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="introduction.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-german"></div></div>
+<p class="pk-book-facts"><span>38 chapters</span><span>8 appendices</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-german" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="introduction.html">Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#the-german-language">The German Language</a></li>
+<li class="vc-l2"><a href="introduction.html#german-and-english">German and English</a></li>
+<li class="vc-l2"><a href="introduction.html#vocabulary-and-grammar">Vocabulary and Grammar</a></li>
+<li class="vc-l2"><a href="introduction.html#pronunciation">Pronunciation</a></li>
+<li class="vc-l2"><a href="introduction.html#layout-of-lessons">Layout of Lessons</a></li>
+<li class="vc-l2"><a href="introduction.html#layout-within-lessons">Layout within Lessons</a></li>
+<li class="vc-l2"><a href="introduction.html#the-student-and-the-lesson">The Student and the Lesson</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level I</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="introduction-2.html">Lesson 1.00: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction-2.html#german-and-english">German and English</a></li>
+<li class="vc-l2"><a href="introduction-2.html#how-to-use-this-level-of-the-german-textbook">How to Use this Level of the German Textbook</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction-2.html#layout-of-the-lessons">Layout of the Lessons</a></li><li class="vc-l3"><a href="introduction-2.html#levels-of-completion">Levels of Completion</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="wie-heit-du.html">Lesson 1.01: Wie heißt du?</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="wie-heit-du.html#dialogue">Dialogue</a></li>
+<li class="vc-l2"><a href="wie-heit-du.html#hellos-and-goodbyes">Hellos and Goodbyes</a></li>
+<li class="vc-l2"><a href="wie-heit-du.html#mr-and-mrs">Mr. and Mrs.</a></li>
+<li class="vc-l2"><a href="wie-heit-du.html#replies-to-wie-gehts">Replies to Wie geht&#x27;s?</a></li>
+<li class="vc-l2"><a href="wie-heit-du.html#test">Test</a></li>
+<li class="vc-l2"><a href="wie-heit-du.html#external-resources">External resources</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="freizeit.html">Lesson 1.02: Freizeit</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="freizeit.html#dialogue">Dialogue</a></li>
+<li class="vc-l2"><a href="freizeit.html#sports-and-activities">Sports and Activities</a></li>
+<li class="vc-l2"><a href="freizeit.html#spielen-machen-and-other-verbs">Spielen, Machen and Other Verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="freizeit.html#examples">Examples</a></li><li class="vc-l3"><a href="freizeit.html#compound-sentences">Compound Sentences</a></li><li class="vc-l3"><a href="freizeit.html#other-verbs-and-their-conjugations">Other Verbs and Their Conjugations</a></li><li class="vc-l3"><a href="freizeit.html#two-more-verb-forms">Two More Verb Forms</a></li></ul></li>
+<li class="vc-l2"><a href="freizeit.html#expressing-likes-and-dislikes">Expressing likes and dislikes</a></li>
+<li class="vc-l2"><a href="freizeit.html#numbers">Numbers</a></li>
+<li class="vc-l2"><a href="freizeit.html#whats-on-the-test">What&#x27;s On the Test</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="essen.html">Lesson 1.03: Essen</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="essen.html#dialogue">Dialogue</a></li>
+<li class="vc-l2"><a href="essen.html#food">Food!</a></li>
+<li class="vc-l2"><a href="essen.html#accusative-case">Accusative Case</a><ul class="vc-subs"><li class="vc-l3"><a href="essen.html#articles">Articles</a></li><li class="vc-l3"><a href="essen.html#pronouns">Pronouns</a></li><li class="vc-l3"><a href="essen.html#antecedents">Antecedents</a></li></ul></li>
+<li class="vc-l2"><a href="essen.html#food-related-verbs">Food-Related Verbs</a></li>
+<li class="vc-l2"><a href="essen.html#modals">Modals</a><ul class="vc-subs"><li class="vc-l3"><a href="essen.html#mochten">Möchten</a></li><li class="vc-l3"><a href="essen.html#wollen">Wollen</a></li><li class="vc-l3"><a href="essen.html#modals-with-other-verbs">Modals with other verbs</a></li></ul></li>
+<li class="vc-l2"><a href="essen.html#hunger-and-thirst">Hunger and Thirst</a></li>
+<li class="vc-l2"><a href="essen.html#formal-conversations">Formal Conversations</a></li>
+<li class="vc-l2"><a href="essen.html#kein-words">Kein-words</a></li>
+<li class="vc-l2"><a href="essen.html#ordering-at-a-restaurant-in-germany">Ordering at a Restaurant in Germany</a></li>
+<li class="vc-l2"><a href="essen.html#accusative-case-prepositions">Accusative case prepositions</a></li>
+<li class="vc-l2"><a href="essen.html#saying-how-food-tastes">Saying How Food Tastes</a></li>
+<li class="vc-l2"><a href="essen.html#dieser-forms">Dieser-forms</a><ul class="vc-subs"><li class="vc-l3"><a href="essen.html#dieser">Dieser</a></li><li class="vc-l3"><a href="essen.html#jeder">Jeder</a></li><li class="vc-l3"><a href="essen.html#welcher">Welcher</a></li><li class="vc-l3"><a href="essen.html#connection-with-time">Connection with Time</a></li><li class="vc-l3"><a href="essen.html#this-and-that">This and That</a></li></ul></li>
+<li class="vc-l2"><a href="essen.html#money-and-paying">Money and Paying</a></li>
+<li class="vc-l2"><a href="essen.html#test">Test</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="review-1.html">Review 1.01</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="review-1.html#vocabulary">Vocabulary</a></li>
+<li class="vc-l2"><a href="review-1.html#wie-heit-du-1-teil">Wie heißt Du? (1. Teil)</a><ul class="vc-subs"><li class="vc-l3"><a href="review-1.html#hello-and-goodbyes">Hello and Goodbyes</a></li><li class="vc-l3"><a href="review-1.html#mr-and-mrs">Mr. and Mrs.</a></li><li class="vc-l3"><a href="review-1.html#replies-to-wie-gehts">Replies to Wie geht&#x27;s?</a></li></ul></li>
+<li class="vc-l2"><a href="review-1.html#wie-heit-du-2-teil">Wie heißt du? (2. Teil)</a><ul class="vc-subs"><li class="vc-l3"><a href="review-1.html#sie-and-du">Sie and du</a></li><li class="vc-l3"><a href="review-1.html#subject-pronouns">Subject Pronouns</a></li><li class="vc-l3"><a href="review-1.html#names">Names</a></li><li class="vc-l3"><a href="review-1.html#important-verbs">Important Verbs</a></li></ul></li>
+<li class="vc-l2"><a href="review-1.html#bitte-buchstabieren-sie">Bitte buchstabieren Sie</a><ul class="vc-subs"><li class="vc-l3"><a href="review-1.html#the-german-alphabet">The German Alphabet</a></li><li class="vc-l3"><a href="review-1.html#forming-questions">Forming Questions</a></li><li class="vc-l3"><a href="review-1.html#articles">Articles</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="kleidung.html">Lesson 1.04: Kleidung</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="kleidung.html#lesson-i7-kleidung">Lesson I.7: Kleidung</a><ul class="vc-subs"><li class="vc-l3"><a href="kleidung.html#hello-from-berlin">Hello from Berlin!</a></li><li class="vc-l3"><a href="kleidung.html#dialogue">Dialogue</a></li><li class="vc-l3"><a href="kleidung.html#shopping">Shopping</a></li><li class="vc-l3"><a href="kleidung.html#money">Money</a></li><li class="vc-l3"><a href="kleidung.html#clothing">Clothing</a></li><li class="vc-l3"><a href="kleidung.html#separable-prefix-verbs">Separable Prefix Verbs</a></li><li class="vc-l3"><a href="kleidung.html#tragen">Tragen</a></li><li class="vc-l3"><a href="kleidung.html#colors">Colors</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="volk-und-familie.html">Lesson 1.05: Volk und Familie</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="volk-und-familie.html#hello-from-berlin">Hello from Berlin!</a><ul class="vc-subs"><li class="vc-l3"><a href="volk-und-familie.html#facts">Facts</a></li></ul></li>
+<li class="vc-l2"><a href="volk-und-familie.html#dialog">Dialog</a></li>
+<li class="vc-l2"><a href="volk-und-familie.html#people">People</a><ul class="vc-subs"><li class="vc-l3"><a href="volk-und-familie.html#the-family">The Family</a></li><li class="vc-l3"><a href="volk-und-familie.html#describing-people">Describing People</a></li><li class="vc-l3"><a href="volk-und-familie.html#related-verbs">Related Verbs</a></li><li class="vc-l3"><a href="volk-und-familie.html#nationality">Nationality</a></li><li class="vc-l3"><a href="volk-und-familie.html#age">Age</a></li></ul></li>
+<li class="vc-l2"><a href="volk-und-familie.html#possessives">Possessives</a><ul class="vc-subs"><li class="vc-l3"><a href="volk-und-familie.html#gender-case-and-endings">Gender, Case, and Endings</a></li></ul></li>
+<li class="vc-l2"><a href="volk-und-familie.html#expressing-favorites">Expressing Favorites</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="schule.html">Lesson 1.06: Schule</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="schule.html#lesson-i9-schule">Lesson I.9: Schule</a><ul class="vc-subs"><li class="vc-l3"><a href="schule.html#hallo-aus-berlin">Hallo aus Berlin!</a></li><li class="vc-l3"><a href="schule.html#dialog">Dialog</a></li><li class="vc-l3"><a href="schule.html#aufgabe">Aufgabe</a></li><li class="vc-l3"><a href="schule.html#wortschatz">Wortschatz</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="review-2.html">Review 1.02</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="review-2.html#review-section-ib-lessons-i4i6">Review Section I.B: Lessons I.4–I.6</a><ul class="vc-subs"><li class="vc-l3"><a href="review-2.html#essential-vocabulary">Essential Vocabulary</a></li><li class="vc-l3"><a href="review-2.html#grammar-review">Grammar Review</a></li><li class="vc-l3"><a href="review-2.html#self-assessment">Self-Assessment</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="das-fest.html">Lesson 1.07: Das Fest</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="das-fest.html#dialogue">Dialogue</a></li>
+<li class="vc-l2"><a href="das-fest.html#es-gibt">Es gibt</a></li>
+<li class="vc-l2"><a href="das-fest.html#weihnachten-in-deutschland">Weihnachten in Deutschland</a></li>
+<li class="vc-l2"><a href="das-fest.html#dativsatze">Dativsätze</a></li>
+<li class="vc-l2"><a href="das-fest.html#weihnachtsessen">Weihnachtsessen</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="privileg-und-verantwortung.html">Lesson 1.08: Privileg und Verantwortung</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="privileg-und-verantwortung.html#jobs-and-tasks">Jobs and Tasks</a><ul class="vc-subs"><li class="vc-l3"><a href="privileg-und-verantwortung.html#vocabulary">Vocabulary</a></li></ul></li>
+<li class="vc-l2"><a href="privileg-und-verantwortung.html#plans">Plans</a><ul class="vc-subs"><li class="vc-l3"><a href="privileg-und-verantwortung.html#common-phases">Common Phases</a></li></ul></li>
+<li class="vc-l2"><a href="privileg-und-verantwortung.html#places-to-go">Places To Go</a><ul class="vc-subs"><li class="vc-l3"><a href="privileg-und-verantwortung.html#vocabulary_1">Vocabulary</a></li><li class="vc-l3"><a href="privileg-und-verantwortung.html#common-phases_1">Common Phases</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="wetter.html">Lesson 1.09: Wetter</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="wetter.html#dialoge">Dialoge</a></li>
+<li class="vc-l2"><a href="wetter.html#weather">Weather</a><ul class="vc-subs"><li class="vc-l3"><a href="wetter.html#vocabulary">Vocabulary</a></li><li class="vc-l3"><a href="wetter.html#common-phrases">Common Phrases</a></li></ul></li>
+<li class="vc-l2"><a href="wetter.html#transportation">Transportation</a><ul class="vc-subs"><li class="vc-l3"><a href="wetter.html#vocabulary_1">Vocabulary</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="review-3.html">Review 1.03</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="review-3.html#vocabulary">Vocabulary</a><ul class="vc-subs"><li class="vc-l3"><a href="review-3.html#clothes">Clothes</a></li><li class="vc-l3"><a href="review-3.html#shops">Shops</a></li><li class="vc-l3"><a href="review-3.html#other">Other</a></li><li class="vc-l3"><a href="review-3.html#prices">Prices</a></li><li class="vc-l3"><a href="review-3.html#clothes_1">Clothes</a></li><li class="vc-l3"><a href="review-3.html#material">Material</a></li><li class="vc-l3"><a href="review-3.html#size">Size</a></li><li class="vc-l3"><a href="review-3.html#is-it-cheap">Is it cheap?!</a></li><li class="vc-l3"><a href="review-3.html#describe">Describe</a></li><li class="vc-l3"><a href="review-3.html#colour">Colour</a></li><li class="vc-l3"><a href="review-3.html#family">Family</a></li><li class="vc-l3"><a href="review-3.html#verbs">Verbs</a></li><li class="vc-l3"><a href="review-3.html#subjects">Subjects</a></li><li class="vc-l3"><a href="review-3.html#objects-in-a-pencil-case">Objects in a pencil case</a></li><li class="vc-l3"><a href="review-3.html#school">School</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="zu-hause-essen.html">Lesson 1.10: Zu Hause Essen</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="zu-hause-essen.html#lesson-i13-zu-hause-essen">Lesson I.13: Zu Hause essen</a><ul class="vc-subs"><li class="vc-l3"><a href="zu-hause-essen.html#im-supermarkt">Im Supermarkt</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="das-haus.html">Lesson 1.12: Das Haus</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="das-haus.html#lesson-i15-das-haus">Lesson I.15: Das Haus</a><ul class="vc-subs"><li class="vc-l3"><a href="das-haus.html#the-home">The Home</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="review-4.html">Review 1.04</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="review-4.html#vocabulary">Vocabulary</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level II</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="lesson-1.html">Lesson 2.01: Einfache Gespräche unter Freunden</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-1.html#grammatik-1-1-introduction-to-german-grammar">Grammatik 1-1 ~ Introduction to German grammar</a></li>
+<li class="vc-l2"><a href="lesson-1.html#gesprach-1-1-die-freunde">Gespräch 1-1 ~ Die Freunde</a></li>
+<li class="vc-l2"><a href="lesson-1.html#vokabeln-1-1">Vokabeln 1-1</a></li>
+<li class="vc-l2"><a href="lesson-1.html#gesprach-1-2-die-studenten">Gespräch 1-2 ~ Die Studenten</a></li>
+<li class="vc-l2"><a href="lesson-1.html#grammatik-1-2-word-order-in-questions">Grammatik 1-2 ~ Word Order in Questions</a></li>
+<li class="vc-l2"><a href="lesson-1.html#grammatik-1-3-introduction-to-pronouns">Grammatik 1-3 ~ Introduction to pronouns</a></li>
+<li class="vc-l2"><a href="lesson-1.html#vokabeln-1-2">Vokabeln 1-2</a></li>
+<li class="vc-l2"><a href="lesson-1.html#ubersetzung-1-1">Übersetzung 1-1</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-2.html">Lesson 2.02: Fremde und Freunde</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-2.html#grammatik-2-1-introduction-to-verbs">Grammatik 2-1 ~ Introduction to Verbs</a></li>
+<li class="vc-l2"><a href="lesson-2.html#grammatik-2-2-pronouns-in-the-nominative-case">Grammatik 2-2 ~ Pronouns in the Nominative Case</a></li>
+<li class="vc-l2"><a href="lesson-2.html#gesprach-2-1-die-geschaftsleute">Gespräch 2-1 ~ Die Geschäftsleute</a></li>
+<li class="vc-l2"><a href="lesson-2.html#vokabeln-2-1">Vokabeln 2-1</a></li>
+<li class="vc-l2"><a href="lesson-2.html#grammatik-2-3-familiar-and-polite-pronoun-forms">Grammatik 2-3 ~ Familiar and Polite Pronoun Forms</a></li>
+<li class="vc-l2"><a href="lesson-2.html#gesprach-2-2-die-geschaftsmanner">Gespräch 2-2 ~ Die Geschäftsmänner</a></li>
+<li class="vc-l2"><a href="lesson-2.html#vokabeln-2-2">Vokabeln 2-2</a></li>
+<li class="vc-l2"><a href="lesson-2.html#grammatik-2-4-personal-pronoun-gender">Grammatik 2-4 ~ Personal pronoun gender</a></li>
+<li class="vc-l2"><a href="lesson-2.html#ubersetzung-2-1">Übersetzung 2-1</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-3.html">Lesson 2.03: Die Zahlen</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-3.html#lektion-3-zahlen-von-1-bis-12">Lektion 3 ~ Zählen von 1 bis 12</a></li>
+<li class="vc-l2"><a href="lesson-3.html#grammatik-3-1-telling-time-hours">Grammatik 3-1 ~ Telling time (hours)</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-3.html#gesprach-3-1">Gespräch 3-1</a></li></ul></li>
+<li class="vc-l2"><a href="lesson-3.html#vokabeln-3-1">Vokabeln 3-1</a></li>
+<li class="vc-l2"><a href="lesson-3.html#grammatik-3-2-introduction-to-nouns">Grammatik 3-2 ~ Introduction to Nouns</a></li>
+<li class="vc-l2"><a href="lesson-3.html#grammatik-3-3-gender-of-nouns">Grammatik 3-3 ~ Gender of Nouns</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-3.html#definite-articles">Definite Articles</a></li><li class="vc-l3"><a href="lesson-3.html#indefinite-articles">Indefinite Articles</a></li></ul></li>
+<li class="vc-l2"><a href="lesson-3.html#vokabeln-3-2">Vokabeln 3-2</a></li>
+<li class="vc-l2"><a href="lesson-3.html#ubersetzung-3-1">Übersetzung 3-1</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-4.html">Lesson 2.04: Eine Geschichte über Zürich</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-4.html#lesestuck-4-1-eine-geschichte-uber-zurich">Lesestück 4-1 ~ Eine Geschichte über Zürich</a></li>
+<li class="vc-l2"><a href="lesson-4.html#vokabeln-4-1">Vokabeln 4-1</a></li>
+<li class="vc-l2"><a href="lesson-4.html#grammatik-4-1-introduction-to-adjectives">Grammatik 4-1 ~ Introduction to adjectives</a></li>
+<li class="vc-l2"><a href="lesson-4.html#gesprach-4-1-das-neue-madchen">Gespräch 4-1 ~ Das neue Mädchen</a></li>
+<li class="vc-l2"><a href="lesson-4.html#vokabeln-4-2">Vokabeln 4-2</a></li>
+<li class="vc-l2"><a href="lesson-4.html#grammatik-4-2-nouns-and-pronouns-in-the-accusative-and-dative">Grammatik 4-2 ~ Nouns and pronouns in the accusative and dative</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-4.html#pronouns">Pronouns</a></li><li class="vc-l3"><a href="lesson-4.html#nouns">Nouns</a></li></ul></li>
+<li class="vc-l2"><a href="lesson-4.html#grammatik-4-3-interrogatives">Grammatik 4-3 ~ Interrogatives</a></li>
+<li class="vc-l2"><a href="lesson-4.html#ubersetzung-4-1">Übersetzung 4-1</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-5.html">Review 2.01</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-5.html#wiederholung">Wiederholung</a></li>
+<li class="vc-l2"><a href="lesson-5.html#parts-of-speech-and-word-order">Parts of Speech and Word Order</a></li>
+<li class="vc-l2"><a href="lesson-5.html#nouns">Nouns</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-6.html">Lesson 2.05: Die Wohnung</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-6.html#gesprach-6-1-ein-bruder-besucht-markus">Gespräch 6-1 ~ Ein Bruder besucht Markus</a></li>
+<li class="vc-l2"><a href="lesson-6.html#vokabeln-6-1">Vokabeln 6-1</a></li>
+<li class="vc-l2"><a href="lesson-6.html#grammatik-61-introduction-to-verb-conjugations">Grammatik 6.1 ~ Introduction to verb conjugations</a></li>
+<li class="vc-l2"><a href="lesson-6.html#grammatik-62-case-in-german-nouns">Grammatik 6.2 ~ Case in German nouns</a></li>
+<li class="vc-l2"><a href="lesson-6.html#grammatik-63-commands">Grammatik 6.3 ~ Commands</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-7.html">Lesson 2.06: Mathematik</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-7.html#lernen-7-zahlen-von-13-bis-100">Lernen 7 ~ Zählen von 13 bis 100</a></li>
+<li class="vc-l2"><a href="lesson-7.html#grammatik-7-1-math-calculations">Grammatik 7-1 ~ Math Calculations</a></li>
+<li class="vc-l2"><a href="lesson-7.html#vokabeln-7-1">Vokabeln 7-1</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-8.html">Lesson 2.07: Mein, Dein, und Sein</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-8.html#grammatik-8-1-colors">Grammatik 8-1 ~ Colors</a></li>
+<li class="vc-l2"><a href="lesson-8.html#grammatik-8-2-possessive-adjectives-pronouns-and-the-genitive-case">Grammatik 8-2 ~ Possessive Adjectives, Pronouns, and the Genitive Case</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-9.html">Lesson 2.08: Einkaufen gehen</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-9.html#lernen-9-die-kleidungsstucke-articles-of-clothing">Lernen 9 ~ Die Kleidungsstücke (articles of clothing)</a></li>
+<li class="vc-l2"><a href="lesson-9.html#gesprache-9-1-katrin-macht-besorgungen">Gespräche 9-1 ~ Katrin macht Besorgungen</a></li>
+<li class="vc-l2"><a href="lesson-9.html#vokabeln-9-1">Vokabeln 9-1</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-9.html#2-2-shopping-related-verbs">2-2 Shopping-related Verbs</a></li></ul></li>
+<li class="vc-l2"><a href="lesson-9.html#3-accusative-case">3 Accusative Case</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-9.html#3-1-example-story-2">3-1 Example Story 2</a></li><li class="vc-l3"><a href="lesson-9.html#3-2-accusative-case-articles">3-2 Accusative Case Articles</a></li><li class="vc-l3"><a href="lesson-9.html#3-3-prices">3-3 Prices</a></li><li class="vc-l3"><a href="lesson-9.html#3-4-a-ddr-joke">3-4 A DDR Joke</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-10.html">Review 2.02</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-10.html#wiederholung">Wiederholung</a></li>
+<li class="vc-l2"><a href="lesson-10.html#verb-conjugation">Verb Conjugation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lesson-11.html">Lesson 2.09: Verbtempus und Wortstellung</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lesson-11.html#ein-treffen-in-hannover-wip">Ein Treffen in Hannover (WIP)</a><ul class="vc-subs"><li class="vc-l3"><a href="lesson-11.html#vokabeln">Vokabeln</a></li><li class="vc-l3"><a href="lesson-11.html#word-order">Word Order</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level III</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="gesprache-unter-geschaftsmannern.html">Lesson 3.02: Gespräche unter Geschäftsmännern</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#gesprach-2-3-katrin-geht-einkaufen">Gespräch 2-3 ~ Katrin geht einkaufen</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#vokabeln-2-3">Vokabeln 2-3</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#grammatik-2-5-word-formation">Grammatik 2-5 ~ Word Formation</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#grammatik-2-6-personal-pronouns-nominative-case">Grammatik 2-6 ~ Personal Pronouns: nominative case</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#grammatik-2-7-more-on-verb-forms">Grammatik 2-7 ~ More on verb forms</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#vokabeln-2-4">Vokabeln 2-4</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#andere-worter-2a">Andere Wörter 2A</a></li>
+<li class="vc-l2"><a href="gesprache-unter-geschaftsmannern.html#ubersetzung-2-2">Übersetzung 2-2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mach-dir-keine-sorgen.html">Lesson 3.03: Mach dir keine Sorgen!</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#gesprach-3-3-mach-dir-keine-sorgen">Gespräch 3-3 ~ Mach dir keine Sorgen!</a></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#vokabeln-3-3">Vokabeln 3-3</a></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#grammatik-3-5-numbers">Grammatik 3-5 ~ Numbers</a><ul class="vc-subs"><li class="vc-l3"><a href="mach-dir-keine-sorgen.html#gender-of-ordinals">Gender of Ordinals</a></li></ul></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#grammatik-3-6-expressions-of-time">Grammatik 3-6 ~ Expressions of Time</a><ul class="vc-subs"><li class="vc-l3"><a href="mach-dir-keine-sorgen.html#idioms-used-in-telling-time">Idioms used in Telling Time</a></li><li class="vc-l3"><a href="mach-dir-keine-sorgen.html#periods-of-the-day">Periods of the Day</a></li><li class="vc-l3"><a href="mach-dir-keine-sorgen.html#additional-notes">Additional Notes</a></li></ul></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#vokabeln-3-4">Vokabeln 3-4</a></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#andere-worter-3a">Andere Wörter 3A</a></li>
+<li class="vc-l2"><a href="mach-dir-keine-sorgen.html#ubersetzung-3-2">Übersetzung 3-2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="die-geschaftsleute.html">Lesson 3.04: Die Geschäftsleute</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="die-geschaftsleute.html#gesprach-4-2-die-geschaftsleute">Gespräch 4-2 ~ Die Geschäftsleute</a></li>
+<li class="vc-l2"><a href="die-geschaftsleute.html#vokabeln-4-3">Vokabeln 4-3</a></li>
+<li class="vc-l2"><a href="die-geschaftsleute.html#grammatik-4-4-personal-pronouns-accusative-case">Grammatik 4-4 ~ Personal Pronouns: Accusative Case</a></li>
+<li class="vc-l2"><a href="die-geschaftsleute.html#grammatik-4-5-personal-pronouns-in-the-dative-case">Grammatik 4-5 ~ Personal Pronouns in the Dative Case</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="der-englander-in-osterreich.html">Lesson 3.05: Der Engländer in Österreich</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="der-englander-in-osterreich.html#gesprach-5-2-der-englander-in-osterreich">Gespräch 5-2 ~ Der Engländer in Österreich</a></li>
+<li class="vc-l2"><a href="der-englander-in-osterreich.html#vokabeln-5a">Vokabeln 5A</a></li>
+<li class="vc-l2"><a href="der-englander-in-osterreich.html#andere-worter-4a">Andere Wörter 4A</a></li>
+<li class="vc-l2"><a href="der-englander-in-osterreich.html#lesestuck-5-1-eine-geschichte-uber-st-polten">Lesestück 5-1 ~ Eine Geschichte über St. Pölten</a><ul class="vc-subs"><li class="vc-l3"><a href="der-englander-in-osterreich.html#vokabeln-5b">Vokabeln 5B</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="tour-de-france.html">Lesson 3.06: Tour de France</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="tour-de-france.html#lernen-7-2-tour-de-france">Lernen 7-2 ~ Tour de France</a></li>
+<li class="vc-l2"><a href="tour-de-france.html#vokabeln-7a">Vokabeln 7A</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Grammar</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="adjectives-and-adverbs.html">Adjectives and Adverbs</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="adjectives-and-adverbs.html#adjectives">Adjectives</a><ul class="vc-subs"><li class="vc-l3"><a href="adjectives-and-adverbs.html#attributive-adjectives">Attributive Adjectives</a></li><li class="vc-l3"><a href="adjectives-and-adverbs.html#predicative-adjectives">Predicative Adjectives</a></li><li class="vc-l3"><a href="adjectives-and-adverbs.html#adverbial-adjectives">Adverbial Adjectives</a></li></ul></li>
+<li class="vc-l2"><a href="adjectives-and-adverbs.html#declension-of-attributive-adjectives">Declension of Attributive Adjectives</a><ul class="vc-subs"><li class="vc-l3"><a href="adjectives-and-adverbs.html#forms-of-declension">Forms of Declension</a></li><li class="vc-l3"><a href="adjectives-and-adverbs.html#forms-in-context-of-articles">Forms in Context of Articles</a></li></ul></li>
+<li class="vc-l2"><a href="adjectives-and-adverbs.html#adverbs">Adverbs</a><ul class="vc-subs"><li class="vc-l3"><a href="adjectives-and-adverbs.html#adverbs-based-on-prepositions">Adverbs based on prepositions</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="nouns.html">Nouns</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="nouns.html#what-is-a-noun">What Is a Noun?</a></li>
+<li class="vc-l2"><a href="nouns.html#plurals">Plurals</a><ul class="vc-subs"><li class="vc-l3"><a href="nouns.html#suffixes">Suffixes</a></li></ul></li>
+<li class="vc-l2"><a href="nouns.html#gender">Gender</a><ul class="vc-subs"><li class="vc-l3"><a href="nouns.html#masculine">Masculine</a></li><li class="vc-l3"><a href="nouns.html#feminine">Feminine</a></li><li class="vc-l3"><a href="nouns.html#neuter">Neuter</a></li><li class="vc-l3"><a href="nouns.html#masculine-or-neuter">Masculine or Neuter</a></li><li class="vc-l3"><a href="nouns.html#neuter-or-feminine">Neuter or Feminine</a></li><li class="vc-l3"><a href="nouns.html#animals">Animals</a></li><li class="vc-l3"><a href="nouns.html#rivers">Rivers</a></li><li class="vc-l3"><a href="nouns.html#chemical-elements">Chemical Elements</a></li><li class="vc-l3"><a href="nouns.html#tips-for-learning">Tips For Learning</a></li><li class="vc-l3"><a href="nouns.html#looking-up-gender-in-dictionaries">Looking Up Gender in Dictionaries</a></li></ul></li>
+<li class="vc-l2"><a href="nouns.html#contents">Contents</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="pronouns.html">Pronouns</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="pronouns.html#comparison-of-pronouns-to-other-parts-of-speech">Comparison of Pronouns to other Parts of Speech</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sentences.html">Sentences</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sentences.html#sentence-structure-in-main-clauses">Sentence Structure in Main clauses</a></li>
+<li class="vc-l2"><a href="sentences.html#position-of-the-verb">Position of the Verb</a><ul class="vc-subs"><li class="vc-l3"><a href="sentences.html#clauses-with-one-verb-part-satze-mit-nur-einem-verbteil">Clauses with one verb part - Sätze mit nur einem Verbteil</a></li><li class="vc-l3"><a href="sentences.html#clauses-with-two-verb-parts-satze-mit-zwei-verbteilen">Clauses with two verb parts - Sätze mit zwei Verbteilen</a></li><li class="vc-l3"><a href="sentences.html#clauses-with-three-verb-parts-satze-mit-drei-verbteilen">Clauses with three verb parts - Sätze mit drei Verbteilen</a></li></ul></li>
+<li class="vc-l2"><a href="sentences.html#order-of-phrases-reihenfolge-der-satzglieder">Order of phrases - Reihenfolge der Satzglieder</a><ul class="vc-subs"><li class="vc-l3"><a href="sentences.html#first-position-erste-position">First Position - erste Position</a></li><li class="vc-l3"><a href="sentences.html#order-of-phrases-in-the-middle-of-the-clause-reihenfolge-der-satzglieder-im-mittelfeld">Order of Phrases in the Middle of the clause - Reihenfolge der Satzglieder im Mittelfeld</a></li><li class="vc-l3"><a href="sentences.html#satzglieder-im-nachfeld">Satzglieder im Nachfeld</a></li></ul></li>
+<li class="vc-l2"><a href="sentences.html#syntax-of-interrogatives-and-imperatives">Syntax of Interrogatives and Imperatives</a><ul class="vc-subs"><li class="vc-l3"><a href="sentences.html#interrogatives">Interrogatives</a></li><li class="vc-l3"><a href="sentences.html#imperatives">Imperatives</a></li></ul></li>
+<li class="vc-l2"><a href="sentences.html#coordinating-conjunctions">Coordinating Conjunctions</a></li>
+<li class="vc-l2"><a href="sentences.html#dependent-clauses-subordinate-and-relative-clauses">Dependent Clauses: Subordinate and Relative Clauses</a><ul class="vc-subs"><li class="vc-l3"><a href="sentences.html#introduction">Introduction</a></li><li class="vc-l3"><a href="sentences.html#subordinate-clauses">Subordinate Clauses</a></li><li class="vc-l3"><a href="sentences.html#relative-clauses">Relative Clauses</a></li><li class="vc-l3"><a href="sentences.html#syntax-of-dependent-clauses">Syntax of Dependent Clauses</a></li></ul></li>
+<li class="vc-l2"><a href="sentences.html#infinitive-clauses">Infinitive Clauses</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="verbs.html">Verbs</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="verbs.html#verbs_1">Verbs</a></li>
+<li class="vc-l2"><a href="verbs.html#strong-verbs">Strong Verbs</a></li>
+<li class="vc-l2"><a href="verbs.html#separable-verbs">Separable Verbs</a></li>
+<li class="vc-l2"><a href="verbs.html#reflexive-verbs">Reflexive Verbs</a></li>
+<li class="vc-l2"><a href="verbs.html#modals">Modals</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#durfen">Dürfen</a></li><li class="vc-l3"><a href="verbs.html#konnen">Können</a></li><li class="vc-l3"><a href="verbs.html#mogen">Mögen</a></li><li class="vc-l3"><a href="verbs.html#mussen">Müssen</a></li><li class="vc-l3"><a href="verbs.html#sollen">Sollen</a></li><li class="vc-l3"><a href="verbs.html#wollen">Wollen</a></li><li class="vc-l3"><a href="verbs.html#use-in-perfect-and-pluperfect-tense">Use in Perfect (and Pluperfect) Tense</a></li><li class="vc-l3"><a href="verbs.html#use-of-modal-verbs-as-full-verbs">Use of modal verbs as full verbs</a></li></ul></li>
+<li class="vc-l2"><a href="verbs.html#present-tense">Present Tense</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#use">Use</a></li><li class="vc-l3"><a href="verbs.html#progressive-forms">Progressive Forms</a></li></ul></li>
+<li class="vc-l2"><a href="verbs.html#perfect-tense">Perfect Tense</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#formation">Formation</a></li><li class="vc-l3"><a href="verbs.html#past-participle-for-regular-verbs">Past participle for regular verbs</a></li><li class="vc-l3"><a href="verbs.html#past-participle-for-irregular-verbs">Past Participle for Irregular Verbs</a></li><li class="vc-l3"><a href="verbs.html#haben-or-sein-as-auxiliaries">Haben or sein as auxiliaries</a></li><li class="vc-l3"><a href="verbs.html#usage">Usage</a></li><li class="vc-l3"><a href="verbs.html#how-to-find-the-forms-in-a-dictionary">How to find the forms in a dictionary</a></li><li class="vc-l3"><a href="verbs.html#tips-for-learning">Tips for learning</a></li></ul></li>
+<li class="vc-l2"><a href="verbs.html#sentence-structure">Sentence Structure</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#main-clauses">Main Clauses</a></li><li class="vc-l3"><a href="verbs.html#subordinated-clauses">Subordinated Clauses</a></li></ul></li>
+<li class="vc-l2"><a href="verbs.html#past-tense">Past tense</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#regular-verbs">Regular verbs</a></li><li class="vc-l3"><a href="verbs.html#irregular-verbs">Irregular verbs</a></li></ul></li>
+<li class="vc-l2"><a href="verbs.html#future-tense">Future Tense</a><ul class="vc-subs"><li class="vc-l3"><a href="verbs.html#talking-about-future-with-the-present-tense">Talking about future with the present tense</a></li><li class="vc-l3"><a href="verbs.html#futur-i">Futur I</a></li><li class="vc-l3"><a href="verbs.html#future-ii">Future II</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Appendices</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="alphabet-and-pronunciation.html">Appendix A: Das Alphabet</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="alphabet-and-pronunciation.html#the-alphabet">The Alphabet</a><ul class="vc-subs"><li class="vc-l3"><a href="alphabet-and-pronunciation.html#unique-german-letters">Unique German Letters</a></li><li class="vc-l3"><a href="alphabet-and-pronunciation.html#konsonanten-consonants">Konsonanten ~ Consonants</a></li><li class="vc-l3"><a href="alphabet-and-pronunciation.html#german-sounds-not-found-in-english">German Sounds not found in English</a></li><li class="vc-l3"><a href="alphabet-and-pronunciation.html#syllable-stress">Syllable Stress</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="phrasebook.html">Appendix B: Phrase Book</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="phrasebook.html#german-phrases">German Phrases</a><ul class="vc-subs"><li class="vc-l3"><a href="phrasebook.html#greetings">Greetings</a></li><li class="vc-l3"><a href="phrasebook.html#gesprache-conversations">Gespräche (conversations)</a></li><li class="vc-l3"><a href="phrasebook.html#verstehen-understanding">Verstehen (understanding)</a></li></ul></li>
+<li class="vc-l2"><a href="phrasebook.html#positionen-locations">Positionen (Locations)</a></li>
+<li class="vc-l2"><a href="phrasebook.html#common-phrases">Common phrases</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="grammar-i.html">Appendix C: Grammar Reference Table I</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="grammar-i.html#der-word-case-for-german-nouns">Der-word Case for German Nouns</a></li>
+<li class="vc-l2"><a href="grammar-i.html#personal-pronoun-tables-nominative-genitive-dative-accusative-cases">Personal Pronoun Tables: nominative, genitive, dative &amp; accusative cases</a><ul class="vc-subs"><li class="vc-l3"><a href="grammar-i.html#nominative-case-personal-pronouns">Nominative case personal pronouns</a></li><li class="vc-l3"><a href="grammar-i.html#genitive-case-personal-pronouns">Genitive case personal pronouns</a></li><li class="vc-l3"><a href="grammar-i.html#dative-case-personal-pronouns">Dative case personal pronouns</a></li><li class="vc-l3"><a href="grammar-i.html#accusative-case-personal-pronouns">Accusative case personal pronouns</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="grammar-ii.html">Appendix D: Grammar Reference Table II</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="grammar-ii.html#conjugating-to-be">Conjugating &#x27;to be&#x27;</a></li>
+<li class="vc-l2"><a href="grammar-ii.html#conjugating-normal-verbs">Conjugating Normal Verbs</a></li>
+<li class="vc-l2"><a href="grammar-ii.html#conjugating-irregular-verbs">Conjugating Irregular Verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="grammar-ii.html#e-in-the-first-syllable">E in the first syllable</a></li><li class="vc-l3"><a href="grammar-ii.html#haben">Haben</a></li><li class="vc-l3"><a href="grammar-ii.html#verbs-ending-in-consonant-n">Verbs ending in Consonant-N</a></li></ul></li>
+<li class="vc-l2"><a href="grammar-ii.html#conjugating-modals">Conjugating Modals</a></li>
+<li class="vc-l2"><a href="grammar-ii.html#separable-verbs">Separable Verbs</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="resources.html">Appendix E: Webseiten and other resources</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="resources.html#lists-and-directories-to-online-resources">Lists and directories to online resources</a></li>
+<li class="vc-l2"><a href="resources.html#uber-die-deutsche-sprache-about-german">Über die deutsche Sprache - about German</a></li>
+<li class="vc-l2"><a href="resources.html#online-worterbucher-dictionary">Online Wörterbücher - Dictionary</a><ul class="vc-subs"><li class="vc-l3"><a href="resources.html#deutsch-englisch-german-english">Deutsch-Englisch (German-English)</a></li><li class="vc-l3"><a href="resources.html#nur-deutsch-german-only">Nur Deutsch - German only</a></li><li class="vc-l3"><a href="resources.html#slideshows-with-pictures-and-pronunciations">Slideshows with pictures and pronunciations</a></li></ul></li>
+<li class="vc-l2"><a href="resources.html#deutsche-grammatik-und-rechtschreibung-german-grammar-and-spelling">Deutsche Grammatik und Rechtschreibung- German Grammar and Spelling</a></li>
+<li class="vc-l2"><a href="resources.html#aussprache-pronunciation">Aussprache - Pronunciation</a></li>
+<li class="vc-l2"><a href="resources.html#blogs">Blogs</a></li>
+<li class="vc-l2"><a href="resources.html#podcasts">Podcasts</a><ul class="vc-subs"><li class="vc-l3"><a href="resources.html#from-learners">from learners</a></li><li class="vc-l3"><a href="resources.html#for-learners">for learners</a></li></ul></li>
+<li class="vc-l2"><a href="resources.html#tandem">Tandem</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="names.html">Appendix F: Namen</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="names.html#names">Names</a><ul class="vc-subs"><li class="vc-l3"><a href="names.html#first-names">First Names</a></li></ul></li>
+<li class="vc-l2"><a href="names.html#typical-for-young-people">Typical for young people</a><ul class="vc-subs"><li class="vc-l3"><a href="names.html#girls-names">Girls&#x27; Names</a></li><li class="vc-l3"><a href="names.html#last-names">Last Names</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="false-friends.html">Appendix G: False Friends</a></li>
+<li class="vc-ch"><details><summary><a href="vocabulary.html">Appendix H: Level I Vocabulary</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vocabulary.html#wie-heit-du">Wie heißt du?</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#subject-pronouns-in-color">Subject Pronouns in color</a></li><li class="vc-l3"><a href="vocabulary.html#verbs">Verbs</a></li><li class="vc-l3"><a href="vocabulary.html#greeting-goodbyes">Greeting &amp; Goodbyes</a></li><li class="vc-l3"><a href="vocabulary.html#how-you-are">How You Are</a></li><li class="vc-l3"><a href="vocabulary.html#interrogative-adverbs">Interrogative Adverbs</a></li><li class="vc-l3"><a href="vocabulary.html#genders">Genders</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#freizeit">Freizeit</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#sports-activities">Sports &amp; Activities</a></li><li class="vc-l3"><a href="vocabulary.html#conjunctions">Conjunctions</a></li><li class="vc-l3"><a href="vocabulary.html#verbs_1">Verbs</a></li><li class="vc-l3"><a href="vocabulary.html#numbers">Numbers</a></li><li class="vc-l3"><a href="vocabulary.html#how-to-read-time">How to Read Time</a></li><li class="vc-l3"><a href="vocabulary.html#times-in-the-day">Times in the Day</a></li><li class="vc-l3"><a href="vocabulary.html#days">Days</a></li><li class="vc-l3"><a href="vocabulary.html#months">Months</a></li><li class="vc-l3"><a href="vocabulary.html#seasons">Seasons</a></li><li class="vc-l3"><a href="vocabulary.html#time">Time</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#essen">Essen</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#subject-pronouns-in-the-accusative-case">Subject Pronouns in the Accusative Case</a></li><li class="vc-l3"><a href="vocabulary.html#food">Food</a></li><li class="vc-l3"><a href="vocabulary.html#verbs_2">Verbs</a></li><li class="vc-l3"><a href="vocabulary.html#polite-conversation">Polite Conversation</a></li><li class="vc-l3"><a href="vocabulary.html#regional-foods">Regional Foods</a></li><li class="vc-l3"><a href="vocabulary.html#prepositions-in-the-accusative-case">Prepositions in the Accusative Case</a></li><li class="vc-l3"><a href="vocabulary.html#tastes">Tastes</a></li><li class="vc-l3"><a href="vocabulary.html#paying-at-a-restaurant">Paying at a Restaurant</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#kleidung">Kleidung</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#shopping">Shopping</a></li><li class="vc-l3"><a href="vocabulary.html#shopping-2">Shopping 2</a></li><li class="vc-l3"><a href="vocabulary.html#items-to-buy">Items to Buy</a></li><li class="vc-l3"><a href="vocabulary.html#money">Money</a></li><li class="vc-l3"><a href="vocabulary.html#clothes">Clothes</a></li><li class="vc-l3"><a href="vocabulary.html#sizes">Sizes</a></li><li class="vc-l3"><a href="vocabulary.html#words-that-describe">Words That Describe</a></li><li class="vc-l3"><a href="vocabulary.html#colors">Colors</a></li><li class="vc-l3"><a href="vocabulary.html#verbs_3">Verbs</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#volk-und-familie">Volk und Familie</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#family">Family</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#schule">Schule</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#verbs_4">Verbs</a></li><li class="vc-l3"><a href="vocabulary.html#classes">Classes</a></li><li class="vc-l3"><a href="vocabulary.html#school-supplies-and-ect">School Supplies and Ect.</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#die-fete">Die Fete</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#gifts">Gifts</a></li><li class="vc-l3"><a href="vocabulary.html#parties">Parties</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#privileg-und-verantwortung">Privileg und Verantwortung</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#careers">Careers</a></li><li class="vc-l3"><a href="vocabulary.html#tasks">Tasks</a></li><li class="vc-l3"><a href="vocabulary.html#locations">Locations</a></li></ul></li>
+<li class="vc-l2"><a href="vocabulary.html#wetter">Wetter</a><ul class="vc-subs"><li class="vc-l3"><a href="vocabulary.html#weather">Weather</a></li><li class="vc-l3"><a href="vocabulary.html#transportion">Transportion</a></li></ul></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A course in German for English speakers: the lessons of each level are set in a German-speaking city and teach conversation, vocabulary and grammar step by step (articles and cases, verbs and tenses, word order), with readings, exercises and review lessons, and appendices on pronunciation and grammar.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>German, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/German" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-principles-of-economics/list-of-contributors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix A. Special contributions to this work">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+Appendix A. Special contributions to this work
+</div>
+</div>
+</a>
+<a href="introduction.html" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+Introduction
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

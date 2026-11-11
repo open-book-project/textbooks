@@ -1,0 +1,1114 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-fundamentals-of-transportation/index.html">
+<link rel="prev" href="../wb-control-systems/licensing.html">
+<link rel="next" href="about-2.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Fundamentals of Transportation</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="about-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. About
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Geography and Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trip-generation.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Trip Generation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="destination-choice.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Destination Choice
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="background.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Background
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="choice-modeling.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Mode Choice
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="route-choice.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Route Choice
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-3.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-3.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="evaluation.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Evaluation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transit.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Transit
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transit-demand.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Transit Demand
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transit-operations-and-capacity.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Transit Operations and Capacity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="network-design-and-frequency.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Network Design and Frequency
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="timetabling-and-scheduling.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Timetabling and Scheduling
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="planning.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Planning
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="traffic.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Operations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="queueing.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Queueing
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem1.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Problem1
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution1.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Solution1
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem2.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Problem2
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution2.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Solution2
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem3.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Problem3
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution3.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Solution3
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="traffic-flow.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Traffic Flow
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-4.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-4.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="queueing-and-traffic-flow.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Queueing and Traffic Flow
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="shockwaves.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Shockwaves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-5.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-5.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="traffic-signals.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Traffic Signals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-6.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-6.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="design.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sight-distance.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Sight Distance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-7.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-7.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="grade.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Grade
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-8.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-8.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="earthwork.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Earthwork
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-9.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-9.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="horizontal-curves.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. Horizontal Curves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-10.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-10.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vertical-curves.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Vertical Curves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="problem-11.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-11.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Solution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="conclusions.html" class="md-nav__link">
+<span class="md-ellipsis">
+56. Conclusions
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-fundamentals-of-transportation" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="about-2.html" style="--cv-bg:#2f4858;--cv-accent:#f6ae2d;--cv-fg:#f2f2ee;--cv-n:32;--cv-rot:13deg;--cv-x:39%;--cv-y:65%" aria-label="Start reading Fundamentals of Transportation"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Fundamentals of Transportation</span><span class="vol-sub">Planning, operations and design</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Fundamentals of Transportation</h1>
+<p class="pk-book-sub">Planning, operations and design</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Travel demand, transit, queueing, traffic flow and signals, and the geometric design of roads, with worked problems.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-intermediate">Intermediate</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/civil-engineering.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 9.5 12 4l8.5 5.5zM6.5 9.5v8M10 9.5v8M14 9.5v8M17.5 9.5v8M4 17.5h16M3 20.5h18"/></svg><span class="pk-chip-cat">Engineering &rsaquo;</span> Civil Engineering</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="about-2.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-fundamentals-of-transportation"></div></div>
+<p class="pk-book-facts"><span>56 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-fundamentals-of-transportation" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="about-2.html">Chapter 1: About</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="about-2.html#11-how-an-idea-becomes-a-road"><span class="vc-n">1.1</span> How an idea becomes a road</a></li>
+<li class="vc-l2"><a href="about-2.html#12-authors"><span class="vc-n">1.2</span> Authors</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="introduction.html">Chapter 2: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#21-modalism-and-intermodalism"><span class="vc-n">2.1</span> Modalism and Intermodalism</a></li>
+<li class="vc-l2"><a href="introduction.html#22-motivation"><span class="vc-n">2.2</span> Motivation</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction.html#transportation-students">Transportation students</a></li><li class="vc-l3"><a href="introduction.html#wet-students">&quot;Wet Students&quot;</a></li><li class="vc-l3"><a href="introduction.html#dry-students">&quot;Dry Students&quot;</a></li><li class="vc-l3"><a href="introduction.html#citizens-and-taxpayers">Citizens and Taxpayers</a></li></ul></li>
+<li class="vc-l2"><a href="introduction.html#23-goal"><span class="vc-n">2.3</span> Goal</a></li>
+<li class="vc-l2"><a href="introduction.html#24-overview"><span class="vc-n">2.4</span> Overview</a></li>
+<li class="vc-l2"><a href="introduction.html#25-thought-questions"><span class="vc-n">2.5</span> Thought Questions</a></li>
+<li class="vc-l2"><a href="introduction.html#26-sample-problem"><span class="vc-n">2.6</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="introduction.html#27-abbreviations"><span class="vc-n">2.7</span> Abbreviations</a></li>
+<li class="vc-l2"><a href="introduction.html#28-key-terms"><span class="vc-n">2.8</span> Key Terms</a></li>
+<li class="vc-l2"><a href="introduction.html#29-references"><span class="vc-n">2.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="networks.html">Chapter 3: Geography and Networks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="networks.html#31-roads"><span class="vc-n">3.1</span> Roads</a></li>
+<li class="vc-l2"><a href="networks.html#32-freeways"><span class="vc-n">3.2</span> Freeways</a></li>
+<li class="vc-l2"><a href="networks.html#33-layers-of-networks"><span class="vc-n">3.3</span> Layers of Networks</a></li>
+<li class="vc-l2"><a href="networks.html#34-hierarchy-of-roads"><span class="vc-n">3.4</span> Hierarchy of Roads</a></li>
+<li class="vc-l2"><a href="networks.html#35-model-elements"><span class="vc-n">3.5</span> Model Elements</a><ul class="vc-subs"><li class="vc-l3"><a href="networks.html#network">Network</a></li><li class="vc-l3"><a href="networks.html#matrices">Matrices</a></li></ul></li>
+<li class="vc-l2"><a href="networks.html#36-thought-questions"><span class="vc-n">3.6</span> Thought Questions</a></li>
+<li class="vc-l2"><a href="networks.html#37-abbreviations"><span class="vc-n">3.7</span> Abbreviations</a></li>
+<li class="vc-l2"><a href="networks.html#38-variables"><span class="vc-n">3.8</span> Variables</a></li>
+<li class="vc-l2"><a href="networks.html#39-key-terms"><span class="vc-n">3.9</span> Key Terms</a></li>
+<li class="vc-l2"><a href="networks.html#310-external-exercises"><span class="vc-n">3.10</span> External Exercises</a></li>
+<li class="vc-l2"><a href="networks.html#311-video"><span class="vc-n">3.11</span> Video</a></li>
+<li class="vc-l2"><a href="networks.html#312-references"><span class="vc-n">3.12</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="trip-generation.html">Chapter 4: Trip Generation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trip-generation.html#41-activities"><span class="vc-n">4.1</span> Activities</a></li>
+<li class="vc-l2"><a href="trip-generation.html#42-specifying-models"><span class="vc-n">4.2</span> Specifying Models</a><ul class="vc-subs"><li class="vc-l3"><a href="trip-generation.html#home-end">Home-end</a></li><li class="vc-l3"><a href="trip-generation.html#work-end">Work-end</a></li><li class="vc-l3"><a href="trip-generation.html#shop-end">Shop-end</a></li></ul></li>
+<li class="vc-l2"><a href="trip-generation.html#43-input-data"><span class="vc-n">4.3</span> Input Data</a></li>
+<li class="vc-l2"><a href="trip-generation.html#44-estimating-models"><span class="vc-n">4.4</span> Estimating Models</a><ul class="vc-subs"><li class="vc-l3"><a href="trip-generation.html#home-end_1">Home-end</a></li><li class="vc-l3"><a href="trip-generation.html#non-home-end">Non-home-end</a></li></ul></li>
+<li class="vc-l2"><a href="trip-generation.html#45-normalization"><span class="vc-n">4.5</span> Normalization</a></li>
+<li class="vc-l2"><a href="trip-generation.html#46-sample-problems"><span class="vc-n">4.6</span> Sample Problems</a></li>
+<li class="vc-l2"><a href="trip-generation.html#47-variables"><span class="vc-n">4.7</span> Variables</a></li>
+<li class="vc-l2"><a href="trip-generation.html#48-abbreviations"><span class="vc-n">4.8</span> Abbreviations</a></li>
+<li class="vc-l2"><a href="trip-generation.html#49-external-exercises"><span class="vc-n">4.9</span> External Exercises</a></li>
+<li class="vc-l2"><a href="trip-generation.html#410-additional-problems"><span class="vc-n">4.10</span> Additional Problems</a></li>
+<li class="vc-l2"><a href="trip-generation.html#411-end-notes"><span class="vc-n">4.11</span> End Notes</a></li>
+<li class="vc-l2"><a href="trip-generation.html#412-further-reading"><span class="vc-n">4.12</span> Further reading</a></li>
+<li class="vc-l2"><a href="trip-generation.html#413-videos"><span class="vc-n">4.13</span> Videos</a></li>
+<li class="vc-l2"><a href="trip-generation.html#414-references"><span class="vc-n">4.14</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem.html">Chapter 5: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution.html">Chapter 6: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="destination-choice.html">Chapter 7: Destination Choice</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="destination-choice.html#71-fratar-models"><span class="vc-n">7.1</span> Fratar Models</a></li>
+<li class="vc-l2"><a href="destination-choice.html#72-gravity-model"><span class="vc-n">7.2</span> Gravity Model</a></li>
+<li class="vc-l2"><a href="destination-choice.html#73-balancing-a-matrix"><span class="vc-n">7.3</span> Balancing a matrix</a></li>
+<li class="vc-l2"><a href="destination-choice.html#74-issues"><span class="vc-n">7.4</span> Issues</a><ul class="vc-subs"><li class="vc-l3"><a href="destination-choice.html#feedback">Feedback</a></li><li class="vc-l3"><a href="destination-choice.html#feedback-and-time-budgets">Feedback and time budgets</a></li></ul></li>
+<li class="vc-l2"><a href="destination-choice.html#75-examples"><span class="vc-n">7.5</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="destination-choice.html#example-1-solving-for-impedance">Example 1: Solving for impedance</a></li><li class="vc-l3"><a href="destination-choice.html#example-2-balancing-a-matrix-using-gravity-model">Example 2: Balancing a Matrix Using Gravity Model</a></li></ul></li>
+<li class="vc-l2"><a href="destination-choice.html#76-additional-questions"><span class="vc-n">7.6</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="destination-choice.html#77-variables"><span class="vc-n">7.7</span> Variables</a></li>
+<li class="vc-l2"><a href="destination-choice.html#78-further-reading"><span class="vc-n">7.8</span> Further reading</a></li>
+<li class="vc-l2"><a href="destination-choice.html#79-videos"><span class="vc-n">7.9</span> Videos</a></li>
+<li class="vc-l2"><a href="destination-choice.html#710-references"><span class="vc-n">7.10</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="background.html">Chapter 8: Background</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="background.html#81-history"><span class="vc-n">8.1</span> History</a></li>
+<li class="vc-l2"><a href="background.html#82-mathematics"><span class="vc-n">8.2</span> Mathematics</a></li>
+<li class="vc-l2"><a href="background.html#83-entropy-analysis"><span class="vc-n">8.3</span> Entropy Analysis</a></li>
+<li class="vc-l2"><a href="background.html#84-references"><span class="vc-n">8.4</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="choice-modeling.html">Chapter 9: Mode Choice</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="choice-modeling.html#91-disaggregate-travel-demand-models"><span class="vc-n">9.1</span> Disaggregate Travel Demand models</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#92-the-logit-model"><span class="vc-n">9.2</span> The Logit Model</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#93-psychological-roots"><span class="vc-n">9.3</span> Psychological roots</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#94-econometric-formulation"><span class="vc-n">9.4</span> Econometric formulation</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#95-econometric-estimation"><span class="vc-n">9.5</span> Econometric estimation</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#96-independence-of-irrelevant-alternatives-iia"><span class="vc-n">9.6</span> Independence of Irrelevant Alternatives (IIA)</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#97-returning-to-roots"><span class="vc-n">9.7</span> Returning to roots</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#98-examples"><span class="vc-n">9.8</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="choice-modeling.html#example-1-mode-choice-model">Example 1: Mode Choice Model</a></li><li class="vc-l3"><a href="choice-modeling.html#example-2-mode-choice-model-interpretation">Example 2: Mode Choice Model Interpretation</a></li></ul></li>
+<li class="vc-l2"><a href="choice-modeling.html#99-sample-problem"><span class="vc-n">9.9</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#910-additional-questions"><span class="vc-n">9.10</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#911-variables"><span class="vc-n">9.11</span> Variables</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#912-abbreviations"><span class="vc-n">9.12</span> Abbreviations</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#913-key-terms"><span class="vc-n">9.13</span> Key Terms</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#914-videos"><span class="vc-n">9.14</span> Videos</a></li>
+<li class="vc-l2"><a href="choice-modeling.html#915-references"><span class="vc-n">9.15</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-2.html">Chapter 10: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-2.html">Chapter 11: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="route-choice.html">Chapter 12: Route Choice</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="route-choice.html#121-link-performance-function"><span class="vc-n">12.1</span> Link Performance Function</a><ul class="vc-subs"><li class="vc-l3"><a href="route-choice.html#bpr-link-performance-function">BPR Link Performance Function</a></li></ul></li>
+<li class="vc-l2"><a href="route-choice.html#122-can-flow-exceed-capacity"><span class="vc-n">12.2</span> Can Flow Exceed Capacity?</a></li>
+<li class="vc-l2"><a href="route-choice.html#123-wardrops-principles-of-equilibrium"><span class="vc-n">12.3</span> Wardrop&#x27;s Principles of Equilibrium</a><ul class="vc-subs"><li class="vc-l3"><a href="route-choice.html#user-equilibrium">User Equilibrium</a></li><li class="vc-l3"><a href="route-choice.html#system-optimal">System optimal</a></li></ul></li>
+<li class="vc-l2"><a href="route-choice.html#124-price-of-anarchy"><span class="vc-n">12.4</span> Price of Anarchy</a></li>
+<li class="vc-l2"><a href="route-choice.html#125-conservation-of-flow"><span class="vc-n">12.5</span> Conservation of Flow</a></li>
+<li class="vc-l2"><a href="route-choice.html#126-auto-assignment"><span class="vc-n">12.6</span> Auto assignment</a><ul class="vc-subs"><li class="vc-l3"><a href="route-choice.html#long-standing-techniques">Long-standing techniques</a></li><li class="vc-l3"><a href="route-choice.html#heuristic-procedures">Heuristic procedures</a></li><li class="vc-l3"><a href="route-choice.html#frank-wolfe-algorithm">Frank-Wolfe algorithm</a></li><li class="vc-l3"><a href="route-choice.html#equilibrium-assignment">Equilibrium Assignment</a></li></ul></li>
+<li class="vc-l2"><a href="route-choice.html#127-transit-assignment"><span class="vc-n">12.7</span> Transit assignment</a></li>
+<li class="vc-l2"><a href="route-choice.html#128-examples"><span class="vc-n">12.8</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="route-choice.html#example-1">Example 1</a></li><li class="vc-l3"><a href="route-choice.html#example-2">Example 2</a></li><li class="vc-l3"><a href="route-choice.html#example-3">Example 3</a></li></ul></li>
+<li class="vc-l2"><a href="route-choice.html#129-thought-questions"><span class="vc-n">12.9</span> Thought Questions</a></li>
+<li class="vc-l2"><a href="route-choice.html#1210-sample-problem"><span class="vc-n">12.10</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="route-choice.html#1211-variables"><span class="vc-n">12.11</span> Variables</a></li>
+<li class="vc-l2"><a href="route-choice.html#1212-abbreviations"><span class="vc-n">12.12</span> Abbreviations</a></li>
+<li class="vc-l2"><a href="route-choice.html#1213-key-terms"><span class="vc-n">12.13</span> Key Terms</a></li>
+<li class="vc-l2"><a href="route-choice.html#1214-external-exercises"><span class="vc-n">12.14</span> External Exercises</a></li>
+<li class="vc-l2"><a href="route-choice.html#1215-additional-questions"><span class="vc-n">12.15</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="route-choice.html#1216-videos"><span class="vc-n">12.16</span> Videos</a></li>
+<li class="vc-l2"><a href="route-choice.html#1217-references"><span class="vc-n">12.17</span> References</a></li>
+<li class="vc-l2"><a href="route-choice.html#1218-further-reading"><span class="vc-n">12.18</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-3.html">Chapter 13: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-3.html">Chapter 14: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="evaluation.html">Chapter 15: Evaluation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="evaluation.html#151-background"><span class="vc-n">15.1</span> Background</a><ul class="vc-subs"><li class="vc-l3"><a href="evaluation.html#early-beginnings">Early Beginnings</a></li><li class="vc-l3"><a href="evaluation.html#benefit-cost-analysis-in-the-united-states">Benefit-cost Analysis in the United States</a></li><li class="vc-l3"><a href="evaluation.html#modern-benefit-cost-analysis">Modern Benefit-cost Analysis</a></li><li class="vc-l3"><a href="evaluation.html#the-planning-programming-budgeting-system-ppbs-1965">The Planning Programming Budgeting System (PPBS) - 1965</a></li><li class="vc-l3"><a href="evaluation.html#office-of-management-and-budget-omb-1977">Office of Management and Budget (OMB) – 1977</a></li><li class="vc-l3"><a href="evaluation.html#recent-developments">Recent Developments</a></li><li class="vc-l3"><a href="evaluation.html#probabilistic-benefit-cost-analysis">Probabilistic Benefit-Cost Analysis</a></li></ul></li>
+<li class="vc-l2"><a href="evaluation.html#152-discount-rate"><span class="vc-n">15.2</span> Discount rate</a></li>
+<li class="vc-l2"><a href="evaluation.html#153-determine-a-present-value"><span class="vc-n">15.3</span> Determine a present value</a></li>
+<li class="vc-l2"><a href="evaluation.html#154-evaluation-criterion"><span class="vc-n">15.4</span> Evaluation criterion</a></li>
+<li class="vc-l2"><a href="evaluation.html#155-examples"><span class="vc-n">15.5</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="evaluation.html#example-1-benefit-cost-application">Example 1: Benefit Cost Application</a></li></ul></li>
+<li class="vc-l2"><a href="evaluation.html#156-thought-questions"><span class="vc-n">15.6</span> Thought Questions</a><ul class="vc-subs"><li class="vc-l3"><a href="evaluation.html#decision-criteria">Decision Criteria</a></li><li class="vc-l3"><a href="evaluation.html#is-it-only-money-that-matters">Is it only money that matters?</a></li><li class="vc-l3"><a href="evaluation.html#can-small-units-of-time-be-given-the-same-value-of-time-as-larger-units-of-time">Can small units of time be given the same value of time as larger units of time?</a></li><li class="vc-l3"><a href="evaluation.html#are-sunk-costs-sunk-is-salvage-value-salvageable-a-paradox-in-engineering-economics-analysis">Are sunk costs sunk, is salvage value salvageable? A paradox in engineering economics analysis</a></li></ul></li>
+<li class="vc-l2"><a href="evaluation.html#157-software-tools-for-impact-analysis"><span class="vc-n">15.7</span> Software Tools for Impact Analysis</a><ul class="vc-subs"><li class="vc-l3"><a href="evaluation.html#microbencost">MicroBENCOST</a></li><li class="vc-l3"><a href="evaluation.html#spasm">SPASM</a></li><li class="vc-l3"><a href="evaluation.html#steam">STEAM</a></li><li class="vc-l3"><a href="evaluation.html#smite">SMITE</a></li><li class="vc-l3"><a href="evaluation.html#scrits">SCRITS</a></li><li class="vc-l3"><a href="evaluation.html#hers">HERS</a></li><li class="vc-l3"><a href="evaluation.html#summary-of-software-tools">Summary of Software Tools</a></li></ul></li>
+<li class="vc-l2"><a href="evaluation.html#158-sample-problems"><span class="vc-n">15.8</span> Sample Problems</a></li>
+<li class="vc-l2"><a href="evaluation.html#159-key-terms"><span class="vc-n">15.9</span> Key Terms</a></li>
+<li class="vc-l2"><a href="evaluation.html#1510-external-exercises"><span class="vc-n">15.10</span> External Exercises</a></li>
+<li class="vc-l2"><a href="evaluation.html#1511-videos"><span class="vc-n">15.11</span> Videos</a></li>
+<li class="vc-l2"><a href="evaluation.html#1512-references"><span class="vc-n">15.12</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transit.html">Chapter 16: Transit</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transit.html#161-what-is-public-transit"><span class="vc-n">16.1</span> What is public transit?</a></li>
+<li class="vc-l2"><a href="transit.html#162-how-is-transit-provided-and-used"><span class="vc-n">16.2</span> How is transit provided and used?</a><ul class="vc-subs"><li class="vc-l3"><a href="transit.html#modes-of-service">Modes of service</a></li><li class="vc-l3"><a href="transit.html#measures-of-use">Measures of use</a></li></ul></li>
+<li class="vc-l2"><a href="transit.html#163-who-uses-public-transit"><span class="vc-n">16.3</span> Who uses public transit?</a></li>
+<li class="vc-l2"><a href="transit.html#164-where-is-public-transit-provided-and-used"><span class="vc-n">16.4</span> Where is public transit provided and used?</a></li>
+<li class="vc-l2"><a href="transit.html#165-why-do-people-use-public-transit"><span class="vc-n">16.5</span> Why do people use public transit?</a></li>
+<li class="vc-l2"><a href="transit.html#166-when-do-people-use-public-transit"><span class="vc-n">16.6</span> When do people use public transit?</a></li>
+<li class="vc-l2"><a href="transit.html#167-transit"><span class="vc-n">16.7</span> Transit</a></li>
+<li class="vc-l2"><a href="transit.html#168-related-books"><span class="vc-n">16.8</span> Related books</a></li>
+<li class="vc-l2"><a href="transit.html#169-references"><span class="vc-n">16.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transit-demand.html">Chapter 17: Transit Demand</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transit-demand.html#171-measuring-transit-demand"><span class="vc-n">17.1</span> Measuring transit demand</a></li>
+<li class="vc-l2"><a href="transit-demand.html#172-simple-transit-demand-estimation-methods"><span class="vc-n">17.2</span> Simple transit demand estimation methods</a><ul class="vc-subs"><li class="vc-l3"><a href="transit-demand.html#elasticities">Elasticities</a></li><li class="vc-l3"><a href="transit-demand.html#uses-of-elasticities">Uses of elasticities</a></li><li class="vc-l3"><a href="transit-demand.html#sample-problem">Sample problem</a></li></ul></li>
+<li class="vc-l2"><a href="transit-demand.html#173-advanced-demand-forecasting-methods"><span class="vc-n">17.3</span> Advanced demand forecasting methods</a></li>
+<li class="vc-l2"><a href="transit-demand.html#174-related-books"><span class="vc-n">17.4</span> Related books</a></li>
+<li class="vc-l2"><a href="transit-demand.html#175-references"><span class="vc-n">17.5</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transit-operations-and-capacity.html">Chapter 18: Transit Operations and Capacity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#181-concepts-in-operations-and-capacity"><span class="vc-n">18.1</span> Concepts in operations and capacity</a><ul class="vc-subs"><li class="vc-l3"><a href="transit-operations-and-capacity.html#the-vehicle-cycle">The vehicle cycle</a></li><li class="vc-l3"><a href="transit-operations-and-capacity.html#capacity">Capacity</a></li></ul></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#182-bus-operations"><span class="vc-n">18.2</span> Bus operations</a></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#183-rail-operations"><span class="vc-n">18.3</span> Rail operations</a></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#184-sample-problem"><span class="vc-n">18.4</span> Sample problem</a></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#185-glossary"><span class="vc-n">18.5</span> Glossary</a></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#186-related-books"><span class="vc-n">18.6</span> Related books</a></li>
+<li class="vc-l2"><a href="transit-operations-and-capacity.html#187-references"><span class="vc-n">18.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="network-design-and-frequency.html">Chapter 19: Network Design and Frequency</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="network-design-and-frequency.html#191-overview"><span class="vc-n">19.1</span> Overview</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#192-network-and-route-design"><span class="vc-n">19.2</span> Network and route design</a><ul class="vc-subs"><li class="vc-l3"><a href="network-design-and-frequency.html#network-design">Network design</a></li><li class="vc-l3"><a href="network-design-and-frequency.html#route-design">Route design</a></li></ul></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#193-stop-density-and-location"><span class="vc-n">19.3</span> Stop density and location</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#194-frequency-determination"><span class="vc-n">19.4</span> Frequency determination</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#195-viciousvirtuous-cycles"><span class="vc-n">19.5</span> Vicious/Virtuous Cycles</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#196-sample-problem"><span class="vc-n">19.6</span> Sample problem</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#197-sample-problem"><span class="vc-n">19.7</span> Sample problem</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#198-related-books"><span class="vc-n">19.8</span> Related books</a></li>
+<li class="vc-l2"><a href="network-design-and-frequency.html#199-references"><span class="vc-n">19.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="timetabling-and-scheduling.html">Chapter 20: Timetabling and Scheduling</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#201-timetabling"><span class="vc-n">20.1</span> Timetabling</a></li>
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#202-vehicle-scheduling"><span class="vc-n">20.2</span> Vehicle scheduling</a></li>
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#203-crew-scheduling"><span class="vc-n">20.3</span> Crew scheduling</a></li>
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#204-glossary"><span class="vc-n">20.4</span> Glossary</a></li>
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#205-related-books"><span class="vc-n">20.5</span> Related books</a></li>
+<li class="vc-l2"><a href="timetabling-and-scheduling.html#206-references"><span class="vc-n">20.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="planning.html">Chapter 21: Planning</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="planning.html#211-rationales-for-planning"><span class="vc-n">21.1</span> Rationales for Planning</a><ul class="vc-subs"><li class="vc-l3"><a href="planning.html#why-plan">Why plan?</a></li><li class="vc-l3"><a href="planning.html#why-plan-transportation">Why plan transportation?</a></li><li class="vc-l3"><a href="planning.html#why-plan-land-use">Why plan land use?</a></li><li class="vc-l3"><a href="planning.html#economic-rationales">Economic rationales</a></li><li class="vc-l3"><a href="planning.html#legal-rationales-united-states">Legal rationales (United States)</a></li></ul></li>
+<li class="vc-l2"><a href="planning.html#212-property-rights"><span class="vc-n">21.2</span> Property rights</a></li>
+<li class="vc-l2"><a href="planning.html#213-problems-in-urban-land-markets"><span class="vc-n">21.3</span> Problems in urban land markets</a></li>
+<li class="vc-l2"><a href="planning.html#214-thought-questions"><span class="vc-n">21.4</span> Thought questions</a></li>
+<li class="vc-l2"><a href="planning.html#215-discussion-questions"><span class="vc-n">21.5</span> Discussion Questions</a></li>
+<li class="vc-l2"><a href="planning.html#216-how-is-planning-done"><span class="vc-n">21.6</span> How is planning done</a></li>
+<li class="vc-l2"><a href="planning.html#217-references"><span class="vc-n">21.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="traffic.html">Chapter 22: Operations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="traffic.html#221-queueing"><span class="vc-n">22.1</span> Queueing</a></li>
+<li class="vc-l2"><a href="traffic.html#222-traffic-flow"><span class="vc-n">22.2</span> Traffic Flow</a></li>
+<li class="vc-l2"><a href="traffic.html#223-queueing-and-traffic-flow"><span class="vc-n">22.3</span> Queueing and Traffic Flow</a></li>
+<li class="vc-l2"><a href="traffic.html#224-shockwaves"><span class="vc-n">22.4</span> Shockwaves</a></li>
+<li class="vc-l2"><a href="traffic.html#225-traffic-signals"><span class="vc-n">22.5</span> Traffic Signals</a></li>
+<li class="vc-l2"><a href="traffic.html#226-additional-areas-of-study"><span class="vc-n">22.6</span> Additional Areas of Study</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic.html#level-of-service">Level of Service</a></li><li class="vc-l3"><a href="traffic.html#estimating-gaps">Estimating Gaps</a></li></ul></li>
+<li class="vc-l2"><a href="traffic.html#227-additional-questions"><span class="vc-n">22.7</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="traffic.html#228-variables"><span class="vc-n">22.8</span> Variables</a></li>
+<li class="vc-l2"><a href="traffic.html#229-references"><span class="vc-n">22.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="queueing.html">Chapter 23: Queueing</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="queueing.html#231-cumulative-input-output-diagram-newell-curve"><span class="vc-n">23.1</span> Cumulative Input-Output Diagram (Newell Curve)</a></li>
+<li class="vc-l2"><a href="queueing.html#232-distributions"><span class="vc-n">23.2</span> Distributions</a></li>
+<li class="vc-l2"><a href="queueing.html#233-characterizing-queues"><span class="vc-n">23.3</span> Characterizing Queues</a><ul class="vc-subs"><li class="vc-l3"><a href="queueing.html#degree-of-saturation">Degree of Saturation</a></li></ul></li>
+<li class="vc-l2"><a href="queueing.html#234-littles-formula"><span class="vc-n">23.4</span> Little&#x27;s Formula</a></li>
+<li class="vc-l2"><a href="queueing.html#235-uncapacitated-queues-md1-and-mm1"><span class="vc-n">23.5</span> Uncapacitated Queues (M/D/1) and (M/M/1)</a></li>
+<li class="vc-l2"><a href="queueing.html#236-uncapacitated-queues-mm1-random-arrival-and-random-service"><span class="vc-n">23.6</span> Uncapacitated queues (M/M/1) (random arrival and random service)</a></li>
+<li class="vc-l2"><a href="queueing.html#237-capacitated-queues-finite"><span class="vc-n">23.7</span> Capacitated Queues (Finite)</a></li>
+<li class="vc-l2"><a href="queueing.html#238-real-life-causes-of-queue-generation"><span class="vc-n">23.8</span> Real Life Causes of Queue Generation</a></li>
+<li class="vc-l2"><a href="queueing.html#239-examples"><span class="vc-n">23.9</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="queueing.html#example-1">Example 1</a></li><li class="vc-l3"><a href="queueing.html#example-2">Example 2</a></li><li class="vc-l3"><a href="queueing.html#example-3">Example 3</a></li><li class="vc-l3"><a href="queueing.html#example-4">Example 4</a></li></ul></li>
+<li class="vc-l2"><a href="queueing.html#2310-thought-question"><span class="vc-n">23.10</span> Thought Question</a></li>
+<li class="vc-l2"><a href="queueing.html#2311-sample-problems"><span class="vc-n">23.11</span> Sample Problems</a><ul class="vc-subs"><li class="vc-l3"><a href="queueing.html#sample-problem-1-queueing-at-a-tollbooth">Sample Problem 1 : Queueing at a Tollbooth</a></li><li class="vc-l3"><a href="queueing.html#sample-problem-2-queueing-at-a-ramp-meter">Sample Problem 2 : Queueing at a Ramp Meter</a></li><li class="vc-l3"><a href="queueing.html#sample-problem-3-queueing-at-a-ramp-meter">Sample Problem 3 : Queueing at a Ramp Meter</a></li></ul></li>
+<li class="vc-l2"><a href="queueing.html#2312-variables"><span class="vc-n">23.12</span> Variables</a></li>
+<li class="vc-l2"><a href="queueing.html#2313-key-terms"><span class="vc-n">23.13</span> Key Terms</a></li>
+<li class="vc-l2"><a href="queueing.html#2314-external-exercises"><span class="vc-n">23.14</span> External Exercises</a></li>
+<li class="vc-l2"><a href="queueing.html#2315-additional-questions"><span class="vc-n">23.15</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="queueing.html#2316-videos"><span class="vc-n">23.16</span> Videos</a></li>
+<li class="vc-l2"><a href="queueing.html#2317-references-and-notes"><span class="vc-n">23.17</span> References and Notes</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem1.html">Chapter 24: Problem1</a></li>
+<li class="vc-ch vc-leaf"><a href="solution1.html">Chapter 25: Solution1</a></li>
+<li class="vc-ch vc-leaf"><a href="problem2.html">Chapter 26: Problem2</a></li>
+<li class="vc-ch vc-leaf"><a href="solution2.html">Chapter 27: Solution2</a></li>
+<li class="vc-ch vc-leaf"><a href="problem3.html">Chapter 28: Problem3</a></li>
+<li class="vc-ch vc-leaf"><a href="solution3.html">Chapter 29: Solution3</a></li>
+<li class="vc-ch"><details><summary><a href="traffic-flow.html">Chapter 30: Traffic Flow</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="traffic-flow.html#301-traffic-flow-theory"><span class="vc-n">30.1</span> Traffic flow theory</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic-flow.html#time-space-diagram">Time-Space Diagram</a></li><li class="vc-l3"><a href="traffic-flow.html#flow-and-density">Flow and density</a></li><li class="vc-l3"><a href="traffic-flow.html#speed">Speed</a></li><li class="vc-l3"><a href="traffic-flow.html#headway">Headway</a></li></ul></li>
+<li class="vc-l2"><a href="traffic-flow.html#302-fundamental-diagram-of-traffic-flow"><span class="vc-n">30.2</span> Fundamental Diagram of Traffic Flow</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic-flow.html#traditional-model-parabolic">Traditional Model (Parabolic)</a></li><li class="vc-l3"><a href="traffic-flow.html#observation-triangular-or-truncated-triangular">Observation (Triangular or Truncated Triangular)</a></li></ul></li>
+<li class="vc-l2"><a href="traffic-flow.html#303-microscopic-and-macroscopic-models"><span class="vc-n">30.3</span> Microscopic and Macroscopic Models</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic-flow.html#microscopic-models">Microscopic Models</a></li><li class="vc-l3"><a href="traffic-flow.html#macroscopic-models">Macroscopic Models</a></li></ul></li>
+<li class="vc-l2"><a href="traffic-flow.html#304-examples"><span class="vc-n">30.4</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic-flow.html#example-1-time-mean-and-space-mean-speeds">Example 1: Time-Mean and Space-Mean Speeds</a></li><li class="vc-l3"><a href="traffic-flow.html#example-2-computing-traffic-flow-characteristics">Example 2: Computing Traffic Flow Characteristics</a></li></ul></li>
+<li class="vc-l2"><a href="traffic-flow.html#305-thought-question"><span class="vc-n">30.5</span> Thought Question</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#306-sample-problem"><span class="vc-n">30.6</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#307-variables"><span class="vc-n">30.7</span> Variables</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#308-key-terms"><span class="vc-n">30.8</span> Key Terms</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#309-supplementary-reading"><span class="vc-n">30.9</span> Supplementary Reading</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#3010-videos"><span class="vc-n">30.10</span> Videos</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#3011-references"><span class="vc-n">30.11</span> References</a></li>
+<li class="vc-l2"><a href="traffic-flow.html#3012-end-notes"><span class="vc-n">30.12</span> End Notes</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-4.html">Chapter 31: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-4.html">Chapter 32: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="queueing-and-traffic-flow.html">Chapter 33: Queueing and Traffic Flow</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#331-queueing-and-traffic-flow"><span class="vc-n">33.1</span> Queueing and Traffic Flow</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#332-hypercongestion"><span class="vc-n">33.2</span> Hypercongestion</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#333-thought-question"><span class="vc-n">33.3</span> Thought Question</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#334-additional-questions"><span class="vc-n">33.4</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#335-variables"><span class="vc-n">33.5</span> Variables</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#336-key-terms"><span class="vc-n">33.6</span> Key Terms</a></li>
+<li class="vc-l2"><a href="queueing-and-traffic-flow.html#337-references"><span class="vc-n">33.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="shockwaves.html">Chapter 34: Shockwaves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="shockwaves.html#341-visualization"><span class="vc-n">34.1</span> Visualization</a></li>
+<li class="vc-l2"><a href="shockwaves.html#342-analysis-of-shockwaves"><span class="vc-n">34.2</span> Analysis of shockwaves</a></li>
+<li class="vc-l2"><a href="shockwaves.html#343-shockwave-math"><span class="vc-n">34.3</span> Shockwave Math</a><ul class="vc-subs"><li class="vc-l3"><a href="shockwaves.html#shockwave-speed">Shockwave speed</a></li><li class="vc-l3"><a href="shockwaves.html#relative-speed">Relative speed</a></li><li class="vc-l3"><a href="shockwaves.html#boundary-crossing">Boundary crossing</a></li></ul></li>
+<li class="vc-l2"><a href="shockwaves.html#344-examples"><span class="vc-n">34.4</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="shockwaves.html#example-1">Example 1</a></li></ul></li>
+<li class="vc-l2"><a href="shockwaves.html#345-thought-question"><span class="vc-n">34.5</span> Thought Question</a></li>
+<li class="vc-l2"><a href="shockwaves.html#346-sample-problem"><span class="vc-n">34.6</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="shockwaves.html#347-additional-questions"><span class="vc-n">34.7</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="shockwaves.html#348-variables"><span class="vc-n">34.8</span> Variables</a></li>
+<li class="vc-l2"><a href="shockwaves.html#349-key-terms"><span class="vc-n">34.9</span> Key Terms</a></li>
+<li class="vc-l2"><a href="shockwaves.html#3410-videos"><span class="vc-n">34.10</span> Videos</a></li>
+<li class="vc-l2"><a href="shockwaves.html#3411-references"><span class="vc-n">34.11</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-5.html">Chapter 35: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-5.html">Chapter 36: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="traffic-signals.html">Chapter 37: Traffic Signals</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="traffic-signals.html#371-intersection-queuing"><span class="vc-n">37.1</span> Intersection Queuing</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#372-intersection-delay"><span class="vc-n">37.2</span> Intersection delay</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#373-level-of-service"><span class="vc-n">37.3</span> Level of Service</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#374-critical-lane-groups"><span class="vc-n">37.4</span> Critical Lane Groups</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#375-cycle-length-calculation"><span class="vc-n">37.5</span> Cycle Length Calculation</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#376-green-time-allocation"><span class="vc-n">37.6</span> Green Time Allocation</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#377-second-method-for-green-time"><span class="vc-n">37.7</span> Second Method For Green Time</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#378-demonstrations"><span class="vc-n">37.8</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#379-examples"><span class="vc-n">37.9</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="traffic-signals.html#example-1-intersection-queuing">Example 1: Intersection Queuing</a></li><li class="vc-l3"><a href="traffic-signals.html#example-2-total-delay">Example 2: Total Delay</a></li><li class="vc-l3"><a href="traffic-signals.html#example-3-cycle-length-calculation">Example 3: Cycle Length Calculation</a></li></ul></li>
+<li class="vc-l2"><a href="traffic-signals.html#3710-thought-question"><span class="vc-n">37.10</span> Thought Question</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3711-sample-problem"><span class="vc-n">37.11</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3712-additional-questions"><span class="vc-n">37.12</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3713-variables"><span class="vc-n">37.13</span> Variables</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3714-key-terms"><span class="vc-n">37.14</span> Key Terms</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3715-videos"><span class="vc-n">37.15</span> Videos</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3716-external-exercises"><span class="vc-n">37.16</span> External Exercises</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3717-references"><span class="vc-n">37.17</span> References</a></li>
+<li class="vc-l2"><a href="traffic-signals.html#3718-notes"><span class="vc-n">37.18</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-6.html">Chapter 38: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-6.html">Chapter 39: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="design.html">Chapter 40: Design</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="design.html#401-sight-distance"><span class="vc-n">40.1</span> Sight Distance</a></li>
+<li class="vc-l2"><a href="design.html#402-grade"><span class="vc-n">40.2</span> Grade</a></li>
+<li class="vc-l2"><a href="design.html#403-horizontal-curves"><span class="vc-n">40.3</span> Horizontal Curves</a></li>
+<li class="vc-l2"><a href="design.html#404-vertical-curves"><span class="vc-n">40.4</span> Vertical Curves</a></li>
+<li class="vc-l2"><a href="design.html#405-cross-sections"><span class="vc-n">40.5</span> Cross Sections</a></li>
+<li class="vc-l2"><a href="design.html#406-earthwork"><span class="vc-n">40.6</span> Earthwork</a></li>
+<li class="vc-l2"><a href="design.html#407-pavement-design"><span class="vc-n">40.7</span> Pavement Design</a></li>
+<li class="vc-l2"><a href="design.html#408-external-exercises"><span class="vc-n">40.8</span> External Exercises</a></li>
+<li class="vc-l2"><a href="design.html#409-additional-questions"><span class="vc-n">40.9</span> Additional Questions</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sight-distance.html">Chapter 41: Sight Distance</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sight-distance.html#411-derivations"><span class="vc-n">41.1</span> Derivations</a><ul class="vc-subs"><li class="vc-l3"><a href="sight-distance.html#stopping-sight-distance">Stopping Sight Distance</a></li><li class="vc-l3"><a href="sight-distance.html#passing-sight-distance">Passing Sight Distance</a></li></ul></li>
+<li class="vc-l2"><a href="sight-distance.html#412-demonstrations"><span class="vc-n">41.2</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="sight-distance.html#413-examples"><span class="vc-n">41.3</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="sight-distance.html#example-1-stopping-distance">Example 1: Stopping Distance</a></li><li class="vc-l3"><a href="sight-distance.html#example-2-coefficient-of-friction">Example 2: Coefficient of Friction</a></li><li class="vc-l3"><a href="sight-distance.html#example-3-grade">Example 3: Grade</a></li><li class="vc-l3"><a href="sight-distance.html#example-4-crash-reconstruction">Example 4: Crash Reconstruction</a></li><li class="vc-l3"><a href="sight-distance.html#example-5-compute-stopping-sight-distance">Example 5: Compute Stopping Sight Distance</a></li></ul></li>
+<li class="vc-l2"><a href="sight-distance.html#414-thought-question"><span class="vc-n">41.4</span> Thought Question</a></li>
+<li class="vc-l2"><a href="sight-distance.html#415-sample-problem"><span class="vc-n">41.5</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="sight-distance.html#416-additional-questions"><span class="vc-n">41.6</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="sight-distance.html#417-variables"><span class="vc-n">41.7</span> Variables</a></li>
+<li class="vc-l2"><a href="sight-distance.html#418-key-terms"><span class="vc-n">41.8</span> Key Terms</a></li>
+<li class="vc-l2"><a href="sight-distance.html#419-standards-and-practices"><span class="vc-n">41.9</span> Standards and Practices</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-7.html">Chapter 42: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-7.html">Chapter 43: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="grade.html">Chapter 44: Grade</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="grade.html#441-illustration"><span class="vc-n">44.1</span> Illustration</a></li>
+<li class="vc-l2"><a href="grade.html#442-fundamental-characteristics"><span class="vc-n">44.2</span> Fundamental Characteristics</a><ul class="vc-subs"><li class="vc-l3"><a href="grade.html#aerodynamic-resistance">Aerodynamic Resistance</a></li><li class="vc-l3"><a href="grade.html#rolling-resistance">Rolling Resistance</a></li><li class="vc-l3"><a href="grade.html#grade-resistance">Grade Resistance</a></li><li class="vc-l3"><a href="grade.html#tractive-effort">Tractive Effort</a></li><li class="vc-l3"><a href="grade.html#grade-computation">Grade Computation</a></li></ul></li>
+<li class="vc-l2"><a href="grade.html#443-examples"><span class="vc-n">44.3</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="grade.html#example-1-racecar-acceleration">Example 1: Racecar Acceleration</a></li><li class="vc-l3"><a href="grade.html#example-2-going-up-a-hill">Example 2: Going Up a Hill</a></li></ul></li>
+<li class="vc-l2"><a href="grade.html#444-thought-question"><span class="vc-n">44.4</span> Thought Question</a></li>
+<li class="vc-l2"><a href="grade.html#445-sample-problem"><span class="vc-n">44.5</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="grade.html#446-additional-questions"><span class="vc-n">44.6</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="grade.html#447-variables"><span class="vc-n">44.7</span> Variables</a></li>
+<li class="vc-l2"><a href="grade.html#448-key-terms"><span class="vc-n">44.8</span> Key Terms</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-8.html">Chapter 45: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-8.html">Chapter 46: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="earthwork.html">Chapter 47: Earthwork</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="earthwork.html#471-cross-sections-and-volume-computation"><span class="vc-n">47.1</span> Cross Sections and Volume Computation</a></li>
+<li class="vc-l2"><a href="earthwork.html#472-cut-and-fill"><span class="vc-n">47.2</span> Cut and Fill</a></li>
+<li class="vc-l2"><a href="earthwork.html#473-mass-balance"><span class="vc-n">47.3</span> Mass Balance</a></li>
+<li class="vc-l2"><a href="earthwork.html#474-demonstrations"><span class="vc-n">47.4</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="earthwork.html#475-examples"><span class="vc-n">47.5</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="earthwork.html#example-1-computing-volume">Example 1: Computing Volume</a></li><li class="vc-l3"><a href="earthwork.html#example-2-mass-balance">Example 2: Mass Balance</a></li></ul></li>
+<li class="vc-l2"><a href="earthwork.html#476-thought-question"><span class="vc-n">47.6</span> Thought Question</a></li>
+<li class="vc-l2"><a href="earthwork.html#477-sample-problem"><span class="vc-n">47.7</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="earthwork.html#478-additional-questions"><span class="vc-n">47.8</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="earthwork.html#479-demonstrations"><span class="vc-n">47.9</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="earthwork.html#4710-variables"><span class="vc-n">47.10</span> Variables</a></li>
+<li class="vc-l2"><a href="earthwork.html#4711-key-terms"><span class="vc-n">47.11</span> Key Terms</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-9.html">Chapter 48: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-9.html">Chapter 49: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="horizontal-curves.html">Chapter 50: Horizontal Curves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="horizontal-curves.html#501-fundamental-horizontal-curve-properties"><span class="vc-n">50.1</span> Fundamental Horizontal Curve Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="horizontal-curves.html#physics-properties">Physics Properties</a></li><li class="vc-l3"><a href="horizontal-curves.html#application-of-superelevation">Application of Superelevation</a></li><li class="vc-l3"><a href="horizontal-curves.html#geometric-properties">Geometric Properties</a></li><li class="vc-l3"><a href="horizontal-curves.html#sight-distance-properties">Sight Distance Properties</a></li></ul></li>
+<li class="vc-l2"><a href="horizontal-curves.html#502-demonstrations"><span class="vc-n">50.2</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="horizontal-curves.html#503-examples"><span class="vc-n">50.3</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="horizontal-curves.html#example-1-curve-radius">Example 1: Curve Radius</a></li><li class="vc-l3"><a href="horizontal-curves.html#example-2-determining-stationing">Example 2: Determining Stationing</a></li><li class="vc-l3"><a href="horizontal-curves.html#example-3-stopping-sight-distance">Example 3: Stopping Sight Distance</a></li></ul></li>
+<li class="vc-l2"><a href="horizontal-curves.html#504-sample-problem"><span class="vc-n">50.4</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="horizontal-curves.html#505-demonstrations"><span class="vc-n">50.5</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="horizontal-curves.html#506-additional-questions"><span class="vc-n">50.6</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="horizontal-curves.html#507-variables"><span class="vc-n">50.7</span> Variables</a></li>
+<li class="vc-l2"><a href="horizontal-curves.html#508-key-terms"><span class="vc-n">50.8</span> Key Terms</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-10.html">Chapter 51: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-10.html">Chapter 52: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="vertical-curves.html">Chapter 53: Vertical Curves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vertical-curves.html#531-fundamental-curve-properties"><span class="vc-n">53.1</span> Fundamental Curve Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="vertical-curves.html#parabolic-formulation">Parabolic Formulation</a></li><li class="vc-l3"><a href="vertical-curves.html#offset">Offset</a></li><li class="vc-l3"><a href="vertical-curves.html#stopping-sight-distance">Stopping Sight Distance</a></li><li class="vc-l3"><a href="vertical-curves.html#passing-sight-distance">Passing Sight Distance</a></li></ul></li>
+<li class="vc-l2"><a href="vertical-curves.html#532-demonstrations"><span class="vc-n">53.2</span> Demonstrations</a></li>
+<li class="vc-l2"><a href="vertical-curves.html#533-examples"><span class="vc-n">53.3</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="vertical-curves.html#example-1-basic-curve-information">Example 1: Basic Curve Information</a></li><li class="vc-l3"><a href="vertical-curves.html#example-2-adjustment-for-obstacles">Example 2: Adjustment for Obstacles</a></li><li class="vc-l3"><a href="vertical-curves.html#example-3-stopping-sight-distance">Example 3: Stopping Sight Distance</a></li></ul></li>
+<li class="vc-l2"><a href="vertical-curves.html#534-thought-question"><span class="vc-n">53.4</span> Thought Question</a></li>
+<li class="vc-l2"><a href="vertical-curves.html#535-sample-problem"><span class="vc-n">53.5</span> Sample Problem</a></li>
+<li class="vc-l2"><a href="vertical-curves.html#536-additional-questions"><span class="vc-n">53.6</span> Additional Questions</a></li>
+<li class="vc-l2"><a href="vertical-curves.html#537-variables"><span class="vc-n">53.7</span> Variables</a></li>
+<li class="vc-l2"><a href="vertical-curves.html#538-key-terms"><span class="vc-n">53.8</span> Key Terms</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="problem-11.html">Chapter 54: Problem</a></li>
+<li class="vc-ch vc-leaf"><a href="solution-11.html">Chapter 55: Solution</a></li>
+<li class="vc-ch"><details><summary><a href="conclusions.html">Chapter 56: Conclusions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="conclusions.html#561-connecting-places"><span class="vc-n">56.1</span> Connecting Places</a></li>
+<li class="vc-l2"><a href="conclusions.html#562-determining-road-capacity-width"><span class="vc-n">56.2</span> Determining Road Capacity (Width)</a></li>
+<li class="vc-l2"><a href="conclusions.html#563-determining-road-alignment-length"><span class="vc-n">56.3</span> Determining Road Alignment (Length)</a></li>
+<li class="vc-l2"><a href="conclusions.html#564-determining-road-strength-depth"><span class="vc-n">56.4</span> Determining Road Strength (Depth)</a></li>
+<li class="vc-l2"><a href="conclusions.html#565-putting-it-together"><span class="vc-n">56.5</span> Putting it together</a></li>
+<li class="vc-l2"><a href="conclusions.html#566-implications"><span class="vc-n">56.6</span> Implications</a></li>
+<li class="vc-l2"><a href="conclusions.html#567-thought-question"><span class="vc-n">56.7</span> Thought Question</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>An introductory course in transportation engineering: networks and travel demand (trip generation, destination, mode and route choice, and evaluation), public transit (demand, capacity, network design and timetabling), planning and operations, queueing, traffic flow, shockwaves and signals, and the geometric design of roads (sight distance, grades, earthwork, horizontal and vertical curves), each topic with a worked problem and its solution.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Fundamentals of Transportation, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Fundamentals_of_Transportation" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-control-systems/licensing.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 48. Licensing">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+48. Licensing
+</div>
+</div>
+</a>
+<a href="about-2.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. About">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. About
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

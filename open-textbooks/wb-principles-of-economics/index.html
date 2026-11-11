@@ -1,0 +1,946 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-principles-of-economics/index.html">
+<link rel="prev" href="../wb-abstract-algebra/authors.html">
+<link rel="next" href="to-the-student.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Principles of Economics</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="to-the-student.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. To the Student
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-is-economics.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. What is Economics?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-kind-of-economist.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. What kind of economist are you?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="scarcity.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Scarcity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="economic-modeling.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Economic Modeling
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="assumptions-economists-make.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Assumptions Economists Make
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="allocation.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Allocation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="perfect-competition.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Perfect Competition
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cautions.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Cautions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="specialization-and-gains-from-trade.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Specialization and Gains From Trade
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ppf.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Production Possibilities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="demand.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Demand
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="supply.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Supply
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="utility.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Utility
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="marginal-utility.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Marginal Utility
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="opportunity-costs.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Opportunity Costs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="demand-laws.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Demand Laws
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="elasticity.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Elasticity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="economic-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Economic Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graphs.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Graphs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="budget-constraints.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Budget Constraints
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ppf-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Production Possibilities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="indifference.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Indifference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="types-of-goods.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Types of Goods
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="budget-compensation.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Budget Compensation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trade.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Trade and Specialization
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="labor-production.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Labor Production
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="wage.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Wage
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="costs-to-firm.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Costs to Firm
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="economies-of-scale.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Economies of Scale
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="supply-and-demand.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Supply and Demand
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="s-d-shifts.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. S-D Shifts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="macro-objectives.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Macro objectives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gdp.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. GDP
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="multipliers.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Multipliers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="money-supply.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Money Supply
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="money.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Money
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="monetary-policy.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Monetary Policy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fiscal-policy.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Fiscal Policy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="taxation.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Taxation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="interest-rates.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Interest Rates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="laffer.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Laffer Curve
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="keynesian-cross.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Keynesian Cross Model
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="asad.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Aggregate Supply & Demand Model (ASAD)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="liquidity-trap.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Liquidity Trap Money Model
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="islm.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Investment Savings Loan Money model (ISLM)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="philips.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Philips Curve
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="labor-supply.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Back-ward Bending Labor Supply Curve
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="list-of-contributors.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix A. Special contributions to this work
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-principles-of-economics" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="to-the-student.html" style="--cv-bg:#6b2d3c;--cv-accent:#f1c86b;--cv-fg:#f6f1e3;--cv-n:20;--cv-rot:34deg;--cv-x:50%;--cv-y:78%" aria-label="Start reading Principles of Economics"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Principles of Economics</span><span class="vol-sub">A brief introduction</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Principles of Economics</h1>
+<p class="pk-book-sub">A brief introduction</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Scarcity, supply and demand, utility and elasticity, the costs of firms, and the basic models of macroeconomics.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/economics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="9" cy="7" rx="5.5" ry="2.5"/><path d="M3.5 7v4c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5V7M9.5 13.6v2.9c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5v-4c0-1.4-2.5-2.5-5.5-2.5"/></svg><span class="pk-chip-cat">Society, Law &amp; Economics &rsaquo;</span> Economics &amp; Business</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="to-the-student.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-principles-of-economics"></div></div>
+<p class="pk-book-facts"><span>48 chapters</span><span>1 appendix</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-principles-of-economics" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Preface</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="to-the-student.html">Section 1: To the Student</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="to-the-student.html#11-dear-student"><span class="vc-n">1.1</span> Dear Student</a></li>
+<li class="vc-l2"><a href="to-the-student.html#12-why-study-economics"><span class="vc-n">1.2</span> Why study economics?</a></li>
+<li class="vc-l2"><a href="to-the-student.html#13-why-economics"><span class="vc-n">1.3</span> Why economics?</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="what-is-economics.html">Section 2: What is Economics?</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="what-is-economics.html#21-micro-and-macro"><span class="vc-n">2.1</span> Micro and Macro</a></li>
+<li class="vc-l2"><a href="what-is-economics.html#22-themes"><span class="vc-n">2.2</span> Themes</a></li>
+<li class="vc-l2"><a href="what-is-economics.html#23-human-behavior"><span class="vc-n">2.3</span> Human Behavior</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="what-kind-of-economist.html">Section 3: What kind of economist are you?</a></li>
+</ul>
+<p class="toc-group">Introduction</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="scarcity.html">Section 4: Scarcity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="scarcity.html#41-importance-influence-on-other-concepts"><span class="vc-n">4.1</span> Importance: Influence on Other Concepts</a><ul class="vc-subs"><li class="vc-l3"><a href="scarcity.html#opportunity-cost-and-trade-off">Opportunity Cost and Trade-off</a></li><li class="vc-l3"><a href="scarcity.html#rationality">Rationality</a></li><li class="vc-l3"><a href="scarcity.html#law-of-demand">Law of Demand</a></li></ul></li>
+<li class="vc-l2"><a href="scarcity.html#42-conclusion"><span class="vc-n">4.2</span> Conclusion</a></li>
+<li class="vc-l2"><a href="scarcity.html#43-check-your-understanding"><span class="vc-n">4.3</span> Check your Understanding</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="economic-modeling.html">Section 5: Economic Modeling</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="economic-modeling.html#51-use-of-models"><span class="vc-n">5.1</span> Use of Models</a></li>
+<li class="vc-l2"><a href="economic-modeling.html#52-methodology"><span class="vc-n">5.2</span> Methodology</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="assumptions-economists-make.html">Section 6: Assumptions Economists Make</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="assumptions-economists-make.html#61-ceteris-paribus"><span class="vc-n">6.1</span> Ceteris paribus</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="allocation.html">Section 7: Allocation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="allocation.html#71-scarcity-allocation-and-markets"><span class="vc-n">7.1</span> Scarcity, Allocation, and Markets</a></li>
+<li class="vc-l2"><a href="allocation.html#72-productive-and-allocative-efficiency"><span class="vc-n">7.2</span> Productive and Allocative Efficiency</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="perfect-competition.html">Section 8: Perfect Competition</a></li>
+<li class="vc-ch"><details><summary><a href="cautions.html">Section 9: Cautions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cautions.html#91-sunken-costs"><span class="vc-n">9.1</span> Sunken Costs</a></li>
+<li class="vc-l2"><a href="cautions.html#92-post-hoc-fallacy"><span class="vc-n">9.2</span> Post Hoc fallacy</a></li>
+<li class="vc-l2"><a href="cautions.html#93-correlation"><span class="vc-n">9.3</span> Correlation</a></li>
+<li class="vc-l2"><a href="cautions.html#94-fallacy-of-composition"><span class="vc-n">9.4</span> Fallacy of composition</a></li>
+<li class="vc-l2"><a href="cautions.html#95-fallacy-of-external-percentages"><span class="vc-n">9.5</span> Fallacy of external percentages</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="specialization-and-gains-from-trade.html">Section 10: Specialization and Gains From Trade</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="specialization-and-gains-from-trade.html#101-gains-from-trade-an-example"><span class="vc-n">10.1</span> Gains from Trade: An Example</a><ul class="vc-subs"><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#the-situation-with-no-trade">The Situation with No Trade</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#the-situation-with-trade">The Situation with Trade</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#conclusion-to-take-away">Conclusion to Take Away</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#the-catch-of-this-simple-example">The Catch of this Simple Example</a></li></ul></li>
+<li class="vc-l2"><a href="specialization-and-gains-from-trade.html#102-absolute-advantage-versus-comparative-advantage"><span class="vc-n">10.2</span> Absolute Advantage Versus Comparative Advantage</a><ul class="vc-subs"><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#production-possibility-frontier">Production Possibility Frontier</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#comparative-advantage">Comparative Advantage</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#taking-advantage-of-comparative-advantage">Taking &quot;Advantage&quot; of Comparative Advantage</a></li><li class="vc-l3"><a href="specialization-and-gains-from-trade.html#conclusion">Conclusion</a></li></ul></li>
+<li class="vc-l2"><a href="specialization-and-gains-from-trade.html#103-check-your-understanding"><span class="vc-n">10.3</span> Check your Understanding</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="ppf.html">Section 11: Production Possibilities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ppf.html#111-the-ppf"><span class="vc-n">11.1</span> The PPF</a></li>
+<li class="vc-l2"><a href="ppf.html#112-the-basic-frontier"><span class="vc-n">11.2</span> The basic frontier</a></li>
+<li class="vc-l2"><a href="ppf.html#113-shifts-in-the-frontier"><span class="vc-n">11.3</span> Shifts in the frontier</a></li>
+<li class="vc-l2"><a href="ppf.html#114-growth-in-the-frontier"><span class="vc-n">11.4</span> Growth in the frontier</a></li>
+<li class="vc-l2"><a href="ppf.html#115-flattening-of-the-ppf"><span class="vc-n">11.5</span> Flattening of the PPF</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="demand.html">Section 12: Demand</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="demand.html#121-demand"><span class="vc-n">12.1</span> Demand</a></li>
+<li class="vc-l2"><a href="demand.html#122-quantity-demanded"><span class="vc-n">12.2</span> Quantity demanded</a></li>
+<li class="vc-l2"><a href="demand.html#123-consumer-surplus"><span class="vc-n">12.3</span> Consumer surplus</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="supply.html">Section 13: Supply</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="supply.html#131-firms-production-position"><span class="vc-n">13.1</span> Firm&#x27;s production position</a></li>
+<li class="vc-l2"><a href="supply.html#132-market-long-run-supply"><span class="vc-n">13.2</span> Market long run supply</a></li>
+<li class="vc-l2"><a href="supply.html#133-firms-short-run-minimum-position"><span class="vc-n">13.3</span> Firm&#x27;s short run minimum position</a></li>
+<li class="vc-l2"><a href="supply.html#134-firms-short-and-long-run-positions"><span class="vc-n">13.4</span> Firm&#x27;s short and long run positions</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Microeconomics</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="utility.html">Section 14: Utility</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="utility.html#141-definition-of-utility"><span class="vc-n">14.1</span> Definition of Utility</a></li>
+<li class="vc-l2"><a href="utility.html#142-rationality-and-utility"><span class="vc-n">14.2</span> Rationality and Utility</a></li>
+<li class="vc-l2"><a href="utility.html#143-measurement"><span class="vc-n">14.3</span> Measurement</a></li>
+<li class="vc-l2"><a href="utility.html#144-being-better-off"><span class="vc-n">14.4</span> Being &quot;better off&quot;</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="marginal-utility.html">Section 15: Marginal Utility</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="marginal-utility.html#151-average-versus-marginal"><span class="vc-n">15.1</span> Average versus Marginal</a></li>
+<li class="vc-l2"><a href="marginal-utility.html#152-utility-and-marginal-utility"><span class="vc-n">15.2</span> Utility and Marginal Utility</a></li>
+<li class="vc-l2"><a href="marginal-utility.html#153-law-of-diminishing-returns"><span class="vc-n">15.3</span> Law of Diminishing Returns</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="opportunity-costs.html">Section 16: Opportunity Costs</a></li>
+<li class="vc-ch"><details><summary><a href="demand-laws.html">Section 17: Demand Laws</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="demand-laws.html#171-income-effect"><span class="vc-n">17.1</span> Income effect</a></li>
+<li class="vc-l2"><a href="demand-laws.html#172-substitution-effect"><span class="vc-n">17.2</span> Substitution effect</a></li>
+<li class="vc-l2"><a href="demand-laws.html#173-normal-and-inferior-goods"><span class="vc-n">17.3</span> Normal and inferior goods</a></li>
+<li class="vc-l2"><a href="demand-laws.html#174-diminishing-returns"><span class="vc-n">17.4</span> Diminishing returns</a></li>
+<li class="vc-l2"><a href="demand-laws.html#175-check-your-understanding"><span class="vc-n">17.5</span> Check your Understanding</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="elasticity.html">Section 18: Elasticity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="elasticity.html#181-cross-elasticities"><span class="vc-n">18.1</span> Cross elasticities</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="economic-systems.html">Section 19: Economic Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="economic-systems.html#191-planned-economies"><span class="vc-n">19.1</span> Planned Economies</a></li>
+<li class="vc-l2"><a href="economic-systems.html#192-market-economies"><span class="vc-n">19.2</span> Market Economies</a></li>
+<li class="vc-l2"><a href="economic-systems.html#193-mixed-economies"><span class="vc-n">19.3</span> Mixed Economies</a></li>
+<li class="vc-l2"><a href="economic-systems.html#194-markets"><span class="vc-n">19.4</span> Markets</a></li>
+<li class="vc-l2"><a href="economic-systems.html#195-review"><span class="vc-n">19.5</span> Review</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Models</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="graphs.html">Section 20: Graphs</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="graphs.html#201-graph-reading"><span class="vc-n">20.1</span> Graph reading</a></li>
+<li class="vc-l2"><a href="graphs.html#202-graph-reading-continued"><span class="vc-n">20.2</span> Graph reading continued</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="budget-constraints.html">Section 21: Budget Constraints</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="budget-constraints.html#211-budget"><span class="vc-n">21.1</span> Budget</a></li>
+<li class="vc-l2"><a href="budget-constraints.html#212-budgets-at-differing-incomes"><span class="vc-n">21.2</span> Budgets at differing incomes</a></li>
+<li class="vc-l2"><a href="budget-constraints.html#213-budgets-and-changing-prices"><span class="vc-n">21.3</span> Budgets and changing prices</a></li>
+<li class="vc-l2"><a href="budget-constraints.html#214-increase-in-cost-of-good-1"><span class="vc-n">21.4</span> Increase in cost of good 1</a></li>
+<li class="vc-l2"><a href="budget-constraints.html#215-increase-in-cost-of-good-2"><span class="vc-n">21.5</span> Increase in cost of good 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="ppf-2.html">Section 22: Production Possibilities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ppf-2.html#221-the-ppf"><span class="vc-n">22.1</span> The PPF</a></li>
+<li class="vc-l2"><a href="ppf-2.html#222-the-basic-frontier"><span class="vc-n">22.2</span> The basic frontier</a></li>
+<li class="vc-l2"><a href="ppf-2.html#223-shifts-in-the-frontier"><span class="vc-n">22.3</span> Shifts in the frontier</a></li>
+<li class="vc-l2"><a href="ppf-2.html#224-growth-in-the-frontier"><span class="vc-n">22.4</span> Growth in the frontier</a></li>
+<li class="vc-l2"><a href="ppf-2.html#225-flattening-of-the-ppf"><span class="vc-n">22.5</span> Flattening of the PPF</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="indifference.html">Section 23: Indifference</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="indifference.html#231-indifference-and-preference"><span class="vc-n">23.1</span> Indifference and Preference</a></li>
+<li class="vc-l2"><a href="indifference.html#232-indifference-curves"><span class="vc-n">23.2</span> Indifference curves</a></li>
+<li class="vc-l2"><a href="indifference.html#233-budget-with-indifference-curves"><span class="vc-n">23.3</span> Budget with indifference curves</a></li>
+<li class="vc-l2"><a href="indifference.html#234-ppf-with-indifference-curves"><span class="vc-n">23.4</span> PPF with indifference curves</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="types-of-goods.html">Section 24: Types of Goods</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="types-of-goods.html#241-ordinary-goods"><span class="vc-n">24.1</span> Ordinary goods</a></li>
+<li class="vc-l2"><a href="types-of-goods.html#242-perfect-complements"><span class="vc-n">24.2</span> Perfect complements</a></li>
+<li class="vc-l2"><a href="types-of-goods.html#243-perfect-substitutes"><span class="vc-n">24.3</span> Perfect substitutes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="budget-compensation.html">Section 25: Budget Compensation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="budget-compensation.html#251-increase-in-price-of-good-1"><span class="vc-n">25.1</span> Increase in price of good 1</a></li>
+<li class="vc-l2"><a href="budget-compensation.html#252-compensated-budget"><span class="vc-n">25.2</span> Compensated budget</a></li>
+<li class="vc-l2"><a href="budget-compensation.html#253-income-and-substitution-effects"><span class="vc-n">25.3</span> Income and substitution effects</a></li>
+<li class="vc-l2"><a href="budget-compensation.html#254-contradicting-effects"><span class="vc-n">25.4</span> Contradicting effects</a></li>
+<li class="vc-l2"><a href="budget-compensation.html#255-contradicting-effects-part-2"><span class="vc-n">25.5</span> Contradicting effects part 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="trade.html">Section 26: Trade and Specialization</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trade.html#261-differences-between-entities"><span class="vc-n">26.1</span> Differences between entities</a></li>
+<li class="vc-l2"><a href="trade.html#262-trade"><span class="vc-n">26.2</span> Trade</a></li>
+<li class="vc-l2"><a href="trade.html#263-specialization"><span class="vc-n">26.3</span> Specialization</a></li>
+<li class="vc-l2"><a href="trade.html#264-trade-with-specialization"><span class="vc-n">26.4</span> Trade with specialization</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="labor-production.html">Section 27: Labor Production</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="labor-production.html#271-marginal-product-of-labor"><span class="vc-n">27.1</span> Marginal product of labor</a></li>
+<li class="vc-l2"><a href="labor-production.html#272-firms-production-frontier"><span class="vc-n">27.2</span> Firms&#x27; production frontier</a></li>
+<li class="vc-l2"><a href="labor-production.html#273-isoprofit-lines-set"><span class="vc-n">27.3</span> Isoprofit lines set</a></li>
+<li class="vc-l2"><a href="labor-production.html#274-isoprofit-lines-part-2"><span class="vc-n">27.4</span> Isoprofit lines part 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="wage.html">Section 28: Wage</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="wage.html#281-firms-isoprofit-line"><span class="vc-n">28.1</span> Firm&#x27;s isoprofit line</a></li>
+<li class="vc-l2"><a href="wage.html#282-labor-hired"><span class="vc-n">28.2</span> Labor hired</a></li>
+<li class="vc-l2"><a href="wage.html#283-wage-rate"><span class="vc-n">28.3</span> Wage rate</a></li>
+<li class="vc-l2"><a href="wage.html#284-wage-loss-and-surplus"><span class="vc-n">28.4</span> Wage loss and surplus</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="costs-to-firm.html">Section 29: Costs to Firm</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="costs-to-firm.html#291-average-fixed-cost"><span class="vc-n">29.1</span> Average fixed cost</a></li>
+<li class="vc-l2"><a href="costs-to-firm.html#292-total-fixed-cost"><span class="vc-n">29.2</span> Total fixed cost</a></li>
+<li class="vc-l2"><a href="costs-to-firm.html#293-average-and-marginal-variable-cost"><span class="vc-n">29.3</span> Average and marginal variable cost</a></li>
+<li class="vc-l2"><a href="costs-to-firm.html#294-individual-supply"><span class="vc-n">29.4</span> Individual Supply</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="economies-of-scale.html">Section 30: Economies of Scale</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="economies-of-scale.html#301-adding-capital"><span class="vc-n">30.1</span> Adding capital</a></li>
+<li class="vc-l2"><a href="economies-of-scale.html#302-economies-of-scale"><span class="vc-n">30.2</span> Economies of scale</a></li>
+<li class="vc-l2"><a href="economies-of-scale.html#303-long-run-supply"><span class="vc-n">30.3</span> Long run supply</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="supply-and-demand.html">Section 31: Supply and Demand</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="supply-and-demand.html#311-the-model"><span class="vc-n">31.1</span> The Model</a></li>
+<li class="vc-l2"><a href="supply-and-demand.html#312-supply-and-demand"><span class="vc-n">31.2</span> Supply and demand</a></li>
+<li class="vc-l2"><a href="supply-and-demand.html#313-total-revenue"><span class="vc-n">31.3</span> Total revenue</a></li>
+<li class="vc-l2"><a href="supply-and-demand.html#314-firms-output-surplus-and-loss"><span class="vc-n">31.4</span> Firm&#x27;s output surplus and loss</a></li>
+<li class="vc-l2"><a href="supply-and-demand.html#315-consumer-surplus"><span class="vc-n">31.5</span> Consumer surplus</a></li>
+<li class="vc-l2"><a href="supply-and-demand.html#316-surplus-and-shortage"><span class="vc-n">31.6</span> Surplus and Shortage</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="s-d-shifts.html">Section 32: S-D Shifts</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="s-d-shifts.html#321-shift-in-supply"><span class="vc-n">32.1</span> Shift in supply</a></li>
+<li class="vc-l2"><a href="s-d-shifts.html#322-shift-in-demand"><span class="vc-n">32.2</span> Shift in demand</a></li>
+<li class="vc-l2"><a href="s-d-shifts.html#323-shift-in-supply-and-demand"><span class="vc-n">32.3</span> Shift in supply and demand</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="laffer.html">Section 42: Laffer Curve</a></li>
+<li class="vc-ch vc-leaf"><a href="keynesian-cross.html">Section 43: Keynesian Cross Model</a></li>
+<li class="vc-ch"><details><summary><a href="asad.html">Section 44: Aggregate Supply &amp; Demand Model (ASAD)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="asad.html#441-the-concept"><span class="vc-n">44.1</span> The Concept</a></li>
+<li class="vc-l2"><a href="asad.html#442-aggregate-supply"><span class="vc-n">44.2</span> Aggregate Supply</a></li>
+<li class="vc-l2"><a href="asad.html#443-the-model"><span class="vc-n">44.3</span> The Model</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="liquidity-trap.html">Section 45: Liquidity Trap Money Model</a></li>
+<li class="vc-ch"><details><summary><a href="islm.html">Section 46: Investment Savings Loan Money model (ISLM)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="islm.html#461-the-concept"><span class="vc-n">46.1</span> The Concept</a></li>
+<li class="vc-l2"><a href="islm.html#462-the-model"><span class="vc-n">46.2</span> The Model</a></li>
+<li class="vc-l2"><a href="islm.html#463-changes"><span class="vc-n">46.3</span> Changes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="philips.html">Section 47: Philips Curve</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="philips.html#471-short-run-philips-curve"><span class="vc-n">47.1</span> Short Run Philips Curve</a></li>
+<li class="vc-l2"><a href="philips.html#472-long-run-philips-curve"><span class="vc-n">47.2</span> Long Run Philips Curve</a></li>
+<li class="vc-l2"><a href="philips.html#473-vicious-spiral-upward"><span class="vc-n">47.3</span> Vicious Spiral Upward</a></li>
+<li class="vc-l2"><a href="philips.html#474-vicious-spiral-downward"><span class="vc-n">47.4</span> Vicious Spiral Downward</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="labor-supply.html">Section 48: Back-ward Bending Labor Supply Curve</a></li>
+</ul>
+<p class="toc-group">Macroeconomics</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="macro-objectives.html">Section 33: Macro objectives</a></li>
+<li class="vc-ch"><details><summary><a href="gdp.html">Section 34: GDP</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gdp.html#341-measuring-the-gross-domestic-product"><span class="vc-n">34.1</span> Measuring the Gross Domestic Product</a><ul class="vc-subs"><li class="vc-l3"><a href="gdp.html#market-value">Market Value</a></li><li class="vc-l3"><a href="gdp.html#national-income-accounting-model">National Income Accounting Model</a></li><li class="vc-l3"><a href="gdp.html#national-expenditure-accounting-model">National Expenditure Accounting Model</a></li></ul></li>
+<li class="vc-l2"><a href="gdp.html#342-limitations-with-the-gdp-model"><span class="vc-n">34.2</span> Limitations with the GDP Model</a></li>
+<li class="vc-l2"><a href="gdp.html#343-top-10-highest-countries-listed-by-gdp-us-dollars-at-current-nominal-exchange-rates"><span class="vc-n">34.3</span> Top 10 highest countries listed by GDP (US dollars at current nominal exchange rates)</a></li>
+<li class="vc-l2"><a href="gdp.html#344-check-your-understanding"><span class="vc-n">34.4</span> Check your Understanding</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="multipliers.html">Section 35: Multipliers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="multipliers.html#351-the-concept"><span class="vc-n">35.1</span> The Concept</a></li>
+<li class="vc-l2"><a href="multipliers.html#352-the-multipliers"><span class="vc-n">35.2</span> The Multipliers</a><ul class="vc-subs"><li class="vc-l3"><a href="multipliers.html#standard-lump-sum-tax-equation">Standard Lump-sum Tax Equation</a></li><li class="vc-l3"><a href="multipliers.html#standard-income-tax-equation">Standard Income Tax Equation</a></li><li class="vc-l3"><a href="multipliers.html#standard-government-spending-equation">Standard Government Spending Equation</a></li><li class="vc-l3"><a href="multipliers.html#standard-investment-equation">Standard Investment Equation</a></li><li class="vc-l3"><a href="multipliers.html#standard-exports-equation">Standard Exports Equation</a></li><li class="vc-l3"><a href="multipliers.html#balanced-budget-government-spending-equation">Balanced-Budget Government Spending Equation</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="money-supply.html">Section 36: Money Supply</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="money-supply.html#361-money"><span class="vc-n">36.1</span> Money</a></li>
+<li class="vc-l2"><a href="money-supply.html#362-money-supply"><span class="vc-n">36.2</span> Money Supply</a><ul class="vc-subs"><li class="vc-l3"><a href="money-supply.html#consequences-of-changing-the-money-supply">Consequences of changing the Money Supply</a></li></ul></li>
+<li class="vc-l2"><a href="money-supply.html#363-money-circulation"><span class="vc-n">36.3</span> Money Circulation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="money.html">Section 37: Money</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="money.html#371-definitions-of-money"><span class="vc-n">37.1</span> Definitions of Money</a></li>
+<li class="vc-l2"><a href="money.html#372-equations"><span class="vc-n">37.2</span> Equations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="monetary-policy.html">Section 38: Monetary Policy</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="monetary-policy.html#381-setting-the-required-reserve-ratio"><span class="vc-n">38.1</span> Setting the required reserve ratio</a></li>
+<li class="vc-l2"><a href="monetary-policy.html#382-setting-the-discount-window-lending-rate"><span class="vc-n">38.2</span> Setting the discount window lending rate</a></li>
+<li class="vc-l2"><a href="monetary-policy.html#383-open-market-operations"><span class="vc-n">38.3</span> Open market operations</a></li>
+<li class="vc-l2"><a href="monetary-policy.html#384-moral-suasion"><span class="vc-n">38.4</span> Moral suasion</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="fiscal-policy.html">Section 39: Fiscal Policy</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fiscal-policy.html#391-aggregate-demand"><span class="vc-n">39.1</span> Aggregate Demand</a></li>
+<li class="vc-l2"><a href="fiscal-policy.html#392-aggregate-supply"><span class="vc-n">39.2</span> Aggregate Supply</a><ul class="vc-subs"><li class="vc-l3"><a href="fiscal-policy.html#capital-spending">Capital Spending</a></li><li class="vc-l3"><a href="fiscal-policy.html#workforce-incentives">Workforce Incentives</a></li><li class="vc-l3"><a href="fiscal-policy.html#rd-and-innovation">R&amp;D and Innovation</a></li></ul></li>
+<li class="vc-l2"><a href="fiscal-policy.html#393-fiscal-policy-terms"><span class="vc-n">39.3</span> Fiscal Policy Terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="taxation.html">Section 40: Taxation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="taxation.html#401-principles-of-a-good-tax-system"><span class="vc-n">40.1</span> Principles of a Good Tax System</a></li>
+<li class="vc-l2"><a href="taxation.html#402-direct-and-indirect-taxation"><span class="vc-n">40.2</span> Direct and Indirect Taxation</a></li>
+<li class="vc-l2"><a href="taxation.html#403-taxation-structure"><span class="vc-n">40.3</span> Taxation Structure</a><ul class="vc-subs"><li class="vc-l3"><a href="taxation.html#proportional-taxation">Proportional Taxation</a></li><li class="vc-l3"><a href="taxation.html#progressive-taxation">Progressive Taxation</a></li><li class="vc-l3"><a href="taxation.html#regressive-taxation">Regressive Taxation</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="interest-rates.html">Section 41: Interest Rates</a></li>
+</ul>
+<p class="toc-group">Appendices</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="list-of-contributors.html">Appendix A: Special contributions to this work</a></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A short first course in economics with no prerequisites: thinking like an economist, scarcity and opportunity cost, gains from trade, supply and demand, utility and elasticity, budget constraints and indifference curves, labour, wages and the costs of firms, and in macroeconomics GDP, multipliers, money, monetary and fiscal policy, taxation and interest rates, with the Keynesian cross, AS-AD, IS-LM and Phillips curve models.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Principles of Economics, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Principles_of_Economics" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-abstract-algebra/authors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 37. Authors">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+37. Authors
+</div>
+</div>
+</a>
+<a href="to-the-student.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. To the Student">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. To the Student
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

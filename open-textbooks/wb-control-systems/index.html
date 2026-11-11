@@ -1,0 +1,1186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-control-systems/index.html">
+<link rel="prev" href="../wb-animal-anatomy-physiology/table-of-contents.html">
+<link rel="next" href="preface.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Control Systems</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-identification.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. System Identification
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-and-analog.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Digital and Analog
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-metrics.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. System Metrics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-modeling.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. System Modeling
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transforms.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Transforms
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transfer-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Transfer Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sampled-data-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Sampled Data Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-delays.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. System Delays
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="poles-and-zeros.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Poles and Zeros
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="state-space-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. State-Space Equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="linear-system-solutions.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Linear System Solutions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="time-variant-system-solutions.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Time Variant System Solutions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-state-space.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Digital State Space
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="eigenvalues-and-eigenvectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Eigenvalues and Eigenvectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="standard-forms.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Standard Forms
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mimo-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. MIMO Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="realizations.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Realizations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gain.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Gain
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="block-diagrams.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Block Diagrams
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="feedback-loops.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Feedback Loops
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="signal-flow-diagrams.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Signal Flow Diagrams
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="bode-plots.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Bode Plots
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nichols-charts.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Nichols Charts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="stability.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Stability
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="state-space-stability.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. State-Space Stability
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction-to-digital-controls.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Discrete Time Stability
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="routh-hurwitz-criterion.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Routh-Hurwitz Criterion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="jurys-test.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Jurys Test
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="root-locus.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Root Locus
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nyquist-stability-criteria.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Nyquist Stability Criteria
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="controllability-and-observability.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Controllability and Observability
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-specifications.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. System Specifications
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="state-feedback.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. State Feedback
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="estimators-and-observers.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Estimators and Observers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="controllers-and-compensators.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Controllers and Compensators
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polynomial-design.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Polynomial Design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="adaptive-control.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Adaptive Control
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="state-machines.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. State Machines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nonlinear-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Nonlinear Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="common-nonlinearities.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Common Nonlinearities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="noise-driven-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Noise Driven Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="examples.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Examples
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="physical-models.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix A. Physical Models
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="z-transform-mappings.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix B. Z Transform Mappings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transforms-appendix.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix C. Transforms Appendix
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="system-representations.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix D. System Representations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="matrix-operations.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix E. Matrix Operations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="matlab.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix F. MATLAB
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="list-of-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. List of Equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="resources.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Resources
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="licensing.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Licensing
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-control-systems" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="preface.html" style="--cv-bg:#22385f;--cv-accent:#f2b544;--cv-fg:#eef3f8;--cv-n:20;--cv-rot:40deg;--cv-x:41%;--cv-y:91%" aria-label="Start reading Control Systems"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Control Systems</span><span class="vol-sub">Classical and modern control engineering</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Control Systems</h1>
+<p class="pk-book-sub">Classical and modern control engineering</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Transfer functions, poles and zeros, state space, stability, root locus, Bode and Nyquist plots, observers, controllers and digital control.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-intermediate">Intermediate</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/engineering.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.3"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M5.5 18.5l2.1-2.1M16.4 7.6l2.1-2.1"/></svg>Engineering</a><a class="pk-chip" href="../../subjects/electronics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.2 3 5.5 13.5h6L10.8 21l7.7-10.5h-6z"/></svg><span class="pk-chip-cat">Engineering &rsaquo;</span> Electronics &amp; Electrical</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="preface.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-control-systems"></div></div>
+<p class="pk-book-facts"><span>48 chapters</span><span>6 appendices</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-control-systems" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="preface.html">Section 1: Preface</a></li>
+<li class="vc-ch"><details><summary><a href="adaptive-control.html">Section 39: Adaptive Control</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="adaptive-control.html#391-adaptive-controllers"><span class="vc-n">39.1</span> Adaptive Controllers</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="noise-driven-systems.html">Section 43: Noise Driven Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="noise-driven-systems.html#431-noise-driven-systems"><span class="vc-n">43.1</span> Noise-Driven Systems</a></li>
+<li class="vc-l2"><a href="noise-driven-systems.html#432-probability-refresher"><span class="vc-n">43.2</span> Probability Refresher</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-driven-systems.html#expectation">Expectation</a></li><li class="vc-l3"><a href="noise-driven-systems.html#covariance">Covariance</a></li></ul></li>
+<li class="vc-l2"><a href="noise-driven-systems.html#433-noise-driven-system-description"><span class="vc-n">43.3</span> Noise-Driven System Description</a></li>
+<li class="vc-l2"><a href="noise-driven-systems.html#434-mean-system-response"><span class="vc-n">43.4</span> Mean System Response</a></li>
+<li class="vc-l2"><a href="noise-driven-systems.html#435-system-covariance"><span class="vc-n">43.5</span> System Covariance</a></li>
+<li class="vc-l2"><a href="noise-driven-systems.html#436-alternate-analysis"><span class="vc-n">43.6</span> Alternate Analysis</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="examples.html">Section 44: Examples</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="examples.html#441-worked-examples"><span class="vc-n">44.1</span> Worked Examples</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Controls Introduction</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="introduction.html">Section 2: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#21-this-wikibook"><span class="vc-n">2.1</span> This Wikibook</a></li>
+<li class="vc-l2"><a href="introduction.html#22-what-are-control-systems"><span class="vc-n">2.2</span> What are Control Systems?</a></li>
+<li class="vc-l2"><a href="introduction.html#23-classical-and-modern"><span class="vc-n">2.3</span> Classical and Modern</a></li>
+<li class="vc-l2"><a href="introduction.html#24-who-is-this-book-for"><span class="vc-n">2.4</span> Who is This Book For?</a></li>
+<li class="vc-l2"><a href="introduction.html#25-what-are-the-prerequisites"><span class="vc-n">2.5</span> What are the Prerequisites?</a></li>
+<li class="vc-l2"><a href="introduction.html#26-how-is-this-book-organized"><span class="vc-n">2.6</span> How is this Book Organized?</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction.html#versions">Versions</a></li></ul></li>
+<li class="vc-l2"><a href="introduction.html#27-differential-equations-review"><span class="vc-n">2.7</span> Differential Equations Review</a></li>
+<li class="vc-l2"><a href="introduction.html#28-history"><span class="vc-n">2.8</span> History</a></li>
+<li class="vc-l2"><a href="introduction.html#29-branches-of-control-engineering"><span class="vc-n">2.9</span> Branches of Control Engineering</a></li>
+<li class="vc-l2"><a href="introduction.html#210-matlab"><span class="vc-n">2.10</span> MATLAB</a></li>
+<li class="vc-l2"><a href="introduction.html#211-about-formatting"><span class="vc-n">2.11</span> About Formatting</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction.html#mathematical-conventions">Mathematical Conventions</a></li><li class="vc-l3"><a href="introduction.html#text-conventions">Text Conventions</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-identification.html">Section 3: System Identification</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-identification.html#31-systems"><span class="vc-n">3.1</span> Systems</a></li>
+<li class="vc-l2"><a href="system-identification.html#32-system-properties"><span class="vc-n">3.2</span> System Properties</a></li>
+<li class="vc-l2"><a href="system-identification.html#33-initial-time"><span class="vc-n">3.3</span> Initial Time</a></li>
+<li class="vc-l2"><a href="system-identification.html#34-additivity"><span class="vc-n">3.4</span> Additivity</a><ul class="vc-subs"><li class="vc-l3"><a href="system-identification.html#example-sinusoids">Example: Sinusoids</a></li></ul></li>
+<li class="vc-l2"><a href="system-identification.html#35-homogeneity"><span class="vc-n">3.5</span> Homogeneity</a><ul class="vc-subs"><li class="vc-l3"><a href="system-identification.html#example-straight-line">Example: Straight-Line</a></li></ul></li>
+<li class="vc-l2"><a href="system-identification.html#36-linearity"><span class="vc-n">3.6</span> Linearity</a><ul class="vc-subs"><li class="vc-l3"><a href="system-identification.html#example-linear-differential-equations">Example: Linear Differential Equations</a></li></ul></li>
+<li class="vc-l2"><a href="system-identification.html#37-memory"><span class="vc-n">3.7</span> Memory</a></li>
+<li class="vc-l2"><a href="system-identification.html#38-causality"><span class="vc-n">3.8</span> Causality</a></li>
+<li class="vc-l2"><a href="system-identification.html#39-time-invariance"><span class="vc-n">3.9</span> Time-Invariance</a></li>
+<li class="vc-l2"><a href="system-identification.html#310-lti-systems"><span class="vc-n">3.10</span> LTI Systems</a></li>
+<li class="vc-l2"><a href="system-identification.html#311-lumpedness"><span class="vc-n">3.11</span> Lumpedness</a></li>
+<li class="vc-l2"><a href="system-identification.html#312-relaxed"><span class="vc-n">3.12</span> Relaxed</a></li>
+<li class="vc-l2"><a href="system-identification.html#313-stability"><span class="vc-n">3.13</span> Stability</a></li>
+<li class="vc-l2"><a href="system-identification.html#314-inputs-and-outputs"><span class="vc-n">3.14</span> Inputs and Outputs</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="digital-and-analog.html">Section 4: Digital and Analog</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="digital-and-analog.html#41-digital-and-analog"><span class="vc-n">4.1</span> Digital and Analog</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-and-analog.html#continuous-time">Continuous Time</a></li><li class="vc-l3"><a href="digital-and-analog.html#discrete-time">Discrete Time</a></li><li class="vc-l3"><a href="digital-and-analog.html#quantized">Quantized</a></li></ul></li>
+<li class="vc-l2"><a href="digital-and-analog.html#42-analog"><span class="vc-n">4.2</span> Analog</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-and-analog.html#example-motor">Example: Motor</a></li><li class="vc-l3"><a href="digital-and-analog.html#example-analog-clock">Example: Analog Clock</a></li></ul></li>
+<li class="vc-l2"><a href="digital-and-analog.html#43-digital"><span class="vc-n">4.3</span> Digital</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-and-analog.html#example-digital-clock">Example: Digital Clock</a></li></ul></li>
+<li class="vc-l2"><a href="digital-and-analog.html#44-hybrid-systems"><span class="vc-n">4.4</span> Hybrid Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-and-analog.html#example-automobile-computer">Example: Automobile Computer</a></li></ul></li>
+<li class="vc-l2"><a href="digital-and-analog.html#45-continuous-and-discrete"><span class="vc-n">4.5</span> Continuous and Discrete</a></li>
+<li class="vc-l2"><a href="digital-and-analog.html#46-sampling-and-reconstruction"><span class="vc-n">4.6</span> Sampling and Reconstruction</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-metrics.html">Section 5: System Metrics</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-metrics.html#51-system-metrics"><span class="vc-n">5.1</span> System Metrics</a></li>
+<li class="vc-l2"><a href="system-metrics.html#52-standard-inputs"><span class="vc-n">5.2</span> Standard Inputs</a></li>
+<li class="vc-l2"><a href="system-metrics.html#53-steady-state"><span class="vc-n">5.3</span> Steady State</a><ul class="vc-subs"><li class="vc-l3"><a href="system-metrics.html#step-response">Step Response</a></li></ul></li>
+<li class="vc-l2"><a href="system-metrics.html#54-target-value"><span class="vc-n">5.4</span> Target Value</a></li>
+<li class="vc-l2"><a href="system-metrics.html#55-rise-time"><span class="vc-n">5.5</span> Rise Time</a></li>
+<li class="vc-l2"><a href="system-metrics.html#56-percent-overshoot"><span class="vc-n">5.6</span> Percent Overshoot</a></li>
+<li class="vc-l2"><a href="system-metrics.html#57-steady-state-error"><span class="vc-n">5.7</span> Steady-State Error</a></li>
+<li class="vc-l2"><a href="system-metrics.html#58-settling-time"><span class="vc-n">5.8</span> Settling Time</a></li>
+<li class="vc-l2"><a href="system-metrics.html#59-system-order"><span class="vc-n">5.9</span> System Order</a><ul class="vc-subs"><li class="vc-l3"><a href="system-metrics.html#proper-systems">Proper Systems</a></li><li class="vc-l3"><a href="system-metrics.html#example-system-order">Example: System Order</a></li></ul></li>
+<li class="vc-l2"><a href="system-metrics.html#510-system-type"><span class="vc-n">5.10</span> System Type</a><ul class="vc-subs"><li class="vc-l3"><a href="system-metrics.html#z-domain-type">Z-Domain Type</a></li></ul></li>
+<li class="vc-l2"><a href="system-metrics.html#511-visually"><span class="vc-n">5.11</span> Visually</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-modeling.html">Section 6: System Modeling</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-modeling.html#61-the-control-process"><span class="vc-n">6.1</span> The Control Process</a></li>
+<li class="vc-l2"><a href="system-modeling.html#62-external-description"><span class="vc-n">6.2</span> External Description</a><ul class="vc-subs"><li class="vc-l3"><a href="system-modeling.html#time-invariant-systems">Time-Invariant Systems</a></li></ul></li>
+<li class="vc-l2"><a href="system-modeling.html#63-internal-description"><span class="vc-n">6.3</span> Internal Description</a></li>
+<li class="vc-l2"><a href="system-modeling.html#64-complex-descriptions"><span class="vc-n">6.4</span> Complex Descriptions</a></li>
+<li class="vc-l2"><a href="system-modeling.html#65-representations"><span class="vc-n">6.5</span> Representations</a></li>
+<li class="vc-l2"><a href="system-modeling.html#66-analysis"><span class="vc-n">6.6</span> Analysis</a><ul class="vc-subs"><li class="vc-l3"><a href="system-modeling.html#frequency-domain">Frequency Domain</a></li></ul></li>
+<li class="vc-l2"><a href="system-modeling.html#67-modeling-examples"><span class="vc-n">6.7</span> Modeling Examples</a></li>
+<li class="vc-l2"><a href="system-modeling.html#68-manufacture"><span class="vc-n">6.8</span> Manufacture</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Classical Control Methods</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="transforms.html">Section 7: Transforms</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transforms.html#71-transforms"><span class="vc-n">7.1</span> Transforms</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms.html#transform-basics">Transform Basics</a></li></ul></li>
+<li class="vc-l2"><a href="transforms.html#72-laplace-transform"><span class="vc-n">7.2</span> Laplace Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms.html#inverse-laplace-transform">Inverse Laplace Transform</a></li><li class="vc-l3"><a href="transforms.html#matrices-and-vectors">Matrices and Vectors</a></li><li class="vc-l3"><a href="transforms.html#example-rl-circuit">Example: RL Circuit</a></li><li class="vc-l3"><a href="transforms.html#partial-fraction-expansion">Partial Fraction Expansion</a></li><li class="vc-l3"><a href="transforms.html#example-second-order-system">Example: Second-Order System</a></li><li class="vc-l3"><a href="transforms.html#example-fourth-order-system">Example: Fourth-Order System</a></li><li class="vc-l3"><a href="transforms.html#example-complex-roots">Example: Complex Roots</a></li><li class="vc-l3"><a href="transforms.html#example-sixth-order-system">Example: Sixth-Order System</a></li><li class="vc-l3"><a href="transforms.html#final-value-theorem">Final Value Theorem</a></li><li class="vc-l3"><a href="transforms.html#example-final-value-theorem">Example: Final Value Theorem</a></li><li class="vc-l3"><a href="transforms.html#initial-value-theorem">Initial Value Theorem</a></li><li class="vc-l3"><a href="transforms.html#common-transforms">Common Transforms</a></li></ul></li>
+<li class="vc-l2"><a href="transforms.html#73-fourier-transform"><span class="vc-n">7.3</span> Fourier Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms.html#inverse-fourier-transform">Inverse Fourier Transform</a></li></ul></li>
+<li class="vc-l2"><a href="transforms.html#74-complex-plane"><span class="vc-n">7.4</span> Complex Plane</a></li>
+<li class="vc-l2"><a href="transforms.html#75-eulers-formula"><span class="vc-n">7.5</span> Euler&#x27;s Formula</a></li>
+<li class="vc-l2"><a href="transforms.html#76-matlab"><span class="vc-n">7.6</span> MATLAB</a></li>
+<li class="vc-l2"><a href="transforms.html#77-further-reading"><span class="vc-n">7.7</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transfer-functions.html">Section 8: Transfer Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transfer-functions.html#81-transfer-functions"><span class="vc-n">8.1</span> Transfer Functions</a></li>
+<li class="vc-l2"><a href="transfer-functions.html#82-impulse-response"><span class="vc-n">8.2</span> Impulse Response</a><ul class="vc-subs"><li class="vc-l3"><a href="transfer-functions.html#impulse-function">Impulse Function</a></li><li class="vc-l3"><a href="transfer-functions.html#step-response">Step Response</a></li></ul></li>
+<li class="vc-l2"><a href="transfer-functions.html#83-convolution"><span class="vc-n">8.3</span> Convolution</a><ul class="vc-subs"><li class="vc-l3"><a href="transfer-functions.html#time-invariant-system-response">Time-Invariant System Response</a></li></ul></li>
+<li class="vc-l2"><a href="transfer-functions.html#84-convolution-theorem"><span class="vc-n">8.4</span> Convolution Theorem</a></li>
+<li class="vc-l2"><a href="transfer-functions.html#85-using-the-transfer-function"><span class="vc-n">8.5</span> Using the Transfer Function</a><ul class="vc-subs"><li class="vc-l3"><a href="transfer-functions.html#example-impulse-response">Example: Impulse Response</a></li><li class="vc-l3"><a href="transfer-functions.html#example-step-response">Example: Step Response</a></li><li class="vc-l3"><a href="transfer-functions.html#example-matlab-step-response">Example: MATLAB Step Response</a></li></ul></li>
+<li class="vc-l2"><a href="transfer-functions.html#86-frequency-response"><span class="vc-n">8.6</span> Frequency Response</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sampled-data-systems.html">Section 9: Sampled Data Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sampled-data-systems.html#91-ideal-sampler"><span class="vc-n">9.1</span> Ideal Sampler</a></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#92-geometric-series"><span class="vc-n">9.2</span> Geometric Series</a></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#93-the-star-transform"><span class="vc-n">9.3</span> The Star Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="sampled-data-systems.html#star-laplace">Star ↔ Laplace</a></li><li class="vc-l3"><a href="sampled-data-systems.html#star-laplace_1">Star + Laplace</a></li><li class="vc-l3"><a href="sampled-data-systems.html#convergence-of-the-star-transform">Convergence of the Star Transform</a></li></ul></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#94-the-z-transform"><span class="vc-n">9.4</span> The Z-Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="sampled-data-systems.html#z-transfer-functions">Z Transfer Functions</a></li><li class="vc-l3"><a href="sampled-data-systems.html#inverse-z-transform">Inverse Z Transform</a></li><li class="vc-l3"><a href="sampled-data-systems.html#final-value-theorem">Final Value Theorem</a></li></ul></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#95-star-z"><span class="vc-n">9.5</span> Star ↔ Z</a><ul class="vc-subs"><li class="vc-l3"><a href="sampled-data-systems.html#z-plane">Z plane</a></li><li class="vc-l3"><a href="sampled-data-systems.html#region-of-convergence">Region of Convergence</a></li><li class="vc-l3"><a href="sampled-data-systems.html#laplace-z">Laplace ↔ Z</a></li><li class="vc-l3"><a href="sampled-data-systems.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#96-z-fourier"><span class="vc-n">9.6</span> Z ↔ Fourier</a></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#97-reconstruction"><span class="vc-n">9.7</span> Reconstruction</a><ul class="vc-subs"><li class="vc-l3"><a href="sampled-data-systems.html#zero-order-hold">Zero order Hold</a></li><li class="vc-l3"><a href="sampled-data-systems.html#first-order-hold">First Order Hold</a></li><li class="vc-l3"><a href="sampled-data-systems.html#fractional-order-hold">Fractional Order Hold</a></li><li class="vc-l3"><a href="sampled-data-systems.html#other-reconstruction-circuits">Other Reconstruction Circuits</a></li></ul></li>
+<li class="vc-l2"><a href="sampled-data-systems.html#98-further-reading"><span class="vc-n">9.8</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-delays.html">Section 10: System Delays</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-delays.html#101-delays"><span class="vc-n">10.1</span> Delays</a><ul class="vc-subs"><li class="vc-l3"><a href="system-delays.html#ideal-delays">Ideal Delays</a></li></ul></li>
+<li class="vc-l2"><a href="system-delays.html#102-time-shifts"><span class="vc-n">10.2</span> Time Shifts</a><ul class="vc-subs"><li class="vc-l3"><a href="system-delays.html#shifts-in-the-z-domain">Shifts in the Z-Domain</a></li></ul></li>
+<li class="vc-l2"><a href="system-delays.html#103-delays-and-stability"><span class="vc-n">10.3</span> Delays and Stability</a></li>
+<li class="vc-l2"><a href="system-delays.html#104-delay-margin"><span class="vc-n">10.4</span> Delay Margin</a></li>
+<li class="vc-l2"><a href="system-delays.html#105-transform-domain-delays"><span class="vc-n">10.5</span> Transform-Domain Delays</a><ul class="vc-subs"><li class="vc-l3"><a href="system-delays.html#delayed-star-transform">Delayed Star Transform</a></li><li class="vc-l3"><a href="system-delays.html#delayed-z-transform">Delayed Z-Transform</a></li></ul></li>
+<li class="vc-l2"><a href="system-delays.html#106-modified-z-transform"><span class="vc-n">10.6</span> Modified Z-Transform</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="poles-and-zeros.html">Section 11: Poles and Zeros</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="poles-and-zeros.html#111-poles-and-zeros"><span class="vc-n">11.1</span> Poles and Zeros</a></li>
+<li class="vc-l2"><a href="poles-and-zeros.html#112-time-domain-relationships"><span class="vc-n">11.2</span> Time-Domain Relationships</a></li>
+<li class="vc-l2"><a href="poles-and-zeros.html#113-what-are-poles-and-zeros"><span class="vc-n">11.3</span> What are Poles and Zeros</a><ul class="vc-subs"><li class="vc-l3"><a href="poles-and-zeros.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="poles-and-zeros.html#114-effects-of-poles-and-zeros"><span class="vc-n">11.4</span> Effects of Poles and Zeros</a></li>
+<li class="vc-l2"><a href="poles-and-zeros.html#115-second-order-systems"><span class="vc-n">11.5</span> Second-Order Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="poles-and-zeros.html#damping-ratio">Damping Ratio</a></li><li class="vc-l3"><a href="poles-and-zeros.html#natural-frequency">Natural Frequency</a></li></ul></li>
+<li class="vc-l2"><a href="poles-and-zeros.html#116-higher-order-systems"><span class="vc-n">11.6</span> Higher-Order Systems</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Modern Control Methods</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="state-space-equations.html">Section 12: State-Space Equations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="state-space-equations.html#121-time-domain-approach"><span class="vc-n">12.1</span> Time-Domain Approach</a></li>
+<li class="vc-l2"><a href="state-space-equations.html#122-state-space"><span class="vc-n">12.2</span> State-Space</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-equations.html#state">State</a></li></ul></li>
+<li class="vc-l2"><a href="state-space-equations.html#123-state-variables"><span class="vc-n">12.3</span> State Variables</a></li>
+<li class="vc-l2"><a href="state-space-equations.html#124-multi-input-multi-output"><span class="vc-n">12.4</span> Multi-Input, Multi-Output</a></li>
+<li class="vc-l2"><a href="state-space-equations.html#125-state-space-equations"><span class="vc-n">12.5</span> State-Space Equations</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-equations.html#matrices-a-b-c-d">Matrices: A B C D</a></li><li class="vc-l3"><a href="state-space-equations.html#matrix-dimensions">Matrix Dimensions</a></li><li class="vc-l3"><a href="state-space-equations.html#notational-shorthand">Notational Shorthand</a></li></ul></li>
+<li class="vc-l2"><a href="state-space-equations.html#126-obtaining-the-state-space-equations"><span class="vc-n">12.6</span> Obtaining the State-Space Equations</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-equations.html#from-differential-equations">From Differential Equations</a></li><li class="vc-l3"><a href="state-space-equations.html#from-transfer-functions">From Transfer Functions</a></li></ul></li>
+<li class="vc-l2"><a href="state-space-equations.html#127-state-space-representation"><span class="vc-n">12.7</span> State-Space Representation</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-equations.html#example-dummy-variables">Example: Dummy Variables</a></li></ul></li>
+<li class="vc-l2"><a href="state-space-equations.html#128-discretization"><span class="vc-n">12.8</span> Discretization</a></li>
+<li class="vc-l2"><a href="state-space-equations.html#129-note-on-notations"><span class="vc-n">12.9</span> Note on Notations</a></li>
+<li class="vc-l2"><a href="state-space-equations.html#1210-matlab-representation"><span class="vc-n">12.10</span> MATLAB Representation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="linear-system-solutions.html">Section 13: Linear System Solutions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="linear-system-solutions.html#131-state-equation-solutions"><span class="vc-n">13.1</span> State Equation Solutions</a></li>
+<li class="vc-l2"><a href="linear-system-solutions.html#132-solving-for-xt-with-zero-input"><span class="vc-n">13.2</span> Solving for x(t) With Zero Input</a></li>
+<li class="vc-l2"><a href="linear-system-solutions.html#133-solving-for-xt-with-non-zero-input"><span class="vc-n">13.3</span> Solving for x(t) With Non-Zero Input</a><ul class="vc-subs"><li class="vc-l3"><a href="linear-system-solutions.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="linear-system-solutions.html#134-state-transition-matrix"><span class="vc-n">13.4</span> State-Transition Matrix</a><ul class="vc-subs"><li class="vc-l3"><a href="linear-system-solutions.html#diagonal-matrices">Diagonal Matrices</a></li><li class="vc-l3"><a href="linear-system-solutions.html#jordan-canonical-form">Jordan Canonical Form</a></li><li class="vc-l3"><a href="linear-system-solutions.html#inverse-laplace-method">Inverse Laplace Method</a></li><li class="vc-l3"><a href="linear-system-solutions.html#spectral-decomposition">Spectral Decomposition</a></li><li class="vc-l3"><a href="linear-system-solutions.html#cayley-hamilton-theorem">Cayley-Hamilton Theorem</a></li><li class="vc-l3"><a href="linear-system-solutions.html#example-off-diagonal-matrix">Example: Off-Diagonal Matrix</a></li><li class="vc-l3"><a href="linear-system-solutions.html#example-sympy-calculation">Example: Sympy Calculation</a></li><li class="vc-l3"><a href="linear-system-solutions.html#example-matlab-calculation">Example: MATLAB Calculation</a></li><li class="vc-l3"><a href="linear-system-solutions.html#example-multiple-methods-in-matlab">Example: Multiple Methods in MATLAB</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="time-variant-system-solutions.html">Section 14: Time Variant System Solutions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="time-variant-system-solutions.html#141-general-time-variant-solution"><span class="vc-n">14.1</span> General Time Variant Solution</a><ul class="vc-subs"><li class="vc-l3"><a href="time-variant-system-solutions.html#state-transition-matrix">State Transition Matrix</a></li></ul></li>
+<li class="vc-l2"><a href="time-variant-system-solutions.html#142-time-variant-zero-input"><span class="vc-n">14.2</span> Time-Variant, Zero Input</a><ul class="vc-subs"><li class="vc-l3"><a href="time-variant-system-solutions.html#fundamental-matrix">Fundamental Matrix</a></li><li class="vc-l3"><a href="time-variant-system-solutions.html#state-transition-matrix_1">State Transition Matrix</a></li><li class="vc-l3"><a href="time-variant-system-solutions.html#example-2-dimensional-system">Example: 2-Dimensional System</a></li><li class="vc-l3"><a href="time-variant-system-solutions.html#other-methods">Other Methods</a></li><li class="vc-l3"><a href="time-variant-system-solutions.html#example-using-method-3">Example: Using Method 3</a></li></ul></li>
+<li class="vc-l2"><a href="time-variant-system-solutions.html#143-time-variant-non-zero-input"><span class="vc-n">14.3</span> Time-Variant, Non-zero Input</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="digital-state-space.html">Section 15: Digital State Space</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="digital-state-space.html#151-digital-systems"><span class="vc-n">15.1</span> Digital Systems</a></li>
+<li class="vc-l2"><a href="digital-state-space.html#152-digital-systems"><span class="vc-n">15.2</span> Digital Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-state-space.html#zero-order-hold-derivation">Zero-Order Hold Derivation</a></li></ul></li>
+<li class="vc-l2"><a href="digital-state-space.html#153-relating-continuous-and-discrete-systems"><span class="vc-n">15.3</span> Relating Continuous and Discrete Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-state-space.html#discrete-coefficient-matrices">Discrete Coefficient Matrices</a></li><li class="vc-l3"><a href="digital-state-space.html#notation">Notation</a></li></ul></li>
+<li class="vc-l2"><a href="digital-state-space.html#154-converting-difference-equations"><span class="vc-n">15.4</span> Converting Difference Equations</a></li>
+<li class="vc-l2"><a href="digital-state-space.html#155-solving-for-xn"><span class="vc-n">15.5</span> Solving for x[n]</a></li>
+<li class="vc-l2"><a href="digital-state-space.html#156-time-variant-solutions"><span class="vc-n">15.6</span> Time Variant Solutions</a><ul class="vc-subs"><li class="vc-l3"><a href="digital-state-space.html#state-transition-matrix">State Transition Matrix</a></li></ul></li>
+<li class="vc-l2"><a href="digital-state-space.html#157-matlab-calculations"><span class="vc-n">15.7</span> MATLAB Calculations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="eigenvalues-and-eigenvectors.html">Section 16: Eigenvalues and Eigenvectors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="eigenvalues-and-eigenvectors.html#161-eigenvalues-and-eigenvectors"><span class="vc-n">16.1</span> Eigenvalues and Eigenvectors</a></li>
+<li class="vc-l2"><a href="eigenvalues-and-eigenvectors.html#162-characteristic-equation"><span class="vc-n">16.2</span> Characteristic Equation</a><ul class="vc-subs"><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#diagonalization">Diagonalization</a></li></ul></li>
+<li class="vc-l2"><a href="eigenvalues-and-eigenvectors.html#163-exponential-matrix-decomposition"><span class="vc-n">16.3</span> Exponential Matrix Decomposition</a><ul class="vc-subs"><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#state-relationship">State Relationship</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#decoupling">Decoupling</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#condition-number">Condition Number</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#stability">Stability</a></li></ul></li>
+<li class="vc-l2"><a href="eigenvalues-and-eigenvectors.html#164-non-unique-eigenvalues"><span class="vc-n">16.4</span> Non-Unique Eigenvalues</a><ul class="vc-subs"><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#generalized-eigenvectors">Generalized Eigenvectors</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#example-one-repeated-set">Example: One Repeated Set</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#example-two-repeated-sets">Example: Two Repeated Sets</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#jordan-canonical-form">Jordan Canonical Form</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#system-response">System Response</a></li></ul></li>
+<li class="vc-l2"><a href="eigenvalues-and-eigenvectors.html#165-equivalence-transformations"><span class="vc-n">16.5</span> Equivalence Transformations</a><ul class="vc-subs"><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#lyapunov-transformations">Lyapunov Transformations</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#system-diagonalization">System Diagonalization</a></li><li class="vc-l3"><a href="eigenvalues-and-eigenvectors.html#matlab-transformations">MATLAB Transformations</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="standard-forms.html">Section 17: Standard Forms</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="standard-forms.html#171-companion-form"><span class="vc-n">17.1</span> Companion Form</a><ul class="vc-subs"><li class="vc-l3"><a href="standard-forms.html#observable-canonical-form">Observable Canonical Form</a></li><li class="vc-l3"><a href="standard-forms.html#controllable-canonical-form">Controllable Canonical Form</a></li><li class="vc-l3"><a href="standard-forms.html#phase-variable-form">Phase Variable Form</a></li></ul></li>
+<li class="vc-l2"><a href="standard-forms.html#172-modal-form"><span class="vc-n">17.2</span> Modal Form</a><ul class="vc-subs"><li class="vc-l3"><a href="standard-forms.html#jordan-form">Jordan Form</a></li></ul></li>
+<li class="vc-l2"><a href="standard-forms.html#173-computing-standard-forms-in-matlab"><span class="vc-n">17.3</span> Computing Standard Forms in MATLAB</a></li>
+<li class="vc-l2"><a href="standard-forms.html#174-computing-standard-forms-by-hand"><span class="vc-n">17.4</span> Computing Standard Forms by Hand</a><ul class="vc-subs"><li class="vc-l3"><a href="standard-forms.html#control-canonical-form">Control Canonical Form</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mimo-systems.html">Section 18: MIMO Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mimo-systems.html#181-multi-input-multi-output"><span class="vc-n">18.1</span> Multi-Input, Multi-Output</a></li>
+<li class="vc-l2"><a href="mimo-systems.html#182-state-space-representation"><span class="vc-n">18.2</span> State-Space Representation</a><ul class="vc-subs"><li class="vc-l3"><a href="mimo-systems.html#example-two-inputs-and-two-outputs">Example: Two Inputs and Two Outputs</a></li></ul></li>
+<li class="vc-l2"><a href="mimo-systems.html#183-transfer-function-matrix"><span class="vc-n">18.3</span> Transfer Function Matrix</a><ul class="vc-subs"><li class="vc-l3"><a href="mimo-systems.html#dimensions">Dimensions</a></li><li class="vc-l3"><a href="mimo-systems.html#relation-to-transfer-function">Relation to Transfer Function</a></li><li class="vc-l3"><a href="mimo-systems.html#zero-state-and-zero-input">Zero-State and Zero-Input</a></li></ul></li>
+<li class="vc-l2"><a href="mimo-systems.html#184-discrete-mimo-systems"><span class="vc-n">18.4</span> Discrete MIMO Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="mimo-systems.html#example-pulse-response">Example: Pulse Response</a></li></ul></li>
+<li class="vc-l2"><a href="mimo-systems.html#185-controller-design"><span class="vc-n">18.5</span> Controller Design</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="realizations.html">Section 19: Realizations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="realizations.html#191-realization"><span class="vc-n">19.1</span> Realization</a></li>
+<li class="vc-l2"><a href="realizations.html#192-realization-conditions"><span class="vc-n">19.2</span> Realization Conditions</a></li>
+<li class="vc-l2"><a href="realizations.html#193-realizing-the-transfer-matrix"><span class="vc-n">19.3</span> Realizing the Transfer Matrix</a><ul class="vc-subs"><li class="vc-l3"><a href="realizations.html#realizing-system-by-column">Realizing System by Column</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">System Representation</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="gain.html">Section 20: Gain</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gain.html#201-what-is-gain"><span class="vc-n">20.1</span> What is Gain?</a><ul class="vc-subs"><li class="vc-l3"><a href="gain.html#example-gain">Example: Gain</a></li></ul></li>
+<li class="vc-l2"><a href="gain.html#202-responses-to-gain"><span class="vc-n">20.2</span> Responses to Gain</a></li>
+<li class="vc-l2"><a href="gain.html#203-gain-and-stability"><span class="vc-n">20.3</span> Gain and Stability</a><ul class="vc-subs"><li class="vc-l3"><a href="gain.html#conditional-stability">Conditional Stability</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="block-diagrams.html">Section 21: Block Diagrams</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="block-diagrams.html#211-systems-in-series"><span class="vc-n">21.1</span> Systems in Series</a><ul class="vc-subs"><li class="vc-l3"><a href="block-diagrams.html#series-transfer-functions">Series Transfer Functions</a></li><li class="vc-l3"><a href="block-diagrams.html#series-state-space">Series State Space</a></li></ul></li>
+<li class="vc-l2"><a href="block-diagrams.html#212-systems-in-parallel"><span class="vc-n">21.2</span> Systems in Parallel</a></li>
+<li class="vc-l2"><a href="block-diagrams.html#213-state-space-model"><span class="vc-n">21.3</span> State Space Model</a><ul class="vc-subs"><li class="vc-l3"><a href="block-diagrams.html#in-the-laplace-domain">In the Laplace Domain</a></li></ul></li>
+<li class="vc-l2"><a href="block-diagrams.html#214-adders-and-multipliers"><span class="vc-n">21.4</span> Adders and Multipliers</a></li>
+<li class="vc-l2"><a href="block-diagrams.html#215-simplifying-block-diagrams"><span class="vc-n">21.5</span> Simplifying Block Diagrams</a></li>
+<li class="vc-l2"><a href="block-diagrams.html#216-external-links"><span class="vc-n">21.6</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="feedback-loops.html">Section 22: Feedback Loops</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="feedback-loops.html#221-feedback"><span class="vc-n">22.1</span> Feedback</a></li>
+<li class="vc-l2"><a href="feedback-loops.html#222-basic-feedback-structure"><span class="vc-n">22.2</span> Basic Feedback Structure</a></li>
+<li class="vc-l2"><a href="feedback-loops.html#223-negative-vs-positive-feedback"><span class="vc-n">22.3</span> Negative vs Positive Feedback</a><ul class="vc-subs"><li class="vc-l3"><a href="feedback-loops.html#example-state-space-equation">Example: State-Space Equation</a></li></ul></li>
+<li class="vc-l2"><a href="feedback-loops.html#224-feedback-loop-transfer-function"><span class="vc-n">22.4</span> Feedback Loop Transfer Function</a><ul class="vc-subs"><li class="vc-l3"><a href="feedback-loops.html#example-elevator">Example: Elevator</a></li><li class="vc-l3"><a href="feedback-loops.html#state-space-feedback-loops">State-Space Feedback Loops</a></li></ul></li>
+<li class="vc-l2"><a href="feedback-loops.html#225-open-loop-vs-closed-loop"><span class="vc-n">22.5</span> Open Loop vs Closed Loop</a></li>
+<li class="vc-l2"><a href="feedback-loops.html#226-placement-of-a-controller"><span class="vc-n">22.6</span> Placement of a Controller</a></li>
+<li class="vc-l2"><a href="feedback-loops.html#227-second-order-systems"><span class="vc-n">22.7</span> Second-Order Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="feedback-loops.html#damping-ratio">Damping Ratio</a></li><li class="vc-l3"><a href="feedback-loops.html#natural-frequency">Natural Frequency</a></li></ul></li>
+<li class="vc-l2"><a href="feedback-loops.html#228-system-sensitivity"><span class="vc-n">22.8</span> System Sensitivity</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="signal-flow-diagrams.html">Section 23: Signal Flow Diagrams</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="signal-flow-diagrams.html#231-signal-flow-graphs"><span class="vc-n">23.1</span> Signal-flow graphs</a><ul class="vc-subs"><li class="vc-l3"><a href="signal-flow-diagrams.html#forward-paths">Forward Paths</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#loops">Loops</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#delta-values">Delta Values</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#masons-rule">Mason&#x27;s Rule</a></li></ul></li>
+<li class="vc-l2"><a href="signal-flow-diagrams.html#232-examples"><span class="vc-n">23.2</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="signal-flow-diagrams.html#solving-a-signal-flow-graph-by-systematic-reduction-two-interlocking-loops">Solving a signal-flow graph by systematic reduction : Two interlocking loops</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#solving-a-signal-flow-graph-by-systematic-reduction-three-equations-in-three-unknowns">Solving a signal-flow graph by systematic reduction: Three equations in three unknowns</a></li></ul></li>
+<li class="vc-l2"><a href="signal-flow-diagrams.html#233-electrical-engineering-construction-of-a-flow-graph-for-a-rc-circuit"><span class="vc-n">23.3</span> Electrical engineering: Construction of a flow graph for a RC circuit</a><ul class="vc-subs"><li class="vc-l3"><a href="signal-flow-diagrams.html#branch-equations">Branch equations</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#kirchhoffs-laws-equations">Kirchhoff&#x27;s laws equations</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#building-the-signal-flow-graph">Building the signal-flow graph</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#the-resulting-flow-graph-is-then-drawn">The resulting flow graph is then drawn</a></li><li class="vc-l3"><a href="signal-flow-diagrams.html#mechatronics-example">Mechatronics example</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="bode-plots.html">Section 24: Bode Plots</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="bode-plots.html#241-bode-plots"><span class="vc-n">24.1</span> Bode Plots</a><ul class="vc-subs"><li class="vc-l3"><a href="bode-plots.html#decibels">Decibels</a></li><li class="vc-l3"><a href="bode-plots.html#frequency-response-notations">Frequency Response Notations</a></li><li class="vc-l3"><a href="bode-plots.html#straight-line-approximations">Straight-Line Approximations</a></li><li class="vc-l3"><a href="bode-plots.html#break-points">Break Points</a></li></ul></li>
+<li class="vc-l2"><a href="bode-plots.html#242-bode-gain-plots"><span class="vc-n">24.2</span> Bode Gain Plots</a><ul class="vc-subs"><li class="vc-l3"><a href="bode-plots.html#bode-gain-calculations">Bode Gain Calculations</a></li><li class="vc-l3"><a href="bode-plots.html#bode-gain-approximations">Bode Gain Approximations</a></li></ul></li>
+<li class="vc-l2"><a href="bode-plots.html#243-bode-phase-plots"><span class="vc-n">24.3</span> Bode Phase Plots</a></li>
+<li class="vc-l2"><a href="bode-plots.html#244-bode-procedure"><span class="vc-n">24.4</span> Bode Procedure</a></li>
+<li class="vc-l2"><a href="bode-plots.html#245-examples"><span class="vc-n">24.5</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="bode-plots.html#example-constant-gain">Example: Constant Gain</a></li><li class="vc-l3"><a href="bode-plots.html#example-integrator">Example: Integrator</a></li><li class="vc-l3"><a href="bode-plots.html#example-differentiator">Example: Differentiator</a></li><li class="vc-l3"><a href="bode-plots.html#example-1st-order-low-pass-filter-1-break-point">Example: 1st Order, Low-pass Filter (1 Break Point)</a></li></ul></li>
+<li class="vc-l2"><a href="bode-plots.html#246-further-reading"><span class="vc-n">24.6</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="nichols-charts.html">Section 25: Nichols Charts</a></li>
+</ul>
+<p class="toc-group">Stability</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="stability.html">Section 26: Stability</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="stability.html#261-stability"><span class="vc-n">26.1</span> Stability</a></li>
+<li class="vc-l2"><a href="stability.html#262-bibo-stability"><span class="vc-n">26.2</span> BIBO Stability</a></li>
+<li class="vc-l2"><a href="stability.html#263-determining-bibo-stability"><span class="vc-n">26.3</span> Determining BIBO Stability</a><ul class="vc-subs"><li class="vc-l3"><a href="stability.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="stability.html#264-poles-and-stability"><span class="vc-n">26.4</span> Poles and Stability</a></li>
+<li class="vc-l2"><a href="stability.html#265-poles-and-eigenvalues"><span class="vc-n">26.5</span> Poles and Eigenvalues</a></li>
+<li class="vc-l2"><a href="stability.html#266-transfer-functions-revisited"><span class="vc-n">26.6</span> Transfer Functions Revisited</a></li>
+<li class="vc-l2"><a href="stability.html#267-state-space-and-stability"><span class="vc-n">26.7</span> State-Space and Stability</a></li>
+<li class="vc-l2"><a href="stability.html#268-marginal-stability"><span class="vc-n">26.8</span> Marginal Stability</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="state-space-stability.html">Section 27: State-Space Stability</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="state-space-stability.html#271-state-space-stability"><span class="vc-n">27.1</span> State-Space Stability</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-stability.html#stability-definitions">Stability Definitions</a></li><li class="vc-l3"><a href="state-space-stability.html#marginal-stability">Marginal Stability</a></li></ul></li>
+<li class="vc-l2"><a href="state-space-stability.html#272-eigenvalues-and-poles"><span class="vc-n">27.2</span> Eigenvalues and Poles</a></li>
+<li class="vc-l2"><a href="state-space-stability.html#273-impulse-response-matrix"><span class="vc-n">27.3</span> Impulse Response Matrix</a></li>
+<li class="vc-l2"><a href="state-space-stability.html#274-positive-definiteness"><span class="vc-n">27.4</span> Positive Definiteness</a></li>
+<li class="vc-l2"><a href="state-space-stability.html#275-lyapunov-stability"><span class="vc-n">27.5</span> Lyapunov Stability</a><ul class="vc-subs"><li class="vc-l3"><a href="state-space-stability.html#lyapunovs-equation">Lyapunov&#x27;s Equation</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="introduction-to-digital-controls.html">Section 28: Discrete Time Stability</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#281-discrete-time-stability"><span class="vc-n">28.1</span> Discrete-Time Stability</a></li>
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#282-input-output-stability"><span class="vc-n">28.2</span> Input-Output Stability</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction-to-digital-controls.html#uniform-stability">Uniform Stability</a></li><li class="vc-l3"><a href="introduction-to-digital-controls.html#impulse-response-matrix">Impulse Response Matrix</a></li></ul></li>
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#283-stability-of-transfer-function"><span class="vc-n">28.3</span> Stability of Transfer Function</a></li>
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#284-lyapunov-stability"><span class="vc-n">28.4</span> Lyapunov Stability</a></li>
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#285-poles-and-eigenvalues"><span class="vc-n">28.5</span> Poles and Eigenvalues</a></li>
+<li class="vc-l2"><a href="introduction-to-digital-controls.html#286-finite-wordlengths"><span class="vc-n">28.6</span> Finite Wordlengths</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="routh-hurwitz-criterion.html">Section 29: Routh-Hurwitz Criterion</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="routh-hurwitz-criterion.html#291-stability-criteria"><span class="vc-n">29.1</span> Stability Criteria</a></li>
+<li class="vc-l2"><a href="routh-hurwitz-criterion.html#292-routh-hurwitz-criteria"><span class="vc-n">29.2</span> Routh-Hurwitz Criteria</a><ul class="vc-subs"><li class="vc-l3"><a href="routh-hurwitz-criterion.html#routh-hurwitz-tests">Routh-Hurwitz Tests</a></li><li class="vc-l3"><a href="routh-hurwitz-criterion.html#the-rouths-array">The Routh&#x27;s Array</a></li><li class="vc-l3"><a href="routh-hurwitz-criterion.html#example-calculating-cn-3">Example: Calculating CN-3</a></li><li class="vc-l3"><a href="routh-hurwitz-criterion.html#example-stable-third-order-system">Example: Stable Third Order System</a></li><li class="vc-l3"><a href="routh-hurwitz-criterion.html#special-case-row-of-all-zeros">Special Case: Row of All Zeros</a></li><li class="vc-l3"><a href="routh-hurwitz-criterion.html#special-case-zero-in-the-first-column">Special Case: Zero in the First Column</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="jurys-test.html">Section 30: Jurys Test</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="jurys-test.html#301-routh-hurwitz-in-digital-systems"><span class="vc-n">30.1</span> Routh-Hurwitz in Digital Systems</a><ul class="vc-subs"><li class="vc-l3"><a href="jurys-test.html#bilinear-transform">Bilinear Transform</a></li><li class="vc-l3"><a href="jurys-test.html#other-mappings">Other Mappings</a></li></ul></li>
+<li class="vc-l2"><a href="jurys-test.html#302-jurys-test"><span class="vc-n">30.2</span> Jury&#x27;s Test</a><ul class="vc-subs"><li class="vc-l3"><a href="jurys-test.html#jury-tests">Jury Tests</a></li><li class="vc-l3"><a href="jurys-test.html#the-jury-array">The Jury Array</a></li><li class="vc-l3"><a href="jurys-test.html#example-calculating-e5">Example: Calculating e5</a></li></ul></li>
+<li class="vc-l2"><a href="jurys-test.html#303-further-reading"><span class="vc-n">30.3</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="root-locus.html">Section 31: Root Locus</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="root-locus.html#311-the-problem"><span class="vc-n">31.1</span> The Problem</a></li>
+<li class="vc-l2"><a href="root-locus.html#312-root-locus"><span class="vc-n">31.2</span> Root-Locus</a><ul class="vc-subs"><li class="vc-l3"><a href="root-locus.html#digital-systems">Digital Systems</a></li></ul></li>
+<li class="vc-l2"><a href="root-locus.html#313-the-root-locus-procedure"><span class="vc-n">31.3</span> The Root-Locus Procedure</a></li>
+<li class="vc-l2"><a href="root-locus.html#314-root-locus-rules"><span class="vc-n">31.4</span> Root Locus Rules</a></li>
+<li class="vc-l2"><a href="root-locus.html#315-root-locus-equations"><span class="vc-n">31.5</span> Root Locus Equations</a><ul class="vc-subs"><li class="vc-l3"><a href="root-locus.html#number-of-asymptotes">Number of Asymptotes</a></li><li class="vc-l3"><a href="root-locus.html#asymptote-intersection-point">Asymptote Intersection Point</a></li><li class="vc-l3"><a href="root-locus.html#breakaway-points">Breakaway Points</a></li></ul></li>
+<li class="vc-l2"><a href="root-locus.html#316-root-locus-and-stability"><span class="vc-n">31.6</span> Root Locus and Stability</a></li>
+<li class="vc-l2"><a href="root-locus.html#317-examples"><span class="vc-n">31.7</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="root-locus.html#example-1-first-order-system">Example 1: First-Order System</a></li><li class="vc-l3"><a href="root-locus.html#example-2-third-order-system">Example 2: Third Order System</a></li><li class="vc-l3"><a href="root-locus.html#example-complex-conjugate-zeros">Example: Complex-Conjugate Zeros</a></li><li class="vc-l3"><a href="root-locus.html#example-root-locus-using-matlaboctave">Example: Root-Locus Using MATLAB/Octave</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="nyquist-stability-criteria.html">Section 32: Nyquist Stability Criteria</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#321-nyquist-stability-criteria"><span class="vc-n">32.1</span> Nyquist Stability Criteria</a></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#322-contours"><span class="vc-n">32.2</span> Contours</a></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#323-argument-principle"><span class="vc-n">32.3</span> Argument Principle</a><ul class="vc-subs"><li class="vc-l3"><a href="nyquist-stability-criteria.html#example-first-order-system">Example: First Order System</a></li><li class="vc-l3"><a href="nyquist-stability-criteria.html#example-second-order-system">Example: Second-Order System</a></li></ul></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#324-the-nyquist-contour"><span class="vc-n">32.4</span> The Nyquist Contour</a></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#325-nyquist-criteria"><span class="vc-n">32.5</span> Nyquist Criteria</a></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#326-nyquist-bode"><span class="vc-n">32.6</span> Nyquist ↔ Bode</a></li>
+<li class="vc-l2"><a href="nyquist-stability-criteria.html#327-nyquist-in-the-z-domain"><span class="vc-n">32.7</span> Nyquist in the Z Domain</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Controllers and Compensators</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="controllability-and-observability.html">Section 33: Controllability and Observability</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="controllability-and-observability.html#331-system-interaction"><span class="vc-n">33.1</span> System Interaction</a></li>
+<li class="vc-l2"><a href="controllability-and-observability.html#332-controllability"><span class="vc-n">33.2</span> Controllability</a><ul class="vc-subs"><li class="vc-l3"><a href="controllability-and-observability.html#controllability-matrix">Controllability Matrix</a></li><li class="vc-l3"><a href="controllability-and-observability.html#determining-reachability">Determining Reachability</a></li><li class="vc-l3"><a href="controllability-and-observability.html#gramians">Gramians</a></li><li class="vc-l3"><a href="controllability-and-observability.html#reachability-gramian">Reachability Gramian</a></li><li class="vc-l3"><a href="controllability-and-observability.html#controllability-gramian">Controllability Gramian</a></li></ul></li>
+<li class="vc-l2"><a href="controllability-and-observability.html#333-observability"><span class="vc-n">33.3</span> Observability</a><ul class="vc-subs"><li class="vc-l3"><a href="controllability-and-observability.html#constructability">Constructability</a></li><li class="vc-l3"><a href="controllability-and-observability.html#observability-matrix">Observability Matrix</a></li><li class="vc-l3"><a href="controllability-and-observability.html#observability-gramian">Observability Gramian</a></li><li class="vc-l3"><a href="controllability-and-observability.html#constructability-gramian">Constructability Gramian</a></li></ul></li>
+<li class="vc-l2"><a href="controllability-and-observability.html#334-duality-principle"><span class="vc-n">33.4</span> Duality Principle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-specifications.html">Section 34: System Specifications</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-specifications.html#341-system-specification"><span class="vc-n">34.1</span> System Specification</a></li>
+<li class="vc-l2"><a href="system-specifications.html#342-steady-state-accuracy"><span class="vc-n">34.2</span> Steady-State Accuracy</a></li>
+<li class="vc-l2"><a href="system-specifications.html#343-sensitivity"><span class="vc-n">34.3</span> Sensitivity</a></li>
+<li class="vc-l2"><a href="system-specifications.html#344-disturbance-rejection"><span class="vc-n">34.4</span> Disturbance Rejection</a></li>
+<li class="vc-l2"><a href="system-specifications.html#345-control-effort"><span class="vc-n">34.5</span> Control Effort</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="state-feedback.html">Section 35: State Feedback</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="state-feedback.html#351-state-observation"><span class="vc-n">35.1</span> State Observation</a></li>
+<li class="vc-l2"><a href="state-feedback.html#352-state-feedback"><span class="vc-n">35.2</span> State Feedback</a><ul class="vc-subs"><li class="vc-l3"><a href="state-feedback.html#closed-loop-system">Closed-Loop System</a></li><li class="vc-l3"><a href="state-feedback.html#controllable-canonical-form">Controllable Canonical Form</a></li><li class="vc-l3"><a href="state-feedback.html#ackermanns-formula">Ackermann&#x27;s Formula</a></li><li class="vc-l3"><a href="state-feedback.html#reference-inputs">Reference Inputs</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="estimators-and-observers.html">Section 36: Estimators and Observers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="estimators-and-observers.html#361-estimators-and-observers"><span class="vc-n">36.1</span> Estimators and Observers</a><ul class="vc-subs"><li class="vc-l3"><a href="estimators-and-observers.html#creating-an-estimator">Creating an Estimator</a></li><li class="vc-l3"><a href="estimators-and-observers.html#separation-principle">Separation Principle</a></li><li class="vc-l3"><a href="estimators-and-observers.html#the-l-matrix">The L Matrix</a></li><li class="vc-l3"><a href="estimators-and-observers.html#composite-system">Composite System</a></li></ul></li>
+<li class="vc-l2"><a href="estimators-and-observers.html#362-reduced-order-observers"><span class="vc-n">36.2</span> Reduced-Order Observers</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="controllers-and-compensators.html">Section 37: Controllers and Compensators</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="controllers-and-compensators.html#371-controllers"><span class="vc-n">37.1</span> Controllers</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#372-proportional-controllers"><span class="vc-n">37.2</span> Proportional Controllers</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#373-derivative-controllers"><span class="vc-n">37.3</span> Derivative Controllers</a><ul class="vc-subs"><li class="vc-l3"><a href="controllers-and-compensators.html#z-domain-derivatives">Z-Domain Derivatives</a></li></ul></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#374-integral-controllers"><span class="vc-n">37.4</span> Integral Controllers</a><ul class="vc-subs"><li class="vc-l3"><a href="controllers-and-compensators.html#z-domain-integral">Z-Domain Integral</a></li></ul></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#375-pid-controllers"><span class="vc-n">37.5</span> PID Controllers</a><ul class="vc-subs"><li class="vc-l3"><a href="controllers-and-compensators.html#pid-transfer-function">PID Transfer Function</a></li><li class="vc-l3"><a href="controllers-and-compensators.html#pid-signal-flow-diagram">PID Signal flow diagram</a></li><li class="vc-l3"><a href="controllers-and-compensators.html#pid-tuning">PID Tuning</a></li><li class="vc-l3"><a href="controllers-and-compensators.html#digital-pid">Digital PID</a></li></ul></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#376-bang-bang-controllers"><span class="vc-n">37.6</span> Bang-Bang Controllers</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#377-compensation"><span class="vc-n">37.7</span> Compensation</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#378-phase-compensation"><span class="vc-n">37.8</span> Phase Compensation</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#379-phase-lead"><span class="vc-n">37.9</span> Phase Lead</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#3710-phase-lag"><span class="vc-n">37.10</span> Phase Lag</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#3711-phase-lag-lead"><span class="vc-n">37.11</span> Phase Lag-lead</a></li>
+<li class="vc-l2"><a href="controllers-and-compensators.html#3712-external-links"><span class="vc-n">37.12</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="polynomial-design.html">Section 38: Polynomial Design</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="polynomial-design.html#381-polynomial-design"><span class="vc-n">38.1</span> Polynomial Design</a></li>
+<li class="vc-l2"><a href="polynomial-design.html#382-polynomial-representation"><span class="vc-n">38.2</span> Polynomial Representation</a><ul class="vc-subs"><li class="vc-l3"><a href="polynomial-design.html#diophantine-equation">Diophantine Equation</a></li><li class="vc-l3"><a href="polynomial-design.html#conditions-for-uniqueness">Conditions for Uniqueness</a></li><li class="vc-l3"><a href="polynomial-design.html#example-second-order-system">Example: Second Order System</a></li><li class="vc-l3"><a href="polynomial-design.html#example-helicopter-control">Example: Helicopter Control</a></li></ul></li>
+<li class="vc-l2"><a href="polynomial-design.html#383-caveats"><span class="vc-n">38.3</span> Caveats</a><ul class="vc-subs"><li class="vc-l3"><a href="polynomial-design.html#insufficient-order">Insufficient Order</a></li></ul></li>
+<li class="vc-l2"><a href="polynomial-design.html#384-external-links"><span class="vc-n">38.4</span> External links</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Nonlinear Systems</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="state-machines.html">Section 40: State Machines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="state-machines.html#401-state-machines"><span class="vc-n">40.1</span> State Machines</a></li>
+<li class="vc-l2"><a href="state-machines.html#402-state-diagrams"><span class="vc-n">40.2</span> State Diagrams</a><ul class="vc-subs"><li class="vc-l3"><a href="state-machines.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="state-machines.html#403-computer-implementation"><span class="vc-n">40.3</span> Computer Implementation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="nonlinear-systems.html">Section 41: Nonlinear Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="nonlinear-systems.html#411-nonlinear-general-solution"><span class="vc-n">41.1</span> Nonlinear General Solution</a><ul class="vc-subs"><li class="vc-l3"><a href="nonlinear-systems.html#iteration-method">Iteration Method</a></li><li class="vc-l3"><a href="nonlinear-systems.html#types-of-nonlinearities">Types of Nonlinearities</a></li></ul></li>
+<li class="vc-l2"><a href="nonlinear-systems.html#412-linearization"><span class="vc-n">41.2</span> Linearization</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="common-nonlinearities.html">Section 42: Common Nonlinearities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="common-nonlinearities.html#421-hysteresis"><span class="vc-n">42.1</span> Hysteresis</a></li>
+<li class="vc-l2"><a href="common-nonlinearities.html#422-backlash"><span class="vc-n">42.2</span> Backlash</a></li>
+<li class="vc-l2"><a href="common-nonlinearities.html#423-dead-zone"><span class="vc-n">42.3</span> Dead-Zone</a></li>
+<li class="vc-l2"><a href="common-nonlinearities.html#424-inverse-nonlinearities"><span class="vc-n">42.4</span> Inverse Nonlinearities</a><ul class="vc-subs"><li class="vc-l3"><a href="common-nonlinearities.html#inverse-backlash">Inverse Backlash</a></li><li class="vc-l3"><a href="common-nonlinearities.html#inverse-dead-zone">Inverse Dead-Zone</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Appendices</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="physical-models.html">Appendix A: Physical Models</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="physical-models.html#a1-physical-models"><span class="vc-n">A.1</span> Physical Models</a></li>
+<li class="vc-l2"><a href="physical-models.html#a2-electrical-systems"><span class="vc-n">A.2</span> Electrical Systems</a></li>
+<li class="vc-l2"><a href="physical-models.html#a3-mechanical-systems"><span class="vc-n">A.3</span> Mechanical Systems</a></li>
+<li class="vc-l2"><a href="physical-models.html#a4-civilconstruction-systems"><span class="vc-n">A.4</span> Civil/Construction Systems</a></li>
+<li class="vc-l2"><a href="physical-models.html#a5-chemical-systems"><span class="vc-n">A.5</span> Chemical Systems</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="z-transform-mappings.html">Appendix B: Z Transform Mappings</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="z-transform-mappings.html#b1-z-transform-mappings"><span class="vc-n">B.1</span> Z Transform Mappings</a></li>
+<li class="vc-l2"><a href="z-transform-mappings.html#b2-bilinear-transform"><span class="vc-n">B.2</span> Bilinear Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="z-transform-mappings.html#prewarping">Prewarping</a></li></ul></li>
+<li class="vc-l2"><a href="z-transform-mappings.html#b3-matched-z-transform"><span class="vc-n">B.3</span> Matched Z-Transform</a></li>
+<li class="vc-l2"><a href="z-transform-mappings.html#b4-simpsons-rule"><span class="vc-n">B.4</span> Simpson&#x27;s Rule</a></li>
+<li class="vc-l2"><a href="z-transform-mappings.html#b5-w-v-transform"><span class="vc-n">B.5</span> (w, v) Transform</a></li>
+<li class="vc-l2"><a href="z-transform-mappings.html#b6-z-forms"><span class="vc-n">B.6</span> Z-Forms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transforms-appendix.html">Appendix C: Transforms Appendix</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transforms-appendix.html#c1-laplace-transform"><span class="vc-n">C.1</span> Laplace Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms-appendix.html#table-of-laplace-transforms">Table of Laplace Transforms</a></li><li class="vc-l3"><a href="transforms-appendix.html#properties-of-the-laplace-transform">Properties of the Laplace Transform</a></li><li class="vc-l3"><a href="transforms-appendix.html#convergence-of-the-laplace-integral">Convergence of the Laplace Integral</a></li><li class="vc-l3"><a href="transforms-appendix.html#properties-of-the-laplace-transform_1">Properties of the Laplace Transform</a></li></ul></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c2-fourier-transform"><span class="vc-n">C.2</span> Fourier Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms-appendix.html#table-of-fourier-transforms">Table of Fourier Transforms</a></li><li class="vc-l3"><a href="transforms-appendix.html#table-of-fourier-transform-properties">Table of Fourier Transform Properties</a></li><li class="vc-l3"><a href="transforms-appendix.html#convergence-of-the-fourier-integral">Convergence of the Fourier Integral</a></li><li class="vc-l3"><a href="transforms-appendix.html#properties-of-the-fourier-transform">Properties of the Fourier Transform</a></li></ul></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c3-z-transform"><span class="vc-n">C.3</span> Z-Transform</a><ul class="vc-subs"><li class="vc-l3"><a href="transforms-appendix.html#inverse-z-transform">Inverse Z Transform</a></li><li class="vc-l3"><a href="transforms-appendix.html#z-transform-tables">Z-Transform Tables</a></li></ul></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c4-modified-z-transform"><span class="vc-n">C.4</span> Modified Z-Transform</a></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c5-star-transform"><span class="vc-n">C.5</span> Star Transform</a></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c6-bilinear-transform"><span class="vc-n">C.6</span> Bilinear Transform</a></li>
+<li class="vc-l2"><a href="transforms-appendix.html#c7-wikipedia-resources"><span class="vc-n">C.7</span> Wikipedia Resources</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="system-representations.html">Appendix D: System Representations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="system-representations.html#d1-system-representations"><span class="vc-n">D.1</span> System Representations</a></li>
+<li class="vc-l2"><a href="system-representations.html#d2-general-description"><span class="vc-n">D.2</span> General Description</a></li>
+<li class="vc-l2"><a href="system-representations.html#d3-state-space-equations"><span class="vc-n">D.3</span> State-Space Equations</a></li>
+<li class="vc-l2"><a href="system-representations.html#d4-transfer-functions"><span class="vc-n">D.4</span> Transfer Functions</a></li>
+<li class="vc-l2"><a href="system-representations.html#d5-transfer-matrix"><span class="vc-n">D.5</span> Transfer Matrix</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="matrix-operations.html">Appendix E: Matrix Operations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="matrix-operations.html#e1-laws-of-matrix-algebra"><span class="vc-n">E.1</span> Laws of Matrix Algebra</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e2-transpose-matrix"><span class="vc-n">E.2</span> Transpose Matrix</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e3-determinant"><span class="vc-n">E.3</span> Determinant</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e4-inverse"><span class="vc-n">E.4</span> Inverse</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e5-eigenvalues"><span class="vc-n">E.5</span> Eigenvalues</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e6-eigenvectors"><span class="vc-n">E.6</span> Eigenvectors</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e7-left-eigenvectors"><span class="vc-n">E.7</span> Left-Eigenvectors</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e8-generalized-eigenvectors"><span class="vc-n">E.8</span> Generalized Eigenvectors</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e9-transformation-matrix"><span class="vc-n">E.9</span> Transformation Matrix</a></li>
+<li class="vc-l2"><a href="matrix-operations.html#e10-matlab"><span class="vc-n">E.10</span> MATLAB</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="matlab.html">Appendix F: MATLAB</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="matlab.html#f1-matlab"><span class="vc-n">F.1</span> MATLAB</a><ul class="vc-subs"><li class="vc-l3"><a href="matlab.html#input-output-isolation">Input-Output Isolation</a></li></ul></li>
+<li class="vc-l2"><a href="matlab.html#f2-step-response"><span class="vc-n">F.2</span> Step Response</a></li>
+<li class="vc-l2"><a href="matlab.html#f3-classical-modern"><span class="vc-n">F.3</span> Classical ↔ Modern</a></li>
+<li class="vc-l2"><a href="matlab.html#f4-z-domain-digital-filters"><span class="vc-n">F.4</span> z-Domain Digital Filters</a></li>
+<li class="vc-l2"><a href="matlab.html#f5-state-space-digital-filters"><span class="vc-n">F.5</span> State-Space Digital Filters</a></li>
+<li class="vc-l2"><a href="matlab.html#f6-root-locus-plots"><span class="vc-n">F.6</span> Root Locus Plots</a></li>
+<li class="vc-l2"><a href="matlab.html#f7-digital-root-locus"><span class="vc-n">F.7</span> Digital Root-Locus</a></li>
+<li class="vc-l2"><a href="matlab.html#f8-bode-plots"><span class="vc-n">F.8</span> Bode Plots</a></li>
+<li class="vc-l2"><a href="matlab.html#f9-nyquist-plots"><span class="vc-n">F.9</span> Nyquist Plots</a></li>
+<li class="vc-l2"><a href="matlab.html#f10-lyapunov-equations"><span class="vc-n">F.10</span> Lyapunov Equations</a></li>
+<li class="vc-l2"><a href="matlab.html#f11-controllability"><span class="vc-n">F.11</span> Controllability</a></li>
+<li class="vc-l2"><a href="matlab.html#f12-observability"><span class="vc-n">F.12</span> Observability</a></li>
+<li class="vc-l2"><a href="matlab.html#f13-empirical-gramians"><span class="vc-n">F.13</span> Empirical Gramians</a></li>
+<li class="vc-l2"><a href="matlab.html#f14-further-reading"><span class="vc-n">F.14</span> Further reading</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Resources and Licensing</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="glossary.html">Section 45: Glossary</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="glossary.html#451-a-b-c"><span class="vc-n">45.1</span> A, B, C</a></li>
+<li class="vc-l2"><a href="glossary.html#452-d-e-f"><span class="vc-n">45.2</span> D, E, F</a></li>
+<li class="vc-l2"><a href="glossary.html#453-g-h-i"><span class="vc-n">45.3</span> G, H, I</a></li>
+<li class="vc-l2"><a href="glossary.html#454-j-k-l"><span class="vc-n">45.4</span> J, K, L</a></li>
+<li class="vc-l2"><a href="glossary.html#455-m-n-o"><span class="vc-n">45.5</span> M, N, O</a></li>
+<li class="vc-l2"><a href="glossary.html#456-p-q-r"><span class="vc-n">45.6</span> P, Q, R</a></li>
+<li class="vc-l2"><a href="glossary.html#457-s-t-u-v"><span class="vc-n">45.7</span> S, T, U, V</a></li>
+<li class="vc-l2"><a href="glossary.html#458-w-x-y-z"><span class="vc-n">45.8</span> W, X, Y, Z</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="list-of-equations.html">Section 46: List of Equations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="list-of-equations.html#461-fundamental-equations"><span class="vc-n">46.1</span> Fundamental Equations</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#462-basic-inputs"><span class="vc-n">46.2</span> Basic Inputs</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#463-error-constants"><span class="vc-n">46.3</span> Error Constants</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#464-system-descriptions"><span class="vc-n">46.4</span> System Descriptions</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#465-feedback-loops"><span class="vc-n">46.5</span> Feedback Loops</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#466-transforms"><span class="vc-n">46.6</span> Transforms</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#467-transform-theorems"><span class="vc-n">46.7</span> Transform Theorems</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#468-state-space-methods"><span class="vc-n">46.8</span> State-Space Methods</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#469-root-locus"><span class="vc-n">46.9</span> Root Locus</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#4610-lyapunov-stability"><span class="vc-n">46.10</span> Lyapunov Stability</a></li>
+<li class="vc-l2"><a href="list-of-equations.html#4611-controllers-and-compensators"><span class="vc-n">46.11</span> Controllers and Compensators</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="resources.html">Section 47: Resources</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="resources.html#471-wikibooks"><span class="vc-n">47.1</span> Wikibooks</a><ul class="vc-subs"><li class="vc-l3"><a href="resources.html#prerequisite-books">Prerequisite Books</a></li><li class="vc-l3"><a href="resources.html#companion-books">Companion Books</a></li><li class="vc-l3"><a href="resources.html#books-for-further-reading">Books for Further Reading</a></li></ul></li>
+<li class="vc-l2"><a href="resources.html#472-wikiversity"><span class="vc-n">47.2</span> Wikiversity</a></li>
+<li class="vc-l2"><a href="resources.html#473-wikipedia"><span class="vc-n">47.3</span> Wikipedia</a></li>
+<li class="vc-l2"><a href="resources.html#474-software"><span class="vc-n">47.4</span> Software</a><ul class="vc-subs"><li class="vc-l3"><a href="resources.html#root-locus">Root Locus</a></li><li class="vc-l3"><a href="resources.html#matlab">MATLAB</a></li><li class="vc-l3"><a href="resources.html#octave">Octave</a></li><li class="vc-l3"><a href="resources.html#wolframalpha">WolframAlpha</a></li><li class="vc-l3"><a href="resources.html#commercial-vendors">Commercial Vendors</a></li></ul></li>
+<li class="vc-l2"><a href="resources.html#475-external-publications"><span class="vc-n">47.5</span> External Publications</a></li>
+<li class="vc-l2"><a href="resources.html#476-external-resources"><span class="vc-n">47.6</span> External Resources</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="licensing.html">Section 48: Licensing</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="licensing.html#481-license"><span class="vc-n">48.1</span> License</a></li>
+<li class="vc-l2"><a href="licensing.html#482-images"><span class="vc-n">48.2</span> Images</a></li>
+<li class="vc-l2"><a href="licensing.html#483-authors"><span class="vc-n">48.3</span> Authors</a></li>
+<li class="vc-l2"><a href="licensing.html#484-child-versions"><span class="vc-n">48.4</span> Child Versions</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A complete engineering course in control theory: system modelling, Laplace and Z transforms, transfer functions and sampled-data systems, state-space methods, stability (Routh-Hurwitz, Lyapunov), root locus, frequency response with Bode plots, Nichols charts and the Nyquist criterion, controllability and observability, state feedback, observers, controllers and compensators, and adaptive, nonlinear and noise-driven systems, with appendices of physical models, transform tables, matrix operations and MATLAB.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Control Systems, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Control_Systems" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-animal-anatomy-physiology/table-of-contents.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 21. Table of contents">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+21. Table of contents
+</div>
+</div>
+</a>
+<a href="preface.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Preface">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Preface
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

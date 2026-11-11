@@ -1,0 +1,739 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-nuclear-medicine-physics/index.html">
+<link rel="prev" href="../wb-fundamentals-of-transportation/conclusions.html">
+<link rel="next" href="atomic-nuclear-structure.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Basic Physics of Nuclear Medicine</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="atomic-nuclear-structure.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Atomic & Nuclear Structure
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="radioactive-decay.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Radioactive Decay
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-radioactive-decay-law.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. The Radioactive Decay Law
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="units-of-radiation-measurement.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Units of Radiation Measurement
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="interaction-of-radiation-with-matter.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Interaction of Radiation with Matter
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="attenuation-of-gamma-rays.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Attenuation of Gamma-Rays
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gas-filled-radiation-detectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Gas-Filled Radiation Detectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="scintillation-detectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Scintillation Detectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nuclear-medicine-imaging-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Nuclear Medicine Imaging Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="computers-in-nuclear-medicine.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Computers in Nuclear Medicine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fourier-methods.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Fourier Methods
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="x-ray-ct-in-nuclear-medicine.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. X-Ray CT in Nuclear Medicine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pacs-and-advanced-image-processing.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. PACS and Advanced Image Processing
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="three-dimensional-visualization-techniques.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Three-Dimensional Visualization Techniques
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="patient-dosimetry.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Patient Dosimetry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="production-of-radioisotopes.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Production of Radioisotopes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chapter-review.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Chapter Review
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dynamic-studies-in-nuclear-medicine.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Dynamic Studies in Nuclear Medicine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="deconvolution-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Deconvolution Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sonography-nuclear-medicine.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Sonography & Nuclear Medicine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mri-nuclear-medicine.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. MRI & Nuclear Medicine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dual-energy-absorptiometry.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Dual-Energy Absorptiometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="atomic-nuclear-structure-mcq.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Atomic & Nuclear Structure MCQ
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="radioactive-decay-mcq.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Radioactive Decay MCQ
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-radioactive-decay-law-mcq.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. The Radioactive Decay Law MCQ
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-nuclear-medicine-physics" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="atomic-nuclear-structure.html" style="--cv-bg:#1b4332;--cv-accent:#95d5b2;--cv-fg:#f1f7f3;--cv-n:16;--cv-rot:45deg;--cv-x:76%;--cv-y:65%" aria-label="Start reading Basic Physics of Nuclear Medicine"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Basic Physics of Nuclear Medicine</span><span class="vol-sub">Radioactivity, detectors and imaging</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Basic Physics of Nuclear Medicine</h1>
+<p class="pk-book-sub">Radioactivity, detectors and imaging</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Atoms and radioactive decay, radiation and matter, detectors, imaging systems, image processing and dosimetry, for students of medical imaging.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-intermediate">Intermediate</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/physics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></svg><span class="pk-chip-cat">Science &rsaquo;</span> Physics</a><a class="pk-chip" href="../../subjects/medicine.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7.5 2.4c0 5.4-7.5 10-7.5 10z"/><path d="M7.6 12.4h2.3l1.2-2.1 1.8 4 1.2-1.9h2.3"/></svg>Health &amp; Medicine</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="atomic-nuclear-structure.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-nuclear-medicine-physics"></div></div>
+<p class="pk-book-facts"><span>25 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-nuclear-medicine-physics" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="atomic-nuclear-structure.html">Chapter 1: Atomic &amp; Nuclear Structure</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#11-atomic-structure"><span class="vc-n">1.1</span> Atomic Structure</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#12-the-nucleus"><span class="vc-n">1.2</span> The Nucleus</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#13-classification-of-nuclei"><span class="vc-n">1.3</span> Classification of Nuclei</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#14-atomic-mass-unit"><span class="vc-n">1.4</span> Atomic Mass Unit</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#15-binding-energy"><span class="vc-n">1.5</span> Binding Energy</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#16-nuclear-stability"><span class="vc-n">1.6</span> Nuclear Stability</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#17-radioactivity"><span class="vc-n">1.7</span> Radioactivity</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#18-multiple-choice-questions"><span class="vc-n">1.8</span> Multiple Choice Questions</a></li>
+<li class="vc-l2"><a href="atomic-nuclear-structure.html#19-external-links"><span class="vc-n">1.9</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="radioactive-decay.html">Chapter 2: Radioactive Decay</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="radioactive-decay.html#21-methods-of-radioactive-decay"><span class="vc-n">2.1</span> Methods of Radioactive Decay</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#22-spontaneous-fission"><span class="vc-n">2.2</span> Spontaneous Fission</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#23-alpha-decay"><span class="vc-n">2.3</span> Alpha Decay</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#24-beta-decay"><span class="vc-n">2.4</span> Beta Decay</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#25-gamma-decay"><span class="vc-n">2.5</span> Gamma Decay</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#26-decay-schemes"><span class="vc-n">2.6</span> Decay Schemes</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#27-multiple-choice-questions"><span class="vc-n">2.7</span> Multiple Choice Questions</a></li>
+<li class="vc-l2"><a href="radioactive-decay.html#28-external-links"><span class="vc-n">2.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-radioactive-decay-law.html">Chapter 3: The Radioactive Decay Law</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#31-assumptions"><span class="vc-n">3.1</span> Assumptions</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#32-the-radioactive-decay-law"><span class="vc-n">3.2</span> The Radioactive Decay Law</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#33-half-life"><span class="vc-n">3.3</span> Half-Life</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#34-relationship-between-the-decay-constant-and-the-half-life"><span class="vc-n">3.4</span> Relationship between the Decay Constant and the Half Life</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#35-units-of-radioactivity"><span class="vc-n">3.5</span> Units of Radioactivity</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#36-multiple-choice-questions"><span class="vc-n">3.6</span> Multiple Choice Questions</a></li>
+<li class="vc-l2"><a href="the-radioactive-decay-law.html#37-questions"><span class="vc-n">3.7</span> Questions</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="units-of-radiation-measurement.html">Chapter 4: Units of Radiation Measurement</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#41-introduction"><span class="vc-n">4.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#42-a-typical-radiation-situation"><span class="vc-n">4.2</span> A Typical Radiation Situation</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#43-the-radiation-source"><span class="vc-n">4.3</span> The Radiation Source</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#44-the-radiation-beam"><span class="vc-n">4.4</span> The Radiation Beam</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#45-the-absorber"><span class="vc-n">4.5</span> The Absorber</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#46-specific-gamma-ray-constant"><span class="vc-n">4.6</span> Specific Gamma Ray Constant</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#47-the-inverse-square-law"><span class="vc-n">4.7</span> The Inverse Square Law</a></li>
+<li class="vc-l2"><a href="units-of-radiation-measurement.html#48-external-links"><span class="vc-n">4.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="interaction-of-radiation-with-matter.html">Chapter 5: Interaction of Radiation with Matter</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="interaction-of-radiation-with-matter.html#51-alpha-particles"><span class="vc-n">5.1</span> Alpha Particles</a></li>
+<li class="vc-l2"><a href="interaction-of-radiation-with-matter.html#52-beta-particles"><span class="vc-n">5.2</span> Beta Particles</a></li>
+<li class="vc-l2"><a href="interaction-of-radiation-with-matter.html#53-gamma-rays"><span class="vc-n">5.3</span> Gamma Rays</a><ul class="vc-subs"><li class="vc-l3"><a href="interaction-of-radiation-with-matter.html#photoelectric-effect">Photoelectric Effect</a></li><li class="vc-l3"><a href="interaction-of-radiation-with-matter.html#compton-effect">Compton Effect</a></li></ul></li>
+<li class="vc-l2"><a href="interaction-of-radiation-with-matter.html#54-radiation-biology"><span class="vc-n">5.4</span> Radiation Biology</a></li>
+<li class="vc-l2"><a href="interaction-of-radiation-with-matter.html#55-practical-radiation-safety"><span class="vc-n">5.5</span> Practical Radiation Safety</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="attenuation-of-gamma-rays.html">Chapter 6: Attenuation of Gamma-Rays</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#61-attenuation-experiment"><span class="vc-n">6.1</span> Attenuation Experiment</a><ul class="vc-subs"><li class="vc-l3"><a href="attenuation-of-gamma-rays.html#effect-of-atomic-number">Effect of Atomic Number</a></li><li class="vc-l3"><a href="attenuation-of-gamma-rays.html#effect-of-density">Effect of Density</a></li><li class="vc-l3"><a href="attenuation-of-gamma-rays.html#effect-of-thickness">Effect of Thickness</a></li><li class="vc-l3"><a href="attenuation-of-gamma-rays.html#effect-of-gamma-ray-energy">Effect of Gamma-Ray Energy</a></li></ul></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#62-mathematical-model"><span class="vc-n">6.2</span> Mathematical Model</a></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#63-half-value-layer"><span class="vc-n">6.3</span> Half Value Layer</a></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#64-relationship-between-and-the-hvl"><span class="vc-n">6.4</span> Relationship between μ and the HVL</a></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#65-mass-attenuation-coefficient"><span class="vc-n">6.5</span> Mass Attenuation Coefficient</a></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#66-questions"><span class="vc-n">6.6</span> Questions</a></li>
+<li class="vc-l2"><a href="attenuation-of-gamma-rays.html#67-external-links"><span class="vc-n">6.7</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="gas-filled-radiation-detectors.html">Chapter 7: Gas-Filled Radiation Detectors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gas-filled-radiation-detectors.html#71-gas-filled-detectors"><span class="vc-n">7.1</span> Gas-Filled Detectors</a></li>
+<li class="vc-l2"><a href="gas-filled-radiation-detectors.html#72-dc-voltage-dependence"><span class="vc-n">7.2</span> DC Voltage Dependence</a></li>
+<li class="vc-l2"><a href="gas-filled-radiation-detectors.html#73-ionisation-chamber"><span class="vc-n">7.3</span> Ionisation Chamber</a></li>
+<li class="vc-l2"><a href="gas-filled-radiation-detectors.html#74-geiger-counter"><span class="vc-n">7.4</span> Geiger Counter</a></li>
+<li class="vc-l2"><a href="gas-filled-radiation-detectors.html#75-external-links"><span class="vc-n">7.5</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="scintillation-detectors.html">Chapter 8: Scintillation Detectors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="scintillation-detectors.html#81-fluorescent-materials"><span class="vc-n">8.1</span> Fluorescent Materials</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#82-photomultiplier-tube"><span class="vc-n">8.2</span> Photomultiplier Tube</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#83-mathematical-model"><span class="vc-n">8.3</span> Mathematical Model</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#84-output-voltage"><span class="vc-n">8.4</span> Output Voltage</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#85-pulse-height-analysis"><span class="vc-n">8.5</span> Pulse Height Analysis</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#86-scintillation-spectrometer"><span class="vc-n">8.6</span> Scintillation Spectrometer</a></li>
+<li class="vc-l2"><a href="scintillation-detectors.html#87-external-links"><span class="vc-n">8.7</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="nuclear-medicine-imaging-systems.html">Chapter 9: Nuclear Medicine Imaging Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#91-gamma-camera"><span class="vc-n">9.1</span> Gamma Camera</a></li>
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#92-collimation"><span class="vc-n">9.2</span> Collimation</a></li>
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#93-example-images"><span class="vc-n">9.3</span> Example Images</a></li>
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#94-emission-tomography"><span class="vc-n">9.4</span> Emission Tomography</a><ul class="vc-subs"><li class="vc-l3"><a href="nuclear-medicine-imaging-systems.html#single-photon-emission-computed-tomography-spect">Single Photon Emission Computed Tomography (SPECT)</a></li><li class="vc-l3"><a href="nuclear-medicine-imaging-systems.html#positron-emission-tomography-pet">Positron Emission Tomography (PET)</a></li></ul></li>
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#95-references"><span class="vc-n">9.5</span> References</a></li>
+<li class="vc-l2"><a href="nuclear-medicine-imaging-systems.html#96-external-links"><span class="vc-n">9.6</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="computers-in-nuclear-medicine.html">Chapter 10: Computers in Nuclear Medicine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#101-introduction"><span class="vc-n">10.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#102-binary-representation"><span class="vc-n">10.2</span> Binary Representation</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#103-development-of-modern-computers"><span class="vc-n">10.3</span> Development of Modern Computers</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#104-hardware"><span class="vc-n">10.4</span> Hardware</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#105-software"><span class="vc-n">10.5</span> Software</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#106-digital-image-processor"><span class="vc-n">10.6</span> Digital Image Processor</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#107-digital-imaging"><span class="vc-n">10.7</span> Digital Imaging</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#108-digital-image-processing"><span class="vc-n">10.8</span> Digital Image Processing</a></li>
+<li class="vc-l2"><a href="computers-in-nuclear-medicine.html#109-the-fourier-transform-a-pictorial-essay"><span class="vc-n">10.9</span> The Fourier Transform – A Pictorial Essay</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="fourier-methods.html">Chapter 11: Fourier Methods</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fourier-methods.html#111-periodic-functions"><span class="vc-n">11.1</span> Periodic Functions</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#112-fourier-series"><span class="vc-n">11.2</span> Fourier Series</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#113-fourier-spectrum"><span class="vc-n">11.3</span> Fourier Spectrum</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#114-fourier-transform"><span class="vc-n">11.4</span> Fourier Transform</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#115-the-dirac-delta-function"><span class="vc-n">11.5</span> The Dirac Delta Function</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#116-modulation-transfer-function"><span class="vc-n">11.6</span> Modulation Transfer Function</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#117-filtering-the-fourier-spectrum"><span class="vc-n">11.7</span> Filtering the Fourier Spectrum</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#118-filtered-back-projection"><span class="vc-n">11.8</span> Filtered Back Projection</a></li>
+<li class="vc-l2"><a href="fourier-methods.html#119-further-reading"><span class="vc-n">11.9</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="x-ray-ct-in-nuclear-medicine.html">Chapter 12: X-Ray CT in Nuclear Medicine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#121-conventional-radiography"><span class="vc-n">12.1</span> Conventional Radiography</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#122-back-projection"><span class="vc-n">12.2</span> Back Projection</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#123-filtered-back-projection"><span class="vc-n">12.3</span> Filtered Back Projection</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#124-ct-scanning-geometries"><span class="vc-n">12.4</span> CT Scanning Geometries</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#125-helical-scanning"><span class="vc-n">12.5</span> Helical Scanning</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#126-interpolation-extrapolation"><span class="vc-n">12.6</span> Interpolation &amp; Extrapolation</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#127-interpolation-in-helical-ct"><span class="vc-n">12.7</span> Interpolation in Helical CT</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#128-volume-imaging"><span class="vc-n">12.8</span> Volume Imaging</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#129-ct-image-display"><span class="vc-n">12.9</span> CT Image Display</a></li>
+<li class="vc-l2"><a href="x-ray-ct-in-nuclear-medicine.html#1210-scanned-projection-radiography"><span class="vc-n">12.10</span> Scanned Projection Radiography</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="pacs-and-advanced-image-processing.html">Chapter 13: PACS and Advanced Image Processing</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="pacs-and-advanced-image-processing.html#131-picture-archival-communication-systems-pacs"><span class="vc-n">13.1</span> Picture Archival &amp; Communication Systems (PACS)</a></li>
+<li class="vc-l2"><a href="pacs-and-advanced-image-processing.html#132-the-internet-the-world-wide-web"><span class="vc-n">13.2</span> The Internet &amp; The World Wide Web</a></li>
+<li class="vc-l2"><a href="pacs-and-advanced-image-processing.html#133-spatial-registration-of-images"><span class="vc-n">13.3</span> Spatial Registration of Images</a></li>
+<li class="vc-l2"><a href="pacs-and-advanced-image-processing.html#134-image-segmentation"><span class="vc-n">13.4</span> Image Segmentation</a></li>
+<li class="vc-l2"><a href="pacs-and-advanced-image-processing.html#135-image-fusion"><span class="vc-n">13.5</span> Image Fusion</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="three-dimensional-visualization-techniques.html">Chapter 14: Three-Dimensional Visualization Techniques</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#141-introduction"><span class="vc-n">14.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#142-axial-projection"><span class="vc-n">14.2</span> Axial Projection</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#143-multi-planar-reconstruction"><span class="vc-n">14.3</span> Multi-Planar Reconstruction</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#144-maximum-intensity-projection"><span class="vc-n">14.4</span> Maximum Intensity Projection</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#145-volume-rendering"><span class="vc-n">14.5</span> Volume Rendering</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#146-surface-rendering"><span class="vc-n">14.6</span> Surface Rendering</a></li>
+<li class="vc-l2"><a href="three-dimensional-visualization-techniques.html#147-subfusion-processing"><span class="vc-n">14.7</span> subFusion Processing</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="patient-dosimetry.html">Chapter 15: Patient Dosimetry</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="patient-dosimetry.html#151-mird-calculations"><span class="vc-n">15.1</span> MIRD Calculations</a></li>
+<li class="vc-l2"><a href="patient-dosimetry.html#152-the-s-factor"><span class="vc-n">15.2</span> The S-Factor</a></li>
+<li class="vc-l2"><a href="patient-dosimetry.html#153-the-dose-in-a-liver-scan"><span class="vc-n">15.3</span> The Dose in a Liver Scan</a></li>
+<li class="vc-l2"><a href="patient-dosimetry.html#154-typical-nuclear-medicine-doses"><span class="vc-n">15.4</span> Typical Nuclear Medicine Doses</a></li>
+<li class="vc-l2"><a href="patient-dosimetry.html#155-typical-doses-in-x-ray-ct"><span class="vc-n">15.5</span> Typical Doses in X-Ray CT</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="production-of-radioisotopes.html">Chapter 16: Production of Radioisotopes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="production-of-radioisotopes.html#161-nuclear-fission"><span class="vc-n">16.1</span> Nuclear Fission</a></li>
+<li class="vc-l2"><a href="production-of-radioisotopes.html#162-nuclear-bombardment"><span class="vc-n">16.2</span> Nuclear Bombardment</a></li>
+<li class="vc-l2"><a href="production-of-radioisotopes.html#163-radioisotope-generator"><span class="vc-n">16.3</span> Radioisotope Generator</a></li>
+<li class="vc-l2"><a href="production-of-radioisotopes.html#164-operation-of-a-99m-tc-generator"><span class="vc-n">16.4</span> Operation of a 99m-Tc Generator</a></li>
+<li class="vc-l2"><a href="production-of-radioisotopes.html#165-external-links"><span class="vc-n">16.5</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="chapter-review.html">Chapter 17: Chapter Review</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="chapter-review.html#171-chapter-review-atomic-nuclear-structure"><span class="vc-n">17.1</span> Chapter Review: Atomic &amp; Nuclear Structure</a></li>
+<li class="vc-l2"><a href="chapter-review.html#172-chapter-review-radioactive-decay"><span class="vc-n">17.2</span> Chapter Review: Radioactive Decay</a></li>
+<li class="vc-l2"><a href="chapter-review.html#173-chapter-review-the-radioactive-decay-law"><span class="vc-n">17.3</span> Chapter Review: The Radioactive Decay Law</a></li>
+<li class="vc-l2"><a href="chapter-review.html#174-chapter-review-units-of-radiation-measurement"><span class="vc-n">17.4</span> = Chapter Review: Units of Radiation Measurement =</a><ul class="vc-subs"><li class="vc-l3"><a href="chapter-review.html#chapter-review-interaction-of-radiation-with-matter">Chapter Review: Interaction of Radiation with Matter</a></li><li class="vc-l3"><a href="chapter-review.html#chapter-review-attenuation-of-gamma-rays">Chapter Review: Attenuation of Gamma-Rays</a></li><li class="vc-l3"><a href="chapter-review.html#chapter-review-gas-filled-detectors">Chapter Review: Gas-Filled Detectors</a></li><li class="vc-l3"><a href="chapter-review.html#chapter-review-scintillation-detectors">Chapter Review: Scintillation Detectors</a></li><li class="vc-l3"><a href="chapter-review.html#chapter-review-nuclear-medicine-imaging-systems">Chapter Review: Nuclear Medicine Imaging Systems</a></li><li class="vc-l3"><a href="chapter-review.html#chapter-review-production-of-radioisotopes">Chapter Review: Production of Radioisotopes</a></li><li class="vc-l3"><a href="chapter-review.html#exercise-questions">Exercise Questions</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dynamic-studies-in-nuclear-medicine.html">Chapter 18: Dynamic Studies in Nuclear Medicine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#181-introduction"><span class="vc-n">18.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#182-compartmental-analysis"><span class="vc-n">18.2</span> Compartmental Analysis</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#183-single-compartment-model"><span class="vc-n">18.3</span> Single Compartment Model</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#184-two-compartment-model-closed-system"><span class="vc-n">18.4</span> Two Compartment Model – Closed System</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#185-two-compartment-model-open-catenary-system"><span class="vc-n">18.5</span> Two Compartment Model – Open Catenary System</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#186-two-compartment-model-open-mamillary-system"><span class="vc-n">18.6</span> Two Compartment Model – Open Mamillary System</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#187-models-with-three-compartments"><span class="vc-n">18.7</span> Models with Three Compartments</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#188-glomerular-filtration-rate"><span class="vc-n">18.8</span> Glomerular Filtration Rate</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#189-renography"><span class="vc-n">18.9</span> Renography</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1810-background-subtraction-in-renography"><span class="vc-n">18.10</span> Background Subtraction in Renography</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1811-relative-renal-function"><span class="vc-n">18.11</span> Relative Renal Function</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1812-kidney-depth-correction"><span class="vc-n">18.12</span> Kidney Depth Correction</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1813-semi-automatic-methods-of-99mtc-mag3-renogram-analysis"><span class="vc-n">18.13</span> Semi-Automatic Methods of 99mTc-MAG3 Renogram Analysis</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1814-conjugate-imaging-in-renography"><span class="vc-n">18.14</span> Conjugate Imaging in Renography</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1815-blood-pool-compensation-for-split-function-determination"><span class="vc-n">18.15</span> Blood Pool Compensation for Split Function Determination</a></li>
+<li class="vc-l2"><a href="dynamic-studies-in-nuclear-medicine.html#1816-references"><span class="vc-n">18.16</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="deconvolution-analysis.html">Chapter 19: Deconvolution Analysis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="deconvolution-analysis.html#191-introduction"><span class="vc-n">19.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="deconvolution-analysis.html#192-renography"><span class="vc-n">19.2</span> Renography</a></li>
+<li class="vc-l2"><a href="deconvolution-analysis.html#193-an-ideal-renogram"><span class="vc-n">19.3</span> An Ideal Renogram</a></li>
+<li class="vc-l2"><a href="deconvolution-analysis.html#194-convolution"><span class="vc-n">19.4</span> Convolution</a></li>
+<li class="vc-l2"><a href="deconvolution-analysis.html#195-deconvolution"><span class="vc-n">19.5</span> Deconvolution</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sonography-nuclear-medicine.html">Chapter 20: Sonography &amp; Nuclear Medicine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sonography-nuclear-medicine.html#201-sound-waves"><span class="vc-n">20.1</span> Sound Waves</a></li>
+<li class="vc-l2"><a href="sonography-nuclear-medicine.html#202-ultrasound-scanner"><span class="vc-n">20.2</span> Ultrasound Scanner</a></li>
+<li class="vc-l2"><a href="sonography-nuclear-medicine.html#203-doppler-ultrasound"><span class="vc-n">20.3</span> Doppler Ultrasound</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mri-nuclear-medicine.html">Chapter 21: MRI &amp; Nuclear Medicine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#211-mr-imaging-process"><span class="vc-n">21.1</span> MR Imaging Process</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#212-nuclear-spin"><span class="vc-n">21.2</span> Nuclear Spin</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#213-magnetic-sum-vector"><span class="vc-n">21.3</span> Magnetic Sum Vector</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#214-rf-excitation"><span class="vc-n">21.4</span> RF Excitation</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#215-rf-emission"><span class="vc-n">21.5</span> RF Emission</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#216-inversion-recovery"><span class="vc-n">21.6</span> Inversion Recovery</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#217-spatial-localization-of-nmr-signals"><span class="vc-n">21.7</span> Spatial Localization of NMR Signals</a></li>
+<li class="vc-l2"><a href="mri-nuclear-medicine.html#218-back-to-the-nucleus"><span class="vc-n">21.8</span> Back to the Nucleus</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dual-energy-absorptiometry.html">Chapter 22: Dual-Energy Absorptiometry</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dual-energy-absorptiometry.html#221-introduction"><span class="vc-n">22.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="dual-energy-absorptiometry.html#222-dual-energy-radiography"><span class="vc-n">22.2</span> Dual-Energy Radiography</a></li>
+<li class="vc-l2"><a href="dual-energy-absorptiometry.html#223-radiographic-image-receptors"><span class="vc-n">22.3</span> Radiographic Image Receptors</a></li>
+<li class="vc-l2"><a href="dual-energy-absorptiometry.html#224-dual-energy-x-ray-absorptiometry-dexa"><span class="vc-n">22.4</span> Dual-Energy X-Ray Absorptiometry (DEXA)</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="atomic-nuclear-structure-mcq.html">Chapter 23: Atomic &amp; Nuclear Structure MCQ</a></li>
+<li class="vc-ch vc-leaf"><a href="radioactive-decay-mcq.html">Chapter 24: Radioactive Decay MCQ</a></li>
+<li class="vc-ch vc-leaf"><a href="the-radioactive-decay-law-mcq.html">Chapter 25: The Radioactive Decay Law MCQ</a></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>The physics behind nuclear medicine, written for students of medical imaging: atomic and nuclear structure, radioactive decay, units of radiation, the interaction of radiation with matter, attenuation, gas-filled and scintillation detectors, imaging systems, computers, Fourier methods and image processing, patient dosimetry and the production of radioisotopes, with chapters on dynamic studies and on X-ray CT, ultrasound, MRI and bone densitometry beside nuclear medicine, and multiple-choice questions.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Basic Physics of Nuclear Medicine, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Basic_Physics_of_Nuclear_Medicine" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-fundamentals-of-transportation/conclusions.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 56. Conclusions">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+56. Conclusions
+</div>
+</div>
+</a>
+<a href="atomic-nuclear-structure.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Atomic &amp; Nuclear Structure">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Atomic & Nuclear Structure
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
