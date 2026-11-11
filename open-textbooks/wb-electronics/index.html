@@ -1,0 +1,1318 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-electronics/index.html">
+<link rel="prev" href="../wb-circuit-theory/resources.html">
+<link rel="next" href="aim.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Electronics</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="aim.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Aim of This Textbook
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="prereq.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Prerequisites
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="charge-and-coulomb-s-law.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Charge and Coulomb's Law
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="voltage-current-and-power.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Voltage, Current, and Power
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-concepts.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Basic Concepts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cells.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Cells
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="resistors.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Resistors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="capacitors.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Capacitors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductors.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Inductors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductance.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Inductance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-construction.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Inductor Construction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="real-inductors.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Real Inductors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Inductor Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="components.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Other Components
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dc-voltage-and-current.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. DC Voltage and Current Laws
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nodal-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Nodal Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mesh-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Mesh Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="norton-equivalents.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Thevenin and Norton Equivalent Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="superposition.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Superposition
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="diagnostic-equipment.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Diagnostic Equipment
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dc-circuit-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. DC Circuit Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="measuring-instruments.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Measuring Instruments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="noise-in-electronic-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Noise in electronic circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ac-voltage-and-current.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. AC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="phasors.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Phasors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="impedance.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Impedance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="steady-state.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Steady State
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transient-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Transient Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rc-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. RC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rl-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. RL Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lc-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. LC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rcl.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. RCL Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Analog Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="semiconductor-basics.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Semiconductor Basics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vacuum-tubes.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Vacuum Tubes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="diodes.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Diodes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transistors.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Transistors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fet.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. FET
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mosfet.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. MOSFET
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amplifiers.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Amplifiers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="op-amps.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Operational amplifiers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="non-linear-configurations.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Non Linear Configurations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-gyrator.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Inductor Gyrator
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-multipliers.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Analog multipliers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Digital Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="boolean-algebra.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Boolean Algebra
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ttl.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. TTL
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cmos.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. CMOS
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="integrated-circuit.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Integrated Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-gates.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Basic gates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="combination-gates.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Combination gates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="flip-flops.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. Flip Flops
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="counters.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Counters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="adders.html" class="md-nav__link">
+<span class="md-ellipsis">
+56. Adders
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="decoders-and-encoders.html" class="md-nav__link">
+<span class="md-ellipsis">
+57. Decoders and Encoders
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="multiplexers.html" class="md-nav__link">
+<span class="md-ellipsis">
+58. Multiplexers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ram-and-rom.html" class="md-nav__link">
+<span class="md-ellipsis">
+59. RAM and ROM
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="registers.html" class="md-nav__link">
+<span class="md-ellipsis">
+60. Registers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alu.html" class="md-nav__link">
+<span class="md-ellipsis">
+61. ALU
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="control-unit.html" class="md-nav__link">
+<span class="md-ellipsis">
+62. Control Unit
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chapter-63.html" class="md-nav__link">
+<span class="md-ellipsis">
+63. O
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-to-digital-converters.html" class="md-nav__link">
+<span class="md-ellipsis">
+64. Analog to Digital Converters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-to-analog-converters.html" class="md-nav__link">
+<span class="md-ellipsis">
+65. Digital to Analog Converters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="frequency-spectrum.html" class="md-nav__link">
+<span class="md-ellipsis">
+66. Frequency Spectrum
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gallery-of-vlf-signals.html" class="md-nav__link">
+<span class="md-ellipsis">
+67. Gallery of VLF-signals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vlf-reception-with-the-pc.html" class="md-nav__link">
+<span class="md-ellipsis">
+68. VLF-reception with the PC
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transmitter-design.html" class="md-nav__link">
+<span class="md-ellipsis">
+69. Transmitter design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="definitions.html" class="md-nav__link">
+<span class="md-ellipsis">
+70. Definitions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="symbols.html" class="md-nav__link">
+<span class="md-ellipsis">
+71. Circuit Symbols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="component-identification.html" class="md-nav__link">
+<span class="md-ellipsis">
+72. Identifying Components and Values
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electronics-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+73. Electronics Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="laplace-transform-pairs.html" class="md-nav__link">
+<span class="md-ellipsis">
+74. Laplace Transform pairs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+75. Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electro-mechanical-analogies.html" class="md-nav__link">
+<span class="md-ellipsis">
+76. Electro-Mechanical Analogies
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-electronics" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="aim.html" style="--cv-bg:#1f3b2d;--cv-accent:#f2c14e;--cv-fg:#eef3ea;--cv-n:12;--cv-rot:24deg;--cv-x:44%;--cv-y:82%" aria-label="Start reading Electronics"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Electronics</span><span class="vol-sub">Components, circuits and signals</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Electronics</h1>
+<p class="pk-book-sub">Components, circuits and signals</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Semiconductors, diodes, transistors, amplifiers, operational amplifiers, oscillators, digital logic and power supplies, step by step.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/electronics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.2 3 5.5 13.5h6L10.8 21l7.7-10.5h-6z"/></svg><span class="pk-chip-cat">Engineering &rsaquo;</span> Electronics &amp; Electrical</a><a class="pk-chip" href="../../subjects/engineering.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.3"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M5.5 18.5l2.1-2.1M16.4 7.6l2.1-2.1"/></svg>Engineering</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="aim.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-electronics"></div></div>
+<p class="pk-book-facts"><span>76 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-electronics" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Foreword</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="aim.html">Chapter 1: Aim of This Textbook</a></li>
+<li class="vc-ch"><details><summary><a href="prereq.html">Chapter 2: Prerequisites</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="prereq.html#21-prerequisite-topics"><span class="vc-n">2.1</span> Prerequisite Topics</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="preface.html">Chapter 3: Preface</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="preface.html#31-importance-of-electronics"><span class="vc-n">3.1</span> Importance of Electronics</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Chapter 1: DC Circuits</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="charge-and-coulomb-s-law.html">Chapter 4: Charge and Coulomb&#x27;s Law</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#41-basic-understanding"><span class="vc-n">4.1</span> Basic Understanding</a></li>
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#42-balance-of-charge"><span class="vc-n">4.2</span> Balance of Charge</a></li>
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#43-conductors"><span class="vc-n">4.3</span> Conductors</a></li>
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#44-insulators"><span class="vc-n">4.4</span> Insulators</a></li>
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#45-quantity-of-charge"><span class="vc-n">4.5</span> Quantity of Charge</a></li>
+<li class="vc-l2"><a href="charge-and-coulomb-s-law.html#46-force-between-charges-coulombs-law"><span class="vc-n">4.6</span> Force between Charges: Coulomb&#x27;s Law</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="voltage-current-and-power.html">Chapter 5: Voltage, Current, and Power</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="voltage-current-and-power.html#51-basic-understanding"><span class="vc-n">5.1</span> Basic Understanding</a><ul class="vc-subs"><li class="vc-l3"><a href="voltage-current-and-power.html#electric-field">Electric Field</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#energy">Energy</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#electric-potential-energy">Electric Potential Energy</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#electric-potential">Electric Potential</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#voltage">Voltage</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#current">Current</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#power">Power</a></li></ul></li>
+<li class="vc-l2"><a href="voltage-current-and-power.html#52-circuit"><span class="vc-n">5.2</span> Circuit</a><ul class="vc-subs"><li class="vc-l3"><a href="voltage-current-and-power.html#short-circuit">Short Circuit</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#open-circuit">Open Circuit</a></li><li class="vc-l3"><a href="voltage-current-and-power.html#properties-of-wires">Properties of wires</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="basic-concepts.html">Chapter 6: Basic Concepts</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-concepts.html#61-what-is-electronics"><span class="vc-n">6.1</span> What is Electronics?</a></li>
+<li class="vc-l2"><a href="basic-concepts.html#62-electricity"><span class="vc-n">6.2</span> Electricity</a></li>
+<li class="vc-l2"><a href="basic-concepts.html#63-electric-charge"><span class="vc-n">6.3</span> Electric Charge</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-concepts.html#coulombs-law">Coulomb&#x27;s Law</a></li><li class="vc-l3"><a href="basic-concepts.html#electric-field">Electric field</a></li><li class="vc-l3"><a href="basic-concepts.html#lorentzs-law">Lorentz&#x27;s Law</a></li><li class="vc-l3"><a href="basic-concepts.html#electromagnetic-force">Electromagnetic Force</a></li></ul></li>
+<li class="vc-l2"><a href="basic-concepts.html#64-electricity-and-matter"><span class="vc-n">6.4</span> Electricity and Matter</a></li>
+<li class="vc-l2"><a href="basic-concepts.html#65-electricity-and-conductors"><span class="vc-n">6.5</span> Electricity and Conductors</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-concepts.html#voltage">Voltage</a></li><li class="vc-l3"><a href="basic-concepts.html#current">Current</a></li><li class="vc-l3"><a href="basic-concepts.html#conductance">Conductance</a></li><li class="vc-l3"><a href="basic-concepts.html#resistance">Resistance</a></li></ul></li>
+<li class="vc-l2"><a href="basic-concepts.html#66-black-body-radiation"><span class="vc-n">6.6</span> Black Body Radiation</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-concepts.html#experiment">Experiment</a></li><li class="vc-l3"><a href="basic-concepts.html#observation">Observation</a></li><li class="vc-l3"><a href="basic-concepts.html#conclusion">Conclusion</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="cells.html">Chapter 7: Cells</a></li>
+<li class="vc-ch"><details><summary><a href="resistors.html">Chapter 8: Resistors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="resistors.html#81-resistance"><span class="vc-n">8.1</span> Resistance</a><ul class="vc-subs"><li class="vc-l3"><a href="resistors.html#measurement-of-resistance">Measurement of resistance</a></li><li class="vc-l3"><a href="resistors.html#ohms-law">Ohm&#x27;s Law</a></li><li class="vc-l3"><a href="resistors.html#volts-law">Volt&#x27;s Law</a></li><li class="vc-l3"><a href="resistors.html#amperes-law">Ampere&#x27;s Law</a></li><li class="vc-l3"><a href="resistors.html#watts-law">Watt&#x27;s Law</a></li><li class="vc-l3"><a href="resistors.html#resistance-and-temperature">Resistance and Temperature</a></li><li class="vc-l3"><a href="resistors.html#resistance-and-electric-power-loss">Resistance and Electric Power Loss</a></li></ul></li>
+<li class="vc-l2"><a href="resistors.html#82-resistors-symbol"><span class="vc-n">8.2</span> Resistor&#x27;s Symbol</a></li>
+<li class="vc-l2"><a href="resistors.html#83-resistor-connection"><span class="vc-n">8.3</span> Resistor Connection</a><ul class="vc-subs"><li class="vc-l3"><a href="resistors.html#resistors-in-series">Resistors in Series</a></li><li class="vc-l3"><a href="resistors.html#resistors-in-parallel">Resistors in Parallel</a></li><li class="vc-l3"><a href="resistors.html#combinations-of-series-and-parallel">Combinations of series and parallel</a></li><li class="vc-l3"><a href="resistors.html#2-port-network">2 port network</a></li></ul></li>
+<li class="vc-l2"><a href="resistors.html#84-resistors-labeling-see-also-identification"><span class="vc-n">8.4</span> Resistor&#x27;s Labeling (See also Identification)</a></li>
+<li class="vc-l2"><a href="resistors.html#85-resistors-construction"><span class="vc-n">8.5</span> Resistor&#x27;s Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="resistors.html#resistivity-of-the-material">Resistivity of the Material</a></li><li class="vc-l3"><a href="resistors.html#length-and-cross-sectional-area">Length and cross-sectional area</a></li><li class="vc-l3"><a href="resistors.html#example">Example</a></li><li class="vc-l3"><a href="resistors.html#properties-of-the-material">Properties of the material</a></li></ul></li>
+<li class="vc-l2"><a href="resistors.html#86-resistor-variations"><span class="vc-n">8.6</span> Resistor variations</a></li>
+<li class="vc-l2"><a href="resistors.html#87-applications"><span class="vc-n">8.7</span> Applications</a></li>
+<li class="vc-l2"><a href="resistors.html#88-specifications"><span class="vc-n">8.8</span> Specifications</a><ul class="vc-subs"><li class="vc-l3"><a href="resistors.html#nominal-resistance">Nominal Resistance</a></li><li class="vc-l3"><a href="resistors.html#tolerances">Tolerances</a></li><li class="vc-l3"><a href="resistors.html#power-rating">Power Rating</a></li><li class="vc-l3"><a href="resistors.html#operating-temperature">Operating Temperature</a></li><li class="vc-l3"><a href="resistors.html#maximum-voltage">Maximum Voltage</a></li><li class="vc-l3"><a href="resistors.html#temperature-coefficient">Temperature Coefficient</a></li><li class="vc-l3"><a href="resistors.html#capacity-and-inductance">Capacity and Inductance</a></li><li class="vc-l3"><a href="resistors.html#packaging">Packaging</a></li></ul></li>
+<li class="vc-l2"><a href="resistors.html#89-related-wikimedia-resources"><span class="vc-n">8.9</span> Related Wikimedia resources</a><ul class="vc-subs"><li class="vc-l3"><a href="resistors.html#wikibooks">Wikibooks</a></li><li class="vc-l3"><a href="resistors.html#wikipedia">Wikipedia</a></li><li class="vc-l3"><a href="resistors.html#further-readings">Further Readings</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="capacitors.html">Chapter 9: Capacitors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="capacitors.html#91-capacitors"><span class="vc-n">9.1</span> Capacitors</a></li>
+<li class="vc-l2"><a href="capacitors.html#92-capacitance"><span class="vc-n">9.2</span> Capacitance</a></li>
+<li class="vc-l2"><a href="capacitors.html#93-capacitor-direct-current-voltage-dc"><span class="vc-n">9.3</span> Capacitor &amp; Direct Current Voltage (DC)</a></li>
+<li class="vc-l2"><a href="capacitors.html#94-capacitor-alternating-current-voltage-ac"><span class="vc-n">9.4</span> Capacitor &amp; Alternating Current Voltage (AC)</a><ul class="vc-subs"><li class="vc-l3"><a href="capacitors.html#voltage">Voltage</a></li><li class="vc-l3"><a href="capacitors.html#current">Current</a></li><li class="vc-l3"><a href="capacitors.html#reactance">Reactance</a></li><li class="vc-l3"><a href="capacitors.html#impedance">Impedance</a></li><li class="vc-l3"><a href="capacitors.html#angle-of-difference-between-voltage-and-current">Angle of Difference between Voltage and Current</a></li><li class="vc-l3"><a href="capacitors.html#time-constant">Time Constant</a></li></ul></li>
+<li class="vc-l2"><a href="capacitors.html#95-capacitor-labeling"><span class="vc-n">9.5</span> Capacitor Labeling</a></li>
+<li class="vc-l2"><a href="capacitors.html#96-capacitor-types"><span class="vc-n">9.6</span> Capacitor Types</a><ul class="vc-subs"><li class="vc-l3"><a href="capacitors.html#ceramic-disc">Ceramic Disc</a></li><li class="vc-l3"><a href="capacitors.html#ceramic-dipped">Ceramic Dipped</a></li><li class="vc-l3"><a href="capacitors.html#electrolytic">Electrolytic</a></li><li class="vc-l3"><a href="capacitors.html#tantalum">Tantalum</a></li></ul></li>
+<li class="vc-l2"><a href="capacitors.html#97-construction"><span class="vc-n">9.7</span> Construction</a></li>
+<li class="vc-l2"><a href="capacitors.html#98-materials"><span class="vc-n">9.8</span> Materials</a></li>
+<li class="vc-l2"><a href="capacitors.html#99-capacitor-connection"><span class="vc-n">9.9</span> Capacitor Connection</a><ul class="vc-subs"><li class="vc-l3"><a href="capacitors.html#capacitors-in-series">Capacitors in Series</a></li><li class="vc-l3"><a href="capacitors.html#capacitors-in-parallel">Capacitors in Parallel</a></li></ul></li>
+<li class="vc-l2"><a href="capacitors.html#910-rc-circuit"><span class="vc-n">9.10</span> RC Circuit</a><ul class="vc-subs"><li class="vc-l3"><a href="capacitors.html#introduction">Introduction</a></li><li class="vc-l3"><a href="capacitors.html#basics">Basics</a></li><li class="vc-l3"><a href="capacitors.html#the-time-constant">The Time Constant</a></li></ul></li>
+<li class="vc-l2"><a href="capacitors.html#911-capacitor-specifications"><span class="vc-n">9.11</span> Capacitor Specifications</a></li>
+<li class="vc-l2"><a href="capacitors.html#912-capacitor-variations"><span class="vc-n">9.12</span> Capacitor Variations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="inductors.html">Chapter 10: Inductors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="inductors.html#101-inductor"><span class="vc-n">10.1</span> Inductor</a></li>
+<li class="vc-l2"><a href="inductors.html#102-inductance"><span class="vc-n">10.2</span> Inductance</a><ul class="vc-subs"><li class="vc-l3"><a href="inductors.html#basic-inductance-formula-for-a-cylindrical-coil">Basic inductance formula for a cylindrical coil</a></li><li class="vc-l3"><a href="inductors.html#the-self-inductance-of-a-straight-round-wire-in-free-space">The self-inductance of a straight, round wire in free space</a></li><li class="vc-l3"><a href="inductors.html#inductance-of-a-short-air-core-cylindrical-coil-in-terms-of-geometric-parameters">Inductance of a short air core cylindrical coil in terms of geometric parameters:</a></li><li class="vc-l3"><a href="inductors.html#multilayer-air-core-coil">Multilayer air core coil</a></li><li class="vc-l3"><a href="inductors.html#flat-spiral-air-core-coil">Flat spiral air core coil</a></li><li class="vc-l3"><a href="inductors.html#winding-around-a-toroidal-core-circular-cross-section">Winding around a toroidal core (circular cross-section)</a></li><li class="vc-l3"><a href="inductors.html#quality-of-good-inductor">Quality of good inductor</a></li><li class="vc-l3"><a href="inductors.html#coils-characteristics">Coil&#x27;s Characteristics</a></li></ul></li>
+<li class="vc-l2"><a href="inductors.html#103-inductor-and-direct-current-voltage-dc"><span class="vc-n">10.3</span> Inductor and Direct Current Voltage (DC)</a></li>
+<li class="vc-l2"><a href="inductors.html#104-inductor-and-alternating-current-voltage-ac"><span class="vc-n">10.4</span> Inductor and Alternating Current Voltage (AC)</a><ul class="vc-subs"><li class="vc-l3"><a href="inductors.html#inductors-voltage">Inductor&#x27;s Voltage</a></li><li class="vc-l3"><a href="inductors.html#inductors-current">Inductor&#x27;s Current</a></li><li class="vc-l3"><a href="inductors.html#reactance">Reactance</a></li><li class="vc-l3"><a href="inductors.html#impedance">Impedance</a></li><li class="vc-l3"><a href="inductors.html#angle-difference-between-voltage-and-current">Angle Difference Between Voltage and Current</a></li><li class="vc-l3"><a href="inductors.html#time-constant">Time Constant</a></li><li class="vc-l3"><a href="inductors.html#quality-factor">Quality factor</a></li></ul></li>
+<li class="vc-l2"><a href="inductors.html#105-inductors-connection"><span class="vc-n">10.5</span> Inductor&#x27;s Connection</a><ul class="vc-subs"><li class="vc-l3"><a href="inductors.html#series-connection">Series Connection</a></li><li class="vc-l3"><a href="inductors.html#parallel-connection">Parallel Connection</a></li></ul></li>
+<li class="vc-l2"><a href="inductors.html#106-see-also"><span class="vc-n">10.6</span> See Also</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="inductance.html">Chapter 11: Inductance</a></li>
+<li class="vc-ch"><details><summary><a href="networks.html">Chapter 12: Networks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="networks.html#121-series"><span class="vc-n">12.1</span> Series</a></li>
+<li class="vc-l2"><a href="networks.html#122-parallel"><span class="vc-n">12.2</span> Parallel</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="inductor-construction.html">Chapter 13: Inductor Construction</a></li>
+<li class="vc-ch"><details><summary><a href="real-inductors.html">Chapter 14: Real Inductors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="real-inductors.html#141-nonzero-resistance"><span class="vc-n">14.1</span> Nonzero Resistance</a></li>
+<li class="vc-l2"><a href="real-inductors.html#142-high-frequency-considerations"><span class="vc-n">14.2</span> High-frequency considerations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="inductor-networks.html">Chapter 15: Inductor Networks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="inductor-networks.html#151-introduction"><span class="vc-n">15.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="inductor-networks.html#152-simplifying-capacitor-configurations"><span class="vc-n">15.2</span> Simplifying Capacitor Configurations</a><ul class="vc-subs"><li class="vc-l3"><a href="inductor-networks.html#capacitors-in-parallel">Capacitors in Parallel</a></li><li class="vc-l3"><a href="inductor-networks.html#capacitors-in-series">Capacitors in Series</a></li></ul></li>
+<li class="vc-l2"><a href="inductor-networks.html#153-simplifying-inductor-configurations"><span class="vc-n">15.3</span> Simplifying Inductor Configurations</a><ul class="vc-subs"><li class="vc-l3"><a href="inductor-networks.html#inductors-in-parallel">Inductors in Parallel</a></li><li class="vc-l3"><a href="inductor-networks.html#inductors-in-series">Inductors in Series</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="components.html">Chapter 16: Other Components</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="components.html#161-ideal-voltage-sources"><span class="vc-n">16.1</span> Ideal voltage sources</a></li>
+<li class="vc-l2"><a href="components.html#162-ideal-current-sources"><span class="vc-n">16.2</span> Ideal current sources</a></li>
+<li class="vc-l2"><a href="components.html#163-dependent-sources"><span class="vc-n">16.3</span> Dependent Sources</a><ul class="vc-subs"><li class="vc-l3"><a href="components.html#voltage-controlled-voltage-source-vcvs">Voltage-controlled voltage source (VCVS)</a></li><li class="vc-l3"><a href="components.html#current-controlled-voltage-source-ccvs">Current-controlled voltage source (CCVS)</a></li><li class="vc-l3"><a href="components.html#voltage-controlled-current-source-vccs">Voltage-controlled current source (VCCS)</a></li><li class="vc-l3"><a href="components.html#current-controlled-current-source-cccs">Current-controlled current source (CCCS)</a></li></ul></li>
+<li class="vc-l2"><a href="components.html#164-switch"><span class="vc-n">16.4</span> Switch</a><ul class="vc-subs"><li class="vc-l3"><a href="components.html#contact-arrangements">Contact Arrangements</a></li><li class="vc-l3"><a href="components.html#biased-switches">Biased Switches</a></li><li class="vc-l3"><a href="components.html#special-types">Special Types</a></li></ul></li>
+<li class="vc-l2"><a href="components.html#165-see-also"><span class="vc-n">16.5</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dc-voltage-and-current.html">Chapter 17: DC Voltage and Current Laws</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dc-voltage-and-current.html#171-ohms-law"><span class="vc-n">17.1</span> Ohm&#x27;s Law</a></li>
+<li class="vc-l2"><a href="dc-voltage-and-current.html#172-kirchoffs-voltage-law"><span class="vc-n">17.2</span> Kirchoff&#x27;s Voltage Law</a></li>
+<li class="vc-l2"><a href="dc-voltage-and-current.html#173-voltage-as-a-physical-quantity"><span class="vc-n">17.3</span> Voltage as a Physical Quantity</a></li>
+<li class="vc-l2"><a href="dc-voltage-and-current.html#174-kirchoffs-current-law"><span class="vc-n">17.4</span> Kirchoff&#x27;s Current Law</a><ul class="vc-subs"><li class="vc-l3"><a href="dc-voltage-and-current.html#kcl-example">KCL Example</a></li></ul></li>
+<li class="vc-l2"><a href="dc-voltage-and-current.html#175-consequences-of-kvl-and-kcl"><span class="vc-n">17.5</span> Consequences of KVL and KCL</a><ul class="vc-subs"><li class="vc-l3"><a href="dc-voltage-and-current.html#voltage-dividers">Voltage Dividers</a></li><li class="vc-l3"><a href="dc-voltage-and-current.html#current-dividers">Current Dividers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="nodal-analysis.html">Chapter 18: Nodal Analysis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="nodal-analysis.html#181-nodes"><span class="vc-n">18.1</span> Nodes</a></li>
+<li class="vc-l2"><a href="nodal-analysis.html#182-nodal-analysis"><span class="vc-n">18.2</span> Nodal Analysis</a></li>
+<li class="vc-l2"><a href="nodal-analysis.html#183-complications-in-nodal-analysis"><span class="vc-n">18.3</span> Complications in Nodal Analysis</a></li>
+<li class="vc-l2"><a href="nodal-analysis.html#184-example"><span class="vc-n">18.4</span> Example</a></li>
+<li class="vc-l2"><a href="nodal-analysis.html#185-external-links"><span class="vc-n">18.5</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mesh-analysis.html">Chapter 19: Mesh Analysis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mesh-analysis.html#191-meshes"><span class="vc-n">19.1</span> Meshes</a></li>
+<li class="vc-l2"><a href="mesh-analysis.html#192-mesh-analysis"><span class="vc-n">19.2</span> Mesh Analysis</a></li>
+<li class="vc-l2"><a href="mesh-analysis.html#193-complication-in-mesh-analysis"><span class="vc-n">19.3</span> Complication in Mesh Analysis</a></li>
+<li class="vc-l2"><a href="mesh-analysis.html#194-example"><span class="vc-n">19.4</span> Example</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="norton-equivalents.html">Chapter 20: Thevenin and Norton Equivalent Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="norton-equivalents.html#201-source-transformation"><span class="vc-n">20.1</span> Source Transformation</a></li>
+<li class="vc-l2"><a href="norton-equivalents.html#202-thevenin-equivalents"><span class="vc-n">20.2</span> Thevenin Equivalents</a></li>
+<li class="vc-l2"><a href="norton-equivalents.html#203-techniques-for-finding-thevenin-equivalents"><span class="vc-n">20.3</span> Techniques For Finding Thevenin Equivalents</a></li>
+<li class="vc-l2"><a href="norton-equivalents.html#204-norton-equivalents"><span class="vc-n">20.4</span> Norton Equivalents</a></li>
+<li class="vc-l2"><a href="norton-equivalents.html#205-thevenin-and-norton-equivalent"><span class="vc-n">20.5</span> Thevenin and Norton Equivalent</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="superposition.html">Chapter 21: Superposition</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="superposition.html#211-superposition-principle"><span class="vc-n">21.1</span> Superposition Principle</a><ul class="vc-subs"><li class="vc-l3"><a href="superposition.html#superposition-example">Superposition Example</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="diagnostic-equipment.html">Chapter 22: Diagnostic Equipment</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="diagnostic-equipment.html#221-diagnostic-and-testing-equipment"><span class="vc-n">22.1</span> Diagnostic and Testing Equipment</a><ul class="vc-subs"><li class="vc-l3"><a href="diagnostic-equipment.html#ammeter">Ammeter</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#ohmmeter">Ohmmeter</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#voltmeter">Voltmeter</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#multimeter">Multimeter</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#oscilloscope">Oscilloscope</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#spectrum-analyzer">Spectrum Analyzer</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#logic-analyzer">Logic analyzer</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#frequency-counter">Frequency counter</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#electrometer">Electrometer</a></li><li class="vc-l3"><a href="diagnostic-equipment.html#signal-generator">Signal Generator</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dc-circuit-analysis.html">Chapter 23: DC Circuit Analysis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dc-circuit-analysis.html#231-dc-circuit-analysis"><span class="vc-n">23.1</span> DC Circuit Analysis</a></li>
+<li class="vc-l2"><a href="dc-circuit-analysis.html#232-capacitors-and-inductors-at-dc"><span class="vc-n">23.2</span> Capacitors and Inductors at DC</a></li>
+<li class="vc-l2"><a href="dc-circuit-analysis.html#233-resistors"><span class="vc-n">23.3</span> Resistors</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="measuring-instruments.html">Chapter 24: Measuring Instruments</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="measuring-instruments.html#241-measuring-instruments"><span class="vc-n">24.1</span> Measuring Instruments</a><ul class="vc-subs"><li class="vc-l3"><a href="measuring-instruments.html#ammeters">Ammeters</a></li><li class="vc-l3"><a href="measuring-instruments.html#ohmmeters">Ohmmeters</a></li><li class="vc-l3"><a href="measuring-instruments.html#multimeters">Multimeters</a></li></ul></li>
+<li class="vc-l2"><a href="measuring-instruments.html#242-electronics-laboratory-instruments"><span class="vc-n">24.2</span> Electronics Laboratory Instruments</a><ul class="vc-subs"><li class="vc-l3"><a href="measuring-instruments.html#oscilloscope">Oscilloscope</a></li><li class="vc-l3"><a href="measuring-instruments.html#spectrum-analyzer">Spectrum Analyzer</a></li><li class="vc-l3"><a href="measuring-instruments.html#signal-generator">Signal Generator</a></li><li class="vc-l3"><a href="measuring-instruments.html#vector-network-analyzer">Vector Network Analyzer</a></li><li class="vc-l3"><a href="measuring-instruments.html#logic-probe">Logic Probe</a></li><li class="vc-l3"><a href="measuring-instruments.html#other-instruments">Other instruments</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="noise-in-electronic-circuits.html">Chapter 25: Noise in electronic circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#251-classification"><span class="vc-n">25.1</span> Classification</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-in-electronic-circuits.html#based-on-origin">Based on Origin</a></li></ul></li>
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#252-noise-calculations"><span class="vc-n">25.2</span> Noise Calculations</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-in-electronic-circuits.html#addition-due-to-several-sources">Addition due to several sources</a></li><li class="vc-l3"><a href="noise-in-electronic-circuits.html#addition-due-to-cascaded-amplifier-stages">Addition due to Cascaded Amplifier stages</a></li></ul></li>
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#253-analog-noise-models"><span class="vc-n">25.3</span> Analog Noise Models</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-in-electronic-circuits.html#cmos">CMOS</a></li><li class="vc-l3"><a href="noise-in-electronic-circuits.html#bjt">BJT</a></li></ul></li>
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#254-noise-in-digital-circuits"><span class="vc-n">25.4</span> Noise in digital circuits:</a></li>
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#255-methods-of-reducing-noise"><span class="vc-n">25.5</span> Methods of reducing noise</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-in-electronic-circuits.html#differential-signaling">Differential signaling</a></li><li class="vc-l3"><a href="noise-in-electronic-circuits.html#good-grounding">Good grounding</a></li></ul></li>
+<li class="vc-l2"><a href="noise-in-electronic-circuits.html#256-references"><span class="vc-n">25.6</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Chapter 2: AC Circuits</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="ac-voltage-and-current.html">Chapter 26: AC Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ac-voltage-and-current.html#261-relationship-between-voltage-and-current"><span class="vc-n">26.1</span> Relationship between Voltage and Current</a><ul class="vc-subs"><li class="vc-l3"><a href="ac-voltage-and-current.html#resistor">Resistor</a></li><li class="vc-l3"><a href="ac-voltage-and-current.html#capacitor">Capacitor</a></li><li class="vc-l3"><a href="ac-voltage-and-current.html#inductor">Inductor</a></li></ul></li>
+<li class="vc-l2"><a href="ac-voltage-and-current.html#262-resonance"><span class="vc-n">26.2</span> Resonance</a></li>
+<li class="vc-l2"><a href="ac-voltage-and-current.html#263-see-also"><span class="vc-n">26.3</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="phasors.html">Chapter 27: Phasors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="phasors.html#271-phasors"><span class="vc-n">27.1</span> Phasors</a></li>
+<li class="vc-l2"><a href="phasors.html#272-sinusoidal-signals"><span class="vc-n">27.2</span> Sinusoidal Signals</a></li>
+<li class="vc-l2"><a href="phasors.html#273-example"><span class="vc-n">27.3</span> Example</a></li>
+<li class="vc-l2"><a href="phasors.html#274-footnotes"><span class="vc-n">27.4</span> Footnotes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="impedance.html">Chapter 28: Impedance</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="impedance.html#281-definition"><span class="vc-n">28.1</span> Definition</a><ul class="vc-subs"><li class="vc-l3"><a href="impedance.html#reactance">Reactance</a></li></ul></li>
+<li class="vc-l2"><a href="impedance.html#282-resistors"><span class="vc-n">28.2</span> Resistors</a></li>
+<li class="vc-l2"><a href="impedance.html#283-capacitors"><span class="vc-n">28.3</span> Capacitors</a></li>
+<li class="vc-l2"><a href="impedance.html#284-inductors"><span class="vc-n">28.4</span> Inductors</a></li>
+<li class="vc-l2"><a href="impedance.html#285-circuit-analysis-using-impedance"><span class="vc-n">28.5</span> Circuit Analysis Using Impedance</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="steady-state.html">Chapter 29: Steady State</a></li>
+</ul>
+<p class="toc-group">Chapter 3: Transient Analysis</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="transient-analysis.html">Chapter 30: Transient Analysis</a></li>
+<li class="vc-ch"><details><summary><a href="rc-transient.html">Chapter 31: RC Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rc-transient.html#311-circuit-impedance"><span class="vc-n">31.1</span> Circuit Impedance</a></li>
+<li class="vc-l2"><a href="rc-transient.html#312-differential-equation-of-circuit-at-equilibrium"><span class="vc-n">31.2</span> Differential Equation of circuit at equilibrium</a></li>
+<li class="vc-l2"><a href="rc-transient.html#313-time-constant"><span class="vc-n">31.3</span> Time Constant</a></li>
+<li class="vc-l2"><a href="rc-transient.html#314-angle-difference-between-voltage-and-current"><span class="vc-n">31.4</span> Angle Difference Between Voltage and Current</a></li>
+<li class="vc-l2"><a href="rc-transient.html#315-application"><span class="vc-n">31.5</span> Application</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="rl-transient.html">Chapter 32: RL Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rl-transient.html#321-circuit-impedance"><span class="vc-n">32.1</span> Circuit Impedance</a></li>
+<li class="vc-l2"><a href="rl-transient.html#322-differential-equation-of-circuit-at-equilibrium"><span class="vc-n">32.2</span> Differential Equation of circuit at equilibrium</a></li>
+<li class="vc-l2"><a href="rl-transient.html#323-time-constant"><span class="vc-n">32.3</span> Time Constant</a></li>
+<li class="vc-l2"><a href="rl-transient.html#324-angle-difference-between-voltage-and-current"><span class="vc-n">32.4</span> Angle Difference between Voltage and Current</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lc-transient.html">Chapter 33: LC Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lc-transient.html#331-circuit-impedance"><span class="vc-n">33.1</span> Circuit Impedance</a></li>
+<li class="vc-l2"><a href="lc-transient.html#332-circuit-at-equilibrium"><span class="vc-n">33.2</span> Circuit at equilibrium</a></li>
+<li class="vc-l2"><a href="lc-transient.html#333-time-constant"><span class="vc-n">33.3</span> Time Constant</a></li>
+<li class="vc-l2"><a href="lc-transient.html#334-phase-difference"><span class="vc-n">33.4</span> Phase Difference</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="rcl.html">Chapter 34: RCL Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rcl.html#341-rlc-series"><span class="vc-n">34.1</span> RLC Series</a></li>
+<li class="vc-l2"><a href="rcl.html#342-circuit-analysis"><span class="vc-n">34.2</span> Circuit Analysis</a><ul class="vc-subs"><li class="vc-l3"><a href="rcl.html#r-0">R = 0</a></li><li class="vc-l3"><a href="rcl.html#r-0-zl-zc">R = 0 ZL = ZC</a></li></ul></li>
+<li class="vc-l2"><a href="rcl.html#343-further-reading"><span class="vc-n">34.3</span> Further Reading</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Chapter 4: Analog Circuits</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="analog-circuits.html">Chapter 35: Analog Circuits</a></li>
+<li class="vc-ch vc-leaf"><a href="semiconductor-basics.html">Chapter 36: Semiconductor Basics</a></li>
+<li class="vc-ch"><details><summary><a href="vacuum-tubes.html">Chapter 37: Vacuum Tubes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vacuum-tubes.html#371-background"><span class="vc-n">37.1</span> Background</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#372-passive-versus-active-components"><span class="vc-n">37.2</span> Passive Versus Active Components</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#373-vacuum-tube-basics"><span class="vc-n">37.3</span> Vacuum Tube Basics</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#374-tube-characteristics"><span class="vc-n">37.4</span> Tube Characteristics</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#375-diodes"><span class="vc-n">37.5</span> Diodes</a><ul class="vc-subs"><li class="vc-l3"><a href="vacuum-tubes.html#rectifier-tube-chart">Rectifier Tube Chart</a></li></ul></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#376-klystron"><span class="vc-n">37.6</span> Klystron</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#377-magnetron"><span class="vc-n">37.7</span> Magnetron</a></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#378-cathode-ray-tube"><span class="vc-n">37.8</span> Cathode Ray Tube</a><ul class="vc-subs"><li class="vc-l3"><a href="vacuum-tubes.html#tv-tubes">TV Tubes</a></li><li class="vc-l3"><a href="vacuum-tubes.html#oscilloscope-tubes">Oscilloscope Tubes</a></li></ul></li>
+<li class="vc-l2"><a href="vacuum-tubes.html#379-external-links"><span class="vc-n">37.9</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="diodes.html">Chapter 38: Diodes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="diodes.html#381-diode"><span class="vc-n">38.1</span> Diode</a><ul class="vc-subs"><li class="vc-l3"><a href="diodes.html#construction">Construction</a></li></ul></li>
+<li class="vc-l2"><a href="diodes.html#382-operation"><span class="vc-n">38.2</span> Operation</a><ul class="vc-subs"><li class="vc-l3"><a href="diodes.html#i-v-curve">I V Curve</a></li><li class="vc-l3"><a href="diodes.html#forward-region">Forward Region</a></li><li class="vc-l3"><a href="diodes.html#backward-region">Backward Region</a></li><li class="vc-l3"><a href="diodes.html#ideal-diode">Ideal Diode</a></li><li class="vc-l3"><a href="diodes.html#the-shockley-equation">The Shockley equation</a></li><li class="vc-l3"><a href="diodes.html#break-down">Break-down</a></li><li class="vc-l3"><a href="diodes.html#summary">Summary</a></li></ul></li>
+<li class="vc-l2"><a href="diodes.html#383-diode-variations"><span class="vc-n">38.3</span> Diode Variations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transistors.html">Chapter 39: Transistors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transistors.html#391-transistor"><span class="vc-n">39.1</span> Transistor</a><ul class="vc-subs"><li class="vc-l3"><a href="transistors.html#construction">Construction</a></li><li class="vc-l3"><a href="transistors.html#npn-transistor">NPN Transistor</a></li><li class="vc-l3"><a href="transistors.html#pnp-transistor">PNP Transistor</a></li></ul></li>
+<li class="vc-l2"><a href="transistors.html#392-transistor-operation"><span class="vc-n">39.2</span> Transistor Operation</a><ul class="vc-subs"><li class="vc-l3"><a href="transistors.html#amplifier">Amplifier</a></li><li class="vc-l3"><a href="transistors.html#switch">Switch</a></li></ul></li>
+<li class="vc-l2"><a href="transistors.html#393-external-links"><span class="vc-n">39.3</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="fet.html">Chapter 40: FET</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fet.html#401-field-effect-transistor"><span class="vc-n">40.1</span> Field Effect Transistor</a></li>
+<li class="vc-l2"><a href="fet.html#402-current-voltage-characteristics"><span class="vc-n">40.2</span> Current Voltage Characteristics</a></li>
+<li class="vc-l2"><a href="fet.html#403-disadvantages"><span class="vc-n">40.3</span> Disadvantages</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mosfet.html">Chapter 41: MOSFET</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mosfet.html#411-complementary-metal-oxide-semiconductor"><span class="vc-n">41.1</span> Complementary Metal Oxide Semiconductor</a></li>
+<li class="vc-l2"><a href="mosfet.html#412-construction-operation"><span class="vc-n">41.2</span> Construction &amp; Operation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="amplifiers.html">Chapter 42: Amplifiers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="amplifiers.html#421-circuit-models-for-amplifiers"><span class="vc-n">42.1</span> Circuit Models for Amplifiers</a></li>
+<li class="vc-l2"><a href="amplifiers.html#422-gain"><span class="vc-n">42.2</span> Gain</a></li>
+<li class="vc-l2"><a href="amplifiers.html#423-transistor-amplifiers"><span class="vc-n">42.3</span> Transistor amplifiers</a><ul class="vc-subs"><li class="vc-l3"><a href="amplifiers.html#common-emitter">Common Emitter</a></li><li class="vc-l3"><a href="amplifiers.html#common-collector">Common Collector</a></li><li class="vc-l3"><a href="amplifiers.html#common-base">Common Base</a></li></ul></li>
+<li class="vc-l2"><a href="amplifiers.html#424-fet-configurations"><span class="vc-n">42.4</span> FET Configurations</a><ul class="vc-subs"><li class="vc-l3"><a href="amplifiers.html#common-source">Common Source</a></li><li class="vc-l3"><a href="amplifiers.html#common-drain">Common Drain</a></li><li class="vc-l3"><a href="amplifiers.html#common-gate">Common Gate</a></li></ul></li>
+<li class="vc-l2"><a href="amplifiers.html#425-biased-voltage-class"><span class="vc-n">42.5</span> Biased Voltage Class</a><ul class="vc-subs"><li class="vc-l3"><a href="amplifiers.html#class-a">Class A</a></li><li class="vc-l3"><a href="amplifiers.html#class-ab">Class AB</a></li><li class="vc-l3"><a href="amplifiers.html#class-b">Class B</a></li><li class="vc-l3"><a href="amplifiers.html#class-c">Class C</a></li><li class="vc-l3"><a href="amplifiers.html#class-d">Class D</a></li><li class="vc-l3"><a href="amplifiers.html#class-f">Class F</a></li><li class="vc-l3"><a href="amplifiers.html#class-s">Class S</a></li></ul></li>
+<li class="vc-l2"><a href="amplifiers.html#426-amplifier"><span class="vc-n">42.6</span> Amplifier</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="op-amps.html">Chapter 43: Operational amplifiers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="op-amps.html#431-op-amp-operational-amplifier"><span class="vc-n">43.1</span> Op-Amp (operational amplifier)</a></li>
+<li class="vc-l2"><a href="op-amps.html#432-741-op-amp"><span class="vc-n">43.2</span> 741 Op-amp</a><ul class="vc-subs"><li class="vc-l3"><a href="op-amps.html#symbol">Symbol</a></li><li class="vc-l3"><a href="op-amps.html#operation">Operation</a></li></ul></li>
+<li class="vc-l2"><a href="op-amps.html#433-ideal-op-amps"><span class="vc-n">43.3</span> Ideal Op-amps</a></li>
+<li class="vc-l2"><a href="op-amps.html#434-real-op-amps"><span class="vc-n">43.4</span> Real Op-amps</a><ul class="vc-subs"><li class="vc-l3"><a href="op-amps.html#dc-behaviour">DC Behaviour</a></li><li class="vc-l3"><a href="op-amps.html#ac-behaviour">AC Behaviour</a></li></ul></li>
+<li class="vc-l2"><a href="op-amps.html#435-op-amp-configurations"><span class="vc-n">43.5</span> Op-amp Configurations</a></li>
+<li class="vc-l2"><a href="op-amps.html#436-applications"><span class="vc-n">43.6</span> Applications</a></li>
+<li class="vc-l2"><a href="op-amps.html#437-quick-design-process"><span class="vc-n">43.7</span> Quick Design Process</a><ul class="vc-subs"><li class="vc-l3"><a href="op-amps.html#other-notation">Other Notation</a></li></ul></li>
+<li class="vc-l2"><a href="op-amps.html#438-fully-differential-amplifier"><span class="vc-n">43.8</span> Fully Differential Amplifier</a><ul class="vc-subs"><li class="vc-l3"><a href="op-amps.html#basic-applications">Basic Applications</a></li><li class="vc-l3"><a href="op-amps.html#fully-differential-amplifier-versus-instrumentation-amplifier">Fully Differential Amplifier versus Instrumentation Amplifier</a></li><li class="vc-l3"><a href="op-amps.html#applying-a-quick-design-procedure">Applying a Quick Design Procedure</a></li></ul></li>
+<li class="vc-l2"><a href="op-amps.html#439-references"><span class="vc-n">43.9</span> References</a></li>
+<li class="vc-l2"><a href="op-amps.html#4310-see-also"><span class="vc-n">43.10</span> See also</a></li>
+<li class="vc-l2"><a href="op-amps.html#4311-further-reading"><span class="vc-n">43.11</span> Further reading</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="non-linear-configurations.html">Chapter 44: Non Linear Configurations</a></li>
+<li class="vc-ch"><details><summary><a href="inductor-gyrator.html">Chapter 45: Inductor Gyrator</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="inductor-gyrator.html#451-configuration"><span class="vc-n">45.1</span> Configuration</a></li>
+<li class="vc-l2"><a href="inductor-gyrator.html#452-operation"><span class="vc-n">45.2</span> Operation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="analog-multipliers.html">Chapter 46: Analog multipliers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="analog-multipliers.html#461-analog-multipliers"><span class="vc-n">46.1</span> Analog multipliers</a></li>
+<li class="vc-l2"><a href="analog-multipliers.html#462-diode-implementations"><span class="vc-n">46.2</span> Diode Implementations</a></li>
+<li class="vc-l2"><a href="analog-multipliers.html#463-mos-implementation"><span class="vc-n">46.3</span> MOS implementation</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Chapter 5: Digital Circuits</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="digital-circuits.html">Chapter 47: Digital Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="digital-circuits.html#471-overview"><span class="vc-n">47.1</span> Overview</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="boolean-algebra.html">Chapter 48: Boolean Algebra</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="boolean-algebra.html#481-formal-mathematical-operators"><span class="vc-n">48.1</span> Formal Mathematical Operators</a></li>
+<li class="vc-l2"><a href="boolean-algebra.html#482-boolean-algebra-laws"><span class="vc-n">48.2</span> Boolean Algebra Laws</a><ul class="vc-subs"><li class="vc-l3"><a href="boolean-algebra.html#associativity">Associativity</a></li><li class="vc-l3"><a href="boolean-algebra.html#distributivity">Distributivity</a></li><li class="vc-l3"><a href="boolean-algebra.html#commutativity">Commutativity</a></li><li class="vc-l3"><a href="boolean-algebra.html#de-morgans-law">De Morgan&#x27;s Law</a></li><li class="vc-l3"><a href="boolean-algebra.html#notes">Notes</a></li><li class="vc-l3"><a href="boolean-algebra.html#rules">Rules</a></li></ul></li>
+<li class="vc-l2"><a href="boolean-algebra.html#483-examples"><span class="vc-n">48.3</span> Examples</a></li>
+<li class="vc-l2"><a href="boolean-algebra.html#484-see-also"><span class="vc-n">48.4</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="ttl.html">Chapter 49: TTL</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ttl.html#491-introduction"><span class="vc-n">49.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="ttl.html#492-the-not-gate"><span class="vc-n">49.2</span> The NOT Gate</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cmos.html">Chapter 50: CMOS</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cmos.html#501-cmos"><span class="vc-n">50.1</span> CMOS</a></li>
+<li class="vc-l2"><a href="cmos.html#502-logic-gates"><span class="vc-n">50.2</span> Logic Gates</a><ul class="vc-subs"><li class="vc-l3"><a href="cmos.html#not">NOT</a></li><li class="vc-l3"><a href="cmos.html#nand">NAND</a></li><li class="vc-l3"><a href="cmos.html#and">AND</a></li><li class="vc-l3"><a href="cmos.html#nor">NOR</a></li><li class="vc-l3"><a href="cmos.html#or">OR</a></li><li class="vc-l3"><a href="cmos.html#xnor">XNOR</a></li><li class="vc-l3"><a href="cmos.html#xor">XOR</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="integrated-circuit.html">Chapter 51: Integrated Circuits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="integrated-circuit.html#511-overview"><span class="vc-n">51.1</span> Overview</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Elements of Digital Circuits</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="basic-gates.html">Chapter 52: Basic gates</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-gates.html#521-basic-gates"><span class="vc-n">52.1</span> Basic Gates</a></li>
+<li class="vc-l2"><a href="basic-gates.html#522-five-basic-logic-gates"><span class="vc-n">52.2</span> Five Basic Logic Gates</a></li>
+<li class="vc-l2"><a href="basic-gates.html#523-complement-of-basic-logic-gates"><span class="vc-n">52.3</span> Complement of Basic Logic gates</a></li>
+<li class="vc-l2"><a href="basic-gates.html#524-summary"><span class="vc-n">52.4</span> Summary</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="combination-gates.html">Chapter 53: Combination gates</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="combination-gates.html#531-complement-of-basic-logic-gates"><span class="vc-n">53.1</span> Complement of Basic Logic gates</a></li>
+<li class="vc-l2"><a href="combination-gates.html#532-xor"><span class="vc-n">53.2</span> XOR</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="flip-flops.html">Chapter 54: Flip Flops</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="flip-flops.html#541-flip-flop"><span class="vc-n">54.1</span> Flip Flop</a><ul class="vc-subs"><li class="vc-l3"><a href="flip-flops.html#sr-latch">SR Latch</a></li></ul></li>
+<li class="vc-l2"><a href="flip-flops.html#542-gated-latches"><span class="vc-n">54.2</span> Gated Latches</a><ul class="vc-subs"><li class="vc-l3"><a href="flip-flops.html#gated-sr-latch">Gated SR latch</a></li><li class="vc-l3"><a href="flip-flops.html#gated-d-latch">Gated D latch</a></li></ul></li>
+<li class="vc-l2"><a href="flip-flops.html#543-clock-controlled-flip-flops"><span class="vc-n">54.3</span> Clock - Controlled Flip Flops</a><ul class="vc-subs"><li class="vc-l3"><a href="flip-flops.html#d-flip-flop">D flip-flop</a></li><li class="vc-l3"><a href="flip-flops.html#jk-flip-flop">JK Flip-flop</a></li><li class="vc-l3"><a href="flip-flops.html#t-flip-flops">T flip-flops</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="counters.html">Chapter 55: Counters</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="counters.html#551-overview"><span class="vc-n">55.1</span> Overview</a></li>
+<li class="vc-l2"><a href="counters.html#552-types-of-counters"><span class="vc-n">55.2</span> Types of Counters</a><ul class="vc-subs"><li class="vc-l3"><a href="counters.html#ring-counters">Ring Counters</a></li><li class="vc-l3"><a href="counters.html#ripple-counters">Ripple Counters</a></li><li class="vc-l3"><a href="counters.html#synchronous-counters">Synchronous Counters</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="adders.html">Chapter 56: Adders</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="adders.html#561-intro"><span class="vc-n">56.1</span> Intro</a></li>
+<li class="vc-l2"><a href="adders.html#562-digital-adder"><span class="vc-n">56.2</span> Digital Adder</a><ul class="vc-subs"><li class="vc-l3"><a href="adders.html#half-adder">Half adder</a></li><li class="vc-l3"><a href="adders.html#full-adder">Full adder</a></li></ul></li>
+<li class="vc-l2"><a href="adders.html#563-multiple-bit-adders"><span class="vc-n">56.3</span> Multiple-bit adders</a><ul class="vc-subs"><li class="vc-l3"><a href="adders.html#ripple-carry-adder">Ripple carry adder</a></li><li class="vc-l3"><a href="adders.html#carry-look-ahead-adders">Carry look-ahead adders</a></li><li class="vc-l3"><a href="adders.html#lookahead-carry-unit">Lookahead Carry Unit</a></li></ul></li>
+<li class="vc-l2"><a href="adders.html#564-reference"><span class="vc-n">56.4</span> Reference</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="decoders-and-encoders.html">Chapter 57: Decoders and Encoders</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="decoders-and-encoders.html#571-encoders"><span class="vc-n">57.1</span> Encoders</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="multiplexers.html">Chapter 58: Multiplexers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="multiplexers.html#581-overview"><span class="vc-n">58.1</span> Overview</a></li>
+<li class="vc-l2"><a href="multiplexers.html#582-configuration"><span class="vc-n">58.2</span> Configuration</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Computer Architecture</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="ram-and-rom.html">Chapter 59: RAM and ROM</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ram-and-rom.html#591-basics"><span class="vc-n">59.1</span> Basics</a><ul class="vc-subs"><li class="vc-l3"><a href="ram-and-rom.html#capacitors-as-memory">Capacitors as memory</a></li><li class="vc-l3"><a href="ram-and-rom.html#bits">Bits</a></li><li class="vc-l3"><a href="ram-and-rom.html#bytes">Bytes</a></li><li class="vc-l3"><a href="ram-and-rom.html#words">Words</a></li><li class="vc-l3"><a href="ram-and-rom.html#address-bus-connection">Address Bus connection</a></li><li class="vc-l3"><a href="ram-and-rom.html#data-bus-connection">Data Bus connection</a></li><li class="vc-l3"><a href="ram-and-rom.html#readwrite-connection">Read/Write connection</a></li><li class="vc-l3"><a href="ram-and-rom.html#clock-connection">Clock connection</a></li></ul></li>
+<li class="vc-l2"><a href="ram-and-rom.html#592-ram-random-access-memory"><span class="vc-n">59.2</span> RAM (Random Access Memory)</a></li>
+<li class="vc-l2"><a href="ram-and-rom.html#593-rom-read-only-memory"><span class="vc-n">59.3</span> ROM (Read Only Memory)</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="registers.html">Chapter 60: Registers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="registers.html#601-fifo"><span class="vc-n">60.1</span> FIFO</a></li>
+<li class="vc-l2"><a href="registers.html#602-lifo"><span class="vc-n">60.2</span> LIFO</a></li>
+<li class="vc-l2"><a href="registers.html#603-parallel"><span class="vc-n">60.3</span> Parallel</a></li>
+<li class="vc-l2"><a href="registers.html#604-shift-registers"><span class="vc-n">60.4</span> Shift Registers</a><ul class="vc-subs"><li class="vc-l3"><a href="registers.html#serial-in-parallel-out">Serial In Parallel Out</a></li><li class="vc-l3"><a href="registers.html#parallel-in-serial-out">Parallel In Serial Out</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="alu.html">Chapter 61: ALU</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="alu.html#611-arithmetic-and-logic-unit"><span class="vc-n">61.1</span> Arithmetic and Logic Unit</a><ul class="vc-subs"><li class="vc-l3"><a href="alu.html#introduction">Introduction</a></li><li class="vc-l3"><a href="alu.html#arithmetic-unit">Arithmetic Unit</a></li><li class="vc-l3"><a href="alu.html#logic-unit">Logic Unit</a></li><li class="vc-l3"><a href="alu.html#further-reading">further reading</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="control-unit.html">Chapter 62: Control Unit</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="control-unit.html#621-further-reading"><span class="vc-n">62.1</span> further reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="chapter-63.html">Chapter 63: O</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="chapter-63.html#631-inputoutput"><span class="vc-n">63.1</span> Input/Output</a><ul class="vc-subs"><li class="vc-l3"><a href="chapter-63.html#input">Input</a></li><li class="vc-l3"><a href="chapter-63.html#output">Output</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Analog-to-Digital and Digital-to-Analog Converters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="analog-to-digital-converters.html">Chapter 64: Analog to Digital Converters</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="analog-to-digital-converters.html#641-step-size"><span class="vc-n">64.1</span> Step Size</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="digital-to-analog-converters.html">Chapter 65: Digital to Analog Converters</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="digital-to-analog-converters.html#651-weighted-resistor-type-digital-to-analog-converter"><span class="vc-n">65.1</span> Weighted Resistor Type Digital-to-Analog Converter</a></li>
+<li class="vc-l2"><a href="digital-to-analog-converters.html#652-specifications-of-da-converter"><span class="vc-n">65.2</span> Specifications of D/A Converter</a></li>
+<li class="vc-l2"><a href="digital-to-analog-converters.html#653-further-reading"><span class="vc-n">65.3</span> Further reading</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Radio engineering</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="frequency-spectrum.html">Chapter 66: Frequency Spectrum</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="frequency-spectrum.html#661-properties-of-waves"><span class="vc-n">66.1</span> Properties of Waves</a></li>
+<li class="vc-l2"><a href="frequency-spectrum.html#662-sound"><span class="vc-n">66.2</span> Sound</a><ul class="vc-subs"><li class="vc-l3"><a href="frequency-spectrum.html#db-scale">dB scale</a></li><li class="vc-l3"><a href="frequency-spectrum.html#infrasound-20-hz">Infrasound: \&lt; 20 Hz</a></li><li class="vc-l3"><a href="frequency-spectrum.html#audible-sound-20-20000-hz">Audible Sound: 20-20,000 Hz</a></li><li class="vc-l3"><a href="frequency-spectrum.html#ultrasound-20-khz">Ultrasound: &gt; 20 kHz</a></li></ul></li>
+<li class="vc-l2"><a href="frequency-spectrum.html#663-light"><span class="vc-n">66.3</span> Light</a><ul class="vc-subs"><li class="vc-l3"><a href="frequency-spectrum.html#candela">Candela</a></li><li class="vc-l3"><a href="frequency-spectrum.html#radio-waves-3-ghz">Radio Waves \&lt; 3 GHz</a></li><li class="vc-l3"><a href="frequency-spectrum.html#microwave-3-300-ghz100-1-mm">Microwave 3-300 GHz/100-1 mm</a></li><li class="vc-l3"><a href="frequency-spectrum.html#ir-infared-1-mm-700-nm">(IR) Infared 1 mm-700 nm</a></li><li class="vc-l3"><a href="frequency-spectrum.html#visible">Visible</a></li><li class="vc-l3"><a href="frequency-spectrum.html#uv-ultraviolet">(UV) UltraViolet</a></li><li class="vc-l3"><a href="frequency-spectrum.html#x-ray-30-petahz-60-exahz10-nanometer-5-picometer">X-Ray: 30 PetaHz - 60 ExaHz/10 nanometer - 5 picometer</a></li><li class="vc-l3"><a href="frequency-spectrum.html#gamma-above-60-exahertzbelow-5-picometers">Gamma: Above 60 exahertz/Below 5 picometers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="gallery-of-vlf-signals.html">Chapter 67: Gallery of VLF-signals</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#671-list-of-transmitters"><span class="vc-n">67.1</span> List of transmitters</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#672-signals-from-gbz-on-196-khz"><span class="vc-n">67.2</span> Signals from GBZ on 19,6 kHz</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#673-signals-in-the-range-between-17-khz-and-18-khz"><span class="vc-n">67.3</span> Signals in the range between 17 kHz and 18 kHz</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#674-signals-from-russian-beta-time-signal-transmitters"><span class="vc-n">67.4</span> Signals from Russian &quot;Beta&quot;-time signal transmitters</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#675-other-signals"><span class="vc-n">67.5</span> Other signals</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#676-weblinks"><span class="vc-n">67.6</span> Weblinks</a></li>
+<li class="vc-l2"><a href="gallery-of-vlf-signals.html#677-see-also"><span class="vc-n">67.7</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="vlf-reception-with-the-pc.html">Chapter 68: VLF-reception with the PC</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vlf-reception-with-the-pc.html#681-aerial"><span class="vc-n">68.1</span> Aerial</a></li>
+<li class="vc-l2"><a href="vlf-reception-with-the-pc.html#682-setting-of-sound-card-input"><span class="vc-n">68.2</span> Setting of sound card input</a></li>
+<li class="vc-l2"><a href="vlf-reception-with-the-pc.html#683-general-considerations-about-the-reception-technique-and-analysis-software"><span class="vc-n">68.3</span> General considerations about the reception technique and analysis software</a></li>
+<li class="vc-l2"><a href="vlf-reception-with-the-pc.html#684-the-software-speclab"><span class="vc-n">68.4</span> The Software &quot;SpecLab&quot;</a></li>
+<li class="vc-l2"><a href="vlf-reception-with-the-pc.html#685-see-also"><span class="vc-n">68.5</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transmitter-design.html">Chapter 69: Transmitter design</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transmitter-design.html#691-frequency-synthesis-and-frequency-multiplication"><span class="vc-n">69.1</span> Frequency synthesis and frequency multiplication</a><ul class="vc-subs"><li class="vc-l3"><a href="transmitter-design.html#synthesis">Synthesis</a></li><li class="vc-l3"><a href="transmitter-design.html#multiplication">Multiplication</a></li></ul></li>
+<li class="vc-l2"><a href="transmitter-design.html#692-frequency-mixing-and-modulation"><span class="vc-n">69.2</span> Frequency mixing and Modulation</a><ul class="vc-subs"><li class="vc-l3"><a href="transmitter-design.html#am-modes">AM modes</a></li><li class="vc-l3"><a href="transmitter-design.html#other-modes-which-are-related-to-am">Other modes which are related to AM</a></li><li class="vc-l3"><a href="transmitter-design.html#fm-modes">FM modes</a></li></ul></li>
+<li class="vc-l2"><a href="transmitter-design.html#693-rf-power-amplifiers"><span class="vc-n">69.3</span> RF power amplifiers</a><ul class="vc-subs"><li class="vc-l3"><a href="transmitter-design.html#valves">Valves</a></li><li class="vc-l3"><a href="transmitter-design.html#solid-state">Solid state</a></li></ul></li>
+<li class="vc-l2"><a href="transmitter-design.html#694-linking-the-transmitter-to-the-aerial"><span class="vc-n">69.4</span> Linking the transmitter to the aerial</a></li>
+<li class="vc-l2"><a href="transmitter-design.html#695-emc-matters"><span class="vc-n">69.5</span> EMC matters</a><ul class="vc-subs"><li class="vc-l3"><a href="transmitter-design.html#rf-leakage-defective-rf-shielding">RF leakage (defective RF shielding)</a></li><li class="vc-l3"><a href="transmitter-design.html#spurious-emissions">Spurious emissions</a></li></ul></li>
+<li class="vc-l2"><a href="transmitter-design.html#696-reference"><span class="vc-n">69.6</span> Reference</a></li>
+<li class="vc-l2"><a href="transmitter-design.html#697-further-reading"><span class="vc-n">69.7</span> Further reading</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Formulas Sheets</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="definitions.html">Chapter 70: Definitions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="definitions.html#701-volt"><span class="vc-n">70.1</span> Volt</a></li>
+<li class="vc-l2"><a href="definitions.html#702-to-be-merged"><span class="vc-n">70.2</span> to be merged</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="symbols.html">Chapter 71: Circuit Symbols</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="symbols.html#711-power-sources"><span class="vc-n">71.1</span> Power Sources</a></li>
+<li class="vc-l2"><a href="symbols.html#712-grounds"><span class="vc-n">71.2</span> Grounds</a></li>
+<li class="vc-l2"><a href="symbols.html#713-resistors"><span class="vc-n">71.3</span> Resistors</a></li>
+<li class="vc-l2"><a href="symbols.html#714-capacitors"><span class="vc-n">71.4</span> Capacitors</a></li>
+<li class="vc-l2"><a href="symbols.html#715-transformers"><span class="vc-n">71.5</span> Transformers</a></li>
+<li class="vc-l2"><a href="symbols.html#716-diodes"><span class="vc-n">71.6</span> Diodes</a></li>
+<li class="vc-l2"><a href="symbols.html#717-transistors"><span class="vc-n">71.7</span> Transistors</a></li>
+<li class="vc-l2"><a href="symbols.html#718-switches"><span class="vc-n">71.8</span> Switches</a></li>
+<li class="vc-l2"><a href="symbols.html#719-greek-characters"><span class="vc-n">71.9</span> Greek characters</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="component-identification.html">Chapter 72: Identifying Components and Values</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="component-identification.html#721-resistors"><span class="vc-n">72.1</span> Resistors</a><ul class="vc-subs"><li class="vc-l3"><a href="component-identification.html#identifying-resistors">Identifying resistors</a></li><li class="vc-l3"><a href="component-identification.html#4-band-axial-resistors">4-band axial resistors</a></li><li class="vc-l3"><a href="component-identification.html#5-band-axial-resistors">5-band axial resistors</a></li><li class="vc-l3"><a href="component-identification.html#smdsmt-resistors">SMD/SMT resistors</a></li><li class="vc-l3"><a href="component-identification.html#large-resistors">Large resistors</a></li><li class="vc-l3"><a href="component-identification.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="component-identification.html#722-capacitors"><span class="vc-n">72.2</span> Capacitors</a><ul class="vc-subs"><li class="vc-l3"><a href="component-identification.html#electrolytic-capacitors">Electrolytic capacitors</a></li><li class="vc-l3"><a href="component-identification.html#tantalum-capacitors">Tantalum capacitors</a></li><li class="vc-l3"><a href="component-identification.html#ceramic-capacitors">Ceramic capacitors</a></li><li class="vc-l3"><a href="component-identification.html#multilayer-ceramic-capacitors">Multilayer Ceramic capacitors</a></li><li class="vc-l3"><a href="component-identification.html#smdsmt-capacitors">SMD/SMT capacitors</a></li></ul></li>
+<li class="vc-l2"><a href="component-identification.html#723-inductors"><span class="vc-n">72.3</span> Inductors</a><ul class="vc-subs"><li class="vc-l3"><a href="component-identification.html#axial-inductors">Axial inductors</a></li><li class="vc-l3"><a href="component-identification.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="component-identification.html#724-transistors"><span class="vc-n">72.4</span> Transistors</a><ul class="vc-subs"><li class="vc-l3"><a href="component-identification.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="component-identification.html#725-ics"><span class="vc-n">72.5</span> ICs</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electronics-formulas.html">Chapter 73: Electronics Formulas</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electronics-formulas.html#731-analog-electronics"><span class="vc-n">73.1</span> Analog Electronics</a></li>
+<li class="vc-l2"><a href="electronics-formulas.html#732-digital-electronics"><span class="vc-n">73.2</span> Digital Electronics</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="laplace-transform-pairs.html">Chapter 74: Laplace Transform pairs</a></li>
+</ul>
+<p class="toc-group">Others</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="formulas.html">Chapter 75: Formulas</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="formulas.html#751-conductors-properties"><span class="vc-n">75.1</span> Conductor&#x27;s Properties</a></li>
+<li class="vc-l2"><a href="formulas.html#752-resistance-and-temperture"><span class="vc-n">75.2</span> Resistance and Temperture</a></li>
+<li class="vc-l2"><a href="formulas.html#753-ohms-law"><span class="vc-n">75.3</span> Ohm&#x27;s Law</a></li>
+<li class="vc-l2"><a href="formulas.html#754-power-delivered"><span class="vc-n">75.4</span> Power Delivered</a></li>
+<li class="vc-l2"><a href="formulas.html#755-work-done"><span class="vc-n">75.5</span> Work Done</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electro-mechanical-analogies.html">Chapter 76: Electro-Mechanical Analogies</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#761-introduction"><span class="vc-n">76.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#762-electro-mechanical-equivalent-components"><span class="vc-n">76.2</span> Electro-mechanical Equivalent Components</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>An introduction to analogue and digital electronics: passive components, diodes and rectifiers, bipolar and field-effect transistors, amplifier design, operational amplifiers, oscillators, logic gates and counters, and practical circuit building.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Electronics, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Electronics" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-circuit-theory/resources.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix D. Resources">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+Appendix D. Resources
+</div>
+</div>
+</a>
+<a href="aim.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Aim of This Textbook">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Aim of This Textbook
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

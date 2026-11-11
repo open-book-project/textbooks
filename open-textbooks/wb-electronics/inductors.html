@@ -1,0 +1,1214 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-electronics/inductors.html">
+<link rel="prev" href="capacitors.html">
+<link rel="next" href="inductance.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>10. Inductors - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#101-inductor" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+10. Inductors
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Electronics</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aim.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Aim of This Textbook
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="prereq.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Prerequisites
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="charge-and-coulomb-s-law.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Charge and Coulomb's Law
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="voltage-current-and-power.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Voltage, Current, and Power
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-concepts.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Basic Concepts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cells.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Cells
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="resistors.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Resistors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="capacitors.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Capacitors
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+10. Inductors
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="inductors.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+10. Inductors
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#101-inductor" class="md-nav__link">
+<span class="md-ellipsis">
+10.1 Inductor
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#102-inductance" class="md-nav__link">
+<span class="md-ellipsis">
+10.2 Inductance
+</span>
+</a>
+<nav class="md-nav" aria-label="10.2 Inductance">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#basic-inductance-formula-for-a-cylindrical-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Basic inductance formula for a cylindrical coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-self-inductance-of-a-straight-round-wire-in-free-space" class="md-nav__link">
+<span class="md-ellipsis">
+The self-inductance of a straight, round wire in free space
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#inductance-of-a-short-air-core-cylindrical-coil-in-terms-of-geometric-parameters" class="md-nav__link">
+<span class="md-ellipsis">
+Inductance of a short air core cylindrical coil in terms of geometric parameters:
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#multilayer-air-core-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Multilayer air core coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#flat-spiral-air-core-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Flat spiral air core coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#winding-around-a-toroidal-core-circular-cross-section" class="md-nav__link">
+<span class="md-ellipsis">
+Winding around a toroidal core (circular cross-section)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#quality-of-good-inductor" class="md-nav__link">
+<span class="md-ellipsis">
+Quality of good inductor
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#coils-characteristics" class="md-nav__link">
+<span class="md-ellipsis">
+Coil's Characteristics
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#103-inductor-and-direct-current-voltage-dc" class="md-nav__link">
+<span class="md-ellipsis">
+10.3 Inductor and Direct Current Voltage (DC)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#104-inductor-and-alternating-current-voltage-ac" class="md-nav__link">
+<span class="md-ellipsis">
+10.4 Inductor and Alternating Current Voltage (AC)
+</span>
+</a>
+<nav class="md-nav" aria-label="10.4 Inductor and Alternating Current Voltage (AC)">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#inductors-voltage" class="md-nav__link">
+<span class="md-ellipsis">
+Inductor's Voltage
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#inductors-current" class="md-nav__link">
+<span class="md-ellipsis">
+Inductor's Current
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reactance" class="md-nav__link">
+<span class="md-ellipsis">
+Reactance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#impedance" class="md-nav__link">
+<span class="md-ellipsis">
+Impedance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#angle-difference-between-voltage-and-current" class="md-nav__link">
+<span class="md-ellipsis">
+Angle Difference Between Voltage and Current
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#time-constant" class="md-nav__link">
+<span class="md-ellipsis">
+Time Constant
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#quality-factor" class="md-nav__link">
+<span class="md-ellipsis">
+Quality factor
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#105-inductors-connection" class="md-nav__link">
+<span class="md-ellipsis">
+10.5 Inductor's Connection
+</span>
+</a>
+<nav class="md-nav" aria-label="10.5 Inductor&#39;s Connection">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#series-connection" class="md-nav__link">
+<span class="md-ellipsis">
+Series Connection
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#parallel-connection" class="md-nav__link">
+<span class="md-ellipsis">
+Parallel Connection
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#106-see-also" class="md-nav__link">
+<span class="md-ellipsis">
+10.6 See Also
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="inductance.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Inductance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-construction.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Inductor Construction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="real-inductors.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Real Inductors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Inductor Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="components.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Other Components
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dc-voltage-and-current.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. DC Voltage and Current Laws
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nodal-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Nodal Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mesh-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Mesh Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="norton-equivalents.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Thevenin and Norton Equivalent Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="superposition.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Superposition
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="diagnostic-equipment.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Diagnostic Equipment
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dc-circuit-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. DC Circuit Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="measuring-instruments.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Measuring Instruments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="noise-in-electronic-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Noise in electronic circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ac-voltage-and-current.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. AC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="phasors.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Phasors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="impedance.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Impedance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="steady-state.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Steady State
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transient-analysis.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Transient Analysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rc-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. RC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rl-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. RL Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lc-transient.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. LC Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rcl.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. RCL Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Analog Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="semiconductor-basics.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Semiconductor Basics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vacuum-tubes.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Vacuum Tubes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="diodes.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Diodes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transistors.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Transistors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fet.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. FET
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mosfet.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. MOSFET
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amplifiers.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Amplifiers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="op-amps.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Operational amplifiers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="non-linear-configurations.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Non Linear Configurations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inductor-gyrator.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Inductor Gyrator
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-multipliers.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Analog multipliers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-circuits.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Digital Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="boolean-algebra.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Boolean Algebra
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ttl.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. TTL
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cmos.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. CMOS
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="integrated-circuit.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Integrated Circuits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-gates.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Basic gates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="combination-gates.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Combination gates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="flip-flops.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. Flip Flops
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="counters.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Counters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="adders.html" class="md-nav__link">
+<span class="md-ellipsis">
+56. Adders
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="decoders-and-encoders.html" class="md-nav__link">
+<span class="md-ellipsis">
+57. Decoders and Encoders
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="multiplexers.html" class="md-nav__link">
+<span class="md-ellipsis">
+58. Multiplexers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ram-and-rom.html" class="md-nav__link">
+<span class="md-ellipsis">
+59. RAM and ROM
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="registers.html" class="md-nav__link">
+<span class="md-ellipsis">
+60. Registers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alu.html" class="md-nav__link">
+<span class="md-ellipsis">
+61. ALU
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="control-unit.html" class="md-nav__link">
+<span class="md-ellipsis">
+62. Control Unit
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chapter-63.html" class="md-nav__link">
+<span class="md-ellipsis">
+63. O
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="analog-to-digital-converters.html" class="md-nav__link">
+<span class="md-ellipsis">
+64. Analog to Digital Converters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="digital-to-analog-converters.html" class="md-nav__link">
+<span class="md-ellipsis">
+65. Digital to Analog Converters
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="frequency-spectrum.html" class="md-nav__link">
+<span class="md-ellipsis">
+66. Frequency Spectrum
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gallery-of-vlf-signals.html" class="md-nav__link">
+<span class="md-ellipsis">
+67. Gallery of VLF-signals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vlf-reception-with-the-pc.html" class="md-nav__link">
+<span class="md-ellipsis">
+68. VLF-reception with the PC
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transmitter-design.html" class="md-nav__link">
+<span class="md-ellipsis">
+69. Transmitter design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="definitions.html" class="md-nav__link">
+<span class="md-ellipsis">
+70. Definitions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="symbols.html" class="md-nav__link">
+<span class="md-ellipsis">
+71. Circuit Symbols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="component-identification.html" class="md-nav__link">
+<span class="md-ellipsis">
+72. Identifying Components and Values
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electronics-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+73. Electronics Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="laplace-transform-pairs.html" class="md-nav__link">
+<span class="md-ellipsis">
+74. Laplace Transform pairs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+75. Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electro-mechanical-analogies.html" class="md-nav__link">
+<span class="md-ellipsis">
+76. Electro-Mechanical Analogies
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#101-inductor" class="md-nav__link">
+<span class="md-ellipsis">
+10.1 Inductor
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#102-inductance" class="md-nav__link">
+<span class="md-ellipsis">
+10.2 Inductance
+</span>
+</a>
+<nav class="md-nav" aria-label="10.2 Inductance">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#basic-inductance-formula-for-a-cylindrical-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Basic inductance formula for a cylindrical coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-self-inductance-of-a-straight-round-wire-in-free-space" class="md-nav__link">
+<span class="md-ellipsis">
+The self-inductance of a straight, round wire in free space
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#inductance-of-a-short-air-core-cylindrical-coil-in-terms-of-geometric-parameters" class="md-nav__link">
+<span class="md-ellipsis">
+Inductance of a short air core cylindrical coil in terms of geometric parameters:
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#multilayer-air-core-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Multilayer air core coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#flat-spiral-air-core-coil" class="md-nav__link">
+<span class="md-ellipsis">
+Flat spiral air core coil
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#winding-around-a-toroidal-core-circular-cross-section" class="md-nav__link">
+<span class="md-ellipsis">
+Winding around a toroidal core (circular cross-section)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#quality-of-good-inductor" class="md-nav__link">
+<span class="md-ellipsis">
+Quality of good inductor
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#coils-characteristics" class="md-nav__link">
+<span class="md-ellipsis">
+Coil's Characteristics
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#103-inductor-and-direct-current-voltage-dc" class="md-nav__link">
+<span class="md-ellipsis">
+10.3 Inductor and Direct Current Voltage (DC)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#104-inductor-and-alternating-current-voltage-ac" class="md-nav__link">
+<span class="md-ellipsis">
+10.4 Inductor and Alternating Current Voltage (AC)
+</span>
+</a>
+<nav class="md-nav" aria-label="10.4 Inductor and Alternating Current Voltage (AC)">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#inductors-voltage" class="md-nav__link">
+<span class="md-ellipsis">
+Inductor's Voltage
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#inductors-current" class="md-nav__link">
+<span class="md-ellipsis">
+Inductor's Current
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reactance" class="md-nav__link">
+<span class="md-ellipsis">
+Reactance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#impedance" class="md-nav__link">
+<span class="md-ellipsis">
+Impedance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#angle-difference-between-voltage-and-current" class="md-nav__link">
+<span class="md-ellipsis">
+Angle Difference Between Voltage and Current
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#time-constant" class="md-nav__link">
+<span class="md-ellipsis">
+Time Constant
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#quality-factor" class="md-nav__link">
+<span class="md-ellipsis">
+Quality factor
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#105-inductors-connection" class="md-nav__link">
+<span class="md-ellipsis">
+10.5 Inductor's Connection
+</span>
+</a>
+<nav class="md-nav" aria-label="10.5 Inductor&#39;s Connection">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#series-connection" class="md-nav__link">
+<span class="md-ellipsis">
+Series Connection
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#parallel-connection" class="md-nav__link">
+<span class="md-ellipsis">
+Parallel Connection
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#106-see-also" class="md-nav__link">
+<span class="md-ellipsis">
+10.6 See Also
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-10-inductors">Chapter 10: Inductors<a class="headerlink" href="#chapter-10-inductors" title="Permanent link">&para;</a></h1>
+<div class="pk-remote" data-book="wb-electronics" data-page="Electronics/Inductors" lang="en" markdown="0"></div>
+<h2 id="101-inductor">10.1 Inductor<a class="headerlink" href="#101-inductor" title="Permanent link">&para;</a></h2>
+<h2 id="102-inductance">10.2 Inductance<a class="headerlink" href="#102-inductance" title="Permanent link">&para;</a></h2>
+<h3 id="basic-inductance-formula-for-a-cylindrical-coil">Basic inductance formula for a cylindrical coil<a class="headerlink" href="#basic-inductance-formula-for-a-cylindrical-coil" title="Permanent link">&para;</a></h3>
+<h3 id="the-self-inductance-of-a-straight-round-wire-in-free-space">The self-inductance of a straight, round wire in free space<a class="headerlink" href="#the-self-inductance-of-a-straight-round-wire-in-free-space" title="Permanent link">&para;</a></h3>
+<h3 id="inductance-of-a-short-air-core-cylindrical-coil-in-terms-of-geometric-parameters">Inductance of a short air core cylindrical coil in terms of geometric parameters:<a class="headerlink" href="#inductance-of-a-short-air-core-cylindrical-coil-in-terms-of-geometric-parameters" title="Permanent link">&para;</a></h3>
+<h3 id="multilayer-air-core-coil">Multilayer air core coil<a class="headerlink" href="#multilayer-air-core-coil" title="Permanent link">&para;</a></h3>
+<h3 id="flat-spiral-air-core-coil">Flat spiral air core coil<a class="headerlink" href="#flat-spiral-air-core-coil" title="Permanent link">&para;</a></h3>
+<h3 id="winding-around-a-toroidal-core-circular-cross-section">Winding around a toroidal core (circular cross-section)<a class="headerlink" href="#winding-around-a-toroidal-core-circular-cross-section" title="Permanent link">&para;</a></h3>
+<h3 id="quality-of-good-inductor">Quality of good inductor<a class="headerlink" href="#quality-of-good-inductor" title="Permanent link">&para;</a></h3>
+<h3 id="coils-characteristics">Coil's Characteristics<a class="headerlink" href="#coils-characteristics" title="Permanent link">&para;</a></h3>
+<h2 id="103-inductor-and-direct-current-voltage-dc">10.3 Inductor and Direct Current Voltage (DC)<a class="headerlink" href="#103-inductor-and-direct-current-voltage-dc" title="Permanent link">&para;</a></h2>
+<h2 id="104-inductor-and-alternating-current-voltage-ac">10.4 Inductor and Alternating Current Voltage (AC)<a class="headerlink" href="#104-inductor-and-alternating-current-voltage-ac" title="Permanent link">&para;</a></h2>
+<h3 id="inductors-voltage">Inductor's Voltage<a class="headerlink" href="#inductors-voltage" title="Permanent link">&para;</a></h3>
+<h3 id="inductors-current">Inductor's Current<a class="headerlink" href="#inductors-current" title="Permanent link">&para;</a></h3>
+<h3 id="reactance">Reactance<a class="headerlink" href="#reactance" title="Permanent link">&para;</a></h3>
+<h3 id="impedance">Impedance<a class="headerlink" href="#impedance" title="Permanent link">&para;</a></h3>
+<h3 id="angle-difference-between-voltage-and-current">Angle Difference Between Voltage and Current<a class="headerlink" href="#angle-difference-between-voltage-and-current" title="Permanent link">&para;</a></h3>
+<h3 id="time-constant">Time Constant<a class="headerlink" href="#time-constant" title="Permanent link">&para;</a></h3>
+<h3 id="quality-factor">Quality factor<a class="headerlink" href="#quality-factor" title="Permanent link">&para;</a></h3>
+<h2 id="105-inductors-connection">10.5 Inductor's Connection<a class="headerlink" href="#105-inductors-connection" title="Permanent link">&para;</a></h2>
+<h3 id="series-connection">Series Connection<a class="headerlink" href="#series-connection" title="Permanent link">&para;</a></h3>
+<h3 id="parallel-connection">Parallel Connection<a class="headerlink" href="#parallel-connection" title="Permanent link">&para;</a></h3>
+<h2 id="106-see-also">10.6 See Also<a class="headerlink" href="#106-see-also" title="Permanent link">&para;</a></h2>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="capacitors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 9. Capacitors">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+9. Capacitors
+</div>
+</div>
+</a>
+<a href="inductance.html" class="md-footer__link md-footer__link--next" aria-label="Next: 11. Inductance">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+11. Inductance
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

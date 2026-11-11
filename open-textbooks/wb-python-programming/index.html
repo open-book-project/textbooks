@@ -1,0 +1,1130 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-python-programming/index.html">
+<link rel="prev" href="../wb-electronics/electro-mechanical-analogies.html">
+<link rel="next" href="overview.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Python Programming</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="overview.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Overview
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="getting-python.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Getting Python
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="development-environments.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Setting it up
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="interactive-mode.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Interactive mode
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="self-help.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Self Help
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="creating-python-programs.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Creating Python programs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-math.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Basic Math
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="decision-control.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Decision Control
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="conditional-statements.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Conditional Statements
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="loops.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Loops
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sequences.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Sequences
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="source-documentation-and-comments.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Source Documentation and Comments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="files.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Files
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="strings.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Text
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="errors.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Errors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="python-programming.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Namespace
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="classes.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Object-oriented programming
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="databases.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Databases
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="internet.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Internet
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="networks.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Networks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="tips-and-tricks.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Tips and Tricks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-syntax.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Basic syntax
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="data-types.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Data types
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Numbers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="strings-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Strings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lists.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Lists
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="tuples.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Tuples
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dictionaries.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Dictionaries
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sets.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Sets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="operators.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Operators
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="control-flow.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Control Flow
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="decorators.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Decorators
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="scoping.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Scoping
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exceptions.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Exceptions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="input-and-output.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Input and output
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="modules.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Modules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="classes-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Classes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="metaclasses.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. MetaClasses
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="standard-library.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Standard Library
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="regular-expression.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Regular Expression
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="xml-tools.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. XML Tools
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="email.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Email
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="threading.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Threading
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sockets.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Sockets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gui-programming.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. GUI Programming
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="internet-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Web Page Harvesting
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="databases-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Database Programming
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="game-programming-in-python.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. Game Programming in Python
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pyqt4.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. PyQt4
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dbus.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Dbus
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="extending-with-c.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Extending with C
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="extending-with-c-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Extending with C++
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="extending-with-pyrex.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. Extending with Pyrex
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="extending-with-ctypes.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Extending with ctypes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-python-programming" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="overview.html" style="--cv-bg:#2b4a6f;--cv-accent:#f6d55c;--cv-fg:#f1f5f9;--cv-n:8;--cv-rot:24deg;--cv-x:24%;--cv-y:69%" aria-label="Start reading Python Programming"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Python Programming</span><span class="vol-sub">From first programs to modules and the standard library</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Python Programming</h1>
+<p class="pk-book-sub">From first programs to modules and the standard library</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Variables and control flow, functions, data structures, classes, modules, files, and the standard library, with examples in Python 3.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/programming.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 4c-2 0-2.5 1-2.5 3v2c0 1.5-.8 2.5-2 3 1.2.5 2 1.5 2 3v2c0 2 .5 3 2.5 3M16 4c2 0 2.5 1 2.5 3v2c0 1.5.8 2.5 2 3-1.2.5-2 1.5-2 3v2c0 2-.5 3-2.5 3M10 12h.01M14 12h.01"/></svg><span class="pk-chip-cat">Computers &amp; Technology &rsaquo;</span> Programming</a><a class="pk-chip" href="../../subjects/computer-science.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8.5 7 3.5 12l5 5M15.5 7l5 5-5 5M13.5 4.5l-3 15"/></svg>Computers &amp; Technology</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="overview.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-python-programming"></div></div>
+<p class="pk-book-facts"><span>55 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-python-programming" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Learning Python</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="overview.html">Chapter 1: Overview</a></li>
+<li class="vc-ch"><details><summary><a href="getting-python.html">Chapter 2: Getting Python</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="getting-python.html#21-installing-python-on-windows"><span class="vc-n">2.1</span> Installing Python on Windows</a></li>
+<li class="vc-l2"><a href="getting-python.html#22-installing-python-on-macos"><span class="vc-n">2.2</span> Installing Python on macOS</a></li>
+<li class="vc-l2"><a href="getting-python.html#23-installing-python-on-linux1"><span class="vc-n">2.3</span> Installing Python on Linux[1]</a><ul class="vc-subs"><li class="vc-l3"><a href="getting-python.html#installation-check-list">Installation Check List</a></li><li class="vc-l3"><a href="getting-python.html#installing-python-for-ubuntudebian-based-systems-using-apt">Installing Python For Ubuntu/Debian Based Systems using APT</a></li><li class="vc-l3"><a href="getting-python.html#source-code-installations">Source code installations</a></li><li class="vc-l3"><a href="getting-python.html#other-distributions">Other Distributions</a></li><li class="vc-l3"><a href="getting-python.html#integrated-development-environments-ide">Integrated Development Environments (IDE)</a></li></ul></li>
+<li class="vc-l2"><a href="getting-python.html#24-trying-python-online"><span class="vc-n">2.4</span> Trying Python online</a></li>
+<li class="vc-l2"><a href="getting-python.html#25-keeping-up-to-date"><span class="vc-n">2.5</span> Keeping Up to Date</a></li>
+<li class="vc-l2"><a href="getting-python.html#26-notes"><span class="vc-n">2.6</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="development-environments.html">Chapter 3: Setting it up</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="development-environments.html#31-visual-studio-code"><span class="vc-n">3.1</span> Visual Studio Code</a></li>
+<li class="vc-l2"><a href="development-environments.html#32-eclipse"><span class="vc-n">3.2</span> Eclipse</a></li>
+<li class="vc-l2"><a href="development-environments.html#33-emacs"><span class="vc-n">3.3</span> Emacs</a></li>
+<li class="vc-l2"><a href="development-environments.html#34-idle"><span class="vc-n">3.4</span> IDLE</a></li>
+<li class="vc-l2"><a href="development-environments.html#35-external-links"><span class="vc-n">3.5</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="interactive-mode.html">Chapter 4: Interactive mode</a></li>
+<li class="vc-ch"><details><summary><a href="self-help.html">Chapter 5: Self Help</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="self-help.html#51-built-in-help-overview"><span class="vc-n">5.1</span> Built-in help overview</a></li>
+<li class="vc-l2"><a href="self-help.html#52-navigating-help"><span class="vc-n">5.2</span> Navigating Help</a></li>
+<li class="vc-l2"><a href="self-help.html#53-help-parameter"><span class="vc-n">5.3</span> Help Parameter</a></li>
+<li class="vc-l2"><a href="self-help.html#54-external-links"><span class="vc-n">5.4</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="creating-python-programs.html">Chapter 6: Creating Python programs</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="creating-python-programs.html#61-hello-world"><span class="vc-n">6.1</span> Hello, World</a><ul class="vc-subs"><li class="vc-l3"><a href="creating-python-programs.html#windows">Windows</a></li><li class="vc-l3"><a href="creating-python-programs.html#mac">Mac</a></li><li class="vc-l3"><a href="creating-python-programs.html#linux">Linux</a></li><li class="vc-l3"><a href="creating-python-programs.html#linux-advanced">Linux (advanced)</a></li><li class="vc-l3"><a href="creating-python-programs.html#result">Result</a></li></ul></li>
+<li class="vc-l2"><a href="creating-python-programs.html#62-exercises"><span class="vc-n">6.2</span> Exercises</a></li>
+<li class="vc-l2"><a href="creating-python-programs.html#63-notes"><span class="vc-n">6.3</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="basic-math.html">Chapter 7: Basic Math</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-math.html#71-mathematical-operators"><span class="vc-n">7.1</span> Mathematical Operators</a></li>
+<li class="vc-l2"><a href="basic-math.html#72-order-of-operations"><span class="vc-n">7.2</span> Order of Operations</a></li>
+<li class="vc-l2"><a href="basic-math.html#73-formatting-output"><span class="vc-n">7.3</span> Formatting output</a></li>
+<li class="vc-l2"><a href="basic-math.html#74-notes"><span class="vc-n">7.4</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="decision-control.html">Chapter 8: Decision Control</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="decision-control.html#81-boolean-expressions"><span class="vc-n">8.1</span> Boolean Expressions</a></li>
+<li class="vc-l2"><a href="decision-control.html#82-examples"><span class="vc-n">8.2</span> Examples</a></li>
+<li class="vc-l2"><a href="decision-control.html#83-exercises"><span class="vc-n">8.3</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="conditional-statements.html">Chapter 9: Conditional Statements</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="conditional-statements.html#91-decisions"><span class="vc-n">9.1</span> Decisions</a></li>
+<li class="vc-l2"><a href="conditional-statements.html#92-if-statements"><span class="vc-n">9.2</span> If statements</a><ul class="vc-subs"><li class="vc-l3"><a href="conditional-statements.html#if-example">If Example</a></li><li class="vc-l3"><a href="conditional-statements.html#if-exercises">If Exercises</a></li><li class="vc-l3"><a href="conditional-statements.html#conditional-statements">Conditional Statements</a></li></ul></li>
+<li class="vc-l2"><a href="conditional-statements.html#93-switch"><span class="vc-n">9.3</span> Switch</a></li>
+<li class="vc-l2"><a href="conditional-statements.html#94-another-way-using-function-through-user-input"><span class="vc-n">9.4</span> Another way. Using function through user Input</a><ul class="vc-subs"><li class="vc-l3"><a href="conditional-statements.html#another-way">Another way</a></li><li class="vc-l3"><a href="conditional-statements.html#another-way_1">Another way</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="loops.html">Chapter 10: Loops</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="loops.html#101-while-loops"><span class="vc-n">10.1</span> While loops</a><ul class="vc-subs"><li class="vc-l3"><a href="loops.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="loops.html#102-for-loops"><span class="vc-n">10.2</span> For Loops</a></li>
+<li class="vc-l2"><a href="loops.html#103-range-versus-xrange"><span class="vc-n">10.3</span> range Versus xrange</a></li>
+<li class="vc-l2"><a href="loops.html#104-the-break-statement"><span class="vc-n">10.4</span> The break Statement</a></li>
+<li class="vc-l2"><a href="loops.html#105-exercises"><span class="vc-n">10.5</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sequences.html">Chapter 11: Sequences</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sequences.html#111-strings"><span class="vc-n">11.1</span> Strings</a></li>
+<li class="vc-l2"><a href="sequences.html#112-lists"><span class="vc-n">11.2</span> Lists</a></li>
+<li class="vc-l2"><a href="sequences.html#113-tuples"><span class="vc-n">11.3</span> Tuples</a></li>
+<li class="vc-l2"><a href="sequences.html#114-dictionaries"><span class="vc-n">11.4</span> Dictionaries</a></li>
+<li class="vc-l2"><a href="sequences.html#115-sets"><span class="vc-n">11.5</span> Sets</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#frozenset">Frozenset</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#116-other-data-types"><span class="vc-n">11.6</span> Other data types</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#3rd-party-data-structure">3rd party data structure</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#117-exercises"><span class="vc-n">11.7</span> Exercises</a></li>
+<li class="vc-l2"><a href="sequences.html#118-external-links"><span class="vc-n">11.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="source-documentation-and-comments.html">Chapter 12: Source Documentation and Comments</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="source-documentation-and-comments.html#121-comments"><span class="vc-n">12.1</span> Comments</a><ul class="vc-subs"><li class="vc-l3"><a href="source-documentation-and-comments.html#comment-guidelines">Comment Guidelines</a></li></ul></li>
+<li class="vc-l2"><a href="source-documentation-and-comments.html#122-documentation-strings"><span class="vc-n">12.2</span> Documentation Strings</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="files.html">Chapter 13: Files</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="files.html#131-file-io"><span class="vc-n">13.1</span> File I/O</a></li>
+<li class="vc-l2"><a href="files.html#132-testing-files"><span class="vc-n">13.2</span> Testing Files</a></li>
+<li class="vc-l2"><a href="files.html#133-common-file-operations"><span class="vc-n">13.3</span> Common File Operations</a></li>
+<li class="vc-l2"><a href="files.html#134-finding-files"><span class="vc-n">13.4</span> Finding Files</a></li>
+<li class="vc-l2"><a href="files.html#135-current-directory"><span class="vc-n">13.5</span> Current Directory</a></li>
+<li class="vc-l2"><a href="files.html#136-external-links"><span class="vc-n">13.6</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="strings.html">Chapter 14: Text</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="strings.html#141-overview"><span class="vc-n">14.1</span> Overview</a></li>
+<li class="vc-l2"><a href="strings.html#142-string-operations"><span class="vc-n">14.2</span> String operations</a><ul class="vc-subs"><li class="vc-l3"><a href="strings.html#equality">Equality</a></li><li class="vc-l3"><a href="strings.html#numerical">Numerical</a></li><li class="vc-l3"><a href="strings.html#containment">Containment</a></li><li class="vc-l3"><a href="strings.html#indexing-and-slicing">Indexing and Slicing</a></li></ul></li>
+<li class="vc-l2"><a href="strings.html#143-string-constants"><span class="vc-n">14.3</span> String constants</a></li>
+<li class="vc-l2"><a href="strings.html#144-string-methods"><span class="vc-n">14.4</span> String methods</a><ul class="vc-subs"><li class="vc-l3"><a href="strings.html#is">is*</a></li><li class="vc-l3"><a href="strings.html#title-upper-lower-swapcase-capitalize">Title, Upper, Lower, Swapcase, Capitalize</a></li><li class="vc-l3"><a href="strings.html#count">count</a></li><li class="vc-l3"><a href="strings.html#strip-rstrip-lstrip">strip, rstrip, lstrip</a></li><li class="vc-l3"><a href="strings.html#ljust-rjust-center">ljust, rjust, center</a></li><li class="vc-l3"><a href="strings.html#join">join</a></li><li class="vc-l3"><a href="strings.html#find-index-rfind-rindex">find, index, rfind, rindex</a></li><li class="vc-l3"><a href="strings.html#replace">replace</a></li><li class="vc-l3"><a href="strings.html#expandtabs">expandtabs</a></li><li class="vc-l3"><a href="strings.html#split-splitlines">split, splitlines</a></li></ul></li>
+<li class="vc-l2"><a href="strings.html#145-unicode"><span class="vc-n">14.5</span> Unicode</a></li>
+<li class="vc-l2"><a href="strings.html#146-external-links"><span class="vc-n">14.6</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="errors.html">Chapter 15: Errors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="errors.html#151-syntax-errors"><span class="vc-n">15.1</span> Syntax errors</a></li>
+<li class="vc-l2"><a href="errors.html#152-logic-errors"><span class="vc-n">15.2</span> Logic errors</a></li>
+<li class="vc-l2"><a href="errors.html#153-exceptions"><span class="vc-n">15.3</span> Exceptions</a><ul class="vc-subs"><li class="vc-l3"><a href="errors.html#dealing-with-exceptions">Dealing with exceptions</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="python-programming.html">Chapter 16: Namespace</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="python-programming.html#161-contents"><span class="vc-n">16.1</span> Contents</a><ul class="vc-subs"><li class="vc-l3"><a href="python-programming.html#intro">Intro</a></li><li class="vc-l3"><a href="python-programming.html#basics">Basics</a></li><li class="vc-l3"><a href="python-programming.html#advanced">Advanced</a></li><li class="vc-l3"><a href="python-programming.html#modules">Modules</a></li><li class="vc-l3"><a href="python-programming.html#appendices">Appendices</a></li></ul></li>
+<li class="vc-l2"><a href="python-programming.html#162-see-also"><span class="vc-n">16.2</span> See also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="classes.html">Chapter 17: Object-oriented programming</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="classes.html#171-overview"><span class="vc-n">17.1</span> Overview</a></li>
+<li class="vc-l2"><a href="classes.html#172-defining-a-class"><span class="vc-n">17.2</span> Defining a Class</a></li>
+<li class="vc-l2"><a href="classes.html#173-instance-construction"><span class="vc-n">17.3</span> Instance Construction</a></li>
+<li class="vc-l2"><a href="classes.html#174-class-members"><span class="vc-n">17.4</span> Class Members</a><ul class="vc-subs"><li class="vc-l3"><a href="classes.html#methods">Methods</a></li><li class="vc-l3"><a href="classes.html#why-self">Why self?</a></li><li class="vc-l3"><a href="classes.html#invoking-methods">Invoking Methods</a></li><li class="vc-l3"><a href="classes.html#dynamic-class-structure">Dynamic Class Structure</a></li><li class="vc-l3"><a href="classes.html#viewing-class-dictionaries">Viewing Class Dictionaries</a></li><li class="vc-l3"><a href="classes.html#changing-class-dictionaries">Changing Class Dictionaries</a></li></ul></li>
+<li class="vc-l2"><a href="classes.html#175-why-use-classes"><span class="vc-n">17.5</span> Why use classes?</a></li>
+<li class="vc-l2"><a href="classes.html#176-new-style-classes"><span class="vc-n">17.6</span> New Style Classes</a><ul class="vc-subs"><li class="vc-l3"><a href="classes.html#properties">Properties</a></li><li class="vc-l3"><a href="classes.html#static-methods">Static Methods</a></li></ul></li>
+<li class="vc-l2"><a href="classes.html#177-inheritance"><span class="vc-n">17.7</span> Inheritance</a></li>
+<li class="vc-l2"><a href="classes.html#178-multiple-inheritance"><span class="vc-n">17.8</span> Multiple inheritance</a></li>
+<li class="vc-l2"><a href="classes.html#179-special-methods"><span class="vc-n">17.9</span> Special Methods</a><ul class="vc-subs"><li class="vc-l3"><a href="classes.html#initialization-and-deletion">Initialization and Deletion</a></li><li class="vc-l3"><a href="classes.html#representation">Representation</a></li><li class="vc-l3"><a href="classes.html#attributes">Attributes</a></li><li class="vc-l3"><a href="classes.html#operator-overloading">Operator Overloading</a></li><li class="vc-l3"><a href="classes.html#other-overrides">Other Overrides</a></li></ul></li>
+<li class="vc-l2"><a href="classes.html#1710-programming-practices"><span class="vc-n">17.10</span> Programming Practices</a><ul class="vc-subs"><li class="vc-l3"><a href="classes.html#encapsulation">Encapsulation</a></li><li class="vc-l3"><a href="classes.html#doc-strings">Doc Strings</a></li><li class="vc-l3"><a href="classes.html#adding-methods-at-runtime">Adding methods at runtime</a></li></ul></li>
+<li class="vc-l2"><a href="classes.html#1711-external-links"><span class="vc-n">17.11</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="databases.html">Chapter 18: Databases</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="databases.html#181-dbms-specifics"><span class="vc-n">18.1</span> DBMS Specifics</a><ul class="vc-subs"><li class="vc-l3"><a href="databases.html#mysql">MySQL</a></li><li class="vc-l3"><a href="databases.html#sqlite">Sqlite</a></li><li class="vc-l3"><a href="databases.html#postgres">Postgres</a></li><li class="vc-l3"><a href="databases.html#firebird">Firebird</a></li></ul></li>
+<li class="vc-l2"><a href="databases.html#182-general-principles"><span class="vc-n">18.2</span> General Principles</a><ul class="vc-subs"><li class="vc-l3"><a href="databases.html#parameter-quoting">Parameter Quoting</a></li><li class="vc-l3"><a href="databases.html#use-iterators">Use Iterators</a></li><li class="vc-l3"><a href="databases.html#never-use-select-in-a-script">Never Use “SELECT *” in a Script</a></li><li class="vc-l3"><a href="databases.html#looping-on-field-breaks">Looping on Field Breaks</a></li></ul></li>
+<li class="vc-l2"><a href="databases.html#183-see-also"><span class="vc-n">18.3</span> See Also</a></li>
+<li class="vc-l2"><a href="databases.html#184-external-links"><span class="vc-n">18.4</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="internet.html">Chapter 19: Internet</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="internet.html#191-getting-page-text-as-a-string"><span class="vc-n">19.1</span> Getting page text as a string</a></li>
+<li class="vc-l2"><a href="internet.html#192-downloading-files"><span class="vc-n">19.2</span> Downloading files</a></li>
+<li class="vc-l2"><a href="internet.html#193-other-functions"><span class="vc-n">19.3</span> Other functions</a></li>
+<li class="vc-l2"><a href="internet.html#194-email"><span class="vc-n">19.4</span> Email</a></li>
+<li class="vc-l2"><a href="internet.html#195-external-links"><span class="vc-n">19.5</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="networks.html">Chapter 20: Networks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="networks.html#201-sockets"><span class="vc-n">20.1</span> Sockets</a><ul class="vc-subs"><li class="vc-l3"><a href="networks.html#connecting-to-a-server">Connecting to a server</a></li></ul></li>
+<li class="vc-l2"><a href="networks.html#202-high-level-interfaces"><span class="vc-n">20.2</span> High-level interfaces</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="tips-and-tricks.html">Chapter 21: Tips and Tricks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="tips-and-tricks.html#211-strings"><span class="vc-n">21.1</span> Strings</a></li>
+<li class="vc-l2"><a href="tips-and-tricks.html#212-optimized-c-modules"><span class="vc-n">21.2</span> Optimized C modules</a><ul class="vc-subs"><li class="vc-l3"><a href="tips-and-tricks.html#importing">importing</a></li><li class="vc-l3"><a href="tips-and-tricks.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="tips-and-tricks.html#213-list-comprehension-and-generators"><span class="vc-n">21.3</span> List comprehension and generators</a></li>
+<li class="vc-l2"><a href="tips-and-tricks.html#214-data-type-choice"><span class="vc-n">21.4</span> Data type choice</a></li>
+<li class="vc-l2"><a href="tips-and-tricks.html#215-other"><span class="vc-n">21.5</span> Other</a></li>
+<li class="vc-l2"><a href="tips-and-tricks.html#216-references"><span class="vc-n">21.6</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Concepts</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="basic-syntax.html">Chapter 22: Basic syntax</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-syntax.html#221-semicolons"><span class="vc-n">22.1</span> Semicolons</a></li>
+<li class="vc-l2"><a href="basic-syntax.html#222-case-sensitivity"><span class="vc-n">22.2</span> Case Sensitivity</a></li>
+<li class="vc-l2"><a href="basic-syntax.html#223-spaces-and-tabs-dont-mix"><span class="vc-n">22.3</span> Spaces and tabs don&#x27;t mix</a></li>
+<li class="vc-l2"><a href="basic-syntax.html#224-objects"><span class="vc-n">22.4</span> Objects</a></li>
+<li class="vc-l2"><a href="basic-syntax.html#225-scope"><span class="vc-n">22.5</span> Scope</a></li>
+<li class="vc-l2"><a href="basic-syntax.html#226-namespaces"><span class="vc-n">22.6</span> Namespaces</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="data-types.html">Chapter 23: Data types</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="data-types.html#231-built-in-data-types"><span class="vc-n">23.1</span> Built-in Data types</a></li>
+<li class="vc-l2"><a href="data-types.html#232-mutable-vs-immutable-objects"><span class="vc-n">23.2</span> Mutable vs Immutable Objects</a></li>
+<li class="vc-l2"><a href="data-types.html#233-creating-objects-of-defined-types"><span class="vc-n">23.3</span> Creating Objects of Defined Types</a></li>
+<li class="vc-l2"><a href="data-types.html#234-null-object"><span class="vc-n">23.4</span> Null object</a></li>
+<li class="vc-l2"><a href="data-types.html#235-type-conversion"><span class="vc-n">23.5</span> Type conversion</a></li>
+<li class="vc-l2"><a href="data-types.html#236-exercises"><span class="vc-n">23.6</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="numbers.html">Chapter 24: Numbers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="numbers.html#241-links"><span class="vc-n">24.1</span> Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="strings-2.html">Chapter 25: Strings</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="strings-2.html#251-overview"><span class="vc-n">25.1</span> Overview</a></li>
+<li class="vc-l2"><a href="strings-2.html#252-string-operations"><span class="vc-n">25.2</span> String operations</a><ul class="vc-subs"><li class="vc-l3"><a href="strings-2.html#equality">Equality</a></li><li class="vc-l3"><a href="strings-2.html#numerical">Numerical</a></li><li class="vc-l3"><a href="strings-2.html#containment">Containment</a></li><li class="vc-l3"><a href="strings-2.html#indexing-and-slicing">Indexing and Slicing</a></li></ul></li>
+<li class="vc-l2"><a href="strings-2.html#253-string-constants"><span class="vc-n">25.3</span> String constants</a></li>
+<li class="vc-l2"><a href="strings-2.html#254-string-methods"><span class="vc-n">25.4</span> String methods</a><ul class="vc-subs"><li class="vc-l3"><a href="strings-2.html#is">is*</a></li><li class="vc-l3"><a href="strings-2.html#title-upper-lower-swapcase-capitalize">Title, Upper, Lower, Swapcase, Capitalize</a></li><li class="vc-l3"><a href="strings-2.html#count">count</a></li><li class="vc-l3"><a href="strings-2.html#strip-rstrip-lstrip">strip, rstrip, lstrip</a></li><li class="vc-l3"><a href="strings-2.html#ljust-rjust-center">ljust, rjust, center</a></li><li class="vc-l3"><a href="strings-2.html#join">join</a></li><li class="vc-l3"><a href="strings-2.html#find-index-rfind-rindex">find, index, rfind, rindex</a></li><li class="vc-l3"><a href="strings-2.html#replace">replace</a></li><li class="vc-l3"><a href="strings-2.html#expandtabs">expandtabs</a></li><li class="vc-l3"><a href="strings-2.html#split-splitlines">split, splitlines</a></li></ul></li>
+<li class="vc-l2"><a href="strings-2.html#255-unicode"><span class="vc-n">25.5</span> Unicode</a></li>
+<li class="vc-l2"><a href="strings-2.html#256-external-links"><span class="vc-n">25.6</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="lists.html">Chapter 26: Lists</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lists.html#261-overview"><span class="vc-n">26.1</span> Overview</a></li>
+<li class="vc-l2"><a href="lists.html#262-list-creation"><span class="vc-n">26.2</span> List creation</a><ul class="vc-subs"><li class="vc-l3"><a href="lists.html#plain-creation">Plain creation</a></li><li class="vc-l3"><a href="lists.html#list-comprehensions">List comprehensions</a></li><li class="vc-l3"><a href="lists.html#list-creation-shortcuts">List creation shortcuts</a></li></ul></li>
+<li class="vc-l2"><a href="lists.html#263-list-size"><span class="vc-n">26.3</span> List size</a></li>
+<li class="vc-l2"><a href="lists.html#264-combining-lists"><span class="vc-n">26.4</span> Combining lists</a></li>
+<li class="vc-l2"><a href="lists.html#265-getting-pieces-of-lists-slices"><span class="vc-n">26.5</span> Getting pieces of lists (slices)</a><ul class="vc-subs"><li class="vc-l3"><a href="lists.html#continuous-slices">Continuous slices</a></li><li class="vc-l3"><a href="lists.html#non-continuous-slices">Non-Continuous slices</a></li></ul></li>
+<li class="vc-l2"><a href="lists.html#266-comparing-lists"><span class="vc-n">26.6</span> Comparing lists</a></li>
+<li class="vc-l2"><a href="lists.html#267-sorting-lists"><span class="vc-n">26.7</span> Sorting lists</a></li>
+<li class="vc-l2"><a href="lists.html#268-iteration"><span class="vc-n">26.8</span> Iteration</a></li>
+<li class="vc-l2"><a href="lists.html#269-removing"><span class="vc-n">26.9</span> Removing</a></li>
+<li class="vc-l2"><a href="lists.html#2610-aggregates"><span class="vc-n">26.10</span> Aggregates</a></li>
+<li class="vc-l2"><a href="lists.html#2611-copying"><span class="vc-n">26.11</span> Copying</a></li>
+<li class="vc-l2"><a href="lists.html#2612-clearing"><span class="vc-n">26.12</span> Clearing</a></li>
+<li class="vc-l2"><a href="lists.html#2613-removing-duplicate-items"><span class="vc-n">26.13</span> Removing duplicate items</a></li>
+<li class="vc-l2"><a href="lists.html#2614-list-methods"><span class="vc-n">26.14</span> List methods</a><ul class="vc-subs"><li class="vc-l3"><a href="lists.html#appendx">append(x)</a></li><li class="vc-l3"><a href="lists.html#popi">pop(i)</a></li></ul></li>
+<li class="vc-l2"><a href="lists.html#2615-operators"><span class="vc-n">26.15</span> Operators</a><ul class="vc-subs"><li class="vc-l3"><a href="lists.html#_1">+</a></li><li class="vc-l3"><a href="lists.html#_2">*</a></li><li class="vc-l3"><a href="lists.html#in">in</a></li></ul></li>
+<li class="vc-l2"><a href="lists.html#2616-difference"><span class="vc-n">26.16</span> Difference</a></li>
+<li class="vc-l2"><a href="lists.html#2617-intersection"><span class="vc-n">26.17</span> Intersection</a></li>
+<li class="vc-l2"><a href="lists.html#2618-exercises"><span class="vc-n">26.18</span> Exercises</a></li>
+<li class="vc-l2"><a href="lists.html#2619-solutions"><span class="vc-n">26.19</span> Solutions</a></li>
+<li class="vc-l2"><a href="lists.html#2620-external-links"><span class="vc-n">26.20</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="tuples.html">Chapter 27: Tuples</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="tuples.html#271-overview"><span class="vc-n">27.1</span> Overview</a></li>
+<li class="vc-l2"><a href="tuples.html#272-tuple-notation"><span class="vc-n">27.2</span> Tuple notation</a></li>
+<li class="vc-l2"><a href="tuples.html#273-packing-and-unpacking"><span class="vc-n">27.3</span> Packing and Unpacking</a></li>
+<li class="vc-l2"><a href="tuples.html#274-operations-on-tuples"><span class="vc-n">27.4</span> Operations on tuples</a><ul class="vc-subs"><li class="vc-l3"><a href="tuples.html#tuple-attributes">Tuple Attributes</a></li><li class="vc-l3"><a href="tuples.html#conversions">Conversions</a></li></ul></li>
+<li class="vc-l2"><a href="tuples.html#275-uses-of-tuples"><span class="vc-n">27.5</span> Uses of Tuples</a></li>
+<li class="vc-l2"><a href="tuples.html#276-using-list-comprehension-to-process-tuple-elements"><span class="vc-n">27.6</span> Using List Comprehension to process Tuple elements</a></li>
+<li class="vc-l2"><a href="tuples.html#277-exercises"><span class="vc-n">27.7</span> Exercises</a></li>
+<li class="vc-l2"><a href="tuples.html#278-external-links"><span class="vc-n">27.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dictionaries.html">Chapter 28: Dictionaries</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dictionaries.html#281-overview"><span class="vc-n">28.1</span> Overview</a></li>
+<li class="vc-l2"><a href="dictionaries.html#282-dictionary-notation"><span class="vc-n">28.2</span> Dictionary notation</a></li>
+<li class="vc-l2"><a href="dictionaries.html#283-operations-on-dictionaries"><span class="vc-n">28.3</span> Operations on Dictionaries</a></li>
+<li class="vc-l2"><a href="dictionaries.html#284-combining-two-dictionaries"><span class="vc-n">28.4</span> Combining two Dictionaries</a></li>
+<li class="vc-l2"><a href="dictionaries.html#285-deleting-from-dictionary"><span class="vc-n">28.5</span> Deleting from dictionary</a></li>
+<li class="vc-l2"><a href="dictionaries.html#286-exercises"><span class="vc-n">28.6</span> Exercises</a></li>
+<li class="vc-l2"><a href="dictionaries.html#287-external-links"><span class="vc-n">28.7</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sets.html">Chapter 29: Sets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sets.html#291-overview"><span class="vc-n">29.1</span> Overview</a></li>
+<li class="vc-l2"><a href="sets.html#292-constructing-sets"><span class="vc-n">29.2</span> Constructing Sets</a></li>
+<li class="vc-l2"><a href="sets.html#293-membership-testing"><span class="vc-n">29.3</span> Membership Testing</a></li>
+<li class="vc-l2"><a href="sets.html#294-removing-items"><span class="vc-n">29.4</span> Removing Items</a></li>
+<li class="vc-l2"><a href="sets.html#295-iteration-over-sets"><span class="vc-n">29.5</span> Iteration Over Sets</a></li>
+<li class="vc-l2"><a href="sets.html#296-set-operations"><span class="vc-n">29.6</span> Set Operations</a><ul class="vc-subs"><li class="vc-l3"><a href="sets.html#intersection">Intersection</a></li><li class="vc-l3"><a href="sets.html#union">Union</a></li><li class="vc-l3"><a href="sets.html#symmetric-difference">Symmetric Difference</a></li><li class="vc-l3"><a href="sets.html#set-difference">Set Difference</a></li></ul></li>
+<li class="vc-l2"><a href="sets.html#297-multiple-sets"><span class="vc-n">29.7</span> Multiple sets</a></li>
+<li class="vc-l2"><a href="sets.html#298-frozenset"><span class="vc-n">29.8</span> frozenset</a></li>
+<li class="vc-l2"><a href="sets.html#299-exercises"><span class="vc-n">29.9</span> Exercises</a></li>
+<li class="vc-l2"><a href="sets.html#2910-reference"><span class="vc-n">29.10</span> Reference</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="operators.html">Chapter 30: Operators</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="operators.html#301-basics"><span class="vc-n">30.1</span> Basics</a></li>
+<li class="vc-l2"><a href="operators.html#302-powers"><span class="vc-n">30.2</span> Powers</a></li>
+<li class="vc-l2"><a href="operators.html#303-floor-division-and-true-division"><span class="vc-n">30.3</span> Floor Division and True Division</a></li>
+<li class="vc-l2"><a href="operators.html#304-modulus"><span class="vc-n">30.4</span> Modulus</a></li>
+<li class="vc-l2"><a href="operators.html#305-negation"><span class="vc-n">30.5</span> Negation</a></li>
+<li class="vc-l2"><a href="operators.html#306-comparison"><span class="vc-n">30.6</span> Comparison</a></li>
+<li class="vc-l2"><a href="operators.html#307-identity"><span class="vc-n">30.7</span> Identity</a></li>
+<li class="vc-l2"><a href="operators.html#308-augmented-assignment"><span class="vc-n">30.8</span> Augmented Assignment</a></li>
+<li class="vc-l2"><a href="operators.html#309-logical-operators"><span class="vc-n">30.9</span> Logical Operators</a><ul class="vc-subs"><li class="vc-l3"><a href="operators.html#or">or</a></li><li class="vc-l3"><a href="operators.html#and">and</a></li><li class="vc-l3"><a href="operators.html#not">not</a></li></ul></li>
+<li class="vc-l2"><a href="operators.html#3010-bitwise-operators"><span class="vc-n">30.10</span> Bitwise Operators</a></li>
+<li class="vc-l2"><a href="operators.html#3011-references"><span class="vc-n">30.11</span> References</a></li>
+<li class="vc-l2"><a href="operators.html#3012-external-links"><span class="vc-n">30.12</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="control-flow.html">Chapter 31: Control Flow</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="control-flow.html#311-overview"><span class="vc-n">31.1</span> Overview</a></li>
+<li class="vc-l2"><a href="control-flow.html#312-loops"><span class="vc-n">31.2</span> Loops</a><ul class="vc-subs"><li class="vc-l3"><a href="control-flow.html#for-loops">For loops</a></li><li class="vc-l3"><a href="control-flow.html#while-loops">While loops</a></li><li class="vc-l3"><a href="control-flow.html#breaking-and-continuing">Breaking and continuing</a></li><li class="vc-l3"><a href="control-flow.html#else-clause-of-loops">Else clause of loops</a></li><li class="vc-l3"><a href="control-flow.html#white-space">White Space</a></li></ul></li>
+<li class="vc-l2"><a href="control-flow.html#313-branches"><span class="vc-n">31.3</span> Branches</a></li>
+<li class="vc-l2"><a href="control-flow.html#314-conclusion"><span class="vc-n">31.4</span> Conclusion</a></li>
+<li class="vc-l2"><a href="control-flow.html#315-exercises"><span class="vc-n">31.5</span> Exercises</a></li>
+<li class="vc-l2"><a href="control-flow.html#316-external-links"><span class="vc-n">31.6</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="functions.html">Chapter 32: Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="functions.html#321-function-calls"><span class="vc-n">32.1</span> Function Calls</a><ul class="vc-subs"><li class="vc-l3"><a href="functions.html#defining-functions">Defining Functions</a></li><li class="vc-l3"><a href="functions.html#declaring-arguments">Declaring Arguments</a></li><li class="vc-l3"><a href="functions.html#preventing-argument-change">Preventing Argument Change</a></li><li class="vc-l3"><a href="functions.html#calling-functions">Calling Functions</a></li></ul></li>
+<li class="vc-l2"><a href="functions.html#322-nested-functions"><span class="vc-n">32.2</span> Nested functions</a></li>
+<li class="vc-l2"><a href="functions.html#323-lambda-expressions"><span class="vc-n">32.3</span> Lambda Expressions</a></li>
+<li class="vc-l2"><a href="functions.html#324-generator-functions"><span class="vc-n">32.4</span> Generator Functions</a></li>
+<li class="vc-l2"><a href="functions.html#325-external-links"><span class="vc-n">32.5</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="decorators.html">Chapter 33: Decorators</a></li>
+<li class="vc-ch"><details><summary><a href="scoping.html">Chapter 34: Scoping</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="scoping.html#341-variables"><span class="vc-n">34.1</span> Variables</a></li>
+<li class="vc-l2"><a href="scoping.html#342-keyword-global"><span class="vc-n">34.2</span> Keyword global</a></li>
+<li class="vc-l2"><a href="scoping.html#343-keyword-nonlocal"><span class="vc-n">34.3</span> Keyword nonlocal</a></li>
+<li class="vc-l2"><a href="scoping.html#344-globals-and-locals"><span class="vc-n">34.4</span> globals and locals</a></li>
+<li class="vc-l2"><a href="scoping.html#345-external-links"><span class="vc-n">34.5</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="exceptions.html">Chapter 35: Exceptions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="exceptions.html#351-overview"><span class="vc-n">35.1</span> Overview</a></li>
+<li class="vc-l2"><a href="exceptions.html#352-raising-exceptions"><span class="vc-n">35.2</span> Raising exceptions</a></li>
+<li class="vc-l2"><a href="exceptions.html#353-catching-exceptions"><span class="vc-n">35.3</span> Catching exceptions</a><ul class="vc-subs"><li class="vc-l3"><a href="exceptions.html#custom-exceptions">Custom Exceptions</a></li><li class="vc-l3"><a href="exceptions.html#trying-over-and-over-again">Trying over and over again</a></li></ul></li>
+<li class="vc-l2"><a href="exceptions.html#354-recovering-and-continuing-with-finally"><span class="vc-n">35.4</span> Recovering and continuing with finally</a></li>
+<li class="vc-l2"><a href="exceptions.html#355-built-in-exception-classes"><span class="vc-n">35.5</span> Built-in exception classes</a></li>
+<li class="vc-l2"><a href="exceptions.html#356-exotic-uses-of-exceptions"><span class="vc-n">35.6</span> Exotic uses of exceptions</a></li>
+<li class="vc-l2"><a href="exceptions.html#357-external-links"><span class="vc-n">35.7</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="input-and-output.html">Chapter 36: Input and output</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="input-and-output.html#361-input"><span class="vc-n">36.1</span> Input</a><ul class="vc-subs"><li class="vc-l3"><a href="input-and-output.html#input-in-python-3x">input() in Python 3.x</a></li><li class="vc-l3"><a href="input-and-output.html#input-in-python-2x">input() in Python 2.x</a></li><li class="vc-l3"><a href="input-and-output.html#file-input">File Input</a></li><li class="vc-l3"><a href="input-and-output.html#parsing-command-line">Parsing command line</a></li></ul></li>
+<li class="vc-l2"><a href="input-and-output.html#362-output"><span class="vc-n">36.2</span> Output</a><ul class="vc-subs"><li class="vc-l3"><a href="input-and-output.html#omitting-newlines">Omitting newlines</a></li><li class="vc-l3"><a href="input-and-output.html#examples">Examples</a></li><li class="vc-l3"><a href="input-and-output.html#file-output">File Output</a></li><li class="vc-l3"><a href="input-and-output.html#formatting">Formatting</a></li></ul></li>
+<li class="vc-l2"><a href="input-and-output.html#363-external-links"><span class="vc-n">36.3</span> External Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="modules.html">Chapter 37: Modules</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="modules.html#371-importing-a-module"><span class="vc-n">37.1</span> Importing a Module</a></li>
+<li class="vc-l2"><a href="modules.html#372-imported-check"><span class="vc-n">37.2</span> Imported Check</a></li>
+<li class="vc-l2"><a href="modules.html#373-creating-a-module"><span class="vc-n">37.3</span> Creating a Module</a><ul class="vc-subs"><li class="vc-l3"><a href="modules.html#from-a-file">From a File</a></li><li class="vc-l3"><a href="modules.html#from-a-directory">From a Directory</a></li></ul></li>
+<li class="vc-l2"><a href="modules.html#374-making-a-program-usable-as-a-module"><span class="vc-n">37.4</span> Making a program usable as a module</a></li>
+<li class="vc-l2"><a href="modules.html#375-extending-module-path"><span class="vc-n">37.5</span> Extending Module Path</a></li>
+<li class="vc-l2"><a href="modules.html#376-module-names"><span class="vc-n">37.6</span> Module Names</a></li>
+<li class="vc-l2"><a href="modules.html#377-built-in-modules"><span class="vc-n">37.7</span> Built-in Modules</a></li>
+<li class="vc-l2"><a href="modules.html#378-external-links"><span class="vc-n">37.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="classes-2.html">Chapter 38: Classes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="classes-2.html#381-overview"><span class="vc-n">38.1</span> Overview</a></li>
+<li class="vc-l2"><a href="classes-2.html#382-defining-a-class"><span class="vc-n">38.2</span> Defining a Class</a></li>
+<li class="vc-l2"><a href="classes-2.html#383-instance-construction"><span class="vc-n">38.3</span> Instance Construction</a></li>
+<li class="vc-l2"><a href="classes-2.html#384-class-members"><span class="vc-n">38.4</span> Class Members</a><ul class="vc-subs"><li class="vc-l3"><a href="classes-2.html#methods">Methods</a></li><li class="vc-l3"><a href="classes-2.html#why-self">Why self?</a></li><li class="vc-l3"><a href="classes-2.html#invoking-methods">Invoking Methods</a></li><li class="vc-l3"><a href="classes-2.html#dynamic-class-structure">Dynamic Class Structure</a></li><li class="vc-l3"><a href="classes-2.html#viewing-class-dictionaries">Viewing Class Dictionaries</a></li><li class="vc-l3"><a href="classes-2.html#changing-class-dictionaries">Changing Class Dictionaries</a></li></ul></li>
+<li class="vc-l2"><a href="classes-2.html#385-why-use-classes"><span class="vc-n">38.5</span> Why use classes?</a></li>
+<li class="vc-l2"><a href="classes-2.html#386-new-style-classes"><span class="vc-n">38.6</span> New Style Classes</a><ul class="vc-subs"><li class="vc-l3"><a href="classes-2.html#properties">Properties</a></li><li class="vc-l3"><a href="classes-2.html#static-methods">Static Methods</a></li></ul></li>
+<li class="vc-l2"><a href="classes-2.html#387-inheritance"><span class="vc-n">38.7</span> Inheritance</a></li>
+<li class="vc-l2"><a href="classes-2.html#388-multiple-inheritance"><span class="vc-n">38.8</span> Multiple inheritance</a></li>
+<li class="vc-l2"><a href="classes-2.html#389-special-methods"><span class="vc-n">38.9</span> Special Methods</a><ul class="vc-subs"><li class="vc-l3"><a href="classes-2.html#initialization-and-deletion">Initialization and Deletion</a></li><li class="vc-l3"><a href="classes-2.html#representation">Representation</a></li><li class="vc-l3"><a href="classes-2.html#attributes">Attributes</a></li><li class="vc-l3"><a href="classes-2.html#operator-overloading">Operator Overloading</a></li><li class="vc-l3"><a href="classes-2.html#other-overrides">Other Overrides</a></li></ul></li>
+<li class="vc-l2"><a href="classes-2.html#3810-programming-practices"><span class="vc-n">38.10</span> Programming Practices</a><ul class="vc-subs"><li class="vc-l3"><a href="classes-2.html#encapsulation">Encapsulation</a></li><li class="vc-l3"><a href="classes-2.html#doc-strings">Doc Strings</a></li><li class="vc-l3"><a href="classes-2.html#adding-methods-at-runtime">Adding methods at runtime</a></li></ul></li>
+<li class="vc-l2"><a href="classes-2.html#3811-external-links"><span class="vc-n">38.11</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="metaclasses.html">Chapter 39: MetaClasses</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="metaclasses.html#391-python3"><span class="vc-n">39.1</span> Python3</a></li>
+<li class="vc-l2"><a href="metaclasses.html#392-the-type-metaclass"><span class="vc-n">39.2</span> The type Metaclass</a></li>
+<li class="vc-l2"><a href="metaclasses.html#393-metaclasses"><span class="vc-n">39.3</span> Metaclasses</a></li>
+<li class="vc-l2"><a href="metaclasses.html#394-more-resources"><span class="vc-n">39.4</span> More resources</a></li>
+<li class="vc-l2"><a href="metaclasses.html#395-references"><span class="vc-n">39.5</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Modules</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="standard-library.html">Chapter 40: Standard Library</a></li>
+<li class="vc-ch"><details><summary><a href="regular-expression.html">Chapter 41: Regular Expression</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="regular-expression.html#411-overview"><span class="vc-n">41.1</span> Overview</a></li>
+<li class="vc-l2"><a href="regular-expression.html#412-matching-and-searching"><span class="vc-n">41.2</span> Matching and searching</a><ul class="vc-subs"><li class="vc-l3"><a href="regular-expression.html#match-objects">Match objects</a></li></ul></li>
+<li class="vc-l2"><a href="regular-expression.html#413-replacing"><span class="vc-n">41.3</span> Replacing</a></li>
+<li class="vc-l2"><a href="regular-expression.html#414-splitting"><span class="vc-n">41.4</span> Splitting</a></li>
+<li class="vc-l2"><a href="regular-expression.html#415-escaping"><span class="vc-n">41.5</span> Escaping</a></li>
+<li class="vc-l2"><a href="regular-expression.html#416-flags"><span class="vc-n">41.6</span> Flags</a></li>
+<li class="vc-l2"><a href="regular-expression.html#417-pattern-objects"><span class="vc-n">41.7</span> Pattern objects</a></li>
+<li class="vc-l2"><a href="regular-expression.html#418-external-links"><span class="vc-n">41.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="xml-tools.html">Chapter 42: XML Tools</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="xml-tools.html#421-introduction"><span class="vc-n">42.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="xml-tools.html#422-xmlsaxhandler"><span class="vc-n">42.2</span> xml.sax.handler</a></li>
+<li class="vc-l2"><a href="xml-tools.html#423-xmldomminidom"><span class="vc-n">42.3</span> xml.dom.minidom</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="email.html">Chapter 43: Email</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="email.html#431-sending-mail"><span class="vc-n">43.1</span> Sending mail</a></li>
+<li class="vc-l2"><a href="email.html#432-the-email-package"><span class="vc-n">43.2</span> The email package</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="threading.html">Chapter 44: Threading</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="threading.html#441-examples"><span class="vc-n">44.1</span> Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="threading.html#a-minimal-example-with-function-call">A Minimal Example with Function Call</a></li><li class="vc-l3"><a href="threading.html#a-minimal-example-with-object">A Minimal Example with Object</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sockets.html">Chapter 45: Sockets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sockets.html#451-http-client"><span class="vc-n">45.1</span> HTTP Client</a></li>
+<li class="vc-l2"><a href="sockets.html#452-ntpsockets"><span class="vc-n">45.2</span> NTP/Sockets</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="gui-programming.html">Chapter 46: GUI Programming</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gui-programming.html#461-tkinter"><span class="vc-n">46.1</span> Tkinter</a></li>
+<li class="vc-l2"><a href="gui-programming.html#462-pygtk"><span class="vc-n">46.2</span> PyGTK</a></li>
+<li class="vc-l2"><a href="gui-programming.html#463-pyqt"><span class="vc-n">46.3</span> PyQt</a></li>
+<li class="vc-l2"><a href="gui-programming.html#464-wxpython"><span class="vc-n">46.4</span> wxPython</a></li>
+<li class="vc-l2"><a href="gui-programming.html#465-dabo"><span class="vc-n">46.5</span> Dabo</a></li>
+<li class="vc-l2"><a href="gui-programming.html#466-pyfltk"><span class="vc-n">46.6</span> pyFltk</a></li>
+<li class="vc-l2"><a href="gui-programming.html#467-other-toolkits"><span class="vc-n">46.7</span> Other Toolkits</a></li>
+<li class="vc-l2"><a href="gui-programming.html#468-external-links"><span class="vc-n">46.8</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="internet-2.html">Chapter 47: Web Page Harvesting</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="internet-2.html#471-getting-page-text-as-a-string"><span class="vc-n">47.1</span> Getting page text as a string</a></li>
+<li class="vc-l2"><a href="internet-2.html#472-downloading-files"><span class="vc-n">47.2</span> Downloading files</a></li>
+<li class="vc-l2"><a href="internet-2.html#473-other-functions"><span class="vc-n">47.3</span> Other functions</a></li>
+<li class="vc-l2"><a href="internet-2.html#474-email"><span class="vc-n">47.4</span> Email</a></li>
+<li class="vc-l2"><a href="internet-2.html#475-external-links"><span class="vc-n">47.5</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="databases-2.html">Chapter 48: Database Programming</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="databases-2.html#481-dbms-specifics"><span class="vc-n">48.1</span> DBMS Specifics</a><ul class="vc-subs"><li class="vc-l3"><a href="databases-2.html#mysql">MySQL</a></li><li class="vc-l3"><a href="databases-2.html#sqlite">Sqlite</a></li><li class="vc-l3"><a href="databases-2.html#postgres">Postgres</a></li><li class="vc-l3"><a href="databases-2.html#firebird">Firebird</a></li></ul></li>
+<li class="vc-l2"><a href="databases-2.html#482-general-principles"><span class="vc-n">48.2</span> General Principles</a><ul class="vc-subs"><li class="vc-l3"><a href="databases-2.html#parameter-quoting">Parameter Quoting</a></li><li class="vc-l3"><a href="databases-2.html#use-iterators">Use Iterators</a></li><li class="vc-l3"><a href="databases-2.html#never-use-select-in-a-script">Never Use “SELECT *” in a Script</a></li><li class="vc-l3"><a href="databases-2.html#looping-on-field-breaks">Looping on Field Breaks</a></li></ul></li>
+<li class="vc-l2"><a href="databases-2.html#483-see-also"><span class="vc-n">48.3</span> See Also</a></li>
+<li class="vc-l2"><a href="databases-2.html#484-external-links"><span class="vc-n">48.4</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="game-programming-in-python.html">Chapter 49: Game Programming in Python</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="game-programming-in-python.html#491-3d-game-programming"><span class="vc-n">49.1</span> 3D Game Programming</a><ul class="vc-subs"><li class="vc-l3"><a href="game-programming-in-python.html#3d-game-engine-with-a-python-binding">3D Game Engine with a Python binding</a></li><li class="vc-l3"><a href="game-programming-in-python.html#3d-game-engines-written-for-python">3D Game Engines written for Python</a></li></ul></li>
+<li class="vc-l2"><a href="game-programming-in-python.html#492-2d-game-programming"><span class="vc-n">49.2</span> 2D Game Programming</a></li>
+<li class="vc-l2"><a href="game-programming-in-python.html#493-see-also"><span class="vc-n">49.3</span> See Also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="pyqt4.html">Chapter 50: PyQt4</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="pyqt4.html#501-hello-world"><span class="vc-n">50.1</span> Hello, world!</a></li>
+<li class="vc-l2"><a href="pyqt4.html#502-a-button"><span class="vc-n">50.2</span> A Button</a></li>
+<li class="vc-l2"><a href="pyqt4.html#503-gui-coding"><span class="vc-n">50.3</span> GUI Coding</a></li>
+<li class="vc-l2"><a href="pyqt4.html#504-useful-to-know"><span class="vc-n">50.4</span> Useful to Know</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dbus.html">Chapter 51: Dbus</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dbus.html#511-buses"><span class="vc-n">51.1</span> Buses</a></li>
+<li class="vc-l2"><a href="dbus.html#512-objects-and-interfaces"><span class="vc-n">51.2</span> Objects and interfaces</a></li>
+<li class="vc-l2"><a href="dbus.html#513-dbus-python-examples"><span class="vc-n">51.3</span> dbus-python examples</a></li>
+<li class="vc-l2"><a href="dbus.html#514-pydbus-examples"><span class="vc-n">51.4</span> pydbus examples</a></li>
+<li class="vc-l2"><a href="dbus.html#515-references"><span class="vc-n">51.5</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="extending-with-c.html">Chapter 52: Extending with C</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="extending-with-c.html#521-using-the-pythonc-api"><span class="vc-n">52.1</span> Using the Python/C API</a><ul class="vc-subs"><li class="vc-l3"><a href="extending-with-c.html#a-minimal-example">A minimal example</a></li><li class="vc-l3"><a href="extending-with-c.html#a-module-for-calculating-fibonacci-numbers">A module for calculating Fibonacci numbers</a></li></ul></li>
+<li class="vc-l2"><a href="extending-with-c.html#522-using-swig"><span class="vc-n">52.2</span> Using SWIG</a></li>
+<li class="vc-l2"><a href="extending-with-c.html#523-external-links"><span class="vc-n">52.3</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="extending-with-c-2.html">Chapter 53: Extending with C++</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="extending-with-c-2.html#531-a-hello-world-example"><span class="vc-n">53.1</span> A Hello World Example</a><ul class="vc-subs"><li class="vc-l3"><a href="extending-with-c-2.html#the-c-source-code-hellomodulecpp">The C++ source code (hellomodule.cpp)</a></li><li class="vc-l3"><a href="extending-with-c-2.html#setuppy">setup.py</a></li><li class="vc-l3"><a href="extending-with-c-2.html#using-the-extension-module">Using the extension module</a></li></ul></li>
+<li class="vc-l2"><a href="extending-with-c-2.html#532-an-example-with-cgal"><span class="vc-n">53.2</span> An example with CGAL</a></li>
+<li class="vc-l2"><a href="extending-with-c-2.html#533-handling-python-objects-and-errors"><span class="vc-n">53.3</span> Handling Python objects and errors</a></li>
+<li class="vc-l2"><a href="extending-with-c-2.html#534-external-links"><span class="vc-n">53.4</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="extending-with-pyrex.html">Chapter 54: Extending with Pyrex</a></li>
+<li class="vc-ch"><details><summary><a href="extending-with-ctypes.html">Chapter 55: Extending with ctypes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="extending-with-ctypes.html#551-basics"><span class="vc-n">55.1</span> Basics</a></li>
+<li class="vc-l2"><a href="extending-with-ctypes.html#552-getting-return-values"><span class="vc-n">55.2</span> Getting Return Values</a><ul class="vc-subs"><li class="vc-l3"><a href="extending-with-ctypes.html#common-types">Common Types</a></li></ul></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A tutorial and reference for the Python language: getting started, data types and operators, control flow, functions, classes and objects, exceptions, modules and packages, the standard library, and advanced topics.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Python Programming, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Python_Programming" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-electronics/electro-mechanical-analogies.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 76. Electro-Mechanical Analogies">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+76. Electro-Mechanical Analogies
+</div>
+</div>
+</a>
+<a href="overview.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Overview">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Overview
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

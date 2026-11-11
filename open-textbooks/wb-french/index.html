@@ -1,0 +1,1163 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-french/index.html">
+<link rel="prev" href="../wb-spanish/tenses.html">
+<link rel="next" href="introduction.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css">
+<link rel="stylesheet" href="../../assets/reader.css">
+<link rel="stylesheet" href="../../assets/viz.css">
+<link rel="stylesheet" href="../../assets/app.css">
+<link rel="stylesheet" href="../../assets/theme.css">
+<link rel="stylesheet" href="../../assets/slides.css">
+<link rel="stylesheet" href="../../assets/remote.css">
+<link rel="stylesheet" href="../../assets/scans.css">
+<link rel="stylesheet" href="../../assets/speak.css">
+<link rel="stylesheet" href="../../assets/quiz.css">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">French</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alphabet.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Alphabet
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="greetings.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Greetings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="formal-speech.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Formal speech
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Numbers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dates.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Dates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="time.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Time
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="people-and-things.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Basic grammar
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="to-be.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. To be
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="description.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Description
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="family.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Family
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="recreation.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Recreation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-house.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. The house
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="weather.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Weather
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="travel.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Travel
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="art.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Art
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="science.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Science
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="school.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. School
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="culture.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Culture
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="shopping.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Shopping
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="going-out.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Going out
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transportation.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Transportation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="everyday-life.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Everyday life
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rural-life.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Rural life
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="dining.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Dining
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="communication.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Communication
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="food-and-drink.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Food and drink
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vacations.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Vacations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="work.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Work
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="health.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Health
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="money.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Money
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="youth.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Youth
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="adolescence.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Adolescence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="historical-france.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Historical France
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="revolutionary-france.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Revolutionary France
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="modern-france.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Modern France
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="current-events.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Current events
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="slavery-under-napoleon.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Slavery under Napoleon
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="algerian-war-of-independence.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Algerian War of Independence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="candide-ou-l-optimisme.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Candide, (ou l'Optimisme)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reveries-du-promeneur-solitaire.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Rêveries du promeneur solitaire
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="boule-de-suif.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Boule de Suif
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="les-fleurs-du-mal.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Les Fleurs du Mal
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="demain-des-l-aube.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Demain, dès l'aube
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="agreement-of-past-participles-with-avoir.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Agreement of past participles with avoir
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-french" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="introduction.html" style="--cv-bg:#1d3557;--cv-accent:#e63946;--cv-fg:#f1faee;--cv-n:8;--cv-rot:19deg;--cv-x:29%;--cv-y:75%" aria-label="Start reading French"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">French</span><span class="vol-sub">A course in the French language</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>French</h1>
+<p class="pk-book-sub">A course in the French language</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Lessons in French from greetings and pronunciation to the subjunctive, with grammar, vocabulary and conversation.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/french.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4.5h10.5A1.5 1.5 0 0 1 16 6v6a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 12V6A1.5 1.5 0 0 1 4 4.5zM18.5 8.5H20A1.5 1.5 0 0 1 21.5 10v6a1.5 1.5 0 0 1-1.5 1.5h-1V20l-3-2.5h-4.5"/></svg><span class="pk-chip-cat">Language &amp; Literature &rsaquo;</span> French</a><a class="pk-chip" href="../../subjects/world-languages.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4.5h10.5A1.5 1.5 0 0 1 16 6v6a1.5 1.5 0 0 1-1.5 1.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 12V6A1.5 1.5 0 0 1 4 4.5zM18.5 8.5H20A1.5 1.5 0 0 1 21.5 10v6a1.5 1.5 0 0 1-1.5 1.5h-1V20l-3-2.5h-4.5"/></svg><span class="pk-chip-cat">Language &amp; Literature &rsaquo;</span> World Languages</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="introduction.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-french"></div></div>
+<p class="pk-book-facts"><span>45 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-french" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Introductory lessons</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="introduction.html">Chapter 1: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#11-history"><span class="vc-n">1.1</span> History</a></li>
+<li class="vc-l2"><a href="introduction.html#12-extent-of-the-language"><span class="vc-n">1.2</span> Extent of the language</a></li>
+<li class="vc-l2"><a href="introduction.html#13-advice-on-studying-french"><span class="vc-n">1.3</span> Advice on studying French</a></li>
+<li class="vc-l2"><a href="introduction.html#14-written-versus-modern-spoken-french"><span class="vc-n">1.4</span> Written versus modern spoken French</a></li>
+<li class="vc-l2"><a href="introduction.html#15-what-should-i-learn-first"><span class="vc-n">1.5</span> What should I learn first?</a></li>
+<li class="vc-l2"><a href="introduction.html#16-impediment-of-learning-by-tricks"><span class="vc-n">1.6</span> Impediment of learning by tricks</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="alphabet.html">Chapter 2: Alphabet</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="alphabet.html#21-letters-and-examples"><span class="vc-n">2.1</span> Letters and examples</a></li>
+<li class="vc-l2"><a href="alphabet.html#22-supplementary-orthography-notes"><span class="vc-n">2.2</span> Supplementary orthography · Notes</a><ul class="vc-subs"><li class="vc-l3"><a href="alphabet.html#final-consonants">Final consonants</a></li><li class="vc-l3"><a href="alphabet.html#dental-consonants">Dental consonants</a></li><li class="vc-l3"><a href="alphabet.html#b-and-p">b and p</a></li><li class="vc-l3"><a href="alphabet.html#q">q</a></li><li class="vc-l3"><a href="alphabet.html#r">r</a></li><li class="vc-l3"><a href="alphabet.html#aspirated-and-non-aspirated-h">Aspirated and non-aspirated h</a></li></ul></li>
+<li class="vc-l2"><a href="alphabet.html#23-supplementary-orthography-punctuation-la-ponctuation"><span class="vc-n">2.3</span> Supplementary orthography · Punctuation · La ponctuation</a></li>
+<li class="vc-l2"><a href="alphabet.html#24-supplementary-orthography-diacritics"><span class="vc-n">2.4</span> Supplementary orthography · Diacritics</a><ul class="vc-subs"><li class="vc-l3"><a href="alphabet.html#acute-accent-accent-aigu">Acute accent · Accent aigu</a></li><li class="vc-l3"><a href="alphabet.html#grave-accent-accent-grave">Grave accent · Accent grave</a></li><li class="vc-l3"><a href="alphabet.html#circumflex-accent-accent-circonflexe">Circumflex accent · Accent circonflexe</a></li><li class="vc-l3"><a href="alphabet.html#cedilla-cedille">Cedilla · Cédille</a></li></ul></li>
+<li class="vc-l2"><a href="alphabet.html#25-supplementary-exercises"><span class="vc-n">2.5</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="greetings.html">Chapter 3: Greetings</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="greetings.html#31-vocabulary-greetings-les-salutations"><span class="vc-n">3.1</span> Vocabulary · Greetings · Les salutations</a></li>
+<li class="vc-l2"><a href="greetings.html#32-vocabulary-good-bye-au-revoir"><span class="vc-n">3.2</span> Vocabulary · Good-bye · Au revoir</a></li>
+<li class="vc-l2"><a href="greetings.html#33-vocabulary-names"><span class="vc-n">3.3</span> Vocabulary · Names</a></li>
+<li class="vc-l2"><a href="greetings.html#34-vocabulary-how-are-you-ca-va"><span class="vc-n">3.4</span> Vocabulary · How are you? · Ça va ?</a></li>
+<li class="vc-l2"><a href="greetings.html#35-exercises"><span class="vc-n">3.5</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="formal-speech.html">Chapter 4: Formal speech</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="formal-speech.html#41-dialogue-a-formal-conversation-une-conversation-formelle"><span class="vc-n">4.1</span> Dialogue · A formal conversation · Une conversation formelle</a></li>
+<li class="vc-l2"><a href="formal-speech.html#42-grammar-vous-vs-tu"><span class="vc-n">4.2</span> Grammar · Vous vs. tu</a></li>
+<li class="vc-l2"><a href="formal-speech.html#43-vocabulary-courtesy-la-politesse"><span class="vc-n">4.3</span> Vocabulary · Courtesy · La politesse</a></li>
+<li class="vc-l2"><a href="formal-speech.html#44-vocabulary-titles-les-titres"><span class="vc-n">4.4</span> Vocabulary · Titles · Les titres</a></li>
+<li class="vc-l2"><a href="formal-speech.html#45-vocabulary-asking-for-ones-name-demander-le-nom-de-quelquun"><span class="vc-n">4.5</span> Vocabulary · Asking for one&#x27;s name · Demander le nom de quelqu&#x27;un</a></li>
+<li class="vc-l2"><a href="formal-speech.html#46-exercises"><span class="vc-n">4.6</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="numbers.html">Chapter 5: Numbers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="numbers.html#51-vocabulary-cardinal-numbers"><span class="vc-n">5.1</span> Vocabulary · Cardinal numbers</a></li>
+<li class="vc-l2"><a href="numbers.html#52-supplementary-vocabulary-collective-nouns"><span class="vc-n">5.2</span> Supplementary vocabulary · Collective nouns</a></li>
+<li class="vc-l2"><a href="numbers.html#53-supplementary-vocabulary-mathematics-les-mathematiques"><span class="vc-n">5.3</span> Supplementary vocabulary · Mathematics · Les mathématiques</a></li>
+<li class="vc-l2"><a href="numbers.html#54-supplementary-dialogue-in-school-a-lecole"><span class="vc-n">5.4</span> Supplementary dialogue · In school · À l&#x27;école</a></li>
+<li class="vc-l2"><a href="numbers.html#55-supplementary-vocabulary-ordinal-numbers-les-nombres-ordinaux"><span class="vc-n">5.5</span> Supplementary vocabulary · Ordinal numbers · Les nombres ordinaux</a></li>
+<li class="vc-l2"><a href="numbers.html#56-exercises"><span class="vc-n">5.6</span> Exercises</a></li>
+<li class="vc-l2"><a href="numbers.html#57-supplementary-exercises"><span class="vc-n">5.7</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dates.html">Chapter 6: Dates</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dates.html#61-vocabulary-days-les-jours"><span class="vc-n">6.1</span> Vocabulary · Days · Les jours</a></li>
+<li class="vc-l2"><a href="dates.html#62-vocabulary-months-les-mois"><span class="vc-n">6.2</span> Vocabulary · Months · Les mois</a></li>
+<li class="vc-l2"><a href="dates.html#63-dialogue-what-day-is-it"><span class="vc-n">6.3</span> Dialogue · What day is it?</a></li>
+<li class="vc-l2"><a href="dates.html#64-vocabulary-seasons-les-saisons"><span class="vc-n">6.4</span> Vocabulary · Seasons · Les saisons</a></li>
+<li class="vc-l2"><a href="dates.html#65-vocabulary-age"><span class="vc-n">6.5</span> Vocabulary · Age</a></li>
+<li class="vc-l2"><a href="dates.html#66-dialogue-how-old-are-you"><span class="vc-n">6.6</span> Dialogue · How old are you?</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="time.html">Chapter 7: Time</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="time.html#71-vocabulary-time-le-temps"><span class="vc-n">7.1</span> Vocabulary · Time · Le temps</a></li>
+<li class="vc-l2"><a href="time.html#72-supplementary-vocabulary-more-time-expressions"><span class="vc-n">7.2</span> Supplementary vocabulary · More time expressions</a></li>
+<li class="vc-l2"><a href="time.html#73-vocabulary-times-of-day-lheure-relative"><span class="vc-n">7.3</span> Vocabulary · Times of day · L&#x27;heure relative</a></li>
+<li class="vc-l2"><a href="time.html#74-dialogue-what-time-is-it"><span class="vc-n">7.4</span> Dialogue · What time is it?</a></li>
+<li class="vc-l2"><a href="time.html#75-supplementary-dialogue-the-director-le-directeur"><span class="vc-n">7.5</span> Supplementary dialogue · The director · Le directeur</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level one lessons</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="people-and-things.html">Chapter 8: Basic grammar</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="people-and-things.html#81-grammar-gender-of-nouns-genre-des-noms"><span class="vc-n">8.1</span> Grammar · Gender of nouns · Genre des noms</a><ul class="vc-subs"><li class="vc-l3"><a href="people-and-things.html#supplementary-grammar-common-endings">Supplementary grammar · Common endings</a></li><li class="vc-l3"><a href="people-and-things.html#exceptions">Exceptions</a></li></ul></li>
+<li class="vc-l2"><a href="people-and-things.html#82-vocabulary-example-nouns"><span class="vc-n">8.2</span> Vocabulary · Example nouns</a></li>
+<li class="vc-l2"><a href="people-and-things.html#83-grammar-articles"><span class="vc-n">8.3</span> Grammar · Articles</a><ul class="vc-subs"><li class="vc-l3"><a href="people-and-things.html#the-definite-article-larticle-defini">The definite article · L&#x27;article défini</a></li><li class="vc-l3"><a href="people-and-things.html#elision">Elision</a></li><li class="vc-l3"><a href="people-and-things.html#the-indefinite-article-larticle-indefini">The indefinite article · L&#x27;article indéfini</a></li><li class="vc-l3"><a href="people-and-things.html#some">Some</a></li><li class="vc-l3"><a href="people-and-things.html#plurality-pronunciation-and-exceptions">Plurality, pronunciation, and exceptions</a></li><li class="vc-l3"><a href="people-and-things.html#liaison">Liaison</a></li></ul></li>
+<li class="vc-l2"><a href="people-and-things.html#84-vocabulary-people-les-personnes"><span class="vc-n">8.4</span> Vocabulary · People · Les personnes</a></li>
+<li class="vc-l2"><a href="people-and-things.html#85-vocabulary-expressions"><span class="vc-n">8.5</span> Vocabulary · Expressions</a><ul class="vc-subs"><li class="vc-l3"><a href="people-and-things.html#quest-ce-que-cest">Qu’est-ce que c’est ?</a></li><li class="vc-l3"><a href="people-and-things.html#il-y-a">Il y a</a></li><li class="vc-l3"><a href="people-and-things.html#voici-and-voila">Voici and voilà</a></li><li class="vc-l3"><a href="people-and-things.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="people-and-things.html#86-exercises"><span class="vc-n">8.6</span> Exercises</a></li>
+<li class="vc-l2"><a href="people-and-things.html#87-supplementary-exercises"><span class="vc-n">8.7</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="to-be.html">Chapter 9: To be</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="to-be.html#91-vocabulary-review-greetings-and-goodbyes"><span class="vc-n">9.1</span> Vocabulary review · Greetings and goodbyes</a></li>
+<li class="vc-l2"><a href="to-be.html#92-dialogue-where-are-you-from-ou-es-tu"><span class="vc-n">9.2</span> Dialogue · Where are you from? · Où es-tu?</a></li>
+<li class="vc-l2"><a href="to-be.html#93-grammar-subject-pronouns-les-pronoms-sujet"><span class="vc-n">9.3</span> Grammar · Subject pronouns · Les pronoms sujet</a><ul class="vc-subs"><li class="vc-l3"><a href="to-be.html#supplementary-usage-notes">Supplementary usage notes</a></li></ul></li>
+<li class="vc-l2"><a href="to-be.html#94-vocabulary-common-places"><span class="vc-n">9.4</span> Vocabulary · Common places</a></li>
+<li class="vc-l2"><a href="to-be.html#95-supplementary-grammar-verbs"><span class="vc-n">9.5</span> Supplementary grammar · Verbs</a></li>
+<li class="vc-l2"><a href="to-be.html#96-grammar-to-be-etre"><span class="vc-n">9.6</span> Grammar · To be · Être</a><ul class="vc-subs"><li class="vc-l3"><a href="to-be.html#formation">Formation</a></li><li class="vc-l3"><a href="to-be.html#examples">Examples</a></li><li class="vc-l3"><a href="to-be.html#supplementary-vocabulary-expressions">Supplementary vocabulary · Expressions</a></li><li class="vc-l3"><a href="to-be.html#expressing-agreement">Expressing agreement</a></li></ul></li>
+<li class="vc-l2"><a href="to-be.html#97-grammar-nationalities-and-jobs"><span class="vc-n">9.7</span> Grammar · Nationalities and jobs</a></li>
+<li class="vc-l2"><a href="to-be.html#98-supplementary-vocabulary-nationalities-les-nationalites"><span class="vc-n">9.8</span> Supplementary vocabulary · Nationalities · Les nationalités</a></li>
+<li class="vc-l2"><a href="to-be.html#99-supplementary-vocabulary-professions"><span class="vc-n">9.9</span> Supplementary vocabulary · Professions</a></li>
+<li class="vc-l2"><a href="to-be.html#910-supplementary-grammar-from-de"><span class="vc-n">9.10</span> Supplementary grammar · From · De</a><ul class="vc-subs"><li class="vc-l3"><a href="to-be.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="to-be.html#911-supplementary-vocabulary-countries"><span class="vc-n">9.11</span> Supplementary vocabulary · Countries</a></li>
+<li class="vc-l2"><a href="to-be.html#912-supplementary-grammar-at-a"><span class="vc-n">9.12</span> Supplementary grammar · At · À</a></li>
+<li class="vc-l2"><a href="to-be.html#913-exercises"><span class="vc-n">9.13</span> Exercises</a></li>
+<li class="vc-l2"><a href="to-be.html#914-supplementary-exercises"><span class="vc-n">9.14</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="description.html">Chapter 10: Description</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="description.html#101-dialogue"><span class="vc-n">10.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="description.html#102-grammar-adjectives-les-adjectifs"><span class="vc-n">10.2</span> Grammar · Adjectives · Les adjectifs</a><ul class="vc-subs"><li class="vc-l3"><a href="description.html#regular-formation">Regular formation</a></li><li class="vc-l3"><a href="description.html#pronunciation">Pronunciation</a></li><li class="vc-l3"><a href="description.html#supplementary-grammar-exceptions-and-irregularities">Supplementary grammar · Exceptions and irregularities</a></li></ul></li>
+<li class="vc-l2"><a href="description.html#103-vocabulary-describing-people-decrire-des-personnes"><span class="vc-n">10.3</span> Vocabulary · Describing people · Décrire des personnes</a></li>
+<li class="vc-l2"><a href="description.html#104-vocabulary-adverbs-expressing-degree"><span class="vc-n">10.4</span> Vocabulary · Adverbs expressing degree</a></li>
+<li class="vc-l2"><a href="description.html#105-vocabulary-common-adjectives"><span class="vc-n">10.5</span> Vocabulary · Common adjectives</a><ul class="vc-subs"><li class="vc-l3"><a href="description.html#supplementary-examples">Supplementary examples</a></li></ul></li>
+<li class="vc-l2"><a href="description.html#106-grammar-demonstrative-adjectives"><span class="vc-n">10.6</span> Grammar · Demonstrative adjectives</a><ul class="vc-subs"><li class="vc-l3"><a href="description.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="description.html#107-supplementary-vocabulary-more-descriptions-of-people"><span class="vc-n">10.7</span> Supplementary vocabulary · More descriptions of people</a><ul class="vc-subs"><li class="vc-l3"><a href="description.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="description.html#108-dialogue"><span class="vc-n">10.8</span> Dialogue</a></li>
+<li class="vc-l2"><a href="description.html#109-exercises"><span class="vc-n">10.9</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="family.html">Chapter 11: Family</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="family.html#111-vocabulary-review-first-fifty-cardinal-numbers"><span class="vc-n">11.1</span> Vocabulary review · First fifty cardinal numbers</a></li>
+<li class="vc-l2"><a href="family.html#112-dialogue-avoir-to-have"><span class="vc-n">11.2</span> Dialogue · Avoir-to have</a></li>
+<li class="vc-l2"><a href="family.html#113-grammar-to-have-avoir"><span class="vc-n">11.3</span> Grammar · To have · Avoir</a><ul class="vc-subs"><li class="vc-l3"><a href="family.html#formation">Formation</a></li><li class="vc-l3"><a href="family.html#examples">Examples</a></li><li class="vc-l3"><a href="family.html#expressing-age">Expressing age</a></li><li class="vc-l3"><a href="family.html#interrogatives">Interrogatives</a></li></ul></li>
+<li class="vc-l2"><a href="family.html#114-vocabulary-immediate-family"><span class="vc-n">11.4</span> Vocabulary · Immediate family</a></li>
+<li class="vc-l2"><a href="family.html#115-grammar-possession-and-association"><span class="vc-n">11.5</span> Grammar · Possession and association</a><ul class="vc-subs"><li class="vc-l3"><a href="family.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="family.html#116-supplementary-grammar-possessive-adjectives-les-adjectifs-possessifs"><span class="vc-n">11.6</span> Supplementary grammar · Possessive adjectives · Les adjectifs possessifs</a><ul class="vc-subs"><li class="vc-l3"><a href="family.html#formation_1">Formation</a></li><li class="vc-l3"><a href="family.html#usage">Usage</a></li><li class="vc-l3"><a href="family.html#liaison-and-adjective-changes">Liaison and adjective changes</a></li><li class="vc-l3"><a href="family.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="family.html#117-supplementary-grammar-questions"><span class="vc-n">11.7</span> Supplementary grammar · Questions</a><ul class="vc-subs"><li class="vc-l3"><a href="family.html#examples_3">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="family.html#118-supplementary-vocabulary-extended-family-la-famille-eloignee"><span class="vc-n">11.8</span> Supplementary vocabulary · Extended family · La famille éloignée</a><ul class="vc-subs"><li class="vc-l3"><a href="family.html#examples_4">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="family.html#119-dialogue"><span class="vc-n">11.9</span> Dialogue</a></li>
+<li class="vc-l2"><a href="family.html#1110-exercises"><span class="vc-n">11.10</span> Exercises</a></li>
+<li class="vc-l2"><a href="family.html#1111-supplementary-exercises"><span class="vc-n">11.11</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="recreation.html">Chapter 12: Recreation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="recreation.html#121-dialogue"><span class="vc-n">12.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="recreation.html#122-grammar-regular-er-verbs-les-verbes-en-er"><span class="vc-n">12.2</span> Grammar · Regular -er verbs · Les verbes en -er</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#formation">Formation</a></li><li class="vc-l3"><a href="recreation.html#pronunciation-elision-and-liaison">Pronunciation, elision and liaison</a></li><li class="vc-l3"><a href="recreation.html#conjugation-examples">Conjugation examples</a></li><li class="vc-l3"><a href="recreation.html#supplementary-vocabulary-common-er-verbs">Supplementary vocabulary · Common -er verbs</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#123-vocabulary-places"><span class="vc-n">12.3</span> Vocabulary · Places</a></li>
+<li class="vc-l2"><a href="recreation.html#124-grammar-direct-object-pronouns-le-la-and-les"><span class="vc-n">12.4</span> Grammar · Direct object pronouns le, la, and les</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#summary">Summary</a></li><li class="vc-l3"><a href="recreation.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#125-vocabulary-sports-games-and-instruments"><span class="vc-n">12.5</span> Vocabulary · Sports, games, and instruments</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#supplementary-vocabulary-sports">Supplementary vocabulary · Sports</a></li><li class="vc-l3"><a href="recreation.html#supplementary-vocabulary-games-les-jeux">Supplementary vocabulary · Games · Les jeux</a></li><li class="vc-l3"><a href="recreation.html#supplementary-vocabulary-instruments">Supplementary vocabulary · Instruments</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#126-supplementary-grammar-indirect-object-pronouns-lui-and-leur"><span class="vc-n">12.6</span> Supplementary grammar · Indirect object pronouns lui and leur</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#127-supplementary-grammar-conjugated-verb-infinitive"><span class="vc-n">12.7</span> Supplementary grammar · Conjugated verb + infinitive</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#128-supplementary-grammar-to-have-fun-samuser"><span class="vc-n">12.8</span> Supplementary grammar · To have fun · S&#x27;amuser</a><ul class="vc-subs"><li class="vc-l3"><a href="recreation.html#formation_1">Formation</a></li><li class="vc-l3"><a href="recreation.html#examples_3">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="recreation.html#129-dialogue"><span class="vc-n">12.9</span> Dialogue</a></li>
+<li class="vc-l2"><a href="recreation.html#1210-exercises"><span class="vc-n">12.10</span> Exercises</a></li>
+<li class="vc-l2"><a href="recreation.html#1211-supplementary-exercises"><span class="vc-n">12.11</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-house.html">Chapter 13: The house</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-house.html#131-dialogue"><span class="vc-n">13.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="the-house.html#132-vocabulary-streets-and-houses"><span class="vc-n">13.2</span> Vocabulary · Streets and houses</a></li>
+<li class="vc-l2"><a href="the-house.html#133-usage-notes-to-reside-habiter"><span class="vc-n">13.3</span> Usage notes · To reside · Habiter</a></li>
+<li class="vc-l2"><a href="the-house.html#134-grammar-to-do-faire"><span class="vc-n">13.4</span> Grammar · To do · Faire</a><ul class="vc-subs"><li class="vc-l3"><a href="the-house.html#formation">Formation</a></li><li class="vc-l3"><a href="the-house.html#examples">Examples</a></li><li class="vc-l3"><a href="the-house.html#supplementary-grammar-le-faire-causatif">Supplementary grammar · Le faire causatif</a></li><li class="vc-l3"><a href="the-house.html#supplementary-vocabulary-derived-words">Supplementary vocabulary · Derived words</a></li><li class="vc-l3"><a href="the-house.html#supplementary-vocabulary-related-expressions">Supplementary vocabulary · Related expressions</a></li><li class="vc-l3"><a href="the-house.html#supplementary-vocabulary-related-idioms">Supplementary vocabulary · Related idioms</a></li></ul></li>
+<li class="vc-l2"><a href="the-house.html#135-vocabulary-housework-le-menage"><span class="vc-n">13.5</span> Vocabulary · Housework · Le ménage</a></li>
+<li class="vc-l2"><a href="the-house.html#136-dialogue-doing-the-housework"><span class="vc-n">13.6</span> Dialogue · Doing the housework</a></li>
+<li class="vc-l2"><a href="the-house.html#137-grammar-object-pronouns-me-te-nous-and-vous"><span class="vc-n">13.7</span> Grammar · Object pronouns me, te, nous, and vous</a><ul class="vc-subs"><li class="vc-l3"><a href="the-house.html#summary">Summary</a></li><li class="vc-l3"><a href="the-house.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="the-house.html#138-supplementary-usage-notes-in-dans"><span class="vc-n">13.8</span> Supplementary usage notes · In · Dans</a><ul class="vc-subs"><li class="vc-l3"><a href="the-house.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="the-house.html#139-supplementary-vocabulary-rooms-and-furniture"><span class="vc-n">13.9</span> Supplementary vocabulary · Rooms and furniture</a></li>
+<li class="vc-l2"><a href="the-house.html#1310-supplementary-vocabulary-outside-a-house"><span class="vc-n">13.10</span> Supplementary vocabulary · Outside a house</a></li>
+<li class="vc-l2"><a href="the-house.html#1311-text-chez-moi"><span class="vc-n">13.11</span> Text · Chez moi</a><ul class="vc-subs"><li class="vc-l3"><a href="the-house.html#vocabulary">Vocabulary</a></li></ul></li>
+<li class="vc-l2"><a href="the-house.html#1312-exercises"><span class="vc-n">13.12</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="weather.html">Chapter 14: Weather</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="weather.html#141-grammar-review-at-a"><span class="vc-n">14.1</span> Grammar review · At · À</a></li>
+<li class="vc-l2"><a href="weather.html#142-dialogue-is-it-going-to-rain"><span class="vc-n">14.2</span> Dialogue · Is it going to rain?</a></li>
+<li class="vc-l2"><a href="weather.html#143-grammar-negation-negation"><span class="vc-n">14.3</span> Grammar · Negation · Négation</a><ul class="vc-subs"><li class="vc-l3"><a href="weather.html#formation-and-rules">Formation and rules</a></li><li class="vc-l3"><a href="weather.html#negation-of-indefinite-articles">Negation of indefinite articles</a></li></ul></li>
+<li class="vc-l2"><a href="weather.html#144-vocabulary-common-weather"><span class="vc-n">14.4</span> Vocabulary · Common weather</a></li>
+<li class="vc-l2"><a href="weather.html#145-grammar-to-go-aller"><span class="vc-n">14.5</span> Grammar · To go · Aller</a><ul class="vc-subs"><li class="vc-l3"><a href="weather.html#formation">Formation</a></li><li class="vc-l3"><a href="weather.html#usage">Usage</a></li><li class="vc-l3"><a href="weather.html#near-future-futur-proche">Near future · Futur proche</a></li><li class="vc-l3"><a href="weather.html#supplementary-grammar-there-y">Supplementary grammar · There · y</a></li><li class="vc-l3"><a href="weather.html#supplementary-vocabulary-expressions">Supplementary vocabulary · Expressions</a></li></ul></li>
+<li class="vc-l2"><a href="weather.html#146-vocabulary-rain-and-snow-la-pluie-et-la-neige"><span class="vc-n">14.6</span> Vocabulary · Rain and snow · La pluie et la neige</a></li>
+<li class="vc-l2"><a href="weather.html#147-dialogue"><span class="vc-n">14.7</span> Dialogue</a></li>
+<li class="vc-l2"><a href="weather.html#148-exercises"><span class="vc-n">14.8</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="travel.html">Chapter 15: Travel</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="travel.html#151-grammar-review-from-de"><span class="vc-n">15.1</span> Grammar review · From · De</a></li>
+<li class="vc-l2"><a href="travel.html#152-grammar-review-possessive-adjectives-les-adjectifs-possessifs"><span class="vc-n">15.2</span> Grammar review · Possessive adjectives · Les adjectifs possessifs</a><ul class="vc-subs"><li class="vc-l3"><a href="travel.html#formation">Formation</a></li><li class="vc-l3"><a href="travel.html#usage">Usage</a></li><li class="vc-l3"><a href="travel.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="travel.html#153-dialogue-vacations-vacances"><span class="vc-n">15.3</span> Dialogue · vacations · vacances</a></li>
+<li class="vc-l2"><a href="travel.html#154-grammar-regular-ir-verbs-les-verbes-en-ir"><span class="vc-n">15.4</span> Grammar · Regular -ir verbs · Les verbes en -ir</a><ul class="vc-subs"><li class="vc-l3"><a href="travel.html#formation_1">Formation</a></li><li class="vc-l3"><a href="travel.html#supplementary-vocabulary-example-ir-verbs">Supplementary vocabulary · Example -ir verbs</a></li></ul></li>
+<li class="vc-l2"><a href="travel.html#155-vocabulary"><span class="vc-n">15.5</span> Vocabulary</a></li>
+<li class="vc-l2"><a href="travel.html#156-grammar-to-take-prendre"><span class="vc-n">15.6</span> Grammar · To take · Prendre</a><ul class="vc-subs"><li class="vc-l3"><a href="travel.html#formation_2">Formation</a></li><li class="vc-l3"><a href="travel.html#examples_1">Examples</a></li><li class="vc-l3"><a href="travel.html#supplementary-vocabulary-related-words">Supplementary vocabulary · Related words</a></li><li class="vc-l3"><a href="travel.html#supplementary-vocabulary-related-expressions">Supplementary vocabulary · Related expressions</a></li></ul></li>
+<li class="vc-l2"><a href="travel.html#157-vocabulary-directions"><span class="vc-n">15.7</span> Vocabulary · Directions</a></li>
+<li class="vc-l2"><a href="travel.html#158-dialogue"><span class="vc-n">15.8</span> Dialogue</a></li>
+<li class="vc-l2"><a href="travel.html#159-exercises"><span class="vc-n">15.9</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="art.html">Chapter 16: Art</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="art.html#161-dialogue-at-an-art-gallery"><span class="vc-n">16.1</span> Dialogue · At an art gallery</a></li>
+<li class="vc-l2"><a href="art.html#162-culture-art-in-france"><span class="vc-n">16.2</span> Culture · Art in France</a></li>
+<li class="vc-l2"><a href="art.html#163-grammar-regular-re-verbs-les-verbes-en-re"><span class="vc-n">16.3</span> Grammar · Regular -re verbs · Les verbes en -re</a><ul class="vc-subs"><li class="vc-l3"><a href="art.html#formation">Formation</a></li><li class="vc-l3"><a href="art.html#supplementary-vocabulary-example-re-verbs">Supplementary vocabulary · Example -re verbs</a></li></ul></li>
+<li class="vc-l2"><a href="art.html#164-vocabulary-music-la-musique"><span class="vc-n">16.4</span> Vocabulary · Music · La musique</a></li>
+<li class="vc-l2"><a href="art.html#165-vocabulary-museums-les-musees"><span class="vc-n">16.5</span> Vocabulary · Museums · Les musées</a></li>
+<li class="vc-l2"><a href="art.html#166-usage-notes-visiter-and-rendre"><span class="vc-n">16.6</span> Usage notes · Visiter and rendre</a></li>
+<li class="vc-l2"><a href="art.html#167-grammar-beautiful-new-and-old-beau-nouveau-et-vieux"><span class="vc-n">16.7</span> Grammar · Beautiful, new, and old · Beau, nouveau, et vieux</a><ul class="vc-subs"><li class="vc-l3"><a href="art.html#formation_1">Formation</a></li><li class="vc-l3"><a href="art.html#sentences-placement">Sentences placement</a></li></ul></li>
+<li class="vc-l2"><a href="art.html#168-vocabulary-plays-les-pieces"><span class="vc-n">16.8</span> Vocabulary · Plays · Les pièces</a></li>
+<li class="vc-l2"><a href="art.html#169-dialogue"><span class="vc-n">16.9</span> Dialogue</a></li>
+<li class="vc-l2"><a href="art.html#1610-exercises"><span class="vc-n">16.10</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="science.html">Chapter 17: Science</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="science.html#171-grammar-review-indirect-object-pronouns-lui-and-leur"><span class="vc-n">17.1</span> Grammar review · Indirect object pronouns lui and leur</a><ul class="vc-subs"><li class="vc-l3"><a href="science.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="science.html#172-grammar-review-il-y-a-and-combien-de"><span class="vc-n">17.2</span> Grammar review · Il y a and combien de</a><ul class="vc-subs"><li class="vc-l3"><a href="science.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="science.html#173-text-le-systeme-solaire"><span class="vc-n">17.3</span> Text · Le système solaire</a><ul class="vc-subs"><li class="vc-l3"><a href="science.html#vocabulary">Vocabulary</a></li><li class="vc-l3"><a href="science.html#exercises">Exercises</a></li></ul></li>
+<li class="vc-l2"><a href="science.html#174-grammar-questions"><span class="vc-n">17.4</span> Grammar · Questions</a><ul class="vc-subs"><li class="vc-l3"><a href="science.html#inversion">Inversion</a></li><li class="vc-l3"><a href="science.html#vocabulary-question-words">Vocabulary · Question words</a></li><li class="vc-l3"><a href="science.html#supplementary-examples">Supplementary examples</a></li><li class="vc-l3"><a href="science.html#supplementary-usage-notes">Supplementary usage notes</a></li></ul></li>
+<li class="vc-l2"><a href="science.html#175-vocabulary-science"><span class="vc-n">17.5</span> Vocabulary · Science</a></li>
+<li class="vc-l2"><a href="science.html#176-grammar-conjunctions"><span class="vc-n">17.6</span> Grammar · Conjunctions</a></li>
+<li class="vc-l2"><a href="science.html#177-supplementary-vocabulary-scientists-les-scientifiques"><span class="vc-n">17.7</span> Supplementary vocabulary · Scientists · Les scientifiques</a></li>
+<li class="vc-l2"><a href="science.html#178-supplementary-vocabulary-elements-les-elements"><span class="vc-n">17.8</span> Supplementary vocabulary · Elements · Les éléments</a></li>
+<li class="vc-l2"><a href="science.html#179-supplementary-vocabulary-common-prepositions"><span class="vc-n">17.9</span> Supplementary vocabulary · Common prepositions</a><ul class="vc-subs"><li class="vc-l3"><a href="science.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="science.html#1710-dialogue"><span class="vc-n">17.10</span> Dialogue</a></li>
+<li class="vc-l2"><a href="science.html#1711-exercises"><span class="vc-n">17.11</span> Exercises</a></li>
+<li class="vc-l2"><a href="science.html#1712-supplementary-exercises"><span class="vc-n">17.12</span> Supplementary exercises</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level two lessons</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="school.html">Chapter 18: School</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="school.html#181-dialogue"><span class="vc-n">18.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="school.html#182-culture-education-in-france"><span class="vc-n">18.2</span> Culture · Education in France</a></li>
+<li class="vc-l2"><a href="school.html#183-vocabulary-school-and-students"><span class="vc-n">18.3</span> Vocabulary · School and students</a></li>
+<li class="vc-l2"><a href="school.html#184-grammar-present-perfect-with-regular-verbs"><span class="vc-n">18.4</span> Grammar · Present perfect with regular verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="school.html#meaning">Meaning</a></li><li class="vc-l3"><a href="school.html#basic-formation">Basic formation</a></li><li class="vc-l3"><a href="school.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="school.html#185-vocabulary-at-school-a-lecole"><span class="vc-n">18.5</span> Vocabulary · At school · À l&#x27;école</a></li>
+<li class="vc-l2"><a href="school.html#186-vocabulary-actions"><span class="vc-n">18.6</span> Vocabulary · Actions</a><ul class="vc-subs"><li class="vc-l3"><a href="school.html#supplementary-examples">Supplementary examples</a></li><li class="vc-l3"><a href="school.html#supplementary-usage-notes-entendre">Supplementary usage notes · Entendre</a></li></ul></li>
+<li class="vc-l2"><a href="school.html#187-grammar-to-write-and-to-read-ecrire-et-lire"><span class="vc-n">18.7</span> Grammar · To write and to read · Écrire et lire</a><ul class="vc-subs"><li class="vc-l3"><a href="school.html#ecrire">Écrire</a></li><li class="vc-l3"><a href="school.html#lire">Lire</a></li><li class="vc-l3"><a href="school.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="school.html#188-supplementary-vocabulary-school-supplies-les-fournitures-scolaires"><span class="vc-n">18.8</span> Supplementary vocabulary · School supplies · Les fournitures scolaires</a></li>
+<li class="vc-l2"><a href="school.html#189-supplementary-vocabulary-school-subjects-les-matieres-denseignement"><span class="vc-n">18.9</span> Supplementary vocabulary · School subjects · Les matières d&#x27;enseignement</a></li>
+<li class="vc-l2"><a href="school.html#1810-supplementary-vocabulary-classesgrades"><span class="vc-n">18.10</span> Supplementary vocabulary · Classes/grades</a></li>
+<li class="vc-l2"><a href="school.html#1811-text"><span class="vc-n">18.11</span> Text</a></li>
+<li class="vc-l2"><a href="school.html#1812-exercises"><span class="vc-n">18.12</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="culture.html">Chapter 19: Culture</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="culture.html#191-grammar-review-regular-verbs"><span class="vc-n">19.1</span> Grammar review · Regular verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="culture.html#formation">Formation</a></li><li class="vc-l3"><a href="culture.html#common-regular-verbs">Common regular verbs</a></li></ul></li>
+<li class="vc-l2"><a href="culture.html#192-dialogue"><span class="vc-n">19.2</span> Dialogue</a></li>
+<li class="vc-l2"><a href="culture.html#193-culture-national-holidays-and-events-in-france"><span class="vc-n">19.3</span> Culture · National holidays and events in France</a></li>
+<li class="vc-l2"><a href="culture.html#194-culture-popular-myths-and-stories-in-france"><span class="vc-n">19.4</span> Culture · Popular myths and stories in France</a></li>
+<li class="vc-l2"><a href="culture.html#195-grammar-to-believe-and-to-see-croire-et-voir"><span class="vc-n">19.5</span> Grammar · To believe and to see · Croire et voir</a><ul class="vc-subs"><li class="vc-l3"><a href="culture.html#croire">Croire</a></li><li class="vc-l3"><a href="culture.html#voir">Voir</a></li><li class="vc-l3"><a href="culture.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="culture.html#196-vocabulary-religions-les-religions"><span class="vc-n">19.6</span> Vocabulary · Religions · Les religions</a></li>
+<li class="vc-l2"><a href="culture.html#197-vocabulary-birthdays-anniversaires"><span class="vc-n">19.7</span> Vocabulary · Birthdays · Anniversaires</a></li>
+<li class="vc-l2"><a href="culture.html#198-grammar"><span class="vc-n">19.8</span> Grammar</a></li>
+<li class="vc-l2"><a href="culture.html#199-vocabulary-relationships"><span class="vc-n">19.9</span> Vocabulary · Relationships</a></li>
+<li class="vc-l2"><a href="culture.html#1910-supplementary-vocabulary-popular-mythical-and-fictional-characters"><span class="vc-n">19.10</span> Supplementary vocabulary · Popular mythical and fictional characters</a></li>
+<li class="vc-l2"><a href="culture.html#1911-supplementary-vocabulary-holidays-les-jours-feries"><span class="vc-n">19.11</span> Supplementary vocabulary · Holidays · Les Jours Fériés</a></li>
+<li class="vc-l2"><a href="culture.html#1912-supplementary-usage-notes-to-give-donner"><span class="vc-n">19.12</span> Supplementary usage notes · To give · Donner</a><ul class="vc-subs"><li class="vc-l3"><a href="culture.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="culture.html#1913-text"><span class="vc-n">19.13</span> Text</a></li>
+<li class="vc-l2"><a href="culture.html#1914-exercises"><span class="vc-n">19.14</span> Exercises</a></li>
+<li class="vc-l2"><a href="culture.html#1915-supplementary-exercises"><span class="vc-n">19.15</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="shopping.html">Chapter 20: Shopping</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="shopping.html#201-grammar-object-pronouns"><span class="vc-n">20.1</span> Grammar · Object pronouns</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#direct-objects">Direct objects</a></li><li class="vc-l3"><a href="shopping.html#indirect-objects">Indirect objects</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#202-dialogue-at-the-bakery-a-la-boulangerie"><span class="vc-n">20.2</span> Dialogue · At the bakery · À la boulangerie</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#vocabulary">Vocabulary</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#203-vocabulary-going-shopping"><span class="vc-n">20.3</span> Vocabulary · Going shopping</a></li>
+<li class="vc-l2"><a href="shopping.html#204-grammar-eer-verbs"><span class="vc-n">20.4</span> Grammar · -e…er verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#formation">Formation</a></li><li class="vc-l3"><a href="shopping.html#supplementary-vocabulary-other-eer-verbs">Supplementary vocabulary · Other -e…er verbs</a></li><li class="vc-l3"><a href="shopping.html#supplementary-examples">Supplementary examples</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#205-dialogue-at-the-market-au-marche"><span class="vc-n">20.5</span> Dialogue · At the market · Au marché</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#vocabulary_1">Vocabulary</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#206-vocabulary-stores-les-magasins"><span class="vc-n">20.6</span> Vocabulary · Stores · Les magasins</a></li>
+<li class="vc-l2"><a href="shopping.html#207-grammar-yer-verbs"><span class="vc-n">20.7</span> Grammar · -yer verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#formation_1">Formation</a></li><li class="vc-l3"><a href="shopping.html#supplementary-vocabulary-other-yer-verbs">Supplementary vocabulary · Other -yer verbs</a></li><li class="vc-l3"><a href="shopping.html#supplementary-examples_1">Supplementary examples</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#208-grammar-irregular-past-participles"><span class="vc-n">20.8</span> Grammar · Irregular past participles</a><ul class="vc-subs"><li class="vc-l3"><a href="shopping.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="shopping.html#209-supplementary-vocabulary-clothing-les-vetements"><span class="vc-n">20.9</span> Supplementary vocabulary · Clothing · Les vêtements</a></li>
+<li class="vc-l2"><a href="shopping.html#2010-text"><span class="vc-n">20.10</span> Text</a></li>
+<li class="vc-l2"><a href="shopping.html#2011-exercises"><span class="vc-n">20.11</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="going-out.html">Chapter 21: Going out</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="going-out.html#211-dialogue"><span class="vc-n">21.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="going-out.html#212-grammar-a-and-de"><span class="vc-n">21.2</span> Grammar · À and de</a></li>
+<li class="vc-l2"><a href="going-out.html#213-vocabulary-leisure-activities-les-loisirs"><span class="vc-n">21.3</span> Vocabulary · Leisure activities · Les loisirs</a></li>
+<li class="vc-l2"><a href="going-out.html#214-grammar-tir-verbs"><span class="vc-n">21.4</span> Grammar · -tir verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="going-out.html#to-leave-partir">To leave · Partir</a></li><li class="vc-l3"><a href="going-out.html#to-go-out-sortir">To go out · Sortir</a></li><li class="vc-l3"><a href="going-out.html#related-expressions">Related expressions</a></li><li class="vc-l3"><a href="going-out.html#supplementary-vocabulary-all-verbs">Supplementary vocabulary · All verbs</a></li><li class="vc-l3"><a href="going-out.html#supplementary-examples">Supplementary examples</a></li></ul></li>
+<li class="vc-l2"><a href="going-out.html#215-vocabulary-movies-les-films"><span class="vc-n">21.5</span> Vocabulary · Movies · Les films</a></li>
+<li class="vc-l2"><a href="going-out.html#216-grammar-enir-verbs"><span class="vc-n">21.6</span> Grammar · -enir verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="going-out.html#to-come-venir">To come · Venir</a></li><li class="vc-l3"><a href="going-out.html#formation">Formation</a></li><li class="vc-l3"><a href="going-out.html#supplementary-vocabulary-all-enir-verbs">Supplementary vocabulary · All -enir verbs</a></li><li class="vc-l3"><a href="going-out.html#supplementary-examples_1">Supplementary examples</a></li></ul></li>
+<li class="vc-l2"><a href="going-out.html#217-supplementary-grammar-eer-verbs"><span class="vc-n">21.7</span> Supplementary grammar · -é…er verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="going-out.html#formation_1">Formation</a></li><li class="vc-l3"><a href="going-out.html#other-eer-verbs">Other -é…er verbs</a></li><li class="vc-l3"><a href="going-out.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="going-out.html#218-supplementary-word-details-la-sortie"><span class="vc-n">21.8</span> Supplementary word details · La sortie</a></li>
+<li class="vc-l2"><a href="going-out.html#219-supplementary-word-details-to-feel-sentir"><span class="vc-n">21.9</span> Supplementary word details · To feel · Sentir</a></li>
+<li class="vc-l2"><a href="going-out.html#2110-supplementary-word-details-to-support-soutenir"><span class="vc-n">21.10</span> Supplementary word details · To support · Soutenir</a></li>
+<li class="vc-l2"><a href="going-out.html#2111-text"><span class="vc-n">21.11</span> Text</a></li>
+<li class="vc-l2"><a href="going-out.html#2112-exercises"><span class="vc-n">21.12</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transportation.html">Chapter 22: Transportation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transportation.html#221-dialogue"><span class="vc-n">22.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="transportation.html#222-culture-frances-transportation-system"><span class="vc-n">22.2</span> Culture · France&#x27;s transportation system</a></li>
+<li class="vc-l2"><a href="transportation.html#223-grammar-uire-verbs"><span class="vc-n">22.3</span> Grammar · -uire verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="transportation.html#formation">Formation</a></li><li class="vc-l3"><a href="transportation.html#supplementary-vocabulary-other-uire-verbs">Supplementary vocabulary · Other -uire verbs</a></li><li class="vc-l3"><a href="transportation.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="transportation.html#224-vocabulary-driving"><span class="vc-n">22.4</span> Vocabulary · Driving</a></li>
+<li class="vc-l2"><a href="transportation.html#225-grammar-passe-compose-with-etre"><span class="vc-n">22.5</span> Grammar · Passé composé with être</a><ul class="vc-subs"><li class="vc-l3"><a href="transportation.html#list-of-verbs">List of verbs</a></li><li class="vc-l3"><a href="transportation.html#direct-objects">Direct objects</a></li><li class="vc-l3"><a href="transportation.html#subject-past-participle-agreement">Subject-past participle agreement</a></li></ul></li>
+<li class="vc-l2"><a href="transportation.html#226-vocabulary-trains-and-stations"><span class="vc-n">22.6</span> Vocabulary · Trains and stations</a></li>
+<li class="vc-l2"><a href="transportation.html#227-grammar-the-pronoun-y"><span class="vc-n">22.7</span> Grammar · The pronoun y</a><ul class="vc-subs"><li class="vc-l3"><a href="transportation.html#indirect-object-pronoun-to-it-to-them">Indirect object pronoun - to it, to them</a></li><li class="vc-l3"><a href="transportation.html#replacement-of-places-there">Replacement of places - there</a></li><li class="vc-l3"><a href="transportation.html#idioms">Idioms</a></li></ul></li>
+<li class="vc-l2"><a href="transportation.html#228-vocabulary-taking-a-taxi-prendre-un-taxi"><span class="vc-n">22.8</span> Vocabulary · Taking a taxi · Prendre un taxi</a></li>
+<li class="vc-l2"><a href="transportation.html#229-supplementary-grammar-rir-verbs"><span class="vc-n">22.9</span> Supplementary grammar · -rir verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="transportation.html#formation_1">Formation</a></li><li class="vc-l3"><a href="transportation.html#other-standard-rir-verbs">Other standard -rir verbs</a></li><li class="vc-l3"><a href="transportation.html#-rir-verb-exceptions">-rir verb exceptions</a></li><li class="vc-l3"><a href="transportation.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="transportation.html#2210-text"><span class="vc-n">22.10</span> Text</a></li>
+<li class="vc-l2"><a href="transportation.html#2211-exercises"><span class="vc-n">22.11</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="everyday-life.html">Chapter 23: Everyday life</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="everyday-life.html#231-dialogue"><span class="vc-n">23.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="everyday-life.html#232-culture-daily-life-in-france"><span class="vc-n">23.2</span> Culture · Daily life in France</a></li>
+<li class="vc-l2"><a href="everyday-life.html#233-grammar-pronominal-verbs"><span class="vc-n">23.3</span> Grammar · Pronominal verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="everyday-life.html#reflexive-verbs">Reflexive verbs</a></li><li class="vc-l3"><a href="everyday-life.html#reciprocal-verbs">Reciprocal verbs</a></li><li class="vc-l3"><a href="everyday-life.html#naturally-pronominal-verbs">Naturally pronominal verbs</a></li><li class="vc-l3"><a href="everyday-life.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="everyday-life.html#234-vocabulary-waking-up-and-getting-yourself-ready"><span class="vc-n">23.4</span> Vocabulary · Waking up and getting yourself ready</a></li>
+<li class="vc-l2"><a href="everyday-life.html#235-grammar-devoir-falloir-and-avoir-besoin-de"><span class="vc-n">23.5</span> Grammar · Devoir, Falloir, and avoir besoin de</a><ul class="vc-subs"><li class="vc-l3"><a href="everyday-life.html#to-have-need-of-avoir-besoin-de">To have need of · avoir besoin de</a></li><li class="vc-l3"><a href="everyday-life.html#to-have-to-devoir">To have to · Devoir</a></li><li class="vc-l3"><a href="everyday-life.html#to-be-necessary-falloir">To be necessary · Falloir</a></li><li class="vc-l3"><a href="everyday-life.html#comparison">Comparison</a></li><li class="vc-l3"><a href="everyday-life.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="everyday-life.html#236-supplementary-grammar-to-sleep-dormir"><span class="vc-n">23.6</span> Supplementary grammar · To sleep · Dormir</a><ul class="vc-subs"><li class="vc-l3"><a href="everyday-life.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="everyday-life.html#237-text"><span class="vc-n">23.7</span> Text</a></li>
+<li class="vc-l2"><a href="everyday-life.html#238-exercises"><span class="vc-n">23.8</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="rural-life.html">Chapter 24: Rural life</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rural-life.html#241-dialogue"><span class="vc-n">24.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="rural-life.html#242-culture-rural-france"><span class="vc-n">24.2</span> Culture · Rural France</a></li>
+<li class="vc-l2"><a href="rural-life.html#243-vocabulary-farms"><span class="vc-n">24.3</span> Vocabulary · Farms</a></li>
+<li class="vc-l2"><a href="rural-life.html#244-grammar-to-follow-suivre"><span class="vc-n">24.4</span> Grammar · To follow · Suivre</a><ul class="vc-subs"><li class="vc-l3"><a href="rural-life.html#supplementary-vocabulary-related-words">Supplementary vocabulary · Related words</a></li><li class="vc-l3"><a href="rural-life.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="rural-life.html#245-vocabulary-camping"><span class="vc-n">24.5</span> Vocabulary · Camping</a></li>
+<li class="vc-l2"><a href="rural-life.html#246-grammar-to-live-vivre"><span class="vc-n">24.6</span> Grammar · To live · Vivre</a><ul class="vc-subs"><li class="vc-l3"><a href="rural-life.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="rural-life.html#247-grammar-to-be-born-naitre"><span class="vc-n">24.7</span> Grammar · To be born · Naître</a><ul class="vc-subs"><li class="vc-l3"><a href="rural-life.html#supplementary-vocabulary-related-words_1">Supplementary vocabulary · Related words</a></li><li class="vc-l3"><a href="rural-life.html#examples_2">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="rural-life.html#248-vocabulary-animal-actions"><span class="vc-n">24.8</span> Vocabulary · Animal actions</a></li>
+<li class="vc-l2"><a href="rural-life.html#249-grammar-pronominal-verbs-with-perfect-tenses"><span class="vc-n">24.9</span> Grammar · Pronominal verbs with perfect tenses</a><ul class="vc-subs"><li class="vc-l3"><a href="rural-life.html#reflexive-verbs">Reflexive verbs</a></li><li class="vc-l3"><a href="rural-life.html#reciprocal-verbs">Reciprocal verbs</a></li><li class="vc-l3"><a href="rural-life.html#naturally-pronominal-verbs">Naturally pronominal verbs</a></li></ul></li>
+<li class="vc-l2"><a href="rural-life.html#2410-supplementary-vocabulary-farm-animals"><span class="vc-n">24.10</span> Supplementary vocabulary · Farm animals</a></li>
+<li class="vc-l2"><a href="rural-life.html#2411-supplementary-vocabulary-interacting-with-animals"><span class="vc-n">24.11</span> Supplementary vocabulary · Interacting with animals</a></li>
+<li class="vc-l2"><a href="rural-life.html#2412-supplementary-vocabulary-at-the-sea-a-la-mer"><span class="vc-n">24.12</span> Supplementary vocabulary · At the sea · À la mer</a></li>
+<li class="vc-l2"><a href="rural-life.html#2413-supplementary-vocabulary-wild-animals"><span class="vc-n">24.13</span> Supplementary vocabulary · Wild animals</a></li>
+<li class="vc-l2"><a href="rural-life.html#2414-text"><span class="vc-n">24.14</span> Text</a></li>
+<li class="vc-l2"><a href="rural-life.html#2415-exercises"><span class="vc-n">24.15</span> Exercises</a></li>
+<li class="vc-l2"><a href="rural-life.html#2416-supplementary-exercises"><span class="vc-n">24.16</span> Supplementary exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="dining.html">Chapter 25: Dining</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="dining.html#251-dialogue"><span class="vc-n">25.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="dining.html#252-culture-dining-in-france"><span class="vc-n">25.2</span> Culture · Dining in France</a></li>
+<li class="vc-l2"><a href="dining.html#253-vocabulary"><span class="vc-n">25.3</span> Vocabulary</a></li>
+<li class="vc-l2"><a href="dining.html#254-grammar-to-want-and-to-be-able-to-vouloir-et-pouvoir"><span class="vc-n">25.4</span> Grammar · To want and to be able to · Vouloir et pouvoir</a><ul class="vc-subs"><li class="vc-l3"><a href="dining.html#vouloir">Vouloir</a></li><li class="vc-l3"><a href="dining.html#pouvoir">Pouvoir</a></li><li class="vc-l3"><a href="dining.html#examples">Examples</a></li><li class="vc-l3"><a href="dining.html#supplementary-usage-notes-pouvoir">Supplementary usage notes · Pouvoir</a></li></ul></li>
+<li class="vc-l2"><a href="dining.html#255-vocabulary-dining-at-a-restaurant"><span class="vc-n">25.5</span> Vocabulary · Dining at a restaurant</a></li>
+<li class="vc-l2"><a href="dining.html#256-grammar-to-serve-servir"><span class="vc-n">25.6</span> Grammar · To serve · Servir</a><ul class="vc-subs"><li class="vc-l3"><a href="dining.html#formation">Formation</a></li><li class="vc-l3"><a href="dining.html#examples_1">Examples</a></li><li class="vc-l3"><a href="dining.html#supplementary-usage-notes-servir-and-desservir">Supplementary usage notes · Servir and desservir</a></li></ul></li>
+<li class="vc-l2"><a href="dining.html#257-grammar-cer-verbs"><span class="vc-n">25.7</span> Grammar · -cer verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="dining.html#formation_1">Formation</a></li><li class="vc-l3"><a href="dining.html#common-cer-verbs">Common -cer verbs</a></li><li class="vc-l3"><a href="dining.html#examples_2">Examples</a></li><li class="vc-l3"><a href="dining.html#supplementary-vocabulary-other-cer-verbs">Supplementary vocabulary · Other -cer verbs</a></li></ul></li>
+<li class="vc-l2"><a href="dining.html#258-supplementary-vocabulary-silverware-and-the-table"><span class="vc-n">25.8</span> Supplementary vocabulary · Silverware and the table</a></li>
+<li class="vc-l2"><a href="dining.html#259-supplementary-usage-notes-to-take-to-eat-to-drink-prendre"><span class="vc-n">25.9</span> Supplementary usage notes · To take, to eat, to drink · Prendre</a></li>
+<li class="vc-l2"><a href="dining.html#2510-supplementary-vocabulary-quantities"><span class="vc-n">25.10</span> Supplementary vocabulary · Quantities</a></li>
+<li class="vc-l2"><a href="dining.html#2511-text"><span class="vc-n">25.11</span> Text</a></li>
+<li class="vc-l2"><a href="dining.html#2512-exercises"><span class="vc-n">25.12</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="communication.html">Chapter 26: Communication</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="communication.html#261-dialogue"><span class="vc-n">26.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="communication.html#262-grammar-aitre-verbs"><span class="vc-n">26.2</span> Grammar · -aître verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#formation">Formation</a></li><li class="vc-l3"><a href="communication.html#supplementary-vocabulary-related-words">Supplementary vocabulary · Related words</a></li><li class="vc-l3"><a href="communication.html#supplementary-vocabulary-other-aitre-verbs">Supplementary vocabulary · Other -aître verbs</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#263-grammar-to-know-savoir"><span class="vc-n">26.3</span> Grammar · To know · Savoir</a></li>
+<li class="vc-l2"><a href="communication.html#264-usage-notes-connaitre-and-savoir"><span class="vc-n">26.4</span> Usage notes · Connaître and savoir</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#265-vocabulary-phone-calls"><span class="vc-n">26.5</span> Vocabulary · Phone calls</a></li>
+<li class="vc-l2"><a href="communication.html#266-usage-notes-telephoner-and-appeler"><span class="vc-n">26.6</span> Usage notes · Téléphoner and appeler</a></li>
+<li class="vc-l2"><a href="communication.html#267-grammar-to-say-dire"><span class="vc-n">26.7</span> Grammar · To say · Dire</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#formation_1">Formation</a></li><li class="vc-l3"><a href="communication.html#examples_1">Examples</a></li><li class="vc-l3"><a href="communication.html#supplementary-grammar-verbs-conjugated-similarly-to-dire">Supplementary grammar · Verbs conjugated similarly to dire</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#268-vocabulary-mail-le-courrier"><span class="vc-n">26.8</span> Vocabulary · Mail · Le courrier</a></li>
+<li class="vc-l2"><a href="communication.html#269-supplementary-grammar-to-send-envoyer"><span class="vc-n">26.9</span> Supplementary grammar · To send · Envoyer</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#formation_2">Formation</a></li><li class="vc-l3"><a href="communication.html#examples_2">Examples</a></li><li class="vc-l3"><a href="communication.html#usage-notes-renvoyer">Usage notes · Renvoyer</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#2610-supplementary-grammar-cevoir-verbs"><span class="vc-n">26.10</span> Supplementary grammar · -cevoir verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#formation_3">Formation</a></li><li class="vc-l3"><a href="communication.html#other-cevoir-verbs">Other -cevoir verbs</a></li><li class="vc-l3"><a href="communication.html#examples_3">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#2611-supplementary-vocabulary-computers-and-the-internet"><span class="vc-n">26.11</span> Supplementary vocabulary · Computers and the Internet</a></li>
+<li class="vc-l2"><a href="communication.html#2612-supplementary-grammar-to-call-appeler"><span class="vc-n">26.12</span> Supplementary grammar · To call · Appeler</a><ul class="vc-subs"><li class="vc-l3"><a href="communication.html#formation_4">Formation</a></li><li class="vc-l3"><a href="communication.html#related-words">Related words</a></li><li class="vc-l3"><a href="communication.html#examples_4">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="communication.html#2613-text"><span class="vc-n">26.13</span> Text</a></li>
+<li class="vc-l2"><a href="communication.html#2614-exercises"><span class="vc-n">26.14</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="food-and-drink.html">Chapter 27: Food and drink</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="food-and-drink.html#271-dialogue"><span class="vc-n">27.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#272-grammar-ger-verbs"><span class="vc-n">27.2</span> Grammar · -ger verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="food-and-drink.html#formation">Formation</a></li><li class="vc-l3"><a href="food-and-drink.html#other-ger-verbs">Other -ger verbs</a></li><li class="vc-l3"><a href="food-and-drink.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="food-and-drink.html#273-vocabulary-common-foods"><span class="vc-n">27.3</span> Vocabulary · Common foods</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#274-grammar-to-drink-boire"><span class="vc-n">27.4</span> Grammar · To drink · Boire</a><ul class="vc-subs"><li class="vc-l3"><a href="food-and-drink.html#formation_1">Formation</a></li></ul></li>
+<li class="vc-l2"><a href="food-and-drink.html#275-vocabulary-drinks-les-boissons"><span class="vc-n">27.5</span> Vocabulary · Drinks · Les boissons</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#276-grammar-the-partitive-article"><span class="vc-n">27.6</span> Grammar · The partitive article</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#277-grammar-some-of-it-en"><span class="vc-n">27.7</span> Grammar · Some of it · En</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#278-vocabulary-cooking"><span class="vc-n">27.8</span> Vocabulary · Cooking</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#279-grammar-to-put-mettre"><span class="vc-n">27.9</span> Grammar · To put · Mettre</a><ul class="vc-subs"><li class="vc-l3"><a href="food-and-drink.html#formation_2">Formation</a></li><li class="vc-l3"><a href="food-and-drink.html#supplementary-vocabulary-derived-words">Supplementary vocabulary · Derived words</a></li><li class="vc-l3"><a href="food-and-drink.html#supplementary-vocabulary-related-expressions">Supplementary vocabulary · Related expressions</a></li><li class="vc-l3"><a href="food-and-drink.html#supplementary-examples">Supplementary examples</a></li><li class="vc-l3"><a href="food-and-drink.html#supplementary-usage-notes-mettre">Supplementary usage notes · Mettre</a></li><li class="vc-l3"><a href="food-and-drink.html#supplementary-usage-notes-remettre">Supplementary usage notes · Remettre</a></li></ul></li>
+<li class="vc-l2"><a href="food-and-drink.html#2710-supplementary-vocabulary-fruits-and-vegetables"><span class="vc-n">27.10</span> Supplementary vocabulary · Fruits and vegetables</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#2711-supplementary-vocabulary-meat-and-seafood"><span class="vc-n">27.11</span> Supplementary vocabulary · Meat and seafood</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#2712-supplementary-vocabulary-dessert-le-dessert"><span class="vc-n">27.12</span> Supplementary vocabulary · Dessert · Le dessert</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#2713-supplementary-vocabulary-other-foods"><span class="vc-n">27.13</span> Supplementary vocabulary · Other foods</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#2714-text"><span class="vc-n">27.14</span> Text</a></li>
+<li class="vc-l2"><a href="food-and-drink.html#2715-exercises"><span class="vc-n">27.15</span> Exercises</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level three lessons</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="vacations.html">Chapter 28: Vacations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vacations.html#281-grammar-review-present-indicative"><span class="vc-n">28.1</span> Grammar review · Present indicative</a><ul class="vc-subs"><li class="vc-l3"><a href="vacations.html#regular-formation">Regular formation</a></li><li class="vc-l3"><a href="vacations.html#irregular-verbs">Irregular verbs</a></li></ul></li>
+<li class="vc-l2"><a href="vacations.html#282-vocabulary-review-travel"><span class="vc-n">28.2</span> Vocabulary review · Travel</a></li>
+<li class="vc-l2"><a href="vacations.html#283-dialogue"><span class="vc-n">28.3</span> Dialogue</a></li>
+<li class="vc-l2"><a href="vacations.html#284-culture-vacations-in-france"><span class="vc-n">28.4</span> Culture · Vacations in France</a></li>
+<li class="vc-l2"><a href="vacations.html#285-vocabulary-geography"><span class="vc-n">28.5</span> Vocabulary · Geography</a></li>
+<li class="vc-l2"><a href="vacations.html#286-grammar-simple-future-futur-simple"><span class="vc-n">28.6</span> Grammar · Simple future · Futur simple</a><ul class="vc-subs"><li class="vc-l3"><a href="vacations.html#regular-formation_1">Regular formation</a></li><li class="vc-l3"><a href="vacations.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="vacations.html#287-vocabulary-airports-and-airplanes"><span class="vc-n">28.7</span> Vocabulary · Airports and airplanes</a></li>
+<li class="vc-l2"><a href="vacations.html#288-supplementary-vocabulary-places"><span class="vc-n">28.8</span> Supplementary vocabulary · Places</a></li>
+<li class="vc-l2"><a href="vacations.html#289-supplementary-grammar-geography-prepositions"><span class="vc-n">28.9</span> Supplementary grammar · Geography prepositions</a><ul class="vc-subs"><li class="vc-l3"><a href="vacations.html#cities">Cities</a></li><li class="vc-l3"><a href="vacations.html#feminine-areas">Feminine areas</a></li><li class="vc-l3"><a href="vacations.html#masculine-areas">Masculine areas</a></li><li class="vc-l3"><a href="vacations.html#plural-countries">Plural countries</a></li></ul></li>
+<li class="vc-l2"><a href="vacations.html#2810-supplementary-vocabulary-nationalities-les-nationalites"><span class="vc-n">28.10</span> Supplementary vocabulary · Nationalities · Les nationalités</a></li>
+<li class="vc-l2"><a href="vacations.html#2811-text"><span class="vc-n">28.11</span> Text</a></li>
+<li class="vc-l2"><a href="vacations.html#2812-exercises"><span class="vc-n">28.12</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="work.html">Chapter 29: Work</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="work.html#291-grammar-review-present-perfect"><span class="vc-n">29.1</span> Grammar review · Present perfect</a><ul class="vc-subs"><li class="vc-l3"><a href="work.html#auxiliary-verb-formation">Auxiliary verb formation</a></li><li class="vc-l3"><a href="work.html#past-participle-formation">Past participle formation</a></li><li class="vc-l3"><a href="work.html#past-participle-agreement">Past participle agreement</a></li><li class="vc-l3"><a href="work.html#avoir-or-etre">Avoir or être ?</a></li></ul></li>
+<li class="vc-l2"><a href="work.html#292-grammar-review-infinitives"><span class="vc-n">29.2</span> Grammar review · Infinitives</a><ul class="vc-subs"><li class="vc-l3"><a href="work.html#pronouns">Pronouns</a></li><li class="vc-l3"><a href="work.html#negation">Negation</a></li></ul></li>
+<li class="vc-l2"><a href="work.html#293-dialogue"><span class="vc-n">29.3</span> Dialogue</a></li>
+<li class="vc-l2"><a href="work.html#294-culture-work-life-in-france"><span class="vc-n">29.4</span> Culture · Work life in France</a></li>
+<li class="vc-l2"><a href="work.html#295-vocabulary-at-work"><span class="vc-n">29.5</span> Vocabulary · At work</a></li>
+<li class="vc-l2"><a href="work.html#296-vocabulary-the-office"><span class="vc-n">29.6</span> Vocabulary · The office</a></li>
+<li class="vc-l2"><a href="work.html#297-supplementary-vocabulary-professions"><span class="vc-n">29.7</span> Supplementary vocabulary · Professions</a></li>
+<li class="vc-l2"><a href="work.html#298-supplementary-vocabulary-office-supplies"><span class="vc-n">29.8</span> Supplementary vocabulary · Office supplies</a></li>
+<li class="vc-l2"><a href="work.html#299-text-unemployment-le-chomage"><span class="vc-n">29.9</span> Text · Unemployment · Le chômage</a></li>
+<li class="vc-l2"><a href="work.html#2910-exercises"><span class="vc-n">29.10</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="health.html">Chapter 30: Health</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="health.html#301-v-illness"><span class="vc-n">30.1</span> V: Illness</a></li>
+<li class="vc-l2"><a href="health.html#302-g-simple-future-of-irregular-verbs"><span class="vc-n">30.2</span> G: Simple Future of Irregular Verbs</a></li>
+<li class="vc-l2"><a href="health.html#303-g-issuing-commands-in-french-limperatif"><span class="vc-n">30.3</span> G: Issuing Commands in French - l&#x27;impératif</a><ul class="vc-subs"><li class="vc-l3"><a href="health.html#formation">Formation</a></li><li class="vc-l3"><a href="health.html#affirmative">Affirmative</a></li><li class="vc-l3"><a href="health.html#negative">Negative</a></li></ul></li>
+<li class="vc-l2"><a href="health.html#304-g-adverbs"><span class="vc-n">30.4</span> G: Adverbs</a><ul class="vc-subs"><li class="vc-l3"><a href="health.html#formation_1">Formation</a></li><li class="vc-l3"><a href="health.html#placement">Placement</a></li></ul></li>
+<li class="vc-l2"><a href="health.html#305-v-visiting-the-doctor"><span class="vc-n">30.5</span> V: Visiting the Doctor</a></li>
+<li class="vc-l2"><a href="health.html#306-v-visiting-the-dentist"><span class="vc-n">30.6</span> V: Visiting the Dentist</a></li>
+<li class="vc-l2"><a href="health.html#307-v-healthcare"><span class="vc-n">30.7</span> V: Healthcare</a></li>
+<li class="vc-l2"><a href="health.html#308-v-emergencies"><span class="vc-n">30.8</span> V: Emergencies</a></li>
+<li class="vc-l2"><a href="health.html#309-v-medicine"><span class="vc-n">30.9</span> V: Medicine</a></li>
+<li class="vc-l2"><a href="health.html#3010-v-body-parts"><span class="vc-n">30.10</span> V: Body parts</a></li>
+<li class="vc-l2"><a href="health.html#3011-v-body-position"><span class="vc-n">30.11</span> V: Body position</a></li>
+<li class="vc-l2"><a href="health.html#3012-v-common-sentences"><span class="vc-n">30.12</span> V: Common sentences</a></li>
+<li class="vc-l2"><a href="health.html#3013-e-303-1-body-parts-visual-memorization"><span class="vc-n">30.13</span> E: 3.03 1 - Body Parts - Visual Memorization</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="money.html">Chapter 31: Money</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="money.html#311-grammar-personal-pronouns-review"><span class="vc-n">31.1</span> Grammar · Personal pronouns review</a><ul class="vc-subs"><li class="vc-l3"><a href="money.html#direct-objects">Direct Objects</a></li><li class="vc-l3"><a href="money.html#indirect-objects">Indirect Objects</a></li><li class="vc-l3"><a href="money.html#the-pronoun-y">The Pronoun Y</a></li><li class="vc-l3"><a href="money.html#en">En</a></li></ul></li>
+<li class="vc-l2"><a href="money.html#312-g-commands-with-pronouns-limperatif"><span class="vc-n">31.2</span> G: Commands with Pronouns - L&#x27;impératif</a></li>
+<li class="vc-l2"><a href="money.html#313-g-present-conditional"><span class="vc-n">31.3</span> G: Present Conditional</a></li>
+<li class="vc-l2"><a href="money.html#314-v-forms-of-payment"><span class="vc-n">31.4</span> V: Forms of Payment</a></li>
+<li class="vc-l2"><a href="money.html#315-v-economics"><span class="vc-n">31.5</span> V: Economics</a></li>
+<li class="vc-l2"><a href="money.html#316-v-handling-money"><span class="vc-n">31.6</span> V: Handling Money</a></li>
+<li class="vc-l2"><a href="money.html#317-v-going-to-a-bank"><span class="vc-n">31.7</span> V: Going to a Bank</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="youth.html">Chapter 32: Youth</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="youth.html#321-grammar-imperfect-imparfait"><span class="vc-n">32.1</span> Grammar: Imperfect - Imparfait</a></li>
+<li class="vc-l2"><a href="youth.html#322-grammar-possessive-pronouns"><span class="vc-n">32.2</span> Grammar: Possessive Pronouns</a></li>
+<li class="vc-l2"><a href="youth.html#323-grammar-stem-changing-verbs-review"><span class="vc-n">32.3</span> Grammar: Stem Changing Verbs Review</a><ul class="vc-subs"><li class="vc-l3"><a href="youth.html#-exer-verbs">-exer Verbs</a></li><li class="vc-l3"><a href="youth.html#-exer-verbs_1">-éxer Verbs</a></li><li class="vc-l3"><a href="youth.html#-yer-verbs">-yer Verbs</a></li><li class="vc-l3"><a href="youth.html#appeler">Appeler</a></li><li class="vc-l3"><a href="youth.html#-cer-verbs">-cer Verbs</a></li><li class="vc-l3"><a href="youth.html#-ger-verbs">-ger Verbs</a></li></ul></li>
+<li class="vc-l2"><a href="youth.html#324-vocabulary-childrens-games-and-toys"><span class="vc-n">32.4</span> Vocabulary: Children&#x27;s Games and Toys</a></li>
+<li class="vc-l2"><a href="youth.html#325-vocabulary-the-carnival"><span class="vc-n">32.5</span> Vocabulary: The Carnival</a></li>
+<li class="vc-l2"><a href="youth.html#326-vocabulary-french-childrens-poems-songs-and-stories"><span class="vc-n">32.6</span> Vocabulary: French Children&#x27;s Poems, Songs, and Stories</a><ul class="vc-subs"><li class="vc-l3"><a href="youth.html#petit-papa-noel">Petit Papa Noël</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="adolescence.html">Chapter 33: Adolescence</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="adolescence.html#331-grammar-review-pronominal-verbs"><span class="vc-n">33.1</span> Grammar review · Pronominal verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="adolescence.html#reflexive-verbs">Reflexive verbs</a></li><li class="vc-l3"><a href="adolescence.html#reciprocal-verbs">Reciprocal verbs</a></li><li class="vc-l3"><a href="adolescence.html#naturally-pronominal-verbs">Naturally pronominal verbs</a></li></ul></li>
+<li class="vc-l2"><a href="adolescence.html#332-grammar-review-imparfait-and-passe-compose"><span class="vc-n">33.2</span> Grammar review · Imparfait and passé composé</a><ul class="vc-subs"><li class="vc-l3"><a href="adolescence.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="adolescence.html#333-dialogue"><span class="vc-n">33.3</span> Dialogue</a></li>
+<li class="vc-l2"><a href="adolescence.html#334-culture-adolescence-in-france"><span class="vc-n">33.4</span> Culture · Adolescence in France</a></li>
+<li class="vc-l2"><a href="adolescence.html#335-vocabulary"><span class="vc-n">33.5</span> Vocabulary</a></li>
+<li class="vc-l2"><a href="adolescence.html#336-grammar-plus-que-parfait"><span class="vc-n">33.6</span> Grammar · Plus-que-parfait</a><ul class="vc-subs"><li class="vc-l3"><a href="adolescence.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="adolescence.html#337-vocabulary-dates"><span class="vc-n">33.7</span> Vocabulary · Dates</a></li>
+<li class="vc-l2"><a href="adolescence.html#338-text"><span class="vc-n">33.8</span> Text</a></li>
+<li class="vc-l2"><a href="adolescence.html#339-exercises"><span class="vc-n">33.9</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="historical-france.html">Chapter 34: Historical France</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="historical-france.html#341-dialogue-paysans-sur-un-champ"><span class="vc-n">34.1</span> Dialogue · Paysans sur un champ</a></li>
+<li class="vc-l2"><a href="historical-france.html#342-grammar-interrogative-pronouns"><span class="vc-n">34.2</span> Grammar · Interrogative pronouns</a><ul class="vc-subs"><li class="vc-l3"><a href="historical-france.html#par-exemple">Par exemple</a></li></ul></li>
+<li class="vc-l2"><a href="historical-france.html#343-grammar-simple-past-of-regular-verbs"><span class="vc-n">34.3</span> Grammar · Simple past of regular verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="historical-france.html#formation">Formation</a></li><li class="vc-l3"><a href="historical-france.html#regular-stems">Regular stems</a></li></ul></li>
+<li class="vc-l2"><a href="historical-france.html#344-vocabulary-french-history"><span class="vc-n">34.4</span> Vocabulary · French history</a></li>
+<li class="vc-l2"><a href="historical-france.html#345-text-french-history"><span class="vc-n">34.5</span> Text · French history</a></li>
+<li class="vc-l2"><a href="historical-france.html#346-text"><span class="vc-n">34.6</span> Text</a></li>
+<li class="vc-l2"><a href="historical-france.html#347-exercises"><span class="vc-n">34.7</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="revolutionary-france.html">Chapter 35: Revolutionary France</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="revolutionary-france.html#351-grammar-review-relative-pronouns-qui-and-que"><span class="vc-n">35.1</span> Grammar review · Relative pronouns qui and que</a><ul class="vc-subs"><li class="vc-l3"><a href="revolutionary-france.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="revolutionary-france.html#352-dialogue"><span class="vc-n">35.2</span> Dialogue</a></li>
+<li class="vc-l2"><a href="revolutionary-france.html#353-grammar-simple-past-of-irregular-verbs"><span class="vc-n">35.3</span> Grammar · Simple past of irregular verbs</a><ul class="vc-subs"><li class="vc-l3"><a href="revolutionary-france.html#ending-formation">Ending formation</a></li><li class="vc-l3"><a href="revolutionary-france.html#irregular-verbs">Irregular verbs</a></li></ul></li>
+<li class="vc-l2"><a href="revolutionary-france.html#354-vocabulary-the-industrial-revolution"><span class="vc-n">35.4</span> Vocabulary · The Industrial Revolution</a></li>
+<li class="vc-l2"><a href="revolutionary-france.html#355-vocabulary-the-enlightenment"><span class="vc-n">35.5</span> Vocabulary · The Enlightenment</a></li>
+<li class="vc-l2"><a href="revolutionary-france.html#356-text"><span class="vc-n">35.6</span> Text</a></li>
+<li class="vc-l2"><a href="revolutionary-france.html#357-exercises"><span class="vc-n">35.7</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="modern-france.html">Chapter 36: Modern France</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="modern-france.html#361-dialogue"><span class="vc-n">36.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="modern-france.html#362-grammar-past-conditional"><span class="vc-n">36.2</span> Grammar · Past conditional</a></li>
+<li class="vc-l2"><a href="modern-france.html#363-grammar-comparative"><span class="vc-n">36.3</span> Grammar · Comparative</a><ul class="vc-subs"><li class="vc-l3"><a href="modern-france.html#adjectives">Adjectives</a></li><li class="vc-l3"><a href="modern-france.html#adverbs">Adverbs</a></li><li class="vc-l3"><a href="modern-france.html#verbs">Verbs</a></li><li class="vc-l3"><a href="modern-france.html#nouns">Nouns</a></li><li class="vc-l3"><a href="modern-france.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="modern-france.html#364-grammar-superlative"><span class="vc-n">36.4</span> Grammar · Superlative</a></li>
+<li class="vc-l2"><a href="modern-france.html#365-grammar-asking-questions"><span class="vc-n">36.5</span> Grammar · Asking questions</a></li>
+<li class="vc-l2"><a href="modern-france.html#366-vocabulary-the-20th-century"><span class="vc-n">36.6</span> Vocabulary · The 20th century</a></li>
+<li class="vc-l2"><a href="modern-france.html#367-vocabulary-20th-century-advancements-and-changes"><span class="vc-n">36.7</span> Vocabulary · 20th century advancements and changes</a></li>
+<li class="vc-l2"><a href="modern-france.html#368-text"><span class="vc-n">36.8</span> Text</a></li>
+<li class="vc-l2"><a href="modern-france.html#369-exercises"><span class="vc-n">36.9</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="current-events.html">Chapter 37: Current events</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="current-events.html#371-dialogue"><span class="vc-n">37.1</span> Dialogue</a></li>
+<li class="vc-l2"><a href="current-events.html#372-grammar-future-perfect"><span class="vc-n">37.2</span> Grammar · Future perfect</a><ul class="vc-subs"><li class="vc-l3"><a href="current-events.html#formation">Formation</a></li><li class="vc-l3"><a href="current-events.html#examples">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="current-events.html#373-grammar-demonstrative-pronouns"><span class="vc-n">37.3</span> Grammar · Demonstrative pronouns</a><ul class="vc-subs"><li class="vc-l3"><a href="current-events.html#ceci-cela-and-ca">Ceci , cela , and ça</a></li><li class="vc-l3"><a href="current-events.html#celui">Celui</a></li></ul></li>
+<li class="vc-l2"><a href="current-events.html#374-grammar-stating-if"><span class="vc-n">37.4</span> Grammar · Stating if</a></li>
+<li class="vc-l2"><a href="current-events.html#375-vocabulary-news"><span class="vc-n">37.5</span> Vocabulary · News</a></li>
+<li class="vc-l2"><a href="current-events.html#376-vocabulary-social-problems"><span class="vc-n">37.6</span> Vocabulary · Social problems</a><ul class="vc-subs"><li class="vc-l3"><a href="current-events.html#examples_1">Examples</a></li></ul></li>
+<li class="vc-l2"><a href="current-events.html#377-text-french-government"><span class="vc-n">37.7</span> Text · French government</a></li>
+<li class="vc-l2"><a href="current-events.html#378-text-french-politics"><span class="vc-n">37.8</span> Text · French politics</a><ul class="vc-subs"><li class="vc-l3"><a href="current-events.html#quelques-hommes-politiques">Quelques hommes politiques</a></li><li class="vc-l3"><a href="current-events.html#la-politique-en-france">La politique en France</a></li></ul></li>
+<li class="vc-l2"><a href="current-events.html#379-exercises"><span class="vc-n">37.9</span> Exercises</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Level four lessons</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="slavery-under-napoleon.html">Chapter 38: Slavery under Napoleon</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="slavery-under-napoleon.html#381-lesclavage-sous-napoleon"><span class="vc-n">38.1</span> L&#x27;esclavage sous Napoléon</a></li>
+<li class="vc-l2"><a href="slavery-under-napoleon.html#382-questions-de-comprehension"><span class="vc-n">38.2</span> Questions de compréhension</a></li>
+<li class="vc-l2"><a href="slavery-under-napoleon.html#383-grammaire-et-vocabulaire"><span class="vc-n">38.3</span> Grammaire et vocabulaire</a><ul class="vc-subs"><li class="vc-l3"><a href="slavery-under-napoleon.html#quant-a-and-lors-de">&#x27;Quant à&#x27; and &#x27;lors de&#x27;</a></li><li class="vc-l3"><a href="slavery-under-napoleon.html#ceux-ci">Ceux-ci</a></li></ul></li>
+<li class="vc-l2"><a href="slavery-under-napoleon.html#384-activites-ecrites"><span class="vc-n">38.4</span> Activités écrites</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="algerian-war-of-independence.html">Chapter 39: Algerian War of Independence</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="algerian-war-of-independence.html#391-grammaire-et-vocabulaire"><span class="vc-n">39.1</span> Grammaire et vocabulaire</a><ul class="vc-subs"><li class="vc-l3"><a href="algerian-war-of-independence.html#il-sagit-de">« Il s&#x27;agit de »</a></li><li class="vc-l3"><a href="algerian-war-of-independence.html#du">Dû</a></li></ul></li>
+<li class="vc-l2"><a href="algerian-war-of-independence.html#392-le-debut-des-hostilites"><span class="vc-n">39.2</span> Le début des hostilités</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="candide-ou-l-optimisme.html">Chapter 40: Candide, (ou l&#x27;Optimisme)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="candide-ou-l-optimisme.html#401-grammaire-et-vocabulaire"><span class="vc-n">40.1</span> Grammaire et vocabulaire</a></li>
+<li class="vc-l2"><a href="candide-ou-l-optimisme.html#402-rappel-limparfait"><span class="vc-n">40.2</span> Rappel: L&#x27;imparfait</a></li>
+<li class="vc-l2"><a href="candide-ou-l-optimisme.html#403-monsieur-etaitcar"><span class="vc-n">40.3</span> Monsieur était...car...</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="reveries-du-promeneur-solitaire.html">Chapter 41: Rêveries du promeneur solitaire</a></li>
+<li class="vc-ch"><details><summary><a href="boule-de-suif.html">Chapter 42: Boule de Suif</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="boule-de-suif.html#421-le-portrait-de-boule-de-suif"><span class="vc-n">42.1</span> Le Portrait de Boule de Suif</a></li>
+<li class="vc-l2"><a href="boule-de-suif.html#422-questions-de-comprehension"><span class="vc-n">42.2</span> Questions de compréhension</a></li>
+<li class="vc-l2"><a href="boule-de-suif.html#423-grammaire-et-vocabulaire"><span class="vc-n">42.3</span> Grammaire et vocabulaire</a><ul class="vc-subs"><li class="vc-l3"><a href="boule-de-suif.html#etre-au-passe-simple">Être au passé simple</a></li></ul></li>
+<li class="vc-l2"><a href="boule-de-suif.html#424-la-description-du-portrait"><span class="vc-n">42.4</span> La description du portrait</a></li>
+<li class="vc-l2"><a href="boule-de-suif.html#425-activites-ecrites"><span class="vc-n">42.5</span> Activités écrites</a></li>
+<li class="vc-l2"><a href="boule-de-suif.html#426-ouverture-sur-le-monde-litteraire"><span class="vc-n">42.6</span> Ouverture sur le monde littéraire</a><ul class="vc-subs"><li class="vc-l3"><a href="boule-de-suif.html#quest-ce-que-cest-que-la-nouvelle">Qu&#x27;est-ce que c&#x27;est que la nouvelle ?</a></li><li class="vc-l3"><a href="boule-de-suif.html#le-realisme">Le réalisme</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="les-fleurs-du-mal.html">Chapter 43: Les Fleurs du Mal</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="les-fleurs-du-mal.html#431-les-fleurs-du-mal"><span class="vc-n">43.1</span> Les Fleurs du Mal</a></li>
+<li class="vc-l2"><a href="les-fleurs-du-mal.html#432-lalbatros"><span class="vc-n">43.2</span> L&#x27;albatros</a></li>
+<li class="vc-l2"><a href="les-fleurs-du-mal.html#433-questions-de-comprehension"><span class="vc-n">43.3</span> Questions de compréhension</a></li>
+<li class="vc-l2"><a href="les-fleurs-du-mal.html#434-vocabulaire"><span class="vc-n">43.4</span> Vocabulaire</a><ul class="vc-subs"><li class="vc-l3"><a href="les-fleurs-du-mal.html#adjectifs">Adjectifs</a></li><li class="vc-l3"><a href="les-fleurs-du-mal.html#activite-ecrite">Activité écrite</a></li></ul></li>
+<li class="vc-l2"><a href="les-fleurs-du-mal.html#435-grammaire"><span class="vc-n">43.5</span> Grammaire</a><ul class="vc-subs"><li class="vc-l3"><a href="les-fleurs-du-mal.html#inversion-a-peine-les-ont-ils-deposes-sur-les-planches">Inversion: « À peine les ont-ils déposés sur les planches »</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="demain-des-l-aube.html">Chapter 44: Demain, dès l&#x27;aube</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="demain-des-l-aube.html#441-demain-des-laube"><span class="vc-n">44.1</span> Demain, dès l&#x27;aube</a></li>
+<li class="vc-l2"><a href="demain-des-l-aube.html#442-revision-quelques-mots-de-negation"><span class="vc-n">44.2</span> Revision: Quelques mots de négation</a><ul class="vc-subs"><li class="vc-l3"><a href="demain-des-l-aube.html#sans-rien-voir-au-dehors">« Sans rien voir au dehors »</a></li><li class="vc-l3"><a href="demain-des-l-aube.html#je-ne-regarderai-ni-lor-du-soir-qui-tombe-ni-les-voiles">«Je ne regarderai ni l&#x27;or du soir qui tombe, ni les voiles »</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="agreement-of-past-participles-with-avoir.html">Chapter 45: Agreement of past participles with avoir</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="agreement-of-past-participles-with-avoir.html#451-regle-de-grammaire"><span class="vc-n">45.1</span> Règle de grammaire</a></li>
+<li class="vc-l2"><a href="agreement-of-past-participles-with-avoir.html#452-rappel-les-pronoms-directs-et-indirects"><span class="vc-n">45.2</span> Rappel: les pronoms directs et indirects</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A course in French for English speakers: the sounds of French, nouns, articles and adjectives, verbs and their tenses, pronouns, sentence structure, vocabulary by topic, and lessons for beginners and intermediate learners.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>French, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/French" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-spanish/tenses.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix D. Tenses">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+Appendix D. Tenses
+</div>
+</div>
+</a>
+<a href="introduction.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Introduction">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Introduction
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js"></script>
+<script src="../../assets/viz.js"></script>
+<script src="../../assets/remote.js"></script>
+<script src="../../assets/scans.js"></script>
+<script src="../../assets/reader.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/slides.js"></script>
+<script src="../../assets/speak.js"></script>
+<script src="../../assets/quiz.js"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
