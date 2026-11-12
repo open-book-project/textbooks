@@ -1,0 +1,1039 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/amines.html">
+<link rel="prev" href="carboxylic-acids-and-derivatives.html">
+<link rel="next" href="spectroscopy.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>13. Amines - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#131-structure-and-classification" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+13. Amines
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="amines.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#131-structure-and-classification" class="md-nav__link">
+<span class="md-ellipsis">
+13.1 Structure and classification
+</span>
+</a>
+<nav class="md-nav" aria-label="13.1 Structure and classification">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#nitrogen-inversion" class="md-nav__link">
+<span class="md-ellipsis">
+Nitrogen inversion
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#132-physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+13.2 Physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#133-basicity" class="md-nav__link">
+<span class="md-ellipsis">
+13.3 Basicity
+</span>
+</a>
+<nav class="md-nav" aria-label="13.3 Basicity">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alkylamines" class="md-nav__link">
+<span class="md-ellipsis">
+Alkylamines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#arylamines" class="md-nav__link">
+<span class="md-ellipsis">
+Arylamines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#other-nitrogen-compounds" class="md-nav__link">
+<span class="md-ellipsis">
+Other nitrogen compounds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ammonium-salts-and-extraction" class="md-nav__link">
+<span class="md-ellipsis">
+Ammonium salts and extraction
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#134-making-amines" class="md-nav__link">
+<span class="md-ellipsis">
+13.4 Making amines
+</span>
+</a>
+<nav class="md-nav" aria-label="13.4 Making amines">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alkylation-of-ammonia-and-amines" class="md-nav__link">
+<span class="md-ellipsis">
+Alkylation of ammonia and amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reduction-methods" class="md-nav__link">
+<span class="md-ellipsis">
+Reduction methods
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reductive-amination" class="md-nav__link">
+<span class="md-ellipsis">
+Reductive amination
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#135-reactions-of-amines" class="md-nav__link">
+<span class="md-ellipsis">
+13.5 Reactions of amines
+</span>
+</a>
+<nav class="md-nav" aria-label="13.5 Reactions of amines">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acylation-making-amides" class="md-nav__link">
+<span class="md-ellipsis">
+Acylation: making amides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines-as-bases-in-elimination" class="md-nav__link">
+<span class="md-ellipsis">
+Amines as bases in elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#diazonium-salts-and-azo-dyes" class="md-nav__link">
+<span class="md-ellipsis">
+Diazonium salts and azo dyes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines-in-biology-and-medicine" class="md-nav__link">
+<span class="md-ellipsis">
+Amines in biology and medicine
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#136-summary" class="md-nav__link">
+<span class="md-ellipsis">
+13.6 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#137-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+13.7 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#138-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+13.8 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#131-structure-and-classification" class="md-nav__link">
+<span class="md-ellipsis">
+13.1 Structure and classification
+</span>
+</a>
+<nav class="md-nav" aria-label="13.1 Structure and classification">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#nitrogen-inversion" class="md-nav__link">
+<span class="md-ellipsis">
+Nitrogen inversion
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#132-physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+13.2 Physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#133-basicity" class="md-nav__link">
+<span class="md-ellipsis">
+13.3 Basicity
+</span>
+</a>
+<nav class="md-nav" aria-label="13.3 Basicity">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alkylamines" class="md-nav__link">
+<span class="md-ellipsis">
+Alkylamines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#arylamines" class="md-nav__link">
+<span class="md-ellipsis">
+Arylamines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#other-nitrogen-compounds" class="md-nav__link">
+<span class="md-ellipsis">
+Other nitrogen compounds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ammonium-salts-and-extraction" class="md-nav__link">
+<span class="md-ellipsis">
+Ammonium salts and extraction
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#134-making-amines" class="md-nav__link">
+<span class="md-ellipsis">
+13.4 Making amines
+</span>
+</a>
+<nav class="md-nav" aria-label="13.4 Making amines">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alkylation-of-ammonia-and-amines" class="md-nav__link">
+<span class="md-ellipsis">
+Alkylation of ammonia and amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reduction-methods" class="md-nav__link">
+<span class="md-ellipsis">
+Reduction methods
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reductive-amination" class="md-nav__link">
+<span class="md-ellipsis">
+Reductive amination
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#135-reactions-of-amines" class="md-nav__link">
+<span class="md-ellipsis">
+13.5 Reactions of amines
+</span>
+</a>
+<nav class="md-nav" aria-label="13.5 Reactions of amines">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acylation-making-amides" class="md-nav__link">
+<span class="md-ellipsis">
+Acylation: making amides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines-as-bases-in-elimination" class="md-nav__link">
+<span class="md-ellipsis">
+Amines as bases in elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#diazonium-salts-and-azo-dyes" class="md-nav__link">
+<span class="md-ellipsis">
+Diazonium salts and azo dyes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines-in-biology-and-medicine" class="md-nav__link">
+<span class="md-ellipsis">
+Amines in biology and medicine
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#136-summary" class="md-nav__link">
+<span class="md-ellipsis">
+13.6 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#137-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+13.7 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#138-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+13.8 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-13-amines">Chapter 13: Amines<a class="headerlink" href="#chapter-13-amines" title="Permanent link">&para;</a></h1>
+<p><em>Organic bases and nitrogen nucleophiles</em></p>
+<p>Amines are organic derivatives of ammonia in which one or more hydrogens have been replaced by carbon groups. They are the main organic bases, and they are everywhere in biology and medicine: amino acids, the bases of DNA, neurotransmitters such as dopamine and serotonin, and a large share of all drugs contain amine nitrogen. The lone pair on nitrogen explains almost everything about amines: it makes them bases, it makes them nucleophiles, and how available it is decides how strongly they do both. This chapter covers the structure, properties and basicity of amines, how they are made, and their main reactions.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>classify amines and name simple examples;</li>
+<li>describe the shape of amines and explain why most amines with a nitrogen stereocentre cannot be resolved;</li>
+<li>explain the physical properties of amines in terms of hydrogen bonding;</li>
+<li>compare the basicity of alkylamines, aniline, pyridine and amides using pKa values of conjugate acids, and explain the differences;</li>
+<li>use the basicity of amines to separate them from neutral compounds;</li>
+<li>give methods of making amines, including reduction of nitriles, amides and nitro compounds, and reductive amination;</li>
+<li>predict the products of alkylation and acylation of amines, and describe the formation of diazonium salts and azo dyes.</li>
+</ul>
+</div>
+<h2 id="131-structure-and-classification">13.1 Structure and classification<a class="headerlink" href="#131-structure-and-classification" title="Permanent link">&para;</a></h2>
+<p>Amines are classified by the number of carbon groups bonded to the nitrogen (Section 2.1): <strong>primary</strong> (RNH₂), <strong>secondary</strong> (R₂NH) and <strong>tertiary</strong> (R₃N). A nitrogen with four carbon groups carries a positive charge and is a <strong>quaternary ammonium ion</strong>, R₄N⁺. Amines in which the nitrogen is part of a ring, such as pyrrolidine and piperidine, are common in natural products; when the ring is aromatic, as in pyridine, the compound is an aromatic heterocycle (Section 8.2). An amine with nitrogen bonded directly to a benzene ring is an <strong>arylamine</strong>, the simplest being aniline (phenylamine), C₆H₅NH₂.</p>
+<figure class="fig fig-diagram">
+<img src="img/amine-classes.svg" alt="The classes of amines. In primary, secondary and tertiary amines the nitrogen is pyramidal, with a lone pair occupying the fourth position of a tetrahedron. In a quaternary ammonium ion the nitrogen has four carbon groups and a positive charge." loading="lazy" width="790" height="220">
+<figcaption><strong>Figure 13.1 Classes of amines.</strong> The classes of amines. In primary, secondary and tertiary amines the nitrogen is pyramidal, with a lone pair occupying the fourth position of a tetrahedron. In a quaternary ammonium ion the nitrogen has four carbon groups and a positive charge.</figcaption>
+</figure>
+<p>The nitrogen of an amine is sp³ hybridised. Its three bonds and its lone pair point roughly to the corners of a tetrahedron, so the molecule is <strong>trigonal pyramidal</strong>, with C–N–C angles close to 108°.</p>
+<h3 id="nitrogen-inversion">Nitrogen inversion<a class="headerlink" href="#nitrogen-inversion" title="Permanent link">&para;</a></h3>
+<p>A tertiary amine with three different groups on nitrogen, such as <em>N</em>-ethyl-<em>N</em>-methylpropan-1-amine, has four different "groups" around nitrogen if the lone pair is counted, and it is chiral. Yet such amines cannot be separated into enantiomers. The reason is <strong>nitrogen inversion</strong>: the pyramid turns inside out like an umbrella in the wind, passing through a planar transition state, with a barrier of only about 25 kJ mol⁻¹. At room temperature this happens many millions of times a second, so the two enantiomers interconvert far too fast to be isolated. Quaternary ammonium ions, which have no lone pair, cannot invert, and those with four different groups can be resolved.</p>
+<h2 id="132-physical-properties">13.2 Physical properties<a class="headerlink" href="#132-physical-properties" title="Permanent link">&para;</a></h2>
+<p>Primary and secondary amines can form hydrogen bonds to one another (N–H···N), but these are weaker than O–H···O hydrogen bonds because nitrogen is less electronegative than oxygen. Amines therefore boil higher than alkanes of similar mass but lower than alcohols. Propan-1-amine boils at 48 °C, between butane (−1 °C) and propan-1-ol (97 °C). Tertiary amines have no N–H bond and boil lower still: trimethylamine boils at about 3 °C.</p>
+<p>All amines can accept hydrogen bonds from water through the nitrogen lone pair, so small amines are very soluble in water. Low-molecular-mass amines have sharp, fishy smells; the odour of decaying fish comes partly from trimethylamine, and the aptly named putrescine (butane-1,4-diamine) and cadaverine (pentane-1,5-diamine) are formed when proteins decay.</p>
+<h2 id="133-basicity">13.3 Basicity<a class="headerlink" href="#133-basicity" title="Permanent link">&para;</a></h2>
+<p>The nitrogen lone pair can take a proton, so amines are bases:</p>
+<div class="arithmatex">\[
+\mathrm{RNH_2 + H_2O \rightleftharpoons RNH_3^+ + OH^-}
+\]</div>
+<p>As in Section 4.5, the strength of an amine as a base is expressed by the pKa of its conjugate acid, the ammonium ion (pKaH). The higher the pKaH, the stronger the base.</p>
+<table>
+<thead>
+<tr>
+<th>Amine</th>
+<th>Conjugate acid</th>
+<th style="text-align: center;">pKa of conjugate acid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ammonia, NH₃</td>
+<td>NH₄⁺</td>
+<td style="text-align: center;">9.25</td>
+</tr>
+<tr>
+<td>methanamine, CH₃NH₂</td>
+<td>CH₃NH₃⁺</td>
+<td style="text-align: center;">10.6</td>
+</tr>
+<tr>
+<td><em>N</em>-methylmethanamine, (CH₃)₂NH</td>
+<td>(CH₃)₂NH₂⁺</td>
+<td style="text-align: center;">10.7</td>
+</tr>
+<tr>
+<td><em>N</em>,<em>N</em>-dimethylmethanamine, (CH₃)₃N</td>
+<td>(CH₃)₃NH⁺</td>
+<td style="text-align: center;">9.8</td>
+</tr>
+<tr>
+<td>pyridine, C₅H₅N</td>
+<td>C₅H₅NH⁺</td>
+<td style="text-align: center;">5.2</td>
+</tr>
+<tr>
+<td>aniline, C₆H₅NH₂</td>
+<td>C₆H₅NH₃⁺</td>
+<td style="text-align: center;">4.6</td>
+</tr>
+<tr>
+<td>4-nitroaniline</td>
+<td>O₂NC₆H₄NH₃⁺</td>
+<td style="text-align: center;">1.0</td>
+</tr>
+<tr>
+<td>ethanamide, CH₃CONH₂</td>
+<td>(protonated on O)</td>
+<td style="text-align: center;">about −0.5</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 13.1. Basicity of amines and related compounds.</em></p>
+<h3 id="alkylamines">Alkylamines<a class="headerlink" href="#alkylamines" title="Permanent link">&para;</a></h3>
+<p>Simple alkylamines are slightly stronger bases than ammonia, because alkyl groups donate electron density to the nitrogen and stabilise the positive charge of the ammonium ion. In water, however, tertiary amines are not the strongest: their ammonium ions, R₃NH⁺, have only one N–H to hydrogen bond to water and are less well solvated than R₂NH₂⁺ and RNH₃⁺. The balance between the inductive effect and solvation gives the observed order in water: secondary ≳ primary &gt; tertiary &gt; ammonia.</p>
+<h3 id="arylamines">Arylamines<a class="headerlink" href="#arylamines" title="Permanent link">&para;</a></h3>
+<p>Aniline is about a million times weaker as a base than an alkylamine of similar size (pKaH 4.6 against 10.6 for cyclohexanamine). Its nitrogen lone pair is delocalised into the benzene ring by resonance, so it is less available to take a proton; and protonating it would destroy this stabilising resonance, which costs energy. The nitrogen of aniline is also attached to an sp² carbon, which is more electronegative than an sp³ carbon.</p>
+<figure class="fig fig-diagram">
+<img src="img/aniline-resonance.svg" alt="Resonance in aniline. A lone pair on nitrogen moves into the ring, and the ring π electrons are pushed along, placing negative charge at the ortho and para carbons. The delocalisation stabilises the free amine and makes the lone pair less available, so aniline is a much weaker base than cyclohexanamine." loading="lazy" width="790" height="210">
+<figcaption><strong>Figure 13.2 Why aniline is a weak base.</strong> Resonance in aniline. A lone pair on nitrogen moves into the ring, and the ring π electrons are pushed along, placing negative charge at the ortho and para carbons. The delocalisation stabilises the free amine and makes the lone pair less available, so aniline is a much weaker base than cyclohexanamine.</figcaption>
+</figure>
+<p>Substituents on the ring change the basicity of arylamines as you would expect. Electron-withdrawing groups, especially those <em>para</em> or <em>ortho</em> to the amino group that can withdraw electrons by resonance (such as –NO₂), weaken the base further: 4-nitroaniline (pKaH 1.0) is about four thousand times weaker than aniline. Electron-donating groups such as –OCH₃ make arylamines slightly more basic.</p>
+<h3 id="other-nitrogen-compounds">Other nitrogen compounds<a class="headerlink" href="#other-nitrogen-compounds" title="Permanent link">&para;</a></h3>
+<p>In <strong>pyridine</strong> the lone pair occupies an sp² orbital (33% s character), which holds it closer to the nucleus than an sp³ orbital does, so pyridine is a weaker base than an alkylamine (pKaH 5.2). In <strong>pyrrole</strong> the lone pair is part of the aromatic sextet, and pyrrole is hardly basic. <strong>Amides</strong> are not basic at all under ordinary conditions, because the lone pair is delocalised onto the carbonyl oxygen (Section 12.6).</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>The basicity of a nitrogen compound depends on how available its lone pair is. A lone pair that is delocalised (anilines, amides, pyrrole) or held in an orbital with more s character (pyridine, nitriles) is less basic. Alkyl groups make the lone pair slightly more available.</p>
+</div>
+<h3 id="ammonium-salts-and-extraction">Ammonium salts and extraction<a class="headerlink" href="#ammonium-salts-and-extraction" title="Permanent link">&para;</a></h3>
+<p>Amines react with acids to give <strong>ammonium salts</strong>: CH₃NH₂ + HCl → CH₃NH₃⁺Cl⁻. These are ionic, crystalline, odourless and much more soluble in water than the free amines. Many amine drugs are sold as their hydrochloride salts for this reason. Adding a strong base (NaOH) to an ammonium salt releases the free amine.</p>
+<p>The same chemistry allows an amine to be separated from neutral compounds by <strong>acid–base extraction</strong>: shaking an ether solution of the mixture with dilute hydrochloric acid moves the amine into the aqueous layer as its salt; making that layer basic with sodium hydroxide releases the amine, which can then be extracted back into fresh ether. Combined with the extraction of acids by sodium hydrogencarbonate (Section 4.6), this lets acids, bases and neutral compounds be separated from one mixture.</p>
+<h2 id="134-making-amines">13.4 Making amines<a class="headerlink" href="#134-making-amines" title="Permanent link">&para;</a></h2>
+<h3 id="alkylation-of-ammonia-and-amines">Alkylation of ammonia and amines<a class="headerlink" href="#alkylation-of-ammonia-and-amines" title="Permanent link">&para;</a></h3>
+<p>Ammonia and amines are nucleophiles and react with haloalkanes by SN2. The difficulty is that the product amine is also a nucleophile, often a better one than the starting material, so it reacts further:</p>
+<div class="arithmatex">\[
+\mathrm{NH_3 \xrightarrow{RX} RNH_2 \xrightarrow{RX} R_2NH \xrightarrow{RX} R_3N \xrightarrow{RX} R_4N^+X^-}
+\]</div>
+<p>A mixture of products results. A large excess of ammonia favours the primary amine, and an excess of haloalkane drives the reaction to the quaternary ammonium salt, but direct alkylation is rarely a clean way of making primary or secondary amines.</p>
+<h3 id="reduction-methods">Reduction methods<a class="headerlink" href="#reduction-methods" title="Permanent link">&para;</a></h3>
+<p>Cleaner methods make the C–N bond first in a compound that cannot over-react, and then reduce it:</p>
+<ul>
+<li><strong>Nitriles</strong> (from haloalkanes and cyanide) are reduced by LiAlH₄ or by H₂ and a catalyst to primary amines, RCH₂NH₂, with one more carbon than the haloalkane (Section 12.7).</li>
+<li><strong>Amides</strong> (from acyl chlorides and amines) are reduced by LiAlH₄ to amines of any class: RCONHR′ → RCH₂NHR′ (Section 12.6).</li>
+<li><strong>Nitro compounds</strong>, especially nitroarenes from the nitration of benzene (Section 8.4), are reduced to primary amines with tin (or iron) and hydrochloric acid, followed by base, or by catalytic hydrogenation. This is the standard route to aniline and its derivatives: C₆H₅NO₂ → C₆H₅NH₂.</li>
+</ul>
+<h3 id="reductive-amination">Reductive amination<a class="headerlink" href="#reductive-amination" title="Permanent link">&para;</a></h3>
+<p>An aldehyde or ketone reacts with ammonia or an amine to give an imine (Section 11.5), which can be reduced to an amine in the same pot by hydrogen and a catalyst or by a selective hydride reagent (such as sodium cyanotrihydridoborate, NaBH₃CN, which reduces the imine faster than the carbonyl compound). Propanone and ammonia give propan-2-amine; propanone and methanamine give <em>N</em>-methylpropan-2-amine. <strong>Reductive amination</strong> is one of the most widely used ways of making amines, in the laboratory and in living cells, where amino acids are made from keto acids in a related way.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 13.1: Choosing a route to an amine</p>
+<p>Suggest a synthesis of (a) pentan-1-amine from 1-bromobutane; (b) <em>N</em>-ethylcyclohexanamine from cyclohexanone.</p>
+<p>(a) The amine has one more carbon than the bromide, so go through the nitrile: CH₃CH₂CH₂CH₂Br + NaCN (SN2) → CH₃CH₂CH₂CH₂CN; then LiAlH₄, then water → CH₃CH₂CH₂CH₂CH₂NH₂.</p>
+<p>(b) Reductive amination: cyclohexanone + ethanamine forms the imine, which is reduced (H₂ with a nickel catalyst, or NaBH₃CN) to C₆H₁₁NHCH₂CH₃.</p>
+</div>
+<h2 id="135-reactions-of-amines">13.5 Reactions of amines<a class="headerlink" href="#135-reactions-of-amines" title="Permanent link">&para;</a></h2>
+<h3 id="acylation-making-amides">Acylation: making amides<a class="headerlink" href="#acylation-making-amides" title="Permanent link">&para;</a></h3>
+<p>Primary and secondary amines react rapidly with acyl chlorides and acid anhydrides to give amides (Section 12.4). A second equivalent of the amine, or another base such as pyridine, takes up the acid produced:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COCl + 2\,CH_3NH_2 \rightarrow CH_3CONHCH_3 + CH_3NH_3^+Cl^-}
+\]</div>
+<p>The product amide is not nucleophilic (its lone pair is delocalised), so, unlike alkylation, acylation stops cleanly after one step. Tertiary amines have no N–H and cannot form stable amides.</p>
+<p>Acylation is also used to <strong>moderate</strong> the reactivity of aniline in electrophilic aromatic substitution (Section 8.5). The amide group –NHCOCH₃ is a milder activator than –NH₂, so ethanoylating the nitrogen first allows a single, controlled substitution on the ring. Hydrolysis of the amide afterwards gives back the amino group. Paracetamol is itself an amide of this kind, <em>N</em>-(4-hydroxyphenyl)ethanamide.</p>
+<h3 id="amines-as-bases-in-elimination">Amines as bases in elimination<a class="headerlink" href="#amines-as-bases-in-elimination" title="Permanent link">&para;</a></h3>
+<p>Bulky tertiary amines are useful non-nucleophilic bases. When a quaternary ammonium hydroxide is heated, it undergoes an E2 elimination (the <strong>Hofmann elimination</strong>), and because the leaving group, a neutral amine, is large, the less substituted alkene (the Hofmann product of Section 9.4) is formed.</p>
+<h3 id="diazonium-salts-and-azo-dyes">Diazonium salts and azo dyes<a class="headerlink" href="#diazonium-salts-and-azo-dyes" title="Permanent link">&para;</a></h3>
+<p>Primary arylamines react with <strong>nitrous acid</strong>, HNO₂ (made in the reaction mixture from sodium nitrite and dilute hydrochloric acid), at 0 to 5 °C to give <strong>arenediazonium salts</strong>, Ar–N₂⁺ Cl⁻. For example, aniline gives benzenediazonium chloride.</p>
+<p>Arenediazonium ions are reactive but, at low temperature in solution, stable enough to be used straight away. Their nitrogen leaves readily as N₂ gas, an exceptionally good leaving group, so the N₂⁺ group can be replaced by many other groups (OH on warming with water, Cl, Br or CN with copper(I) salts, I with potassium iodide), giving access to substituted benzenes that cannot be made by direct electrophilic substitution.</p>
+<p>Diazonium ions are also weak electrophiles. They attack strongly activated aromatic rings, such as phenoxide ions and arylamines, usually at the <em>para</em> position, in an electrophilic substitution called <strong>azo coupling</strong>. The products contain an –N=N– (azo) group linking two aromatic rings. The extended conjugated system absorbs visible light, so azo compounds are intensely coloured. They are an important class of synthetic dyes, and some are acid–base indicators: methyl orange is an azo dye.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: diazonium salts</p>
+<p>Diazonium salts are made only in cold solution and used immediately. In the dry, solid state many are shock-sensitive and can decompose violently. They are never isolated or stored in teaching laboratories.</p>
+</div>
+<h3 id="amines-in-biology-and-medicine">Amines in biology and medicine<a class="headerlink" href="#amines-in-biology-and-medicine" title="Permanent link">&para;</a></h3>
+<p>Many important biological molecules are amines. Adrenaline (epinephrine), dopamine and serotonin are neurotransmitters; histamine is involved in allergic responses; the amino acids that make up proteins all contain amino groups (Chapter 15). Plant <strong>alkaloids</strong>, nitrogen-containing bases such as caffeine, nicotine, quinine and morphine, have strong effects on the body, and many medicines are based on their structures. Because most of these molecules are bases, their charge, and therefore their solubility and ability to cross cell membranes, depends on pH, a central consideration in the design of drugs.</p>
+<h2 id="136-summary">13.6 Summary<a class="headerlink" href="#136-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Amines are primary, secondary or tertiary according to the number of carbon groups on N; R₄N⁺ is a quaternary ammonium ion.</li>
+<li>Amines are pyramidal and invert rapidly at nitrogen, so chiral amines cannot usually be resolved.</li>
+<li>N–H···N hydrogen bonds are weaker than O–H···O, so amines boil lower than alcohols; small amines are water-soluble.</li>
+<li>Alkylamines are moderately strong bases (pKaH about 10 to 11). Aniline (4.6), pyridine (5.2) and especially amides are much weaker, because their lone pairs are delocalised or in orbitals with more s character.</li>
+<li>Amines form water-soluble ammonium salts with acids, used in extraction and in formulating drugs.</li>
+<li>Amines are made by reducing nitriles, amides and nitro compounds and by reductive amination; direct alkylation gives mixtures.</li>
+<li>Amines are acylated to amides cleanly. Primary arylamines give diazonium salts with nitrous acid at 0 to 5 °C, which couple with phenols and arylamines to give azo dyes.</li>
+</ul>
+</div>
+<h2 id="137-exercises">13.7 Exercises<a class="headerlink" href="#137-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Classify each as a primary, secondary or tertiary amine or a quaternary ammonium salt, and name it: (a) CH₃CH₂CH₂NH₂; (b) (CH₃CH₂)₂NH; (c) (CH₃)₃CNH₂; (d) (CH₃)₄N⁺ I⁻; (e) C₆H₅N(CH₃)₂.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Primary: propan-1-amine. (b) Secondary: <em>N</em>-ethylethanamine (diethylamine). (c) Primary (one carbon group on N, even though that carbon is tertiary): 2-methylpropan-2-amine. (d) Quaternary ammonium salt: tetramethylammonium iodide. (e) Tertiary: <em>N</em>,<em>N</em>-dimethylaniline.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Explain why ethanamine (bp 17 °C) boils higher than propane (bp −42 °C) but lower than ethanol (bp 78 °C).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethanamine molecules form N–H···N hydrogen bonds, which propane cannot form; propane has only dispersion forces. Nitrogen is less electronegative than oxygen, so the N–H bond is less polar and N–H···N hydrogen bonds are weaker than the O–H···O hydrogen bonds of ethanol. So ethanamine lies between the two.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Arrange in order of increasing basicity and explain: aniline, ethanamide, cyclohexanamine, 4-nitroaniline, ammonia.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethanamide (about −0.5) &lt; 4-nitroaniline (1.0) &lt; aniline (4.6) &lt; ammonia (9.25) &lt; cyclohexanamine (10.6). The amide lone pair is delocalised onto the carbonyl oxygen. In aniline it is delocalised into the ring, and in 4-nitroaniline further still onto the nitro group. Ammonia's lone pair is localised. Cyclohexanamine has a localised lone pair and an electron-donating alkyl group.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>A mixture of benzoic acid, aniline and naphthalene is dissolved in ethoxyethane. Describe how to separate all three by extraction.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(1) Shake with aqueous NaHCO₃: benzoic acid is converted into sodium benzoate and moves into the aqueous layer. Separate; acidify the aqueous layer to recover benzoic acid. (2) Shake the ether layer with dilute HCl: aniline is protonated to anilinium chloride and moves into the aqueous layer. Separate; make this aqueous layer basic with NaOH to release aniline, and extract it into fresh ether. (3) Naphthalene, a neutral compound, remains in the original ether layer; evaporate the solvent to recover it.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Why does reaction of ammonia with bromoethane give a mixture of products, while reaction of ammonia with ethanoyl chloride gives only ethanamide?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethanamine, the first product of alkylation, is itself a nucleophile, slightly stronger than ammonia, so it competes for the bromoethane and is alkylated further to diethylamine, triethylamine and the tetraethylammonium salt. Ethanamide, the product of acylation, has its nitrogen lone pair delocalised onto the carbonyl oxygen, so it is not nucleophilic and does not react further.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Give a synthesis of 4-methylaniline from methylbenzene, and of <em>N</em>-propylaniline from aniline without using alkylation.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>4-Methylaniline: nitrate methylbenzene (conc. HNO₃, conc. H₂SO₄, controlled temperature), separate the <em>para</em> isomer from the <em>ortho</em>, then reduce the nitro group with tin and HCl (then NaOH) or H₂ and a catalyst.</p>
+<p><em>N</em>-Propylaniline: acylate aniline with propanoyl chloride to give <em>N</em>-phenylpropanamide, then reduce the amide with LiAlH₄. (Reductive amination of propanal with aniline is an alternative.)</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>What is formed when aniline is treated with NaNO₂ and dilute HCl at 0 to 5 °C, and the product is then added to an alkaline solution of phenol? Why must the first step be kept cold?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The first step gives benzenediazonium chloride. In alkaline solution phenol is present as phenoxide, a strongly activated ring; the diazonium ion attacks it at the <em>para</em> position (azo coupling), giving 4-(phenyldiazenyl)phenol, an orange-yellow azo dye. The diazonium salt must be kept cold because it decomposes on warming, losing N₂ (and in water forming phenol); solid diazonium salts can decompose explosively.</p>
+</details>
+<h2 id="138-quiz">13.8 Quiz<a class="headerlink" href="#138-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="f1ce5cf07ed2">
+<p class="pk-quiz-title">Check your understanding of amines</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;primary amine&quot;,&quot;secondary amine&quot;,&quot;tertiary amine&quot;,&quot;quaternary ammonium ion&quot;],&quot;answer&quot;:&quot;secondary amine&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">(CH₃)₂NH is a</p>
+<ol class="pk-q-opts" type="A"><li>primary amine</li><li>secondary amine</li><li>tertiary amine</li><li>quaternary ammonium ion</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>secondary amine</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;aniline&quot;,&quot;ethanamide&quot;,&quot;methanamine&quot;,&quot;pyridine&quot;],&quot;answer&quot;:&quot;methanamine&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Which is the strongest base?</p>
+<ol class="pk-q-opts" type="A"><li>aniline</li><li>ethanamide</li><li>methanamine</li><li>pyridine</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>methanamine</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;its nitrogen is sp3&quot;,&quot;its lone pair is delocalised into the ring&quot;,&quot;it cannot form hydrogen bonds&quot;,&quot;it has a larger molar mass&quot;],&quot;answer&quot;:&quot;its lone pair is delocalised into the ring&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Aniline is a weaker base than cyclohexanamine because</p>
+<ol class="pk-q-opts" type="A"><li>its nitrogen is sp3</li><li>its lone pair is delocalised into the ring</li><li>it cannot form hydrogen bonds</li><li>it has a larger molar mass</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>its lone pair is delocalised into the ring</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;hydrogen bonding&quot;,&quot;nitrogen inversion&quot;,&quot;resonance&quot;,&quot;tautomerism&quot;],&quot;answer&quot;:&quot;nitrogen inversion&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Chiral tertiary amines usually cannot be resolved because of</p>
+<ol class="pk-q-opts" type="A"><li>hydrogen bonding</li><li>nitrogen inversion</li><li>resonance</li><li>tautomerism</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>nitrogen inversion</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;Sn and HCl, then NaOH&quot;,&quot;NaBH₄&quot;,&quot;conc. H₂SO₄&quot;,&quot;Br₂ and FeBr₃&quot;],&quot;answer&quot;:&quot;Sn and HCl, then NaOH&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which reaction converts nitrobenzene into aniline?</p>
+<ol class="pk-q-opts" type="A"><li>Sn and HCl, then NaOH</li><li>NaBH₄</li><li>conc. H₂SO₄</li><li>Br₂ and FeBr₃</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>Sn and HCl, then NaOH</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;propan-1-amine&quot;,&quot;propan-2-amine&quot;,&quot;propanamide&quot;,&quot;propanenitrile&quot;],&quot;answer&quot;:&quot;propan-2-amine&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Reductive amination of propanone with ammonia gives</p>
+<ol class="pk-q-opts" type="A"><li>propan-1-amine</li><li>propan-2-amine</li><li>propanamide</li><li>propanenitrile</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>propan-2-amine</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;-N=N-&quot;,&quot;N=N&quot;,&quot;azo&quot;,&quot;azo group&quot;]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">What functional group links the two rings of an azo dye?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>-N=N- / N=N / azo / azo group</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="carboxylic-acids-and-derivatives.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 12. Carboxylic Acids and Their Derivatives">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</div>
+</div>
+</a>
+<a href="spectroscopy.html" class="md-footer__link md-footer__link--next" aria-label="Next: 14. Spectroscopy: IR, NMR and Mass Spectrometry">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

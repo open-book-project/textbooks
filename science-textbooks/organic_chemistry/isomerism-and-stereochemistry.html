@@ -1,0 +1,1004 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/isomerism-and-stereochemistry.html">
+<link rel="prev" href="functional-groups-and-nomenclature.html">
+<link rel="next" href="acids-and-bases.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>3. Isomerism and Stereochemistry - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#31-kinds-of-isomerism" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#31-kinds-of-isomerism" class="md-nav__link">
+<span class="md-ellipsis">
+3.1 Kinds of isomerism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#32-ez-isomerism-in-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+3.2 E/Z isomerism in alkenes
+</span>
+</a>
+<nav class="md-nav" aria-label="3.2 E/Z isomerism in alkenes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-cip-priority-rules" class="md-nav__link">
+<span class="md-ellipsis">
+The CIP priority rules
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#33-chirality" class="md-nav__link">
+<span class="md-ellipsis">
+3.3 Chirality
+</span>
+</a>
+<nav class="md-nav" aria-label="3.3 Chirality">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#symmetry-a-quick-test" class="md-nav__link">
+<span class="md-ellipsis">
+Symmetry: a quick test
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#34-naming-stereocentres-r-and-s" class="md-nav__link">
+<span class="md-ellipsis">
+3.4 Naming stereocentres: R and S
+</span>
+</a>
+<nav class="md-nav" aria-label="3.4 Naming stereocentres: R and S">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#short-cuts-for-drawings" class="md-nav__link">
+<span class="md-ellipsis">
+Short cuts for drawings
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#35-properties-of-enantiomers-optical-activity" class="md-nav__link">
+<span class="md-ellipsis">
+3.5 Properties of enantiomers: optical activity
+</span>
+</a>
+<nav class="md-nav" aria-label="3.5 Properties of enantiomers: optical activity">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-chirality-matters" class="md-nav__link">
+<span class="md-ellipsis">
+Why chirality matters
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#36-molecules-with-more-than-one-stereocentre" class="md-nav__link">
+<span class="md-ellipsis">
+3.6 Molecules with more than one stereocentre
+</span>
+</a>
+<nav class="md-nav" aria-label="3.6 Molecules with more than one stereocentre">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#fischer-projections" class="md-nav__link">
+<span class="md-ellipsis">
+Fischer projections
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#meso-compounds" class="md-nav__link">
+<span class="md-ellipsis">
+Meso compounds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#separating-enantiomers" class="md-nav__link">
+<span class="md-ellipsis">
+Separating enantiomers
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#37-summary" class="md-nav__link">
+<span class="md-ellipsis">
+3.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#38-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+3.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#39-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+3.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#31-kinds-of-isomerism" class="md-nav__link">
+<span class="md-ellipsis">
+3.1 Kinds of isomerism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#32-ez-isomerism-in-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+3.2 E/Z isomerism in alkenes
+</span>
+</a>
+<nav class="md-nav" aria-label="3.2 E/Z isomerism in alkenes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-cip-priority-rules" class="md-nav__link">
+<span class="md-ellipsis">
+The CIP priority rules
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#33-chirality" class="md-nav__link">
+<span class="md-ellipsis">
+3.3 Chirality
+</span>
+</a>
+<nav class="md-nav" aria-label="3.3 Chirality">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#symmetry-a-quick-test" class="md-nav__link">
+<span class="md-ellipsis">
+Symmetry: a quick test
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#34-naming-stereocentres-r-and-s" class="md-nav__link">
+<span class="md-ellipsis">
+3.4 Naming stereocentres: R and S
+</span>
+</a>
+<nav class="md-nav" aria-label="3.4 Naming stereocentres: R and S">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#short-cuts-for-drawings" class="md-nav__link">
+<span class="md-ellipsis">
+Short cuts for drawings
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#35-properties-of-enantiomers-optical-activity" class="md-nav__link">
+<span class="md-ellipsis">
+3.5 Properties of enantiomers: optical activity
+</span>
+</a>
+<nav class="md-nav" aria-label="3.5 Properties of enantiomers: optical activity">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-chirality-matters" class="md-nav__link">
+<span class="md-ellipsis">
+Why chirality matters
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#36-molecules-with-more-than-one-stereocentre" class="md-nav__link">
+<span class="md-ellipsis">
+3.6 Molecules with more than one stereocentre
+</span>
+</a>
+<nav class="md-nav" aria-label="3.6 Molecules with more than one stereocentre">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#fischer-projections" class="md-nav__link">
+<span class="md-ellipsis">
+Fischer projections
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#meso-compounds" class="md-nav__link">
+<span class="md-ellipsis">
+Meso compounds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#separating-enantiomers" class="md-nav__link">
+<span class="md-ellipsis">
+Separating enantiomers
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#37-summary" class="md-nav__link">
+<span class="md-ellipsis">
+3.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#38-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+3.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#39-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+3.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-3-isomerism-and-stereochemistry">Chapter 3: Isomerism and Stereochemistry<a class="headerlink" href="#chapter-3-isomerism-and-stereochemistry" title="Permanent link">&para;</a></h1>
+<p><em>Same formula, different molecules</em></p>
+<p>Two compounds can have exactly the same molecular formula and still be different substances, with different boiling points, smells, reactions and effects on the body. Such compounds are <strong>isomers</strong>. Some isomers differ in which atoms are bonded to which; others have the same connections but a different arrangement in space. The second kind, <strong>stereoisomers</strong>, can be as subtle as a left hand and a right hand, yet living things tell them apart with great precision. This chapter sorts the kinds of isomerism, shows how to recognise chiral molecules, and teaches the Cahn–Ingold–Prelog rules for naming alkene isomers (E/Z) and stereocentres (R/S).</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>classify a pair of isomers as constitutional isomers, enantiomers or diastereomers;</li>
+<li>explain why some alkenes have E/Z isomers and assign E or Z using the CIP priority rules;</li>
+<li>recognise stereocentres and chiral molecules, and use symmetry to spot achiral ones;</li>
+<li>assign R or S to a stereocentre drawn with wedges and hashes or as a Fischer projection;</li>
+<li>work out the maximum number of stereoisomers and recognise meso compounds;</li>
+<li>describe optical activity and racemic mixtures, and explain why chirality matters in biology and medicine.</li>
+</ul>
+</div>
+<h2 id="31-kinds-of-isomerism">3.1 Kinds of isomerism<a class="headerlink" href="#31-kinds-of-isomerism" title="Permanent link">&para;</a></h2>
+<p>Isomers have the same molecular formula but different structures. They fall into two main classes.</p>
+<p><strong>Constitutional isomers</strong> (structural isomers) differ in the order in which atoms are connected. They may differ in the carbon skeleton (butane and 2-methylpropane, both C₄H₁₀), in the position of a functional group (propan-1-ol and propan-2-ol), or in the functional group itself (ethanol and methoxymethane, both C₂H₆O). Constitutional isomers are simply different compounds with different names.</p>
+<p><strong>Stereoisomers</strong> have the same connections, atom to atom, but a different arrangement of the atoms in space. They are of two kinds:</p>
+<ul>
+<li><strong>Enantiomers</strong> are stereoisomers that are non-superimposable mirror images of each other.</li>
+<li><strong>Diastereomers</strong> are stereoisomers that are <strong>not</strong> mirror images. <em>Cis</em> and <em>trans</em> alkenes are diastereomers, and so are many molecules with two or more stereocentres.</li>
+</ul>
+<figure class="fig fig-mermaid">
+<pre class="mermaid">flowchart TD
+    I[Isomers: same molecular formula] --&gt; C[Constitutional isomers: different connectivity]
+    I --&gt; S[Stereoisomers: same connectivity, different arrangement in space]
+    S --&gt; E[Enantiomers: non-superimposable mirror images]
+    S --&gt; D[Diastereomers: not mirror images]
+    D --&gt; EZ[E/Z isomers of alkenes and rings]
+    D --&gt; M[Compounds with two or more stereocentres]</pre>
+<figcaption><strong>Figure 3.1 The family tree of isomers.</strong> Isomers divide first by connectivity, then, for stereoisomers, by whether they are mirror images.</figcaption>
+</figure>
+<p>A third kind of difference is not isomerism at all. <strong>Conformations</strong> are the shapes a single molecule takes as it rotates about its single bonds (Chapter 6). Different conformations interconvert millions of times a second at room temperature and cannot be separated. Stereoisomers, by contrast, can be interconverted only by breaking bonds; they are different compounds that can be isolated and stored.</p>
+<h2 id="32-ez-isomerism-in-alkenes">3.2 E/Z isomerism in alkenes<a class="headerlink" href="#32-ez-isomerism-in-alkenes" title="Permanent link">&para;</a></h2>
+<p>Rotation about a C=C double bond would break the π bond (Section 1.5), so the groups on a double bond are fixed in place. When each carbon of the double bond carries two <strong>different</strong> groups, the molecule can exist in two forms. In but-2-ene, CH₃CH=CHCH₃, the two methyl groups can be on the same side of the double bond (<em>cis</em>) or on opposite sides (<em>trans</em>). These are diastereomers: <em>cis</em>-but-2-ene boils at about 4 °C and <em>trans</em>-but-2-ene at about 1 °C.</p>
+<p>If either carbon of the double bond carries two identical groups, there is no isomerism. But-1-ene, CH₂=CHCH₂CH₃, has two hydrogens on C1, and swapping the "sides" gives the same molecule.</p>
+<p>The words <em>cis</em> and <em>trans</em> work well when each carbon carries one hydrogen, but become ambiguous when there are three or four different groups. The general method is the <strong>E/Z system</strong>, based on the <strong>Cahn–Ingold–Prelog (CIP) priority rules</strong>.</p>
+<h3 id="the-cip-priority-rules">The CIP priority rules<a class="headerlink" href="#the-cip-priority-rules" title="Permanent link">&para;</a></h3>
+<p>At each carbon of the double bond, rank the two attached groups:</p>
+<ol>
+<li><strong>Higher atomic number of the atom directly attached gives higher priority.</strong> So Br &gt; Cl &gt; O &gt; N &gt; C &gt; H. (For isotopes, the heavier one wins: D &gt; H.)</li>
+<li><strong>If the attached atoms are the same, move outwards</strong> one bond at a time. List the atoms attached to each and compare them in order of decreasing atomic number, at the <strong>first point of difference</strong>. For example, –CH₂OH has the set (O, H, H) and –CH(CH₃)₂ has (C, C, H). Compare the highest first: O beats C, so –CH₂OH wins, even though the isopropyl group has more carbons.</li>
+<li><strong>Multiple bonds count as duplicated atoms.</strong> A C=O carbon is treated as if it carried two oxygens, and a C≡N carbon as if it carried three nitrogens. So –CHO has the set (O, O, H) and outranks –CH₂OH (O, H, H).</li>
+</ol>
+<p>Then:</p>
+<ul>
+<li>If the two higher-priority groups are on the <strong>same side</strong> of the double bond, the isomer is <strong>Z</strong> (from German <em>zusammen</em>, together).</li>
+<li>If they are on <strong>opposite sides</strong>, it is <strong>E</strong> (<em>entgegen</em>, opposite).</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/ez-isomers.svg" alt="E/Z isomers. In (Z)-but-2-ene the two methyl groups, the higher-priority group on each carbon, are on the same side; in (E)-but-2-ene they are on opposite sides. In 1-bromo-1-chloroprop-1-ene, Br outranks Cl on the left carbon and CH₃ outranks H on the right; with Br and CH₃ on the same side the isomer is Z." loading="lazy" width="760" height="230">
+<figcaption><strong>Figure 3.2 E and Z isomers.</strong> E/Z isomers. In (Z)-but-2-ene the two methyl groups, the higher-priority group on each carbon, are on the same side; in (E)-but-2-ene they are on opposite sides. In 1-bromo-1-chloroprop-1-ene, Br outranks Cl on the left carbon and CH₃ outranks H on the right; with Br and CH₃ on the same side the isomer is Z.</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example 3.1: Assigning E or Z</p>
+<p>Assign E or Z to the isomer of 3-methylpent-2-ene, CH₃CH=C(CH₃)CH₂CH₃, in which the hydrogen on C2 and the ethyl group on C3 are on the same side.</p>
+<p><strong>C2</strong> carries CH₃ and H. CH₃ wins (C &gt; H).</p>
+<p><strong>C3</strong> carries CH₃ and CH₂CH₃. Both attach through carbon. Move outwards: CH₃ has (H, H, H) and CH₂CH₃ has (C, H, H). At the first point of difference C &gt; H, so ethyl wins.</p>
+<p>The ethyl group is on the same side as the H of C2, so it is on the opposite side to the CH₃ of C2. The two higher-priority groups are on opposite sides: <strong>(E)-3-methylpent-2-ene</strong>.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Caution: Z is not always cis</p>
+<p><em>Cis</em> and <em>trans</em> describe particular groups (usually the main chain); Z and E describe the highest-priority groups. They often agree, but not always. In 2-bromobut-2-ene, CH₃CBr=CHCH₃, take the isomer in which the two methyl groups (C1 and C4, the main chain) are on the same side. On C2, Br outranks CH₃, and Br is on the opposite side to the C4 methyl, which is the higher group on C3. So the chain is <em>cis</em>, but the isomer is <strong>(E)</strong>-2-bromobut-2-ene. Use E/Z in names.</p>
+</div>
+<p>Rings show a similar isomerism. In 1,2-dimethylcyclohexane the two methyl groups can be on the same face of the ring (<em>cis</em>) or on opposite faces (<em>trans</em>). The ring cannot turn inside out by rotation without breaking bonds, so the two are diastereomers.</p>
+<h2 id="33-chirality">3.3 Chirality<a class="headerlink" href="#33-chirality" title="Permanent link">&para;</a></h2>
+<p>Hold your hands up, palm to palm. They are mirror images, but you cannot lay one exactly on top of the other: a left glove does not fit a right hand. An object that cannot be superimposed on its mirror image is <strong>chiral</strong> (from the Greek for hand). An object that can be superimposed on its mirror image, such as a plain mug or a sphere, is <strong>achiral</strong>.</p>
+<p>Molecules can be chiral too. The commonest cause is a carbon atom bonded to <strong>four different groups</strong>. Such an atom is a <strong>stereocentre</strong> (also called a stereogenic centre, chiral centre or asymmetric carbon), and is often marked with an asterisk. Butan-2-ol, CH₃CH(OH)CH₂CH₃, has one: C2 carries H, OH, CH₃ and CH₂CH₃. Its mirror image cannot be superimposed on it, however it is turned.</p>
+<figure class="fig fig-diagram">
+<img src="img/enantiomers-butanol.svg" alt="The enantiomers of butan-2-ol. The two molecules are reflections of each other in the dashed mirror. No rotation will make the left-hand molecule identical with the right-hand one: they are a pair of enantiomers." loading="lazy" width="760" height="250">
+<figcaption><strong>Figure 3.3 A pair of enantiomers.</strong> The enantiomers of butan-2-ol. The two molecules are reflections of each other in the dashed mirror. No rotation will make the left-hand molecule identical with the right-hand one: they are a pair of enantiomers.</figcaption>
+</figure>
+<h3 id="symmetry-a-quick-test">Symmetry: a quick test<a class="headerlink" href="#symmetry-a-quick-test" title="Permanent link">&para;</a></h3>
+<p>A molecule that has a <strong>plane of symmetry</strong>, a plane that cuts it into two halves that are mirror images of each other, is achiral. Propan-2-ol, (CH₃)₂CHOH, has two identical methyl groups on the central carbon. A plane through C, O and H divides the molecule into mirror-image halves, so it is achiral, and C2 is not a stereocentre.</p>
+<p>To find stereocentres quickly:</p>
+<ul>
+<li>Ignore CH₂ and CH₃ carbons (two or more identical H atoms) and any sp² or sp carbon (only three or two groups).</li>
+<li>For each remaining carbon, check whether all four groups are different. Look along each branch until you find a difference: in 3-methylhexane, C3 carries H, CH₃, CH₂CH₃ and CH₂CH₂CH₃, which are four different groups.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>A molecule with exactly one stereocentre is always chiral. A molecule with two or more stereocentres is usually chiral, but may be achiral if it has an internal plane of symmetry (a meso compound, Section 3.6). The fundamental test is always non-superimposability on the mirror image.</p>
+</div>
+<h2 id="34-naming-stereocentres-r-and-s">3.4 Naming stereocentres: R and S<a class="headerlink" href="#34-naming-stereocentres-r-and-s" title="Permanent link">&para;</a></h2>
+<p>Each stereocentre has one of two configurations, labelled <strong>R</strong> (<em>rectus</em>, right) or <strong>S</strong> (<em>sinister</em>, left). The procedure uses the same CIP priority rules as for E/Z.</p>
+<ol>
+<li><strong>Rank the four groups</strong> on the stereocentre from 1 (highest) to 4 (lowest) by the CIP rules.</li>
+<li><strong>Orient the molecule</strong> so that the lowest-priority group (4) points away from you, behind the page.</li>
+<li><strong>Trace the path 1 → 2 → 3.</strong> If it runs clockwise, the centre is <strong>R</strong>; if anticlockwise, it is <strong>S</strong>.</li>
+</ol>
+<figure class="fig fig-diagram">
+<img src="img/rs-assignment.svg" alt="Assigning the configuration of butan-2-ol. The groups are ranked OH (1) &gt; CH₂CH₃ (2) &gt; CH₃ (3) &gt; H (4). With H on a hashed wedge, pointing away, the path from 1 to 2 to 3 runs clockwise, so this enantiomer is (R)-butan-2-ol. Think of the molecule as a steering wheel seen by a driver, with the lowest-priority group as the steering column pointing away." loading="lazy" width="760" height="270">
+<figcaption><strong>Figure 3.4 Assigning R or S.</strong> Assigning the configuration of butan-2-ol. The groups are ranked OH (1) &gt; CH₂CH₃ (2) &gt; CH₃ (3) &gt; H (4). With H on a hashed wedge, pointing away, the path from 1 to 2 to 3 runs clockwise, so this enantiomer is (R)-butan-2-ol. Think of the molecule as a steering wheel seen by a driver, with the lowest-priority group as the steering column pointing away.</figcaption>
+</figure>
+<h3 id="short-cuts-for-drawings">Short cuts for drawings<a class="headerlink" href="#short-cuts-for-drawings" title="Permanent link">&para;</a></h3>
+<p>You rarely need to build a model. Two rules handle most drawings:</p>
+<ul>
+<li><strong>Lowest priority on a hashed wedge</strong> (pointing away): read the direction of 1 → 2 → 3 directly from the page.</li>
+<li><strong>Lowest priority on a solid wedge</strong> (pointing towards you): read the direction, then <strong>reverse</strong> it. Clockwise on the page means S.</li>
+<li><strong>Lowest priority in the plane of the page</strong>: swap it with the group on the hashed wedge. Swapping any two groups inverts the configuration, so assign the new drawing and then reverse your answer.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example 3.2: Assigning R or S</p>
+<p>A drawing of 2-chlorobutane shows C2 with Cl at the top (in the plane), CH₂CH₃ to the lower left (in the plane), CH₃ on a hashed wedge to the lower right and H on a solid wedge to the right. Assign the configuration.</p>
+<p>Priorities: Cl (1) &gt; CH₂CH₃ (2) &gt; CH₃ (3) &gt; H (4).</p>
+<p>The path Cl (top) → ethyl (lower left) → methyl (lower right): going from top to lower left is anticlockwise, and continuing to the lower right completes an anticlockwise turn. H is on a solid wedge, pointing towards you, so reverse: the true direction is clockwise.</p>
+<p>The centre is <strong>R</strong>: (R)-2-chlorobutane.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 3.3: Ranking harder groups</p>
+<p>Rank the groups on C2 of 2-hydroxypropanoic acid (lactic acid), CH₃CH(OH)COOH.</p>
+<p>The attached atoms are O (of OH), C (of COOH), C (of CH₃) and H. OH is 1 and H is 4. To separate the two carbons, list their substituents: COOH has (O, O, O), counting the C=O oxygen twice, and CH₃ has (H, H, H). So COOH is 2 and CH₃ is 3.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Caution: R/S says nothing about the sign of rotation</p>
+<p>R and S are labels from a drawing rule. They do not tell you which way the compound rotates plane-polarised light (Section 3.5). Some R compounds rotate light clockwise and others anticlockwise; the sign must be measured.</p>
+</div>
+<h2 id="35-properties-of-enantiomers-optical-activity">3.5 Properties of enantiomers: optical activity<a class="headerlink" href="#35-properties-of-enantiomers-optical-activity" title="Permanent link">&para;</a></h2>
+<p>Enantiomers have identical physical properties in an achiral environment: the same melting point, boiling point, density, solubility and spectra. They react at the same rate with achiral reagents. They differ in only two ways:</p>
+<ol>
+<li><strong>They rotate plane-polarised light in opposite directions.</strong> Light whose waves vibrate in a single plane is passed through a solution of the compound in an instrument called a <strong>polarimeter</strong>. A chiral compound turns the plane by an angle α. One enantiomer turns it clockwise, called <strong>dextrorotatory</strong> and labelled (+); the other turns it by the same amount anticlockwise, <strong>laevorotatory</strong>, (−). Because they rotate light, chiral compounds are said to be <strong>optically active</strong>.</li>
+<li><strong>They interact differently with other chiral things</strong>, including chiral reagents, chiral catalysts and the enzymes and receptors of living things.</li>
+</ol>
+<p>The observed rotation depends on the concentration and the path length, so it is converted into the <strong>specific rotation</strong>, a property of the compound:</p>
+<div class="arithmatex">\[
+[\alpha] = \frac{\alpha}{l \, c}
+\]</div>
+<p>where <span class="arithmatex">\(\alpha\)</span> is the observed rotation in degrees, <span class="arithmatex">\(l\)</span> the path length in decimetres and <span class="arithmatex">\(c\)</span> the concentration in g mL⁻¹. The temperature and the wavelength of light (usually the sodium D line) are stated with the value.</p>
+<p>A 50:50 mixture of two enantiomers is a <strong>racemic mixture</strong> (or racemate). Its rotation is zero, because the two contributions cancel exactly. A reaction that makes a stereocentre from achiral starting materials, without any chiral influence, always gives a racemic mixture: there is an equal chance of forming each enantiomer. The <strong>enantiomeric excess</strong> (ee) of a mixture is the excess of one enantiomer over the other, as a percentage of the whole: a mixture of 75% R and 25% S has an ee of 50%.</p>
+<h3 id="why-chirality-matters">Why chirality matters<a class="headerlink" href="#why-chirality-matters" title="Permanent link">&para;</a></h3>
+<p>Enzymes and receptors are built from chiral amino acids and are themselves chiral. They distinguish enantiomers as a right hand distinguishes a right glove from a left. The two enantiomers of carvone smell different: (R)-carvone smells of spearmint and (S)-carvone of caraway seed. Almost all the amino acids in proteins have the same configuration, and almost all natural sugars belong to one series. In medicine, the two enantiomers of a chiral drug can have different activities, different side effects or both, which is why drug regulators require the enantiomers of a new chiral drug to be studied separately. The thalidomide tragedy of the late 1950s and early 1960s made this concern widely known; in that case the enantiomers also interconvert in the body, so even a single pure enantiomer would not have been safe.</p>
+<h2 id="36-molecules-with-more-than-one-stereocentre">3.6 Molecules with more than one stereocentre<a class="headerlink" href="#36-molecules-with-more-than-one-stereocentre" title="Permanent link">&para;</a></h2>
+<p>Each stereocentre can be R or S, so a molecule with <span class="arithmatex">\(n\)</span> stereocentres has at most <span class="arithmatex">\(2^n\)</span> stereoisomers. With two stereocentres there are up to four: (R,R), (S,S), (R,S) and (S,R).</p>
+<ul>
+<li>(R,R) and (S,S) are mirror images: a pair of enantiomers.</li>
+<li>(R,S) and (S,R) are mirror images: another pair of enantiomers.</li>
+<li>(R,R) and (R,S) are stereoisomers that are not mirror images: diastereomers.</li>
+</ul>
+<p>Unlike enantiomers, <strong>diastereomers have different physical properties</strong> (melting point, solubility, boiling point), so they can be separated by ordinary methods such as crystallisation, distillation and chromatography.</p>
+<h3 id="fischer-projections">Fischer projections<a class="headerlink" href="#fischer-projections" title="Permanent link">&para;</a></h3>
+<p>For molecules with several stereocentres in a chain, such as sugars, chemists often use <strong>Fischer projections</strong>. The carbon chain is drawn vertically, with the most oxidised carbon at the top. At each stereocentre, the <strong>horizontal bonds point towards you</strong> and the <strong>vertical bonds point away</strong>. A Fischer projection may be rotated by 180° in the plane of the page but not by 90°, which would turn horizontal bonds into vertical ones and invert every centre.</p>
+<p>To assign R or S in a Fischer projection: if the lowest-priority group is on a vertical bond (pointing away), read 1 → 2 → 3 directly; if it is on a horizontal bond (pointing towards you), as it usually is, read the direction and reverse it.</p>
+<h3 id="meso-compounds">Meso compounds<a class="headerlink" href="#meso-compounds" title="Permanent link">&para;</a></h3>
+<p>Tartaric acid, HOOC–CH(OH)–CH(OH)–COOH, has two stereocentres, so up to four stereoisomers are possible, but only three exist. The (2R,3R) and (2S,3S) forms are enantiomers. The (2R,3S) form has an internal plane of symmetry, a mirror plane between C2 and C3, so it is identical with its own mirror image (2S,3R). A compound that has stereocentres but is achiral because of internal symmetry is a <strong>meso compound</strong>. Meso-tartaric acid is optically inactive, and it is a diastereomer of the other two.</p>
+<figure class="fig fig-diagram">
+<img src="img/tartaric-fischer.svg" alt="Fischer projections of tartaric acid. Horizontal bonds point towards the viewer and vertical bonds away. The (2R,3R) and (2S,3S) forms are non-superimposable mirror images. The (2R,3S) form has a mirror plane (dashed) between the two stereocentres and is the achiral meso form." loading="lazy" width="760" height="270">
+<figcaption><strong>Figure 3.5 The stereoisomers of tartaric acid.</strong> Fischer projections of tartaric acid. Horizontal bonds point towards the viewer and vertical bonds away. The (2R,3R) and (2S,3S) forms are non-superimposable mirror images. The (2R,3S) form has a mirror plane (dashed) between the two stereocentres and is the achiral meso form.</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example 3.4: Counting stereoisomers</p>
+<p>How many stereoisomers does 2,3-dibromobutane, CH₃CHBrCHBrCH₃, have?</p>
+<p>There are two stereocentres (C2 and C3), so at most four. But the molecule is symmetrical: both centres carry the same set of groups (H, Br, CH₃ and the other CHBr unit). As with tartaric acid, the (2R,3S) form has a mirror plane and is meso. So there are <strong>three</strong> stereoisomers: the enantiomers (2R,3R) and (2S,3S), and meso-(2R,3S).</p>
+<p>By contrast, 2-bromo-3-chlorobutane, CH₃CHBrCHClCH₃, is not symmetrical and has all <strong>four</strong> stereoisomers.</p>
+</div>
+<h3 id="separating-enantiomers">Separating enantiomers<a class="headerlink" href="#separating-enantiomers" title="Permanent link">&para;</a></h3>
+<p>Because enantiomers have identical physical properties, separating a racemic mixture (called <strong>resolution</strong>) needs a chiral influence. The classic method reacts the mixture with a single enantiomer of a chiral compound, turning the two enantiomers into two diastereomers. These have different solubilities and can be separated by crystallisation, then converted back. Louis Pasteur achieved the first resolution in 1848 by a rarer route: he noticed that crystals of a salt of racemic tartaric acid came in two mirror-image shapes and separated them by hand. Today chiral chromatography and enzymes are widely used as well.</p>
+<h2 id="37-summary">3.7 Summary<a class="headerlink" href="#37-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Constitutional isomers differ in connectivity; stereoisomers differ only in arrangement in space.</li>
+<li>Enantiomers are non-superimposable mirror images; diastereomers are stereoisomers that are not mirror images.</li>
+<li>Alkenes with two different groups on each carbon of the C=C show E/Z isomerism. Rank the groups by the CIP rules: Z if the higher-priority groups are on the same side, E if opposite.</li>
+<li>A carbon with four different groups is a stereocentre. A molecule with a plane of symmetry is achiral.</li>
+<li>R/S: rank 1 to 4, point 4 away, trace 1 → 2 → 3; clockwise is R, anticlockwise is S. If group 4 points towards you, reverse.</li>
+<li>Enantiomers have identical properties except the direction in which they rotate plane-polarised light and their interactions with other chiral substances. A racemic mixture is optically inactive.</li>
+<li><span class="arithmatex">\(n\)</span> stereocentres give at most <span class="arithmatex">\(2^n\)</span> stereoisomers; meso compounds reduce the number.</li>
+</ul>
+</div>
+<h2 id="38-exercises">3.8 Exercises<a class="headerlink" href="#38-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Classify each pair as constitutional isomers, enantiomers, diastereomers or identical: (a) butan-1-ol and butan-2-ol; (b) (R)-butan-2-ol and (S)-butan-2-ol; (c) (Z)-but-2-ene and (E)-but-2-ene; (d) (2R,3R)- and (2R,3S)-2-bromo-3-chlorobutane; (e) (2R,3S)- and (2S,3R)-tartaric acid.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Constitutional isomers (the OH is in a different position). (b) Enantiomers. (c) Diastereomers. (d) Diastereomers: one centre is the same, the other differs, so they are not mirror images. (e) Identical: this is the meso compound, which is its own mirror image.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Which of these can show E/Z isomerism? (a) pent-1-ene; (b) pent-2-ene; (c) 2-methylbut-2-ene; (d) 1-chloropropene, ClCH=CHCH₃.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) No: C1 carries two H atoms. (b) Yes: C2 carries CH₃ and H, C3 carries CH₂CH₃ and H. (c) No: C2 carries two CH₃ groups. (d) Yes: C1 carries Cl and H, C2 carries CH₃ and H.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Rank the following groups by CIP priority, highest first: –CH₂CH₃, –CH=CH₂, –CH₂OH, –CHO, –CH(CH₃)₂.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Write the set of atoms attached to the first carbon of each: –CHO (O, O, H); –CH₂OH (O, H, H); –CH(CH₃)₂ (C, C, H); –CH=CH₂ (C, C, H), with the duplicated carbon; –CH₂CH₃ (C, H, H).</p>
+<p>–CHO &gt; –CH₂OH &gt; then –CH(CH₃)₂ and –CH=CH₂ tie at the first carbon. Go outwards. For isopropyl, the two branches are CH₃ groups, each (H, H, H). For vinyl, one branch is the real CH₂ carbon, with substituents (C, H, H), the C being the duplicate of the first carbon. The duplicate carbon itself counts as carrying three phantom atoms of atomic number zero. The highest-ranked branch of vinyl, (C, H, H), beats the highest-ranked branch of isopropyl, (H, H, H), so vinyl wins.</p>
+<p>Order: –CHO &gt; –CH₂OH &gt; –CH=CH₂ &gt; –CH(CH₃)₂ &gt; –CH₂CH₃.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Mark the stereocentres, if any, in: (a) 3-methylhexane; (b) 3-methylpentane; (c) 2-chlorobutane; (d) 1,2-dichloroethane; (e) 2-aminopropanoic acid (alanine).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) C3 (H, CH₃, ethyl, propyl): one stereocentre. (b) None: C3 carries two identical ethyl groups. (c) C2 (H, Cl, CH₃, ethyl). (d) None: each carbon carries two H atoms. (e) C2 (H, NH₂, CH₃, COOH).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>In a drawing of alanine, H₂N–CH(CH₃)–COOH, the stereocentre has NH₂ at the top (in the plane), COOH to the lower right (in the plane), CH₃ on a solid wedge to the lower left and H on a hashed wedge. Assign R or S.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Priorities: NH₂ (1, nitrogen) &gt; COOH (2, carbon with O, O, O) &gt; CH₃ (3) &gt; H (4). H points away, so read directly. NH₂ (top) → COOH (lower right) → CH₃ (lower left) is clockwise. The configuration is <strong>R</strong>. (The alanine found in proteins is S, the mirror image of this drawing.)</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>A solution of a pure enantiomer, 0.10 g mL⁻¹, in a 1.0 dm tube gives an observed rotation of +6.0°. (a) What is its specific rotation? (b) What rotation would a racemic mixture give? (c) A sample of the same compound at the same concentration gives +3.0°. What is its enantiomeric excess, and what percentage of each enantiomer does it contain?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) [α] = 6.0 / (1.0 × 0.10) = +60°. (b) 0°. (c) The rotation is half that of the pure enantiomer, so the ee is 50%. The excess is 50% of the (+) enantiomer and the remaining 50% is racemic (25% of each), giving 75% (+) and 25% (−).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>How many stereoisomers are possible for (a) pentane-2,3-diol, CH₃CH(OH)CH(OH)CH₂CH₃; (b) pentane-2,4-diol, CH₃CH(OH)CH₂CH(OH)CH₃? Identify any meso form.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Two stereocentres (C2 and C3) carrying different sets of groups, so all four stereoisomers exist: two pairs of enantiomers, and no meso form.</p>
+<p>(b) Two stereocentres (C2 and C4) with identical sets of groups. The (2R,4R) and (2S,4S) forms are enantiomers; the (2R,4S) form has a mirror plane through C3 and is meso. Three stereoisomers in all.</p>
+</details>
+<h2 id="39-quiz">3.9 Quiz<a class="headerlink" href="#39-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="c16c91a5f7b0">
+<p class="pk-quiz-title">Check your understanding of stereochemistry</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;enantiomers&quot;,&quot;diastereomers&quot;,&quot;constitutional isomers&quot;,&quot;conformations&quot;],&quot;answer&quot;:&quot;diastereomers&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Stereoisomers that are not mirror images of each other are called</p>
+<ol class="pk-q-opts" type="A"><li>enantiomers</li><li>diastereomers</li><li>constitutional isomers</li><li>conformations</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>diastereomers</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;propan-2-ol&quot;,&quot;butan-2-ol&quot;,&quot;2-methylpropan-2-ol&quot;,&quot;ethanol&quot;],&quot;answer&quot;:&quot;butan-2-ol&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Which compound has a stereocentre?</p>
+<ol class="pk-q-opts" type="A"><li>propan-2-ol</li><li>butan-2-ol</li><li>2-methylpropan-2-ol</li><li>ethanol</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>butan-2-ol</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;R&quot;,&quot;S&quot;,&quot;E&quot;,&quot;Z&quot;],&quot;answer&quot;:&quot;S&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Viewed with the lowest-priority group pointing away, the path 1 → 2 → 3 is anticlockwise. The configuration is</p>
+<ol class="pk-q-opts" type="A"><li>R</li><li>S</li><li>E</li><li>Z</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>S</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;-CH₃&quot;,&quot;-CH₂OH&quot;,&quot;-OH&quot;,&quot;-NH₂&quot;],&quot;answer&quot;:&quot;-OH&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which group has the highest CIP priority?</p>
+<ol class="pk-q-opts" type="A"><li>-CH₃</li><li>-CH₂OH</li><li>-OH</li><li>-NH₂</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>-OH</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;8&quot;,&quot;eight&quot;]}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">What is the maximum number of stereoisomers for a molecule with three stereocentres?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>8 / eight</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;rotates plane-polarised light clockwise&quot;,&quot;contains equal amounts of two enantiomers and shows no rotation&quot;,&quot;is a single meso compound&quot;,&quot;can be separated by simple distillation&quot;],&quot;answer&quot;:&quot;contains equal amounts of two enantiomers and shows no rotation&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">A racemic mixture</p>
+<ol class="pk-q-opts" type="A"><li>rotates plane-polarised light clockwise</li><li>contains equal amounts of two enantiomers and shows no rotation</li><li>is a single meso compound</li><li>can be separated by simple distillation</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>contains equal amounts of two enantiomers and shows no rotation</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;match&quot;,&quot;pairs&quot;:[[&quot;chiral&quot;,&quot;not superimposable on its mirror image&quot;],[&quot;meso&quot;,&quot;has stereocentres but is achiral&quot;],[&quot;Z&quot;,&quot;higher priorities on the same side&quot;],[&quot;racemate&quot;,&quot;50:50 mixture of enantiomers&quot;]]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Match each term to its meaning.</p>
+<table class="pk-q-match"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>chiral</td><td>higher priorities on the same side</td></tr><tr><td>meso</td><td>50:50 mixture of enantiomers</td></tr><tr><td>Z</td><td>not superimposable on its mirror image</td></tr><tr><td>racemate</td><td>has stereocentres but is achiral</td></tr></tbody></table>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>chiral</strong> — not superimposable on its mirror image; <strong>meso</strong> — has stereocentres but is achiral; <strong>Z</strong> — higher priorities on the same side; <strong>racemate</strong> — 50:50 mixture of enantiomers</p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="functional-groups-and-nomenclature.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2. Functional Groups and Nomenclature">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</div>
+</div>
+</a>
+<a href="acids-and-bases.html" class="md-footer__link md-footer__link--next" aria-label="Next: 4. Acids and Bases in Organic Chemistry">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

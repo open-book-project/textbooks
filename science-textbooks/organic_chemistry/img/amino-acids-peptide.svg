@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 260" width="790" height="260" role="img" aria-label="An alpha-amino acid, its zwitterion at neutral pH, and the formation of a peptide bond between two amino acids with loss of water">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<text x="110.0" y="76.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H₂N–CH(R)–COOH</text>
+<text x="110.0" y="104.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">α-amino acid</text>
+<text x="242.5" y="59.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">pH 7</text>
+<text x="390.0" y="76.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H₃N⁺–CH(R)–COO⁻</text>
+<text x="390.0" y="104.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">zwitterion</text>
+<text x="40.0" y="165.6" font-size="16.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">H₂N–CH(R¹)–COOH  +  H₂N–CH(R²)–COOH</text>
+<text x="40.0" y="210.6" font-size="16.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">→  H₂N–CH(R¹)–</text>
+<text x="166.0" y="210.6" font-size="16.0" text-anchor="start" fill="#c0392b" font-weight="bold">CO–NH</text>
+<text x="222.0" y="210.6" font-size="16.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">–CH(R²)–COOH  +  H₂O</text>
+<text x="196.0" y="236.2" font-size="12.0" text-anchor="middle" fill="#c0392b" font-weight="normal">peptide (amide) bond</text>
+<line x1="215.0" y1="66.5" x2="270.0" y2="66.5" stroke="#1a1a1a" stroke-width="1.60" stroke-linecap="round"/>
+<path d="M270.0 66.5 L261.0 61.5" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+<line x1="270.0" y1="73.5" x2="215.0" y2="73.5" stroke="#1a1a1a" stroke-width="1.60" stroke-linecap="round"/>
+<path d="M215.0 73.5 L224.0 78.5" stroke="#1a1a1a" stroke-width="1.6" fill="none"/>
+</g>
+</svg>

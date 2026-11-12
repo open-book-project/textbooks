@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 360" width="790" height="360" role="img" aria-label="Ring opening of 2-methyloxirane: a strong nucleophile attacks the less hindered carbon (SN2), while under acid the weak nucleophile attacks the more substituted carbon">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="110.0" y1="110.0" x2="154.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="110.0" y1="110.0" x2="132.0" y2="74.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="154.0" y1="110.0" x2="132.0" y2="74.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="110.0" y1="110.0" x2="77.1" y2="129.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="345.0" y1="115.0" x2="379.6" y2="95.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="379.6" y1="95.0" x2="414.3" y2="115.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="414.3" y1="115.0" x2="448.9" y2="95.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="379.6" y1="95.0" x2="379.6" y2="55.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="110.0" y1="310.0" x2="154.0" y2="310.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="110.0" y1="310.0" x2="132.0" y2="274.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="154.0" y1="310.0" x2="132.0" y2="274.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="110.0" y1="310.0" x2="77.1" y2="329.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="132.0" y1="274.0" x2="132.0" y2="244.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="345.0" y1="310.0" x2="379.6" y2="290.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="379.6" y1="290.0" x2="414.3" y2="310.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="414.3" y1="310.0" x2="448.9" y2="290.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="379.6" y1="290.0" x2="379.6" y2="250.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<text x="20.0" y="32.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="bold">Basic conditions (strong nucleophile, SN2)</text>
+<rect x="124.7" y="63.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="132.0" y="80.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="193.4" y="109.5" width="43.2" height="20.4" fill="#ffffff"/>
+<text x="215.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="5.1" font-size="12.2">3</tspan><tspan dy="-5.1">​</tspan>O</text>
+<circle cx="228.0" cy="97.5" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="224.0" y1="97.5" x2="232.0" y2="97.5" stroke="#1a1a1a" stroke-width="1.4"/>
+<text x="290.0" y="117.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">then H₂O</text>
+<rect x="367.1" y="40.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="379.6" y="57.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">OH</text>
+<rect x="438.9" y="84.5" width="43.2" height="20.4" fill="#ffffff"/>
+<text x="440.9" y="101.0" font-size="17.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">OCH<tspan dy="5.1" font-size="12.2">3</tspan><tspan dy="-5.1">​</tspan></text>
+<text x="400.0" y="164.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">1-methoxypropan-2-ol</text>
+<text x="530.0" y="99.5" font-size="13.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">attack at the less hindered CH₂</text>
+<text x="20.0" y="194.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="bold">Acidic conditions (weak nucleophile)</text>
+<rect x="124.7" y="263.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="132.0" y="279.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="125.7" y="229.3" width="12.7" height="16.8" fill="#ffffff"/>
+<text x="132.0" y="242.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<circle cx="146.1" cy="268.9" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="142.1" y1="268.9" x2="150.1" y2="268.9" stroke="#1a1a1a" stroke-width="1.4"/>
+<line x1="146.1" y1="264.9" x2="146.1" y2="272.9" stroke="#1a1a1a" stroke-width="1.4"/>
+<rect x="22.5" y="327.3" width="45.0" height="16.8" fill="#ffffff"/>
+<text x="45.0" y="340.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="4.2" font-size="10.1">3</tspan><tspan dy="-4.2">​</tspan>OH</text>
+<text x="290.0" y="312.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">− H⁺</text>
+<rect x="358.0" y="235.5" width="43.2" height="20.4" fill="#ffffff"/>
+<text x="379.6" y="251.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">OCH<tspan dy="5.1" font-size="12.2">3</tspan><tspan dy="-5.1">​</tspan></text>
+<rect x="440.9" y="279.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="442.9" y="295.9" font-size="17.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">OH</text>
+<text x="400.0" y="339.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">2-methoxypropan-1-ol</text>
+<text x="530.0" y="294.6" font-size="13.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">attack at the more substituted C,</text>
+<text x="530.0" y="312.6" font-size="13.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">which carries more positive charge</text>
+<path d="M196.0 118.0 Q180.0 140.0 162.0 114.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="162.0,114.0 170.9,119.4 164.0,124.2" fill="#c0392b"/>
+<path d="M143.0 92.0 Q160.0 64.0 144.0 68.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="144.0,68.0 152.2,61.6 154.2,69.8" fill="#c0392b"/>
+<line x1="260.0" y1="100.0" x2="320.0" y2="100.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="320.0,100.0 310.0,104.5 310.0,95.5" fill="#1a1a1a"/>
+<path d="M70.0 326.0 Q80.0 340.0 108.0 316.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="108.0,316.0 103.5,325.4 98.1,319.0" fill="#c0392b"/>
+<path d="M121.0 292.0 Q106.0 276.0 120.0 272.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="120.0,272.0 112.0,278.6 109.7,270.6" fill="#c0392b"/>
+<line x1="260.0" y1="295.0" x2="320.0" y2="295.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="320.0,295.0 310.0,299.5 310.0,290.5" fill="#1a1a1a"/>
+</g>
+</svg>

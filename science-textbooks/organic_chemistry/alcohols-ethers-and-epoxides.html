@@ -1,0 +1,991 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/alcohols-ethers-and-epoxides.html">
+<link rel="prev" href="alkyl-halides.html">
+<link rel="next" href="aldehydes-and-ketones.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>10. Alcohols, Ethers and Epoxides - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#101-alcohols-structure-and-properties" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#101-alcohols-structure-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+10.1 Alcohols: structure and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="10.1 Alcohols: structure and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity-and-basicity" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity and basicity
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#102-making-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+10.2 Making alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#103-converting-alcohols-into-haloalkanes-and-sulfonates" class="md-nav__link">
+<span class="md-ellipsis">
+10.3 Converting alcohols into haloalkanes and sulfonates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#104-dehydration-to-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+10.4 Dehydration to alkenes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#105-oxidation-of-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+10.5 Oxidation of alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#106-ethers" class="md-nav__link">
+<span class="md-ellipsis">
+10.6 Ethers
+</span>
+</a>
+<nav class="md-nav" aria-label="10.6 Ethers">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#making-ethers-the-williamson-synthesis" class="md-nav__link">
+<span class="md-ellipsis">
+Making ethers: the Williamson synthesis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#cleaving-ethers" class="md-nav__link">
+<span class="md-ellipsis">
+Cleaving ethers
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#107-epoxides" class="md-nav__link">
+<span class="md-ellipsis">
+10.7 Epoxides
+</span>
+</a>
+<nav class="md-nav" aria-label="10.7 Epoxides">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#making-epoxides" class="md-nav__link">
+<span class="md-ellipsis">
+Making epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ring-opening" class="md-nav__link">
+<span class="md-ellipsis">
+Ring opening
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#108-summary" class="md-nav__link">
+<span class="md-ellipsis">
+10.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#109-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+10.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1010-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+10.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#101-alcohols-structure-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+10.1 Alcohols: structure and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="10.1 Alcohols: structure and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity-and-basicity" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity and basicity
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#102-making-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+10.2 Making alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#103-converting-alcohols-into-haloalkanes-and-sulfonates" class="md-nav__link">
+<span class="md-ellipsis">
+10.3 Converting alcohols into haloalkanes and sulfonates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#104-dehydration-to-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+10.4 Dehydration to alkenes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#105-oxidation-of-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+10.5 Oxidation of alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#106-ethers" class="md-nav__link">
+<span class="md-ellipsis">
+10.6 Ethers
+</span>
+</a>
+<nav class="md-nav" aria-label="10.6 Ethers">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#making-ethers-the-williamson-synthesis" class="md-nav__link">
+<span class="md-ellipsis">
+Making ethers: the Williamson synthesis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#cleaving-ethers" class="md-nav__link">
+<span class="md-ellipsis">
+Cleaving ethers
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#107-epoxides" class="md-nav__link">
+<span class="md-ellipsis">
+10.7 Epoxides
+</span>
+</a>
+<nav class="md-nav" aria-label="10.7 Epoxides">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#making-epoxides" class="md-nav__link">
+<span class="md-ellipsis">
+Making epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ring-opening" class="md-nav__link">
+<span class="md-ellipsis">
+Ring opening
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#108-summary" class="md-nav__link">
+<span class="md-ellipsis">
+10.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#109-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+10.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1010-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+10.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-10-alcohols-ethers-and-epoxides">Chapter 10: Alcohols, Ethers and Epoxides<a class="headerlink" href="#chapter-10-alcohols-ethers-and-epoxides" title="Permanent link">&para;</a></h1>
+<p><em>Compounds with C–O single bonds</em></p>
+<p>Alcohols are everywhere: ethanol in drinks and fuels, glycerol in fats, cholesterol in cell membranes, the many OH groups of sugars. They are also among the most useful compounds in the laboratory, because the OH group can be turned into almost any other functional group. Ethers, in which oxygen joins two carbon groups, are much less reactive and are valued as solvents. Epoxides are ethers in a strained three-membered ring, and that strain makes them reactive in ways ordinary ethers are not. This chapter covers the properties, preparation and reactions of all three, building on the substitution and elimination mechanisms of Chapter 9.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>explain the physical properties of alcohols and ethers in terms of hydrogen bonding;</li>
+<li>describe the acidity and basicity of alcohols and the formation of alkoxides;</li>
+<li>list the main ways of making alcohols;</li>
+<li>convert alcohols into haloalkanes and sulfonate esters, choosing suitable reagents;</li>
+<li>write the mechanism of acid-catalysed dehydration and predict its products;</li>
+<li>predict the products of oxidising primary, secondary and tertiary alcohols;</li>
+<li>make ethers by the Williamson synthesis and describe their cleavage by HI or HBr;</li>
+<li>prepare epoxides and predict the regiochemistry and stereochemistry of their ring opening under basic and acidic conditions.</li>
+</ul>
+</div>
+<h2 id="101-alcohols-structure-and-properties">10.1 Alcohols: structure and properties<a class="headerlink" href="#101-alcohols-structure-and-properties" title="Permanent link">&para;</a></h2>
+<p>An alcohol has an OH group bonded to an sp³ carbon. The oxygen is sp³ hybridised, with two lone pairs, and the C–O–H angle is close to the tetrahedral angle (about 109° in methanol). Alcohols are classified as primary, secondary or tertiary by the carbon carrying the OH (Section 2.1). An OH group on a benzene ring makes a <strong>phenol</strong>, which behaves differently (Section 4.4 and below).</p>
+<p>The O–H group dominates the physical properties:</p>
+<ul>
+<li><strong>Hydrogen bonding</strong> between molecules gives alcohols much higher boiling points than alkanes, ethers or haloalkanes of similar molar mass. Ethanol (46 g mol⁻¹) boils at 78 °C, propane (44 g mol⁻¹) at −42 °C.</li>
+<li><strong>Solubility in water</strong>: alcohols hydrogen bond to water. Methanol, ethanol and propanol mix with water completely; solubility falls as the hydrocarbon chain lengthens. Each OH group can carry roughly three or four carbons into solution, so diols and triols such as glycerol are very soluble.</li>
+</ul>
+<h3 id="acidity-and-basicity">Acidity and basicity<a class="headerlink" href="#acidity-and-basicity" title="Permanent link">&para;</a></h3>
+<p>Alcohols are weak acids (pKa about 15.5 for methanol, 16 for ethanol, 18 for 2-methylpropan-2-ol), similar to water. Alkyl groups make the conjugate base less stable, and bulky alkoxides are poorly solvated, so acidity falls from methanol to tertiary alcohols. Alcohols react with sodium metal, giving hydrogen gas and a sodium <strong>alkoxide</strong>:</p>
+<div class="arithmatex">\[
+\mathrm{2\,CH_3CH_2OH + 2\,Na \rightarrow 2\,CH_3CH_2O^-Na^+ + H_2}
+\]</div>
+<p>The reaction is gentler than that of sodium with water, and the fizzing is a simple test for an OH group (in a dry, neutral compound). Alkoxides are strong bases and good nucleophiles, used throughout this chapter. Sodium hydride, NaH, is a convenient alternative way to deprotonate an alcohol.</p>
+<p>Alcohols are also weak bases. Their oxygen lone pairs accept a proton from strong acids, giving an <strong>oxonium ion</strong>, R–OH₂⁺. Protonation is the key that unlocks most alcohol reactions, because it turns the very poor leaving group HO⁻ into the good leaving group H₂O.</p>
+<p><strong>Phenols</strong> (pKa about 10) are about a million times more acidic than alcohols, because the phenoxide ion is stabilised by resonance with the ring (Figure 4.3). Phenols dissolve in aqueous sodium hydroxide, whereas simple alcohols do not ionise appreciably in it.</p>
+<h2 id="102-making-alcohols">10.2 Making alcohols<a class="headerlink" href="#102-making-alcohols" title="Permanent link">&para;</a></h2>
+<p>Alcohols are made by several routes, most of which are described elsewhere in the book:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Example</th>
+<th>Chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acid-catalysed hydration of an alkene (Markovnikov)</td>
+<td>propene → propan-2-ol</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Hydroboration–oxidation of an alkene (anti-Markovnikov)</td>
+<td>propene → propan-1-ol</td>
+<td>7</td>
+</tr>
+<tr>
+<td>SN2 substitution of a haloalkane by hydroxide</td>
+<td>1-bromobutane → butan-1-ol</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Reduction of an aldehyde or ketone (NaBH₄ or LiAlH₄)</td>
+<td>propanone → propan-2-ol</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Reduction of a carboxylic acid or ester (LiAlH₄)</td>
+<td>ethyl ethanoate → ethanol</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Addition of a Grignard reagent to a carbonyl compound</td>
+<td>methanal + CH₃MgBr → ethanol</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Fermentation of sugars by yeast</td>
+<td>glucose → ethanol + CO₂</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 10.1. Methods of making alcohols.</em></p>
+<p>Fermentation is the oldest of these and still produces most of the world's ethanol for drinks and fuel. Yeast enzymes convert glucose into ethanol and carbon dioxide in the absence of air: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂.</p>
+<h2 id="103-converting-alcohols-into-haloalkanes-and-sulfonates">10.3 Converting alcohols into haloalkanes and sulfonates<a class="headerlink" href="#103-converting-alcohols-into-haloalkanes-and-sulfonates" title="Permanent link">&para;</a></h2>
+<p>The OH group cannot leave as HO⁻, so it must be activated first.</p>
+<p><strong>With hydrogen halides.</strong> Concentrated HCl, HBr or HI protonate the OH, and water then leaves.</p>
+<ul>
+<li><strong>Tertiary</strong> alcohols react fast, even with HCl at room temperature, by an <strong>SN1</strong> mechanism: the protonated alcohol loses water to give a tertiary carbocation, which is captured by halide.</li>
+<li><strong>Primary</strong> alcohols react by <strong>SN2</strong>: halide attacks the carbon of the protonated alcohol, displacing water. HBr and HI work well; HCl needs a zinc chloride catalyst.</li>
+<li>Secondary alcohols are in between and may rearrange.</li>
+</ul>
+<p>The rate difference is the basis of the <strong>Lucas test</strong>: with a solution of zinc chloride in concentrated hydrochloric acid, a tertiary alcohol gives an immediate cloudiness (the insoluble chloroalkane), a secondary alcohol does so within minutes, and a primary alcohol hardly at all at room temperature.</p>
+<p><strong>With thionyl chloride or phosphorus tribromide.</strong> For primary and secondary alcohols, SOCl₂ (giving chloroalkanes, with SO₂ and HCl as gaseous by-products) and PBr₃ (giving bromoalkanes) are cleaner. Both first convert the OH into a good leaving group bonded to sulfur or phosphorus, which is then displaced by halide in an SN2 step, avoiding carbocations and rearrangements.</p>
+<p><strong>Sulfonate esters.</strong> An alcohol reacts with 4-methylbenzenesulfonyl chloride (tosyl chloride, TsCl) in pyridine to give a <strong>tosylate</strong>, R–OTs. The C–O bond of the alcohol is not broken in this step, so the configuration of the carbon is unchanged. The tosylate ion is a very weak base (the conjugate base of a strong acid), so it is an excellent leaving group, as good as or better than bromide. Tosylates undergo SN2 and E2 reactions just like haloalkanes, which gives a two-step way to substitute an alcohol with full control of stereochemistry: tosylation (retention), then SN2 (inversion).</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: water is a leaving group only after protonation</p>
+<p>Never draw HO⁻ leaving from an alcohol in neutral or basic solution. In acid, draw protonation first, then loss of H₂O. In the laboratory, alcohols are made reactive by acid, by conversion into a halide, or by conversion into a sulfonate.</p>
+</div>
+<h2 id="104-dehydration-to-alkenes">10.4 Dehydration to alkenes<a class="headerlink" href="#104-dehydration-to-alkenes" title="Permanent link">&para;</a></h2>
+<p>Heating an alcohol with concentrated sulfuric acid or phosphoric acid removes a molecule of water and forms an alkene. Cyclohexanol, warmed with concentrated phosphoric acid, gives cyclohexene, which distils out of the mixture as it forms; this is a common teaching practical.</p>
+<p>For secondary and tertiary alcohols the mechanism is <strong>E1</strong>:</p>
+<ol>
+<li>The OH is protonated.</li>
+<li>Water leaves, giving a carbocation (rate-determining).</li>
+<li>A base (water, or HSO₄⁻) removes a proton from a neighbouring carbon, forming the C=C bond and regenerating the acid catalyst.</li>
+</ol>
+<p>Because the reaction goes through a carbocation, the ease of dehydration is tertiary &gt; secondary &gt; primary, the more substituted alkene predominates (<strong>Zaitsev's rule</strong>), and rearrangements can occur. Butan-2-ol gives mainly but-2-ene. Primary alcohols dehydrate only under harsher conditions, by an E2-like pathway from the protonated alcohol.</p>
+<p>Dehydration is the reverse of acid-catalysed hydration (Section 7.3). The position of the equilibrium is controlled by the conditions: concentrated acid and heat, with removal of the alkene by distillation, favour dehydration; dilute aqueous acid favours hydration.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 10.1: Predicting dehydration products</p>
+<p>Predict the main product of heating 2-methylbutan-2-ol with concentrated H₂SO₄.</p>
+<p>Protonation and loss of water give the tertiary cation (CH₃)₂C⁺CH₂CH₃. Loss of a proton from the CH₂ gives the trisubstituted alkene 2-methylbut-2-ene; loss from a CH₃ gives the disubstituted 2-methylbut-1-ene. By Zaitsev's rule the main product is <strong>2-methylbut-2-ene</strong>.</p>
+</div>
+<h2 id="105-oxidation-of-alcohols">10.5 Oxidation of alcohols<a class="headerlink" href="#105-oxidation-of-alcohols" title="Permanent link">&para;</a></h2>
+<p>Oxidation of an alcohol removes the hydrogen from the O–H and a hydrogen from the carbon carrying the OH, forming a C=O bond. Whether a reaction is possible depends on whether that carbon has a hydrogen.</p>
+<ul>
+<li>A <strong>primary</strong> alcohol (two H on the carbinol carbon) is oxidised first to an <strong>aldehyde</strong>, and the aldehyde, which is easily oxidised itself, can go on to a <strong>carboxylic acid</strong>.</li>
+<li>A <strong>secondary</strong> alcohol (one H) is oxidised to a <strong>ketone</strong>, which resists further oxidation.</li>
+<li>A <strong>tertiary</strong> alcohol (no H) is <strong>not oxidised</strong> under these conditions.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/alcohol-oxidation.svg" alt="Oxidation of alcohols with acidified potassium dichromate(VI). Propan-1-ol gives propanal, which is distilled off as it forms; under reflux the oxidation continues to propanoic acid. Propan-2-ol gives propanone. 2-Methylpropan-2-ol has no hydrogen on the carbon bearing the OH group and is not oxidised. The orange dichromate is reduced to green chromium(III)." loading="lazy" width="790" height="400">
+<figcaption><strong>Figure 10.1 Oxidation of alcohols.</strong> Oxidation of alcohols with acidified potassium dichromate(VI). Propan-1-ol gives propanal, which is distilled off as it forms; under reflux the oxidation continues to propanoic acid. Propan-2-ol gives propanone. 2-Methylpropan-2-ol has no hydrogen on the carbon bearing the OH group and is not oxidised. The orange dichromate is reduced to green chromium(III).</figcaption>
+</figure>
+<p>The classic oxidising agent in teaching laboratories is <strong>acidified potassium dichromate(VI)</strong>, K₂Cr₂O₇ with dilute H₂SO₄. As it oxidises the alcohol, the orange Cr₂O₇²⁻ ion is reduced to green Cr³⁺. The colour change distinguishes primary and secondary alcohols (which turn the solution green) from tertiary alcohols (which do not). To stop at the aldehyde, the primary alcohol is added to the oxidant and the aldehyde, which boils lower than the alcohol because it cannot hydrogen bond to itself, is <strong>distilled off</strong> as soon as it forms. To get the carboxylic acid, the mixture is heated under <strong>reflux</strong> with excess oxidant.</p>
+<p>Milder, anhydrous reagents stop the oxidation of primary alcohols cleanly at the aldehyde. Pyridinium chlorochromate (PCC) in dichloromethane is a traditional choice, and chromium-free methods are now preferred where possible.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: chromium(VI)</p>
+<p>Chromium(VI) compounds are toxic and carcinogenic and must be handled with gloves, in small amounts, and disposed of as hazardous waste. In modern practice they are being replaced by less hazardous oxidants, including catalytic methods that use air or hydrogen peroxide (Chapter 16).</p>
+</div>
+<p>In living cells, the oxidation of ethanol to ethanal and then to ethanoic acid is carried out by enzymes (alcohol dehydrogenase and aldehyde dehydrogenase) using the coenzyme NAD⁺ as the oxidant.</p>
+<h2 id="106-ethers">10.6 Ethers<a class="headerlink" href="#106-ethers" title="Permanent link">&para;</a></h2>
+<p>An ether has an oxygen bonded to two carbon groups, R–O–R′. The C–O–C angle is about 110°. Ethers cannot hydrogen bond to one another, so their boiling points are close to those of alkanes of similar mass (methoxymethane −24 °C). They can, however, accept hydrogen bonds from water, so small ethers are somewhat soluble in water.</p>
+<p>Ethers are unreactive towards bases, nucleophiles, dilute acids and most oxidising and reducing agents, which makes them excellent <strong>solvents</strong>. Ethoxyethane (diethyl ether) and the cyclic ether <strong>tetrahydrofuran</strong> (oxolane, THF) are used for Grignard reactions (Chapter 11), because their lone pairs coordinate to and stabilise the magnesium.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: ether hazards</p>
+<p>Ethoxyethane is extremely flammable, with a very low flash point, and its vapour is denser than air and can travel to a distant flame. On standing in air and light, ethers slowly form explosive peroxides. Containers are dated when opened, tested for peroxides before use, never distilled to dryness, and kept away from all ignition sources.</p>
+</div>
+<h3 id="making-ethers-the-williamson-synthesis">Making ethers: the Williamson synthesis<a class="headerlink" href="#making-ethers-the-williamson-synthesis" title="Permanent link">&para;</a></h3>
+<p>The most general method is the <strong>Williamson ether synthesis</strong>: an alkoxide ion reacts with a primary haloalkane (or tosylate) by <strong>SN2</strong>.</p>
+<div class="arithmatex">\[
+\mathrm{CH_3CH_2O^-Na^+ + CH_3I \rightarrow CH_3CH_2OCH_3 + NaI}
+\]</div>
+<p>Because it is an SN2 reaction, the haloalkane must be methyl or primary. A tertiary haloalkane with an alkoxide gives elimination instead. So to make an unsymmetrical ether, choose the combination in which the halide carries the less hindered group.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 10.2: Planning a Williamson synthesis</p>
+<p>How would you make 2-methoxy-2-methylpropane, CH₃–O–C(CH₃)₃ (methyl <em>tert</em>-butyl ether)?</p>
+<p>Two disconnections are possible: (a) CH₃O⁻ + (CH₃)₃CBr; (b) (CH₃)₃CO⁻ + CH₃I. Route (a) fails: methoxide with a tertiary bromide gives elimination (2-methylpropene). Route (b) works: the halide is methyl, ideal for SN2, and the bulky alkoxide is the nucleophile. Use <strong>potassium <em>tert</em>-butoxide and iodomethane</strong>.</p>
+</div>
+<p>Symmetrical ethers from primary alcohols can also be made by heating the alcohol with concentrated sulfuric acid at a temperature lower than that used for dehydration: one protonated alcohol molecule is attacked by another in an SN2 step. At higher temperatures elimination to the alkene takes over.</p>
+<h3 id="cleaving-ethers">Cleaving ethers<a class="headerlink" href="#cleaving-ethers" title="Permanent link">&para;</a></h3>
+<p>Ethers are cleaved by heating with concentrated HI or HBr. The oxygen is protonated, and the halide then attacks one of the carbons: by SN2 at a methyl or primary carbon, or by SN1 if one group is tertiary. Methoxyethane with excess HI gives iodomethane and iodoethane (the alcohol formed first is converted into a second iodoalkane).</p>
+<p><strong>Crown ethers</strong>, large cyclic polyethers such as 18-crown-6, have their oxygens pointing into a central cavity that binds a metal cation of the right size (K⁺ for 18-crown-6). They can carry salts such as KMnO₄ or KF into non-polar solvents.</p>
+<h2 id="107-epoxides">10.7 Epoxides<a class="headerlink" href="#107-epoxides" title="Permanent link">&para;</a></h2>
+<p>An <strong>epoxide</strong> (oxirane) is a cyclic ether with a three-membered ring. Like cyclopropane, it has substantial ring strain (about 110 kJ mol⁻¹), and opening the ring releases it. Epoxides therefore react with nucleophiles under conditions where ordinary ethers do not.</p>
+<h3 id="making-epoxides">Making epoxides<a class="headerlink" href="#making-epoxides" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>From alkenes and peroxyacids</strong> (Section 7.6): a stereospecific syn addition of oxygen. <em>cis</em>-But-2-ene gives <em>cis</em>-2,3-dimethyloxirane.</li>
+<li><strong>From halohydrins</strong>: treating a bromohydrin with base deprotonates the OH, and the alkoxide displaces the neighbouring bromide by an <strong>intramolecular SN2</strong> reaction, closing the ring. The O⁻ and Br must be anti-periplanar for this backside attack.</li>
+<li>Industrially, oxirane (ethylene oxide) is made by oxidising ethene with oxygen over a silver catalyst.</li>
+</ul>
+<h3 id="ring-opening">Ring opening<a class="headerlink" href="#ring-opening" title="Permanent link">&para;</a></h3>
+<p>Epoxides are opened by nucleophiles under both basic and acidic conditions, but the two give different regiochemistry.</p>
+<p><strong>Basic or neutral conditions (strong nucleophile).</strong> A strong nucleophile, such as HO⁻, RO⁻, CN⁻, an amine, or a Grignard reagent, attacks the epoxide directly by an <strong>SN2</strong> mechanism. It attacks the <strong>less hindered carbon</strong>, from the side opposite the oxygen, with inversion at that carbon. The ring oxygen becomes an alkoxide, which is protonated in a final step.</p>
+<p><strong>Acidic conditions (weak nucleophile).</strong> The epoxide oxygen is first protonated, which makes it a much better leaving group. The C–O bonds weaken, and positive charge builds up on the carbons, especially the more substituted one, which can stabilise it better. A weak nucleophile such as water or an alcohol then attacks the <strong>more substituted carbon</strong>, still from the back face, so the addition is anti. The mechanism lies between SN1 and SN2: it has SN1-like regiochemistry and SN2-like stereochemistry.</p>
+<figure class="fig fig-diagram">
+<img src="img/epoxide-opening.svg" alt="Ring opening of 2-methyloxirane. With methoxide (basic conditions), the nucleophile attacks the less hindered CH₂ carbon by SN2, giving 1-methoxypropan-2-ol after protonation. In methanol with an acid catalyst, the protonated epoxide is attacked at the more substituted carbon, which carries more of the positive charge, giving 2-methoxypropan-1-ol." loading="lazy" width="790" height="360">
+<figcaption><strong>Figure 10.2 Opening an epoxide under basic and acidic conditions.</strong> Ring opening of 2-methyloxirane. With methoxide (basic conditions), the nucleophile attacks the less hindered CH₂ carbon by SN2, giving 1-methoxypropan-2-ol after protonation. In methanol with an acid catalyst, the protonated epoxide is attacked at the more substituted carbon, which carries more of the positive charge, giving 2-methoxypropan-1-ol.</figcaption>
+</figure>
+<p>Acid-catalysed hydrolysis of an epoxide gives a 1,2-diol with the two OH groups <strong>anti</strong>. Epoxidation of cyclohexene followed by aqueous acid gives <em>trans</em>-cyclohexane-1,2-diol, a useful complement to the <em>cis</em> diol from OsO₄ (Section 7.6).</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Strong nucleophile, basic conditions: attack at the <strong>less</strong> substituted carbon (steric control, SN2). Weak nucleophile, acid catalyst: attack at the <strong>more</strong> substituted carbon (electronic control, carbocation-like). In both cases the nucleophile enters from the face opposite the oxygen, so the stereochemistry is anti.</p>
+</div>
+<p>Epoxides are widely used. Oxirane is converted into ethane-1,2-diol (antifreeze and a monomer for polyester, Chapter 15), and epoxy resins, used as strong adhesives and coatings, are polymers formed by ring-opening reactions of epoxides with amines.</p>
+<h2 id="108-summary">10.8 Summary<a class="headerlink" href="#108-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Hydrogen bonding gives alcohols high boiling points and water solubility; ethers cannot hydrogen bond to themselves.</li>
+<li>Alcohols are weak acids (pKa 15.5 to 18) and react with Na or NaH to give alkoxides; they are also weak bases, and protonation turns OH into a good leaving group.</li>
+<li>Alcohols become haloalkanes with HX (3° by SN1, 1° by SN2), SOCl₂ or PBr₃, and tosylates with TsCl (retention).</li>
+<li>Acid-catalysed dehydration (E1 for 2° and 3°) gives the more substituted alkene, with possible rearrangement.</li>
+<li>Oxidation: 1° → aldehyde → carboxylic acid; 2° → ketone; 3° → no reaction. Dichromate turns from orange to green.</li>
+<li>Williamson synthesis: alkoxide + methyl or primary halide (SN2). Ethers are cleaved by HI or HBr.</li>
+<li>Epoxides are strained. Strong nucleophiles open them at the less substituted carbon; acid-catalysed opening occurs at the more substituted carbon; both give anti products.</li>
+</ul>
+</div>
+<h2 id="109-exercises">10.9 Exercises<a class="headerlink" href="#109-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Arrange in order of increasing boiling point and explain: butan-1-ol, ethoxyethane, pentane, butane-1,4-diol. (All have molar masses between 72 and 90 g mol⁻¹.)</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethoxyethane (35 °C) ≈ pentane (36 °C) &lt; butan-1-ol (118 °C) &lt; butane-1,4-diol (about 230 °C). Pentane has only dispersion forces; ethoxyethane is polar but cannot hydrogen bond to itself; butan-1-ol forms hydrogen bonds through one OH group; the diol forms hydrogen bonds through two.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Give reagents to convert butan-1-ol into: (a) 1-bromobutane; (b) 1-chlorobutane; (c) butanal; (d) butanoic acid; (e) but-1-ene (as the main product, avoiding rearrangement).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) PBr₃ (or concentrated HBr). (b) SOCl₂. (c) PCC in dichloromethane, or acidified dichromate with the aldehyde distilled off as it forms. (d) Excess acidified potassium dichromate, heated under reflux. (e) Direct acid dehydration of a primary alcohol is slow and can give rearranged but-2-ene; a cleaner route is to make the tosylate (TsCl, pyridine) or 1-bromobutane and eliminate with a bulky base such as potassium <em>tert</em>-butoxide (E2), which gives but-1-ene.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Write the mechanism of the acid-catalysed dehydration of cyclohexanol to cyclohexene. Why is the alkene distilled out of the reaction mixture as it forms?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(1) The OH oxygen is protonated by the acid, giving an oxonium ion. (2) Water leaves, giving the secondary cyclohexyl carbocation (rate-determining). (3) Water or the conjugate base of the acid removes a proton from a neighbouring carbon; the C–H electrons form the C=C π bond, giving cyclohexene and regenerating the acid. Dehydration is reversible (the reverse is hydration). Cyclohexene (bp 83 °C) boils lower than cyclohexanol (bp 161 °C), so distilling it out as it forms shifts the equilibrium towards the products (Le Chatelier's principle).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Three unlabelled bottles contain butan-1-ol, butan-2-ol and 2-methylpropan-2-ol. Describe chemical tests that would identify each.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Warm a few drops of each with acidified potassium dichromate. The tertiary alcohol (2-methylpropan-2-ol) does not react: the solution stays orange. The other two turn the solution green. To tell these apart, use the Lucas reagent (ZnCl₂ in concentrated HCl) at room temperature: the secondary alcohol, butan-2-ol, turns cloudy within a few minutes, while the primary alcohol, butan-1-ol, stays clear. (Alternatively, collect the oxidation products: butan-1-ol gives an aldehyde, which gives a silver mirror with Tollens' reagent; butan-2-ol gives a ketone, which does not; Chapter 11.)</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Which combination of reagents would you use to make each ether by the Williamson synthesis? (a) 1-ethoxypropane; (b) <em>tert</em>-butyl phenyl ether, C₆H₅–O–C(CH₃)₃, explaining any difficulty; (c) methoxycyclohexane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Sodium ethoxide + 1-bromopropane, or sodium propoxide + bromoethane: both halides are primary, so either works.</p>
+<p>(b) This ether cannot be made by the Williamson method. Phenoxide + 2-bromo-2-methylpropane gives elimination (2-methylpropene), because the halide is tertiary. The other combination, <em>tert</em>-butoxide + bromobenzene, fails because SN2 does not occur at an sp² carbon of a benzene ring. A different method (for example, acid-catalysed addition of phenol to 2-methylpropene) is needed.</p>
+<p>(c) Sodium cyclohexoxide (from cyclohexanol + NaH) + iodomethane. The reverse, methoxide + bromocyclohexane, would give a lot of cyclohexene by E2, because the halide is secondary.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Give the main product of 2,2-dimethyloxirane, (CH₃)₂C–CH₂ joined through O, with (a) sodium methoxide in methanol; (b) methanol with a trace of sulfuric acid.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Methoxide attacks the less hindered CH₂ carbon by SN2: after protonation, <strong>1-methoxy-2-methylpropan-2-ol</strong>, (CH₃)₂C(OH)CH₂OCH₃.</p>
+<p>(b) After protonation of the epoxide oxygen, methanol attacks the more substituted (tertiary) carbon, which bears more positive charge: <strong>2-methoxy-2-methylpropan-1-ol</strong>, (CH₃)₂C(OCH₃)CH₂OH.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Describe two ways to make cyclohexane-1,2-diol from cyclohexene, one giving the <em>cis</em> isomer and one giving the <em>trans</em> isomer.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p><em>cis</em>-Diol: syn dihydroxylation with OsO₄ (catalytic, with a co-oxidant) or cold, dilute, alkaline KMnO₄. <em>trans</em>-Diol: epoxidation with a peroxyacid, followed by acid-catalysed ring opening with water; water attacks from the face opposite the epoxide oxygen, giving anti addition (as a racemic mixture of the two <em>trans</em> enantiomers).</p>
+</details>
+<h2 id="1010-quiz">10.10 Quiz<a class="headerlink" href="#1010-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="d6e2bd010dce">
+<p class="pk-quiz-title">Check your understanding of alcohols, ethers and epoxides</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;ethanol&quot;,&quot;propan-2-ol&quot;,&quot;butan-1-ol&quot;,&quot;2-methylpropan-2-ol&quot;],&quot;answer&quot;:&quot;2-methylpropan-2-ol&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which alcohol is NOT oxidised by acidified potassium dichromate?</p>
+<ol class="pk-q-opts" type="A"><li>ethanol</li><li>propan-2-ol</li><li>butan-1-ol</li><li>2-methylpropan-2-ol</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>2-methylpropan-2-ol</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;propanal&quot;,&quot;propanone&quot;,&quot;propanoic acid&quot;,&quot;propene&quot;],&quot;answer&quot;:&quot;propanone&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Propan-2-ol is oxidised to</p>
+<ol class="pk-q-opts" type="A"><li>propanal</li><li>propanone</li><li>propanoic acid</li><li>propene</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>propanone</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;deprotonated&quot;,&quot;protonated or converted into a sulfonate&quot;,&quot;oxidised&quot;,&quot;reduced&quot;],&quot;answer&quot;:&quot;protonated or converted into a sulfonate&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Before the OH of an alcohol can leave in a substitution, it is usually</p>
+<ol class="pk-q-opts" type="A"><li>deprotonated</li><li>protonated or converted into a sulfonate</li><li>oxidised</li><li>reduced</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>protonated or converted into a sulfonate</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;but-1-ene&quot;,&quot;but-2-ene&quot;,&quot;butane&quot;,&quot;butanone&quot;],&quot;answer&quot;:&quot;but-2-ene&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Acid-catalysed dehydration of butan-2-ol gives mainly</p>
+<ol class="pk-q-opts" type="A"><li>but-1-ene</li><li>but-2-ene</li><li>butane</li><li>butanone</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>but-2-ene</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;tertiary&quot;,&quot;secondary&quot;,&quot;primary or methyl&quot;,&quot;aromatic&quot;],&quot;answer&quot;:&quot;primary or methyl&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">In the Williamson ether synthesis, the haloalkane should preferably be</p>
+<ol class="pk-q-opts" type="A"><li>tertiary</li><li>secondary</li><li>primary or methyl</li><li>aromatic</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>primary or methyl</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;the more substituted carbon&quot;,&quot;the less substituted carbon&quot;,&quot;the oxygen&quot;,&quot;both carbons equally&quot;],&quot;answer&quot;:&quot;the less substituted carbon&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Under basic conditions, methoxide opens 2-methyloxirane at</p>
+<ol class="pk-q-opts" type="A"><li>the more substituted carbon</li><li>the less substituted carbon</li><li>the oxygen</li><li>both carbons equally</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the less substituted carbon</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;green&quot;]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">What colour does acidified dichromate turn when it oxidises a primary alcohol?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>green</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="alkyl-halides.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 9. Alkyl Halides: Substitution and Elimination">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</div>
+</div>
+</a>
+<a href="aldehydes-and-ketones.html" class="md-footer__link md-footer__link--next" aria-label="Next: 11. Aldehydes and Ketones">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+11. Aldehydes and Ketones
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

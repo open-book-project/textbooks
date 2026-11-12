@@ -1,0 +1,1144 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/lab-safety-and-green-chemistry.html">
+<link rel="prev" href="polymers-and-biomolecules.html">
+<link rel="next" href="glossary.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>16. Laboratory Safety and Green Chemistry - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#161-hazard-risk-and-risk-assessment" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#161-hazard-risk-and-risk-assessment" class="md-nav__link">
+<span class="md-ellipsis">
+16.1 Hazard, risk and risk assessment
+</span>
+</a>
+<nav class="md-nav" aria-label="16.1 Hazard, risk and risk assessment">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#basic-rules-of-the-teaching-laboratory" class="md-nav__link">
+<span class="md-ellipsis">
+Basic rules of the teaching laboratory
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#162-hazard-information" class="md-nav__link">
+<span class="md-ellipsis">
+16.2 Hazard information
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#163-standard-techniques" class="md-nav__link">
+<span class="md-ellipsis">
+16.3 Standard techniques
+</span>
+</a>
+<nav class="md-nav" aria-label="16.3 Standard techniques">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#heating-under-reflux" class="md-nav__link">
+<span class="md-ellipsis">
+Heating under reflux
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#distillation" class="md-nav__link">
+<span class="md-ellipsis">
+Distillation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#liquidliquid-extraction" class="md-nav__link">
+<span class="md-ellipsis">
+Liquid–liquid extraction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#drying" class="md-nav__link">
+<span class="md-ellipsis">
+Drying
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#recrystallisation" class="md-nav__link">
+<span class="md-ellipsis">
+Recrystallisation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#melting-point-and-boiling-point" class="md-nav__link">
+<span class="md-ellipsis">
+Melting point and boiling point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#thin-layer-chromatography" class="md-nav__link">
+<span class="md-ellipsis">
+Thin-layer chromatography
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#164-waste-disposal" class="md-nav__link">
+<span class="md-ellipsis">
+16.4 Waste disposal
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#165-yield-and-atom-economy" class="md-nav__link">
+<span class="md-ellipsis">
+16.5 Yield and atom economy
+</span>
+</a>
+<nav class="md-nav" aria-label="16.5 Yield and atom economy">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#percentage-yield" class="md-nav__link">
+<span class="md-ellipsis">
+Percentage yield
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#atom-economy" class="md-nav__link">
+<span class="md-ellipsis">
+Atom economy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-e-factor" class="md-nav__link">
+<span class="md-ellipsis">
+The E-factor
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#166-the-principles-of-green-chemistry" class="md-nav__link">
+<span class="md-ellipsis">
+16.6 The principles of green chemistry
+</span>
+</a>
+<nav class="md-nav" aria-label="16.6 The principles of green chemistry">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#green-chemistry-in-practice" class="md-nav__link">
+<span class="md-ellipsis">
+Green chemistry in practice
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#167-summary" class="md-nav__link">
+<span class="md-ellipsis">
+16.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#168-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+16.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#169-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+16.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#161-hazard-risk-and-risk-assessment" class="md-nav__link">
+<span class="md-ellipsis">
+16.1 Hazard, risk and risk assessment
+</span>
+</a>
+<nav class="md-nav" aria-label="16.1 Hazard, risk and risk assessment">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#basic-rules-of-the-teaching-laboratory" class="md-nav__link">
+<span class="md-ellipsis">
+Basic rules of the teaching laboratory
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#162-hazard-information" class="md-nav__link">
+<span class="md-ellipsis">
+16.2 Hazard information
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#163-standard-techniques" class="md-nav__link">
+<span class="md-ellipsis">
+16.3 Standard techniques
+</span>
+</a>
+<nav class="md-nav" aria-label="16.3 Standard techniques">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#heating-under-reflux" class="md-nav__link">
+<span class="md-ellipsis">
+Heating under reflux
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#distillation" class="md-nav__link">
+<span class="md-ellipsis">
+Distillation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#liquidliquid-extraction" class="md-nav__link">
+<span class="md-ellipsis">
+Liquid–liquid extraction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#drying" class="md-nav__link">
+<span class="md-ellipsis">
+Drying
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#recrystallisation" class="md-nav__link">
+<span class="md-ellipsis">
+Recrystallisation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#melting-point-and-boiling-point" class="md-nav__link">
+<span class="md-ellipsis">
+Melting point and boiling point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#thin-layer-chromatography" class="md-nav__link">
+<span class="md-ellipsis">
+Thin-layer chromatography
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#164-waste-disposal" class="md-nav__link">
+<span class="md-ellipsis">
+16.4 Waste disposal
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#165-yield-and-atom-economy" class="md-nav__link">
+<span class="md-ellipsis">
+16.5 Yield and atom economy
+</span>
+</a>
+<nav class="md-nav" aria-label="16.5 Yield and atom economy">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#percentage-yield" class="md-nav__link">
+<span class="md-ellipsis">
+Percentage yield
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#atom-economy" class="md-nav__link">
+<span class="md-ellipsis">
+Atom economy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-e-factor" class="md-nav__link">
+<span class="md-ellipsis">
+The E-factor
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#166-the-principles-of-green-chemistry" class="md-nav__link">
+<span class="md-ellipsis">
+16.6 The principles of green chemistry
+</span>
+</a>
+<nav class="md-nav" aria-label="16.6 The principles of green chemistry">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#green-chemistry-in-practice" class="md-nav__link">
+<span class="md-ellipsis">
+Green chemistry in practice
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#167-summary" class="md-nav__link">
+<span class="md-ellipsis">
+16.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#168-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+16.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#169-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+16.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-16-laboratory-safety-and-green-chemistry">Chapter 16: Laboratory Safety and Green Chemistry<a class="headerlink" href="#chapter-16-laboratory-safety-and-green-chemistry" title="Permanent link">&para;</a></h1>
+<p><em>Working safely, and making chemistry cleaner</em></p>
+<p>Organic chemistry is an experimental science. Every reaction in this book was first carried out by someone at a bench, and every structure was confirmed by experiment. Laboratory work brings real hazards: most organic solvents burn, many reagents are corrosive or toxic, and some reactions release heat or gas quickly. Good practice reduces these risks to a very low level. The same habits of thought that make a laboratory safe, asking what could go wrong and how to prevent it, also underlie <strong>green chemistry</strong>, the effort to design chemical processes that produce less waste, use less hazardous materials and consume less energy. This chapter covers the principles of safe practice, the standard techniques of a teaching laboratory, the measurement of purity and yield, and the principles and metrics of green chemistry.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>explain the difference between a hazard and a risk, and outline a risk assessment;</li>
+<li>interpret hazard pictograms and safety data sheets, and choose appropriate protective measures;</li>
+<li>describe the purpose and safe use of the common techniques: heating under reflux, distillation, extraction, drying, recrystallisation, filtration, melting-point determination and thin-layer chromatography;</li>
+<li>dispose of organic waste correctly;</li>
+<li>calculate percentage yield, atom economy and E-factor, and distinguish them;</li>
+<li>state the twelve principles of green chemistry and apply them to compare processes.</li>
+</ul>
+</div>
+<h2 id="161-hazard-risk-and-risk-assessment">16.1 Hazard, risk and risk assessment<a class="headerlink" href="#161-hazard-risk-and-risk-assessment" title="Permanent link">&para;</a></h2>
+<p>Two words are often confused:</p>
+<ul>
+<li>A <strong>hazard</strong> is something with the potential to cause harm: a flammable liquid, a corrosive acid, a toxic gas, a hot surface.</li>
+<li>A <strong>risk</strong> is the likelihood that harm will actually occur, combined with how severe it would be, in a particular situation.</li>
+</ul>
+<p>Ethoxyethane is always a hazard (it is extremely flammable). The risk of using it depends on how much is used, whether there are flames or hot surfaces nearby, and whether the work is done in a fume cupboard. Good practice cannot remove hazards, but it can reduce risks to an acceptable level.</p>
+<p>Before any practical work, a <strong>risk assessment</strong> is made, normally by the person in charge and read by everyone who does the experiment. It:</p>
+<ol>
+<li>lists every substance used and produced, and every operation (heating, distilling, filtering under vacuum);</li>
+<li>identifies the hazards of each, from the supplier's <strong>safety data sheet</strong> (SDS);</li>
+<li>assesses the risks in the planned procedure;</li>
+<li>sets out <strong>control measures</strong>: using smaller quantities or a less hazardous substitute, working in a fume cupboard, wearing protective equipment;</li>
+<li>states what to do in an emergency: spills, fires, splashes on skin or in eyes, and how to dispose of waste.</li>
+</ol>
+<p>The most effective controls come first: <strong>eliminate</strong> the hazard if possible, <strong>substitute</strong> something less hazardous, use <strong>engineering controls</strong> (fume cupboards, safety screens), then <strong>procedures</strong> (training, supervision, small scale), and only lastly <strong>personal protective equipment</strong>, the last line of defence.</p>
+<h3 id="basic-rules-of-the-teaching-laboratory">Basic rules of the teaching laboratory<a class="headerlink" href="#basic-rules-of-the-teaching-laboratory" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Wear <strong>safety spectacles or goggles</strong> at all times, and a <strong>laboratory coat</strong>, fastened. Wear suitable <strong>gloves</strong> when handling corrosive or toxic substances, chosen for the chemicals in use, and remove them before touching door handles, phones or your face.</li>
+<li>Never eat, drink or apply cosmetics in the laboratory. Never smell chemicals directly or pipette by mouth.</li>
+<li>Work in a <strong>fume cupboard</strong> with volatile, toxic or smelly substances, and keep the sash low.</li>
+<li>Know where the <strong>eyewash station</strong>, <strong>safety shower</strong>, <strong>fire extinguishers</strong>, fire blanket and exits are, and how to use them.</li>
+<li>Keep flammable solvents away from flames and hot plates. Many organic solvents have vapours denser than air that can travel along a bench to an ignition source.</li>
+<li>Label every container with its contents and the main hazard. Never return unused reagent to the stock bottle.</li>
+<li>Never heat a <strong>closed system</strong>; pressure can build up until the apparatus bursts.</li>
+<li>Report every accident, spill and breakage, however small. Never work alone.</li>
+</ul>
+<h2 id="162-hazard-information">16.2 Hazard information<a class="headerlink" href="#162-hazard-information" title="Permanent link">&para;</a></h2>
+<p>Chemicals are classified and labelled internationally under the <strong>Globally Harmonised System</strong> (GHS). Each label carries pictograms (a black symbol in a red-bordered diamond), a signal word ("Danger" or "Warning"), hazard statements and precautionary statements. The pictograms are:</p>
+<table>
+<thead>
+<tr>
+<th>Pictogram</th>
+<th>Meaning</th>
+<th>Organic laboratory examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flame</td>
+<td>flammable</td>
+<td>ethanol, propanone, hexane, ethoxyethane</td>
+</tr>
+<tr>
+<td>flame over circle</td>
+<td>oxidising</td>
+<td>potassium manganate(VII), hydrogen peroxide (concentrated)</td>
+</tr>
+<tr>
+<td>exploding bomb</td>
+<td>explosive or self-reactive</td>
+<td>dry diazonium salts, organic peroxides</td>
+</tr>
+<tr>
+<td>corrosion</td>
+<td>corrosive to skin, eyes or metals</td>
+<td>concentrated acids, sodium hydroxide, ethanoyl chloride</td>
+</tr>
+<tr>
+<td>skull and crossbones</td>
+<td>acutely toxic</td>
+<td>methanol (in quantity), bromine, cyanides</td>
+</tr>
+<tr>
+<td>exclamation mark</td>
+<td>harmful or irritant</td>
+<td>many dilute solutions, many organic solids</td>
+</tr>
+<tr>
+<td>health hazard (silhouette)</td>
+<td>long-term health hazard: carcinogen, mutagen, reproductive toxin, respiratory sensitiser</td>
+<td>dichloromethane (suspected carcinogen), chromium(VI) compounds</td>
+</tr>
+<tr>
+<td>gas cylinder</td>
+<td>gas under pressure</td>
+<td>nitrogen, carbon dioxide cylinders</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>hazardous to aquatic life</td>
+<td>many halogenated organic compounds</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 16.1. GHS hazard pictograms.</em></p>
+<p>The <strong>safety data sheet</strong> for each substance gives fuller information: physical properties, flash point, exposure limits, first-aid measures, fire-fighting measures, safe storage, and disposal. Reading it is part of planning any experiment.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: solvent flammability</p>
+<p>The <strong>flash point</strong> of a liquid is the lowest temperature at which its vapour can be ignited in air. Ethoxyethane, pentane, hexane and propanone have flash points well below room temperature, so their vapours can ignite at any time if a source of ignition is present. Heat flammable solvents only with a water bath, a heating mantle or a hot plate, never with a naked flame, and in small quantities.</p>
+</div>
+<h2 id="163-standard-techniques">16.3 Standard techniques<a class="headerlink" href="#163-standard-techniques" title="Permanent link">&para;</a></h2>
+<p>Most organic preparations follow the same pattern: carry out the reaction, separate the crude product from the mixture, purify it, and check its identity and purity.</p>
+<figure class="fig fig-mermaid">
+<pre class="mermaid">flowchart LR
+    R[Reaction: heat under reflux] --&gt; W[Work-up: extract, wash, dry]
+    W --&gt; P[Purify: distil or recrystallise]
+    P --&gt; A[Analyse: melting or boiling point, TLC, spectra]
+    A --&gt; Y[Calculate percentage yield]</pre>
+<figcaption><strong>Figure 16.1 The stages of a typical organic preparation.</strong> Each stage uses one or more standard techniques.</figcaption>
+</figure>
+<h3 id="heating-under-reflux">Heating under reflux<a class="headerlink" href="#heating-under-reflux" title="Permanent link">&para;</a></h3>
+<p>Many organic reactions are slow at room temperature and must be heated for some time. If an open flask were heated, the volatile solvent and reactants would boil away. In <strong>heating under reflux</strong>, a vertical <strong>condenser</strong> with cold water flowing through its jacket (in at the bottom, out at the top) is fitted to the flask. Vapour rises into the condenser, condenses and runs back into the flask, so the mixture can be kept boiling at the solvent's boiling point indefinitely without loss. The top of the condenser is left <strong>open</strong> to the air. <strong>Anti-bumping granules</strong> are added before heating to promote smooth boiling.</p>
+<h3 id="distillation">Distillation<a class="headerlink" href="#distillation" title="Permanent link">&para;</a></h3>
+<p><strong>Simple distillation</strong> separates a volatile liquid from non-volatile substances, or from liquids whose boiling points differ by more than about 25 °C. The vapour passes through a sloping condenser and is collected as the <strong>distillate</strong>; a thermometer with its bulb level with the side arm measures the temperature of the vapour. <strong>Fractional distillation</strong>, with a column packed with glass between the flask and the condenser, separates liquids with closer boiling points: the vapour condenses and re-evaporates many times on the way up the column, becoming richer in the more volatile component. Distillation is used, for example, to collect an aldehyde as it forms (Section 10.5) and to collect cyclohexene from the dehydration of cyclohexanol (Section 10.4).</p>
+<h3 id="liquidliquid-extraction">Liquid–liquid extraction<a class="headerlink" href="#liquidliquid-extraction" title="Permanent link">&para;</a></h3>
+<p>A <strong>separating funnel</strong> is used to separate two immiscible liquids, usually water and an organic solvent. A compound distributes itself between the two layers according to its relative solubility. Acids and bases can be moved between layers by changing the pH (Sections 4.6 and 13.3). When shaking a separating funnel, invert it and <strong>open the tap frequently</strong> to release pressure, especially when a volatile solvent is used or when sodium hydrogencarbonate solution, which releases CO₂, is present. The organic layer is often <strong>washed</strong> with water, dilute acid or base, or saturated sodium chloride solution to remove impurities.</p>
+<h3 id="drying">Drying<a class="headerlink" href="#drying" title="Permanent link">&para;</a></h3>
+<p>Organic liquids and solutions that have been in contact with water are dried by swirling with an anhydrous inorganic salt that takes up water to form a hydrate: <strong>anhydrous magnesium sulfate</strong>, sodium sulfate or calcium chloride. Enough drying agent has been added when some of it remains free-flowing rather than clumped. The drying agent is then removed by filtration or decanting.</p>
+<h3 id="recrystallisation">Recrystallisation<a class="headerlink" href="#recrystallisation" title="Permanent link">&para;</a></h3>
+<p><strong>Recrystallisation</strong> purifies a solid. The impure solid is dissolved in the <strong>minimum volume of hot solvent</strong>, a solvent in which the compound is very soluble when hot but much less soluble when cold, and in which the impurities either are very soluble (and stay in solution) or are insoluble (and can be filtered off hot). The solution is cooled slowly; crystals of the pure compound form, are collected by <strong>suction filtration</strong> with a Büchner or Hirsch funnel, washed with a little ice-cold solvent and dried. Some product always remains in the solution, so recrystallisation trades yield for purity.</p>
+<h3 id="melting-point-and-boiling-point">Melting point and boiling point<a class="headerlink" href="#melting-point-and-boiling-point" title="Permanent link">&para;</a></h3>
+<p>A pure crystalline solid melts sharply, over a range of 1 to 2 °C, at a characteristic temperature. Impurities <strong>lower and broaden</strong> the melting range. Comparing the melting point of a product with the literature value is a quick test of identity and purity. A <strong>mixed melting point</strong> helps confirm identity: if a sample is mixed with an authentic sample of the compound it is thought to be and the melting point does not fall, the two are very probably identical. For liquids, the boiling point measured during distillation serves a similar purpose, though less sensitively.</p>
+<h3 id="thin-layer-chromatography">Thin-layer chromatography<a class="headerlink" href="#thin-layer-chromatography" title="Permanent link">&para;</a></h3>
+<p><strong>Thin-layer chromatography</strong> (TLC) separates the components of a mixture on a plate coated with a thin layer of a polar solid, usually silica gel (the <strong>stationary phase</strong>). A small spot of the sample is placed on a <strong>baseline</strong> drawn in pencil near the bottom, and the plate is stood in a covered jar containing a shallow layer of solvent (the <strong>mobile phase</strong>), below the baseline. The solvent rises up the plate by capillary action, carrying the components at different rates: less polar compounds, held less strongly by the polar silica, move further. When the solvent front is near the top, the plate is removed, the front is marked, and the spots are made visible, for example under ultraviolet light or with iodine vapour.</p>
+<p>Each spot is described by its <strong>retention factor</strong>, <span class="arithmatex">\(R_\mathrm{f}\)</span>:</p>
+<div class="arithmatex">\[
+R_\mathrm{f} = \frac{\text{distance moved by the spot}}{\text{distance moved by the solvent front}}
+\]</div>
+<figure class="fig fig-diagram">
+<img src="img/tlc-plate.svg" alt="A developed TLC plate. Lanes A and B contain pure reference compounds and the third lane contains a mixture, which separates into two spots matching A and B. The retention factor of each spot is the distance it travelled from the baseline divided by the distance travelled by the solvent front." loading="lazy" width="790" height="330">
+<figcaption><strong>Figure 16.2 Thin-layer chromatography.</strong> A developed TLC plate. Lanes A and B contain pure reference compounds and the third lane contains a mixture, which separates into two spots matching A and B. The retention factor of each spot is the distance it travelled from the baseline divided by the distance travelled by the solvent front.</figcaption>
+</figure>
+<p>TLC is quick and needs only a tiny sample. It is used to follow the progress of a reaction (the spot of the starting material fades as a new spot for the product appears), to check the purity of a product (a pure compound gives one spot) and to choose the solvent for larger-scale <strong>column chromatography</strong>, which uses the same principle to separate gram quantities.</p>
+<h2 id="164-waste-disposal">16.4 Waste disposal<a class="headerlink" href="#164-waste-disposal" title="Permanent link">&para;</a></h2>
+<p>Organic waste must never be poured down the sink. Typical arrangements are:</p>
+<ul>
+<li><strong>non-halogenated organic solvents</strong> (ethanol, propanone, hexane, ethyl ethanoate) collected in one labelled container;</li>
+<li><strong>halogenated solvents</strong> (dichloromethane, trichloromethane) collected separately, because they need different treatment;</li>
+<li><strong>heavy-metal waste</strong> (chromium, mercury, silver compounds) collected separately;</li>
+<li>reactive residues (such as small amounts of sodium metal or LiAlH₄) destroyed by an approved, supervised procedure before disposal;</li>
+<li>broken glass in a dedicated container.</li>
+</ul>
+<p>The volume and hazard of the waste produced by an experiment is itself a measure of how "green" the experiment is, which leads to the second half of this chapter.</p>
+<h2 id="165-yield-and-atom-economy">16.5 Yield and atom economy<a class="headerlink" href="#165-yield-and-atom-economy" title="Permanent link">&para;</a></h2>
+<h3 id="percentage-yield">Percentage yield<a class="headerlink" href="#percentage-yield" title="Permanent link">&para;</a></h3>
+<p>The <strong>theoretical yield</strong> is the amount of product that would form if the limiting reactant reacted completely according to the balanced equation. The <strong>percentage yield</strong> compares the amount actually obtained with that:</p>
+<div class="arithmatex">\[
+\text{percentage yield} = \frac{\text{actual yield}}{\text{theoretical yield}} \times 100
+\]</div>
+<p>Yields below 100% result from incomplete reactions (including equilibria), side reactions, and losses during transfer and purification.</p>
+<h3 id="atom-economy">Atom economy<a class="headerlink" href="#atom-economy" title="Permanent link">&para;</a></h3>
+<p>A reaction can have a 100% yield and still produce a great deal of waste, if the by-products are heavy. <strong>Atom economy</strong> measures how much of the mass of the reactants ends up in the desired product, assuming a 100% yield:</p>
+<div class="arithmatex">\[
+\text{atom economy} = \frac{M_\mathrm{r}\ \text{of desired product}}{\text{sum of}\ M_\mathrm{r}\ \text{of all reactants}} \times 100
+\]</div>
+<p>using the stoichiometric amounts from the balanced equation.</p>
+<ul>
+<li><strong>Addition reactions</strong> have an atom economy of 100%: every atom of the reactants is in the product. The hydration of ethene, C₂H₄ + H₂O → C₂H₅OH, is an example.</li>
+<li><strong>Substitution and elimination reactions</strong> always produce a by-product and have lower atom economies. Making ethanol from bromoethane, C₂H₅Br + NaOH → C₂H₅OH + NaBr, has an atom economy of only about 31%, because most of the mass of the reactants ends up in sodium bromide.</li>
+</ul>
+<p>These calculations are easily automated. The following short Python function computes molar masses from simple formulas and then the atom economy:</p>
+<div class="language-python highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+<span class="n">MASSES</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"C"</span><span class="p">:</span> <span class="mf">12.011</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">:</span> <span class="mf">1.008</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">:</span> <span class="mf">15.999</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">:</span> <span class="mf">14.007</span><span class="p">,</span>
+          <span class="s2">"Na"</span><span class="p">:</span> <span class="mf">22.990</span><span class="p">,</span> <span class="s2">"Cl"</span><span class="p">:</span> <span class="mf">35.45</span><span class="p">,</span> <span class="s2">"Br"</span><span class="p">:</span> <span class="mf">79.904</span><span class="p">}</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">molar_mass</span><span class="p">(</span><span class="n">formula</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Molar mass of a simple formula such as 'C2H5Br' (no brackets)."""</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">"([A-Z][a-z]?)(\d*)"</span><span class="p">,</span> <span class="n">formula</span><span class="p">):</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">MASSES</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="k">if</span> <span class="n">count</span> <span class="k">else</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">total</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">atom_economy</span><span class="p">(</span><span class="n">reactants</span><span class="p">,</span> <span class="n">product</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Percentage of the reactants' mass that ends up in the desired product."""</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">molar_mass</span><span class="p">(</span><span class="n">product</span><span class="p">)</span> <span class="o">/</span> <span class="nb">sum</span><span class="p">(</span><span class="n">molar_mass</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">reactants</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">atom_economy</span><span class="p">([</span><span class="s2">"C2H4"</span><span class="p">,</span> <span class="s2">"H2O"</span><span class="p">],</span> <span class="s2">"C2H6O"</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>         <span class="c1"># hydration of ethene</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">atom_economy</span><span class="p">([</span><span class="s2">"C2H5Br"</span><span class="p">,</span> <span class="s2">"NaOH"</span><span class="p">],</span> <span class="s2">"C2H6O"</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>      <span class="c1"># substitution</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">atom_economy</span><span class="p">([</span><span class="s2">"C7H6O3"</span><span class="p">,</span> <span class="s2">"C4H6O3"</span><span class="p">],</span> <span class="s2">"C9H8O4"</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>   <span class="c1"># aspirin</span>
+</code></pre></div>
+<div class="language-text highlight"><pre><span></span><code>100.0
+30.9
+75.0
+</code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Example 16.1: Yield and atom economy for aspirin</p>
+<p>Aspirin is made from 2-hydroxybenzoic acid (C₇H₆O₃, Mr 138.1) and ethanoic anhydride (C₄H₆O₃, Mr 102.1); the by-product is ethanoic acid:</p>
+<p>C₇H₆O₃ + C₄H₆O₃ → C₉H₈O₄ (aspirin, Mr 180.2) + C₂H₄O₂ (Mr 60.1)</p>
+<p><strong>Atom economy</strong> = 180.2 / (138.1 + 102.1) × 100 = <strong>75.0%</strong>.</p>
+<p>A student uses 2.00 g of 2-hydroxybenzoic acid (the limiting reactant) and obtains 1.95 g of pure aspirin. Theoretical yield = 2.00 × 180.2 / 138.1 = 2.61 g. <strong>Percentage yield</strong> = 1.95 / 2.61 × 100 = <strong>74.7%</strong>.</p>
+<p>The two numbers measure different things. The yield tells you how well the experiment went; the atom economy tells you how wasteful the chosen reaction is, however well it is carried out. The by-product here, ethanoic acid, is at least useful and not very hazardous.</p>
+</div>
+<h3 id="the-e-factor">The E-factor<a class="headerlink" href="#the-e-factor" title="Permanent link">&para;</a></h3>
+<p>Atom economy considers only the balanced equation. The <strong>E-factor</strong>, introduced by Roger Sheldon, measures the actual waste produced:</p>
+<div class="arithmatex">\[
+\text{E-factor} = \frac{\text{total mass of waste}}{\text{mass of product}}
+\]</div>
+<p>Waste includes by-products, unreacted starting materials, solvent losses and spent reagents and catalysts. An ideal process has an E-factor of zero. Bulk chemical manufacture typically achieves E-factors well below 5, whereas the multistep synthesis of fine chemicals and pharmaceuticals has historically produced tens to hundreds of kilograms of waste per kilogram of product, much of it solvent.</p>
+<h2 id="166-the-principles-of-green-chemistry">16.6 The principles of green chemistry<a class="headerlink" href="#166-the-principles-of-green-chemistry" title="Permanent link">&para;</a></h2>
+<p><strong>Green chemistry</strong> is the design of chemical products and processes that reduce or eliminate the use and generation of hazardous substances. Its principles were set out as twelve points by Paul Anastas and John Warner in their book <em>Green Chemistry: Theory and Practice</em> (1998). In paraphrase:</p>
+<ol>
+<li><strong>Prevent waste</strong> rather than treat or clean it up afterwards.</li>
+<li><strong>Maximise atom economy</strong>: design syntheses so that as much as possible of the starting materials ends up in the product.</li>
+<li><strong>Use and generate less hazardous substances</strong> wherever practicable.</li>
+<li><strong>Design safer chemicals</strong>: products should do their job with as little toxicity as possible.</li>
+<li><strong>Use safer solvents and auxiliaries</strong>, or avoid them.</li>
+<li><strong>Design for energy efficiency</strong>: run reactions at ambient temperature and pressure where possible.</li>
+<li><strong>Use renewable feedstocks</strong> rather than depleting ones.</li>
+<li><strong>Reduce derivatives</strong>: avoid unnecessary protecting groups and temporary modifications, which add steps and waste.</li>
+<li><strong>Use catalysts</strong> in preference to stoichiometric reagents.</li>
+<li><strong>Design for degradation</strong>: products should break down into harmless substances after use.</li>
+<li><strong>Analyse in real time</strong> to monitor and control processes and prevent the formation of pollutants.</li>
+<li><strong>Choose inherently safer chemistry</strong> to minimise the potential for accidents, explosions and fires.</li>
+</ol>
+<h3 id="green-chemistry-in-practice">Green chemistry in practice<a class="headerlink" href="#green-chemistry-in-practice" title="Permanent link">&para;</a></h3>
+<p>Many examples in this book can be seen through these principles.</p>
+<ul>
+<li><strong>Catalysis and atom economy.</strong> Catalytic hydrogenation (Section 7.6) adds H₂ with 100% atom economy and a reusable catalyst, while reductions with stoichiometric metal hydrides produce inorganic waste. A well-known industrial example is the manufacture of the painkiller ibuprofen: an older six-step route had an atom economy of about 40%, while a three-step catalytic route introduced in the 1990s raised it to about 77%, with most of the remainder recoverable as ethanoic acid.</li>
+<li><strong>Safer oxidants.</strong> Chromium(VI) oxidations of alcohols (Section 10.5) generate toxic heavy-metal waste; catalytic oxidations using air or hydrogen peroxide produce only water as the by-product.</li>
+<li><strong>Safer solvents.</strong> Benzene and tetrachloromethane, once common solvents, are now avoided because of their toxicity. Water, ethanol, ethyl ethanoate and supercritical carbon dioxide (used, for example, to decaffeinate coffee) are greener choices. Pharmaceutical companies publish solvent-selection guides that rank solvents by safety, health and environmental impact.</li>
+<li><strong>Renewable feedstocks.</strong> Ethanol from fermentation (Section 10.2) and poly(lactic acid) from plant sugars (Section 15.3) are made from renewable resources rather than petroleum.</li>
+<li><strong>Design for degradation.</strong> Biodegradable polyesters, and detergents with unbranched chains that bacteria can break down, are designed with their end of life in mind. The persistence of CFCs (Section 9.1) shows the cost of ignoring this principle.</li>
+<li><strong>Biocatalysis.</strong> Enzymes work in water at room temperature, are highly selective (often producing a single enantiomer, Section 3.5) and are themselves biodegradable.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Safety and sustainability are two sides of the same habit: thinking in advance about what each substance and each step will do, not only in the flask but before and after it. The best hazard is the one that is never used, and the best waste is the waste that is never made.</p>
+</div>
+<h2 id="167-summary">16.7 Summary<a class="headerlink" href="#167-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>A hazard can cause harm; a risk is the likelihood and severity of harm in a given situation. A risk assessment identifies hazards and sets control measures, in order: eliminate, substitute, engineer, procedure, protect.</li>
+<li>Always wear eye protection and a lab coat, use fume cupboards for volatile and toxic substances, keep flammable solvents away from ignition sources and never heat a closed system.</li>
+<li>GHS pictograms and safety data sheets give hazard information.</li>
+<li>Standard techniques: reflux (heating without loss), distillation, extraction (vent the funnel), drying with anhydrous salts, recrystallisation, filtration, melting point (sharp if pure), TLC (<span class="arithmatex">\(R_\mathrm{f}\)</span>).</li>
+<li>Organic waste is collected by type, never poured down the sink.</li>
+<li>Percentage yield measures experimental success; atom economy measures how much of the reactants can end up in the product; the E-factor measures actual waste.</li>
+<li>The twelve principles of green chemistry aim to prevent waste, use safer substances and solvents, save energy, use renewable feedstocks and catalysts, and design products that degrade.</li>
+</ul>
+</div>
+<h2 id="168-exercises">16.8 Exercises<a class="headerlink" href="#168-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Explain the difference between a hazard and a risk, using concentrated sulfuric acid as an example.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Concentrated sulfuric acid is a hazard because it is highly corrosive to skin and eyes and reacts exothermically with water. The risk depends on the situation: transferring a few drops with a dropping pipette while wearing goggles and gloves, with water and a spill kit to hand, is a low risk; pouring a large volume from a heavy bottle without eye protection, or adding water to the acid rather than acid to water, is a high risk.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Why is a condenser for heating under reflux left open at the top, and why are anti-bumping granules added?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The apparatus must not be a closed system: as the mixture is heated, the gas inside expands and vapour is produced, and a sealed apparatus could build up pressure and burst. The open top lets the pressure stay at atmospheric while the condenser returns the vapour to the flask. Anti-bumping granules provide sites for bubbles to form, so the liquid boils smoothly instead of superheating and then boiling violently ("bumping").</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>A crude solid melts over the range 118 to 124 °C. After recrystallisation it melts at 132 to 133 °C. Explain these observations.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Impurities lower and broaden the melting range, so the crude product melts over a wide range below its true melting point. After recrystallisation, which removes most of the impurities, it melts sharply at a higher temperature (close to the literature value), indicating a much purer product.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>On a TLC plate the solvent front has moved 6.0 cm. Spot X has moved 4.5 cm and spot Y 1.5 cm. (a) Calculate the <span class="arithmatex">\(R_\mathrm{f}\)</span> of each. (b) Which compound is less polar, assuming a silica plate? (c) Why is the baseline drawn in pencil, not ink?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) X: 4.5/6.0 = 0.75; Y: 1.5/6.0 = 0.25. (b) X: it is held less strongly by the polar silica and travels further. (c) Ink contains dyes that would dissolve in the solvent and move up the plate as extra spots; graphite does not.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Calculate the atom economy for making 1-bromobutane from butan-1-ol and hydrogen bromide: C₄H₉OH + HBr → C₄H₉Br + H₂O. (Mr: C₄H₉OH 74.1, HBr 80.9, C₄H₉Br 137.0.) Then calculate the percentage yield if 7.4 g of butan-1-ol gives 9.6 g of 1-bromobutane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Atom economy = 137.0 / (74.1 + 80.9) × 100 = 137.0/155.0 × 100 = <strong>88.4%</strong>.</p>
+<p>Moles of butan-1-ol = 7.4/74.1 = 0.0999 mol. Theoretical yield = 0.0999 × 137.0 = 13.7 g. Percentage yield = 9.6/13.7 × 100 = <strong>70%</strong>.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Two routes to ethanol are (A) hydration of ethene with steam over a phosphoric acid catalyst and (B) fermentation of glucose: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂. Calculate the atom economy of each and discuss which is "greener", considering more than atom economy.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(A) 100%: C₂H₄ + H₂O → C₂H₅OH.</p>
+<p>(B) 2 × 46.07 / 180.16 × 100 = <strong>51.1%</strong>; the rest of the mass leaves as CO₂.</p>
+<p>On atom economy alone, route A is better. But route A uses ethene from petroleum (a non-renewable feedstock) and needs high temperature and pressure (energy), whereas route B uses a renewable feedstock at moderate temperature with a biological catalyst, and the CO₂ released was recently taken from the air by the plants. Route B, however, produces dilute ethanol that must be concentrated by energy-intensive distillation, and growing the crops uses land and water. A full comparison needs a life-cycle assessment; atom economy is only one of the twelve principles.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>For each change, say which green chemistry principle it illustrates: (a) replacing a dichromate oxidation with a catalytic oxidation using air; (b) replacing dichloromethane with ethyl ethanoate as an extraction solvent; (c) avoiding a protecting group by using a more selective reagent; (d) designing a polymer that bacteria can hydrolyse.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Use catalysts rather than stoichiometric reagents, and use less hazardous substances (no chromium waste). (b) Use safer solvents. (c) Reduce derivatives (fewer steps, less waste). (d) Design for degradation.</p>
+</details>
+<h2 id="169-quiz">16.9 Quiz<a class="headerlink" href="#169-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="1a49c8a766df">
+<p class="pk-quiz-title">Check your understanding of safety and green chemistry</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;wearing gloves&quot;,&quot;eliminating or substituting the hazard&quot;,&quot;putting up a warning sign&quot;,&quot;working quickly&quot;],&quot;answer&quot;:&quot;eliminating or substituting the hazard&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which is the most effective way of controlling a risk?</p>
+<ol class="pk-q-opts" type="A"><li>wearing gloves</li><li>eliminating or substituting the hazard</li><li>putting up a warning sign</li><li>working quickly</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>eliminating or substituting the hazard</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;to let air in so the liquid drains&quot;,&quot;to release pressure from solvent vapour or gas&quot;,&quot;to cool the mixture&quot;,&quot;to mix the layers better&quot;],&quot;answer&quot;:&quot;to release pressure from solvent vapour or gas&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Why must a separating funnel be vented while shaking?</p>
+<ol class="pk-q-opts" type="A"><li>to let air in so the liquid drains</li><li>to release pressure from solvent vapour or gas</li><li>to cool the mixture</li><li>to mix the layers better</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>to release pressure from solvent vapour or gas</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;at a higher temperature over a narrow range&quot;,&quot;at a lower temperature over a wider range&quot;,&quot;at exactly the same temperature&quot;,&quot;not at all&quot;],&quot;answer&quot;:&quot;at a lower temperature over a wider range&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">An impure solid compared with the pure compound melts</p>
+<ol class="pk-q-opts" type="A"><li>at a higher temperature over a narrow range</li><li>at a lower temperature over a wider range</li><li>at exactly the same temperature</li><li>not at all</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>at a lower temperature over a wider range</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;0.5&quot;,&quot;0.50&quot;,&quot;1/2&quot;]}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">On a TLC plate a spot moves 3.0 cm while the solvent moves 6.0 cm. What is its Rf?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>0.5 / 0.50 / 1/2</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;substitution&quot;,&quot;elimination&quot;,&quot;addition&quot;,&quot;condensation&quot;],&quot;answer&quot;:&quot;addition&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which type of reaction always has 100% atom economy?</p>
+<ol class="pk-q-opts" type="A"><li>substitution</li><li>elimination</li><li>addition</li><li>condensation</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>addition</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;mass of waste divided by mass of product&quot;,&quot;mass of product divided by mass of reactants&quot;,&quot;the percentage yield&quot;,&quot;the energy used per kilogram&quot;],&quot;answer&quot;:&quot;mass of waste divided by mass of product&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">The E-factor of a process is</p>
+<ol class="pk-q-opts" type="A"><li>mass of waste divided by mass of product</li><li>mass of product divided by mass of reactants</li><li>the percentage yield</li><li>the energy used per kilogram</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>mass of waste divided by mass of product</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;design for degradation only&quot;,&quot;catalysis with safer solvents and energy efficiency&quot;,&quot;real-time analysis&quot;,&quot;reducing derivatives&quot;],&quot;answer&quot;:&quot;catalysis with safer solvents and energy efficiency&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Using an enzyme in water at room temperature instead of a metal reagent in an organic solvent best illustrates</p>
+<ol class="pk-q-opts" type="A"><li>design for degradation only</li><li>catalysis with safer solvents and energy efficiency</li><li>real-time analysis</li><li>reducing derivatives</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>catalysis with safer solvents and energy efficiency</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="polymers-and-biomolecules.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 15. Polymers and Biomolecules">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+15. Polymers and Biomolecules
+</div>
+</div>
+</a>
+<a href="glossary.html" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+Glossary
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

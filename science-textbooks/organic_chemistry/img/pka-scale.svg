@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 270" width="780" height="270" role="img" aria-label="Approximate pKa values of common acids on one scale, from strong acids on the left to very weak acids on the right">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#c0392b"/><stop offset="1" stop-color="#1f5fa8"/></linearGradient></defs>
+<rect x="50.0" y="136.0" width="690.0" height="8" fill="url(#g)" rx="4"/>
+<line x1="50.0" y1="146.0" x2="50.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="165.0" y1="146.0" x2="165.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="280.0" y1="146.0" x2="280.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="395.0" y1="146.0" x2="395.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="510.0" y1="146.0" x2="510.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="625.0" y1="146.0" x2="625.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="740.0" y1="146.0" x2="740.0" y2="154.0" stroke="#1a1a1a" stroke-width="1.20" stroke-linecap="round"/>
+<line x1="84.5" y1="134.0" x2="84.5" y2="118.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="145.4" y1="134.0" x2="145.4" y2="94.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="220.2" y1="134.0" x2="220.2" y2="118.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="280.0" y1="134.0" x2="280.0" y2="94.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="349.0" y1="134.0" x2="349.0" y2="118.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="452.5" y1="134.0" x2="452.5" y2="94.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="671.0" y1="134.0" x2="671.0" y2="118.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round"/>
+<line x1="270.8" y1="146.0" x2="270.8" y2="183.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="2 2"/>
+<line x1="345.6" y1="146.0" x2="345.6" y2="205.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="2 2"/>
+<line x1="383.5" y1="146.0" x2="383.5" y2="183.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="2 2"/>
+<line x1="602.0" y1="146.0" x2="602.0" y2="205.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="2 2"/>
+<line x1="740.0" y1="146.0" x2="740.0" y2="183.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="2 2"/>
+<text x="50.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">−10</text>
+<text x="165.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">0</text>
+<text x="280.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">10</text>
+<text x="395.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">20</text>
+<text x="510.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">30</text>
+<text x="625.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">40</text>
+<text x="740.0" y="170.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">50</text>
+<text x="84.5" y="114.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HCl</text>
+<text x="145.4" y="90.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H₃O⁺</text>
+<text x="220.2" y="114.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH₃COOH</text>
+<text x="280.0" y="90.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">PhOH</text>
+<text x="349.0" y="114.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">EtOH</text>
+<text x="452.5" y="90.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HC≡CH</text>
+<text x="671.0" y="114.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH₂=CH₂</text>
+<text x="270.8" y="196.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">NH₄⁺</text>
+<text x="345.6" y="218.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H₂O</text>
+<text x="383.5" y="196.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH₃COCH₃</text>
+<text x="602.0" y="218.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">NH₃</text>
+<text x="740.0" y="196.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH₄</text>
+<text x="50.0" y="34.5" font-size="13.0" text-anchor="start" fill="#c0392b" font-weight="normal">stronger acid (weaker conjugate base)</text>
+<text x="740.0" y="34.5" font-size="13.0" text-anchor="end" fill="#1f5fa8" font-weight="normal">weaker acid (stronger conjugate base)</text>
+<text x="395.0" y="259.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">pKₐ (approximate, in water)</text>
+</g>
+</svg>

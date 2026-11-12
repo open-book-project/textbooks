@@ -1,0 +1,1224 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/spectroscopy.html">
+<link rel="prev" href="amines.html">
+<link rel="next" href="polymers-and-biomolecules.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>14. Spectroscopy: IR, NMR and Mass Spectrometry - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#141-light-and-molecules" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="spectroscopy.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#141-light-and-molecules" class="md-nav__link">
+<span class="md-ellipsis">
+14.1 Light and molecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#142-infrared-spectroscopy" class="md-nav__link">
+<span class="md-ellipsis">
+14.2 Infrared spectroscopy
+</span>
+</a>
+<nav class="md-nav" aria-label="14.2 Infrared spectroscopy">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-bonds-absorb-infrared-light" class="md-nav__link">
+<span class="md-ellipsis">
+Why bonds absorb infrared light
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reading-an-ir-spectrum" class="md-nav__link">
+<span class="md-ellipsis">
+Reading an IR spectrum
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#143-nmr-spectroscopy-principles" class="md-nav__link">
+<span class="md-ellipsis">
+14.3 NMR spectroscopy: principles
+</span>
+</a>
+<nav class="md-nav" aria-label="14.3 NMR spectroscopy: principles">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#chemical-shift" class="md-nav__link">
+<span class="md-ellipsis">
+Chemical shift
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#144-reading-a-1h-nmr-spectrum" class="md-nav__link">
+<span class="md-ellipsis">
+14.4 Reading a ¹H NMR spectrum
+</span>
+</a>
+<nav class="md-nav" aria-label="14.4 Reading a ¹H NMR spectrum">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#1-the-number-of-signals-equivalent-hydrogens" class="md-nav__link">
+<span class="md-ellipsis">
+1. The number of signals: equivalent hydrogens
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#2-the-chemical-shift-what-kind-of-hydrogen" class="md-nav__link">
+<span class="md-ellipsis">
+2. The chemical shift: what kind of hydrogen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#3-the-integration-how-many-hydrogens" class="md-nav__link">
+<span class="md-ellipsis">
+3. The integration: how many hydrogens
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#4-the-splitting-how-many-neighbours" class="md-nav__link">
+<span class="md-ellipsis">
+4. The splitting: how many neighbours
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#identifying-oh-and-nh-signals" class="md-nav__link">
+<span class="md-ellipsis">
+Identifying O–H and N–H signals
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#145-13c-nmr-spectroscopy" class="md-nav__link">
+<span class="md-ellipsis">
+14.5 ¹³C NMR spectroscopy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#146-mass-spectrometry" class="md-nav__link">
+<span class="md-ellipsis">
+14.6 Mass spectrometry
+</span>
+</a>
+<nav class="md-nav" aria-label="14.6 Mass spectrometry">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-molecular-ion" class="md-nav__link">
+<span class="md-ellipsis">
+The molecular ion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#isotope-peaks" class="md-nav__link">
+<span class="md-ellipsis">
+Isotope peaks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#fragmentation" class="md-nav__link">
+<span class="md-ellipsis">
+Fragmentation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#147-uvvisible-spectroscopy-in-brief" class="md-nav__link">
+<span class="md-ellipsis">
+14.7 UV–visible spectroscopy in brief
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#148-solving-structures-putting-it-together" class="md-nav__link">
+<span class="md-ellipsis">
+14.8 Solving structures: putting it together
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#149-summary" class="md-nav__link">
+<span class="md-ellipsis">
+14.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1410-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+14.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1411-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+14.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#141-light-and-molecules" class="md-nav__link">
+<span class="md-ellipsis">
+14.1 Light and molecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#142-infrared-spectroscopy" class="md-nav__link">
+<span class="md-ellipsis">
+14.2 Infrared spectroscopy
+</span>
+</a>
+<nav class="md-nav" aria-label="14.2 Infrared spectroscopy">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-bonds-absorb-infrared-light" class="md-nav__link">
+<span class="md-ellipsis">
+Why bonds absorb infrared light
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#reading-an-ir-spectrum" class="md-nav__link">
+<span class="md-ellipsis">
+Reading an IR spectrum
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#143-nmr-spectroscopy-principles" class="md-nav__link">
+<span class="md-ellipsis">
+14.3 NMR spectroscopy: principles
+</span>
+</a>
+<nav class="md-nav" aria-label="14.3 NMR spectroscopy: principles">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#chemical-shift" class="md-nav__link">
+<span class="md-ellipsis">
+Chemical shift
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#144-reading-a-1h-nmr-spectrum" class="md-nav__link">
+<span class="md-ellipsis">
+14.4 Reading a ¹H NMR spectrum
+</span>
+</a>
+<nav class="md-nav" aria-label="14.4 Reading a ¹H NMR spectrum">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#1-the-number-of-signals-equivalent-hydrogens" class="md-nav__link">
+<span class="md-ellipsis">
+1. The number of signals: equivalent hydrogens
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#2-the-chemical-shift-what-kind-of-hydrogen" class="md-nav__link">
+<span class="md-ellipsis">
+2. The chemical shift: what kind of hydrogen
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#3-the-integration-how-many-hydrogens" class="md-nav__link">
+<span class="md-ellipsis">
+3. The integration: how many hydrogens
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#4-the-splitting-how-many-neighbours" class="md-nav__link">
+<span class="md-ellipsis">
+4. The splitting: how many neighbours
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#identifying-oh-and-nh-signals" class="md-nav__link">
+<span class="md-ellipsis">
+Identifying O–H and N–H signals
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#145-13c-nmr-spectroscopy" class="md-nav__link">
+<span class="md-ellipsis">
+14.5 ¹³C NMR spectroscopy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#146-mass-spectrometry" class="md-nav__link">
+<span class="md-ellipsis">
+14.6 Mass spectrometry
+</span>
+</a>
+<nav class="md-nav" aria-label="14.6 Mass spectrometry">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-molecular-ion" class="md-nav__link">
+<span class="md-ellipsis">
+The molecular ion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#isotope-peaks" class="md-nav__link">
+<span class="md-ellipsis">
+Isotope peaks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#fragmentation" class="md-nav__link">
+<span class="md-ellipsis">
+Fragmentation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#147-uvvisible-spectroscopy-in-brief" class="md-nav__link">
+<span class="md-ellipsis">
+14.7 UV–visible spectroscopy in brief
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#148-solving-structures-putting-it-together" class="md-nav__link">
+<span class="md-ellipsis">
+14.8 Solving structures: putting it together
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#149-summary" class="md-nav__link">
+<span class="md-ellipsis">
+14.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1410-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+14.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1411-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+14.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-14-spectroscopy-ir-nmr-and-mass-spectrometry">Chapter 14: Spectroscopy: IR, NMR and Mass Spectrometry<a class="headerlink" href="#chapter-14-spectroscopy-ir-nmr-and-mass-spectrometry" title="Permanent link">&para;</a></h1>
+<p><em>How chemists find out what they have made</em></p>
+<p>Until the middle of the twentieth century, working out the structure of an unknown compound could take years of chemical tests, degradations and syntheses. Today a few milligrams of sample and an hour of instrument time usually suffice. Three techniques do most of the work. <strong>Infrared spectroscopy</strong> identifies functional groups. <strong>Nuclear magnetic resonance</strong> (NMR) spectroscopy maps the carbon–hydrogen framework. <strong>Mass spectrometry</strong> gives the molar mass and clues from the way the molecule breaks apart. This chapter explains what each technique measures, how to read the spectra, and how to combine the evidence to solve a structure.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>relate the energy, frequency, wavelength and wavenumber of electromagnetic radiation;</li>
+<li>explain why bonds absorb infrared radiation at characteristic wavenumbers, and identify the main functional groups from an IR spectrum;</li>
+<li>predict the number of signals in ¹H and ¹³C NMR spectra from molecular symmetry;</li>
+<li>use chemical shift, integration and splitting (the n + 1 rule) to interpret ¹H NMR spectra;</li>
+<li>identify the molecular ion in a mass spectrum, use isotope patterns for chlorine and bromine, and explain common fragment ions;</li>
+<li>combine the molecular formula, degree of unsaturation and spectra to deduce the structure of a simple unknown.</li>
+</ul>
+</div>
+<h2 id="141-light-and-molecules">14.1 Light and molecules<a class="headerlink" href="#141-light-and-molecules" title="Permanent link">&para;</a></h2>
+<p>Spectroscopy studies how matter absorbs or emits <strong>electromagnetic radiation</strong>. Radiation can be described by its wavelength λ, its frequency ν (with <span class="arithmatex">\(c = \lambda\nu\)</span>), or its <strong>wavenumber</strong> <span class="arithmatex">\(\tilde{\nu} = 1/\lambda\)</span>, usually given in cm⁻¹. The energy of one photon is</p>
+<div class="arithmatex">\[
+E = h\nu = \frac{hc}{\lambda} = hc\tilde{\nu}
+\]</div>
+<p>where <span class="arithmatex">\(h\)</span> is Planck's constant. Molecules can absorb a photon only if its energy matches the gap between two of their energy levels. Different regions of the spectrum probe different kinds of motion:</p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Typical wavelength</th>
+<th>What it excites</th>
+<th>Technique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>radio waves</td>
+<td>metres</td>
+<td>nuclear spin in a magnetic field</td>
+<td>NMR</td>
+</tr>
+<tr>
+<td>infrared</td>
+<td>2.5 to 25 μm (4000 to 400 cm⁻¹)</td>
+<td>bond vibrations</td>
+<td>IR spectroscopy</td>
+</tr>
+<tr>
+<td>ultraviolet and visible</td>
+<td>200 to 800 nm</td>
+<td>electrons in π systems</td>
+<td>UV–visible spectroscopy</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 14.1. Regions of the electromagnetic spectrum used in organic chemistry.</em></p>
+<p>Mass spectrometry is not, strictly, spectroscopy: it does not involve absorption of light but separates ions by their mass. It is always used alongside the spectroscopic methods.</p>
+<h2 id="142-infrared-spectroscopy">14.2 Infrared spectroscopy<a class="headerlink" href="#142-infrared-spectroscopy" title="Permanent link">&para;</a></h2>
+<h3 id="why-bonds-absorb-infrared-light">Why bonds absorb infrared light<a class="headerlink" href="#why-bonds-absorb-infrared-light" title="Permanent link">&para;</a></h3>
+<p>Chemical bonds are not rigid. They stretch and bend, like springs joining balls, at frequencies in the infrared range. A bond absorbs infrared radiation of the same frequency as its vibration, provided that the vibration changes the dipole moment of the molecule. The frequency depends on two things, as for a spring:</p>
+<div class="arithmatex">\[
+\tilde{\nu} \propto \sqrt{\frac{k}{\mu}}
+\]</div>
+<p>where <span class="arithmatex">\(k\)</span> is the force constant (the stiffness of the bond) and <span class="arithmatex">\(\mu\)</span> the reduced mass of the two atoms. So:</p>
+<ul>
+<li><strong>Stronger bonds vibrate faster.</strong> C≡C (about 2150 cm⁻¹) &gt; C=C (about 1650 cm⁻¹) &gt; C–C (about 1200 cm⁻¹).</li>
+<li><strong>Bonds to light atoms vibrate faster.</strong> C–H, O–H and N–H stretches all appear at high wavenumbers, between 2850 and 3600 cm⁻¹.</li>
+</ul>
+<p>An IR spectrum plots the percentage of light transmitted against wavenumber, decreasing from left to right; absorptions appear as dips ("bands" or "peaks") pointing down.</p>
+<figure class="fig fig-diagram">
+<img src="img/ir-correlation.svg" alt="Characteristic infrared absorptions of the main bonds. Stretches of bonds to hydrogen appear above 2500 cm⁻¹, triple bonds near 2100 to 2260 cm⁻¹, and double bonds, including the strong carbonyl band, between 1500 and 1800 cm⁻¹. Below about 1500 cm⁻¹ lies the fingerprint region, which is complex but characteristic of each compound." loading="lazy" width="790" height="330">
+<figcaption><strong>Figure 14.1 An infrared correlation chart.</strong> Characteristic infrared absorptions of the main bonds. Stretches of bonds to hydrogen appear above 2500 cm⁻¹, triple bonds near 2100 to 2260 cm⁻¹, and double bonds, including the strong carbonyl band, between 1500 and 1800 cm⁻¹. Below about 1500 cm⁻¹ lies the fingerprint region, which is complex but characteristic of each compound.</figcaption>
+</figure>
+<h3 id="reading-an-ir-spectrum">Reading an IR spectrum<a class="headerlink" href="#reading-an-ir-spectrum" title="Permanent link">&para;</a></h3>
+<p>Focus on the region above 1500 cm⁻¹ and ask a few questions in turn:</p>
+<ol>
+<li><strong>Is there a strong band at 1680 to 1750 cm⁻¹?</strong> That is a C=O stretch, usually the strongest band in the spectrum. Within this range, esters (about 1735 to 1750) tend to be higher than aldehydes (about 1725) and ketones (about 1715), and amides lower (about 1650 to 1690). Conjugation with a C=C or a benzene ring lowers the wavenumber by about 20 to 30 cm⁻¹.</li>
+<li><strong>Is there a broad band at 3200 to 3550 cm⁻¹?</strong> That is an O–H stretch of an alcohol or phenol, broadened by hydrogen bonding. A carboxylic acid O–H is even broader, spreading from about 2500 to 3300 cm⁻¹ and overlapping the C–H bands, together with a C=O band.</li>
+<li><strong>Are there one or two sharper bands at 3300 to 3500 cm⁻¹?</strong> That is N–H: primary amines and amides (NH₂) show two bands, secondary ones (NH) one.</li>
+<li><strong>Where are the C–H stretches?</strong> Below 3000 cm⁻¹ means sp³ C–H (alkyl); just above 3000 means sp² C–H (alkene or arene); a sharp band near 3300 means a terminal alkyne ≡C–H.</li>
+<li><strong>Is there a band at 2100 to 2260 cm⁻¹?</strong> C≡N (sharp, about 2250) or C≡C.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Bond</th>
+<th>Wavenumber (cm⁻¹)</th>
+<th>Appearance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O–H (alcohol, phenol)</td>
+<td>3200–3550</td>
+<td>strong, broad</td>
+</tr>
+<tr>
+<td>O–H (carboxylic acid)</td>
+<td>2500–3300</td>
+<td>very broad</td>
+</tr>
+<tr>
+<td>N–H (amine, amide)</td>
+<td>3300–3500</td>
+<td>medium, sharper; NH₂ gives two bands</td>
+</tr>
+<tr>
+<td>C–H (sp³)</td>
+<td>2850–2960</td>
+<td>medium to strong</td>
+</tr>
+<tr>
+<td>C–H (sp²)</td>
+<td>3000–3100</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>≡C–H (sp)</td>
+<td>about 3300</td>
+<td>strong, sharp</td>
+</tr>
+<tr>
+<td>C≡N</td>
+<td>about 2250</td>
+<td>medium, sharp</td>
+</tr>
+<tr>
+<td>C≡C</td>
+<td>2100–2260</td>
+<td>weak to medium</td>
+</tr>
+<tr>
+<td>C=O</td>
+<td>1680–1750</td>
+<td>strong, sharp</td>
+</tr>
+<tr>
+<td>C=C (alkene)</td>
+<td>1620–1680</td>
+<td>variable</td>
+</tr>
+<tr>
+<td>C=C (aromatic ring)</td>
+<td>about 1450–1600</td>
+<td>several bands</td>
+</tr>
+<tr>
+<td>C–O</td>
+<td>1000–1300</td>
+<td>strong</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 14.2. Characteristic infrared absorptions.</em></p>
+<figure class="fig fig-diagram">
+<img src="img/ir-ethanol-propanone.svg" alt="Schematic infrared spectra of ethanol and propanone. Ethanol shows a broad, strong O–H band centred near 3350 cm⁻¹ and a strong C–O band near 1050 cm⁻¹, but no carbonyl band. Propanone shows no O–H band but a very strong, sharp C=O band near 1715 cm⁻¹." loading="lazy" width="790" height="360">
+<figcaption><strong>Figure 14.2 IR spectra of an alcohol and a ketone.</strong> Schematic infrared spectra of ethanol and propanone. Ethanol shows a broad, strong O–H band centred near 3350 cm⁻¹ and a strong C–O band near 1050 cm⁻¹, but no carbonyl band. Propanone shows no O–H band but a very strong, sharp C=O band near 1715 cm⁻¹.</figcaption>
+</figure>
+<p>The <strong>fingerprint region</strong> below 1500 cm⁻¹ contains many overlapping bands from bending vibrations and C–C and C–O stretches. It is hard to interpret band by band, but it is unique to each compound: if the spectrum of an unknown matches that of a known compound exactly in this region, the two are the same.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 14.1: Using IR to follow a reaction</p>
+<p>A student oxidises propan-2-ol to propanone. How would IR spectroscopy show that the reaction is complete?</p>
+<p>The starting alcohol has a broad O–H band at about 3300 cm⁻¹ and no C=O band. The product ketone has a strong C=O band at about 1715 cm⁻¹ and no O–H band. The reaction is complete when the O–H band has disappeared and the C=O band is present.</p>
+</div>
+<h2 id="143-nmr-spectroscopy-principles">14.3 NMR spectroscopy: principles<a class="headerlink" href="#143-nmr-spectroscopy-principles" title="Permanent link">&para;</a></h2>
+<p>Some atomic nuclei, including ¹H and ¹³C (but not ¹²C or ¹⁶O), behave like tiny magnets because they have a property called <strong>nuclear spin</strong>. In a strong external magnetic field, such a nucleus can line up with the field (lower energy) or against it (higher energy). Radio waves of exactly the right frequency make it flip from the lower to the higher state: the nucleus is in <strong>resonance</strong>. An NMR spectrometer places the sample, dissolved in a solvent without ordinary hydrogen (usually CDCl₃, deuterochloroform), in a powerful magnet and measures the frequencies at which the nuclei absorb.</p>
+<h3 id="chemical-shift">Chemical shift<a class="headerlink" href="#chemical-shift" title="Permanent link">&para;</a></h3>
+<p>If every hydrogen absorbed at the same frequency, NMR would be useless. It is useful because the electrons around each nucleus <strong>shield</strong> it slightly from the external field. A nucleus surrounded by more electron density feels a smaller field and resonates at a lower frequency (it is <strong>shielded</strong>, or <strong>upfield</strong>); a nucleus near electronegative atoms has less electron density around it, feels more of the field and resonates at a higher frequency (it is <strong>deshielded</strong>, or <strong>downfield</strong>).</p>
+<p>The position of a signal is reported as its <strong>chemical shift</strong>, δ, in parts per million (ppm) relative to a reference compound, tetramethylsilane, (CH₃)₄Si (<strong>TMS</strong>), which is set at δ = 0. Using ppm makes δ independent of the strength of the magnet. Most ¹H signals fall between 0 and 13 ppm.</p>
+<figure class="fig fig-diagram">
+<img src="img/nmr-shift-chart.svg" alt="Approximate ¹H chemical shifts. Hydrogens on sp³ carbon far from electronegative atoms appear at 0.8 to 1.8 ppm. A neighbouring carbonyl group or benzene ring moves them to about 2.0 to 2.7 ppm, and an attached oxygen or halogen to 3.3 to 4.5 ppm. Alkene hydrogens appear at 4.5 to 6.5 ppm, aromatic hydrogens at 6.5 to 8.5 ppm, aldehyde hydrogens at 9 to 10 ppm and carboxylic acid hydrogens at 10 to 13 ppm. O–H and N–H signals vary widely." loading="lazy" width="790" height="270">
+<figcaption><strong>Figure 14.3 ¹H chemical shifts.</strong> Approximate ¹H chemical shifts. Hydrogens on sp³ carbon far from electronegative atoms appear at 0.8 to 1.8 ppm. A neighbouring carbonyl group or benzene ring moves them to about 2.0 to 2.7 ppm, and an attached oxygen or halogen to 3.3 to 4.5 ppm. Alkene hydrogens appear at 4.5 to 6.5 ppm, aromatic hydrogens at 6.5 to 8.5 ppm, aldehyde hydrogens at 9 to 10 ppm and carboxylic acid hydrogens at 10 to 13 ppm. O–H and N–H signals vary widely.</figcaption>
+</figure>
+<p>Two effects explain the chart. <strong>Electronegative atoms</strong> pull electron density away and deshield nearby hydrogens, and the effect falls off with distance: in 1-bromopropane, the CH₂ next to Br is at about 3.4 ppm, the middle CH₂ at about 1.9 and the CH₃ at about 1.0. <strong>π electrons</strong> circulating in the applied field create local fields that strongly deshield hydrogens on alkenes, on aromatic rings (the ring current) and on aldehyde carbonyl carbons.</p>
+<h2 id="144-reading-a-1h-nmr-spectrum">14.4 Reading a ¹H NMR spectrum<a class="headerlink" href="#144-reading-a-1h-nmr-spectrum" title="Permanent link">&para;</a></h2>
+<p>A ¹H NMR spectrum gives four pieces of information.</p>
+<h3 id="1-the-number-of-signals-equivalent-hydrogens">1. The number of signals: equivalent hydrogens<a class="headerlink" href="#1-the-number-of-signals-equivalent-hydrogens" title="Permanent link">&para;</a></h3>
+<p>Hydrogens in identical chemical environments (related by the symmetry of the molecule or by fast rotation) are <strong>chemically equivalent</strong> and give a single signal. To count the environments, imagine replacing each hydrogen in turn by another group: hydrogens that give the same compound are equivalent.</p>
+<ul>
+<li>Ethane, CH₃CH₃: all six H are equivalent: one signal.</li>
+<li>Propane, CH₃CH₂CH₃: the six CH₃ hydrogens are equivalent, the two CH₂ hydrogens another set: two signals.</li>
+<li>Ethyl ethanoate, CH₃COOCH₂CH₃: three signals (CH₃CO, OCH₂ and the CH₃ of the ethyl group).</li>
+<li>Methylbenzene: the CH₃ gives one signal; the aromatic hydrogens fall into <em>ortho</em>, <em>meta</em> and <em>para</em> sets that often overlap near 7.2 ppm.</li>
+</ul>
+<h3 id="2-the-chemical-shift-what-kind-of-hydrogen">2. The chemical shift: what kind of hydrogen<a class="headerlink" href="#2-the-chemical-shift-what-kind-of-hydrogen" title="Permanent link">&para;</a></h3>
+<p>The position of each signal tells you its environment (Figure 14.3).</p>
+<h3 id="3-the-integration-how-many-hydrogens">3. The integration: how many hydrogens<a class="headerlink" href="#3-the-integration-how-many-hydrogens" title="Permanent link">&para;</a></h3>
+<p>The <strong>area</strong> under each signal is proportional to the number of hydrogens producing it. The instrument prints an integral trace or values; these give the <strong>ratio</strong> of hydrogens, which must be scaled to the molecular formula. Ethyl ethanoate gives integrals in the ratio 2 : 3 : 3.</p>
+<h3 id="4-the-splitting-how-many-neighbours">4. The splitting: how many neighbours<a class="headerlink" href="#4-the-splitting-how-many-neighbours" title="Permanent link">&para;</a></h3>
+<p>Hydrogens on adjacent carbons interact through the bonding electrons (<strong>spin–spin coupling</strong>), and their signals split into several lines. For hydrogens with <span class="arithmatex">\(n\)</span> equivalent neighbouring hydrogens (usually on the next carbon, three bonds away), the signal is split into <strong>n + 1</strong> lines: the <strong>n + 1 rule</strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Neighbouring H (n)</th>
+<th style="text-align: center;">Lines (n + 1)</th>
+<th>Name</th>
+<th>Relative intensities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td>singlet (s)</td>
+<td>1</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td>doublet (d)</td>
+<td>1 : 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td>triplet (t)</td>
+<td>1 : 2 : 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td>quartet (q)</td>
+<td>1 : 3 : 3 : 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td>quintet</td>
+<td>1 : 4 : 6 : 4 : 1</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">7</td>
+<td>septet</td>
+<td>1 : 6 : 15 : 20 : 15 : 6 : 1</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 14.3. Splitting patterns from the n + 1 rule. The intensities follow Pascal's triangle.</em></p>
+<p>The spacing between the lines, the <strong>coupling constant</strong> <span class="arithmatex">\(J\)</span>, is measured in hertz (about 7 Hz for neighbouring hydrogens on freely rotating sp³ carbons). Two groups that are coupled to each other show the same <span class="arithmatex">\(J\)</span>, which helps match them up. Equivalent hydrogens do not split each other, and hydrogens on O and N usually appear as broad singlets because they exchange rapidly between molecules.</p>
+<figure class="fig fig-diagram">
+<img src="img/nmr-ethyl-ethanoate.svg" alt="Schematic ¹H NMR spectrum of ethyl ethanoate. The OCH₂ group, deshielded by oxygen, appears at 4.1 ppm as a quartet (three neighbouring H on CH₃). The CH₃ of the ethyl group appears at 1.2 ppm as a triplet (two neighbours on CH₂). The CH₃C=O group, next to the carbonyl and with no neighbouring H, appears at 2.0 ppm as a singlet. The areas are in the ratio 2 : 3 : 3." loading="lazy" width="790" height="300">
+<figcaption><strong>Figure 14.4 The ¹H NMR spectrum of ethyl ethanoate.</strong> Schematic ¹H NMR spectrum of ethyl ethanoate. The OCH₂ group, deshielded by oxygen, appears at 4.1 ppm as a quartet (three neighbouring H on CH₃). The CH₃ of the ethyl group appears at 1.2 ppm as a triplet (two neighbours on CH₂). The CH₃C=O group, next to the carbonyl and with no neighbouring H, appears at 2.0 ppm as a singlet. The areas are in the ratio 2 : 3 : 3.</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>A <strong>quartet (2H) and a triplet (3H)</strong> with the same coupling constant mean an <strong>ethyl group</strong>, CH₃CH₂–. A <strong>septet (1H) and a doublet (6H)</strong> mean an <strong>isopropyl group</strong>, (CH₃)₂CH–. A <strong>singlet (9H)</strong> near 1 ppm means a <strong><em>tert</em>-butyl group</strong>. Learning to spot these patterns speeds up every problem.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 14.2: Ethyl ethanoate or methyl propanoate?</p>
+<p>Two isomeric esters, C₄H₈O₂, are ethyl ethanoate (CH₃COOCH₂CH₃) and methyl propanoate (CH₃CH₂COOCH₃). One gives signals at δ 3.7 (s, 3H), 2.3 (q, 2H), 1.1 (t, 3H). Which is it?</p>
+<p>Both have an ethyl group (quartet + triplet) and a methyl singlet. The difference is where the groups are attached. In this spectrum the singlet is at 3.7 ppm, typical of CH₃ on oxygen, and the quartet at 2.3 ppm, typical of CH₂ next to C=O. So the methyl is on oxygen and the ethyl on the carbonyl: <strong>methyl propanoate</strong>. (Ethyl ethanoate has the reverse: a singlet at 2.0 and a quartet at 4.1.)</p>
+</div>
+<h3 id="identifying-oh-and-nh-signals">Identifying O–H and N–H signals<a class="headerlink" href="#identifying-oh-and-nh-signals" title="Permanent link">&para;</a></h3>
+<p>Because O–H and N–H hydrogens exchange with deuterium, adding a drop of D₂O to the sample and shaking replaces them with D, which does not appear in a ¹H spectrum. The signal that disappears is the O–H or N–H.</p>
+<h2 id="145-13c-nmr-spectroscopy">14.5 ¹³C NMR spectroscopy<a class="headerlink" href="#145-13c-nmr-spectroscopy" title="Permanent link">&para;</a></h2>
+<p>Only about 1.1% of carbon atoms are ¹³C, the isotope with nuclear spin, so ¹³C spectra are weaker and take longer to record. They are normally run with <strong>proton decoupling</strong>, which removes the splitting by hydrogens, so each kind of carbon gives a <strong>single line</strong>. Two pieces of information are used:</p>
+<ul>
+<li><strong>The number of signals</strong> equals the number of different carbon environments. Propan-1-ol gives three signals; propan-2-ol, which is symmetrical, gives two. Benzene gives one; methylbenzene gives five (CH₃ and four kinds of ring carbon).</li>
+<li><strong>The chemical shift</strong>, which spans about 0 to 220 ppm: sp³ carbons at about 0 to 50 ppm (higher, about 50 to 90 ppm, when bonded to O or N), alkene and aromatic carbons at about 100 to 150 ppm, and carbonyl carbons at about 160 to 220 ppm (esters, acids and amides about 160 to 185; aldehydes and ketones about 190 to 220).</li>
+</ul>
+<p>Peak areas in routine ¹³C spectra are not reliably proportional to the number of carbons, so integration is not used.</p>
+<h2 id="146-mass-spectrometry">14.6 Mass spectrometry<a class="headerlink" href="#146-mass-spectrometry" title="Permanent link">&para;</a></h2>
+<p>In the commonest method, <strong>electron ionisation</strong>, the vaporised sample is bombarded with high-energy electrons, which knock an electron out of each molecule to give a radical cation, the <strong>molecular ion</strong>, M⁺•:</p>
+<div class="arithmatex">\[
+\mathrm{M + e^- \rightarrow M^{+\bullet} + 2\,e^-}
+\]</div>
+<p>The ions are accelerated and separated according to their <strong>mass-to-charge ratio</strong>, m/z. Since nearly all ions carry a single charge, m/z is the mass of the ion. The mass spectrum plots the relative abundance of each ion against m/z, with the most abundant ion (the <strong>base peak</strong>) set to 100.</p>
+<h3 id="the-molecular-ion">The molecular ion<a class="headerlink" href="#the-molecular-ion" title="Permanent link">&para;</a></h3>
+<p>The peak of highest m/z (ignoring small isotope peaks) is usually the molecular ion, and it gives the <strong>relative molecular mass</strong>. With <strong>high-resolution</strong> instruments, masses are measured to four or more decimal places, which is enough to decide the molecular formula: CO, N₂ and C₂H₄ all have nominal mass 28, but their exact masses differ in the third decimal place.</p>
+<h3 id="isotope-peaks">Isotope peaks<a class="headerlink" href="#isotope-peaks" title="Permanent link">&para;</a></h3>
+<p>Elements with more than one common isotope give characteristic patterns:</p>
+<ul>
+<li><strong>Carbon</strong>: about 1.1% of carbon is ¹³C, so a molecule with <span class="arithmatex">\(n\)</span> carbons shows a small <strong>M + 1</strong> peak about <span class="arithmatex">\(1.1n\)</span>% the height of M.</li>
+<li><strong>Chlorine</strong>: ³⁵Cl and ³⁷Cl occur in a ratio of about 3 : 1, so a compound with one chlorine shows peaks at <strong>M and M + 2</strong> in the ratio <strong>3 : 1</strong>.</li>
+<li><strong>Bromine</strong>: ⁷⁹Br and ⁸¹Br are nearly equal in abundance, so one bromine gives <strong>M and M + 2</strong> of nearly <strong>equal height</strong>.</li>
+</ul>
+<p>The <strong>nitrogen rule</strong> is a further check: a compound containing C, H, O and an odd number of nitrogen atoms has an odd molecular mass; with no nitrogen (or an even number), the mass is even.</p>
+<h3 id="fragmentation">Fragmentation<a class="headerlink" href="#fragmentation" title="Permanent link">&para;</a></h3>
+<p>The molecular ion has excess energy and often breaks into a cation and a neutral radical. Only the charged fragment is detected. Bonds break preferentially where they give stable cations:</p>
+<ul>
+<li>next to a carbonyl group, giving a resonance-stabilised <strong>acylium ion</strong>, R–C≡O⁺;</li>
+<li>at branch points, giving more substituted carbocations;</li>
+<li>at a benzylic position (C₆H₅CH₂⁺, m/z 91, is common in compounds with a benzyl group).</li>
+</ul>
+<p>Differences between peaks correspond to the neutral pieces lost: 15 (CH₃), 29 (C₂H₅ or CHO), 18 (H₂O, typical of alcohols), 28 (CO or C₂H₄).</p>
+<figure class="fig fig-diagram">
+<img src="img/ms-butanone.svg" alt="A schematic mass spectrum of butanone, CH₃COCH₂CH₃ (Mr 72). The molecular ion appears at m/z 72. Cleavage of the bonds on either side of the carbonyl group gives the acylium ions CH₃CO⁺ (m/z 43, here the base peak) and CH₃CH₂CO⁺ (m/z 57), and the ethyl cation (m/z 29)." loading="lazy" width="790" height="300">
+<figcaption><strong>Figure 14.5 The mass spectrum of butanone.</strong> A schematic mass spectrum of butanone, CH₃COCH₂CH₃ (Mr 72). The molecular ion appears at m/z 72. Cleavage of the bonds on either side of the carbonyl group gives the acylium ions CH₃CO⁺ (m/z 43, here the base peak) and CH₃CH₂CO⁺ (m/z 57), and the ethyl cation (m/z 29).</figcaption>
+</figure>
+<h2 id="147-uvvisible-spectroscopy-in-brief">14.7 UV–visible spectroscopy in brief<a class="headerlink" href="#147-uvvisible-spectroscopy-in-brief" title="Permanent link">&para;</a></h2>
+<p>Molecules with <strong>conjugated</strong> π systems absorb ultraviolet or visible light, which promotes a π electron to a higher, empty orbital. The more extended the conjugation, the smaller the energy gap and the longer the wavelength absorbed. Ethene absorbs at about 170 nm in the far ultraviolet; buta-1,3-diene at about 217 nm. A molecule with a long chain of alternating double bonds, such as β-carotene (eleven conjugated C=C bonds), absorbs blue light in the visible region and appears orange. Azo dyes (Section 13.5) owe their colours to the same effect. UV–visible spectroscopy is used mainly to measure concentrations (via the Beer–Lambert law) and to study conjugated systems.</p>
+<h2 id="148-solving-structures-putting-it-together">14.8 Solving structures: putting it together<a class="headerlink" href="#148-solving-structures-putting-it-together" title="Permanent link">&para;</a></h2>
+<p>A systematic approach works best:</p>
+<ol>
+<li><strong>Molecular formula</strong> (from mass spectrometry or analysis). Calculate the <strong>degree of unsaturation</strong> (Section 2.6).</li>
+<li><strong>IR</strong>: which functional groups are present, and which are absent?</li>
+<li><strong>¹³C NMR</strong>: how many carbon environments? Is there a C=O, aromatic or alkene carbon?</li>
+<li><strong>¹H NMR</strong>: how many kinds of H; how many of each (integration); what environments (shift); which groups are neighbours (splitting)?</li>
+<li><strong>Assemble fragments</strong>, and check that the proposed structure accounts for <strong>every</strong> signal and for the formula.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example 14.3: An unknown ketone</p>
+<p>Compound X, C₄H₈O, shows a strong IR band at 1715 cm⁻¹ and no band above 3100 cm⁻¹ except C–H. Its ¹H NMR spectrum has δ 2.45 (q, 2H), 2.14 (s, 3H), 1.06 (t, 3H). The mass spectrum shows peaks at m/z 72, 57, 43 and 29. Identify X.</p>
+<p><strong>Formula</strong>: DBE = (8 + 2 − 8)/2 = 1, one ring or π bond.</p>
+<p><strong>IR</strong>: 1715 cm⁻¹ is a C=O (ketone or aldehyde); no O–H. The π bond is the C=O.</p>
+<p><strong>¹H NMR</strong>: a quartet (2H) and triplet (3H) form an ethyl group; the CH₂ at 2.45 ppm is next to C=O. A singlet (3H) at 2.14 is a CH₃ next to C=O with no neighbouring H. No signal at 9 to 10 ppm, so not an aldehyde.</p>
+<p><strong>Structure</strong>: CH₃–CO–CH₂CH₃, <strong>butanone</strong>. The mass spectrum agrees: M⁺ at 72 and acylium ions at 43 (CH₃CO⁺) and 57 (C₂H₅CO⁺) (Figure 14.5).</p>
+</div>
+<h2 id="149-summary">14.9 Summary<a class="headerlink" href="#149-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li><span class="arithmatex">\(E = h\nu = hc/\lambda\)</span>. IR excites bond vibrations; NMR flips nuclear spins in a magnetic field; UV–visible excites π electrons.</li>
+<li>IR: stronger bonds and lighter atoms absorb at higher wavenumber. Key bands: O–H 3200–3550 (broad), acid O–H 2500–3300, N–H 3300–3500, C=O 1680–1750 (strong), C≡N about 2250.</li>
+<li>¹H NMR: number of signals = number of environments; chemical shift = environment (δ relative to TMS); integration = relative number of H; splitting = n + 1 lines for n neighbouring H.</li>
+<li>¹³C NMR: one line per carbon environment (proton-decoupled), δ 0 to 220; C=O 160 to 220.</li>
+<li>Mass spectrometry: M⁺• gives the molar mass; Cl gives M : M+2 = 3 : 1, Br gives 1 : 1; fragments form stable cations such as acylium ions.</li>
+<li>Solve structures by combining the formula, DBE, IR, ¹³C and ¹H NMR, and MS, and check every signal.</li>
+</ul>
+</div>
+<h2 id="1410-exercises">14.10 Exercises<a class="headerlink" href="#1410-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>How would you distinguish by IR spectroscopy alone between: (a) cyclohexanol and cyclohexanone; (b) propanoic acid and propan-1-ol; (c) hex-1-yne and hex-2-yne?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Cyclohexanol shows a broad O–H band near 3300 cm⁻¹ and no C=O; cyclohexanone shows a strong C=O near 1715 cm⁻¹ and no O–H. (b) Propanoic acid shows a very broad O–H from about 2500 to 3300 cm⁻¹ and a C=O near 1710 cm⁻¹; propan-1-ol shows a narrower O–H near 3300 cm⁻¹ and no C=O. (c) Hex-1-yne, a terminal alkyne, shows a sharp ≡C–H stretch near 3300 cm⁻¹ and a C≡C band near 2100 cm⁻¹; hex-2-yne has no ≡C–H, and its C≡C band is weak or absent because the nearly symmetrical bond hardly changes the dipole moment as it vibrates.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>How many signals would you expect in the ¹H NMR spectrum and in the ¹³C NMR spectrum of: (a) propanone; (b) butanone; (c) 1,4-dimethylbenzene; (d) 2-methylpropan-2-ol?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) ¹H: 1 (six equivalent H); ¹³C: 2 (CH₃ and C=O). (b) ¹H: 3; ¹³C: 4. (c) ¹H: 2 (CH₃ and the four equivalent ring H); ¹³C: 3 (CH₃, the two ring carbons bearing CH₃, and the four ring CH carbons). (d) ¹H: 2 (nine CH₃ H and the OH); ¹³C: 2 (CH₃ and the central carbon).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Predict the ¹H NMR spectrum (shift, integration, splitting) of 1-chloropropane, CH₃CH₂CH₂Cl.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Three signals: CH₂Cl at about 3.5 ppm (2H, triplet, two neighbours on the middle CH₂); middle CH₂ at about 1.8 ppm (2H, a sextet, five neighbours, 3 + 2, if the coupling constants are similar); CH₃ at about 1.0 ppm (3H, triplet).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>A compound C₃H₇Br has a ¹H NMR spectrum with a doublet at δ 1.7 (6H) and a septet at δ 4.2 (1H). Its mass spectrum shows two peaks of equal height at m/z 122 and 124. Identify it.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The two molecular ion peaks of equal height, two mass units apart, show one bromine atom. A doublet (6H) and a septet (1H) indicate an isopropyl group, (CH₃)₂CH–; the CH at 4.2 ppm is deshielded by the attached Br. The compound is <strong>2-bromopropane</strong>, (CH₃)₂CHBr. (C₃H₇⁷⁹Br = 122, C₃H₇⁸¹Br = 124.)</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>A compound has a molecular ion at m/z 78 and an M + 2 peak at m/z 80 one-third as high. Its ¹H NMR spectrum shows a doublet (6H) and a septet (1H). Suggest a structure.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>An M : M + 2 ratio of 3 : 1 indicates one chlorine. Subtracting ³⁵Cl (35) from 78 leaves 43, which is C₃H₇. The isopropyl pattern (doublet 6H, septet 1H) gives <strong>2-chloropropane</strong>, (CH₃)₂CHCl.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Compound Y, C₈H₈O, has IR bands at 3060 cm⁻¹ and 1690 cm⁻¹. Its ¹H NMR spectrum shows δ 7.4 to 8.0 (m, 5H) and 2.6 (s, 3H). Identify Y and explain the C=O wavenumber.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>DBE = (16 + 2 − 8)/2 = 5: a benzene ring (4) plus one C=O. The 5H multiplet at 7.4 to 8.0 is a monosubstituted benzene ring (C₆H₅–); the band at 3060 cm⁻¹ is aromatic C–H. The singlet (3H) at 2.6 is a CH₃ next to C=O. Y is <strong>1-phenylethanone</strong> (acetophenone), C₆H₅COCH₃. The C=O band (1690 cm⁻¹) is lower than for a simple ketone (1715) because the carbonyl is conjugated with the benzene ring, which lowers its bond order slightly.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>An alcohol C₄H₁₀O shows only two signals in its ¹H NMR spectrum: a singlet at δ 1.3 (9H) and a broad singlet at δ 2.0 (1H) that disappears on shaking with D₂O. Its ¹³C NMR spectrum has two lines. Identify it.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The 9H singlet is a <em>tert</em>-butyl group; the 1H broad singlet that exchanges with D₂O is the OH. Two carbon environments fit (CH₃)₃C–OH: <strong>2-methylpropan-2-ol</strong>.</p>
+</details>
+<h2 id="1411-quiz">14.11 Quiz<a class="headerlink" href="#1411-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="6023ad6aba2f">
+<p class="pk-quiz-title">Check your understanding of spectroscopy</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;an O-H group&quot;,&quot;a C=O group&quot;,&quot;a C≡N group&quot;,&quot;an aromatic ring&quot;],&quot;answer&quot;:&quot;a C=O group&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">A strong, sharp IR band at about 1715 cm⁻¹ indicates</p>
+<ol class="pk-q-opts" type="A"><li>an O-H group</li><li>a C=O group</li><li>a C≡N group</li><li>an aromatic ring</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a C=O group</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;the number of neighbouring H&quot;,&quot;the relative number of H producing it&quot;,&quot;the type of carbon&quot;,&quot;the molar mass&quot;],&quot;answer&quot;:&quot;the relative number of H producing it&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">In ¹H NMR, the area under a signal tells you</p>
+<ol class="pk-q-opts" type="A"><li>the number of neighbouring H</li><li>the relative number of H producing it</li><li>the type of carbon</li><li>the molar mass</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the relative number of H producing it</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;singlet&quot;,&quot;doublet&quot;,&quot;triplet&quot;,&quot;quartet&quot;],&quot;answer&quot;:&quot;quartet&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">A CH₂ group next to a CH₃ group (and no other H neighbours) appears as a</p>
+<ol class="pk-q-opts" type="A"><li>singlet</li><li>doublet</li><li>triplet</li><li>quartet</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>quartet</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;2&quot;,&quot;two&quot;]}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">How many signals are there in the ¹³C NMR spectrum of propan-2-ol?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>2 / two</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;one chlorine atom&quot;,&quot;one bromine atom&quot;,&quot;one nitrogen atom&quot;,&quot;one sulfur atom&quot;],&quot;answer&quot;:&quot;one bromine atom&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">A mass spectrum shows M and M + 2 peaks of nearly equal height. The compound contains</p>
+<ol class="pk-q-opts" type="A"><li>one chlorine atom</li><li>one bromine atom</li><li>one nitrogen atom</li><li>one sulfur atom</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>one bromine atom</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;the solvent&quot;,&quot;the reference with δ = 0&quot;,&quot;a source of deuterium&quot;,&quot;a catalyst&quot;],&quot;answer&quot;:&quot;the reference with δ = 0&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">TMS is used in NMR as</p>
+<ol class="pk-q-opts" type="A"><li>the solvent</li><li>the reference with δ = 0</li><li>a source of deuterium</li><li>a catalyst</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the reference with δ = 0</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;1.0 ppm&quot;,&quot;3.5 ppm&quot;,&quot;7.3 ppm&quot;,&quot;9.7 ppm&quot;],&quot;answer&quot;:&quot;9.7 ppm&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Which ¹H chemical shift is typical of an aldehyde CHO hydrogen?</p>
+<ol class="pk-q-opts" type="A"><li>1.0 ppm</li><li>3.5 ppm</li><li>7.3 ppm</li><li>9.7 ppm</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>9.7 ppm</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="amines.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 13. Amines">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+13. Amines
+</div>
+</div>
+</a>
+<a href="polymers-and-biomolecules.html" class="md-footer__link md-footer__link--next" aria-label="Next: 15. Polymers and Biomolecules">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+15. Polymers and Biomolecules
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

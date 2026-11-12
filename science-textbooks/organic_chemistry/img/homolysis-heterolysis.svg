@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 190" width="760" height="190" role="img" aria-label="Homolysis gives two radicals and is shown with fish-hook arrows; heterolysis gives ions and is shown with full arrows">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="80.0" y1="80.0" x2="130.0" y2="80.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="470.0" y1="80.0" x2="440.6" y2="63.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="470.0" y1="80.0" x2="440.6" y2="97.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="470.0" y1="80.0" x2="470.0" y2="46.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="470.0" y1="80.0" x2="520.0" y2="80.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="660.0" y1="80.0" x2="630.6" y2="63.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="660.0" y1="80.0" x2="630.6" y2="97.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="660.0" y1="80.0" x2="660.0" y2="46.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<rect x="67.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="80.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Cl</text>
+<rect x="117.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="130.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Cl</text>
+<text x="205.0" y="73.5" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">light or heat</text>
+<rect x="267.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="280.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Cl</text>
+<circle cx="294.0" cy="80.0" r="2.3" fill="#1a1a1a"/>
+<text x="310.0" y="86.3" font-size="18.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">+</text>
+<rect x="332.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="345.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Cl</text>
+<circle cx="359.0" cy="80.0" r="2.3" fill="#1a1a1a"/>
+<text x="210.0" y="164.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">homolysis: one electron to each atom</text>
+<rect x="507.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="520.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<circle cx="672.1" cy="87.0" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="668.1" y1="87.0" x2="676.1" y2="87.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<line x1="672.1" y1="83.0" x2="672.1" y2="91.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<text x="690.0" y="86.3" font-size="18.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">+</text>
+<rect x="712.5" y="69.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="725.0" y="86.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<circle cx="736.3" cy="68.7" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="732.3" y1="68.7" x2="740.3" y2="68.7" stroke="#1a1a1a" stroke-width="1.4"/>
+<text x="590.0" y="164.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">heterolysis: both electrons to one atom</text>
+<path d="M105.0 77.0 Q99.0 46.0 82.0 67.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<path d="M82.0 67.0 L84.1 56.4" stroke="#c0392b" stroke-width="1.70" stroke-linecap="round"/>
+<path d="M105.0 77.0 Q111.0 46.0 128.0 67.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<path d="M128.0 67.0 L118.1 62.8" stroke="#c0392b" stroke-width="1.70" stroke-linecap="round"/>
+<line x1="175.0" y1="80.0" x2="235.0" y2="80.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="235.0,80.0 225.0,84.5 225.0,75.5" fill="#1a1a1a"/>
+<path d="M495.0 80.0 Q500.0 50.0 526.0 68.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="526.0,68.0 515.8,66.0 520.6,59.1" fill="#c0392b"/>
+<line x1="555.0" y1="80.0" x2="605.0" y2="80.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="605.0,80.0 595.0,84.5 595.0,75.5" fill="#1a1a1a"/>
+</g>
+</svg>

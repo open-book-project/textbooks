@@ -1,0 +1,999 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/carboxylic-acids-and-derivatives.html">
+<link rel="prev" href="aldehydes-and-ketones.html">
+<link rel="next" href="amines.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>12. Carboxylic Acids and Their Derivatives - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#121-carboxylic-acids-structure-and-properties" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#121-carboxylic-acids-structure-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+12.1 Carboxylic acids: structure and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="12.1 Carboxylic acids: structure and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#making-carboxylic-acids" class="md-nav__link">
+<span class="md-ellipsis">
+Making carboxylic acids
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#122-nucleophilic-acyl-substitution" class="md-nav__link">
+<span class="md-ellipsis">
+12.2 Nucleophilic acyl substitution
+</span>
+</a>
+<nav class="md-nav" aria-label="12.2 Nucleophilic acyl substitution">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-reactivity-order" class="md-nav__link">
+<span class="md-ellipsis">
+The reactivity order
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#123-reactions-of-carboxylic-acids" class="md-nav__link">
+<span class="md-ellipsis">
+12.3 Reactions of carboxylic acids
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#124-acyl-chlorides-and-acid-anhydrides" class="md-nav__link">
+<span class="md-ellipsis">
+12.4 Acyl chlorides and acid anhydrides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#125-esters" class="md-nav__link">
+<span class="md-ellipsis">
+12.5 Esters
+</span>
+</a>
+<nav class="md-nav" aria-label="12.5 Esters">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#hydrolysis" class="md-nav__link">
+<span class="md-ellipsis">
+Hydrolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#other-reactions-of-esters" class="md-nav__link">
+<span class="md-ellipsis">
+Other reactions of esters
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#126-amides" class="md-nav__link">
+<span class="md-ellipsis">
+12.6 Amides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#127-nitriles" class="md-nav__link">
+<span class="md-ellipsis">
+12.7 Nitriles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#128-summary" class="md-nav__link">
+<span class="md-ellipsis">
+12.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#129-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+12.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1210-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+12.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#121-carboxylic-acids-structure-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+12.1 Carboxylic acids: structure and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="12.1 Carboxylic acids: structure and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#making-carboxylic-acids" class="md-nav__link">
+<span class="md-ellipsis">
+Making carboxylic acids
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#122-nucleophilic-acyl-substitution" class="md-nav__link">
+<span class="md-ellipsis">
+12.2 Nucleophilic acyl substitution
+</span>
+</a>
+<nav class="md-nav" aria-label="12.2 Nucleophilic acyl substitution">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-reactivity-order" class="md-nav__link">
+<span class="md-ellipsis">
+The reactivity order
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#123-reactions-of-carboxylic-acids" class="md-nav__link">
+<span class="md-ellipsis">
+12.3 Reactions of carboxylic acids
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#124-acyl-chlorides-and-acid-anhydrides" class="md-nav__link">
+<span class="md-ellipsis">
+12.4 Acyl chlorides and acid anhydrides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#125-esters" class="md-nav__link">
+<span class="md-ellipsis">
+12.5 Esters
+</span>
+</a>
+<nav class="md-nav" aria-label="12.5 Esters">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#hydrolysis" class="md-nav__link">
+<span class="md-ellipsis">
+Hydrolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#other-reactions-of-esters" class="md-nav__link">
+<span class="md-ellipsis">
+Other reactions of esters
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#126-amides" class="md-nav__link">
+<span class="md-ellipsis">
+12.6 Amides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#127-nitriles" class="md-nav__link">
+<span class="md-ellipsis">
+12.7 Nitriles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#128-summary" class="md-nav__link">
+<span class="md-ellipsis">
+12.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#129-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+12.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1210-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+12.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-12-carboxylic-acids-and-their-derivatives">Chapter 12: Carboxylic Acids and Their Derivatives<a class="headerlink" href="#chapter-12-carboxylic-acids-and-their-derivatives" title="Permanent link">&para;</a></h1>
+<p><em>Acidity and nucleophilic acyl substitution</em></p>
+<p>Vinegar owes its sourness to ethanoic acid, the sting of an ant to methanoic acid, and the smell of rancid butter to butanoic acid. Carboxylic acids and the compounds derived from them, acyl chlorides, anhydrides, esters, amides and nitriles, form one of the largest and most useful families in organic chemistry. Esters give fruits their scents and fats their structure; amides hold proteins together; polyesters and polyamides are among our most important materials. The members of the family are linked by one reaction type, <strong>nucleophilic acyl substitution</strong>, in which one group on the carbonyl carbon is replaced by another. This chapter explains the acidity of carboxylic acids, the mechanism of acyl substitution, and the reactivity order that tells you which derivative can be turned into which.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>explain the physical properties and acidity of carboxylic acids, and the effect of substituents on acidity;</li>
+<li>list ways of making carboxylic acids;</li>
+<li>write the addition–elimination mechanism of nucleophilic acyl substitution and explain how it differs from nucleophilic addition to aldehydes and ketones;</li>
+<li>rank the acid derivatives by reactivity and use the order to plan interconversions;</li>
+<li>write the mechanism of Fischer esterification and of ester hydrolysis in acid and in base;</li>
+<li>predict the products of reactions of acyl chlorides, anhydrides, esters, amides and nitriles with water, alcohols, amines, hydride reagents and Grignard reagents.</li>
+</ul>
+</div>
+<h2 id="121-carboxylic-acids-structure-and-properties">12.1 Carboxylic acids: structure and properties<a class="headerlink" href="#121-carboxylic-acids-structure-and-properties" title="Permanent link">&para;</a></h2>
+<p>The <strong>carboxyl group</strong>, –COOH, combines a carbonyl group and a hydroxyl group on the same carbon. The carbon is sp² and the group is planar. Naming was covered in Section 2.4: the acid is named from the alkane with <em>-oic acid</em>, counting the COOH carbon as C1.</p>
+<p>Carboxylic acids are strongly hydrogen bonded. In the pure liquid and in non-polar solvents they form <strong>dimers</strong>, pairs of molecules held together by two hydrogen bonds. As a result they have high boiling points: ethanoic acid (60 g mol⁻¹) boils at 118 °C, higher than propan-1-ol (97 °C). The first four acids mix with water completely; solubility then falls with chain length, and the long-chain <strong>fatty acids</strong> such as hexadecanoic acid (palmitic acid) are insoluble.</p>
+<h3 id="acidity">Acidity<a class="headerlink" href="#acidity" title="Permanent link">&para;</a></h3>
+<p>Carboxylic acids are weak acids, with pKa values typically between 4 and 5, but they are much stronger than alcohols (pKa 16) or phenols (pKa 10). The reason is the resonance stabilisation of the <strong>carboxylate ion</strong>, in which the negative charge is shared equally between two oxygen atoms (Figure 1.4, Section 4.4).</p>
+<table>
+<thead>
+<tr>
+<th>Acid</th>
+<th>Formula</th>
+<th style="text-align: center;">pKa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>methanoic acid</td>
+<td>HCOOH</td>
+<td style="text-align: center;">3.75</td>
+</tr>
+<tr>
+<td>ethanoic acid</td>
+<td>CH₃COOH</td>
+<td style="text-align: center;">4.76</td>
+</tr>
+<tr>
+<td>propanoic acid</td>
+<td>CH₃CH₂COOH</td>
+<td style="text-align: center;">4.87</td>
+</tr>
+<tr>
+<td>chloroethanoic acid</td>
+<td>ClCH₂COOH</td>
+<td style="text-align: center;">2.86</td>
+</tr>
+<tr>
+<td>trichloroethanoic acid</td>
+<td>Cl₃CCOOH</td>
+<td style="text-align: center;">0.65</td>
+</tr>
+<tr>
+<td>benzoic acid</td>
+<td>C₆H₅COOH</td>
+<td style="text-align: center;">4.20</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 12.1. Acidities of some carboxylic acids. Electron-withdrawing groups near the carboxyl group increase acidity by the inductive effect.</em></p>
+<p>Carboxylic acids react with strong bases (NaOH) and even with weak bases such as sodium hydrogencarbonate, giving water-soluble <strong>carboxylate salts</strong>:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COOH + NaHCO_3 \rightarrow CH_3COO^-Na^+ + H_2O + CO_2}
+\]</div>
+<p>The fizzing of carbon dioxide with sodium hydrogencarbonate is a simple test for a carboxylic acid; phenols and alcohols are too weakly acidic to give it. Sodium and potassium salts of long-chain fatty acids are <strong>soaps</strong> (Section 12.5).</p>
+<h3 id="making-carboxylic-acids">Making carboxylic acids<a class="headerlink" href="#making-carboxylic-acids" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Oxidation</strong> of primary alcohols or aldehydes (Section 10.5), or of alkyl side chains on a benzene ring with hot KMnO₄ (Section 8.6).</li>
+<li><strong>Carboxylation of Grignard reagents</strong>: RMgX + CO₂, then H₃O⁺, gives RCOOH, adding one carbon to the chain (Table 11.1).</li>
+<li><strong>Hydrolysis of nitriles</strong>: R–C≡N heated with aqueous acid or base gives RCOOH (Section 12.7). Since nitriles are made from haloalkanes and cyanide by SN2, this is another way to add one carbon.</li>
+<li><strong>Hydrolysis of esters, amides and other derivatives</strong> (Sections 12.5 and 12.6).</li>
+</ul>
+<h2 id="122-nucleophilic-acyl-substitution">12.2 Nucleophilic acyl substitution<a class="headerlink" href="#122-nucleophilic-acyl-substitution" title="Permanent link">&para;</a></h2>
+<p>An <strong>acyl group</strong> is R–C=O. Carboxylic acid derivatives all have the form R–CO–L, where L is a group attached to the acyl carbon through an electronegative atom: Cl (acyl chloride), OCOR (anhydride), OR′ (ester), NH₂ (amide) or OH (the acid itself).</p>
+<p>When a nucleophile attacks the carbonyl carbon of an aldehyde or ketone, the tetrahedral alkoxide intermediate has no good leaving group, so it is simply protonated: the result is <strong>addition</strong>. When the carbonyl carbon carries a group L that can leave, the tetrahedral intermediate collapses instead: the oxygen lone pair re-forms the C=O bond and L is expelled. The overall result is <strong>substitution</strong> of L by the nucleophile. The mechanism has two steps, <strong>addition</strong> then <strong>elimination</strong>:</p>
+<figure class="fig fig-diagram">
+<img src="img/acyl-substitution.svg" alt="Nucleophilic acyl substitution. In the first step the nucleophile adds to the carbonyl carbon and the π electrons move onto oxygen, giving a tetrahedral intermediate. In the second step the oxygen lone pair re-forms the C=O π bond and the leaving group L departs with its electron pair. The net result is the replacement of L by Nu." loading="lazy" width="790" height="240">
+<figcaption><strong>Figure 12.1 The addition–elimination mechanism.</strong> Nucleophilic acyl substitution. In the first step the nucleophile adds to the carbonyl carbon and the π electrons move onto oxygen, giving a tetrahedral intermediate. In the second step the oxygen lone pair re-forms the C=O π bond and the leaving group L departs with its electron pair. The net result is the replacement of L by Nu.</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Caution: not an SN2 reaction</p>
+<p>Acyl substitution does not occur by a one-step backside attack like SN2. The sp² carbonyl carbon is first attacked to form a tetrahedral intermediate, and only then does the leaving group leave. Always draw the tetrahedral intermediate.</p>
+</div>
+<h3 id="the-reactivity-order">The reactivity order<a class="headerlink" href="#the-reactivity-order" title="Permanent link">&para;</a></h3>
+<p>How readily a derivative undergoes acyl substitution depends on two related factors:</p>
+<ol>
+<li><strong>The leaving group.</strong> The weaker the base L⁻, the better it leaves. Cl⁻ (conjugate base of HCl, pKa −7) is an excellent leaving group; NH₂⁻ (conjugate base of NH₃, pKa 38) is a very poor one.</li>
+<li><strong>Resonance donation by L.</strong> A lone pair on L can be shared with the carbonyl group (L–C=O ↔ L⁺=C–O⁻). This makes the carbonyl carbon less electrophilic and the derivative more stable. Nitrogen donates strongly (amides are very stable), oxygen less so, and chlorine, whose 3p lone pairs overlap poorly with carbon's 2p orbital, hardly at all.</li>
+</ol>
+<p>Both factors give the same order:</p>
+<div class="arithmatex">\[
+\text{acyl chloride} &gt; \text{acid anhydride} &gt; \text{ester} \approx \text{carboxylic acid} &gt; \text{amide} &gt; \text{carboxylate ion}
+\]</div>
+<figure class="fig fig-diagram">
+<img src="img/derivative-reactivity.svg" alt="The reactivity of carboxylic acid derivatives towards nucleophilic acyl substitution, with each leaving group and the pKa of its conjugate acid. Acyl chlorides are the most reactive and amides the least. A more reactive derivative can be converted into a less reactive one by acyl substitution." loading="lazy" width="790" height="360">
+<figcaption><strong>Figure 12.2 Reactivity order of acid derivatives.</strong> The reactivity of carboxylic acid derivatives towards nucleophilic acyl substitution, with each leaving group and the pKa of its conjugate acid. Acyl chlorides are the most reactive and amides the least. A more reactive derivative can be converted into a less reactive one by acyl substitution.</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>You can travel <strong>down</strong> the reactivity ladder by acyl substitution, but not up. An acyl chloride can be converted into an anhydride, an ester or an amide; an ester into an amide; but an amide cannot be turned directly into an ester or an acyl chloride. To go up, first hydrolyse to the carboxylic acid, then activate it (for example with SOCl₂).</p>
+</div>
+<h2 id="123-reactions-of-carboxylic-acids">12.3 Reactions of carboxylic acids<a class="headerlink" href="#123-reactions-of-carboxylic-acids" title="Permanent link">&para;</a></h2>
+<p><strong>Conversion into acyl chlorides.</strong> Thionyl chloride, SOCl₂, converts a carboxylic acid into the acyl chloride, with sulfur dioxide and hydrogen chloride as gaseous by-products:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COOH + SOCl_2 \rightarrow CH_3COCl + SO_2 + HCl}
+\]</div>
+<p>This is the usual way to climb the reactivity ladder.</p>
+<p><strong>Fischer esterification.</strong> A carboxylic acid and an alcohol, heated with a little concentrated sulfuric acid as catalyst, give an ester and water:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COOH + CH_3CH_2OH \overset{H^+}{\rightleftharpoons} CH_3COOCH_2CH_3 + H_2O}
+\]</div>
+<p>The mechanism is acid-catalysed acyl substitution:</p>
+<ol>
+<li>The carbonyl oxygen of the acid is protonated, making the carbonyl carbon more electrophilic.</li>
+<li>The alcohol oxygen attacks the carbonyl carbon, giving a tetrahedral intermediate.</li>
+<li>A proton moves from the newly attached oxygen to one of the OH groups.</li>
+<li>Water leaves, and the C=O bond re-forms (still protonated).</li>
+<li>Loss of a proton gives the ester and regenerates the catalyst.</li>
+</ol>
+<p>Every step is reversible, and the equilibrium constant is close to 1 for many simple acids and alcohols. To get a good yield, one reactant (usually the cheaper alcohol) is used in excess, or water is removed as it forms (Le Chatelier's principle). Experiments with alcohol labelled with oxygen-18 show that the label ends up in the ester, not in the water, confirming that the C–O bond of the acid, not of the alcohol, is broken.</p>
+<p><strong>Reduction.</strong> LiAlH₄ reduces carboxylic acids to primary alcohols: CH₃COOH → CH₃CH₂OH. NaBH₄ is not strong enough.</p>
+<p><strong>Amide formation.</strong> Heating an acid with an amine first gives an ammonium carboxylate salt (an acid–base reaction), which loses water only on strong heating. In practice amides are made from more reactive derivatives, or by using a "coupling reagent" that activates the acid, the method used to join amino acids into peptides.</p>
+<h2 id="124-acyl-chlorides-and-acid-anhydrides">12.4 Acyl chlorides and acid anhydrides<a class="headerlink" href="#124-acyl-chlorides-and-acid-anhydrides" title="Permanent link">&para;</a></h2>
+<p><strong>Acyl chlorides</strong> (acid chlorides) are the most reactive derivatives. They react vigorously at room temperature with water, alcohols and amines, releasing hydrogen chloride (they fume in moist air):</p>
+<ul>
+<li>with water: CH₃COCl + H₂O → CH₃COOH + HCl</li>
+<li>with an alcohol: CH₃COCl + CH₃CH₂OH → CH₃COOCH₂CH₃ + HCl</li>
+<li>with ammonia or an amine (two equivalents, one to neutralise the HCl): CH₃COCl + 2 NH₃ → CH₃CONH₂ + NH₄Cl</li>
+</ul>
+<p>They also acylate benzene in the Friedel–Crafts reaction (Section 8.4). Because these reactions are fast and irreversible, acyl chlorides give much better yields of esters than Fischer esterification, but they are corrosive and lachrymatory and must be handled in a fume cupboard.</p>
+<p><strong>Acid anhydrides</strong>, (RCO)₂O, react in the same ways, more gently, releasing a carboxylic acid instead of HCl. Ethanoic anhydride is used industrially and in teaching laboratories to make <strong>aspirin</strong> (2-acetoxybenzoic acid) by acylating the OH group of 2-hydroxybenzoic acid (salicylic acid), with a little acid as catalyst:</p>
+<div class="arithmatex">\[
+\mathrm{HOC_6H_4COOH + (CH_3CO)_2O \rightarrow CH_3COOC_6H_4COOH + CH_3COOH}
+\]</div>
+<p>Anhydrides are preferred to acyl chlorides on a large scale because they are cheaper, less corrosive and do not release HCl.</p>
+<h2 id="125-esters">12.5 Esters<a class="headerlink" href="#125-esters" title="Permanent link">&para;</a></h2>
+<p>Esters are common in nature and industry. Many have pleasant, fruity smells and are used as flavourings: ethyl ethanoate is a fruity-smelling solvent used in some nail-polish removers, and 3-methylbutyl ethanoate smells of bananas. Fats and oils are esters of glycerol (Chapter 15). Polyesters are important fibres and plastics.</p>
+<p>Esters cannot hydrogen bond to one another, so they boil lower than acids of similar mass, close to the corresponding ketones.</p>
+<h3 id="hydrolysis">Hydrolysis<a class="headerlink" href="#hydrolysis" title="Permanent link">&para;</a></h3>
+<p>Esters are hydrolysed back to the acid and alcohol in two ways.</p>
+<p><strong>Acid-catalysed hydrolysis</strong> is the exact reverse of Fischer esterification, with the same intermediates. A large excess of water drives the equilibrium towards the acid and alcohol. It is reversible.</p>
+<p><strong>Base-promoted hydrolysis (saponification).</strong> Heating an ester with aqueous sodium hydroxide gives the carboxylate salt and the alcohol:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COOCH_2CH_3 + NaOH \rightarrow CH_3COO^-Na^+ + CH_3CH_2OH}
+\]</div>
+<p>The mechanism is acyl substitution: hydroxide adds to the carbonyl carbon, the tetrahedral intermediate expels the alkoxide ion, and the alkoxide immediately takes a proton from the carboxylic acid just formed. This last step, an acid–base reaction with a very large equilibrium constant, makes saponification <strong>irreversible</strong>, and it consumes a full equivalent of hydroxide, which is why base "promotes" rather than catalyses the reaction. Acidifying the mixture afterwards gives the free carboxylic acid.</p>
+<p>The name comes from soap-making: boiling fats with sodium hydroxide hydrolyses their ester groups, giving glycerol and the sodium salts of fatty acids, which are soaps. A soap molecule has a long, non-polar hydrocarbon tail and an ionic carboxylate head. In water, soap molecules gather into <strong>micelles</strong>, spheres with the tails inside and the heads facing the water, which can hold droplets of grease in their oily core and carry them away.</p>
+<h3 id="other-reactions-of-esters">Other reactions of esters<a class="headerlink" href="#other-reactions-of-esters" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>With amines</strong>: esters react with ammonia or amines to give amides (moving down the ladder).</li>
+<li><strong>Transesterification</strong>: an ester heated with a different alcohol and an acid or base catalyst exchanges its alkoxy group. Biodiesel is made by transesterifying vegetable oils with methanol.</li>
+<li><strong>Reduction</strong>: LiAlH₄ reduces an ester to <strong>two alcohols</strong>: RCOOR′ → RCH₂OH + R′OH.</li>
+<li><strong>Grignard reagents</strong> add <strong>twice</strong>: the first equivalent substitutes the OR′ group to give a ketone, which is more reactive than the ester and immediately adds a second equivalent. The product, after acid work-up, is a tertiary alcohol with two identical groups from the Grignard reagent: CH₃COOCH₃ + 2 CH₃MgBr → (CH₃)₃COH.</li>
+</ul>
+<h2 id="126-amides">12.6 Amides<a class="headerlink" href="#126-amides" title="Permanent link">&para;</a></h2>
+<p>Amides are the least reactive of the neutral derivatives. The nitrogen lone pair is strongly delocalised onto the carbonyl oxygen, which has three consequences:</p>
+<ol>
+<li>The C–N bond has partial double-bond character, so rotation about it is restricted and the amide group (O=C–N with its attached atoms) is <strong>planar</strong>.</li>
+<li>The nitrogen is <strong>not basic</strong> (Section 4.5): its lone pair is not available to accept a proton.</li>
+<li>The carbonyl carbon is only weakly electrophilic, so amides are <strong>hard to hydrolyse</strong>.</li>
+</ol>
+<p>These properties make the amide link, called the <strong>peptide bond</strong> in proteins, an ideal stable connector for the molecules of life (Chapter 15). The planarity of each peptide bond shapes the folding of proteins.</p>
+<p>Amides are hydrolysed only by prolonged heating with strong aqueous acid (giving the carboxylic acid and an ammonium salt) or strong base (giving the carboxylate and the amine or ammonia). Primary amides (RCONH₂) form strong hydrogen bonds and are usually solids; ethanamide melts at about 80 °C.</p>
+<p><strong>Reduction</strong> of an amide with LiAlH₄ converts the C=O group into CH₂, giving an <strong>amine</strong>: CH₃CONH₂ → CH₃CH₂NH₂. This is a useful way of making amines (Chapter 13).</p>
+<h2 id="127-nitriles">12.7 Nitriles<a class="headerlink" href="#127-nitriles" title="Permanent link">&para;</a></h2>
+<p>Nitriles, R–C≡N, contain a carbon at the same oxidation level as a carboxylic acid, and they are usually grouped with the acid derivatives. The C≡N carbon is electrophilic, like a carbonyl carbon. Nitriles are made by SN2 reaction of cyanide ion with primary or secondary haloalkanes (Section 9.2) or from amides by dehydration.</p>
+<ul>
+<li><strong>Hydrolysis</strong> with hot aqueous acid or base gives first an amide and then the carboxylic acid (or its salt): CH₃CH₂CN → CH₃CH₂COOH.</li>
+<li><strong>Reduction</strong> with LiAlH₄ (or with hydrogen and a catalyst) gives a primary amine with one more carbon than the haloalkane used to make the nitrile: CH₃CH₂CN → CH₃CH₂CH₂NH₂.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example 12.1: Adding one carbon</p>
+<p>Show two ways of making butanoic acid from 1-bromopropane.</p>
+<p>(a) Via a nitrile: CH₃CH₂CH₂Br + NaCN (SN2, in DMSO) → CH₃CH₂CH₂CN; then hot aqueous acid → CH₃CH₂CH₂COOH.</p>
+<p>(b) Via a Grignard reagent: CH₃CH₂CH₂Br + Mg (dry ether) → CH₃CH₂CH₂MgBr; then CO₂, then H₃O⁺ → CH₃CH₂CH₂COOH.</p>
+<p>Route (b) is preferred when the halide is tertiary (SN2 would fail); route (a) when the molecule contains groups that would destroy a Grignard reagent (such as OH or C=O).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 12.2: Choosing a derivative</p>
+<p>Plan the synthesis of <em>N</em>-ethylethanamide, CH₃CONHCH₂CH₃, from ethanoic acid.</p>
+<p>Amides lie at the bottom of the ladder, so they can be made from any more reactive derivative. Convert ethanoic acid into ethanoyl chloride with SOCl₂, then add two equivalents of ethanamine (one forms the amide, the other takes up the HCl as ethylammonium chloride): CH₃COCl + 2 CH₃CH₂NH₂ → CH₃CONHCH₂CH₃ + CH₃CH₂NH₃⁺Cl⁻.</p>
+</div>
+<h2 id="128-summary">12.8 Summary<a class="headerlink" href="#128-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Carboxylic acids form hydrogen-bonded dimers and are weak acids (pKa 4 to 5) because the carboxylate ion is resonance-stabilised; electron-withdrawing groups increase acidity. They release CO₂ from NaHCO₃.</li>
+<li>Acids are made by oxidation, carboxylation of Grignard reagents and hydrolysis of nitriles and other derivatives.</li>
+<li>Acid derivatives react by nucleophilic acyl substitution: addition to give a tetrahedral intermediate, then elimination of the leaving group.</li>
+<li>Reactivity: acyl chloride &gt; anhydride &gt; ester ≈ acid &gt; amide. Conversions run downhill.</li>
+<li>Fischer esterification is acid-catalysed and reversible; saponification (base hydrolysis of esters) is irreversible and makes soap from fats.</li>
+<li>LiAlH₄ reduces acids and esters to primary alcohols, amides to amines and nitriles to primary amines. Grignard reagents add twice to esters, giving tertiary alcohols.</li>
+<li>Amides are planar, non-basic and hard to hydrolyse: ideal for peptide bonds.</li>
+</ul>
+</div>
+<h2 id="129-exercises">12.9 Exercises<a class="headerlink" href="#129-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Explain why ethanoic acid (bp 118 °C) boils higher than propan-1-ol (bp 97 °C), although their molar masses are equal.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethanoic acid molecules form cyclic dimers held by two strong hydrogen bonds, and in the liquid they hydrogen bond extensively through both the C=O and the O–H groups. The carboxyl group is also more polar than an alcohol group. More energy is needed to separate the molecules, so the boiling point is higher.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Arrange in order of increasing acidity, and explain: ethanoic acid, 2,2-dichloroethanoic acid, ethanol, 2-chloroethanoic acid, phenol.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Ethanol (16) &lt; phenol (10) &lt; ethanoic acid (4.76) &lt; 2-chloroethanoic acid (2.86) &lt; 2,2-dichloroethanoic acid (1.29). Phenoxide is stabilised by resonance into the ring; carboxylate by resonance over two oxygens; each chlorine adds an inductive withdrawal that stabilises the carboxylate further.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Write the mechanism for the saponification of methyl ethanoate with sodium hydroxide, and explain why the reaction goes to completion.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(1) Hydroxide attacks the carbonyl carbon; the π electrons move onto oxygen, giving a tetrahedral intermediate. (2) The oxygen lone pair re-forms the C=O bond and methoxide is expelled, giving ethanoic acid. (3) Methoxide (or hydroxide) removes the acidic proton from ethanoic acid, giving ethanoate and methanol. Step 3 is an acid–base reaction with an equilibrium constant of about 10¹¹ (pKa 4.8 against about 15.5), so it pulls the whole sequence to completion; the carboxylate ion is far too unreactive to be attacked by methanol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Give the products when ethanoyl chloride reacts with: (a) water; (b) propan-1-ol; (c) excess dimethylamine, (CH₃)₂NH; (d) benzene with AlCl₃.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Ethanoic acid + HCl. (b) Propyl ethanoate + HCl. (c) <em>N</em>,<em>N</em>-dimethylethanamide, CH₃CON(CH₃)₂, + dimethylammonium chloride. (d) 1-Phenylethanone (acetophenone), C₆H₅COCH₃, + HCl.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>How would you make (a) ethyl benzoate from benzoic acid by two different routes; (b) 2-phenylpropan-2-ol from ethyl benzoate?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Route 1: Fischer esterification with excess ethanol and a catalytic amount of concentrated H₂SO₄, heated under reflux. Route 2: convert benzoic acid into benzoyl chloride with SOCl₂, then react with ethanol (with a base such as pyridine to take up HCl); this route is not an equilibrium and gives a higher yield.</p>
+<p>(b) Add two equivalents of methylmagnesium bromide, then acid work-up. The first equivalent converts the ester into 1-phenylethanone, which adds the second methyl group, giving (CH₃)₂C(OH)C₆H₅.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Give the products of LiAlH₄ reduction (followed by water) of: (a) methyl propanoate; (b) <em>N</em>-methylethanamide; (c) butanenitrile; (d) propanoic acid.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Propan-1-ol and methanol. (b) <em>N</em>-Ethylmethanamine, CH₃CH₂NHCH₃ (the C=O becomes CH₂). (c) Butan-1-amine, CH₃CH₂CH₂CH₂NH₂. (d) Propan-1-ol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Explain why amides are much less basic than amines and why the C–N bond of an amide does not rotate freely at room temperature.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>In an amide the nitrogen lone pair is delocalised onto the carbonyl oxygen by resonance (O=C–NH₂ ↔ ⁻O–C=NH₂⁺). The lone pair is therefore much less available to bond to a proton, so amides are very weak bases (the pKa of a protonated amide is about −0.5, compared with about 10.6 for a protonated amine; amides are in fact protonated on oxygen). The same resonance gives the C–N bond partial double-bond character, so rotating about it would destroy the overlap of the nitrogen p orbital with the C=O π system; this costs enough energy to make rotation slow at room temperature.</p>
+</details>
+<h2 id="1210-quiz">12.10 Quiz<a class="headerlink" href="#1210-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="19497dca8e71">
+<p class="pk-quiz-title">Check your understanding of carboxylic acids and derivatives</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;amide&quot;,&quot;ester&quot;,&quot;acid anhydride&quot;,&quot;acyl chloride&quot;],&quot;answer&quot;:&quot;acyl chloride&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which derivative is the most reactive towards nucleophilic acyl substitution?</p>
+<ol class="pk-q-opts" type="A"><li>amide</li><li>ester</li><li>acid anhydride</li><li>acyl chloride</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>acyl chloride</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;SOCl₂&quot;,&quot;HCl&quot;,&quot;NaCl&quot;,&quot;Cl₂ with light&quot;],&quot;answer&quot;:&quot;SOCl₂&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Which reagent converts a carboxylic acid into an acyl chloride?</p>
+<ol class="pk-q-opts" type="A"><li>SOCl₂</li><li>HCl</li><li>NaCl</li><li>Cl₂ with light</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>SOCl₂</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;dilute acid&quot;,&quot;aqueous sodium hydroxide&quot;,&quot;water alone&quot;,&quot;LiAlH₄&quot;],&quot;answer&quot;:&quot;aqueous sodium hydroxide&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Saponification is the hydrolysis of an ester by</p>
+<ol class="pk-q-opts" type="A"><li>dilute acid</li><li>aqueous sodium hydroxide</li><li>water alone</li><li>LiAlH₄</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>aqueous sodium hydroxide</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;methyl ethanoate&quot;,&quot;methyl acetate&quot;]}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Name the ester formed from ethanoic acid and methanol.</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>methyl ethanoate / methyl acetate</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;it dissolves in NaOH&quot;,&quot;it fizzes with NaHCO₃&quot;,&quot;it decolourises bromine water&quot;,&quot;it gives a silver mirror&quot;],&quot;answer&quot;:&quot;it fizzes with NaHCO₃&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which observation shows that a compound is a carboxylic acid rather than a phenol?</p>
+<ol class="pk-q-opts" type="A"><li>it dissolves in NaOH</li><li>it fizzes with NaHCO₃</li><li>it decolourises bromine water</li><li>it gives a silver mirror</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>it fizzes with NaHCO₃</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;an alcohol&quot;,&quot;an amine&quot;,&quot;a carboxylic acid&quot;,&quot;a nitrile&quot;],&quot;answer&quot;:&quot;an amine&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Reduction of an amide with LiAlH₄ gives</p>
+<ol class="pk-q-opts" type="A"><li>an alcohol</li><li>an amine</li><li>a carboxylic acid</li><li>a nitrile</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>an amine</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a one-step SN2&quot;,&quot;addition then elimination&quot;,&quot;elimination then addition&quot;,&quot;a radical chain&quot;],&quot;answer&quot;:&quot;addition then elimination&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">The mechanism of nucleophilic acyl substitution is best described as</p>
+<ol class="pk-q-opts" type="A"><li>a one-step SN2</li><li>addition then elimination</li><li>elimination then addition</li><li>a radical chain</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>addition then elimination</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="aldehydes-and-ketones.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 11. Aldehydes and Ketones">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+11. Aldehydes and Ketones
+</div>
+</div>
+</a>
+<a href="amines.html" class="md-footer__link md-footer__link--next" aria-label="Next: 13. Amines">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+13. Amines
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

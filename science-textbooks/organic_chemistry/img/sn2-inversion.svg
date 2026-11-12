@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 250" width="790" height="250" role="img" aria-label="The SN2 mechanism: the nucleophile attacks the carbon from the side opposite the leaving group, passing through a five-coordinate transition state, and the configuration is inverted">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="170.0" y1="120.0" x2="153.9" y2="85.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="170.0,120.0 145.1,148.9 151.3,153.3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
+<line x1="164.6" y1="120.3" x2="165.2" y2="122.4" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="159.4" y1="121.2" x2="160.2" y2="124.3" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="154.2" y1="122.0" x2="155.3" y2="126.2" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="149.0" y1="122.9" x2="150.3" y2="128.0" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="143.7" y1="123.8" x2="145.4" y2="129.9" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="138.5" y1="124.6" x2="140.4" y2="131.7" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="133.3" y1="125.5" x2="135.5" y2="133.6" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="170.0" y1="120.0" x2="216.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<path d="M305 50 Q298 50 298 60 L298 185 Q298 195 305 195" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+<path d="M490 50 Q497 50 497 60 L497 185 Q497 195 490 195" stroke="#1a1a1a" stroke-width="1.5" fill="none"/>
+<line x1="395.0" y1="120.0" x2="395.0" y2="82.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="395.0,120.0 367.7,146.7 373.5,151.6" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
+<line x1="397.5" y1="124.8" x2="399.2" y2="123.3" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="400.5" y1="129.1" x2="403.0" y2="127.0" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="403.5" y1="133.5" x2="406.8" y2="130.7" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="406.5" y1="137.8" x2="410.6" y2="134.4" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="409.5" y1="142.2" x2="414.4" y2="138.1" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="412.5" y1="146.6" x2="418.1" y2="141.8" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="415.5" y1="150.9" x2="421.9" y2="145.5" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="345.0" y1="120.0" x2="395.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="395.0" y1="120.0" x2="445.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round" stroke-dasharray="5 4"/>
+<line x1="650.0" y1="120.0" x2="666.1" y2="85.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="650.0,120.0 668.7,153.3 674.9,148.9" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="0.8" stroke-linejoin="round"/>
+<line x1="654.8" y1="122.4" x2="655.4" y2="120.3" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="659.8" y1="124.3" x2="660.6" y2="121.2" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="664.7" y1="126.2" x2="665.8" y2="122.0" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="669.7" y1="128.0" x2="671.0" y2="122.9" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="674.6" y1="129.9" x2="676.3" y2="123.8" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="679.6" y1="131.7" x2="681.5" y2="124.6" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="684.5" y1="133.6" x2="686.7" y2="125.5" stroke="#1a1a1a" stroke-width="1.30" stroke-linecap="round"/>
+<line x1="606.0" y1="120.0" x2="650.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<text x="147.2" y="76.0" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="139.0" y="169.1" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="4.2" font-size="10.1">3</tspan><tspan dy="-4.2">​</tspan></text>
+<text x="117.8" y="138.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C<tspan dy="4.2" font-size="10.1">2</tspan><tspan dy="-4.2">​</tspan>H<tspan dy="4.2" font-size="10.1">5</tspan><tspan dy="-4.2">​</tspan></text>
+<rect x="203.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="216.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<rect x="37.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="50.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HO</text>
+<circle cx="50.0" cy="102.0" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="46.0" y1="102.0" x2="54.0" y2="102.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<circle cx="71.0" cy="116.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="71.0" cy="124.0" r="1.9" fill="#1a1a1a"/>
+<text x="507.0" y="56.3" font-size="18.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">‡</text>
+<text x="395.0" y="70.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="360.3" y="166.3" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="4.2" font-size="10.1">3</tspan><tspan dy="-4.2">​</tspan></text>
+<text x="429.7" y="166.3" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C<tspan dy="4.2" font-size="10.1">2</tspan><tspan dy="-4.2">​</tspan>H<tspan dy="4.2" font-size="10.1">5</tspan><tspan dy="-4.2">​</tspan></text>
+<rect x="320.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="333.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HO</text>
+<rect x="444.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="457.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<text x="329.0" y="102.5" font-size="13.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">δ−</text>
+<text x="461.0" y="102.5" font-size="13.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">δ−</text>
+<text x="672.8" y="76.0" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="681.0" y="169.1" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="4.2" font-size="10.1">3</tspan><tspan dy="-4.2">​</tspan></text>
+<text x="702.2" y="138.9" font-size="14.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C<tspan dy="4.2" font-size="10.1">2</tspan><tspan dy="-4.2">​</tspan>H<tspan dy="4.2" font-size="10.1">5</tspan><tspan dy="-4.2">​</tspan></text>
+<rect x="587.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="600.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HO</text>
+<text x="750.0" y="125.2" font-size="15.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">+ Br⁻</text>
+<text x="170.0" y="229.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">(R)-2-bromobutane</text>
+<text x="395.0" y="229.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">transition state</text>
+<text x="650.0" y="229.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">(S)-butan-2-ol</text>
+<path d="M74.0 114.0 Q100.0 70.0 160.0 114.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="160.0,114.0 149.9,111.8 154.8,105.0" fill="#c0392b"/>
+<path d="M193.0 120.0 Q198.0 86.0 226.0 108.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="226.0,108.0 215.9,105.4 221.1,98.8" fill="#c0392b"/>
+<line x1="245.0" y1="120.0" x2="285.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="285.0,120.0 275.0,124.5 275.0,115.5" fill="#1a1a1a"/>
+<line x1="520.0" y1="120.0" x2="560.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="560.0,120.0 550.0,124.5 550.0,115.5" fill="#1a1a1a"/>
+</g>
+</svg>

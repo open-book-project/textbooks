@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 250" width="780" height="250" role="img" aria-label="Mechanism of the addition of HBr to propene: protonation gives the more stable secondary carbocation, which is captured by bromide to give 2-bromopropane">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="60.0" y1="120.0" x2="98.1" y2="98.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="69.1" y1="121.7" x2="95.0" y2="106.7" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="98.1" y1="98.0" x2="136.2" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="190.0" y1="70.0" x2="236.0" y2="70.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="350.0" y1="132.0" x2="388.1" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="388.1" y1="110.0" x2="426.2" y2="132.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="590.0" y1="132.0" x2="628.1" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="628.1" y1="110.0" x2="666.2" y2="132.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="628.1" y1="110.0" x2="628.1" y2="72.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<text x="54.0" y="143.8" font-size="11.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">C1</text>
+<rect x="182.7" y="59.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="190.0" y="76.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="223.5" y="59.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="236.0" y="76.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<circle cx="388.1" cy="96.0" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="384.1" y1="96.0" x2="392.1" y2="96.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<line x1="388.1" y1="92.0" x2="388.1" y2="100.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<rect x="457.5" y="107.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="470.0" y="124.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<circle cx="481.3" cy="106.7" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="477.3" y1="106.7" x2="485.3" y2="106.7" stroke="#1a1a1a" stroke-width="1.4"/>
+<circle cx="456.0" cy="122.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="456.0" cy="114.0" r="1.9" fill="#1a1a1a"/>
+<text x="390.0" y="179.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">secondary carbocation</text>
+<rect x="615.6" y="55.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="628.1" y="72.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<text x="630.0" y="179.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">2-bromopropane (major)</text>
+<text x="390.0" y="229.6" font-size="13.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Protonation at C1 gives the 2° cation; protonation at C2 would give the much less stable 1° cation CH₃CH₂CH₂⁺.</text>
+<path d="M77.1 110.1 Q110.0 60.0 182.0 76.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="182.0,76.0 171.8,78.0 173.6,69.8" fill="#c0392b"/>
+<path d="M213.0 70.0 Q214.0 42.0 244.0 58.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="244.0,58.0 233.6,57.2 237.6,49.8" fill="#c0392b"/>
+<line x1="265.0" y1="120.0" x2="320.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="320.0,120.0 310.0,124.5 310.0,115.5" fill="#1a1a1a"/>
+<path d="M454.0 112.0 Q430.0 80.0 394.1 114.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="394.1,114.0 398.1,104.4 403.9,110.5" fill="#c0392b"/>
+<line x1="505.0" y1="120.0" x2="560.0" y2="120.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="560.0,120.0 550.0,124.5 550.0,115.5" fill="#1a1a1a"/>
+</g>
+</svg>

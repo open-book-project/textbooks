@@ -1,0 +1,1074 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/acids-and-bases.html">
+<link rel="prev" href="isomerism-and-stereochemistry.html">
+<link rel="next" href="reaction-mechanisms-and-curly-arrows.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>4. Acids and Bases in Organic Chemistry - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#41-brnstedlowry-acids-and-bases" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="acids-and-bases.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#41-brnstedlowry-acids-and-bases" class="md-nav__link">
+<span class="md-ellipsis">
+4.1 Brønsted–Lowry acids and bases
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#42-measuring-acid-strength-ka-and-pka" class="md-nav__link">
+<span class="md-ellipsis">
+4.2 Measuring acid strength: Ka and pKa
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#43-predicting-the-direction-of-an-acidbase-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+4.3 Predicting the direction of an acid–base reaction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#44-what-makes-an-acid-strong" class="md-nav__link">
+<span class="md-ellipsis">
+4.4 What makes an acid strong?
+</span>
+</a>
+<nav class="md-nav" aria-label="4.4 What makes an acid strong?">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#1-the-atom-that-carries-the-charge" class="md-nav__link">
+<span class="md-ellipsis">
+1. The atom that carries the charge
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#2-resonance" class="md-nav__link">
+<span class="md-ellipsis">
+2. Resonance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#3-inductive-effects" class="md-nav__link">
+<span class="md-ellipsis">
+3. Inductive effects
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#4-hybridisation" class="md-nav__link">
+<span class="md-ellipsis">
+4. Hybridisation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#45-bases-and-the-pka-of-the-conjugate-acid" class="md-nav__link">
+<span class="md-ellipsis">
+4.5 Bases and the pKa of the conjugate acid
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#46-acids-and-bases-at-a-given-ph" class="md-nav__link">
+<span class="md-ellipsis">
+4.6 Acids and bases at a given pH
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#47-lewis-acids-and-bases" class="md-nav__link">
+<span class="md-ellipsis">
+4.7 Lewis acids and bases
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#48-summary" class="md-nav__link">
+<span class="md-ellipsis">
+4.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#49-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+4.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#410-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+4.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#41-brnstedlowry-acids-and-bases" class="md-nav__link">
+<span class="md-ellipsis">
+4.1 Brønsted–Lowry acids and bases
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#42-measuring-acid-strength-ka-and-pka" class="md-nav__link">
+<span class="md-ellipsis">
+4.2 Measuring acid strength: Ka and pKa
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#43-predicting-the-direction-of-an-acidbase-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+4.3 Predicting the direction of an acid–base reaction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#44-what-makes-an-acid-strong" class="md-nav__link">
+<span class="md-ellipsis">
+4.4 What makes an acid strong?
+</span>
+</a>
+<nav class="md-nav" aria-label="4.4 What makes an acid strong?">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#1-the-atom-that-carries-the-charge" class="md-nav__link">
+<span class="md-ellipsis">
+1. The atom that carries the charge
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#2-resonance" class="md-nav__link">
+<span class="md-ellipsis">
+2. Resonance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#3-inductive-effects" class="md-nav__link">
+<span class="md-ellipsis">
+3. Inductive effects
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#4-hybridisation" class="md-nav__link">
+<span class="md-ellipsis">
+4. Hybridisation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#45-bases-and-the-pka-of-the-conjugate-acid" class="md-nav__link">
+<span class="md-ellipsis">
+4.5 Bases and the pKa of the conjugate acid
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#46-acids-and-bases-at-a-given-ph" class="md-nav__link">
+<span class="md-ellipsis">
+4.6 Acids and bases at a given pH
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#47-lewis-acids-and-bases" class="md-nav__link">
+<span class="md-ellipsis">
+4.7 Lewis acids and bases
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#48-summary" class="md-nav__link">
+<span class="md-ellipsis">
+4.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#49-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+4.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#410-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+4.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-4-acids-and-bases-in-organic-chemistry">Chapter 4: Acids and Bases in Organic Chemistry<a class="headerlink" href="#chapter-4-acids-and-bases-in-organic-chemistry" title="Permanent link">&para;</a></h1>
+<p><em>Proton transfer, pKa and the structure of the conjugate base</em></p>
+<p>Acid–base reactions are the simplest reactions in organic chemistry and among the most important. Many reactions start with a proton transfer, many end with one, and the same ideas that decide how strong an acid is (where a negative charge can sit comfortably, how far it can spread) decide the course of reactions throughout the book. This chapter sets out the Brønsted–Lowry and Lewis definitions, the pKa scale, how to predict the direction of an acid–base reaction, and the structural factors that make one acid stronger than another.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>identify acids, bases and conjugate pairs, and show proton transfer with curly arrows;</li>
+<li>use pKa values to compare acid strength and to predict the position of an acid–base equilibrium;</li>
+<li>explain differences in acidity using the atom bearing the charge, resonance, inductive effects and hybridisation;</li>
+<li>compare the strength of bases using the pKa of their conjugate acids;</li>
+<li>predict which form of an acid or base predominates at a given pH;</li>
+<li>recognise Lewis acids and bases and connect them to electrophiles and nucleophiles.</li>
+</ul>
+</div>
+<h2 id="41-brnstedlowry-acids-and-bases">4.1 Brønsted–Lowry acids and bases<a class="headerlink" href="#41-brnstedlowry-acids-and-bases" title="Permanent link">&para;</a></h2>
+<p>In the <strong>Brønsted–Lowry</strong> definition, an <strong>acid</strong> is a proton donor and a <strong>base</strong> is a proton acceptor. (A "proton" here means a hydrogen ion, H⁺, a hydrogen atom without its electron.) When an acid HA gives its proton to a base B, the acid becomes its <strong>conjugate base</strong> A⁻ and the base becomes its <strong>conjugate acid</strong> BH⁺:</p>
+<div class="arithmatex">\[
+\mathrm{HA + B \rightleftharpoons A^- + BH^+}
+\]</div>
+<p>Every acid–base reaction involves two <strong>conjugate acid–base pairs</strong>: HA/A⁻ and BH⁺/B. The members of a pair differ by one proton.</p>
+<p>A base needs a pair of electrons with which to take the proton, usually a lone pair on oxygen or nitrogen, or a negative charge. This is why curly arrows describe acid–base reactions so well. One arrow starts at the lone pair of the base and points to the proton; a second arrow starts at the H–A bond and points to A, showing the bonding pair staying behind on A as the new lone pair.</p>
+<figure class="fig fig-diagram">
+<img src="img/proton-transfer.svg" alt="The reaction of hydroxide ion with ethanoic acid drawn with curly arrows. A lone pair on hydroxide forms a new bond to the acidic proton, and the electrons of the O–H bond move onto the oxygen of the acid, which becomes the ethanoate ion. The products are the conjugate base of ethanoic acid and the conjugate acid of hydroxide, water." loading="lazy" width="760" height="210">
+<figcaption><strong>Figure 4.1 Proton transfer with curly arrows.</strong> The reaction of hydroxide ion with ethanoic acid drawn with curly arrows. A lone pair on hydroxide forms a new bond to the acidic proton, and the electrons of the O–H bond move onto the oxygen of the acid, which becomes the ethanoate ion. The products are the conjugate base of ethanoic acid and the conjugate acid of hydroxide, water.</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Caution: arrows show electrons, not protons</p>
+<p>A curly arrow always shows the movement of an electron pair. It never shows a proton (or any atom) moving. In a proton transfer, draw the arrow <strong>from the lone pair of the base to the H</strong>, not from the H to the base.</p>
+</div>
+<p>Water can act as either an acid or a base (it is <strong>amphoteric</strong>): it donates a proton to ammonia, giving hydroxide, and accepts one from hydrogen chloride, giving the hydronium ion, H₃O⁺. Many organic molecules are amphoteric too. Ethanol is a weak acid towards a strong base and a weak base towards a strong acid.</p>
+<h2 id="42-measuring-acid-strength-ka-and-pka">4.2 Measuring acid strength: Ka and pKa<a class="headerlink" href="#42-measuring-acid-strength-ka-and-pka" title="Permanent link">&para;</a></h2>
+<p>The strength of an acid in water is measured by the equilibrium constant for its ionisation, the <strong>acid dissociation constant</strong> <span class="arithmatex">\(K_\mathrm{a}\)</span>:</p>
+<div class="arithmatex">\[
+\mathrm{HA + H_2O \rightleftharpoons A^- + H_3O^+}
+\qquad
+K_\mathrm{a} = \frac{[\mathrm{A^-}][\mathrm{H_3O^+}]}{[\mathrm{HA}]}
+\]</div>
+<p>Ka values range over more than fifty powers of ten, so they are converted into a logarithmic scale, just as hydrogen-ion concentrations are converted into pH:</p>
+<div class="arithmatex">\[
+\mathrm{p}K_\mathrm{a} = -\log_{10} K_\mathrm{a}
+\]</div>
+<p>The smaller the pKa, the stronger the acid. Because the scale is logarithmic, a difference of one pKa unit means a tenfold difference in Ka: ethanoic acid (pKa 4.8) is about one hundred thousand times more acidic than phenol (pKa 10).</p>
+<figure class="fig fig-diagram">
+<img src="img/pka-scale.svg" alt="Approximate pKa values on a single scale. Strong acids such as HCl lie to the left, with negative pKa values; very weak acids such as alkanes lie to the far right. Every acid on the scale has a conjugate base whose strength runs the other way: the weaker the acid, the stronger its conjugate base." loading="lazy" width="780" height="270">
+<figcaption><strong>Figure 4.2 The pKa scale.</strong> Approximate pKa values on a single scale. Strong acids such as HCl lie to the left, with negative pKa values; very weak acids such as alkanes lie to the far right. Every acid on the scale has a conjugate base whose strength runs the other way: the weaker the acid, the stronger its conjugate base.</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th>Acid</th>
+<th>Conjugate base</th>
+<th style="text-align: center;">Approximate pKa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HCl</td>
+<td>Cl⁻</td>
+<td style="text-align: center;">−7</td>
+</tr>
+<tr>
+<td>H₃O⁺</td>
+<td>H₂O</td>
+<td style="text-align: center;">−1.7</td>
+</tr>
+<tr>
+<td>CH₃COOH (ethanoic acid)</td>
+<td>CH₃COO⁻</td>
+<td style="text-align: center;">4.8</td>
+</tr>
+<tr>
+<td>NH₄⁺</td>
+<td>NH₃</td>
+<td style="text-align: center;">9.2</td>
+</tr>
+<tr>
+<td>C₆H₅OH (phenol)</td>
+<td>C₆H₅O⁻</td>
+<td style="text-align: center;">10</td>
+</tr>
+<tr>
+<td>CH₃NH₃⁺</td>
+<td>CH₃NH₂</td>
+<td style="text-align: center;">10.6</td>
+</tr>
+<tr>
+<td>H₂O</td>
+<td>OH⁻</td>
+<td style="text-align: center;">15.7</td>
+</tr>
+<tr>
+<td>CH₃CH₂OH (ethanol)</td>
+<td>CH₃CH₂O⁻</td>
+<td style="text-align: center;">16</td>
+</tr>
+<tr>
+<td>CH₃COCH₃ (C–H next to C=O)</td>
+<td>⁻CH₂COCH₃</td>
+<td style="text-align: center;">19</td>
+</tr>
+<tr>
+<td>HC≡CH</td>
+<td>HC≡C⁻</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td>NH₃</td>
+<td>NH₂⁻</td>
+<td style="text-align: center;">38</td>
+</tr>
+<tr>
+<td>CH₂=CH₂</td>
+<td>CH₂=CH⁻</td>
+<td style="text-align: center;">44</td>
+</tr>
+<tr>
+<td>CH₄</td>
+<td>CH₃⁻</td>
+<td style="text-align: center;">50</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 4.1. Approximate pKa values worth remembering. Values above about 16 cannot be measured in water and are estimated by other methods; treat them as a guide to order of magnitude.</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note: the pKa of water</p>
+<p>Some books give the pKa of water as 15.7 and others as 14.0. The difference comes from how the concentration of water itself is treated in the equilibrium expression. This book uses 15.7, which makes water directly comparable with alcohols, but the conclusions never depend on the choice.</p>
+</div>
+<h2 id="43-predicting-the-direction-of-an-acidbase-reaction">4.3 Predicting the direction of an acid–base reaction<a class="headerlink" href="#43-predicting-the-direction-of-an-acidbase-reaction" title="Permanent link">&para;</a></h2>
+<p>An acid–base equilibrium always lies on the side of the <strong>weaker acid and the weaker base</strong>. Put simply, the proton ends up on the strongest base available.</p>
+<p>To predict the outcome of a reaction:</p>
+<ol>
+<li>Identify the acid on each side of the equation.</li>
+<li>Look up (or estimate) their pKa values.</li>
+<li>The equilibrium favours the side with the acid of <strong>higher</strong> pKa (the weaker acid).</li>
+</ol>
+<p>The equilibrium constant for the reaction is approximately <span class="arithmatex">\(10^{\Delta}\)</span>, where <span class="arithmatex">\(\Delta\)</span> is the pKa of the product acid minus the pKa of the reactant acid.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 4.1: Will hydroxide deprotonate ethanoic acid? Will it deprotonate ethyne?</p>
+<p><strong>Ethanoic acid + hydroxide → ethanoate + water.</strong> The acid on the left has pKa 4.8; the acid on the right (water) has pKa 15.7. The weaker acid is water, on the right, so the reaction goes essentially to completion. K ≈ 10^(15.7 − 4.8) ≈ 10¹¹. This is why carboxylic acids dissolve in aqueous sodium hydroxide.</p>
+<p><strong>Ethyne + hydroxide → ethynide + water.</strong> The acid on the left (ethyne) has pKa 25; the acid on the right (water) has pKa 15.7. Now the weaker acid is on the left, so the equilibrium lies far to the left: hydroxide is not a strong enough base. To remove the proton from ethyne we need the conjugate base of a much weaker acid, such as the amide ion NH₂⁻ (the conjugate base of ammonia, pKa 38).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>A base can effectively remove a proton from any acid whose pKa is lower than the pKa of the base's own conjugate acid. Read Table 4.1 this way: each conjugate base in the table can deprotonate every acid above it.</p>
+</div>
+<h2 id="44-what-makes-an-acid-strong">4.4 What makes an acid strong?<a class="headerlink" href="#44-what-makes-an-acid-strong" title="Permanent link">&para;</a></h2>
+<p>An acid is strong when its conjugate base is stable. Everything that stabilises the negative charge left behind in A⁻ makes HA more acidic. Four structural factors matter, roughly in this order of importance.</p>
+<h3 id="1-the-atom-that-carries-the-charge">1. The atom that carries the charge<a class="headerlink" href="#1-the-atom-that-carries-the-charge" title="Permanent link">&para;</a></h3>
+<p><strong>Across a row</strong> of the periodic table, acidity increases with electronegativity. A more electronegative atom holds a negative charge better:</p>
+<div class="arithmatex">\[
+\mathrm{CH_4\ (50) &lt; NH_3\ (38) &lt; H_2O\ (15.7) &lt; HF\ (3.2)}
+\]</div>
+<p><strong>Down a group</strong>, acidity increases with the size of the atom, even though electronegativity decreases. HF (pKa 3.2) is far weaker than HCl (−7), HBr (−9) and HI (−10). In a larger atom the charge is spread over a larger volume, and the H–X bond is longer and weaker. Similarly, thiols (R–SH, pKa about 10) are more acidic than alcohols (R–OH, pKa about 16).</p>
+<h3 id="2-resonance">2. Resonance<a class="headerlink" href="#2-resonance" title="Permanent link">&para;</a></h3>
+<p>If the negative charge of the conjugate base can be <strong>delocalised</strong> by resonance, it is stabilised, and the acid is stronger. Compare ethanol (pKa 16) with ethanoic acid (pKa 4.8). Both lose a proton from an O–H group. In ethoxide, CH₃CH₂O⁻, the charge stays on one oxygen. In ethanoate, the charge is shared equally between two oxygens through two equivalent resonance contributors (Figure 1.4). That sharing makes ethanoic acid about 10¹¹ times more acidic.</p>
+<p>Phenol (pKa 10) lies between the two. When phenol loses its proton, the negative charge can spread from oxygen into the benzene ring, onto the two <em>ortho</em> carbons and the <em>para</em> carbon.</p>
+<figure class="fig fig-diagram">
+<img src="img/phenoxide-resonance.svg" alt="Resonance contributors of the phenoxide ion. Curly arrows move a lone pair from oxygen into the ring and push the ring&#x27;s π electrons along, so the negative charge appears in turn at the ortho carbon, the para carbon and the other ortho carbon. Delocalisation makes phenol about a million times more acidic than an alcohol, though much less acidic than a carboxylic acid, where the charge is shared between two electronegative oxygens." loading="lazy" width="780" height="220">
+<figcaption><strong>Figure 4.3 Resonance in the phenoxide ion.</strong> Resonance contributors of the phenoxide ion. Curly arrows move a lone pair from oxygen into the ring and push the ring&#x27;s π electrons along, so the negative charge appears in turn at the ortho carbon, the para carbon and the other ortho carbon. Delocalisation makes phenol about a million times more acidic than an alcohol, though much less acidic than a carboxylic acid, where the charge is shared between two electronegative oxygens.</figcaption>
+</figure>
+<p>The phenoxide charge is spread over four atoms, but three of them are carbon, which holds negative charge less well than oxygen. In ethanoate both atoms sharing the charge are oxygen. That is why phenol is a weaker acid than a carboxylic acid.</p>
+<p>A group that can accept electrons by resonance strengthens the acid further. 4-Nitrophenol (pKa about 7.2) is a much stronger acid than phenol, because the nitro group at the <em>para</em> position can take the negative charge onto its own oxygens.</p>
+<h3 id="3-inductive-effects">3. Inductive effects<a class="headerlink" href="#3-inductive-effects" title="Permanent link">&para;</a></h3>
+<p>Electronegative atoms pull electron density through σ bonds. This <strong>inductive effect</strong> spreads the negative charge of a nearby anion and stabilises it. Each chlorine added to ethanoic acid makes the acid stronger:</p>
+<table>
+<thead>
+<tr>
+<th>Acid</th>
+<th style="text-align: center;">pKa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CH₃COOH</td>
+<td style="text-align: center;">4.76</td>
+</tr>
+<tr>
+<td>ClCH₂COOH</td>
+<td style="text-align: center;">2.86</td>
+</tr>
+<tr>
+<td>Cl₂CHCOOH</td>
+<td style="text-align: center;">1.29</td>
+</tr>
+<tr>
+<td>Cl₃CCOOH</td>
+<td style="text-align: center;">0.65</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 4.2. The inductive effect of chlorine on the acidity of ethanoic acid.</em></p>
+<p>The inductive effect falls off quickly with distance, because it is passed along σ bonds. Butanoic acid has pKa 4.82. A chlorine on the carbon next to the COOH group (2-chlorobutanoic acid) lowers it to 2.86, one carbon further away (3-chlorobutanoic acid) to 4.05, and on the far end (4-chlorobutanoic acid) only to 4.52.</p>
+<p>Alkyl groups have a weak opposite effect: they are slightly electron-donating, which destabilises an anion. This is one reason why ethanoic acid (4.76) is weaker than methanoic acid (3.75).</p>
+<h3 id="4-hybridisation">4. Hybridisation<a class="headerlink" href="#4-hybridisation" title="Permanent link">&para;</a></h3>
+<p>The more <strong>s character</strong> in the orbital holding the lone pair of the conjugate base, the more stable the anion. An s orbital is closer to the nucleus than a p orbital, so electrons in it are held more tightly. sp orbitals have 50% s character, sp² 33% and sp³ 25%. Hence:</p>
+<div class="arithmatex">\[
+\mathrm{HC{\equiv}CH\ (25)\ \ \gg\ \ CH_2{=}CH_2\ (44)\ \ &gt;\ \ CH_3CH_3\ (about\ 50)}
+\]</div>
+<p>Terminal alkynes are acidic enough to be deprotonated by the amide ion, a fact used to make new carbon–carbon bonds in Chapter 7.</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea: ARIO</p>
+<p>To compare two acids, look at their conjugate bases and ask, in order: which <strong>A</strong>tom carries the charge? Is there <strong>R</strong>esonance? Are there <strong>I</strong>nductive effects? In what <strong>O</strong>rbital (hybridisation) is the lone pair? The first factor that differs usually decides.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 4.2: Ranking acids</p>
+<p>Rank in order of increasing acidity: ethanol, ethanoic acid, phenol, 2,2,2-trifluoroethanol (CF₃CH₂OH).</p>
+<p>All four lose a proton from O–H, so the atom is the same. Ethanoic acid has the best resonance (two oxygens) and is the most acidic. Phenol has resonance into the ring and comes next. Ethanol and trifluoroethanol have no resonance; the three fluorines of trifluoroethanol stabilise the anion inductively, so it is more acidic than ethanol (its pKa is about 12.4).</p>
+<p>Increasing acidity: <strong>ethanol &lt; trifluoroethanol &lt; phenol &lt; ethanoic acid</strong>.</p>
+</div>
+<h2 id="45-bases-and-the-pka-of-the-conjugate-acid">4.5 Bases and the pKa of the conjugate acid<a class="headerlink" href="#45-bases-and-the-pka-of-the-conjugate-acid" title="Permanent link">&para;</a></h2>
+<p>The strength of a base is described by the pKa of its <strong>conjugate acid</strong>, sometimes written pKaH. The <strong>higher</strong> the pKa of the conjugate acid, the <strong>stronger</strong> the base, because a strong base holds onto the proton it gains.</p>
+<table>
+<thead>
+<tr>
+<th>Base</th>
+<th>Conjugate acid</th>
+<th style="text-align: center;">pKa of conjugate acid</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CH₃NH₂ (methanamine)</td>
+<td>CH₃NH₃⁺</td>
+<td style="text-align: center;">10.6</td>
+<td>alkyl group donates electrons</td>
+</tr>
+<tr>
+<td>NH₃</td>
+<td>NH₄⁺</td>
+<td style="text-align: center;">9.2</td>
+<td>reference</td>
+</tr>
+<tr>
+<td>C₅H₅N (pyridine)</td>
+<td>C₅H₅NH⁺</td>
+<td style="text-align: center;">5.2</td>
+<td>lone pair in an sp² orbital</td>
+</tr>
+<tr>
+<td>C₆H₅NH₂ (aniline)</td>
+<td>C₆H₅NH₃⁺</td>
+<td style="text-align: center;">4.6</td>
+<td>lone pair delocalised into the ring</td>
+</tr>
+<tr>
+<td>CH₃CONH₂ (ethanamide)</td>
+<td>CH₃C(OH)=NH₂⁺</td>
+<td style="text-align: center;">about −0.5</td>
+<td>lone pair delocalised onto C=O</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 4.3. Nitrogen bases. The same factors that stabilise anions also explain base strength: a lone pair that is delocalised or held in an orbital with more s character is less available for a proton.</em></p>
+<p>Amines are the most important organic bases (Chapter 13). Amides contain nitrogen too, but they are hardly basic at all, because the nitrogen lone pair is delocalised onto the carbonyl oxygen by resonance. Strong bases used in the laboratory include sodium hydroxide, alkoxides such as sodium ethoxide, sodium amide (NaNH₂) and sodium hydride (NaH), whose hydride ion H⁻ is the conjugate base of H₂ (pKa about 35).</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: strong base, not 'strong acid's conjugate'</p>
+<p>The conjugate base of a strong acid is a weak base: Cl⁻ from HCl has no useful basicity at all. The conjugate base of a weak acid is a strong base: NH₂⁻ from NH₃ is very strong. Keep the see-saw in mind.</p>
+</div>
+<h2 id="46-acids-and-bases-at-a-given-ph">4.6 Acids and bases at a given pH<a class="headerlink" href="#46-acids-and-bases-at-a-given-ph" title="Permanent link">&para;</a></h2>
+<p>In biology and in the laboratory we often need to know which form of a compound is present at a particular pH. The <strong>Henderson–Hasselbalch equation</strong> relates the ratio of the two forms to the pH:</p>
+<div class="arithmatex">\[
+\mathrm{pH} = \mathrm{p}K_\mathrm{a} + \log_{10}\frac{[\mathrm{A^-}]}{[\mathrm{HA}]}
+\]</div>
+<p>Three useful consequences follow:</p>
+<ul>
+<li>When pH = pKa, the acid is exactly half ionised.</li>
+<li>When the pH is <strong>below</strong> the pKa, the protonated form (HA) predominates; when it is <strong>above</strong>, the deprotonated form (A⁻) predominates.</li>
+<li>Each unit of pH away from the pKa changes the ratio by a factor of ten.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example 4.3: An amino acid at pH 7</p>
+<p>In the body (pH about 7.4), a carboxylic acid group (pKa about 2 in an amino acid) is far above its pKa: it is almost entirely in the form COO⁻. An amino group whose conjugate acid has pKa about 9.5 is below its pKa: it is almost entirely in the form NH₃⁺. So an amino acid such as glycine exists in water near neutral pH as a <strong>zwitterion</strong>, ⁺H₃N–CH₂–COO⁻, carrying both a positive and a negative charge (Chapter 15).</p>
+</div>
+<p>The same reasoning underlies a standard separation in the laboratory, <strong>acid–base extraction</strong>. A carboxylic acid dissolved in an organic solvent with a neutral compound can be removed by shaking the solution with aqueous sodium hydrogencarbonate: the acid is converted into its water-soluble carboxylate salt and moves into the aqueous layer, while the neutral compound stays behind. Acidifying the aqueous layer then gives back the free acid.</p>
+<h2 id="47-lewis-acids-and-bases">4.7 Lewis acids and bases<a class="headerlink" href="#47-lewis-acids-and-bases" title="Permanent link">&para;</a></h2>
+<p>The <strong>Lewis</strong> definition is broader. A <strong>Lewis base</strong> is an electron-pair donor, and a <strong>Lewis acid</strong> is an electron-pair acceptor. Every Brønsted base is also a Lewis base, and H⁺ is one particular Lewis acid. But many Lewis acids contain no proton at all. They are species with an empty orbital or a low-lying vacant orbital:</p>
+<ul>
+<li><strong>Boron trifluoride</strong>, BF₃: boron has only six valence electrons and an empty p orbital. It accepts a lone pair from an ether or an amine to form an adduct, such as F₃B⁻–O⁺(CH₂CH₃)₂.</li>
+<li><strong>Aluminium chloride</strong>, AlCl₃, and <strong>iron(III) bromide</strong>, FeBr₃: used as catalysts in the substitution reactions of benzene (Chapter 8).</li>
+<li><strong>Metal cations</strong> such as Mg²⁺ and Zn²⁺, which bind lone pairs.</li>
+<li><strong>Carbocations</strong>, such as (CH₃)₃C⁺, which have an empty p orbital on carbon.</li>
+</ul>
+<p>The Lewis picture leads directly to the most important idea in the study of reactions. A Lewis base attacking a carbon atom is called a <strong>nucleophile</strong>, and a Lewis acid, or any species with an electron-poor atom that can accept a pair, is called an <strong>electrophile</strong>. Chapter 5 develops this language and uses it to describe reaction mechanisms.</p>
+<h2 id="48-summary">4.8 Summary<a class="headerlink" href="#48-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Brønsted–Lowry: acids donate protons, bases accept them. Each acid has a conjugate base and each base a conjugate acid.</li>
+<li>Curly arrows run from the lone pair of the base to the proton, and from the H–A bond to A.</li>
+<li><span class="arithmatex">\(\mathrm{p}K_\mathrm{a} = -\log K_\mathrm{a}\)</span>. Lower pKa means a stronger acid; each unit is a factor of ten.</li>
+<li>An acid–base equilibrium favours the weaker acid and weaker base.</li>
+<li>Acidity rises with the electronegativity and size of the atom carrying the charge, with resonance delocalisation of the charge, with electron-withdrawing groups nearby, and with s character of the lone-pair orbital.</li>
+<li>Base strength is measured by the pKa of the conjugate acid: higher means stronger.</li>
+<li>Below its pKa an acid is mainly protonated; above it, mainly ionised.</li>
+<li>Lewis acids accept electron pairs and Lewis bases donate them; nucleophiles and electrophiles are the reacting partners of Chapter 5.</li>
+</ul>
+</div>
+<h2 id="49-exercises">4.9 Exercises<a class="headerlink" href="#49-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Identify the acid, base, conjugate acid and conjugate base in: CH₃NH₂ + CH₃COOH ⇌ CH₃NH₃⁺ + CH₃COO⁻. Draw the curly arrows. Which side does the equilibrium favour?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>CH₃COOH is the acid and CH₃NH₂ the base; CH₃NH₃⁺ is the conjugate acid of methanamine and CH₃COO⁻ the conjugate base of ethanoic acid. Arrows: from the nitrogen lone pair to the acidic H of the COOH group, and from the O–H bond onto the oxygen. The acids are CH₃COOH (pKa 4.8) and CH₃NH₃⁺ (10.6). The weaker acid is CH₃NH₃⁺, on the right, so the equilibrium lies to the right (K ≈ 10^5.8).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Which of the following bases can deprotonate ethanol (pKa 16) essentially completely? (a) NaOH; (b) NaNH₂; (c) NaH; (d) NaHCO₃ (the conjugate acid, H₂CO₃, has pKa 6.4).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>A base deprotonates ethanol completely only if its conjugate acid is much weaker than ethanol (pKa well above 16). (a) No: water (15.7) and ethanol (16) are nearly equal, so an equilibrium mixture results. (b) Yes: ammonia has pKa 38. (c) Yes: H₂ has pKa about 35, and the H₂ escapes as a gas, which drives the reaction to completion. (d) No: H₂CO₃ (6.4) is a far stronger acid than ethanol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Explain why ethanoic acid (pKa 4.8) is a much stronger acid than ethanol (pKa 16), even though both lose a proton from an O–H group.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Compare the conjugate bases. In ethanoate the negative charge is delocalised by resonance over two equivalent oxygen atoms; in ethoxide it is localised on one oxygen. Delocalisation stabilises ethanoate, so ethanoic acid gives up its proton more readily. In addition, the C=O group withdraws electrons inductively from the O–H oxygen.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Rank each set from least to most acidic and give the main reason: (a) CH₃OH, CH₃NH₂, CH₃SH; (b) CH₃CH₂COOH, CH₃CHFCOOH, FCH₂CH₂COOH; (c) CH₃CH₃, CH₂=CH₂, HC≡CH.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) CH₃NH₂ &lt; CH₃OH &lt; CH₃SH. O is more electronegative than N; S is in the next row down, and its larger size stabilises the anion better than O does (thiols have pKa about 10).</p>
+<p>(b) CH₃CH₂COOH &lt; FCH₂CH₂COOH &lt; CH₃CHFCOOH. Fluorine withdraws electrons inductively; its effect is greater the closer it is to the carboxylate.</p>
+<p>(c) CH₃CH₃ &lt; CH₂=CH₂ &lt; HC≡CH. The lone pair of the conjugate base is in an sp³, sp² and sp orbital respectively; more s character stabilises it.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Which is the stronger base in each pair? (a) CH₃O⁻ or CH₃COO⁻; (b) NH₃ or H₂O; (c) aniline or cyclohexylamine (C₆H₁₁NH₂, pKa of conjugate acid 10.6).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) CH₃O⁻: its conjugate acid, methanol, is much weaker (pKa about 15.5) than ethanoic acid (4.8). (b) NH₃: the pKa of NH₄⁺ (9.2) is far higher than that of H₃O⁺ (−1.7). (c) Cyclohexylamine (10.6 against 4.6): in aniline the nitrogen lone pair is delocalised into the benzene ring and is less available for a proton.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Benzoic acid has pKa 4.2. (a) What is the ratio [C₆H₅COO⁻]/[C₆H₅COOH] at pH 7.2? (b) At pH 2.2? (c) Use your answers to explain how benzoic acid can be separated from naphthalene (a neutral hydrocarbon) dissolved in ethoxyethane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) pH − pKa = 3, so the ratio is 10³ = 1000: the acid is almost entirely ionised. (b) pH − pKa = −2, so the ratio is 10⁻² = 0.01: almost entirely the neutral acid.</p>
+<p>(c) Shake the ether solution with aqueous sodium hydrogencarbonate (pH a little above 8). Benzoic acid is converted into sodium benzoate, which is ionic and moves into the water; naphthalene stays in the ether. Separate the layers, then acidify the aqueous layer to a low pH: benzoic acid, now un-ionised and poorly soluble in water, comes out of solution and can be collected.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Classify each species as a Lewis acid, a Lewis base or neither: BF₃, NH₃, AlCl₃, CH₄, H₂O, Fe³⁺, (CH₃)₃C⁺.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Lewis acids (electron-pair acceptors): BF₃, AlCl₃, Fe³⁺, (CH₃)₃C⁺. Lewis bases (electron-pair donors): NH₃, H₂O. Neither: CH₄, which has no lone pairs and no empty low-energy orbital. (Water can also act as a Brønsted acid, but in the Lewis sense it is a donor.)</p>
+</details>
+<h2 id="410-quiz">4.10 Quiz<a class="headerlink" href="#410-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="ed275648675d">
+<p class="pk-quiz-title">Check your understanding of acids and bases</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;ethanol (pKa 16)&quot;,&quot;phenol (pKa 10)&quot;,&quot;ethanoic acid (pKa 4.8)&quot;,&quot;water (pKa 15.7)&quot;],&quot;answer&quot;:&quot;ethanoic acid (pKa 4.8)&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which acid is the strongest?</p>
+<ol class="pk-q-opts" type="A"><li>ethanol (pKa 16)</li><li>phenol (pKa 10)</li><li>ethanoic acid (pKa 4.8)</li><li>water (pKa 15.7)</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>ethanoic acid (pKa 4.8)</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;the stronger acid&quot;,&quot;the weaker acid&quot;,&quot;the more concentrated species&quot;,&quot;the side with more molecules&quot;],&quot;answer&quot;:&quot;the weaker acid&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">An acid-base equilibrium lies on the side of</p>
+<ol class="pk-q-opts" type="A"><li>the stronger acid</li><li>the weaker acid</li><li>the more concentrated species</li><li>the side with more molecules</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the weaker acid</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;1000&quot;,&quot;a thousand&quot;,&quot;10^3&quot;]}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Acid A has pKa 3 and acid B has pKa 6. By what factor is A stronger than B?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>1000 / a thousand / 10^3</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;resonance&quot;,&quot;the inductive effect&quot;,&quot;hybridisation&quot;,&quot;hydrogen bonding&quot;],&quot;answer&quot;:&quot;the inductive effect&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Trichloroethanoic acid is a much stronger acid than ethanoic acid mainly because of</p>
+<ol class="pk-q-opts" type="A"><li>resonance</li><li>the inductive effect</li><li>hybridisation</li><li>hydrogen bonding</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the inductive effect</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;NaOH&quot;,&quot;NaHCO₃&quot;,&quot;NaNH₂&quot;,&quot;CH₃COONa&quot;],&quot;answer&quot;:&quot;NaNH₂&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which base is strong enough to deprotonate ethyne (pKa 25)?</p>
+<ol class="pk-q-opts" type="A"><li>NaOH</li><li>NaHCO₃</li><li>NaNH₂</li><li>CH₃COONa</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>NaNH₂</strong></p>
+<p class="pk-q-why">The conjugate acid of NH₂⁻ is NH₃ (pKa 38), a weaker acid than ethyne.</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;ionised&quot;,&quot;un-ionised&quot;,&quot;exactly half ionised&quot;],&quot;answer&quot;:&quot;un-ionised&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">At pH 2, a carboxylic acid with pKa 4.8 is mainly</p>
+<ol class="pk-q-opts" type="A"><li>ionised</li><li>un-ionised</li><li>exactly half ionised</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>un-ionised</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a Brønsted acid&quot;,&quot;a Lewis acid&quot;,&quot;a Lewis base&quot;,&quot;a Brønsted base&quot;],&quot;answer&quot;:&quot;a Lewis acid&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">BF₃ is best described as</p>
+<ol class="pk-q-opts" type="A"><li>a Brønsted acid</li><li>a Lewis acid</li><li>a Lewis base</li><li>a Brønsted base</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a Lewis acid</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="isomerism-and-stereochemistry.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Isomerism and Stereochemistry">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</div>
+</div>
+</a>
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-footer__link md-footer__link--next" aria-label="Next: 5. Reaction Mechanisms and Curly Arrows">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

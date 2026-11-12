@@ -1,0 +1,1060 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/aldehydes-and-ketones.html">
+<link rel="prev" href="alcohols-ethers-and-epoxides.html">
+<link rel="next" href="carboxylic-acids-and-derivatives.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>11. Aldehydes and Ketones - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#111-the-carbonyl-group" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="aldehydes-and-ketones.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#111-the-carbonyl-group" class="md-nav__link">
+<span class="md-ellipsis">
+11.1 The carbonyl group
+</span>
+</a>
+<nav class="md-nav" aria-label="11.1 The carbonyl group">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+Physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#making-aldehydes-and-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Making aldehydes and ketones
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#112-nucleophilic-addition-the-general-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+11.2 Nucleophilic addition: the general mechanism
+</span>
+</a>
+<nav class="md-nav" aria-label="11.2 Nucleophilic addition: the general mechanism">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-aldehydes-are-more-reactive-than-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Why aldehydes are more reactive than ketones
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#113-addition-of-oxygen-carbon-and-hydride-nucleophiles" class="md-nav__link">
+<span class="md-ellipsis">
+11.3 Addition of oxygen, carbon and hydride nucleophiles
+</span>
+</a>
+<nav class="md-nav" aria-label="11.3 Addition of oxygen, carbon and hydride nucleophiles">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#water-hydrates" class="md-nav__link">
+<span class="md-ellipsis">
+Water: hydrates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hydrogen-cyanide-cyanohydrins" class="md-nav__link">
+<span class="md-ellipsis">
+Hydrogen cyanide: cyanohydrins
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hydride-reducing-agents" class="md-nav__link">
+<span class="md-ellipsis">
+Hydride reducing agents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#grignard-reagents" class="md-nav__link">
+<span class="md-ellipsis">
+Grignard reagents
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#114-addition-of-alcohols-hemiacetals-and-acetals" class="md-nav__link">
+<span class="md-ellipsis">
+11.4 Addition of alcohols: hemiacetals and acetals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#115-addition-of-nitrogen-nucleophiles" class="md-nav__link">
+<span class="md-ellipsis">
+11.5 Addition of nitrogen nucleophiles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#116-oxidation-and-tests-for-aldehydes" class="md-nav__link">
+<span class="md-ellipsis">
+11.6 Oxidation, and tests for aldehydes
+</span>
+</a>
+<nav class="md-nav" aria-label="11.6 Oxidation, and tests for aldehydes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-iodoform-test" class="md-nav__link">
+<span class="md-ellipsis">
+The iodoform test
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#117-enols-enolates-and-the-aldol-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+11.7 Enols, enolates and the aldol reaction
+</span>
+</a>
+<nav class="md-nav" aria-label="11.7 Enols, enolates and the aldol reaction">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#ketoenol-tautomerism" class="md-nav__link">
+<span class="md-ellipsis">
+Keto–enol tautomerism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-aldol-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+The aldol reaction
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#118-summary" class="md-nav__link">
+<span class="md-ellipsis">
+11.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#119-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+11.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1110-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+11.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#111-the-carbonyl-group" class="md-nav__link">
+<span class="md-ellipsis">
+11.1 The carbonyl group
+</span>
+</a>
+<nav class="md-nav" aria-label="11.1 The carbonyl group">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+Physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#making-aldehydes-and-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Making aldehydes and ketones
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#112-nucleophilic-addition-the-general-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+11.2 Nucleophilic addition: the general mechanism
+</span>
+</a>
+<nav class="md-nav" aria-label="11.2 Nucleophilic addition: the general mechanism">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#why-aldehydes-are-more-reactive-than-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Why aldehydes are more reactive than ketones
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#113-addition-of-oxygen-carbon-and-hydride-nucleophiles" class="md-nav__link">
+<span class="md-ellipsis">
+11.3 Addition of oxygen, carbon and hydride nucleophiles
+</span>
+</a>
+<nav class="md-nav" aria-label="11.3 Addition of oxygen, carbon and hydride nucleophiles">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#water-hydrates" class="md-nav__link">
+<span class="md-ellipsis">
+Water: hydrates
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hydrogen-cyanide-cyanohydrins" class="md-nav__link">
+<span class="md-ellipsis">
+Hydrogen cyanide: cyanohydrins
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hydride-reducing-agents" class="md-nav__link">
+<span class="md-ellipsis">
+Hydride reducing agents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#grignard-reagents" class="md-nav__link">
+<span class="md-ellipsis">
+Grignard reagents
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#114-addition-of-alcohols-hemiacetals-and-acetals" class="md-nav__link">
+<span class="md-ellipsis">
+11.4 Addition of alcohols: hemiacetals and acetals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#115-addition-of-nitrogen-nucleophiles" class="md-nav__link">
+<span class="md-ellipsis">
+11.5 Addition of nitrogen nucleophiles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#116-oxidation-and-tests-for-aldehydes" class="md-nav__link">
+<span class="md-ellipsis">
+11.6 Oxidation, and tests for aldehydes
+</span>
+</a>
+<nav class="md-nav" aria-label="11.6 Oxidation, and tests for aldehydes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-iodoform-test" class="md-nav__link">
+<span class="md-ellipsis">
+The iodoform test
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#117-enols-enolates-and-the-aldol-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+11.7 Enols, enolates and the aldol reaction
+</span>
+</a>
+<nav class="md-nav" aria-label="11.7 Enols, enolates and the aldol reaction">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#ketoenol-tautomerism" class="md-nav__link">
+<span class="md-ellipsis">
+Keto–enol tautomerism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-aldol-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+The aldol reaction
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#118-summary" class="md-nav__link">
+<span class="md-ellipsis">
+11.8 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#119-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+11.9 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1110-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+11.10 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-11-aldehydes-and-ketones">Chapter 11: Aldehydes and Ketones<a class="headerlink" href="#chapter-11-aldehydes-and-ketones" title="Permanent link">&para;</a></h1>
+<p><em>Nucleophilic addition to the carbonyl group</em></p>
+<p>The carbonyl group, C=O, is the most important functional group in organic chemistry. It appears in aldehydes and ketones, in carboxylic acids and their derivatives, in sugars and in many of the molecules of life. Its chemistry rests on one simple fact: the carbon is electron-poor and the oxygen electron-rich. Nucleophiles attack the carbon; acids and electrophiles attach to the oxygen. This chapter treats aldehydes and ketones, where the main reaction is <strong>nucleophilic addition</strong>. It also introduces the second great theme of carbonyl chemistry, the acidity of the hydrogens next to the C=O group and the reactions of enols and enolates.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>describe the structure and polarity of the carbonyl group and the physical properties of aldehydes and ketones;</li>
+<li>explain why aldehydes are more reactive than ketones;</li>
+<li>write the general mechanisms of nucleophilic addition under basic and acidic conditions;</li>
+<li>predict the products of addition of water, HCN, hydride reagents, Grignard reagents, alcohols and amines;</li>
+<li>use acetals as protecting groups;</li>
+<li>distinguish aldehydes from ketones with Tollens', Fehling's or Benedict's reagent, and recognise methyl ketones with the iodoform test;</li>
+<li>explain keto–enol tautomerism and the acidity of α-hydrogens, and write the mechanism of the aldol reaction.</li>
+</ul>
+</div>
+<h2 id="111-the-carbonyl-group">11.1 The carbonyl group<a class="headerlink" href="#111-the-carbonyl-group" title="Permanent link">&para;</a></h2>
+<p>In an <strong>aldehyde</strong>, the carbonyl carbon carries at least one hydrogen (RCHO; in methanal, HCHO, it carries two). In a <strong>ketone</strong>, it carries two carbon groups (RCOR′). Naming was covered in Section 2.4: the suffixes are <em>-al</em> and <em>-one</em>.</p>
+<p>The carbonyl carbon is sp² hybridised and trigonal planar, with bond angles near 120°. The C=O double bond consists of a σ bond and a π bond, and both are polarised towards oxygen. The polarity can be pictured with two resonance contributors, C=O and C⁺–O⁻ (Example 1.4). The second is minor, but it shows clearly that the carbon is electrophilic and the oxygen nucleophilic and basic.</p>
+<h3 id="physical-properties">Physical properties<a class="headerlink" href="#physical-properties" title="Permanent link">&para;</a></h3>
+<p>Carbonyl compounds are polar, so their boiling points are higher than those of alkanes of similar mass, but they cannot hydrogen bond to one another, so they boil lower than alcohols. Propanal (58 g mol⁻¹) boils at 48 °C, between butane (−1 °C) and propan-1-ol (97 °C). The oxygen can accept hydrogen bonds from water, so small aldehydes and ketones are water-soluble; propanone mixes with water in all proportions and is a widely used solvent. Methanal is a gas, usually supplied as an aqueous solution (formalin), and is toxic. Many larger aldehydes and ketones have pleasant odours and are used as flavourings and in perfumes: benzaldehyde smells of almonds, and vanillin, the main flavour of vanilla, is an aromatic aldehyde.</p>
+<h3 id="making-aldehydes-and-ketones">Making aldehydes and ketones<a class="headerlink" href="#making-aldehydes-and-ketones" title="Permanent link">&para;</a></h3>
+<p>The main routes are covered in earlier chapters: oxidation of primary alcohols (to aldehydes) and secondary alcohols (to ketones) (Section 10.5), ozonolysis of alkenes (Section 7.6), hydration of alkynes (Section 7.8) and Friedel–Crafts acylation of arenes (Section 8.4).</p>
+<h2 id="112-nucleophilic-addition-the-general-mechanism">11.2 Nucleophilic addition: the general mechanism<a class="headerlink" href="#112-nucleophilic-addition-the-general-mechanism" title="Permanent link">&para;</a></h2>
+<p>A nucleophile adds to the carbonyl carbon. As the new bond forms, the π electrons move onto the oxygen, giving a tetrahedral <strong>alkoxide</strong> intermediate. Protonation of the oxygen then gives the addition product. The carbon changes from trigonal planar (sp²) to tetrahedral (sp³).</p>
+<figure class="fig fig-diagram">
+<img src="img/carbonyl-addition.svg" alt="The general mechanism of nucleophilic addition to an aldehyde or ketone. The nucleophile attacks the δ+ carbon; the π electrons of C=O move onto oxygen, giving a tetrahedral alkoxide. Protonation of the alkoxide gives the neutral addition product." loading="lazy" width="790" height="240">
+<figcaption><strong>Figure 11.1 Nucleophilic addition to a carbonyl group.</strong> The general mechanism of nucleophilic addition to an aldehyde or ketone. The nucleophile attacks the δ+ carbon; the π electrons of C=O move onto oxygen, giving a tetrahedral alkoxide. Protonation of the alkoxide gives the neutral addition product.</figcaption>
+</figure>
+<p>There are two variants:</p>
+<ul>
+<li><strong>Basic conditions, strong nucleophile.</strong> A strong, usually negatively charged nucleophile (H⁻ from a hydride reagent, R⁻ from a Grignard reagent, CN⁻) attacks the neutral carbonyl directly. The alkoxide is protonated in a later step, often by adding water or dilute acid.</li>
+<li><strong>Acidic conditions, weak nucleophile.</strong> A weak nucleophile (water, an alcohol) does not attack a neutral carbonyl fast enough. An acid catalyst first protonates the carbonyl oxygen. The protonated carbonyl, whose positive charge is shared between O and C, is a much stronger electrophile, and the weak nucleophile attacks it.</li>
+</ul>
+<p>If the two groups on the carbonyl carbon are different and the nucleophile is new, the addition creates a stereocentre. Attack on either face of the flat carbonyl is equally likely (unless the molecule or the reagent is chiral), so a <strong>racemic</strong> product results.</p>
+<h3 id="why-aldehydes-are-more-reactive-than-ketones">Why aldehydes are more reactive than ketones<a class="headerlink" href="#why-aldehydes-are-more-reactive-than-ketones" title="Permanent link">&para;</a></h3>
+<p>Aldehydes undergo nucleophilic addition faster and more completely than ketones, for two reasons:</p>
+<ol>
+<li><strong>Steric</strong>: an aldehyde has a small hydrogen on the carbonyl carbon, so a nucleophile approaches more easily, and the tetrahedral product, with four groups crowded around one carbon, is less strained.</li>
+<li><strong>Electronic</strong>: alkyl groups donate electrons and reduce the partial positive charge on the carbonyl carbon. A ketone has two alkyl groups, an aldehyde only one.</li>
+</ol>
+<p>Methanal, with two hydrogens, is the most reactive of all.</p>
+<h2 id="113-addition-of-oxygen-carbon-and-hydride-nucleophiles">11.3 Addition of oxygen, carbon and hydride nucleophiles<a class="headerlink" href="#113-addition-of-oxygen-carbon-and-hydride-nucleophiles" title="Permanent link">&para;</a></h2>
+<h3 id="water-hydrates">Water: hydrates<a class="headerlink" href="#water-hydrates" title="Permanent link">&para;</a></h3>
+<p>In water, aldehydes and ketones are in equilibrium with their <strong>hydrates</strong> (geminal diols, two OH groups on one carbon). The reaction is catalysed by both acid and base. The position of the equilibrium reflects the reactivity of the carbonyl compound: methanal is almost entirely hydrated in water, ethanal about half, and propanone hardly at all. Hydrates usually cannot be isolated, because removing the water reverses the reaction.</p>
+<h3 id="hydrogen-cyanide-cyanohydrins">Hydrogen cyanide: cyanohydrins<a class="headerlink" href="#hydrogen-cyanide-cyanohydrins" title="Permanent link">&para;</a></h3>
+<p>Cyanide ion adds to aldehydes and most ketones to give <strong>cyanohydrins</strong>, with OH and CN on the same carbon. A little base is needed to generate CN⁻, the true nucleophile, from HCN; in practice the reaction is done with a cyanide salt and a controlled amount of acid. The reaction is important because it forms a new C–C bond, and the nitrile group can later be converted into a carboxylic acid (Chapter 12) or an amine (Chapter 13).</p>
+<div class="arithmatex">\[
+\mathrm{CH_3CHO + HCN \rightarrow CH_3CH(OH)CN}
+\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Caution: cyanide</p>
+<p>Hydrogen cyanide and cyanide salts are extremely toxic. Cyanohydrin reactions are carried out only by trained chemists with specialist precautions. This reaction is described for its chemistry, not as a laboratory procedure.</p>
+</div>
+<h3 id="hydride-reducing-agents">Hydride reducing agents<a class="headerlink" href="#hydride-reducing-agents" title="Permanent link">&para;</a></h3>
+<p><strong>Sodium tetrahydridoborate</strong>, NaBH₄ (sodium borohydride), and <strong>lithium tetrahydridoaluminate</strong>, LiAlH₄ (lithium aluminium hydride), deliver a hydride ion (H⁻) to the carbonyl carbon. After protonation, aldehydes give <strong>primary alcohols</strong> and ketones give <strong>secondary alcohols</strong>:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3CH_2CHO \xrightarrow{\ NaBH_4,\ then\ H_2O\ } CH_3CH_2CH_2OH}
+\]</div>
+<div class="arithmatex">\[
+\mathrm{CH_3COCH_3 \xrightarrow{\ NaBH_4,\ then\ H_2O\ } CH_3CH(OH)CH_3}
+\]</div>
+<p>NaBH₄ is mild and convenient; it can be used in water or ethanol and reduces aldehydes and ketones but not esters, carboxylic acids or C=C double bonds. LiAlH₄ is far more reactive: it also reduces esters, acids and amides (Chapter 12), and it reacts violently with water, so it must be used in a dry ether solvent, with the water added cautiously afterwards. Catalytic hydrogenation (H₂ with Ni, Pd or Pt) also reduces C=O groups, but it usually reduces C=C bonds as well.</p>
+<h3 id="grignard-reagents">Grignard reagents<a class="headerlink" href="#grignard-reagents" title="Permanent link">&para;</a></h3>
+<p>A Grignard reagent, R–MgX (Section 9.6), is a source of the carbon nucleophile R⁻. It adds to carbonyl compounds to form a <strong>new carbon–carbon bond</strong>. After the addition, the magnesium alkoxide is protonated with dilute aqueous acid. The class of alcohol formed depends on the carbonyl compound:</p>
+<table>
+<thead>
+<tr>
+<th>Carbonyl compound</th>
+<th>Product after protonation</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>methanal, HCHO</td>
+<td>primary alcohol, RCH₂OH</td>
+<td>CH₃MgBr + HCHO → ethanol</td>
+</tr>
+<tr>
+<td>other aldehyde, R′CHO</td>
+<td>secondary alcohol, RR′CHOH</td>
+<td>CH₃MgBr + CH₃CHO → propan-2-ol</td>
+</tr>
+<tr>
+<td>ketone, R′COR″</td>
+<td>tertiary alcohol, RR′R″COH</td>
+<td>CH₃MgBr + CH₃COCH₃ → 2-methylpropan-2-ol</td>
+</tr>
+<tr>
+<td>carbon dioxide, CO₂</td>
+<td>carboxylic acid, RCOOH</td>
+<td>CH₃MgBr + CO₂ → ethanoic acid</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 11.1. Products of Grignard reagents with carbonyl compounds.</em></p>
+<div class="admonition example">
+<p class="admonition-title">Example 11.1: Planning a Grignard synthesis</p>
+<p>Suggest two ways to make 2-phenylbutan-2-ol, C₆H₅C(OH)(CH₃)CH₂CH₃, using a Grignard reagent.</p>
+<p>The alcohol carbon carries three groups (phenyl, methyl, ethyl). Remove any one of them as the Grignard reagent; the rest forms the ketone.</p>
+<p>(a) Ethylmagnesium bromide + 1-phenylethanone (C₆H₅COCH₃), then H₃O⁺.</p>
+<p>(b) Phenylmagnesium bromide + butanone (CH₃COCH₂CH₃), then H₃O⁺.</p>
+<p>(A third choice, methylmagnesium bromide + 1-phenylpropan-1-one, also works.) Working backwards from a target to simpler starting materials like this is called <strong>retrosynthesis</strong>.</p>
+</div>
+<h2 id="114-addition-of-alcohols-hemiacetals-and-acetals">11.4 Addition of alcohols: hemiacetals and acetals<a class="headerlink" href="#114-addition-of-alcohols-hemiacetals-and-acetals" title="Permanent link">&para;</a></h2>
+<p>An alcohol adds to an aldehyde or ketone under acid catalysis to give a <strong>hemiacetal</strong>, with an OH and an OR group on the same carbon. Hemiacetals are usually unstable and revert to the carbonyl compound, with one important exception: when the OH and the C=O are in the same molecule and can form a five- or six-membered ring, the cyclic hemiacetal is favoured. This is why glucose and other sugars exist mainly as rings (Chapter 15).</p>
+<p>With excess alcohol and an acid catalyst, the hemiacetal reacts further: its OH is protonated, water leaves to give an oxygen-stabilised cation (R₂C=OR⁺), and a second alcohol molecule adds. The product, with two OR groups on one carbon, is an <strong>acetal</strong>:</p>
+<div class="arithmatex">\[
+\mathrm{R_2C{=}O + 2\,R'OH \overset{H^+}{\rightleftharpoons} R_2C(OR')_2 + H_2O}
+\]</div>
+<p>Every step is reversible. Removing water drives the reaction towards the acetal; adding water and acid hydrolyses the acetal back to the carbonyl compound. Acetals are stable to bases, nucleophiles and hydride reagents, so they are used as <strong>protecting groups</strong>: a carbonyl group is turned into an acetal (often with ethane-1,2-diol, giving a cyclic acetal) while a reaction is carried out elsewhere in the molecule, and then released by aqueous acid.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 11.2: Using a protecting group</p>
+<p>How could the ester group of methyl 4-oxopentanoate, CH₃COCH₂CH₂COOCH₃, be reduced with LiAlH₄ without also reducing the ketone?</p>
+<p>(1) Protect the ketone as a cyclic acetal with ethane-1,2-diol and an acid catalyst (removing water). (2) Reduce the ester with LiAlH₄ (the acetal is unaffected) to give the primary alcohol. (3) Remove the protecting group with aqueous acid, regenerating the ketone. The product is 5-hydroxypentan-2-one, CH₃COCH₂CH₂CH₂OH.</p>
+</div>
+<h2 id="115-addition-of-nitrogen-nucleophiles">11.5 Addition of nitrogen nucleophiles<a class="headerlink" href="#115-addition-of-nitrogen-nucleophiles" title="Permanent link">&para;</a></h2>
+<p>Primary amines (RNH₂) add to aldehydes and ketones, and the addition product then loses water to give an <strong>imine</strong> (a Schiff base), containing a C=N double bond:</p>
+<div class="arithmatex">\[
+\mathrm{R_2C{=}O + R'NH_2 \rightleftharpoons R_2C{=}NR' + H_2O}
+\]</div>
+<p>The reaction is fastest at a moderately acidic pH, around 4 to 5. Some acid is needed to protonate the OH of the intermediate so that it can leave as water; too much acid protonates the amine and destroys its nucleophilicity. Imine formation is reversible and is widely used in biology: many enzymes bind carbonyl-containing substrates as imines with the NH₂ groups of lysine side chains.</p>
+<p>Derivatives of ammonia such as hydrazine (H₂N–NH₂) and hydroxylamine (H₂N–OH) react in the same way. A classic test for aldehydes and ketones uses <strong>2,4-dinitrophenylhydrazine</strong> (Brady's reagent), supplied as a solution: it gives a yellow, orange or red precipitate of the 2,4-dinitrophenylhydrazone. Before spectroscopy, the melting point of this crystalline derivative was used to identify the original carbonyl compound.</p>
+<h2 id="116-oxidation-and-tests-for-aldehydes">11.6 Oxidation, and tests for aldehydes<a class="headerlink" href="#116-oxidation-and-tests-for-aldehydes" title="Permanent link">&para;</a></h2>
+<p>Aldehydes have a hydrogen on the carbonyl carbon and are easily <strong>oxidised</strong> to carboxylic acids, even by mild oxidising agents. Ketones lack this hydrogen and resist oxidation except under harsh conditions that break C–C bonds. This difference is the basis of the classic tests that distinguish aldehydes from ketones:</p>
+<ul>
+<li><strong>Tollens' reagent</strong> is a solution of the diamminesilver(I) ion, [Ag(NH₃)₂]⁺, in aqueous ammonia. Aldehydes reduce it to metallic silver, which deposits as a <strong>silver mirror</strong> on the inside of a clean test tube; the aldehyde is oxidised to a carboxylate ion.</li>
+<li><strong>Fehling's solution</strong> and <strong>Benedict's solution</strong> contain blue copper(II) complexes in alkaline solution. Aliphatic aldehydes reduce them, on warming, to a <strong>brick-red precipitate</strong> of copper(I) oxide, Cu₂O. Benedict's test has long been used to detect reducing sugars such as glucose.</li>
+<li>Ketones give no reaction with any of these.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution: Tollens' reagent</p>
+<p>Tollens' reagent must be freshly prepared for each test, used in small amounts, and washed away with dilute acid immediately afterwards. On standing, it can form explosive silver compounds.</p>
+</div>
+<h3 id="the-iodoform-test">The iodoform test<a class="headerlink" href="#the-iodoform-test" title="Permanent link">&para;</a></h3>
+<p>Iodine in aqueous sodium hydroxide reacts with <strong>methyl ketones</strong> (RCOCH₃) and with ethanal to give a pale yellow precipitate of <strong>triiodomethane</strong> (iodoform, CHI₃), which has a characteristic antiseptic smell. The three hydrogens of the methyl group are replaced by iodine, and the CI₃ group is then cleaved off as CHI₃, leaving a carboxylate ion. Alcohols that are oxidised under the conditions to methyl ketones or ethanal (ethanol and secondary alcohols of the form CH₃CH(OH)R) also give a positive test.</p>
+<h2 id="117-enols-enolates-and-the-aldol-reaction">11.7 Enols, enolates and the aldol reaction<a class="headerlink" href="#117-enols-enolates-and-the-aldol-reaction" title="Permanent link">&para;</a></h2>
+<p>The carbon next to a carbonyl group is the <strong>α-carbon</strong>, and its hydrogens are <strong>α-hydrogens</strong>. They are much more acidic than ordinary C–H bonds: the pKa of the α-hydrogens of propanone is about 19, compared with about 50 for an alkane. Removing an α-hydrogen gives an <strong>enolate ion</strong>, whose negative charge is shared by resonance between the α-carbon and the oxygen.</p>
+<h3 id="ketoenol-tautomerism">Keto–enol tautomerism<a class="headerlink" href="#ketoenol-tautomerism" title="Permanent link">&para;</a></h3>
+<p>An aldehyde or ketone with an α-hydrogen is in equilibrium with an isomer called its <strong>enol</strong>, in which the hydrogen has moved to the oxygen and the double bond has moved to between the α-carbon and the carbonyl carbon:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3COCH_3\ (keto) \rightleftharpoons CH_2{=}C(OH)CH_3\ (enol)}
+\]</div>
+<p>Isomers that interconvert rapidly by the movement of a hydrogen atom and a double bond are called <strong>tautomers</strong>. The interconversion is catalysed by both acid and base. For simple ketones the keto form is overwhelmingly favoured (propanone contains only a tiny fraction of enol at equilibrium), because the C=O bond is stronger than the C=C bond. But the small amount of enol or enolate present is the reactive species in many reactions.</p>
+<h3 id="the-aldol-reaction">The aldol reaction<a class="headerlink" href="#the-aldol-reaction" title="Permanent link">&para;</a></h3>
+<p>When ethanal is treated with dilute aqueous sodium hydroxide, two molecules join together. Hydroxide removes an α-hydrogen to form an enolate. The enolate, a carbon nucleophile, adds to the carbonyl carbon of a second ethanal molecule. Protonation of the resulting alkoxide gives <strong>3-hydroxybutanal</strong>, a compound that is both an <strong>ald</strong>ehyde and an alcoh<strong>ol</strong>, hence the name <strong>aldol</strong>.</p>
+<figure class="fig fig-diagram">
+<img src="img/aldol-ethanal.svg" alt="The base-catalysed aldol reaction of ethanal. Hydroxide removes an α-hydrogen to give a resonance-stabilised enolate ion. The nucleophilic α-carbon of the enolate attacks the carbonyl carbon of a second ethanal molecule. Protonation of the alkoxide by water gives 3-hydroxybutanal and regenerates hydroxide." loading="lazy" width="790" height="330">
+<figcaption><strong>Figure 11.2 The aldol reaction.</strong> The base-catalysed aldol reaction of ethanal. Hydroxide removes an α-hydrogen to give a resonance-stabilised enolate ion. The nucleophilic α-carbon of the enolate attacks the carbonyl carbon of a second ethanal molecule. Protonation of the alkoxide by water gives 3-hydroxybutanal and regenerates hydroxide.</figcaption>
+</figure>
+<p>On heating, the aldol loses water (the OH and an α-hydrogen), giving an α,β-unsaturated aldehyde, but-2-enal. The overall process is an <strong>aldol condensation</strong>. It is one of the most important ways of making carbon–carbon bonds, and nature uses it too: an aldol-type reaction is a step in the breakdown of glucose in cells.</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Carbonyl compounds have two reactive sites. The <strong>carbonyl carbon</strong> is an electrophile, attacked by nucleophiles. The <strong>α-carbon</strong>, once deprotonated to an enolate, is a nucleophile. In the aldol reaction one molecule uses its α-carbon to attack the carbonyl carbon of another.</p>
+</div>
+<p>The enol and enolate are also involved in the halogenation of ketones at the α-carbon (as in the first stage of the iodoform reaction) and in the racemisation of ketones whose α-carbon is a stereocentre.</p>
+<h2 id="118-summary">11.8 Summary<a class="headerlink" href="#118-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>The C=O group is polar: the carbon is electrophilic and the oxygen basic. Aldehydes are more reactive than ketones for steric and electronic reasons.</li>
+<li>Nucleophilic addition: the nucleophile attacks carbon, giving a tetrahedral alkoxide, which is protonated. Weak nucleophiles need acid catalysis.</li>
+<li>Water gives hydrates; HCN gives cyanohydrins; NaBH₄ and LiAlH₄ give alcohols (aldehyde → 1°, ketone → 2°); Grignard reagents give alcohols with a new C–C bond (methanal → 1°, aldehyde → 2°, ketone → 3°).</li>
+<li>Alcohols with acid give hemiacetals and acetals; acetals protect carbonyl groups and are removed by aqueous acid.</li>
+<li>Primary amines give imines; 2,4-dinitrophenylhydrazine gives coloured precipitates with aldehydes and ketones.</li>
+<li>Aldehydes are oxidised by Tollens' reagent (silver mirror) and Fehling's or Benedict's solution (red Cu₂O); ketones are not. Methyl ketones give iodoform.</li>
+<li>α-Hydrogens are acidic (pKa about 19); enolates and enols are nucleophilic at the α-carbon. The aldol reaction joins two carbonyl compounds.</li>
+</ul>
+</div>
+<h2 id="119-exercises">11.9 Exercises<a class="headerlink" href="#119-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Arrange in order of increasing reactivity towards nucleophilic addition, and explain: propanone, methanal, ethanal, 3,3-dimethylbutan-2-one.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>3,3-Dimethylbutan-2-one &lt; propanone &lt; ethanal &lt; methanal. Ketones are less reactive than aldehydes because two alkyl groups both hinder attack and reduce the δ+ charge on carbon. The <em>tert</em>-butyl group of 3,3-dimethylbutan-2-one makes it the most hindered. Methanal, with two hydrogens, is the least hindered and the most electrophilic.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Give the product of each reaction: (a) butanal + NaBH₄, then H₂O; (b) cyclohexanone + CH₃MgBr, then H₃O⁺; (c) propanone + excess methanol with an acid catalyst; (d) benzaldehyde + methanamine (CH₃NH₂) at pH 5.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Butan-1-ol. (b) 1-Methylcyclohexan-1-ol, a tertiary alcohol. (c) 2,2-Dimethoxypropane, an acetal (with water). (d) The imine C₆H₅CH=NCH₃ (<em>N</em>-benzylidenemethanamine), with water.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Show how to make each alcohol from a Grignard reagent and a carbonyl compound: (a) pentan-3-ol; (b) 2-methylbutan-2-ol; (c) phenylmethanol (benzyl alcohol).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Pentan-3-ol, (CH₃CH₂)₂CHOH, is a secondary alcohol: ethylmagnesium bromide + propanal, then H₃O⁺.</p>
+<p>(b) 2-Methylbutan-2-ol, (CH₃)₂C(OH)CH₂CH₃, is tertiary: methylmagnesium bromide + butanone, or ethylmagnesium bromide + propanone, then H₃O⁺.</p>
+<p>(c) Phenylmethanol, C₆H₅CH₂OH, is primary: phenylmagnesium bromide + methanal, then H₃O⁺.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Write the mechanism of the acid-catalysed formation of the hemiacetal from ethanal and methanol.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(1) The carbonyl oxygen of ethanal is protonated by the acid, giving CH₃CH=OH⁺ (positive charge shared with the carbon). (2) A lone pair on the oxygen of methanol attacks the carbonyl carbon; the C=O π electrons move onto the protonated oxygen, which becomes an OH group. The methanol oxygen now has three bonds and a positive charge. (3) A base (another methanol molecule) removes the proton from that oxygen. Product: CH₃CH(OH)OCH₃, 1-methoxyethan-1-ol, and the acid catalyst is regenerated.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Three liquids, C₃H₆O, are propanal, propanone and prop-2-en-1-ol (CH₂=CHCH₂OH). Describe simple chemical tests to identify each.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Brady's reagent (2,4-dinitrophenylhydrazine) gives an orange precipitate with propanal and propanone but not with the alcohol. Of those two, propanal gives a silver mirror with Tollens' reagent (or a red precipitate with Fehling's solution); propanone does not, but gives a yellow precipitate of iodoform with iodine and sodium hydroxide. Prop-2-en-1-ol decolourises bromine water (C=C) and fizzes with sodium (O–H).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Which of these give a positive iodoform test? (a) propanone; (b) pentan-3-one; (c) ethanol; (d) propan-2-ol; (e) methanol; (f) 1-phenylethanone.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Positive: (a) propanone (a methyl ketone), (c) ethanol (oxidised to ethanal), (d) propan-2-ol (oxidised to propanone) and (f) 1-phenylethanone (a methyl ketone, C₆H₅COCH₃). Negative: (b) pentan-3-one (no CH₃CO group) and (e) methanol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Draw the enol form of cyclohexanone. Then give the aldol product formed from two molecules of propanal with dilute NaOH, and the product formed when it is heated.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The enol of cyclohexanone is cyclohex-1-en-1-ol: the OH on C1, with a C1=C2 double bond.</p>
+<p>Propanal, CH₃CH₂CHO, has its α-hydrogens on C2. The enolate (from C2) attacks the carbonyl carbon of a second molecule. The aldol is CH₃CH₂CH(OH)–CH(CH₃)–CHO, <strong>3-hydroxy-2-methylpentanal</strong>. On heating it loses water to give <strong>2-methylpent-2-enal</strong>, CH₃CH₂CH=C(CH₃)CHO.</p>
+</details>
+<h2 id="1110-quiz">11.10 Quiz<a class="headerlink" href="#1110-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="e45a1b932543">
+<p class="pk-quiz-title">Check your understanding of aldehydes and ketones</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;the oxygen&quot;,&quot;the carbon&quot;,&quot;the alpha-hydrogen&quot;,&quot;the C=O pi bond from the oxygen end&quot;],&quot;answer&quot;:&quot;the carbon&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Nucleophiles attack the carbonyl group at</p>
+<ol class="pk-q-opts" type="A"><li>the oxygen</li><li>the carbon</li><li>the alpha-hydrogen</li><li>the C=O pi bond from the oxygen end</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>the carbon</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;butan-1-ol&quot;,&quot;butan-2-ol&quot;,&quot;butanal&quot;,&quot;butanoic acid&quot;],&quot;answer&quot;:&quot;butan-2-ol&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Reduction of butanone with NaBH₄ gives</p>
+<ol class="pk-q-opts" type="A"><li>butan-1-ol</li><li>butan-2-ol</li><li>butanal</li><li>butanoic acid</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>butan-2-ol</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a primary alcohol&quot;,&quot;a secondary alcohol&quot;,&quot;a tertiary alcohol&quot;,&quot;a carboxylic acid&quot;],&quot;answer&quot;:&quot;a tertiary alcohol&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">A Grignard reagent reacts with a ketone (after acid work-up) to give</p>
+<ol class="pk-q-opts" type="A"><li>a primary alcohol</li><li>a secondary alcohol</li><li>a tertiary alcohol</li><li>a carboxylic acid</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a tertiary alcohol</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;Tollens&#x27; reagent&quot;,&quot;Brady&#x27;s reagent&quot;,&quot;bromine water&quot;,&quot;Lucas reagent&quot;],&quot;answer&quot;:&quot;Tollens&#x27; reagent&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which reagent gives a silver mirror with aldehydes but not with ketones?</p>
+<ol class="pk-q-opts" type="A"><li>Tollens' reagent</li><li>Brady's reagent</li><li>bromine water</li><li>Lucas reagent</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>Tollens' reagent</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;aqueous acid&quot;,&quot;bases and nucleophiles&quot;,&quot;water with an acid catalyst&quot;,&quot;all reagents&quot;],&quot;answer&quot;:&quot;bases and nucleophiles&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Acetals are stable to</p>
+<ol class="pk-q-opts" type="A"><li>aqueous acid</li><li>bases and nucleophiles</li><li>water with an acid catalyst</li><li>all reagents</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>bases and nucleophiles</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;3-hydroxybutanal&quot;]}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">What is the name of the product of the aldol reaction of two molecules of ethanal?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>3-hydroxybutanal</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;5&quot;,&quot;10&quot;,&quot;19&quot;,&quot;50&quot;],&quot;answer&quot;:&quot;19&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">The pKa of the alpha-hydrogens of propanone is about</p>
+<ol class="pk-q-opts" type="A"><li>5</li><li>10</li><li>19</li><li>50</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>19</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="alcohols-ethers-and-epoxides.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10. Alcohols, Ethers and Epoxides">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</div>
+</div>
+</a>
+<a href="carboxylic-acids-and-derivatives.html" class="md-footer__link md-footer__link--next" aria-label="Next: 12. Carboxylic Acids and Their Derivatives">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

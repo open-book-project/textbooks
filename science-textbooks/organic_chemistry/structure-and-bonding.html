@@ -1,0 +1,1166 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/structure-and-bonding.html">
+<link rel="prev" href="preface.html">
+<link rel="next" href="functional-groups-and-nomenclature.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>1. Structure and Bonding - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#11-what-organic-chemistry-is-about" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="structure-and-bonding.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#11-what-organic-chemistry-is-about" class="md-nav__link">
+<span class="md-ellipsis">
+1.1 What organic chemistry is about
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#12-atoms-electrons-and-the-covalent-bond" class="md-nav__link">
+<span class="md-ellipsis">
+1.2 Atoms, electrons and the covalent bond
+</span>
+</a>
+<nav class="md-nav" aria-label="1.2 Atoms, electrons and the covalent bond">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#electron-configuration" class="md-nav__link">
+<span class="md-ellipsis">
+Electron configuration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-covalent-bond" class="md-nav__link">
+<span class="md-ellipsis">
+The covalent bond
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#13-lewis-structures-and-formal-charge" class="md-nav__link">
+<span class="md-ellipsis">
+1.3 Lewis structures and formal charge
+</span>
+</a>
+<nav class="md-nav" aria-label="1.3 Lewis structures and formal charge">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#formal-charge" class="md-nav__link">
+<span class="md-ellipsis">
+Formal charge
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#14-electronegativity-and-polar-bonds" class="md-nav__link">
+<span class="md-ellipsis">
+1.4 Electronegativity and polar bonds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#15-hybridisation-and-molecular-shape" class="md-nav__link">
+<span class="md-ellipsis">
+1.5 Hybridisation and molecular shape
+</span>
+</a>
+<nav class="md-nav" aria-label="1.5 Hybridisation and molecular shape">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#shapes-from-electron-pairs" class="md-nav__link">
+<span class="md-ellipsis">
+Shapes from electron pairs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hybrid-orbitals" class="md-nav__link">
+<span class="md-ellipsis">
+Hybrid orbitals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#and-bonds" class="md-nav__link">
+<span class="md-ellipsis">
+σ and π bonds
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#16-drawing-organic-molecules" class="md-nav__link">
+<span class="md-ellipsis">
+1.6 Drawing organic molecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#17-resonance" class="md-nav__link">
+<span class="md-ellipsis">
+1.7 Resonance
+</span>
+</a>
+<nav class="md-nav" aria-label="1.7 Resonance">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#rules-for-resonance-contributors" class="md-nav__link">
+<span class="md-ellipsis">
+Rules for resonance contributors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#which-contributors-matter-most" class="md-nav__link">
+<span class="md-ellipsis">
+Which contributors matter most?
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#18-intermolecular-forces-and-physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+1.8 Intermolecular forces and physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#19-summary" class="md-nav__link">
+<span class="md-ellipsis">
+1.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#110-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+1.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#111-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+1.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#11-what-organic-chemistry-is-about" class="md-nav__link">
+<span class="md-ellipsis">
+1.1 What organic chemistry is about
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#12-atoms-electrons-and-the-covalent-bond" class="md-nav__link">
+<span class="md-ellipsis">
+1.2 Atoms, electrons and the covalent bond
+</span>
+</a>
+<nav class="md-nav" aria-label="1.2 Atoms, electrons and the covalent bond">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#electron-configuration" class="md-nav__link">
+<span class="md-ellipsis">
+Electron configuration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-covalent-bond" class="md-nav__link">
+<span class="md-ellipsis">
+The covalent bond
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#13-lewis-structures-and-formal-charge" class="md-nav__link">
+<span class="md-ellipsis">
+1.3 Lewis structures and formal charge
+</span>
+</a>
+<nav class="md-nav" aria-label="1.3 Lewis structures and formal charge">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#formal-charge" class="md-nav__link">
+<span class="md-ellipsis">
+Formal charge
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#14-electronegativity-and-polar-bonds" class="md-nav__link">
+<span class="md-ellipsis">
+1.4 Electronegativity and polar bonds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#15-hybridisation-and-molecular-shape" class="md-nav__link">
+<span class="md-ellipsis">
+1.5 Hybridisation and molecular shape
+</span>
+</a>
+<nav class="md-nav" aria-label="1.5 Hybridisation and molecular shape">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#shapes-from-electron-pairs" class="md-nav__link">
+<span class="md-ellipsis">
+Shapes from electron pairs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#hybrid-orbitals" class="md-nav__link">
+<span class="md-ellipsis">
+Hybrid orbitals
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#and-bonds" class="md-nav__link">
+<span class="md-ellipsis">
+σ and π bonds
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#16-drawing-organic-molecules" class="md-nav__link">
+<span class="md-ellipsis">
+1.6 Drawing organic molecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#17-resonance" class="md-nav__link">
+<span class="md-ellipsis">
+1.7 Resonance
+</span>
+</a>
+<nav class="md-nav" aria-label="1.7 Resonance">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#rules-for-resonance-contributors" class="md-nav__link">
+<span class="md-ellipsis">
+Rules for resonance contributors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#which-contributors-matter-most" class="md-nav__link">
+<span class="md-ellipsis">
+Which contributors matter most?
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#18-intermolecular-forces-and-physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+1.8 Intermolecular forces and physical properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#19-summary" class="md-nav__link">
+<span class="md-ellipsis">
+1.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#110-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+1.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#111-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+1.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-1-structure-and-bonding">Chapter 1: Structure and Bonding<a class="headerlink" href="#chapter-1-structure-and-bonding" title="Permanent link">&para;</a></h1>
+<p><em>Electrons, shapes and the ways we draw molecules</em></p>
+<p>Everything in organic chemistry follows from the way carbon shares its electrons. A carbon atom forms four bonds, it bonds strongly to other carbon atoms, and it does so in three distinct geometries. Those three facts allow an almost unlimited number of stable molecules. This chapter builds the picture of bonding that the rest of the book relies on: how to count electrons and draw correct structures, how electronegativity makes bonds polar, how hybridisation explains molecular shape, and how resonance describes molecules that a single drawing cannot capture.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>draw correct Lewis structures for organic molecules and ions, and assign formal charges;</li>
+<li>predict bond polarity from electronegativity and recognise polar molecules;</li>
+<li>state the hybridisation (sp³, sp² or sp) of carbon, nitrogen and oxygen atoms and predict bond angles and shapes;</li>
+<li>distinguish σ and π bonds and explain why a double bond does not rotate;</li>
+<li>read and draw full, condensed and skeletal formulas;</li>
+<li>draw resonance contributors with curly arrows and judge which contributes most;</li>
+<li>relate boiling point and solubility to intermolecular forces.</li>
+</ul>
+</div>
+<h2 id="11-what-organic-chemistry-is-about">1.1 What organic chemistry is about<a class="headerlink" href="#11-what-organic-chemistry-is-about" title="Permanent link">&para;</a></h2>
+<p>Organic chemistry is the chemistry of compounds of carbon. The name is historical: early chemists believed that compounds from living things contained a "vital force" and could not be made from minerals. In 1828 Friedrich Wöhler made urea, a compound found in urine, by heating ammonium cyanate, a salt that could be prepared without any living source. Over the following decades the idea of a vital force faded, and the name "organic" stayed for the chemistry of carbon.</p>
+<p>Why does one element deserve its own branch of chemistry? Carbon sits in the middle of the second row of the periodic table, with four valence electrons. It neither gives these electrons away easily (as sodium does) nor takes four more easily (as fluorine takes one). Instead it <strong>shares</strong> them, forming four covalent bonds. Carbon–carbon bonds are strong, so carbon atoms link into chains, branches and rings of any size. Carbon also bonds well to hydrogen, oxygen, nitrogen, sulfur and the halogens. The result is many millions of known compounds, more than for all the other elements combined.</p>
+<p>Most organic molecules have a skeleton of carbon and hydrogen atoms that is fairly unreactive, decorated with small groups of other atoms that react in predictable ways. These groups are called <strong>functional groups</strong> (Chapter 2). Learning organic chemistry is largely learning how each functional group behaves, and why.</p>
+<h2 id="12-atoms-electrons-and-the-covalent-bond">1.2 Atoms, electrons and the covalent bond<a class="headerlink" href="#12-atoms-electrons-and-the-covalent-bond" title="Permanent link">&para;</a></h2>
+<h3 id="electron-configuration">Electron configuration<a class="headerlink" href="#electron-configuration" title="Permanent link">&para;</a></h3>
+<p>A carbon atom has six electrons: two in the 1s orbital and four in the second shell, arranged as 2s² 2p². Only the second-shell electrons, the <strong>valence electrons</strong>, take part in bonding. The number of valence electrons is the group number in the main-group table: hydrogen has 1, carbon 4, nitrogen 5, oxygen 6 and the halogens 7.</p>
+<p>Atoms of the second row (carbon, nitrogen, oxygen, fluorine) have room for eight electrons in their valence shell, one s orbital and three p orbitals with two electrons each. Bonded atoms tend to arrange themselves so that each has a full shell: eight electrons for second-row atoms (the <strong>octet rule</strong>) and two for hydrogen.</p>
+<h3 id="the-covalent-bond">The covalent bond<a class="headerlink" href="#the-covalent-bond" title="Permanent link">&para;</a></h3>
+<p>A covalent bond is a pair of electrons shared between two nuclei. Both nuclei attract the shared pair, and that mutual attraction holds the atoms together. When one atom shares a pair with another, both count the pair towards their octet.</p>
+<p>The number of bonds an atom normally forms follows from how many electrons it needs to complete its shell:</p>
+<table>
+<thead>
+<tr>
+<th>Atom</th>
+<th style="text-align: center;">Valence electrons</th>
+<th style="text-align: center;">Usual number of bonds</th>
+<th style="text-align: center;">Lone pairs (neutral)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td>N</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td>O</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td>F, Cl, Br, I</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1.1. Valence and bonding of the common atoms of organic chemistry.</em></p>
+<p>Memorise the last two columns. When you draw a structure, a neutral carbon has four bonds, a neutral nitrogen three bonds and a lone pair, a neutral oxygen two bonds and two lone pairs. Any atom that does not fit this pattern carries a formal charge (Section 1.3).</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Carbon forms four bonds. In every structure you draw, check that each carbon has exactly four bonds (counting a double bond as two and a triple bond as three) unless it is deliberately shown as a cation, anion or radical.</p>
+</div>
+<h2 id="13-lewis-structures-and-formal-charge">1.3 Lewis structures and formal charge<a class="headerlink" href="#13-lewis-structures-and-formal-charge" title="Permanent link">&para;</a></h2>
+<p>A <strong>Lewis structure</strong> shows every valence electron: bonding pairs as lines and non-bonding pairs (<strong>lone pairs</strong>) as pairs of dots. To draw one:</p>
+<ol>
+<li>Add up the valence electrons of all the atoms. Add one for each negative charge and subtract one for each positive charge.</li>
+<li>Connect the atoms with single bonds. (The connectivity usually comes from the formula or the name.)</li>
+<li>Use the remaining electrons as lone pairs to complete the octets, starting with the most electronegative atoms.</li>
+<li>If an atom still lacks an octet, turn a lone pair on a neighbouring atom into a second (or third) bond.</li>
+</ol>
+<h3 id="formal-charge">Formal charge<a class="headerlink" href="#formal-charge" title="Permanent link">&para;</a></h3>
+<p>Some atoms in a correct Lewis structure have more or fewer bonds than usual. Such an atom carries a <strong>formal charge</strong>, worked out by comparing the electrons it "owns" in the structure with the valence electrons of the free atom:</p>
+<div class="arithmatex">\[
+\text{formal charge} = V - N - \frac{B}{2}
+\]</div>
+<p>where <span class="arithmatex">\(V\)</span> is the number of valence electrons of the free atom, <span class="arithmatex">\(N\)</span> the number of non-bonding electrons on the atom in the structure, and <span class="arithmatex">\(B\)</span> the number of bonding electrons around it. Each bond line counts as two bonding electrons.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 1.1: Formal charges in the hydroxide and hydronium ions</p>
+<p><strong>Hydroxide, OH⁻.</strong> Oxygen has one bond (B = 2) and three lone pairs (N = 6). Formal charge = 6 − 6 − 1 = −1. The negative charge sits on oxygen.</p>
+<p><strong>Hydronium, H₃O⁺.</strong> Oxygen has three bonds (B = 6) and one lone pair (N = 2). Formal charge = 6 − 2 − 3 = +1.</p>
+<p><strong>Ammonium, NH₄⁺.</strong> Nitrogen has four bonds and no lone pair: 5 − 0 − 4 = +1.</p>
+<p>The formal charges in each ion add up to the overall charge, as they always must.</p>
+</div>
+<p>With practice you will not need the formula, because the patterns are few. For the atoms you meet most often:</p>
+<ul>
+<li><strong>Carbon</strong> with four bonds is neutral; with three bonds and no lone pair it is a <strong>carbocation</strong> (+1); with three bonds and one lone pair it is a <strong>carbanion</strong> (−1); with three bonds and one unpaired electron it is a <strong>radical</strong> (neutral).</li>
+<li><strong>Nitrogen</strong> with four bonds is +1; with two bonds and two lone pairs it is −1.</li>
+<li><strong>Oxygen</strong> with three bonds (one lone pair) is +1; with one bond (three lone pairs) it is −1.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Caution: formal charge is bookkeeping</p>
+<p>A formal charge tells you which atom has more or fewer electrons than it would in a neutral, normal bonding pattern. It does not always say where the electron density really is. In the hydronium ion, the "+" is written on oxygen, yet oxygen is still the most electron-rich atom: much of the positive charge is actually carried by the hydrogens. Use formal charges to check structures and to follow electrons in mechanisms, not as measured charges.</p>
+</div>
+<h2 id="14-electronegativity-and-polar-bonds">1.4 Electronegativity and polar bonds<a class="headerlink" href="#14-electronegativity-and-polar-bonds" title="Permanent link">&para;</a></h2>
+<p><strong>Electronegativity</strong> is the tendency of an atom in a molecule to attract the electrons of a bond towards itself. On the Pauling scale the values that matter most in organic chemistry are:</p>
+<table>
+<thead>
+<tr>
+<th>Atom</th>
+<th>H</th>
+<th>C</th>
+<th>N</th>
+<th>O</th>
+<th>F</th>
+<th>Cl</th>
+<th>Br</th>
+<th>I</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electronegativity</td>
+<td>2.2</td>
+<td>2.5</td>
+<td>3.0</td>
+<td>3.4</td>
+<td>4.0</td>
+<td>3.2</td>
+<td>3.0</td>
+<td>2.7</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1.2. Pauling electronegativities, rounded.</em></p>
+<p>Electronegativity rises across a row (C &lt; N &lt; O &lt; F) and falls down a group (F &gt; Cl &gt; Br &gt; I). When two bonded atoms differ in electronegativity, the shared pair lies closer to the more electronegative atom. The bond is then <strong>polar</strong>: one end carries a partial negative charge (δ−) and the other a partial positive charge (δ+).</p>
+<ul>
+<li>The C–H bond is nearly non-polar (difference 0.3). This is why hydrocarbons dissolve poorly in water and are relatively unreactive.</li>
+<li>C–O, C–N and C–halogen bonds are polar, with carbon δ+. That δ+ carbon is a target for electron-rich reagents, a theme that runs through the whole book.</li>
+<li>O–H and N–H bonds are strongly polar, with hydrogen δ+. Such hydrogens can be lost as protons (Chapter 4) and can take part in hydrogen bonding (Section 1.8).</li>
+</ul>
+<p>A molecule is polar overall when its bond polarities do not cancel. Water is polar because its two O–H bonds point in different directions at an angle. Tetrachloromethane (CCl₄) has four polar C–Cl bonds, but they point to the corners of a regular tetrahedron and cancel, so the molecule has no overall dipole.</p>
+<h2 id="15-hybridisation-and-molecular-shape">1.5 Hybridisation and molecular shape<a class="headerlink" href="#15-hybridisation-and-molecular-shape" title="Permanent link">&para;</a></h2>
+<h3 id="shapes-from-electron-pairs">Shapes from electron pairs<a class="headerlink" href="#shapes-from-electron-pairs" title="Permanent link">&para;</a></h3>
+<p>The simplest way to predict shape is <strong>valence-shell electron-pair repulsion</strong> (VSEPR): the groups of electrons around a central atom (bonds and lone pairs) get as far apart as possible. A double or triple bond counts as one group.</p>
+<ul>
+<li>Four groups point to the corners of a <strong>tetrahedron</strong>, 109.5° apart (methane, CH₄). With one lone pair among the four groups the shape is <strong>trigonal pyramidal</strong> (ammonia, angle about 107°); with two lone pairs it is <strong>bent</strong> (water, about 104.5°).</li>
+<li>Three groups lie in a plane at 120° (<strong>trigonal planar</strong>), as at each carbon of ethene.</li>
+<li>Two groups lie in a straight line at 180° (<strong>linear</strong>), as at each carbon of ethyne.</li>
+</ul>
+<h3 id="hybrid-orbitals">Hybrid orbitals<a class="headerlink" href="#hybrid-orbitals" title="Permanent link">&para;</a></h3>
+<p>Why does carbon form four equal bonds, when its valence orbitals are one 2s and three 2p orbitals of different shapes? The answer chemists use is <strong>hybridisation</strong>: the atomic orbitals mix to form new <strong>hybrid orbitals</strong>, which point in the directions of the bonds.</p>
+<ul>
+<li><strong>sp³ hybridisation.</strong> The 2s and all three 2p orbitals mix to give four equivalent sp³ orbitals pointing to the corners of a tetrahedron. Each overlaps with an orbital of another atom to make a bond. A carbon with four single bonds is sp³.</li>
+<li><strong>sp² hybridisation.</strong> The 2s and two of the 2p orbitals mix to give three sp² orbitals in a plane at 120°. The third 2p orbital is left unchanged, perpendicular to the plane. A carbon with one double bond is sp².</li>
+<li><strong>sp hybridisation.</strong> The 2s and one 2p orbital mix to give two sp orbitals pointing in opposite directions (180°). Two 2p orbitals remain, perpendicular to each other and to the axis. A carbon with a triple bond, or with two double bonds (as in carbon dioxide), is sp.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/hybridisation-shapes.svg" alt="The three hybridisation states of carbon. In methane the four bonds point to the corners of a tetrahedron; the wedged bond comes towards the reader and the hashed bond goes away. In ethene each carbon is trigonal planar; in ethyne the molecule is a straight line." loading="lazy" width="760" height="250">
+<figcaption><strong>Figure 1.1 Shapes of methane, ethene and ethyne.</strong> The three hybridisation states of carbon. In methane the four bonds point to the corners of a tetrahedron; the wedged bond comes towards the reader and the hashed bond goes away. In ethene each carbon is trigonal planar; in ethyne the molecule is a straight line.</figcaption>
+</figure>
+<p>A quick rule: <strong>count the groups</strong> (atoms plus lone pairs) around the atom. Four groups means sp³, three means sp², two means sp. The rule applies to nitrogen and oxygen too. The nitrogen of ammonia has three bonds and a lone pair, four groups, so it is sp³.</p>
+<h3 id="and-bonds">σ and π bonds<a class="headerlink" href="#and-bonds" title="Permanent link">&para;</a></h3>
+<p>A bond formed by orbitals that overlap head-on, along the line between the two nuclei, is a <strong>σ (sigma) bond</strong>. Every single bond is a σ bond. Its electron density is concentrated between the nuclei, and rotating one end of the bond does not change the overlap, so groups joined by a single bond rotate freely.</p>
+<p>In ethene each carbon uses its three sp² orbitals for σ bonds: one to the other carbon and two to hydrogens. The unhybridised p orbitals on the two carbons are parallel and overlap side by side, above and below the plane of the molecule. This side-on overlap is a <strong>π (pi) bond</strong>. A double bond is therefore one σ bond plus one π bond, and a triple bond is one σ bond plus two π bonds.</p>
+<figure class="fig fig-diagram">
+<img src="img/ethene-sigma-pi.svg" alt="The bonding in ethene. The σ framework of C–C and C–H bonds lies in one plane. The two p orbitals, one on each carbon, stand perpendicular to that plane and overlap side by side to form the π bond, with electron density above and below the plane." loading="lazy" width="760" height="290">
+<figcaption><strong>Figure 1.2 σ and π bonds in ethene.</strong> The bonding in ethene. The σ framework of C–C and C–H bonds lies in one plane. The two p orbitals, one on each carbon, stand perpendicular to that plane and overlap side by side to form the π bond, with electron density above and below the plane.</figcaption>
+</figure>
+<p>Two consequences follow, and both matter later in the book:</p>
+<ol>
+<li><strong>A double bond does not rotate.</strong> Twisting one end of ethene by 90° would turn the p orbitals perpendicular to each other and break the π bond. This costs a lot of energy, so at room temperature the groups on a double bond keep their positions. That is why <em>cis</em> and <em>trans</em> isomers of alkenes exist (Chapter 3).</li>
+<li><strong>π electrons are exposed and reactive.</strong> The π electrons lie further from the nuclei than σ electrons and are held less tightly. Alkenes react with electron-seeking reagents by using their π electrons (Chapter 7).</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Bond</th>
+<th>Example</th>
+<th>Hybridisation of C</th>
+<th>Length (pm)</th>
+<th>Approximate bond energy (kJ mol⁻¹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C–C</td>
+<td>ethane</td>
+<td>sp³</td>
+<td>154</td>
+<td>350</td>
+</tr>
+<tr>
+<td>C=C</td>
+<td>ethene</td>
+<td>sp²</td>
+<td>134</td>
+<td>610</td>
+</tr>
+<tr>
+<td>C≡C</td>
+<td>ethyne</td>
+<td>sp</td>
+<td>120</td>
+<td>835</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1.3. Carbon–carbon single, double and triple bonds. More bonds make the link shorter and stronger, but a π bond is weaker than a σ bond: the second bond adds less than the first.</em></p>
+<div class="admonition example">
+<p class="admonition-title">Example 1.2: Hybridisation in ethanenitrile (acetonitrile), CH₃C≡N</p>
+<p>The CH₃ carbon has four σ bonds: four groups, sp³, tetrahedral. The carbon of the C≡N group has two groups (the CH₃ carbon and the nitrogen): sp, linear. The nitrogen has the triple bond and one lone pair: two groups, sp. So the C–C≡N unit is a straight line, and the angles around the methyl carbon are about 109.5°.</p>
+</div>
+<h2 id="16-drawing-organic-molecules">1.6 Drawing organic molecules<a class="headerlink" href="#16-drawing-organic-molecules" title="Permanent link">&para;</a></h2>
+<p>Organic chemists draw structures all day, so they use short-hand. You must be able to read and write three styles.</p>
+<ul>
+<li>A <strong>full structural formula</strong> shows every atom and every bond. It is clear but slow to draw for anything bigger than a few atoms.</li>
+<li>A <strong>condensed formula</strong> writes each carbon with its hydrogens, in order along the chain: CH₃CH₂CH₂OH. Branches are put in brackets: (CH₃)₂CHOH is propan-2-ol.</li>
+<li>A <strong>skeletal formula</strong> (line drawing) draws only the bonds of the carbon skeleton as a zigzag of lines.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/propanol-three-ways.svg" alt="Propan-1-ol drawn three ways. The full structural formula shows every atom and bond; the condensed formula writes the atoms in sequence; the skeletal formula shows only the zigzag of carbon–carbon bonds, with the OH group written out." loading="lazy" width="760" height="230">
+<figcaption><strong>Figure 1.3 Three ways of drawing the same molecule.</strong> Propan-1-ol drawn three ways. The full structural formula shows every atom and bond; the condensed formula writes the atoms in sequence; the skeletal formula shows only the zigzag of carbon–carbon bonds, with the OH group written out.</figcaption>
+</figure>
+<p>The rules for skeletal formulas are short:</p>
+<ol>
+<li>Each <strong>end of a line</strong> and each <strong>corner</strong> (vertex) is a carbon atom.</li>
+<li>Hydrogens on carbon are <strong>not drawn</strong>. Each carbon has as many hydrogens as it needs to make four bonds.</li>
+<li>All atoms other than carbon and hydrogen are <strong>written in</strong>, together with any hydrogens attached to them (OH, NH₂).</li>
+<li>Chains are drawn as <strong>zigzags</strong>, with angles of about 120°, which matches the real shape of a chain of sp³ carbons.</li>
+</ol>
+<div class="admonition example">
+<p class="admonition-title">Example 1.3: Reading a skeletal formula</p>
+<p>In the skeletal formula of propan-1-ol in Figure 1.3 there are three carbons: the left end of the line, the corner, and the corner where the OH is attached. The left carbon has one bond drawn, so it carries three hydrogens (CH₃). The middle carbon has two bonds drawn, so it has two hydrogens (CH₂). The right carbon has two bonds (one to carbon, one to oxygen), so it also has two hydrogens. The formula is C₃H₈O, which you can check against the condensed formula CH₃CH₂CH₂OH.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Caution: hidden hydrogens still count</p>
+<p>A frequent error is to forget the implied hydrogens when writing a molecular formula or when looking for a hydrogen that a reaction removes. Always count them. A carbon at a corner with two lines has two hydrogens; at a corner with three lines, one; at a corner with four lines, none.</p>
+</div>
+<p>To show three dimensions, a <strong>solid wedge</strong> is a bond coming out of the page towards you, a <strong>hashed wedge</strong> is a bond pointing behind the page, and a plain line lies in the plane of the page. Methane in Figure 1.1 is drawn this way: two bonds in the plane, one wedge and one hash.</p>
+<h2 id="17-resonance">1.7 Resonance<a class="headerlink" href="#17-resonance" title="Permanent link">&para;</a></h2>
+<p>Some molecules cannot be described by a single Lewis structure. The ethanoate ion (acetate, CH₃CO₂⁻) is the classic example. One Lewis structure puts a C=O double bond to the upper oxygen and the negative charge on the lower oxygen; an equally good structure swaps them. Experiment shows that the two carbon–oxygen bonds are the same length, between a typical C=O and a typical C–O. Neither drawing is right on its own.</p>
+<p>The answer is <strong>resonance</strong>. The real ion is a single structure, a <strong>resonance hybrid</strong>, that is a blend of the two drawings, which are called <strong>resonance contributors</strong> (or resonance forms). The negative charge is spread equally over both oxygens and each C–O bond has a bond order of about one and a half.</p>
+<figure class="fig fig-diagram">
+<img src="img/acetate-resonance.svg" alt="Resonance in the ethanoate ion. A lone pair on the negatively charged oxygen of contributor A moves to form a C=O π bond, while the original π bond moves onto the other oxygen, giving contributor B. The double-headed arrow links the contributors. The hybrid has two equivalent C–O bonds, each with partial double-bond character (dashed line), and half a negative charge on each oxygen." loading="lazy" width="760" height="220">
+<figcaption><strong>Figure 1.4 Resonance in the ethanoate ion.</strong> Resonance in the ethanoate ion. A lone pair on the negatively charged oxygen of contributor A moves to form a C=O π bond, while the original π bond moves onto the other oxygen, giving contributor B. The double-headed arrow links the contributors. The hybrid has two equivalent C–O bonds, each with partial double-bond character (dashed line), and half a negative charge on each oxygen.</figcaption>
+</figure>
+<h3 id="rules-for-resonance-contributors">Rules for resonance contributors<a class="headerlink" href="#rules-for-resonance-contributors" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Contributors differ <strong>only in the positions of electrons</strong> (π electrons and lone pairs). The atoms do not move and σ bonds do not break.</li>
+<li>Contributors are linked by a <strong>double-headed arrow</strong> (↔). This is not an equilibrium: the molecule does not flip between the forms. A mule is not sometimes a horse and sometimes a donkey; it is a hybrid all the time.</li>
+<li>Every contributor must be a valid Lewis structure, with the same total charge and the same number of electrons, and no second-row atom with more than eight.</li>
+<li><strong>Curly arrows</strong> show how one contributor is turned into another. Each curly arrow moves a pair of electrons from where its tail is (a lone pair or a bond) to where its head points (an atom or the position between two atoms). You will use exactly the same arrows for reaction mechanisms in Chapter 5.</li>
+</ul>
+<h3 id="which-contributors-matter-most">Which contributors matter most?<a class="headerlink" href="#which-contributors-matter-most" title="Permanent link">&para;</a></h3>
+<p>Not all contributors are equal. The hybrid resembles most closely the contributors that are most stable, judged by these criteria in order:</p>
+<ol>
+<li><strong>Full octets.</strong> Structures in which every second-row atom has an octet are better.</li>
+<li><strong>Fewest formal charges.</strong> Structures with less separation of charge are better.</li>
+<li><strong>Negative charge on the more electronegative atom</strong> (and positive charge on the less electronegative atom).</li>
+</ol>
+<p>When two or more contributors are equivalent, as in ethanoate, the delocalisation is especially effective. Spreading charge over several atoms lowers the energy of the molecule. This extra stability, the <strong>resonance stabilisation</strong>, explains why carboxylic acids are much more acidic than alcohols (Chapter 4) and why benzene is unusually unreactive (Chapter 8).</p>
+<div class="admonition example">
+<p class="admonition-title">Example 1.4: Resonance in the carbonyl group</p>
+<p>Methanal (formaldehyde, H₂C=O) can be drawn with a second contributor in which the π electrons have moved onto oxygen: H₂C⁺–O⁻. The first contributor has full octets and no charges, so it is by far the major one. The second is minor, but not useless: it shows that the carbonyl carbon is electron-poor (δ+) and the oxygen electron-rich (δ−). This polarity is the key to the chemistry of aldehydes and ketones in Chapter 11.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Resonance is a way of describing <strong>delocalised</strong> electrons with the localised language of Lewis structures. When you see a lone pair or a negative charge next to a π bond, or a positive charge next to a π bond or a lone pair, look for resonance.</p>
+</div>
+<h2 id="18-intermolecular-forces-and-physical-properties">1.8 Intermolecular forces and physical properties<a class="headerlink" href="#18-intermolecular-forces-and-physical-properties" title="Permanent link">&para;</a></h2>
+<p>Covalent bonds hold atoms together within a molecule. Much weaker <strong>intermolecular forces</strong> hold molecules to one another. They decide whether a compound is a gas, liquid or solid at room temperature, and what it dissolves in.</p>
+<ul>
+<li><strong>London dispersion forces</strong> act between all molecules. Momentary uneven distributions of electrons create temporary dipoles that attract one another. They grow with the size and surface area of the molecule. This is why boiling points rise along the alkanes: methane boils at −162 °C, while octane boils at about 126 °C. A long, unbranched molecule has more surface contact than a compact, branched one, so pentane boils at 36 °C and its branched isomer 2,2-dimethylpropane at about 10 °C.</li>
+<li><strong>Dipole–dipole forces</strong> act between polar molecules, whose permanent dipoles line up end to end.</li>
+<li><strong>Hydrogen bonds</strong> are the strongest of the three. A hydrogen attached to O, N or F is strongly δ+, and it is attracted to a lone pair on another O, N or F atom.</li>
+</ul>
+<p>The effect of hydrogen bonding is dramatic. Ethanol (CH₃CH₂OH) and methoxymethane (dimethyl ether, CH₃OCH₃) have the same formula, C₂H₆O. Ethanol molecules hydrogen bond to each other and it boils at 78 °C; the ether has no O–H bond, cannot hydrogen bond to itself, and boils at about −24 °C.</p>
+<p><strong>Solubility</strong> follows the rule "like dissolves like". Polar molecules, especially those that can hydrogen bond, dissolve in water; non-polar molecules dissolve in non-polar solvents such as hexane. Small alcohols such as methanol and ethanol mix with water in all proportions, but as the hydrocarbon part grows the molecule becomes more oil-like: butan-1-ol is only partly soluble in water, and octan-1-ol is nearly insoluble.</p>
+<h2 id="19-summary">1.9 Summary<a class="headerlink" href="#19-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Carbon forms four covalent bonds, links to itself in chains and rings, and bonds well to H, O, N, S and the halogens.</li>
+<li>Neutral C has four bonds; N three bonds and one lone pair; O two bonds and two lone pairs; halogens one bond and three lone pairs. Departures from this pattern carry a formal charge: <span class="arithmatex">\(V - N - B/2\)</span>.</li>
+<li>Differences in electronegativity make bonds polar. Carbon bonded to O, N or a halogen is δ+.</li>
+<li>Count the groups around an atom: four groups is sp³ (109.5°), three is sp² (120°), two is sp (180°).</li>
+<li>A single bond is a σ bond; a double bond is σ + π; a triple bond is σ + 2π. The π bond prevents rotation about a double bond.</li>
+<li>Skeletal formulas show only the carbon framework; every vertex and line end is a carbon with enough hydrogens to make four bonds.</li>
+<li>Resonance contributors differ only in the positions of electrons. The real molecule is the hybrid, and delocalisation stabilises it.</li>
+<li>Dispersion forces, dipole–dipole forces and hydrogen bonds govern boiling point and solubility.</li>
+</ul>
+</div>
+<h2 id="110-exercises">1.10 Exercises<a class="headerlink" href="#110-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Draw a Lewis structure for methanamine, CH₃NH₂, showing all lone pairs. What is the hybridisation of the nitrogen, and the approximate H–N–H angle?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Carbon has three H atoms and a bond to N; nitrogen has two H atoms, the bond to C and one lone pair. Total valence electrons: 4 + 5 + 5 × 1 = 14, which is six bonds (12 electrons) and one lone pair (2 electrons). Nitrogen has four groups (three bonds and a lone pair), so it is sp³ and the shape about it is trigonal pyramidal, with angles of about 107°, a little less than 109.5° because the lone pair repels more strongly than a bonding pair.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Calculate the formal charge on each atom other than hydrogen in (a) the methoxide ion, CH₃O⁻; (b) the nitrogen of the tetramethylammonium ion, (CH₃)₄N⁺; (c) the carbon of the methyl cation, CH₃⁺.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Carbon: four bonds, formal charge 4 − 0 − 4 = 0. Oxygen: one bond and three lone pairs, 6 − 6 − 1 = −1.</p>
+<p>(b) Nitrogen: four bonds, no lone pair, 5 − 0 − 4 = +1.</p>
+<p>(c) Carbon: three bonds, no lone pair, 4 − 0 − 3 = +1. It has only six electrons around it, which is why carbocations are so reactive.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>State the hybridisation of each carbon in propene, CH₂=CH–CH₃, and in buta-1,3-diene, CH₂=CH–CH=CH₂.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Propene: the two carbons of the double bond are sp²; the CH₃ carbon is sp³. Buta-1,3-diene: all four carbons are sp², because each one is part of a double bond.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>How many hydrogens are attached to each carbon in the skeletal formula of cyclohexene (a six-membered ring with one double bond)? Write its molecular formula.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The two carbons of the double bond each have three bonds drawn (two to the ring neighbours counted as one each, plus the extra π bond), so each has one H. The other four ring carbons have two bonds drawn and so two H each. Total: 2 × 1 + 4 × 2 = 10 hydrogens. The formula is C₆H₁₀.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Draw the second resonance contributor of the nitromethane molecule, CH₃–NO₂, given that one contributor is CH₃–N⁺(=O)–O⁻. Show the curly arrows that relate them. Are the two N–O bonds the same length?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>A lone pair on the singly bonded O⁻ moves in to form an N=O π bond, and at the same time the π electrons of the existing N=O bond move onto the other oxygen, which becomes O⁻. The second contributor is CH₃–N⁺(–O⁻)=O, equivalent to the first. Because the two contributors are equivalent, the real molecule has two identical N–O bonds, intermediate between a single and a double bond, with half a negative charge on each oxygen. The nitrogen keeps its +1 formal charge in both.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Arrange in order of increasing boiling point, and explain: butane, propan-1-ol, methoxyethane (CH₃OCH₂CH₃). All three have similar molar masses (58, 60 and 60 g mol⁻¹).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Butane (about −1 °C) &lt; methoxyethane (about 7 °C) &lt; propan-1-ol (97 °C). Butane is non-polar and has only dispersion forces. Methoxyethane is polar and adds dipole–dipole attraction, but has no O–H bond and cannot hydrogen bond to itself. Propan-1-ol forms hydrogen bonds between molecules through its O–H group, so far more energy is needed to separate the molecules.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Explain why a C=C double bond, with a total bond energy of about 610 kJ mol⁻¹, is not twice as strong as a C–C single bond (about 350 kJ mol⁻¹).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The double bond is one σ bond plus one π bond. The π bond is formed by side-on overlap of p orbitals, which is less effective than the head-on overlap of a σ bond. So the π bond contributes only about 610 − 350 = 260 kJ mol⁻¹, less than the σ bond. This weaker π bond is also why alkenes are much more reactive than alkanes.</p>
+</details>
+<h2 id="111-quiz">1.11 Quiz<a class="headerlink" href="#111-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="2b88297086e5">
+<p class="pk-quiz-title">Check your understanding of bonding</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;sp&quot;,&quot;sp2&quot;,&quot;sp3&quot;],&quot;answer&quot;:&quot;sp&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">What is the hybridisation of the carbon atom in carbon dioxide, O=C=O?</p>
+<ol class="pk-q-opts" type="A"><li>sp</li><li>sp2</li><li>sp3</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>sp</strong></p>
+<p class="pk-q-why">The carbon has two groups around it (two double bonds), so it is sp and the molecule is linear.</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;-1&quot;,&quot;0&quot;,&quot;+1&quot;,&quot;+2&quot;],&quot;answer&quot;:&quot;+1&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">An oxygen atom with three bonds and one lone pair has a formal charge of</p>
+<ol class="pk-q-opts" type="A"><li>-1</li><li>0</li><li>+1</li><li>+2</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>+1</strong></p>
+<p class="pk-q-why">6 valence electrons - 2 non-bonding - 6/2 = +1.</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;1&quot;,&quot;one&quot;]}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">How many hydrogen atoms are on a carbon at a corner of a skeletal formula where three lines meet (all single bonds)?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>1 / one</strong></p>
+<p class="pk-q-why">Three bonds are drawn, so one hydrogen is needed to make four.</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;The molecule flips rapidly between them.&quot;,&quot;They differ only in the positions of electrons, not atoms.&quot;,&quot;They may have different numbers of electrons.&quot;,&quot;The least stable contributor resembles the real molecule most.&quot;],&quot;answer&quot;:&quot;They differ only in the positions of electrons, not atoms.&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which statement about resonance contributors is correct?</p>
+<ol class="pk-q-opts" type="A"><li>The molecule flips rapidly between them.</li><li>They differ only in the positions of electrons, not atoms.</li><li>They may have different numbers of electrons.</li><li>The least stable contributor resembles the real molecule most.</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>They differ only in the positions of electrons, not atoms.</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;C-H&quot;,&quot;C-C&quot;,&quot;C-O&quot;,&quot;C-I&quot;],&quot;answer&quot;:&quot;C-O&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which bond is the most polar?</p>
+<ol class="pk-q-opts" type="A"><li>C-H</li><li>C-C</li><li>C-O</li><li>C-I</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>C-O</strong></p>
+<p class="pk-q-why">The electronegativity difference is largest for C-O (2.5 against 3.4).</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;match&quot;,&quot;pairs&quot;:[[&quot;methane&quot;,&quot;tetrahedral&quot;],[&quot;ammonia&quot;,&quot;trigonal pyramidal&quot;],[&quot;water&quot;,&quot;bent&quot;],[&quot;ethyne&quot;,&quot;linear&quot;]]}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Match each molecule to the shape about its central atom.</p>
+<table class="pk-q-match"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>methane</td><td>bent</td></tr><tr><td>ammonia</td><td>linear</td></tr><tr><td>water</td><td>tetrahedral</td></tr><tr><td>ethyne</td><td>trigonal pyramidal</td></tr></tbody></table>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>methane</strong> — tetrahedral; <strong>ammonia</strong> — trigonal pyramidal; <strong>water</strong> — bent; <strong>ethyne</strong> — linear</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;ethanol has a larger molar mass&quot;,&quot;ethanol molecules form hydrogen bonds to one another&quot;,&quot;methoxymethane is non-polar&quot;,&quot;methoxymethane has a double bond&quot;],&quot;answer&quot;:&quot;ethanol molecules form hydrogen bonds to one another&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Ethanol boils at 78 °C and methoxymethane at about -24 °C. The main reason is</p>
+<ol class="pk-q-opts" type="A"><li>ethanol has a larger molar mass</li><li>ethanol molecules form hydrogen bonds to one another</li><li>methoxymethane is non-polar</li><li>methoxymethane has a double bond</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>ethanol molecules form hydrogen bonds to one another</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="preface.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: About This Book">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+About This Book
+</div>
+</div>
+</a>
+<a href="functional-groups-and-nomenclature.html" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Functional Groups and Nomenclature">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

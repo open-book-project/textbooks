@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" width="760" height="230" role="img" aria-label="(Z)- and (E)-but-2-ene, and (Z)-1-bromo-1-chloroprop-1-ene, named by the CIP priority rules">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="86.0" y1="108.0" x2="134.0" y2="108.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="86.0" y1="102.0" x2="134.0" y2="102.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="86.0" y1="105.0" x2="69.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="86.0" y1="105.0" x2="69.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="134.0" y1="105.0" x2="151.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="134.0" y1="105.0" x2="151.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="336.0" y1="108.0" x2="384.0" y2="108.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="336.0" y1="102.0" x2="384.0" y2="102.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="336.0" y1="105.0" x2="319.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="336.0" y1="105.0" x2="319.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="384.0" y1="105.0" x2="401.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="384.0" y1="105.0" x2="401.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="586.0" y1="108.0" x2="634.0" y2="108.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="586.0" y1="102.0" x2="634.0" y2="102.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="586.0" y1="105.0" x2="569.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="586.0" y1="105.0" x2="569.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="634.0" y1="105.0" x2="651.0" y2="75.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="634.0" y1="105.0" x2="651.0" y2="134.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="610.0" y1="40.0" x2="610.0" y2="170.0" stroke="#6b6b6b" stroke-width="1.00" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="58.5" y="130.6" width="13.9" height="19.2" fill="#ffffff"/>
+<text x="65.5" y="146.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="147.5" y="130.6" width="13.9" height="19.2" fill="#ffffff"/>
+<text x="154.5" y="146.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="110.0" y="190.2" font-size="15.0" text-anchor="middle" fill="#1a1a1a" font-weight="bold">(Z)-but-2-ene</text>
+<text x="110.0" y="211.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">(cis): CH₃ groups on the same side</text>
+<rect x="308.5" y="130.6" width="13.9" height="19.2" fill="#ffffff"/>
+<text x="315.5" y="146.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="397.5" y="59.6" width="13.9" height="19.2" fill="#ffffff"/>
+<text x="404.5" y="75.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="360.0" y="190.2" font-size="15.0" text-anchor="middle" fill="#1a1a1a" font-weight="bold">(E)-but-2-ene</text>
+<text x="360.0" y="211.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">(trans): CH₃ groups on opposite sides</text>
+<rect x="553.6" y="59.6" width="23.8" height="19.2" fill="#ffffff"/>
+<text x="565.5" y="75.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Br</text>
+<rect x="553.6" y="130.6" width="23.8" height="19.2" fill="#ffffff"/>
+<text x="565.5" y="146.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">Cl</text>
+<rect x="647.5" y="130.6" width="13.9" height="19.2" fill="#ffffff"/>
+<text x="654.5" y="146.1" font-size="16.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<text x="610.0" y="190.2" font-size="15.0" text-anchor="middle" fill="#1a1a1a" font-weight="bold">(Z)-1-bromo-1-chloroprop-1-ene</text>
+<text x="610.0" y="211.2" font-size="12.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">Br &gt; Cl and CH₃ &gt; H: both higher on the same side</text>
+<text x="560.0" y="53.9" font-size="11.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">1</text>
+<text x="560.0" y="163.8" font-size="11.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">2</text>
+<text x="662.0" y="53.9" font-size="11.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">1</text>
+<text x="662.0" y="163.8" font-size="11.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">2</text>
+</g>
+</svg>

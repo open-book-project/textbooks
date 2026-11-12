@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="760" height="260" role="img" aria-label="4-Ethyl-2-methylhexane: the longest chain of six carbons is numbered from the end nearer the first branch">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="60.0" y1="170.0" x2="103.3" y2="145.0" stroke="#1f5fa8" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="103.3" y1="145.0" x2="146.6" y2="170.0" stroke="#1f5fa8" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="146.6" y1="170.0" x2="189.9" y2="145.0" stroke="#1f5fa8" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="189.9" y1="145.0" x2="233.2" y2="170.0" stroke="#1f5fa8" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="233.2" y1="170.0" x2="276.5" y2="145.0" stroke="#1f5fa8" stroke-width="3.20" stroke-linecap="round"/>
+<line x1="103.3" y1="145.0" x2="103.3" y2="95.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="189.9" y1="145.0" x2="189.9" y2="95.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="189.9" y1="95.0" x2="233.2" y2="70.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<text x="60.0" y="190.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="103.3" y="165.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="146.6" y="190.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="189.9" y="165.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="233.2" y="190.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="276.5" y="165.3" font-size="1.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal"></text>
+<text x="60.0" y="197.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">1</text>
+<text x="103.3" y="172.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">2</text>
+<text x="146.6" y="197.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">3</text>
+<text x="189.9" y="172.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">4</text>
+<text x="233.2" y="197.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">5</text>
+<text x="276.5" y="172.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="bold">6</text>
+<text x="103.3" y="85.5" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">methyl (C2)</text>
+<text x="241.2" y="64.5" font-size="13.0" text-anchor="start" fill="#6b6b6b" font-weight="normal">ethyl (C4)</text>
+<text x="420.0" y="124.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">parent chain: hexane (6 C)</text>
+<text x="420.0" y="149.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">locants 2,4 (not 3,5)</text>
+<text x="420.0" y="174.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">alphabetical: ethyl before methyl</text>
+<text x="380.0" y="245.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="bold">4-ethyl-2-methylhexane</text>
+</g>
+</svg>

@@ -1,0 +1,1023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/reaction-mechanisms-and-curly-arrows.html">
+<link rel="prev" href="acids-and-bases.html">
+<link rel="next" href="alkanes-and-conformations.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>5. Reaction Mechanisms and Curly Arrows - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#51-what-a-mechanism-is" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#51-what-a-mechanism-is" class="md-nav__link">
+<span class="md-ellipsis">
+5.1 What a mechanism is
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#52-breaking-bonds-homolysis-and-heterolysis" class="md-nav__link">
+<span class="md-ellipsis">
+5.2 Breaking bonds: homolysis and heterolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#53-nucleophiles-and-electrophiles" class="md-nav__link">
+<span class="md-ellipsis">
+5.3 Nucleophiles and electrophiles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#54-the-rules-for-curly-arrows" class="md-nav__link">
+<span class="md-ellipsis">
+5.4 The rules for curly arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#55-the-four-basic-patterns" class="md-nav__link">
+<span class="md-ellipsis">
+5.5 The four basic patterns
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#56-reactive-intermediates" class="md-nav__link">
+<span class="md-ellipsis">
+5.6 Reactive intermediates
+</span>
+</a>
+<nav class="md-nav" aria-label="5.6 Reactive intermediates">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#carbocations" class="md-nav__link">
+<span class="md-ellipsis">
+Carbocations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carbanions" class="md-nav__link">
+<span class="md-ellipsis">
+Carbanions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#radicals" class="md-nav__link">
+<span class="md-ellipsis">
+Radicals
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#57-energy-will-it-go-and-how-fast" class="md-nav__link">
+<span class="md-ellipsis">
+5.7 Energy: will it go, and how fast?
+</span>
+</a>
+<nav class="md-nav" aria-label="5.7 Energy: will it go, and how fast?">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#thermodynamics" class="md-nav__link">
+<span class="md-ellipsis">
+Thermodynamics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#kinetics-and-energy-profiles" class="md-nav__link">
+<span class="md-ellipsis">
+Kinetics and energy profiles
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#58-kinds-of-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+5.8 Kinds of reaction
+</span>
+</a>
+<nav class="md-nav" aria-label="5.8 Kinds of reaction">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#oxidation-and-reduction-in-organic-chemistry" class="md-nav__link">
+<span class="md-ellipsis">
+Oxidation and reduction in organic chemistry
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#59-summary" class="md-nav__link">
+<span class="md-ellipsis">
+5.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#510-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+5.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#511-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+5.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#51-what-a-mechanism-is" class="md-nav__link">
+<span class="md-ellipsis">
+5.1 What a mechanism is
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#52-breaking-bonds-homolysis-and-heterolysis" class="md-nav__link">
+<span class="md-ellipsis">
+5.2 Breaking bonds: homolysis and heterolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#53-nucleophiles-and-electrophiles" class="md-nav__link">
+<span class="md-ellipsis">
+5.3 Nucleophiles and electrophiles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#54-the-rules-for-curly-arrows" class="md-nav__link">
+<span class="md-ellipsis">
+5.4 The rules for curly arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#55-the-four-basic-patterns" class="md-nav__link">
+<span class="md-ellipsis">
+5.5 The four basic patterns
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#56-reactive-intermediates" class="md-nav__link">
+<span class="md-ellipsis">
+5.6 Reactive intermediates
+</span>
+</a>
+<nav class="md-nav" aria-label="5.6 Reactive intermediates">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#carbocations" class="md-nav__link">
+<span class="md-ellipsis">
+Carbocations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carbanions" class="md-nav__link">
+<span class="md-ellipsis">
+Carbanions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#radicals" class="md-nav__link">
+<span class="md-ellipsis">
+Radicals
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#57-energy-will-it-go-and-how-fast" class="md-nav__link">
+<span class="md-ellipsis">
+5.7 Energy: will it go, and how fast?
+</span>
+</a>
+<nav class="md-nav" aria-label="5.7 Energy: will it go, and how fast?">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#thermodynamics" class="md-nav__link">
+<span class="md-ellipsis">
+Thermodynamics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#kinetics-and-energy-profiles" class="md-nav__link">
+<span class="md-ellipsis">
+Kinetics and energy profiles
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#58-kinds-of-reaction" class="md-nav__link">
+<span class="md-ellipsis">
+5.8 Kinds of reaction
+</span>
+</a>
+<nav class="md-nav" aria-label="5.8 Kinds of reaction">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#oxidation-and-reduction-in-organic-chemistry" class="md-nav__link">
+<span class="md-ellipsis">
+Oxidation and reduction in organic chemistry
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#59-summary" class="md-nav__link">
+<span class="md-ellipsis">
+5.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#510-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+5.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#511-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+5.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-5-reaction-mechanisms-and-curly-arrows">Chapter 5: Reaction Mechanisms and Curly Arrows<a class="headerlink" href="#chapter-5-reaction-mechanisms-and-curly-arrows" title="Permanent link">&para;</a></h1>
+<p><em>How and why bonds break and form</em></p>
+<p>A balanced equation tells you what goes in and what comes out. A <strong>mechanism</strong> tells you how: which bonds break, which form, in what order, and through which short-lived species. Mechanisms are the grammar of organic chemistry. Once you can read and write them, the hundreds of reactions in this book reduce to a handful of patterns, and you can predict the products of reactions you have never met. This chapter introduces the language of mechanisms (nucleophiles, electrophiles and curly arrows), the reactive intermediates that appear in them, and the energy ideas that decide whether and how fast a reaction goes.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>distinguish homolytic and heterolytic bond cleavage and draw full and fish-hook arrows correctly;</li>
+<li>identify nucleophiles and electrophiles and the atoms through which they react;</li>
+<li>draw curly arrows following the rules, and check every structure for correct charges;</li>
+<li>recognise the four basic arrow patterns of polar mechanisms;</li>
+<li>rank the stability of carbocations, carbanions and radicals and explain the order;</li>
+<li>read a reaction energy profile, distinguishing transition states, intermediates and the rate-determining step;</li>
+<li>classify reactions as additions, eliminations, substitutions or rearrangements, and as oxidations or reductions.</li>
+</ul>
+</div>
+<h2 id="51-what-a-mechanism-is">5.1 What a mechanism is<a class="headerlink" href="#51-what-a-mechanism-is" title="Permanent link">&para;</a></h2>
+<p>A <strong>mechanism</strong> is a step-by-step description of a reaction at the level of electrons. Each step shows bonds breaking and forming, and the structures between steps are real species, however short-lived. A mechanism is a theory: it is proposed to explain the experimental facts (the products, the effect of changing the reactants, the rate, the stereochemistry) and it is accepted when it explains them all.</p>
+<p>Why bother? Because a mechanism is transferable. Learn how hydroxide reacts with bromomethane and you know how cyanide reacts with iodoethane, how water reacts with a tertiary bromide (by a different route, for reasons you will understand) and how an amine attacks an alkyl halide in a drug synthesis.</p>
+<h2 id="52-breaking-bonds-homolysis-and-heterolysis">5.2 Breaking bonds: homolysis and heterolysis<a class="headerlink" href="#52-breaking-bonds-homolysis-and-heterolysis" title="Permanent link">&para;</a></h2>
+<p>A covalent bond holds two electrons. When it breaks, those electrons can be shared out in two ways.</p>
+<ul>
+<li>In <strong>homolysis</strong> (homolytic cleavage) each atom takes one electron. The products are <strong>radicals</strong>, species with an unpaired electron, written with a dot: Cl•. Homolysis usually needs light or heat, and happens most easily for weak, non-polar bonds such as Cl–Cl, Br–Br and O–O.</li>
+<li>In <strong>heterolysis</strong> (heterolytic cleavage) one atom takes both electrons. The products are a cation and an anion. Heterolysis is favoured for polar bonds in polar solvents, where the ions are stabilised.</li>
+</ul>
+<p>The movement of a pair of electrons is drawn with a <strong>full-headed curly arrow</strong>. The movement of a single electron is drawn with a <strong>fish-hook arrow</strong> (half-headed).</p>
+<figure class="fig fig-diagram">
+<img src="img/homolysis-heterolysis.svg" alt="Homolysis and heterolysis. In homolysis of chlorine, two fish-hook arrows send one electron of the bond to each atom, giving two chlorine radicals. In heterolysis of a C–Br bond, one full curly arrow sends both electrons to bromine, giving a carbocation and a bromide ion." loading="lazy" width="760" height="190">
+<figcaption><strong>Figure 5.1 Homolysis and heterolysis.</strong> Homolysis and heterolysis. In homolysis of chlorine, two fish-hook arrows send one electron of the bond to each atom, giving two chlorine radicals. In heterolysis of a C–Br bond, one full curly arrow sends both electrons to bromine, giving a carbocation and a bromide ion.</figcaption>
+</figure>
+<p>Most reactions in this book are <strong>polar reactions</strong>, in which bonds break and form heterolytically and electron pairs move from electron-rich to electron-poor sites. <strong>Radical reactions</strong>, such as the chlorination of alkanes (Chapter 6) and many polymerisations (Chapter 15), form a second group. A third group, <strong>pericyclic reactions</strong>, in which bonds reorganise in a single cyclic step, is beyond a first course, apart from a mention in Chapter 7.</p>
+<h2 id="53-nucleophiles-and-electrophiles">5.3 Nucleophiles and electrophiles<a class="headerlink" href="#53-nucleophiles-and-electrophiles" title="Permanent link">&para;</a></h2>
+<p>Polar reactions happen between an electron-rich species and an electron-poor one.</p>
+<p>A <strong>nucleophile</strong> ("nucleus-loving") is a species with a pair of electrons that it can donate to form a new bond. It is a Lewis base. Nucleophiles have:</p>
+<ul>
+<li>a <strong>lone pair</strong>, often on a negatively charged atom: HO⁻, CH₃O⁻, CN⁻, Br⁻, I⁻, or on a neutral atom: H₂O, NH₃, CH₃OH;</li>
+<li>or a <strong>π bond</strong>: alkenes, alkynes and benzene rings donate their π electrons;</li>
+<li>or, more rarely, a polarised σ bond, as in the C–Mg bond of a Grignard reagent or the B–H bond of borohydride (Chapter 11).</li>
+</ul>
+<p>An <strong>electrophile</strong> ("electron-loving") is a species that can accept a pair of electrons to form a new bond. It is a Lewis acid. Electrophiles have:</p>
+<ul>
+<li>an <strong>empty orbital</strong>: H⁺, carbocations, BF₃, AlCl₃;</li>
+<li>or an atom made <strong>δ+ by a polar bond</strong>, usually with a group that can leave: the carbon of C–Br in a haloalkane, the carbon of C=O in a carbonyl group, the hydrogen of H–Br.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Almost every polar reaction step is a nucleophile giving a pair of electrons to an electrophile. When you meet a new reaction, first find the nucleophile (where are the most available electrons?) and the electrophile (where is the electron-poor atom?). The first curly arrow runs from one to the other.</p>
+</div>
+<p>The same species can be described as a base or a nucleophile depending on what it attacks. Hydroxide acting on a proton is a <strong>base</strong>; hydroxide acting on a carbon is a <strong>nucleophile</strong>. <strong>Basicity</strong> is a thermodynamic property (the position of an equilibrium with H⁺, measured by pKa), while <strong>nucleophilicity</strong> is a kinetic one (how fast the species attacks carbon). They usually run in parallel, but not always: iodide is a very weak base yet a good nucleophile, and the bulky <em>tert</em>-butoxide ion is a strong base but a poor nucleophile. These differences matter in Chapter 9.</p>
+<h2 id="54-the-rules-for-curly-arrows">5.4 The rules for curly arrows<a class="headerlink" href="#54-the-rules-for-curly-arrows" title="Permanent link">&para;</a></h2>
+<p>A curly arrow shows the movement of <strong>one pair of electrons</strong>. Follow these rules and your mechanisms will be correct in form, even before they are correct in chemistry:</p>
+<ol>
+<li><strong>The tail starts at the electrons</strong>: a lone pair, a negative charge or a bond (σ or π). Never start an arrow at an atom with no lone pair, at a positive charge, or at a hydrogen atom.</li>
+<li><strong>The head points to where the electrons go</strong>: to an atom (to become a lone pair) or to the space between two atoms (to become a new bond).</li>
+<li><strong>Arrows run from nucleophile to electrophile</strong>, from electron-rich to electron-poor.</li>
+<li><strong>Atoms never exceed their limits.</strong> If an arrow brings a new bond to an atom that already has a full octet (such as carbon with four bonds), another arrow must take a pair of electrons away from that atom in the same step.</li>
+<li><strong>Charge is conserved.</strong> The total charge on each side of every step must be the same.</li>
+<li><strong>Check formal charges after every step.</strong> An atom that gains a bond by donating a lone pair becomes more positive; an atom that receives a lone pair by losing a bond becomes more negative.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Caution: the commonest arrow errors</p>
+<ul>
+<li>Drawing an arrow from an H⁺ to a lone pair ("the proton attacks"). The arrow goes the other way: from the lone pair to the H.</li>
+<li>Making a five-bonded carbon. If a nucleophile adds to a saturated carbon, a bond to that carbon must break at the same time.</li>
+<li>Losing track of charges: a neutral water molecule that uses a lone pair to form a bond becomes H₂O⁺–R, a positively charged oxonium ion.</li>
+</ul>
+</div>
+<h2 id="55-the-four-basic-patterns">5.5 The four basic patterns<a class="headerlink" href="#55-the-four-basic-patterns" title="Permanent link">&para;</a></h2>
+<p>Polar mechanisms are built from a small set of steps. Learn to recognise these four and you can read almost any mechanism in the book.</p>
+<ol>
+<li><strong>Loss of a leaving group.</strong> A polar bond breaks heterolytically and the electronegative atom leaves with the electron pair. A good leaving group is a stable, weakly basic species: Br⁻, I⁻, Cl⁻, H₂O, a sulfonate ion.</li>
+<li><strong>Nucleophilic attack.</strong> A nucleophile donates a pair of electrons to an electrophilic atom, forming a new bond.</li>
+<li><strong>Proton transfer.</strong> A base removes a proton (Chapter 4). Proton transfers often start or finish a sequence, to make a better leaving group or to neutralise a charged product.</li>
+<li><strong>A π bond attacks an electrophile.</strong> The π electrons of an alkene or arene form a new σ bond to an electrophile, leaving a positive charge on the other carbon.</li>
+</ol>
+<p>A fifth pattern, <strong>rearrangement</strong>, moves a group from one atom to a neighbour, usually to turn a carbocation into a more stable one (Section 5.6).</p>
+<p>Several patterns can happen together in one step. In the SN2 reaction of Chapter 9, nucleophilic attack and loss of the leaving group occur simultaneously: one arrow from the nucleophile to the carbon, and one from the C–leaving group bond to the leaving group.</p>
+<figure class="fig fig-diagram">
+<img src="img/arrow-patterns.svg" alt="The four basic arrow patterns. (a) The C–Br bond of 2-bromo-2-methylpropane breaks with both electrons going to bromine. (b) A lone pair of water attacks the carbocation. (c) A second water molecule removes a proton from the oxonium ion. (d) The π electrons of ethene attack the hydrogen of H–Br, and the H–Br bonding pair leaves with bromine. Steps (a) to (c) together are the mechanism of a substitution reaction; step (d) is the first step of an addition reaction." loading="lazy" width="780" height="470">
+<figcaption><strong>Figure 5.2 The basic arrow patterns.</strong> The four basic arrow patterns. (a) The C–Br bond of 2-bromo-2-methylpropane breaks with both electrons going to bromine. (b) A lone pair of water attacks the carbocation. (c) A second water molecule removes a proton from the oxonium ion. (d) The π electrons of ethene attack the hydrogen of H–Br, and the H–Br bonding pair leaves with bromine. Steps (a) to (c) together are the mechanism of a substitution reaction; step (d) is the first step of an addition reaction.</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example 5.1: Reading a mechanism</p>
+<p>The reaction of 2-bromo-2-methylpropane with water gives 2-methylpropan-2-ol and HBr. The mechanism in Figure 5.2 (a), (b), (c) has three steps.</p>
+<p><strong>Step 1.</strong> The C–Br bond breaks heterolytically. Bromine, more electronegative, leaves as Br⁻; carbon, which has lost a bond and its share of the electrons, becomes a carbocation, (CH₃)₃C⁺. Charges: 0 → (+1) + (−1). Balanced.</p>
+<p><strong>Step 2.</strong> Water is the nucleophile (lone pair on O); the carbocation is the electrophile (empty p orbital). The arrow runs from the oxygen lone pair to the carbon. Oxygen now has three bonds and one lone pair, so it carries a +1 formal charge: (CH₃)₃C–OH₂⁺.</p>
+<p><strong>Step 3.</strong> A second water molecule acts as a base. Its lone pair takes a proton from the oxonium ion, and the O–H bonding pair returns to the oxygen, which becomes neutral. Products: (CH₃)₃COH and H₃O⁺.</p>
+<p>Overall: (CH₃)₃CBr + 2 H₂O → (CH₃)₃COH + H₃O⁺ + Br⁻, which is the stated equation with the HBr ionised in water.</p>
+</div>
+<h2 id="56-reactive-intermediates">5.6 Reactive intermediates<a class="headerlink" href="#56-reactive-intermediates" title="Permanent link">&para;</a></h2>
+<p>Many reactions pass through species that are too reactive to be isolated under normal conditions but live long enough to take part in later steps. These <strong>reactive intermediates</strong> are local energy minima on the path from reactants to products.</p>
+<h3 id="carbocations">Carbocations<a class="headerlink" href="#carbocations" title="Permanent link">&para;</a></h3>
+<p>A <strong>carbocation</strong> has a carbon with only three bonds and six valence electrons, carrying a positive charge. The carbon is sp² hybridised and trigonal planar, with an <strong>empty p orbital</strong> perpendicular to the plane. Carbocations are strong electrophiles.</p>
+<p>Their stability increases with the number of alkyl groups attached to the positive carbon:</p>
+<figure class="fig fig-diagram">
+<img src="img/carbocation-stability.svg" alt="The order of carbocation stability. Each alkyl group attached to the positive carbon donates electron density, through the inductive effect and through hyperconjugation, spreading the positive charge. A tertiary cation, with three alkyl groups, is much more stable than a methyl cation, which has none." loading="lazy" width="760" height="215">
+<figcaption><strong>Figure 5.3 Carbocation stability.</strong> The order of carbocation stability. Each alkyl group attached to the positive carbon donates electron density, through the inductive effect and through hyperconjugation, spreading the positive charge. A tertiary cation, with three alkyl groups, is much more stable than a methyl cation, which has none.</figcaption>
+</figure>
+<p>Two effects explain the order. Alkyl groups are weakly electron-donating by the <strong>inductive effect</strong>. More importantly, the electrons of C–H (and C–C) σ bonds on neighbouring carbons can overlap with the empty p orbital and spread the charge. This delocalisation of σ electrons is called <strong>hyperconjugation</strong>; the more neighbouring C–H bonds there are, the greater the stabilisation.</p>
+<p><strong>Resonance</strong> is even more powerful. A carbocation next to a C=C double bond (an <strong>allylic</strong> cation, CH₂=CH–CH₂⁺) or next to a benzene ring (a <strong>benzylic</strong> cation, C₆H₅CH₂⁺) shares its charge over several carbons. Even a primary allylic or benzylic cation is about as stable as a simple secondary cation. A neighbouring atom with a lone pair (O or N) stabilises a carbocation strongly by resonance as well: CH₃O–CH₂⁺ ↔ CH₃O⁺=CH₂.</p>
+<p>Because they are so eager to become more stable, carbocations can <strong>rearrange</strong>. A hydrogen (with its bonding pair, a <strong>hydride shift</strong>) or an alkyl group (a <strong>methyl shift</strong>) moves from a neighbouring carbon to the positive carbon, if this converts a less stable cation into a more stable one: for example, a secondary cation next to a tertiary carbon becomes a tertiary cation. Rearrangements explain some unexpected products in Chapters 7, 9 and 10.</p>
+<h3 id="carbanions">Carbanions<a class="headerlink" href="#carbanions" title="Permanent link">&para;</a></h3>
+<p>A <strong>carbanion</strong> has a carbon with three bonds and a lone pair, carrying a negative charge. Carbanions are strong bases and strong nucleophiles. Their stability follows the opposite order to carbocations, because alkyl groups donate electrons and destabilise a negative charge: methyl &gt; primary &gt; secondary &gt; tertiary. Like other anions, carbanions are stabilised by resonance (as in the <strong>enolate</strong> ions of Chapter 11, where the charge is shared with a carbonyl oxygen), by electronegative groups nearby and by greater s character (the ethynide ion, HC≡C⁻).</p>
+<h3 id="radicals">Radicals<a class="headerlink" href="#radicals" title="Permanent link">&para;</a></h3>
+<p>A carbon <strong>radical</strong> has three bonds and one unpaired electron, seven valence electrons in all. It is neutral but very reactive, because it needs one more electron to complete its octet. Radical stability follows the same order as carbocation stability, for similar reasons: tertiary &gt; secondary &gt; primary &gt; methyl, with allylic and benzylic radicals stabilised further by resonance. This order explains why radical bromination prefers tertiary C–H bonds (Chapter 6).</p>
+<table>
+<thead>
+<tr>
+<th>Intermediate</th>
+<th style="text-align: center;">Electrons on carbon</th>
+<th style="text-align: center;">Charge</th>
+<th>Shape</th>
+<th>Stabilised by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>carbocation</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">+</td>
+<td>trigonal planar (sp²)</td>
+<td>alkyl groups, resonance, adjacent lone pairs</td>
+</tr>
+<tr>
+<td>radical</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">0</td>
+<td>nearly planar</td>
+<td>alkyl groups, resonance</td>
+</tr>
+<tr>
+<td>carbanion</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">−</td>
+<td>pyramidal (sp³) unless conjugated</td>
+<td>resonance, electronegative groups, s character</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 5.1. The three carbon-centred reactive intermediates.</em></p>
+<h2 id="57-energy-will-it-go-and-how-fast">5.7 Energy: will it go, and how fast?<a class="headerlink" href="#57-energy-will-it-go-and-how-fast" title="Permanent link">&para;</a></h2>
+<p>Two separate questions decide the outcome of a reaction. <strong>Thermodynamics</strong> asks whether the products are more stable than the reactants: where does the equilibrium lie? <strong>Kinetics</strong> asks how fast equilibrium is reached. A reaction can be strongly favourable yet immeasurably slow; a mixture of methane and air can stand for years at room temperature until a spark supplies the energy to start it.</p>
+<h3 id="thermodynamics">Thermodynamics<a class="headerlink" href="#thermodynamics" title="Permanent link">&para;</a></h3>
+<p>The position of an equilibrium is set by the <strong>standard Gibbs energy change</strong>, <span class="arithmatex">\(\Delta G^\circ\)</span>:</p>
+<div class="arithmatex">\[
+\Delta G^\circ = \Delta H^\circ - T\Delta S^\circ = -RT \ln K
+\]</div>
+<p>A negative <span class="arithmatex">\(\Delta G^\circ\)</span> means that products are favoured (<span class="arithmatex">\(K &gt; 1\)</span>). At 298 K, every 5.7 kJ mol⁻¹ of <span class="arithmatex">\(\Delta G^\circ\)</span> changes <span class="arithmatex">\(K\)</span> by a factor of ten. In many organic reactions the entropy term is small and <span class="arithmatex">\(\Delta H\)</span> gives a good guide. <strong>Bond energies</strong> let you estimate <span class="arithmatex">\(\Delta H\)</span>: add the energies of the bonds broken and subtract those of the bonds formed.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 5.2: Estimating ΔH from bond energies</p>
+<p>For CH₄ + Cl₂ → CH₃Cl + HCl, using bond dissociation energies (kJ mol⁻¹): C–H in methane 439, Cl–Cl 242, C–Cl in CH₃Cl 350, H–Cl 431.</p>
+<p>Bonds broken: 439 + 242 = 681. Bonds formed: 350 + 431 = 781.</p>
+<p>ΔH = 681 − 781 = <strong>−100 kJ mol⁻¹</strong>. The reaction is strongly exothermic; yet methane and chlorine do not react in the dark at room temperature, because the first step (breaking a bond) has a high energy barrier. Light provides the energy to split Cl₂ into radicals and start the reaction (Chapter 6).</p>
+</div>
+<h3 id="kinetics-and-energy-profiles">Kinetics and energy profiles<a class="headerlink" href="#kinetics-and-energy-profiles" title="Permanent link">&para;</a></h3>
+<p>A <strong>reaction energy profile</strong> plots energy against the <strong>reaction coordinate</strong>, a measure of how far the reaction has progressed. Reactants must pass over an energy barrier to become products. The top of the barrier is the <strong>transition state</strong>, marked ‡: the arrangement of highest energy along the path, in which old bonds are partly broken and new bonds partly formed. A transition state lasts no longer than a single molecular vibration and cannot be isolated. The height of the barrier from the reactants is the <strong>activation energy</strong>, <span class="arithmatex">\(E_\mathrm{a}\)</span>. The larger <span class="arithmatex">\(E_\mathrm{a}\)</span>, the slower the reaction.</p>
+<figure class="fig fig-diagram">
+<img src="img/energy-profiles.svg" alt="Reaction energy profiles. (a) A one-step reaction passes through a single transition state; the activation energy is the height of the barrier and ΔH is the energy difference between products and reactants. (b) A two-step reaction passes through an intermediate, which sits in a shallow energy well between two transition states. The step with the highest transition state, here the first, is the rate-determining step." loading="lazy" width="780" height="335">
+<figcaption><strong>Figure 5.4 Reaction energy profiles.</strong> Reaction energy profiles. (a) A one-step reaction passes through a single transition state; the activation energy is the height of the barrier and ΔH is the energy difference between products and reactants. (b) A two-step reaction passes through an intermediate, which sits in a shallow energy well between two transition states. The step with the highest transition state, here the first, is the rate-determining step.</figcaption>
+</figure>
+<p>In a reaction of several steps, an <strong>intermediate</strong> lies in a dip between two transition states. It is a real species with a finite lifetime, and it can sometimes be detected or trapped. The overall rate is controlled by the step with the highest transition state, the <strong>rate-determining step</strong>. Only the species involved up to and including that step appear in the rate equation, which is one of the main experimental tests of a mechanism.</p>
+<p>Reaction rates increase with temperature, because a larger fraction of molecules then has enough energy to cross the barrier; as a rough rule of thumb, many reactions near room temperature go about two to three times faster for a 10 °C rise. A <strong>catalyst</strong> speeds up a reaction by providing a different path with a lower activation energy. It is not consumed, and it does not change the position of the equilibrium: it speeds up the forward and reverse reactions equally.</p>
+<p>The <strong>Hammond postulate</strong> links the two kinds of picture: a transition state resembles the species (reactant, intermediate or product) closest to it in energy. For an endothermic step that forms a carbocation, the transition state resembles the carbocation, so anything that stabilises the carbocation also lowers the barrier. This is why reactions that pass through more stable carbocations are faster.</p>
+<h2 id="58-kinds-of-reaction">5.8 Kinds of reaction<a class="headerlink" href="#58-kinds-of-reaction" title="Permanent link">&para;</a></h2>
+<p>Most organic reactions belong to one of four types:</p>
+<ul>
+<li><strong>Addition</strong>: two reactants combine into one product. Alkenes add HBr: CH₂=CH₂ + HBr → CH₃CH₂Br (Chapter 7). Carbonyl groups add nucleophiles (Chapter 11).</li>
+<li><strong>Elimination</strong>: one reactant splits into two products, usually forming a π bond. Bromoethane loses HBr with a strong base to form ethene (Chapter 9). Elimination is the reverse of addition.</li>
+<li><strong>Substitution</strong>: one group replaces another. Hydroxide replaces bromide: CH₃Br + OH⁻ → CH₃OH + Br⁻ (Chapter 9). Benzene undergoes substitution rather than addition (Chapter 8).</li>
+<li><strong>Rearrangement</strong>: the atoms of one molecule reorganise into a constitutional isomer.</li>
+</ul>
+<h3 id="oxidation-and-reduction-in-organic-chemistry">Oxidation and reduction in organic chemistry<a class="headerlink" href="#oxidation-and-reduction-in-organic-chemistry" title="Permanent link">&para;</a></h3>
+<p>In organic chemistry it is usually easier to judge oxidation and reduction by counting bonds than by electron transfer. A carbon is <strong>oxidised</strong> when it gains bonds to more electronegative atoms (O, N, halogens) or loses bonds to hydrogen; it is <strong>reduced</strong> when it gains bonds to hydrogen or loses bonds to electronegative atoms. The series</p>
+<div class="arithmatex">\[
+\mathrm{CH_4 \;\rightarrow\; CH_3OH \;\rightarrow\; H_2C{=}O \;\rightarrow\; HCOOH \;\rightarrow\; CO_2}
+\]</div>
+<p>is a sequence of increasing oxidation of carbon: zero, one, two, three and four bonds to oxygen. The addition of H₂ to an alkene is a reduction; the conversion of an alcohol into a ketone is an oxidation (Chapter 10).</p>
+<h2 id="59-summary">5.9 Summary<a class="headerlink" href="#59-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>A mechanism describes a reaction step by step in terms of electron movement.</li>
+<li>Homolysis gives radicals (fish-hook arrows); heterolysis gives ions (full arrows).</li>
+<li>Nucleophiles donate electron pairs (lone pairs, π bonds); electrophiles accept them (empty orbitals, δ+ atoms with leaving groups).</li>
+<li>A curly arrow moves one electron pair from its tail (lone pair or bond) to its head (atom or new bond). Never exceed an octet; conserve charge.</li>
+<li>Four basic patterns: loss of a leaving group, nucleophilic attack, proton transfer, and a π bond attacking an electrophile. Rearrangements are a fifth.</li>
+<li>Carbocation and radical stability: 3° &gt; 2° &gt; 1° &gt; methyl, increased further by resonance (allylic, benzylic). Carbanions follow the reverse order.</li>
+<li>ΔG° decides the position of equilibrium; the activation energy decides the rate. Intermediates sit in energy wells; transition states sit at energy maxima. The highest barrier is the rate-determining step.</li>
+<li>Reactions are additions, eliminations, substitutions or rearrangements. Gaining bonds to O, N or halogen is oxidation; gaining bonds to H is reduction.</li>
+</ul>
+</div>
+<h2 id="510-exercises">5.10 Exercises<a class="headerlink" href="#510-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Classify each species as a nucleophile, an electrophile or both: (a) CN⁻; (b) H₃O⁺; (c) CH₃CH₂⁺; (d) NH₃; (e) BF₃; (f) CH₂=CH₂; (g) the carbon of CH₃–Br; (h) H₂O.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Nucleophiles: (a) CN⁻, (d) NH₃, (f) ethene (through its π bond). Electrophiles: (b) H₃O⁺ (delivers H⁺), (c) the carbocation, (e) BF₃, (g) the δ+ carbon of bromomethane. (h) Water is a nucleophile through its oxygen lone pairs and a weak electrophile (as an acid) through its hydrogens; in most reactions it acts as a nucleophile or a base.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Find the error in each description and correct it. (a) "In the reaction of H–Cl with water, an arrow is drawn from H⁺ to the oxygen lone pair." (b) "Hydroxide adds to the carbon of bromomethane, giving a carbon with five bonds, which then loses bromide." (c) "Cl₂ splits in light: one curly arrow from the Cl–Cl bond to one chlorine."</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) The arrow must start at the electrons: from the oxygen lone pair to the H, with a second arrow from the H–Cl bond to Cl. (b) Carbon cannot have five bonds. The C–Br bond breaks as the O–C bond forms, in a single step: one arrow from the hydroxide lone pair to the carbon, and one from the C–Br bond to Br. (c) Homolysis is shown with two fish-hook arrows, one from the bond to each chlorine. A single full arrow would describe heterolysis into Cl⁺ and Cl⁻.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Draw the products and assign formal charges for each step: (a) the lone pair of ammonia attacks the carbon of the methyl cation, CH₃⁺; (b) the π bond of propene attacks H⁺ so that the new C–H bond forms at C1.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) CH₃–NH₃⁺: nitrogen now has four bonds and no lone pair, formal charge +1. Overall charge +1 is conserved.</p>
+<p>(b) The π electrons form a C–H bond to C1, so C1 becomes CH₃ and C2 loses its share of the π pair: CH₃–C⁺H–CH₃, the propan-2-yl (isopropyl) cation, a secondary carbocation. Total charge +1 is conserved.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Rank in order of increasing stability, and explain: (a) CH₃⁺, (CH₃)₂CH⁺, CH₃CH₂⁺, (CH₃)₃C⁺; (b) CH₃CH₂CH₂⁺ and CH₂=CHCH₂⁺.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) CH₃⁺ &lt; CH₃CH₂⁺ &lt; (CH₃)₂CH⁺ &lt; (CH₃)₃C⁺. Each additional alkyl group stabilises the positive carbon by hyperconjugation and by its weak inductive donation.</p>
+<p>(b) CH₃CH₂CH₂⁺ &lt; CH₂=CHCH₂⁺. The allylic cation is stabilised by resonance: the charge is shared between C1 and C3 (CH₂=CH–CH₂⁺ ↔ ⁺CH₂–CH=CH₂).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Use bond energies to estimate ΔH for the addition of HBr to ethene, CH₂=CH₂ + HBr → CH₃CH₂Br. Take: C=C 610, H–Br 366, C–C 350, C–H 410, C–Br 285 (all kJ mol⁻¹).</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The C=C becomes C–C, and one C–H and one C–Br bond are formed, while H–Br is broken. Bonds broken: C=C (610) + H–Br (366) = 976. Bonds formed: C–C (350) + C–H (410) + C–Br (285) = 1045. ΔH ≈ 976 − 1045 = <strong>−69 kJ mol⁻¹</strong>. Additions to alkenes are usually exothermic, because a π bond and a σ bond are replaced by two stronger σ bonds.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>On an energy profile for a two-step reaction in which the second transition state is higher than the first: (a) which step is rate-determining? (b) Where is the intermediate? (c) If the overall reaction is exothermic, are the products above or below the reactants?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) The second step, because its transition state is the highest point on the profile. (b) In the energy well between the two transition states. (c) Below the reactants.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Classify each change as oxidation, reduction or neither for the carbon shown in bold: (a) CH₃<strong>C</strong>H₂OH → CH₃<strong>C</strong>HO; (b) CH₂=CH₂ + H₂ → CH₃CH₃; (c) CH₃<strong>C</strong>H₂Br → CH₃<strong>C</strong>H₂OH; (d) CH₃<strong>C</strong>OCH₃ → CH₃<strong>C</strong>H(OH)CH₃.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Oxidation: the carbon loses a C–H bond and gains a second bond to oxygen. (b) Reduction: each carbon gains a bond to H. (c) Neither: one bond to an electronegative atom (Br) is replaced by another (O). (d) Reduction: the carbon gains a C–H bond and loses one of its two bonds to oxygen.</p>
+</details>
+<h2 id="511-quiz">5.11 Quiz<a class="headerlink" href="#511-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="d6a00dc2d7f6">
+<p class="pk-quiz-title">Check your understanding of mechanisms</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a pair of electrons&quot;,&quot;a single electron&quot;,&quot;a proton&quot;,&quot;a whole atom&quot;],&quot;answer&quot;:&quot;a single electron&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">A fish-hook (half-headed) arrow shows the movement of</p>
+<ol class="pk-q-opts" type="A"><li>a pair of electrons</li><li>a single electron</li><li>a proton</li><li>a whole atom</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a single electron</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;CH₃O⁻&quot;,&quot;NH₃&quot;,&quot;BF₃&quot;,&quot;CH₂=CH₂&quot;],&quot;answer&quot;:&quot;BF₃&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Which is NOT a nucleophile?</p>
+<ol class="pk-q-opts" type="A"><li>CH₃O⁻</li><li>NH₃</li><li>BF₃</li><li>CH₂=CH₂</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>BF₃</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a positive charge&quot;,&quot;a hydrogen atom&quot;,&quot;a lone pair or a bond&quot;,&quot;an empty orbital&quot;],&quot;answer&quot;:&quot;a lone pair or a bond&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">The tail of a curly arrow must start at</p>
+<ol class="pk-q-opts" type="A"><li>a positive charge</li><li>a hydrogen atom</li><li>a lone pair or a bond</li><li>an empty orbital</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a lone pair or a bond</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;CH₃⁺&quot;,&quot;CH₃CH₂⁺&quot;,&quot;(CH₃)₂CH⁺&quot;,&quot;(CH₃)₃C⁺&quot;],&quot;answer&quot;:&quot;(CH₃)₃C⁺&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which carbocation is the most stable?</p>
+<ol class="pk-q-opts" type="A"><li>CH₃⁺</li><li>CH₃CH₂⁺</li><li>(CH₃)₂CH⁺</li><li>(CH₃)₃C⁺</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>(CH₃)₃C⁺</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;that comes first&quot;,&quot;with the highest-energy transition state&quot;,&quot;that releases the most energy&quot;,&quot;that forms the products&quot;],&quot;answer&quot;:&quot;with the highest-energy transition state&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">The rate-determining step of a multistep reaction is the step</p>
+<ol class="pk-q-opts" type="A"><li>that comes first</li><li>with the highest-energy transition state</li><li>that releases the most energy</li><li>that forms the products</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>with the highest-energy transition state</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;shifts the equilibrium towards products&quot;,&quot;lowers the activation energy&quot;,&quot;raises ΔG&quot;,&quot;is used up in the reaction&quot;],&quot;answer&quot;:&quot;lowers the activation energy&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">A catalyst</p>
+<ol class="pk-q-opts" type="A"><li>shifts the equilibrium towards products</li><li>lowers the activation energy</li><li>raises ΔG</li><li>is used up in the reaction</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>lowers the activation energy</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;match&quot;,&quot;pairs&quot;:[[&quot;CH₂=CH₂ + Br₂ → BrCH₂CH₂Br&quot;,&quot;addition&quot;],[&quot;CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻&quot;,&quot;substitution&quot;],[&quot;CH₃CH₂Br → CH₂=CH₂ + HBr&quot;,&quot;elimination&quot;]]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Match each reaction to its type.</p>
+<table class="pk-q-match"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>CH₂=CH₂ + Br₂ → BrCH₂CH₂Br</td><td>substitution</td></tr><tr><td>CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻</td><td>elimination</td></tr><tr><td>CH₃CH₂Br → CH₂=CH₂ + HBr</td><td>addition</td></tr></tbody></table>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>CH₂=CH₂ + Br₂ → BrCH₂CH₂Br</strong> — addition; <strong>CH₃CH₂Br + OH⁻ → CH₃CH₂OH + Br⁻</strong> — substitution; <strong>CH₃CH₂Br → CH₂=CH₂ + HBr</strong> — elimination</p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="acids-and-bases.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Acids and Bases in Organic Chemistry">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</div>
+</div>
+</a>
+<a href="alkanes-and-conformations.html" class="md-footer__link md-footer__link--next" aria-label="Next: 6. Alkanes and Conformations">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+6. Alkanes and Conformations
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

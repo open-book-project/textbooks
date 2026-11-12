@@ -1,0 +1,1092 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/alkanes-and-conformations.html">
+<link rel="prev" href="reaction-mechanisms-and-curly-arrows.html">
+<link rel="next" href="alkenes-and-alkynes.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>6. Alkanes and Conformations - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#61-alkanes-structure-sources-and-properties" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="alkanes-and-conformations.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#61-alkanes-structure-sources-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+6.1 Alkanes: structure, sources and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="6.1 Alkanes: structure, sources and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+Physical properties
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#62-conformations-of-ethane" class="md-nav__link">
+<span class="md-ellipsis">
+6.2 Conformations of ethane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#63-conformations-of-butane" class="md-nav__link">
+<span class="md-ellipsis">
+6.3 Conformations of butane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#64-cycloalkanes-and-ring-strain" class="md-nav__link">
+<span class="md-ellipsis">
+6.4 Cycloalkanes and ring strain
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#65-the-chair-conformation-of-cyclohexane" class="md-nav__link">
+<span class="md-ellipsis">
+6.5 The chair conformation of cyclohexane
+</span>
+</a>
+<nav class="md-nav" aria-label="6.5 The chair conformation of cyclohexane">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#axial-and-equatorial-positions" class="md-nav__link">
+<span class="md-ellipsis">
+Axial and equatorial positions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ring-flipping" class="md-nav__link">
+<span class="md-ellipsis">
+Ring flipping
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#substituted-cyclohexanes" class="md-nav__link">
+<span class="md-ellipsis">
+Substituted cyclohexanes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#66-reactions-of-alkanes" class="md-nav__link">
+<span class="md-ellipsis">
+6.6 Reactions of alkanes
+</span>
+</a>
+<nav class="md-nav" aria-label="6.6 Reactions of alkanes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#combustion" class="md-nav__link">
+<span class="md-ellipsis">
+Combustion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#radical-halogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Radical halogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#selectivity-chlorination-versus-bromination" class="md-nav__link">
+<span class="md-ellipsis">
+Selectivity: chlorination versus bromination
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#67-summary" class="md-nav__link">
+<span class="md-ellipsis">
+6.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#68-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+6.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#69-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+6.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#61-alkanes-structure-sources-and-properties" class="md-nav__link">
+<span class="md-ellipsis">
+6.1 Alkanes: structure, sources and properties
+</span>
+</a>
+<nav class="md-nav" aria-label="6.1 Alkanes: structure, sources and properties">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#physical-properties" class="md-nav__link">
+<span class="md-ellipsis">
+Physical properties
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#62-conformations-of-ethane" class="md-nav__link">
+<span class="md-ellipsis">
+6.2 Conformations of ethane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#63-conformations-of-butane" class="md-nav__link">
+<span class="md-ellipsis">
+6.3 Conformations of butane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#64-cycloalkanes-and-ring-strain" class="md-nav__link">
+<span class="md-ellipsis">
+6.4 Cycloalkanes and ring strain
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#65-the-chair-conformation-of-cyclohexane" class="md-nav__link">
+<span class="md-ellipsis">
+6.5 The chair conformation of cyclohexane
+</span>
+</a>
+<nav class="md-nav" aria-label="6.5 The chair conformation of cyclohexane">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#axial-and-equatorial-positions" class="md-nav__link">
+<span class="md-ellipsis">
+Axial and equatorial positions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ring-flipping" class="md-nav__link">
+<span class="md-ellipsis">
+Ring flipping
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#substituted-cyclohexanes" class="md-nav__link">
+<span class="md-ellipsis">
+Substituted cyclohexanes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#66-reactions-of-alkanes" class="md-nav__link">
+<span class="md-ellipsis">
+6.6 Reactions of alkanes
+</span>
+</a>
+<nav class="md-nav" aria-label="6.6 Reactions of alkanes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#combustion" class="md-nav__link">
+<span class="md-ellipsis">
+Combustion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#radical-halogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Radical halogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#selectivity-chlorination-versus-bromination" class="md-nav__link">
+<span class="md-ellipsis">
+Selectivity: chlorination versus bromination
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#67-summary" class="md-nav__link">
+<span class="md-ellipsis">
+6.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#68-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+6.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#69-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+6.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-6-alkanes-and-conformations">Chapter 6: Alkanes and Conformations<a class="headerlink" href="#chapter-6-alkanes-and-conformations" title="Permanent link">&para;</a></h1>
+<p><em>Saturated hydrocarbons, their shapes and their radical reactions</em></p>
+<p>Alkanes are the simplest organic compounds: only carbon and hydrogen, joined by single bonds. They make up natural gas and most of petroleum, and they are the hydrocarbon backbone on which the functional groups of later chapters sit. Alkanes are not very reactive, but they are far from dull. Rotation about their single bonds gives them shapes, called conformations, whose energies explain much about the behaviour of larger molecules, and the chair shape of cyclohexane is one of the most important structures in chemistry and biology. This chapter covers the properties and sources of alkanes, the conformations of chains and rings, and the two reactions alkanes do undergo: combustion and radical halogenation.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>relate the physical properties of alkanes to their size and shape;</li>
+<li>draw Newman projections and explain the energy differences between staggered and eclipsed conformations;</li>
+<li>describe the conformations of butane and the origin of torsional and steric strain;</li>
+<li>explain ring strain in small rings and the absence of strain in the cyclohexane chair;</li>
+<li>draw the chair conformation of cyclohexane with axial and equatorial bonds, and predict the preferred conformation of substituted cyclohexanes;</li>
+<li>write the radical chain mechanism for the halogenation of an alkane and predict product ratios from relative reactivities.</li>
+</ul>
+</div>
+<h2 id="61-alkanes-structure-sources-and-properties">6.1 Alkanes: structure, sources and properties<a class="headerlink" href="#61-alkanes-structure-sources-and-properties" title="Permanent link">&para;</a></h2>
+<p>Alkanes are <strong>saturated hydrocarbons</strong>: each carbon is sp³ hybridised and bonded to four other atoms by single bonds, the most hydrogen a carbon skeleton can carry. Open-chain alkanes have the formula CₙH₂ₙ₊₂; cycloalkanes with one ring have CₙH₂ₙ. Members of a series that differ by one CH₂ unit form a <strong>homologous series</strong>, with gradually changing physical properties and very similar chemistry.</p>
+<p>The main source of alkanes is <strong>petroleum</strong> (crude oil) and natural gas. Natural gas is mostly methane, with some ethane, propane and butane. Crude oil is a complex mixture separated in a refinery by <strong>fractional distillation</strong> into fractions of different boiling ranges: gases (C₁ to C₄), petrol or gasoline (roughly C₅ to C₁₀), kerosene, diesel and fuel oils, and the residue used for lubricants and bitumen. Larger molecules are broken into smaller, more useful ones by <strong>cracking</strong>, which also produces the alkenes used to make polymers (Chapter 15).</p>
+<h3 id="physical-properties">Physical properties<a class="headerlink" href="#physical-properties" title="Permanent link">&para;</a></h3>
+<p>Alkanes are non-polar. The only forces between their molecules are London dispersion forces (Section 1.8), so:</p>
+<ul>
+<li><strong>Boiling points rise with chain length</strong>, roughly 20 to 30 °C for each extra CH₂ in the middle of the series. At room temperature, C₁ to C₄ are gases, C₅ to about C₁₇ are liquids, and larger alkanes are waxy solids.</li>
+<li><strong>Branching lowers the boiling point</strong>, because a compact, nearly spherical molecule has less surface in contact with its neighbours. Pentane boils at 36 °C, 2-methylbutane at 28 °C and 2,2-dimethylpropane at about 10 °C.</li>
+<li><strong>Alkanes are insoluble in water</strong> and less dense than water, which is why oil floats on the sea. They dissolve in other non-polar solvents and are themselves used as solvents (hexane, heptane).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Alkane</th>
+<th>Formula</th>
+<th style="text-align: center;">Boiling point (°C)</th>
+<th>State at 25 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>methane</td>
+<td>CH₄</td>
+<td style="text-align: center;">−162</td>
+<td>gas</td>
+</tr>
+<tr>
+<td>ethane</td>
+<td>C₂H₆</td>
+<td style="text-align: center;">−89</td>
+<td>gas</td>
+</tr>
+<tr>
+<td>propane</td>
+<td>C₃H₈</td>
+<td style="text-align: center;">−42</td>
+<td>gas</td>
+</tr>
+<tr>
+<td>butane</td>
+<td>C₄H₁₀</td>
+<td style="text-align: center;">−1</td>
+<td>gas</td>
+</tr>
+<tr>
+<td>pentane</td>
+<td>C₅H₁₂</td>
+<td style="text-align: center;">36</td>
+<td>liquid</td>
+</tr>
+<tr>
+<td>hexane</td>
+<td>C₆H₁₄</td>
+<td style="text-align: center;">69</td>
+<td>liquid</td>
+</tr>
+<tr>
+<td>octane</td>
+<td>C₈H₁₈</td>
+<td style="text-align: center;">126</td>
+<td>liquid</td>
+</tr>
+<tr>
+<td>decane</td>
+<td>C₁₀H₂₂</td>
+<td style="text-align: center;">174</td>
+<td>liquid</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 6.1. Boiling points of some unbranched alkanes.</em></p>
+<h2 id="62-conformations-of-ethane">6.2 Conformations of ethane<a class="headerlink" href="#62-conformations-of-ethane" title="Permanent link">&para;</a></h2>
+<p>Rotation about a C–C single bond is easy (Section 1.5). As one methyl group of ethane turns relative to the other, the molecule passes through an infinite number of shapes. These shapes, which interconvert by rotation about single bonds without breaking any bond, are <strong>conformations</strong> (or conformers).</p>
+<p>The best way to see them is a <strong>Newman projection</strong>: look straight down the C–C bond. The front carbon is a point where three bonds meet; the back carbon is a circle, with its three bonds coming out from behind the edge.</p>
+<figure class="fig fig-diagram">
+<img src="img/newman-ethane.svg" alt="Newman projections of ethane. In the staggered conformation (left) the C–H bonds on the back carbon lie exactly between those on the front carbon, 60° apart. In the eclipsed conformation (right) each back C–H bond lies behind a front C–H bond; it is drawn slightly offset so that both can be seen." loading="lazy" width="760" height="230">
+<figcaption><strong>Figure 6.1 Staggered and eclipsed ethane.</strong> Newman projections of ethane. In the staggered conformation (left) the C–H bonds on the back carbon lie exactly between those on the front carbon, 60° apart. In the eclipsed conformation (right) each back C–H bond lies behind a front C–H bond; it is drawn slightly offset so that both can be seen.</figcaption>
+</figure>
+<p>Two conformations are special:</p>
+<ul>
+<li>In the <strong>staggered</strong> conformation the C–H bonds on the two carbons are as far apart as possible, with a dihedral angle of 60° between neighbouring bonds on the front and back carbons. This is the conformation of lowest energy.</li>
+<li>In the <strong>eclipsed</strong> conformation each C–H bond on the back carbon lies directly behind one on the front, with a dihedral angle of 0°. This is the conformation of highest energy.</li>
+</ul>
+<p>The eclipsed conformation is about <strong>12 kJ mol⁻¹</strong> higher in energy than the staggered one. The extra energy is called <strong>torsional strain</strong>. It comes mainly from the repulsion between the electron pairs of bonds that are lined up with each other, and partly from the loss of a favourable interaction between filled C–H bonding orbitals and empty antibonding orbitals that is possible only in the staggered arrangement. A barrier of 12 kJ mol⁻¹ is small compared with the thermal energy available at room temperature: ethane rotates through its conformations many millions of times each second. At any instant most molecules are close to the staggered conformation.</p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Conformations are not isomers. They interconvert rapidly at room temperature and cannot be separated. But the populations of conformations, and the energy differences between them, control the shapes of molecules and often the outcome of their reactions.</p>
+</div>
+<h2 id="63-conformations-of-butane">6.3 Conformations of butane<a class="headerlink" href="#63-conformations-of-butane" title="Permanent link">&para;</a></h2>
+<p>Butane has a more interesting energy profile, because the groups on C2 and C3 are not all the same. Looking along the C2–C3 bond, each carbon carries one methyl group and two hydrogens. The key conformations are named by the dihedral angle between the two methyl groups:</p>
+<ul>
+<li><strong>Anti</strong> (180°): the methyl groups are as far apart as possible. This is the most stable conformation.</li>
+<li><strong>Gauche</strong> (60°): the methyl groups are staggered but next to each other. They are close enough to crowd each other, raising the energy by about <strong>3.8 kJ mol⁻¹</strong>. This repulsion between groups that are forced too close together is called <strong>steric strain</strong>.</li>
+<li><strong>Eclipsed, CH₃ with H</strong> (120°): about 16 kJ mol⁻¹ above anti, from torsional strain plus some steric strain.</li>
+<li><strong>Fully eclipsed, CH₃ with CH₃</strong> (0°): the highest point, about 19 kJ mol⁻¹ above anti, from torsional strain and severe steric strain between the methyl groups.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/butane-energy.svg" alt="The energy of butane as a function of the dihedral angle between its two methyl groups. The minima are the anti conformation at 180° and the two gauche conformations at 60° and 300°. The maxima are eclipsed conformations; the highest, at 0°, has the two methyl groups eclipsing each other." loading="lazy" width="780" height="330">
+<figcaption><strong>Figure 6.2 Conformational energy of butane.</strong> The energy of butane as a function of the dihedral angle between its two methyl groups. The minima are the anti conformation at 180° and the two gauche conformations at 60° and 300°. The maxima are eclipsed conformations; the highest, at 0°, has the two methyl groups eclipsing each other.</figcaption>
+</figure>
+<p>At room temperature about two-thirds of butane molecules are anti and one-third gauche. For longer chains, the preference for anti arrangements is why unbranched alkane chains in crystals and in the hydrocarbon tails of fats adopt the extended zigzag shape that we draw in skeletal formulas.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 6.1: The energy of a conformation</p>
+<p>Using these approximate costs: H/H eclipsing 4.0 kJ mol⁻¹, CH₃/H eclipsing 6.0 kJ mol⁻¹, CH₃/CH₃ eclipsing 11 kJ mol⁻¹, and gauche CH₃/CH₃ 3.8 kJ mol⁻¹, estimate the energy of the two eclipsed conformations of butane relative to anti.</p>
+<p><strong>At 120°</strong>, the eclipsed pairs are CH₃/H, CH₃/H and H/H: 6.0 + 6.0 + 4.0 = <strong>16 kJ mol⁻¹</strong>.</p>
+<p><strong>At 0°</strong>, the pairs are CH₃/CH₃, H/H and H/H: 11 + 4.0 + 4.0 = <strong>19 kJ mol⁻¹</strong>.</p>
+<p>Both agree with Figure 6.2. The same bookkeeping (adding up the cost of each interaction) is used to estimate the energies of more complicated conformations.</p>
+</div>
+<h2 id="64-cycloalkanes-and-ring-strain">6.4 Cycloalkanes and ring strain<a class="headerlink" href="#64-cycloalkanes-and-ring-strain" title="Permanent link">&para;</a></h2>
+<p>In a ring, the carbon atoms cannot rotate freely, and the C–C–C bond angles are constrained by the ring size. A flat ring with <span class="arithmatex">\(n\)</span> atoms would have internal angles of 60° (cyclopropane), 90° (cyclobutane), 108° (cyclopentane) and 120° (cyclohexane). Since sp³ carbon prefers 109.5°, small rings suffer <strong>angle strain</strong>. Rings also suffer torsional strain if their C–H bonds are forced to eclipse.</p>
+<p>The total <strong>ring strain</strong> can be measured from heats of combustion. Each CH₂ group in a strain-free chain releases about 659 kJ mol⁻¹ when burned; any extra energy released per CH₂ by a ring compound is strain energy that is released when the ring is destroyed.</p>
+<table>
+<thead>
+<tr>
+<th>Cycloalkane</th>
+<th style="text-align: center;">Heat of combustion per CH₂ (kJ mol⁻¹)</th>
+<th style="text-align: center;">Total strain energy (kJ mol⁻¹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cyclopropane</td>
+<td style="text-align: center;">697</td>
+<td style="text-align: center;">about 115</td>
+</tr>
+<tr>
+<td>cyclobutane</td>
+<td style="text-align: center;">686</td>
+<td style="text-align: center;">about 110</td>
+</tr>
+<tr>
+<td>cyclopentane</td>
+<td style="text-align: center;">664</td>
+<td style="text-align: center;">about 26</td>
+</tr>
+<tr>
+<td>cyclohexane</td>
+<td style="text-align: center;">659</td>
+<td style="text-align: center;">about 0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 6.2. Ring strain from heats of combustion.</em></p>
+<ul>
+<li><strong>Cyclopropane</strong> must be flat, with 60° angles and all its C–H bonds eclipsed. Its C–C bonds are bent, with poor orbital overlap, and they are weak: cyclopropane opens more easily than other alkanes.</li>
+<li><strong>Cyclobutane</strong> puckers slightly (one carbon bends out of the plane), which relieves some torsional strain at the cost of a little more angle strain.</li>
+<li><strong>Cyclopentane</strong> adopts an <strong>envelope</strong> shape, with one carbon out of the plane, and has little strain.</li>
+<li><strong>Cyclohexane</strong> is essentially strain-free, because it is not flat at all.</li>
+</ul>
+<h2 id="65-the-chair-conformation-of-cyclohexane">6.5 The chair conformation of cyclohexane<a class="headerlink" href="#65-the-chair-conformation-of-cyclohexane" title="Permanent link">&para;</a></h2>
+<p>Cyclohexane adopts a puckered <strong>chair</strong> conformation, so called for its resemblance to a reclining chair. In the chair every C–C–C angle is close to the tetrahedral 109.5°, and every C–H bond is perfectly staggered with its neighbours. The chair therefore has neither angle strain nor torsional strain. Six-membered rings are extremely common in nature, in sugars, steroids and many drugs, partly for this reason.</p>
+<h3 id="axial-and-equatorial-positions">Axial and equatorial positions<a class="headerlink" href="#axial-and-equatorial-positions" title="Permanent link">&para;</a></h3>
+<p>Each carbon of the chair has two hydrogens, which point in different directions:</p>
+<ul>
+<li>One is <strong>axial</strong>: parallel to the axis of the ring, pointing straight up or straight down. The axial positions alternate up and down around the ring.</li>
+<li>The other is <strong>equatorial</strong>: pointing outwards from the ring, roughly along its "equator", slightly up on carbons whose axial bond points down and slightly down on carbons whose axial bond points up.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/cyclohexane-chair.svg" alt="The chair conformation of cyclohexane. The six axial bonds (red) are vertical, alternately up and down. The six equatorial bonds (blue) point outwards; each equatorial bond is parallel to the two ring bonds that are one bond away from it." loading="lazy" width="760" height="250">
+<figcaption><strong>Figure 6.3 Axial and equatorial bonds.</strong> The chair conformation of cyclohexane. The six axial bonds (red) are vertical, alternately up and down. The six equatorial bonds (blue) point outwards; each equatorial bond is parallel to the two ring bonds that are one bond away from it.</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">How to draw a chair</p>
+<ol>
+<li>Draw two parallel lines sloping slightly downwards, offset from each other.</li>
+<li>Join their ends to make the two tips: the left tip pointing down, the right tip pointing up.</li>
+<li>Draw the axial bonds vertically: up at the "up" carbons (the right tip and every second carbon from it), down at the others.</li>
+<li>Draw each equatorial bond parallel to the ring bonds one bond away, pointing outwards.</li>
+</ol>
+<p>Practise until you can draw a neat chair in ten seconds; it is worth it.</p>
+</div>
+<h3 id="ring-flipping">Ring flipping<a class="headerlink" href="#ring-flipping" title="Permanent link">&para;</a></h3>
+<p>The chair is not rigid. By rotating about its C–C bonds, it can turn into a second chair, passing through higher-energy shapes on the way (the half-chair and the twist-boat; the <strong>boat</strong> conformation, about 30 kJ mol⁻¹ above the chair, suffers eclipsing along its sides and crowding between the two "flagpole" hydrogens). This <strong>ring flip</strong> has a barrier of about 45 kJ mol⁻¹ and happens roughly a hundred thousand times a second at room temperature. In a ring flip, <strong>every axial position becomes equatorial and every equatorial position becomes axial</strong>, while up stays up and down stays down.</p>
+<h3 id="substituted-cyclohexanes">Substituted cyclohexanes<a class="headerlink" href="#substituted-cyclohexanes" title="Permanent link">&para;</a></h3>
+<p>In cyclohexane itself the two chairs are identical. In a substituted cyclohexane they are not. In methylcyclohexane, one chair has the methyl group axial and the other has it equatorial.</p>
+<figure class="fig fig-diagram">
+<img src="img/methylcyclohexane-flip.svg" alt="The ring flip of methylcyclohexane. In the axial conformer the methyl group is close to the two axial hydrogens on the same side of the ring, three carbons away (red), an unfavourable 1,3-diaxial interaction. In the equatorial conformer the methyl group points away from the ring and has no such interaction, so this conformer is preferred, by about 7 kJ mol⁻¹." loading="lazy" width="760" height="250">
+<figcaption><strong>Figure 6.4 Axial and equatorial methylcyclohexane.</strong> The ring flip of methylcyclohexane. In the axial conformer the methyl group is close to the two axial hydrogens on the same side of the ring, three carbons away (red), an unfavourable 1,3-diaxial interaction. In the equatorial conformer the methyl group points away from the ring and has no such interaction, so this conformer is preferred, by about 7 kJ mol⁻¹.</figcaption>
+</figure>
+<p>An axial substituent is crowded by the two axial hydrogens on the same face of the ring, on carbons 3 and 5 relative to it. These <strong>1,3-diaxial interactions</strong> are the same kind of steric strain as the gauche interaction in butane. For a methyl group the equatorial conformer is favoured by about 7.3 kJ mol⁻¹, enough for about 95% of methylcyclohexane molecules to have the methyl group equatorial at room temperature. Larger groups have larger preferences. A <em>tert</em>-butyl group is so strongly equatorial that it effectively locks the ring in one chair.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 6.2: The more stable conformation of a disubstituted cyclohexane</p>
+<p>Which is more stable, <em>cis</em>- or <em>trans</em>-1,4-dimethylcyclohexane? Draw the preferred chair of each.</p>
+<p>In the chair, C1 and C4 are carbons of opposite type: if C1 has its axial bond pointing down, C4 has its axial bond pointing up. An equatorial bond points slightly to the face opposite its carbon's axial bond, so the two equatorial bonds at C1 and C4 point to opposite faces. Hence a <em>trans</em> arrangement allows both groups to be equatorial, while a <em>cis</em> arrangement forces one group axial and one equatorial.</p>
+<ul>
+<li><em>trans</em>: one chair is diequatorial, the other diaxial. The diequatorial chair is strongly preferred.</li>
+<li><em>cis</em>: both chairs have one axial and one equatorial methyl; they are equal in energy.</li>
+</ul>
+<p>So <strong>trans-1,4-dimethylcyclohexane is more stable</strong>, by roughly the cost of one axial methyl group (about 7 kJ mol⁻¹).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Caution: cis/trans is not axial/equatorial</p>
+<p><em>Cis</em> and <em>trans</em> describe whether two groups are on the same face or opposite faces of the ring; they never change. Axial and equatorial describe positions in one particular chair; they swap on ring flipping. Whether a <em>cis</em> compound can be diequatorial depends on the positions: for 1,2 and 1,4 substitution <em>trans</em> can be diequatorial, but for 1,3 substitution it is the <em>cis</em> isomer that can be diequatorial.</p>
+</div>
+<h2 id="66-reactions-of-alkanes">6.6 Reactions of alkanes<a class="headerlink" href="#66-reactions-of-alkanes" title="Permanent link">&para;</a></h2>
+<p>Alkanes are sometimes called paraffins, from the Latin for "little affinity". They do not react with acids, bases, most oxidising agents or nucleophiles at room temperature, because their C–C and C–H bonds are strong and nearly non-polar, offering no site for polar attack. They have two important reactions.</p>
+<h3 id="combustion">Combustion<a class="headerlink" href="#combustion" title="Permanent link">&para;</a></h3>
+<p>Alkanes burn in excess oxygen to give carbon dioxide and water, releasing a great deal of energy:</p>
+<div class="arithmatex">\[
+\mathrm{CH_4 + 2\,O_2 \rightarrow CO_2 + 2\,H_2O} \qquad \Delta H^\circ \approx -890\ \mathrm{kJ\,mol^{-1}}
+\]</div>
+<p>This is why alkanes are our main fuels. In a limited supply of oxygen, combustion is incomplete and produces carbon monoxide, a toxic gas, and soot (carbon). Combustion of fossil fuels is also the main source of the carbon dioxide that is driving climate change, a point taken up in Chapter 16.</p>
+<h3 id="radical-halogenation">Radical halogenation<a class="headerlink" href="#radical-halogenation" title="Permanent link">&para;</a></h3>
+<p>When a mixture of an alkane and chlorine or bromine is exposed to ultraviolet light or heated, a hydrogen is replaced by a halogen:</p>
+<div class="arithmatex">\[
+\mathrm{CH_4 + Cl_2 \xrightarrow{\ h\nu\ } CH_3Cl + HCl}
+\]</div>
+<p>The reaction does not occur in the dark at room temperature. It goes by a <strong>radical chain mechanism</strong> with three stages.</p>
+<p><strong>Initiation.</strong> Light splits a chlorine molecule homolytically (the Cl–Cl bond, 242 kJ mol⁻¹, is much weaker than C–H):</p>
+<ul>
+<li>Cl–Cl → 2 Cl•</li>
+</ul>
+<p><strong>Propagation.</strong> Two steps repeat in a cycle. Each consumes one radical and produces another, so a single initiation can lead to thousands of product molecules:</p>
+<ul>
+<li>Cl• + H–CH₃ → H–Cl + •CH₃</li>
+<li>•CH₃ + Cl–Cl → CH₃–Cl + Cl•</li>
+</ul>
+<p>Add the two propagation steps and the radicals cancel, leaving the overall equation CH₄ + Cl₂ → CH₃Cl + HCl.</p>
+<p><strong>Termination.</strong> The chain stops when two radicals meet and combine, which is rare because radicals are present at very low concentration:</p>
+<ul>
+<li>Cl• + Cl• → Cl₂</li>
+<li>•CH₃ + Cl• → CH₃Cl</li>
+<li>•CH₃ + •CH₃ → CH₃CH₃</li>
+</ul>
+<p>Each step uses fish-hook arrows: in the first propagation step, one electron from the C–H bond pairs with the unpaired electron of Cl• to form H–Cl, and the other electron stays on carbon. The small amount of ethane formed by termination is evidence for the methyl radical.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: mixtures of products</p>
+<p>Radical halogenation is hard to control. The product CH₃Cl can react further to give CH₂Cl₂, CHCl₃ and CCl₄, and alkanes with different kinds of hydrogen give mixtures of isomers. It is useful industrially and for simple molecules, but rarely the method of choice in the laboratory.</p>
+</div>
+<h3 id="selectivity-chlorination-versus-bromination">Selectivity: chlorination versus bromination<a class="headerlink" href="#selectivity-chlorination-versus-bromination" title="Permanent link">&para;</a></h3>
+<p>In propane there are six primary hydrogens (on the two CH₃ groups) and two secondary hydrogens (on the CH₂). If every hydrogen were equally reactive, chlorination would give 1-chloropropane and 2-chloropropane in the ratio 6 : 2. In fact it gives about 45% 1-chloropropane and 55% 2-chloropropane. Secondary hydrogens are more reactive, because breaking a secondary C–H bond gives a more stable secondary radical (Section 5.6).</p>
+<p>At room temperature, the relative reactivity per hydrogen for chlorination is roughly <strong>tertiary : secondary : primary ≈ 5 : 4 : 1</strong>. Bromination is far more selective: the reactivity ratio for tertiary to primary hydrogens is of the order of a thousand to one or more, and bromination of propane gives about 97% 2-bromopropane.</p>
+<p>The difference comes from the energetics of the first propagation step. Removal of a hydrogen by Cl• is exothermic, with an early transition state that resembles the reactants and is little affected by the stability of the radical being formed. Removal by Br• is endothermic, with a late transition state that resembles the alkyl radical, so the differences in radical stability are strongly felt (the Hammond postulate, Section 5.7).</p>
+<div class="admonition example">
+<p class="admonition-title">Example 6.3: Predicting a product ratio</p>
+<p>Predict the ratio of the two monochlorination products of 2-methylpropane, (CH₃)₃CH, using relative reactivities tertiary : primary = 5 : 1.</p>
+<p>There are 9 primary hydrogens (three CH₃ groups) and 1 tertiary hydrogen.</p>
+<ul>
+<li>Primary: 9 × 1 = 9 → 1-chloro-2-methylpropane.</li>
+<li>Tertiary: 1 × 5 = 5 → 2-chloro-2-methylpropane.</li>
+</ul>
+<p>Fraction of tertiary product = 5/14 = <strong>36%</strong>; primary product 64%. The large number of primary hydrogens outweighs their lower reactivity. With bromine, the tertiary product would dominate almost completely.</p>
+</div>
+<h2 id="67-summary">6.7 Summary<a class="headerlink" href="#67-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Alkanes (CₙH₂ₙ₊₂) are saturated, non-polar hydrocarbons from petroleum and natural gas. Boiling point rises with chain length and falls with branching.</li>
+<li>Conformations interconvert by rotation about single bonds. In ethane, staggered is about 12 kJ mol⁻¹ more stable than eclipsed (torsional strain).</li>
+<li>In butane: anti is most stable, gauche is 3.8 kJ mol⁻¹ higher (steric strain), and the fully eclipsed form is highest.</li>
+<li>Small rings have angle and torsional strain; cyclohexane in the chair conformation is strain-free.</li>
+<li>The chair has six axial and six equatorial positions; a ring flip swaps them. Substituents prefer equatorial positions to avoid 1,3-diaxial interactions.</li>
+<li>Alkanes burn to CO₂ and H₂O and undergo radical halogenation by initiation, propagation and termination.</li>
+<li>Reactivity of C–H bonds towards radicals is 3° &gt; 2° &gt; 1°; bromination is much more selective than chlorination.</li>
+</ul>
+</div>
+<h2 id="68-exercises">6.8 Exercises<a class="headerlink" href="#68-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Arrange in order of increasing boiling point: hexane, 2,2-dimethylbutane, pentane, 2-methylpentane. Explain.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Pentane (36 °C) &lt; 2,2-dimethylbutane (about 50 °C) &lt; 2-methylpentane (about 60 °C) &lt; hexane (69 °C). Pentane has the fewest carbons and the weakest dispersion forces. The three C₆ isomers have the same formula; the more branched and compact the molecule, the smaller its surface area and the lower its boiling point.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Draw Newman projections, looking along the C–C bond, of the staggered and eclipsed conformations of chloroethane, CH₃CH₂Cl. Why is the energy difference slightly larger than in ethane?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Front carbon (C1): three H. Back carbon (C2): two H and one Cl. In the staggered conformation the Cl lies between two hydrogens of the front carbon; in the eclipsed conformation it lies behind one of them. The barrier is a little larger than in ethane (about 15 kJ mol⁻¹ rather than 12) because eclipsing an H with the larger Cl atom adds some steric strain to the torsional strain.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Using Figure 6.2, sketch Newman projections of butane at dihedral angles of 0°, 60°, 120° and 180°, and label each as anti, gauche or eclipsed.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Looking along C2–C3, each carbon carries CH₃, H, H. At 180° the two CH₃ groups point in opposite directions (anti). At 60° they are staggered and adjacent (gauche). At 120° each CH₃ eclipses an H (eclipsed). At 0° the CH₃ groups eclipse each other (fully eclipsed, the highest energy).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Explain why cyclopropane reacts with bromine (opening the ring to give 1,3-dibromopropane) under conditions where propane and cyclohexane do not react.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Cyclopropane has about 115 kJ mol⁻¹ of ring strain: its C–C–C angles are forced to 60° instead of 109.5°, its bonds are bent with poor overlap, and all its C–H bonds are eclipsed. Opening the ring releases this strain, so the C–C bonds of cyclopropane are weaker and more reactive than those of an unstrained alkane. Cyclohexane is essentially strain-free and behaves like an open-chain alkane.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>For each compound, draw both chair conformations and say which is preferred: (a) <em>tert</em>-butylcyclohexane; (b) <em>cis</em>-1,2-dimethylcyclohexane; (c) <em>trans</em>-1,2-dimethylcyclohexane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) One chair has the <em>tert</em>-butyl group equatorial, the other axial. The axial form suffers severe 1,3-diaxial interactions; the equatorial chair is overwhelmingly preferred, and the ring is effectively locked.</p>
+<p>(b) <em>cis</em>-1,2: in either chair one methyl is axial and the other equatorial. The two chairs have equal energy.</p>
+<p>(c) <em>trans</em>-1,2: one chair is diequatorial, the other diaxial. The diequatorial chair is strongly preferred (there is a gauche interaction between the two adjacent equatorial methyls, but this is much less costly than two axial methyl groups).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Write the initiation, two propagation steps and two termination steps for the radical monobromination of ethane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Initiation: Br₂ → 2 Br• (light or heat).</p>
+<p>Propagation: Br• + CH₃CH₃ → HBr + CH₃CH₂•; then CH₃CH₂• + Br₂ → CH₃CH₂Br + Br•.</p>
+<p>Termination (any two): Br• + Br• → Br₂; CH₃CH₂• + Br• → CH₃CH₂Br; 2 CH₃CH₂• → CH₃CH₂CH₂CH₃ (butane).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Butane is chlorinated in light. Using the relative reactivity per hydrogen secondary : primary = 4 : 1, predict the percentages of 1-chlorobutane and 2-chlorobutane. Is 2-chlorobutane formed as a single enantiomer?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Butane has 6 primary H (two CH₃) and 4 secondary H (two CH₂). Primary: 6 × 1 = 6. Secondary: 4 × 4 = 16. 1-Chlorobutane = 6/22 = 27%; 2-chlorobutane = 16/22 = 73%. (Experimentally about 30 : 70.)</p>
+<p>2-Chlorobutane has a stereocentre at C2. The intermediate secondary radical is planar, and chlorine can attack either face equally, so 2-chlorobutane is formed as a <strong>racemic mixture</strong>.</p>
+</details>
+<h2 id="69-quiz">6.9 Quiz<a class="headerlink" href="#69-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="96f7a4989c7d">
+<p class="pk-quiz-title">Check your understanding of alkanes and conformations</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;eclipsed&quot;,&quot;gauche&quot;,&quot;anti&quot;,&quot;axial&quot;],&quot;answer&quot;:&quot;anti&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">In the most stable conformation of butane, the two methyl groups are</p>
+<ol class="pk-q-opts" type="A"><li>eclipsed</li><li>gauche</li><li>anti</li><li>axial</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>anti</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;angle strain&quot;,&quot;torsional strain&quot;,&quot;hydrogen bonding&quot;,&quot;ring strain&quot;],&quot;answer&quot;:&quot;torsional strain&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">The energy difference between eclipsed and staggered ethane is mainly due to</p>
+<ol class="pk-q-opts" type="A"><li>angle strain</li><li>torsional strain</li><li>hydrogen bonding</li><li>ring strain</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>torsional strain</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;cyclopropane&quot;,&quot;cyclobutane&quot;,&quot;cyclopentane&quot;,&quot;cyclohexane&quot;],&quot;answer&quot;:&quot;cyclohexane&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Which cycloalkane is essentially free of ring strain?</p>
+<ol class="pk-q-opts" type="A"><li>cyclopropane</li><li>cyclobutane</li><li>cyclopentane</li><li>cyclohexane</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>cyclohexane</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;equatorial&quot;,&quot;axial on the other face&quot;,&quot;a cis substituent&quot;,&quot;a boat&quot;],&quot;answer&quot;:&quot;equatorial&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">When a cyclohexane chair flips, an axial substituent becomes</p>
+<ol class="pk-q-opts" type="A"><li>equatorial</li><li>axial on the other face</li><li>a cis substituent</li><li>a boat</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>equatorial</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;6&quot;,&quot;six&quot;]}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">How many axial hydrogens does a cyclohexane chair have?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>6 / six</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;CH₃Cl + H•&quot;,&quot;HCl + •CH₃&quot;,&quot;CH₃• + Cl₂&quot;,&quot;CH₂Cl₂ + H₂&quot;],&quot;answer&quot;:&quot;HCl + •CH₃&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">In the propagation step Cl• + CH₄ →, the products are</p>
+<ol class="pk-q-opts" type="A"><li>CH₃Cl + H•</li><li>HCl + •CH₃</li><li>CH₃• + Cl₂</li><li>CH₂Cl₂ + H₂</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>HCl + •CH₃</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;1-bromo-2-methylpropane&quot;,&quot;2-bromo-2-methylpropane&quot;,&quot;a 9 to 1 mixture of the two&quot;,&quot;no reaction&quot;],&quot;answer&quot;:&quot;2-bromo-2-methylpropane&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Bromination of 2-methylpropane gives mainly</p>
+<ol class="pk-q-opts" type="A"><li>1-bromo-2-methylpropane</li><li>2-bromo-2-methylpropane</li><li>a 9 to 1 mixture of the two</li><li>no reaction</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>2-bromo-2-methylpropane</strong></p>
+<p class="pk-q-why">Bromination is highly selective for the tertiary C-H bond, which gives the most stable radical.</p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5. Reaction Mechanisms and Curly Arrows">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</div>
+</div>
+</a>
+<a href="alkenes-and-alkynes.html" class="md-footer__link md-footer__link--next" aria-label="Next: 7. Alkenes and Alkynes">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+7. Alkenes and Alkynes
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

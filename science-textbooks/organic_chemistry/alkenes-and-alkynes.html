@@ -1,0 +1,1210 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/alkenes-and-alkynes.html">
+<link rel="prev" href="alkanes-and-conformations.html">
+<link rel="next" href="aromatic-compounds.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>7. Alkenes and Alkynes - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#71-structure-and-stability-of-alkenes" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="alkenes-and-alkynes.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#71-structure-and-stability-of-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+7.1 Structure and stability of alkenes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#72-electrophilic-addition-of-hydrogen-halides" class="md-nav__link">
+<span class="md-ellipsis">
+7.2 Electrophilic addition of hydrogen halides
+</span>
+</a>
+<nav class="md-nav" aria-label="7.2 Electrophilic addition of hydrogen halides">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+The mechanism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#markovnikovs-rule" class="md-nav__link">
+<span class="md-ellipsis">
+Markovnikov's rule
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carbocation-rearrangements" class="md-nav__link">
+<span class="md-ellipsis">
+Carbocation rearrangements
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-peroxide-effect" class="md-nav__link">
+<span class="md-ellipsis">
+The peroxide effect
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#73-addition-of-water-hydration" class="md-nav__link">
+<span class="md-ellipsis">
+7.3 Addition of water: hydration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#74-addition-of-halogens" class="md-nav__link">
+<span class="md-ellipsis">
+7.4 Addition of halogens
+</span>
+</a>
+<nav class="md-nav" aria-label="7.4 Addition of halogens">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-test-for-unsaturation" class="md-nav__link">
+<span class="md-ellipsis">
+The test for unsaturation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-mechanism-a-bromonium-ion" class="md-nav__link">
+<span class="md-ellipsis">
+The mechanism: a bromonium ion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#halohydrins" class="md-nav__link">
+<span class="md-ellipsis">
+Halohydrins
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#75-hydroborationoxidation-anti-markovnikov-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+7.5 Hydroboration–oxidation: anti-Markovnikov alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#76-hydrogenation-epoxidation-dihydroxylation-and-ozonolysis" class="md-nav__link">
+<span class="md-ellipsis">
+7.6 Hydrogenation, epoxidation, dihydroxylation and ozonolysis
+</span>
+</a>
+<nav class="md-nav" aria-label="7.6 Hydrogenation, epoxidation, dihydroxylation and ozonolysis">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#catalytic-hydrogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Catalytic hydrogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#epoxidation" class="md-nav__link">
+<span class="md-ellipsis">
+Epoxidation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#dihydroxylation" class="md-nav__link">
+<span class="md-ellipsis">
+Dihydroxylation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ozonolysis" class="md-nav__link">
+<span class="md-ellipsis">
+Ozonolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#a-summary-of-alkene-additions" class="md-nav__link">
+<span class="md-ellipsis">
+A summary of alkene additions
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#77-conjugated-dienes" class="md-nav__link">
+<span class="md-ellipsis">
+7.7 Conjugated dienes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#78-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+7.8 Alkynes
+</span>
+</a>
+<nav class="md-nav" aria-label="7.8 Alkynes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity-of-terminal-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity of terminal alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#addition-reactions-of-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+Addition reactions of alkynes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#79-summary" class="md-nav__link">
+<span class="md-ellipsis">
+7.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#710-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+7.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#711-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+7.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#71-structure-and-stability-of-alkenes" class="md-nav__link">
+<span class="md-ellipsis">
+7.1 Structure and stability of alkenes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#72-electrophilic-addition-of-hydrogen-halides" class="md-nav__link">
+<span class="md-ellipsis">
+7.2 Electrophilic addition of hydrogen halides
+</span>
+</a>
+<nav class="md-nav" aria-label="7.2 Electrophilic addition of hydrogen halides">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+The mechanism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#markovnikovs-rule" class="md-nav__link">
+<span class="md-ellipsis">
+Markovnikov's rule
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carbocation-rearrangements" class="md-nav__link">
+<span class="md-ellipsis">
+Carbocation rearrangements
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-peroxide-effect" class="md-nav__link">
+<span class="md-ellipsis">
+The peroxide effect
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#73-addition-of-water-hydration" class="md-nav__link">
+<span class="md-ellipsis">
+7.3 Addition of water: hydration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#74-addition-of-halogens" class="md-nav__link">
+<span class="md-ellipsis">
+7.4 Addition of halogens
+</span>
+</a>
+<nav class="md-nav" aria-label="7.4 Addition of halogens">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-test-for-unsaturation" class="md-nav__link">
+<span class="md-ellipsis">
+The test for unsaturation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-mechanism-a-bromonium-ion" class="md-nav__link">
+<span class="md-ellipsis">
+The mechanism: a bromonium ion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#halohydrins" class="md-nav__link">
+<span class="md-ellipsis">
+Halohydrins
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#75-hydroborationoxidation-anti-markovnikov-alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+7.5 Hydroboration–oxidation: anti-Markovnikov alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#76-hydrogenation-epoxidation-dihydroxylation-and-ozonolysis" class="md-nav__link">
+<span class="md-ellipsis">
+7.6 Hydrogenation, epoxidation, dihydroxylation and ozonolysis
+</span>
+</a>
+<nav class="md-nav" aria-label="7.6 Hydrogenation, epoxidation, dihydroxylation and ozonolysis">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#catalytic-hydrogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Catalytic hydrogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#epoxidation" class="md-nav__link">
+<span class="md-ellipsis">
+Epoxidation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#dihydroxylation" class="md-nav__link">
+<span class="md-ellipsis">
+Dihydroxylation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ozonolysis" class="md-nav__link">
+<span class="md-ellipsis">
+Ozonolysis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#a-summary-of-alkene-additions" class="md-nav__link">
+<span class="md-ellipsis">
+A summary of alkene additions
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#77-conjugated-dienes" class="md-nav__link">
+<span class="md-ellipsis">
+7.7 Conjugated dienes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#78-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+7.8 Alkynes
+</span>
+</a>
+<nav class="md-nav" aria-label="7.8 Alkynes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#acidity-of-terminal-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+Acidity of terminal alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#addition-reactions-of-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+Addition reactions of alkynes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#79-summary" class="md-nav__link">
+<span class="md-ellipsis">
+7.9 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#710-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+7.10 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#711-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+7.11 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-7-alkenes-and-alkynes">Chapter 7: Alkenes and Alkynes<a class="headerlink" href="#chapter-7-alkenes-and-alkynes" title="Permanent link">&para;</a></h1>
+<p><em>Addition reactions of carbon–carbon multiple bonds</em></p>
+<p>The π bond of an alkene is a store of loosely held electrons sitting above and below the plane of the molecule. Electron-seeking reagents attack it, and the typical result is <strong>addition</strong>: the π bond disappears and two new σ bonds form, one to each carbon. A handful of addition reactions turns an alkene into an alkane, a haloalkane, an alcohol, a diol, an epoxide or a pair of carbonyl compounds, which makes alkenes among the most versatile starting materials in synthesis. This chapter explains the stability of alkenes, the mechanism of electrophilic addition and the rules that predict where the new groups go, and then extends the same ideas to alkynes.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>relate the stability of alkenes to their substitution pattern and geometry;</li>
+<li>write the mechanism of electrophilic addition of HX and explain Markovnikov's rule in terms of carbocation stability;</li>
+<li>predict products when carbocation rearrangements can occur;</li>
+<li>describe the addition of halogens through a bromonium ion and explain anti addition;</li>
+<li>give the reagents and products, including regiochemistry and stereochemistry, for hydration, hydroboration–oxidation, hydrogenation, epoxidation, dihydroxylation and ozonolysis;</li>
+<li>describe the acidity of terminal alkynes and the main addition reactions of alkynes;</li>
+<li>use the bromine-water test for unsaturation.</li>
+</ul>
+</div>
+<h2 id="71-structure-and-stability-of-alkenes">7.1 Structure and stability of alkenes<a class="headerlink" href="#71-structure-and-stability-of-alkenes" title="Permanent link">&para;</a></h2>
+<p>An alkene has a C=C double bond made of one σ bond and one π bond (Section 1.5). The two carbons of the double bond and the four atoms attached to them all lie in one plane, with bond angles of about 120°. Because the π bond prevents rotation, alkenes with two different groups on each carbon exist as E/Z isomers (Section 3.2).</p>
+<p>Not all alkenes are equally stable. A convenient measure is the <strong>heat of hydrogenation</strong>, the energy released when H₂ adds to the double bond to give an alkane. For the three butenes, which all give butane:</p>
+<table>
+<thead>
+<tr>
+<th>Alkene</th>
+<th>Structure</th>
+<th style="text-align: center;">Heat of hydrogenation (kJ mol⁻¹)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>but-1-ene</td>
+<td>CH₂=CHCH₂CH₃</td>
+<td style="text-align: center;">−126</td>
+</tr>
+<tr>
+<td>(Z)-but-2-ene</td>
+<td><em>cis</em>-CH₃CH=CHCH₃</td>
+<td style="text-align: center;">−119</td>
+</tr>
+<tr>
+<td>(E)-but-2-ene</td>
+<td><em>trans</em>-CH₃CH=CHCH₃</td>
+<td style="text-align: center;">−115</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 7.1. Heats of hydrogenation of the butenes. Less heat released means a more stable alkene.</em></p>
+<p>Two rules follow:</p>
+<ol>
+<li><strong>More substituted alkenes are more stable.</strong> An alkene with more alkyl groups on the double-bond carbons is lower in energy: tetrasubstituted &gt; trisubstituted &gt; disubstituted &gt; monosubstituted &gt; ethene. Alkyl groups donate electron density to the sp² carbons, partly by hyperconjugation.</li>
+<li><strong>Trans (E) alkenes are more stable than cis (Z)</strong>, because in the <em>cis</em> isomer the two groups on the same side crowd each other.</li>
+</ol>
+<p>These rules matter when a reaction can make more than one alkene, as in the eliminations of Chapter 9: the more stable alkene is usually the main product.</p>
+<h2 id="72-electrophilic-addition-of-hydrogen-halides">7.2 Electrophilic addition of hydrogen halides<a class="headerlink" href="#72-electrophilic-addition-of-hydrogen-halides" title="Permanent link">&para;</a></h2>
+<p>Alkenes react with hydrogen halides (HCl, HBr, HI) to give haloalkanes. With ethene there is only one possible product:</p>
+<div class="arithmatex">\[
+\mathrm{CH_2{=}CH_2 + HBr \rightarrow CH_3CH_2Br}
+\]</div>
+<h3 id="the-mechanism">The mechanism<a class="headerlink" href="#the-mechanism" title="Permanent link">&para;</a></h3>
+<p>The reaction takes place in two steps.</p>
+<ol>
+<li><strong>The π bond attacks the proton.</strong> The alkene is the nucleophile and H–Br the electrophile. The π electrons form a new C–H bond to one carbon, and the H–Br bonding pair leaves with bromine as Br⁻. The other carbon of the former double bond is left with only three bonds: a <strong>carbocation</strong>. This step is slow and rate-determining.</li>
+<li><strong>Bromide attacks the carbocation.</strong> The bromide ion, a nucleophile, gives a lone pair to the empty p orbital of the cation, forming the C–Br bond.</li>
+</ol>
+<p>The overall process is called <strong>electrophilic addition</strong>, after the first step, in which the alkene is attacked by an electrophile.</p>
+<h3 id="markovnikovs-rule">Markovnikov's rule<a class="headerlink" href="#markovnikovs-rule" title="Permanent link">&para;</a></h3>
+<p>With an unsymmetrical alkene such as propene, two products are possible: 1-bromopropane and 2-bromopropane. In practice the product is almost entirely <strong>2-bromopropane</strong>. In the nineteenth century the Russian chemist Vladimir Markovnikov summarised many such results in a rule: <em>when HX adds to an unsymmetrical alkene, the hydrogen goes to the carbon that already has more hydrogens.</em></p>
+<p>The mechanism explains why. The product is decided in the first step, when the proton adds. If the proton adds to C1 (the CH₂ end), the positive charge is left on C2, giving a <strong>secondary</strong> carbocation. If it adds to C2, the charge is left on C1, giving a <strong>primary</strong> carbocation. The secondary cation is much more stable (Section 5.6), and by the Hammond postulate the transition state leading to it is lower in energy, so that path is much faster.</p>
+<figure class="fig fig-diagram">
+<img src="img/hbr-propene.svg" alt="The mechanism of the addition of HBr to propene. The π electrons attack the proton of H–Br, adding H to C1 and leaving a secondary carbocation at C2. Bromide then attacks the positive carbon, giving 2-bromopropane. The alternative, adding H to C2, would produce a far less stable primary carbocation and is not observed." loading="lazy" width="780" height="250">
+<figcaption><strong>Figure 7.1 Markovnikov addition of HBr to propene.</strong> The mechanism of the addition of HBr to propene. The π electrons attack the proton of H–Br, adding H to C1 and leaving a secondary carbocation at C2. Bromide then attacks the positive carbon, giving 2-bromopropane. The alternative, adding H to C2, would produce a far less stable primary carbocation and is not observed.</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>The modern form of Markovnikov's rule: <strong>an electrophile adds to an alkene so as to form the more stable carbocation.</strong> This version works for any electrophile, not only H⁺, and explains every case the original rule describes.</p>
+</div>
+<p>A reaction that can give two constitutional isomers but gives mainly one is called <strong>regioselective</strong>. Electrophilic addition of HX is strongly regioselective.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 7.1: Predicting Markovnikov products</p>
+<p>Predict the main product of (a) 2-methylpropene + HCl; (b) 1-methylcyclohexene + HBr.</p>
+<p>(a) (CH₃)₂C=CH₂. Adding H⁺ to the CH₂ carbon gives the tertiary cation (CH₃)₃C⁺; adding it to the other carbon would give a primary cation. Chloride then captures the tertiary cation: <strong>2-chloro-2-methylpropane</strong>, (CH₃)₃CCl.</p>
+<p>(b) The double bond joins C1 (which carries the methyl) and C2 (which carries a hydrogen). Adding H⁺ to C2 gives a tertiary cation at C1. Bromide adds there: <strong>1-bromo-1-methylcyclohexane</strong>.</p>
+</div>
+<h3 id="carbocation-rearrangements">Carbocation rearrangements<a class="headerlink" href="#carbocation-rearrangements" title="Permanent link">&para;</a></h3>
+<p>Because the reaction passes through a carbocation, the cation can rearrange before the halide arrives, if a hydride or alkyl shift would make it more stable. Adding HCl to 3-methylbut-1-ene, CH₂=CH–CH(CH₃)₂, first gives a secondary cation at C2. A hydrogen on the neighbouring C3, with its pair of electrons, then shifts to C2, putting the positive charge on C3, which is tertiary. Chloride captures both cations, but the rearranged product, <strong>2-chloro-2-methylbutane</strong>, is the major one, alongside some 2-chloro-3-methylbutane. Rearrangements like this are evidence that a carbocation intermediate is really formed.</p>
+<h3 id="the-peroxide-effect">The peroxide effect<a class="headerlink" href="#the-peroxide-effect" title="Permanent link">&para;</a></h3>
+<p>Hydrogen bromide (but not HCl or HI) adds to alkenes the "wrong" way, <strong>anti-Markovnikov</strong>, when peroxides (R–O–O–R) are present. Peroxides start a radical chain: a bromine atom adds to the alkene first, at the end that gives the more stable carbon radical, and the resulting radical then takes a hydrogen atom from HBr. So propene with HBr and a peroxide gives 1-bromopropane. The orientation is still decided by forming the more stable intermediate; it is simply that the first species to add is Br•, not H⁺.</p>
+<h2 id="73-addition-of-water-hydration">7.3 Addition of water: hydration<a class="headerlink" href="#73-addition-of-water-hydration" title="Permanent link">&para;</a></h2>
+<p>Water itself does not add to alkenes, because it is not acidic enough to protonate the π bond. With an acid catalyst (dilute sulfuric or phosphoric acid), alkenes add water to give alcohols. The mechanism is the same as for HX, with water as the nucleophile:</p>
+<ol>
+<li>The alkene is protonated to the more stable carbocation.</li>
+<li>Water attacks the carbocation, giving an oxonium ion, R–OH₂⁺.</li>
+<li>Water removes a proton from the oxonium ion, giving the alcohol and regenerating H₃O⁺, the catalyst.</li>
+</ol>
+<p>The regiochemistry is Markovnikov: propene gives propan-2-ol. Industrially, ethanol is made by the direct hydration of ethene with steam over a phosphoric acid catalyst at high temperature and pressure. Because a carbocation is involved, rearrangements can occur, and the reaction is reversible: the reverse reaction, acid-catalysed dehydration of an alcohol, is a way of making alkenes (Chapter 10).</p>
+<h2 id="74-addition-of-halogens">7.4 Addition of halogens<a class="headerlink" href="#74-addition-of-halogens" title="Permanent link">&para;</a></h2>
+<p>Bromine and chlorine add rapidly to alkenes at room temperature, without light, to give 1,2-dihalides (vicinal dihalides):</p>
+<div class="arithmatex">\[
+\mathrm{CH_2{=}CH_2 + Br_2 \rightarrow BrCH_2CH_2Br}
+\]</div>
+<h3 id="the-test-for-unsaturation">The test for unsaturation<a class="headerlink" href="#the-test-for-unsaturation" title="Permanent link">&para;</a></h3>
+<p>Bromine water (or a solution of bromine in an inert solvent) is orange-brown. When it is shaken with an alkene, the colour disappears as the bromine adds. Alkanes do not decolourise bromine water in the dark. This is the classic laboratory test for a C=C double bond. (Bromine is toxic and corrosive, and the test is done in small quantities in a fume cupboard.)</p>
+<h3 id="the-mechanism-a-bromonium-ion">The mechanism: a bromonium ion<a class="headerlink" href="#the-mechanism-a-bromonium-ion" title="Permanent link">&para;</a></h3>
+<p>Br₂ has no permanent dipole, but as it approaches the electron-rich π bond the Br–Br bond becomes polarised; the nearer bromine becomes δ+ and acts as the electrophile. The π electrons attack it and the Br–Br bond breaks, with the far bromine leaving as Br⁻. The intermediate is not an open carbocation but a three-membered ring, the <strong>bromonium ion</strong>, in which the bromine bridges both carbons and carries the positive charge (a lone pair on bromine forms the second C–Br bond).</p>
+<p>The bromonium ion blocks one face of the molecule. The bromide ion must therefore attack from the <strong>opposite face</strong>, opening the ring. The two bromines end up on opposite faces of the original double bond: <strong>anti addition</strong>.</p>
+<figure class="fig fig-diagram">
+<img src="img/bromonium-anti.svg" alt="The addition of bromine through a bromonium ion. The π bond attacks one bromine of Br₂, forming a cyclic bromonium ion in which bromine bridges both carbons. Bromide then attacks one carbon from the side away from the bridge, opening the ring. The two bromine atoms end up on opposite sides: anti addition." loading="lazy" width="780" height="270">
+<figcaption><strong>Figure 7.2 Anti addition of bromine.</strong> The addition of bromine through a bromonium ion. The π bond attacks one bromine of Br₂, forming a cyclic bromonium ion in which bromine bridges both carbons. Bromide then attacks one carbon from the side away from the bridge, opening the ring. The two bromine atoms end up on opposite sides: anti addition.</figcaption>
+</figure>
+<p>The stereochemistry is easiest to see with a ring. Cyclohexene and bromine give only <em>trans</em>-1,2-dibromocyclohexane (as a racemic mixture); no <em>cis</em> isomer is formed. A reaction in which the stereochemistry of the product is determined by the mechanism, so that a particular stereoisomer of the reactant gives a particular stereoisomer of the product, is called <strong>stereospecific</strong>.</p>
+<h3 id="halohydrins">Halohydrins<a class="headerlink" href="#halohydrins" title="Permanent link">&para;</a></h3>
+<p>When bromine is added to an alkene in water, the solvent competes with bromide to open the bromonium ion. Water is present in vast excess, so the main product is a <strong>bromohydrin</strong>, with OH on one carbon and Br on the next, added anti. Water attacks the carbon of the bromonium ion that can better carry positive charge, which is the more substituted carbon. Propene therefore gives <strong>1-bromopropan-2-ol</strong>, with OH on the central carbon: the electrophile (Br) has gone to the end with more hydrogens, as Markovnikov's rule predicts.</p>
+<h2 id="75-hydroborationoxidation-anti-markovnikov-alcohols">7.5 Hydroboration–oxidation: anti-Markovnikov alcohols<a class="headerlink" href="#75-hydroborationoxidation-anti-markovnikov-alcohols" title="Permanent link">&para;</a></h2>
+<p>Sometimes we want the OH on the less substituted carbon. <strong>Hydroboration–oxidation</strong> achieves this in two steps.</p>
+<ol>
+<li><strong>Hydroboration.</strong> Borane, BH₃ (used as a complex with a solvent such as tetrahydrofuran, THF), adds across the double bond. Boron, which has an empty p orbital, is the electrophile; it bonds to the less substituted carbon, while a hydrogen from boron moves to the other carbon. The B–H bond adds in one step through a four-centre transition state, so H and B add to the <strong>same face</strong> (<strong>syn addition</strong>), and no carbocation is formed, so there are <strong>no rearrangements</strong>.</li>
+<li><strong>Oxidation.</strong> Alkaline hydrogen peroxide (H₂O₂, NaOH) replaces the boron with an OH group, with retention of configuration.</li>
+</ol>
+<p>The net result is the <strong>anti-Markovnikov, syn</strong> addition of H and OH. Propene gives <strong>propan-1-ol</strong>; 1-methylcyclohexene gives <em>trans</em>-2-methylcyclohexan-1-ol, in which the H and OH that were added are <em>cis</em> to each other, so the methyl and OH end up <em>trans</em>.</p>
+<p>Boron goes to the less substituted carbon for two reasons: it is a large group and that carbon is less crowded, and in the transition state a partial positive charge builds up on the more substituted carbon, which can stabilise it better.</p>
+<h2 id="76-hydrogenation-epoxidation-dihydroxylation-and-ozonolysis">7.6 Hydrogenation, epoxidation, dihydroxylation and ozonolysis<a class="headerlink" href="#76-hydrogenation-epoxidation-dihydroxylation-and-ozonolysis" title="Permanent link">&para;</a></h2>
+<h3 id="catalytic-hydrogenation">Catalytic hydrogenation<a class="headerlink" href="#catalytic-hydrogenation" title="Permanent link">&para;</a></h3>
+<p>Alkenes add hydrogen in the presence of a finely divided metal catalyst, such as platinum, palladium or nickel, to give alkanes:</p>
+<div class="arithmatex">\[
+\mathrm{CH_3CH{=}CH_2 + H_2 \xrightarrow{\ Pt\ } CH_3CH_2CH_3}
+\]</div>
+<p>Both hydrogen and the alkene are adsorbed on the metal surface, and the two hydrogens are delivered from the surface to the same face of the alkene (<strong>syn addition</strong>). Hydrogenation is used in the food industry to harden vegetable oils into spreads. Partial hydrogenation can isomerise some of the remaining <em>cis</em> double bonds to <em>trans</em>, giving "trans fats", whose links to heart disease have led many countries to restrict them.</p>
+<h3 id="epoxidation">Epoxidation<a class="headerlink" href="#epoxidation" title="Permanent link">&para;</a></h3>
+<p>A <strong>peroxycarboxylic acid</strong> (a peroxyacid, RCO₃H, such as 3-chloroperoxybenzoic acid, mCPBA) transfers an oxygen atom to an alkene in a single step, giving an <strong>epoxide</strong>, a three-membered cyclic ether (Chapter 10). The oxygen adds to one face, so the reaction is a stereospecific syn addition: a <em>cis</em> alkene gives a <em>cis</em> epoxide.</p>
+<h3 id="dihydroxylation">Dihydroxylation<a class="headerlink" href="#dihydroxylation" title="Permanent link">&para;</a></h3>
+<p>Two OH groups can be added to the same face (<strong>syn dihydroxylation</strong>) with osmium tetroxide (OsO₄, usually in catalytic amounts with a second oxidant to regenerate it) or with cold, dilute, alkaline potassium manganate(VII) (KMnO₄). Both pass through a cyclic intermediate in which the metal is bonded to two oxygens that are delivered to one face. Cyclohexene gives <em>cis</em>-cyclohexane-1,2-diol. The colour change of KMnO₄, from purple to a brown precipitate of manganese(IV) oxide, is another test for unsaturation. Anti dihydroxylation is achieved in two steps, by epoxidation followed by ring opening with water and acid (Chapter 10).</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: hazardous reagents</p>
+<p>Osmium tetroxide is volatile and very toxic, ozone is a toxic gas, and peroxyacids are strong oxidants. Reactions with them are carried out by trained chemists with full precautions, on small scale. In teaching laboratories, the milder tests (bromine water, dilute KMnO₄) are used under supervision with appropriate protection.</p>
+</div>
+<h3 id="ozonolysis">Ozonolysis<a class="headerlink" href="#ozonolysis" title="Permanent link">&para;</a></h3>
+<p><strong>Ozone</strong> (O₃) cleaves the C=C double bond completely. The alkene is treated with ozone at low temperature, and the resulting ozonide is then worked up with a reducing agent such as zinc and water, or dimethyl sulfide. Each carbon of the old double bond becomes a C=O group:</p>
+<div class="arithmatex">\[
+\mathrm{(CH_3)_2C{=}CHCH_3 \xrightarrow[\ 2.\ Zn,\ H_2O\ ]{1.\ O_3} (CH_3)_2C{=}O + CH_3CHO}
+\]</div>
+<p>Ozonolysis of 2-methylbut-2-ene gives propanone and ethanal. Working backwards from the carbonyl products tells you where the double bond was, which made ozonolysis an important tool for finding structures before spectroscopy (Chapter 14). Hot, acidified KMnO₄ also cleaves double bonds, but it oxidises further: a CH= carbon becomes a carboxylic acid, and a =CH₂ carbon becomes carbon dioxide.</p>
+<h3 id="a-summary-of-alkene-additions">A summary of alkene additions<a class="headerlink" href="#a-summary-of-alkene-additions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Reagents</th>
+<th>Product from propene</th>
+<th>Regiochemistry</th>
+<th>Stereochemistry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HBr</td>
+<td>2-bromopropane</td>
+<td>Markovnikov</td>
+<td>not selective</td>
+</tr>
+<tr>
+<td>HBr, peroxides</td>
+<td>1-bromopropane</td>
+<td>anti-Markovnikov</td>
+<td>not selective</td>
+</tr>
+<tr>
+<td>H₂O, H⁺ catalyst</td>
+<td>propan-2-ol</td>
+<td>Markovnikov</td>
+<td>not selective</td>
+</tr>
+<tr>
+<td>1. BH₃, THF; 2. H₂O₂, NaOH</td>
+<td>propan-1-ol</td>
+<td>anti-Markovnikov</td>
+<td>syn</td>
+</tr>
+<tr>
+<td>Br₂</td>
+<td>1,2-dibromopropane</td>
+<td>—</td>
+<td>anti</td>
+</tr>
+<tr>
+<td>Br₂, H₂O</td>
+<td>1-bromopropan-2-ol</td>
+<td>Br to less substituted C</td>
+<td>anti</td>
+</tr>
+<tr>
+<td>H₂, Pt or Pd</td>
+<td>propane</td>
+<td>—</td>
+<td>syn</td>
+</tr>
+<tr>
+<td>RCO₃H (peroxyacid)</td>
+<td>2-methyloxirane (an epoxide)</td>
+<td>—</td>
+<td>syn</td>
+</tr>
+<tr>
+<td>OsO₄ or cold KMnO₄</td>
+<td>propane-1,2-diol</td>
+<td>—</td>
+<td>syn</td>
+</tr>
+<tr>
+<td>1. O₃; 2. Zn, H₂O</td>
+<td>ethanal + methanal</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 7.2. The main addition reactions of alkenes, illustrated with propene.</em></p>
+<h2 id="77-conjugated-dienes">7.7 Conjugated dienes<a class="headerlink" href="#77-conjugated-dienes" title="Permanent link">&para;</a></h2>
+<p>A molecule with two double bonds separated by one single bond, such as buta-1,3-diene, CH₂=CH–CH=CH₂, is a <strong>conjugated diene</strong>. Its four p orbitals overlap continuously, so its π electrons are delocalised over all four carbons, which gives extra stability. With one equivalent of HBr, buta-1,3-diene gives two products. Protonation at C1 gives an <strong>allylic carbocation</strong>, whose charge is shared between C2 and C4 by resonance. Bromide can attack either carbon, giving 3-bromobut-1-ene (<strong>1,2-addition</strong>) or 1-bromobut-2-ene (<strong>1,4-addition</strong>). At low temperature the 1,2-product, formed faster, predominates (<strong>kinetic control</strong>); at higher temperature, when the reaction is reversible, the more stable 1,4-product, with the more substituted double bond, predominates (<strong>thermodynamic control</strong>).</p>
+<p>Conjugated dienes also take part in the <strong>Diels–Alder reaction</strong>, in which a diene and an alkene combine in a single cyclic step to form a six-membered ring. It is the best-known example of a pericyclic reaction and a powerful way of making rings.</p>
+<h2 id="78-alkynes">7.8 Alkynes<a class="headerlink" href="#78-alkynes" title="Permanent link">&para;</a></h2>
+<p>Alkynes contain a C≡C triple bond: one σ bond and two π bonds. Each carbon of the triple bond is sp hybridised and the C–C≡C–C unit is linear. Ethyne (acetylene), the simplest alkyne, burns in oxygen with a very hot flame used for welding and cutting metal.</p>
+<h3 id="acidity-of-terminal-alkynes">Acidity of terminal alkynes<a class="headerlink" href="#acidity-of-terminal-alkynes" title="Permanent link">&para;</a></h3>
+<p>A hydrogen on a triple-bond carbon is unusually acidic for a hydrocarbon (pKa about 25), because the lone pair of the resulting <strong>acetylide</strong> (alkynide) ion sits in an sp orbital with 50% s character (Section 4.4). Sodium amide deprotonates terminal alkynes completely:</p>
+<div class="arithmatex">\[
+\mathrm{HC{\equiv}CH + NaNH_2 \rightarrow HC{\equiv}C^- Na^+ + NH_3}
+\]</div>
+<p>Acetylide ions are good nucleophiles. They react with primary haloalkanes by nucleophilic substitution (Chapter 9) to form a new carbon–carbon bond, a way of lengthening a carbon chain:</p>
+<div class="arithmatex">\[
+\mathrm{HC{\equiv}C^- + CH_3CH_2Br \rightarrow HC{\equiv}CCH_2CH_3 + Br^-}
+\]</div>
+<h3 id="addition-reactions-of-alkynes">Addition reactions of alkynes<a class="headerlink" href="#addition-reactions-of-alkynes" title="Permanent link">&para;</a></h3>
+<p>Alkynes undergo most of the addition reactions of alkenes, and can add two equivalents of reagent.</p>
+<ul>
+<li><strong>Hydrogenation.</strong> With H₂ and platinum or palladium, alkynes add two molecules of hydrogen to give alkanes. With a deliberately weakened catalyst, <strong>Lindlar's catalyst</strong> (palladium on calcium carbonate treated with a lead salt and quinoline), the reaction stops at the alkene, and the two hydrogens add syn, giving the <strong>cis (Z) alkene</strong>. Reduction with sodium in liquid ammonia gives the <strong>trans (E) alkene</strong> instead.</li>
+<li><strong>Hydrogen halides</strong> add with Markovnikov orientation. One equivalent gives a haloalkene; a second gives a geminal dihalide, with both halogens on the same carbon: propyne + 2 HBr → 2,2-dibromopropane.</li>
+<li><strong>Halogens</strong> add once to give a dihaloalkene and again to give a tetrahalide.</li>
+<li><strong>Hydration.</strong> With aqueous acid and a mercury(II) salt as catalyst, water adds with Markovnikov orientation. The first product is an <strong>enol</strong>, with OH on a double-bond carbon. Enols rapidly rearrange to the isomeric carbonyl compound (keto–enol <strong>tautomerism</strong>, Chapter 11). Propyne gives propanone. Because mercury compounds are highly toxic, other catalysts are now preferred where possible.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example 7.2: Making a cis or trans alkene from an alkyne</p>
+<p>How would you make (Z)-hex-3-ene and (E)-hex-3-ene from hex-3-yne, CH₃CH₂C≡CCH₂CH₃?</p>
+<p><strong>(Z)-hex-3-ene</strong>: H₂ with Lindlar's catalyst. The two hydrogens add to the same face of the triple bond, giving the <em>cis</em> alkene, and the poisoned catalyst does not reduce the alkene further.</p>
+<p><strong>(E)-hex-3-ene</strong>: sodium in liquid ammonia. The hydrogens are delivered in separate steps through radical and anion intermediates that adopt the less crowded <em>trans</em> arrangement.</p>
+</div>
+<h2 id="79-summary">7.9 Summary<a class="headerlink" href="#79-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>More substituted alkenes and <em>trans</em> alkenes are more stable.</li>
+<li>Electrophilic addition of HX: the π bond attacks H⁺ to give the more stable carbocation, which is captured by X⁻. This is Markovnikov's rule. Rearrangements can occur.</li>
+<li>HBr with peroxides adds anti-Markovnikov by a radical mechanism.</li>
+<li>Acid-catalysed hydration gives Markovnikov alcohols; hydroboration–oxidation gives anti-Markovnikov alcohols by syn addition without rearrangement.</li>
+<li>Halogens add anti through a cyclic halonium ion; in water, halohydrins form, with OH on the more substituted carbon. Bromine water is decolourised by alkenes.</li>
+<li>Hydrogenation, epoxidation and dihydroxylation with OsO₄ or cold KMnO₄ are syn additions. Ozonolysis cleaves C=C into two C=O groups.</li>
+<li>Terminal alkynes are weakly acidic (pKa 25); acetylides alkylate primary haloalkanes.</li>
+<li>Alkynes add H₂ (Lindlar gives <em>cis</em> alkenes, Na/NH₃ gives <em>trans</em>), HX and X₂ (twice), and water (giving ketones via enols).</li>
+</ul>
+</div>
+<h2 id="710-exercises">7.10 Exercises<a class="headerlink" href="#710-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Rank in order of increasing stability: (E)-pent-2-ene, pent-1-ene, 2-methylbut-2-ene, (Z)-pent-2-ene.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Pent-1-ene (monosubstituted) &lt; (Z)-pent-2-ene (disubstituted, <em>cis</em>) &lt; (E)-pent-2-ene (disubstituted, <em>trans</em>) &lt; 2-methylbut-2-ene (trisubstituted).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Give the major product, with a mechanism, for the reaction of 2-methylbut-2-ene with HBr.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(CH₃)₂C=CHCH₃. The π bond attacks H⁺ of HBr. Adding H to the CH carbon (C3) leaves a tertiary cation at C2; adding it to C2 would leave a secondary cation at C3. The tertiary cation forms, and Br⁻ attacks it. Product: <strong>2-bromo-2-methylbutane</strong>, (CH₃)₂CBrCH₂CH₃.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>3,3-Dimethylbut-1-ene, CH₂=CH–C(CH₃)₃, reacts with HCl to give mainly 2-chloro-2,3-dimethylbutane. Explain with a mechanism.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Protonation of C1 gives a secondary cation at C2: CH₃–C⁺H–C(CH₃)₃. A methyl group on the neighbouring quaternary C3 moves, with its bonding pair, to C2 (a methyl shift). This places the positive charge on C3, which now carries two methyls and the CH(CH₃) group: a tertiary cation, (CH₃)₂C⁺–CH(CH₃)₂. Chloride captures it to give (CH₃)₂CCl–CH(CH₃)₂, 2-chloro-2,3-dimethylbutane. The rearranged skeleton is evidence for the carbocation.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Give the product of each reaction of 1-methylcyclohexene, including stereochemistry where relevant: (a) H₂O, H₂SO₄; (b) 1. BH₃, THF; 2. H₂O₂, NaOH; (c) Br₂; (d) H₂, Pd; (e) 1. O₃; 2. Zn, H₂O.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) 1-Methylcyclohexan-1-ol (Markovnikov; OH on the tertiary carbon).</p>
+<p>(b) <em>trans</em>-2-Methylcyclohexan-1-ol (anti-Markovnikov; H and OH added syn, so the OH and the methyl end up <em>trans</em>), as a racemic mixture.</p>
+<p>(c) <em>trans</em>-1,2-Dibromo-1-methylcyclohexane (anti addition), racemic.</p>
+<p>(d) Methylcyclohexane.</p>
+<p>(e) The ring opens to a single chain with a ketone at one end and an aldehyde at the other: 6-oxoheptanal, CH₃CO(CH₂)₄CHO.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>An alkene C₆H₁₂ gives only propanone on ozonolysis (followed by Zn, H₂O). What is its structure?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Each half of the double bond becomes (CH₃)₂C=O, so both carbons of the double bond carry two methyl groups: (CH₃)₂C=C(CH₃)₂, <strong>2,3-dimethylbut-2-ene</strong>. Check: C₆H₁₂, DBE 1.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Propene is treated separately with (a) Br₂ in CH₂Cl₂ and (b) Br₂ in water. Give the products and explain the difference.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Both reactions form the same bromonium ion. (a) In CH₂Cl₂ the only nucleophile is Br⁻, giving 1,2-dibromopropane. (b) In water, the solvent (present in huge excess) opens the bromonium ion at the more substituted carbon, which carries more of the positive charge, giving after loss of a proton 1-bromopropan-2-ol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Show how to make pent-2-yne from propyne and any other reagents, and then convert it into (Z)-pent-2-ene.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Deprotonate propyne with NaNH₂: CH₃C≡CH → CH₃C≡C⁻ Na⁺. Alkylate with bromoethane (a primary haloalkane): CH₃C≡C⁻ + CH₃CH₂Br → CH₃C≡CCH₂CH₃ (pent-2-yne) + Br⁻. Then reduce with H₂ and Lindlar's catalyst to give (Z)-pent-2-ene by syn addition.</p>
+</details>
+<h2 id="711-quiz">7.11 Quiz<a class="headerlink" href="#711-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="a920f1bcca7f">
+<p class="pk-quiz-title">Check your understanding of alkenes and alkynes</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;pent-1-ene&quot;,&quot;(Z)-pent-2-ene&quot;,&quot;(E)-pent-2-ene&quot;,&quot;2-methylbut-2-ene&quot;],&quot;answer&quot;:&quot;2-methylbut-2-ene&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which alkene is the most stable?</p>
+<ol class="pk-q-opts" type="A"><li>pent-1-ene</li><li>(Z)-pent-2-ene</li><li>(E)-pent-2-ene</li><li>2-methylbut-2-ene</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>2-methylbut-2-ene</strong></p>
+<p class="pk-q-why">It is trisubstituted; the more alkyl groups on the double-bond carbons, the more stable the alkene.</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;1-bromopropane&quot;,&quot;2-bromopropane&quot;,&quot;1,2-dibromopropane&quot;,&quot;propan-2-ol&quot;],&quot;answer&quot;:&quot;2-bromopropane&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">HBr adds to propene (no peroxides) to give mainly</p>
+<ol class="pk-q-opts" type="A"><li>1-bromopropane</li><li>2-bromopropane</li><li>1,2-dibromopropane</li><li>propan-2-ol</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>2-bromopropane</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;H₂O, H₂SO₄&quot;,&quot;1. BH₃, THF; 2. H₂O₂, NaOH&quot;,&quot;1. O₃; 2. Zn, H₂O&quot;,&quot;Br₂, H₂O&quot;],&quot;answer&quot;:&quot;1. BH₃, THF; 2. H₂O₂, NaOH&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Which reagent sequence converts propene into propan-1-ol?</p>
+<ol class="pk-q-opts" type="A"><li>H₂O, H₂SO₄</li><li>1. BH₃, THF; 2. H₂O₂, NaOH</li><li>1. O₃; 2. Zn, H₂O</li><li>Br₂, H₂O</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>1. BH₃, THF; 2. H₂O₂, NaOH</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;cis-1,2-dibromocyclohexane&quot;,&quot;trans-1,2-dibromocyclohexane&quot;,&quot;bromocyclohexane&quot;,&quot;1,1-dibromocyclohexane&quot;],&quot;answer&quot;:&quot;trans-1,2-dibromocyclohexane&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Bromine adds to cyclohexene to give</p>
+<ol class="pk-q-opts" type="A"><li>cis-1,2-dibromocyclohexane</li><li>trans-1,2-dibromocyclohexane</li><li>bromocyclohexane</li><li>1,1-dibromocyclohexane</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>trans-1,2-dibromocyclohexane</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;Br₂ addition&quot;,&quot;hydrogenation with Pt&quot;,&quot;bromohydrin formation&quot;,&quot;HBr addition&quot;],&quot;answer&quot;:&quot;hydrogenation with Pt&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Which reaction is a syn addition?</p>
+<ol class="pk-q-opts" type="A"><li>Br₂ addition</li><li>hydrogenation with Pt</li><li>bromohydrin formation</li><li>HBr addition</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>hydrogenation with Pt</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;(Z)-but-2-ene&quot;,&quot;Z-but-2-ene&quot;,&quot;cis-but-2-ene&quot;,&quot;cis but-2-ene&quot;]}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Name the alkene formed when but-2-yne is reduced with H₂ and Lindlar's catalyst.</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>(Z)-but-2-ene / Z-but-2-ene / cis-but-2-ene / cis but-2-ene</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;an alcohol&quot;,&quot;a carbon-carbon double or triple bond&quot;,&quot;a carboxylic acid&quot;,&quot;an alkane&quot;],&quot;answer&quot;:&quot;a carbon-carbon double or triple bond&quot;}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">A positive test with bromine water shows</p>
+<ol class="pk-q-opts" type="A"><li>an alcohol</li><li>a carbon-carbon double or triple bond</li><li>a carboxylic acid</li><li>an alkane</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a carbon-carbon double or triple bond</strong></p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="alkanes-and-conformations.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 6. Alkanes and Conformations">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+6. Alkanes and Conformations
+</div>
+</div>
+</a>
+<a href="aromatic-compounds.html" class="md-footer__link md-footer__link--next" aria-label="Next: 8. Aromatic Compounds and Electrophilic Substitution">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

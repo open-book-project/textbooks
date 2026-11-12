@@ -1,0 +1,1132 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/aromatic-compounds.html">
+<link rel="prev" href="alkenes-and-alkynes.html">
+<link rel="next" href="alkyl-halides.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>8. Aromatic Compounds and Electrophilic Substitution - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#81-the-structure-of-benzene" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="aromatic-compounds.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#81-the-structure-of-benzene" class="md-nav__link">
+<span class="md-ellipsis">
+8.1 The structure of benzene
+</span>
+</a>
+<nav class="md-nav" aria-label="8.1 The structure of benzene">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#resonance-energy" class="md-nav__link">
+<span class="md-ellipsis">
+Resonance energy
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#82-aromaticity-and-huckels-rule" class="md-nav__link">
+<span class="md-ellipsis">
+8.2 Aromaticity and Hückel's rule
+</span>
+</a>
+<nav class="md-nav" aria-label="8.2 Aromaticity and Hückel&#39;s rule">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#counting-electrons-in-heterocycles-and-ions" class="md-nav__link">
+<span class="md-ellipsis">
+Counting π electrons in heterocycles and ions
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#83-electrophilic-aromatic-substitution-the-general-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+8.3 Electrophilic aromatic substitution: the general mechanism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#84-the-main-substitution-reactions" class="md-nav__link">
+<span class="md-ellipsis">
+8.4 The main substitution reactions
+</span>
+</a>
+<nav class="md-nav" aria-label="8.4 The main substitution reactions">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#halogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Halogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#nitration" class="md-nav__link">
+<span class="md-ellipsis">
+Nitration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#sulfonation" class="md-nav__link">
+<span class="md-ellipsis">
+Sulfonation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#friedelcrafts-alkylation" class="md-nav__link">
+<span class="md-ellipsis">
+Friedel–Crafts alkylation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#friedelcrafts-acylation" class="md-nav__link">
+<span class="md-ellipsis">
+Friedel–Crafts acylation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#85-substituent-effects-reactivity-and-orientation" class="md-nav__link">
+<span class="md-ellipsis">
+8.5 Substituent effects: reactivity and orientation
+</span>
+</a>
+<nav class="md-nav" aria-label="8.5 Substituent effects: reactivity and orientation">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#activating-and-deactivating-groups" class="md-nav__link">
+<span class="md-ellipsis">
+Activating and deactivating groups
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#orientation-orthopara-versus-meta" class="md-nav__link">
+<span class="md-ellipsis">
+Orientation: ortho/para versus meta
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#86-planning-a-synthesis" class="md-nav__link">
+<span class="md-ellipsis">
+8.6 Planning a synthesis
+</span>
+</a>
+<nav class="md-nav" aria-label="8.6 Planning a synthesis">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#reactions-of-side-chains" class="md-nav__link">
+<span class="md-ellipsis">
+Reactions of side chains
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#87-summary" class="md-nav__link">
+<span class="md-ellipsis">
+8.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#88-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+8.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#89-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+8.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#81-the-structure-of-benzene" class="md-nav__link">
+<span class="md-ellipsis">
+8.1 The structure of benzene
+</span>
+</a>
+<nav class="md-nav" aria-label="8.1 The structure of benzene">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#resonance-energy" class="md-nav__link">
+<span class="md-ellipsis">
+Resonance energy
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#82-aromaticity-and-huckels-rule" class="md-nav__link">
+<span class="md-ellipsis">
+8.2 Aromaticity and Hückel's rule
+</span>
+</a>
+<nav class="md-nav" aria-label="8.2 Aromaticity and Hückel&#39;s rule">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#counting-electrons-in-heterocycles-and-ions" class="md-nav__link">
+<span class="md-ellipsis">
+Counting π electrons in heterocycles and ions
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#83-electrophilic-aromatic-substitution-the-general-mechanism" class="md-nav__link">
+<span class="md-ellipsis">
+8.3 Electrophilic aromatic substitution: the general mechanism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#84-the-main-substitution-reactions" class="md-nav__link">
+<span class="md-ellipsis">
+8.4 The main substitution reactions
+</span>
+</a>
+<nav class="md-nav" aria-label="8.4 The main substitution reactions">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#halogenation" class="md-nav__link">
+<span class="md-ellipsis">
+Halogenation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#nitration" class="md-nav__link">
+<span class="md-ellipsis">
+Nitration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#sulfonation" class="md-nav__link">
+<span class="md-ellipsis">
+Sulfonation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#friedelcrafts-alkylation" class="md-nav__link">
+<span class="md-ellipsis">
+Friedel–Crafts alkylation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#friedelcrafts-acylation" class="md-nav__link">
+<span class="md-ellipsis">
+Friedel–Crafts acylation
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#85-substituent-effects-reactivity-and-orientation" class="md-nav__link">
+<span class="md-ellipsis">
+8.5 Substituent effects: reactivity and orientation
+</span>
+</a>
+<nav class="md-nav" aria-label="8.5 Substituent effects: reactivity and orientation">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#activating-and-deactivating-groups" class="md-nav__link">
+<span class="md-ellipsis">
+Activating and deactivating groups
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#orientation-orthopara-versus-meta" class="md-nav__link">
+<span class="md-ellipsis">
+Orientation: ortho/para versus meta
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#86-planning-a-synthesis" class="md-nav__link">
+<span class="md-ellipsis">
+8.6 Planning a synthesis
+</span>
+</a>
+<nav class="md-nav" aria-label="8.6 Planning a synthesis">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#reactions-of-side-chains" class="md-nav__link">
+<span class="md-ellipsis">
+Reactions of side chains
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#87-summary" class="md-nav__link">
+<span class="md-ellipsis">
+8.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#88-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+8.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#89-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+8.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-8-aromatic-compounds-and-electrophilic-substitution">Chapter 8: Aromatic Compounds and Electrophilic Substitution<a class="headerlink" href="#chapter-8-aromatic-compounds-and-electrophilic-substitution" title="Permanent link">&para;</a></h1>
+<p><em>Benzene, aromaticity and the reactions that keep the ring intact</em></p>
+<p>Benzene, C₆H₆, has three formal double bonds, yet it does not decolourise bromine water and it resists the addition reactions that alkenes undergo so readily. Instead, under forcing conditions, it swaps one of its hydrogens for another group and keeps its ring of six π electrons. This special stability, called <strong>aromaticity</strong>, makes benzene rings among the most common structural units in dyes, plastics, medicines and natural products. This chapter explains the structure of benzene, the rule that predicts which rings are aromatic, the mechanism of electrophilic aromatic substitution, and how groups already on the ring control the rate and position of further substitution.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>describe the structure of benzene and explain its resonance energy;</li>
+<li>apply Hückel's rule to decide whether a ring is aromatic, including simple heterocycles and ions;</li>
+<li>write the general mechanism of electrophilic aromatic substitution and show how each electrophile is generated;</li>
+<li>give the reagents and products for halogenation, nitration, sulfonation and Friedel–Crafts alkylation and acylation, and the limitations of each;</li>
+<li>classify substituents as activating or deactivating and as <em>ortho/para</em>- or <em>meta</em>-directing, and explain why;</li>
+<li>plan the order of steps in the synthesis of a disubstituted benzene.</li>
+</ul>
+</div>
+<h2 id="81-the-structure-of-benzene">8.1 The structure of benzene<a class="headerlink" href="#81-the-structure-of-benzene" title="Permanent link">&para;</a></h2>
+<p>In 1865 August Kekulé proposed that benzene is a ring of six carbons with alternating single and double bonds. But his structure posed a puzzle. If the bonds alternated, 1,2-dibromobenzene should exist as two isomers, one with a single bond between the brominated carbons and one with a double bond. Only one is known. Kekulé suggested that the two arrangements interconverted rapidly. We now know the truth is subtler.</p>
+<p>Modern measurements show that benzene is a <strong>regular, planar hexagon</strong>. All six C–C bonds have the same length, 139 pm, between the length of a C–C single bond (154 pm) and a C=C double bond (134 pm). All the bond angles are 120°, and every carbon is sp² hybridised. Each carbon has one p orbital perpendicular to the ring, and the six p orbitals overlap all the way round to form a continuous ring of π electron density above and below the plane.</p>
+<p>In resonance language (Section 1.7), benzene is a hybrid of two equivalent Kekulé contributors. Neither exists on its own; the six π electrons are spread evenly over all six carbons. The hybrid is often drawn as a hexagon with a circle inside, though for following electrons in mechanisms you must use a Kekulé structure.</p>
+<figure class="fig fig-diagram">
+<img src="img/benzene-structure.svg" alt="Benzene as two equivalent Kekulé resonance contributors and as the delocalised hybrid. The circle represents six π electrons shared equally by all six carbons. All six bonds have the same length, intermediate between single and double bonds." loading="lazy" width="760" height="200">
+<figcaption><strong>Figure 8.1 The structure of benzene.</strong> Benzene as two equivalent Kekulé resonance contributors and as the delocalised hybrid. The circle represents six π electrons shared equally by all six carbons. All six bonds have the same length, intermediate between single and double bonds.</figcaption>
+</figure>
+<h3 id="resonance-energy">Resonance energy<a class="headerlink" href="#resonance-energy" title="Permanent link">&para;</a></h3>
+<p>How much does delocalisation stabilise benzene? Heats of hydrogenation provide the answer. Cyclohexene, with one double bond, releases about 120 kJ mol⁻¹ when hydrogenated to cyclohexane. A hypothetical "cyclohexatriene" with three isolated double bonds would be expected to release about three times as much, 360 kJ mol⁻¹. Benzene actually releases only about 208 kJ mol⁻¹. It is about <strong>150 kJ mol⁻¹ more stable</strong> than expected. This extra stability is the <strong>resonance energy</strong> (or aromatic stabilisation energy) of benzene.</p>
+<p>The resonance energy explains benzene's chemistry. Addition to the ring would destroy the delocalised system and lose this stabilisation. Substitution, in which a hydrogen is replaced and the ring of six π electrons is restored, keeps it. Benzene therefore undergoes substitution rather than addition.</p>
+<h2 id="82-aromaticity-and-huckels-rule">8.2 Aromaticity and Hückel's rule<a class="headerlink" href="#82-aromaticity-and-huckels-rule" title="Permanent link">&para;</a></h2>
+<p>Benzene is the parent of a large family of <strong>aromatic</strong> compounds. A compound is aromatic if it meets all four of these conditions:</p>
+<ol>
+<li>It is <strong>cyclic</strong>.</li>
+<li>It is <strong>planar</strong> (or nearly so).</li>
+<li>It is <strong>fully conjugated</strong>: every atom of the ring has a p orbital that is part of the π system.</li>
+<li>It has <strong>4n + 2 π electrons</strong>, where n is a whole number (0, 1, 2 ...): that is, 2, 6, 10, 14 ... π electrons. This is <strong>Hückel's rule</strong>.</li>
+</ol>
+<p>A cyclic, planar, fully conjugated ring with <strong>4n</strong> π electrons (4, 8 ...) is <strong>antiaromatic</strong> and is especially unstable. Cyclobutadiene, with four π electrons, is so unstable that it can be studied only at very low temperatures. Cyclooctatetraene, with eight, avoids antiaromaticity by bending into a tub shape; it is not planar and behaves as an ordinary polyene.</p>
+<figure class="fig fig-diagram">
+<img src="img/aromaticity-examples.svg" alt="Applying Hückel&#x27;s rule. Benzene, pyridine, pyrrole, furan and the cyclopentadienyl anion each have six π electrons in a planar, fully conjugated ring and are aromatic. Cyclobutadiene, with four π electrons, is antiaromatic." loading="lazy" width="790" height="250">
+<figcaption><strong>Figure 8.2 Aromatic and antiaromatic rings.</strong> Applying Hückel&#x27;s rule. Benzene, pyridine, pyrrole, furan and the cyclopentadienyl anion each have six π electrons in a planar, fully conjugated ring and are aromatic. Cyclobutadiene, with four π electrons, is antiaromatic.</figcaption>
+</figure>
+<h3 id="counting-electrons-in-heterocycles-and-ions">Counting π electrons in heterocycles and ions<a class="headerlink" href="#counting-electrons-in-heterocycles-and-ions" title="Permanent link">&para;</a></h3>
+<p>Rings containing atoms other than carbon (<strong>heterocycles</strong>) and charged rings can be aromatic too. The skill is to count which electrons belong to the π system.</p>
+<ul>
+<li><strong>Pyridine</strong>, C₅H₅N: a benzene ring with one CH replaced by N. The nitrogen contributes one electron to the π system, through its p orbital, just like each CH. Its lone pair sits in an sp² orbital in the plane of the ring, pointing outwards, and is <strong>not</strong> part of the π system. Six π electrons: aromatic. Because its lone pair is free, pyridine is a base (pKa of its conjugate acid 5.2).</li>
+<li><strong>Pyrrole</strong>, C₄H₄NH: a five-membered ring with two C=C bonds (four π electrons) and an N–H. The nitrogen is sp² hybridised and its lone pair occupies the p orbital, completing a sextet. Six π electrons: aromatic. Because the lone pair is part of the aromatic system, pyrrole is hardly basic at all: protonating the nitrogen would destroy the aromaticity.</li>
+<li><strong>Furan</strong>, C₄H₄O: like pyrrole, with oxygen contributing one of its two lone pairs to the π system. Aromatic.</li>
+<li><strong>The cyclopentadienyl anion</strong>, C₅H₅⁻: removing a proton from the CH₂ of cyclopenta-1,3-diene leaves a lone pair in a p orbital, giving six π electrons over five carbons. The anion is aromatic, which is why cyclopentadiene is unusually acidic for a hydrocarbon (pKa about 16).</li>
+</ul>
+<p>Fused rings can be aromatic as well. <strong>Naphthalene</strong> (two fused benzene rings, ten π electrons) and many larger polycyclic aromatic hydrocarbons follow the same pattern.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 8.1: Is it aromatic?</p>
+<p>Decide whether each species is aromatic: (a) the cycloheptatrienyl (tropylium) cation, C₇H₇⁺; (b) cyclopentadiene, C₅H₆.</p>
+<p>(a) A seven-membered ring with three C=C bonds and one carbocation carbon, which is sp² with an <strong>empty</strong> p orbital. Every ring atom has a p orbital, so the ring is fully conjugated; it is planar; and it has six π electrons (three π bonds). Six is 4n + 2 with n = 1: <strong>aromatic</strong>. The tropylium cation is unusually stable for a carbocation.</p>
+<p>(b) Cyclopentadiene has a CH₂ group, an sp³ carbon with no p orbital. The ring is not fully conjugated: <strong>not aromatic</strong>.</p>
+</div>
+<h2 id="83-electrophilic-aromatic-substitution-the-general-mechanism">8.3 Electrophilic aromatic substitution: the general mechanism<a class="headerlink" href="#83-electrophilic-aromatic-substitution-the-general-mechanism" title="Permanent link">&para;</a></h2>
+<p>The π electrons of benzene make it a nucleophile, but a much weaker one than an alkene, because reaction costs aromatic stabilisation. Benzene therefore reacts only with strong electrophiles, usually generated with the help of a catalyst. The reaction is <strong>electrophilic aromatic substitution</strong> (EAS), and it always follows the same two-step mechanism.</p>
+<ol>
+<li><strong>Attack on the electrophile (slow).</strong> A pair of π electrons from the ring forms a bond to the electrophile, E⁺. The carbon that is attacked becomes sp³, carrying both H and E, and the ring is left with a positive charge. The cation, called an <strong>arenium ion</strong> (or σ complex, or Wheland intermediate), is not aromatic, but it is stabilised by resonance: the charge is shared by the three carbons <em>ortho</em> and <em>para</em> to the site of attack. This step is rate-determining because it breaks the aromatic system.</li>
+<li><strong>Loss of a proton (fast).</strong> A base removes the proton from the sp³ carbon. The C–H bonding pair moves back into the ring, restoring the aromatic sextet.</li>
+</ol>
+<p>The net result is the replacement of H by E.</p>
+<figure class="fig fig-diagram">
+<img src="img/eas-nitration.svg" alt="The mechanism of electrophilic aromatic substitution, shown for nitration. The ring&#x27;s π electrons attack the nitronium ion, NO₂⁺, forming an arenium ion whose positive charge is delocalised over three carbons. A base (hydrogensulfate ion) then removes the proton from the sp³ carbon, and the aromatic ring is restored, giving nitrobenzene." loading="lazy" width="790" height="345">
+<figcaption><strong>Figure 8.3 Mechanism of electrophilic aromatic substitution.</strong> The mechanism of electrophilic aromatic substitution, shown for nitration. The ring&#x27;s π electrons attack the nitronium ion, NO₂⁺, forming an arenium ion whose positive charge is delocalised over three carbons. A base (hydrogensulfate ion) then removes the proton from the sp³ carbon, and the aromatic ring is restored, giving nitrobenzene.</figcaption>
+</figure>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>Every electrophilic aromatic substitution has the same two steps: the ring attacks E⁺ to give an arenium ion, then loses H⁺. What differs from one reaction to the next is only <strong>how the electrophile is made</strong>. Learn the mechanism once and the five reactions below follow.</p>
+</div>
+<h2 id="84-the-main-substitution-reactions">8.4 The main substitution reactions<a class="headerlink" href="#84-the-main-substitution-reactions" title="Permanent link">&para;</a></h2>
+<h3 id="halogenation">Halogenation<a class="headerlink" href="#halogenation" title="Permanent link">&para;</a></h3>
+<p>Benzene does not react with bromine alone. A Lewis acid catalyst, such as iron(III) bromide (often formed in the flask from iron filings and bromine) or aluminium chloride, polarises the Br–Br bond by accepting a lone pair from one bromine. The other bromine becomes strongly electrophilic:</p>
+<div class="arithmatex">\[
+\mathrm{Br_2 + FeBr_3 \rightarrow Br^{\delta+}\!-\!Br\!-\!FeBr_3^{\delta-}}
+\]</div>
+<p>The ring attacks the outer bromine, and FeBr₄⁻ is released, which later takes back the proton to give HBr and regenerate the catalyst. The product is bromobenzene. Chlorination with Cl₂ and AlCl₃ or FeCl₃ works the same way.</p>
+<h3 id="nitration">Nitration<a class="headerlink" href="#nitration" title="Permanent link">&para;</a></h3>
+<p>A mixture of concentrated nitric and sulfuric acids nitrates benzene. Sulfuric acid, the stronger acid, protonates nitric acid, which then loses water to give the <strong>nitronium ion</strong>, NO₂⁺, a powerful electrophile:</p>
+<div class="arithmatex">\[
+\mathrm{HNO_3 + 2\,H_2SO_4 \rightleftharpoons NO_2^+ + H_3O^+ + 2\,HSO_4^-}
+\]</div>
+<p>The product is nitrobenzene. Nitration is important mainly because the nitro group can be reduced to an amino group (with tin and hydrochloric acid, or hydrogen and a catalyst), giving aniline and its derivatives, the starting point for many dyes and drugs (Chapter 13). Nitration is strongly exothermic and must be controlled carefully; teaching practicals use small quantities of a deactivated substrate under supervision, with the temperature kept low.</p>
+<h3 id="sulfonation">Sulfonation<a class="headerlink" href="#sulfonation" title="Permanent link">&para;</a></h3>
+<p>Benzene reacts with fuming sulfuric acid (sulfuric acid containing dissolved SO₃). The electrophile is sulfur trioxide, or its protonated form, HSO₃⁺. The product is benzenesulfonic acid, C₆H₅SO₃H, a strong acid. Unlike the other substitutions, sulfonation is <strong>reversible</strong>: heating a sulfonic acid in dilute aqueous acid removes the SO₃H group. Sulfonic acids are used to make detergents and sulfonamide drugs.</p>
+<h3 id="friedelcrafts-alkylation">Friedel–Crafts alkylation<a class="headerlink" href="#friedelcrafts-alkylation" title="Permanent link">&para;</a></h3>
+<p>A haloalkane and aluminium chloride alkylate benzene. AlCl₃ takes the halide from the haloalkane, generating a carbocation (or a polarised complex that behaves like one), which is the electrophile:</p>
+<div class="arithmatex">\[
+\mathrm{C_6H_6 + (CH_3)_3CCl \xrightarrow{\ AlCl_3\ } C_6H_5C(CH_3)_3 + HCl}
+\]</div>
+<p>This reaction makes a new carbon–carbon bond, but it has three serious limitations:</p>
+<ol>
+<li><strong>Rearrangement.</strong> The carbocation can rearrange before it reacts. Benzene and 1-chloropropane give mainly isopropylbenzene (cumene), not propylbenzene, because the primary cation rearranges to the secondary one by a hydride shift.</li>
+<li><strong>Polyalkylation.</strong> An alkyl group activates the ring (Section 8.5), so the product is more reactive than benzene and reacts again, giving mixtures of di- and trialkylbenzenes.</li>
+<li><strong>Deactivated rings do not react.</strong> Rings carrying strongly electron-withdrawing groups such as –NO₂ are too unreactive. Rings carrying –NH₂ fail too, because the amine's lone pair binds to the AlCl₃ catalyst.</li>
+</ol>
+<h3 id="friedelcrafts-acylation">Friedel–Crafts acylation<a class="headerlink" href="#friedelcrafts-acylation" title="Permanent link">&para;</a></h3>
+<p>An acyl chloride (RCOCl) and AlCl₃ generate an <strong>acylium ion</strong>, R–C≡O⁺, which is stabilised by resonance (R–C⁺=O ↔ R–C≡O⁺) and does not rearrange. The product is an aryl ketone:</p>
+<div class="arithmatex">\[
+\mathrm{C_6H_6 + CH_3COCl \xrightarrow{\ AlCl_3\ } C_6H_5COCH_3 + HCl}
+\]</div>
+<p>The ketone group withdraws electrons and deactivates the ring, so the reaction stops cleanly after one substitution. Acylation therefore avoids both main problems of alkylation. If an alkyl chain is wanted, the ketone can afterwards be reduced to CH₂ (for example by the Clemmensen reduction with zinc amalgam and hydrochloric acid). Making propylbenzene without rearrangement is done in this way: acylate with propanoyl chloride, then reduce.</p>
+<table>
+<thead>
+<tr>
+<th>Reaction</th>
+<th>Reagents</th>
+<th>Electrophile</th>
+<th>Product from benzene</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bromination</td>
+<td>Br₂, FeBr₃</td>
+<td>Br⁺ (as Br–Br–FeBr₃)</td>
+<td>bromobenzene</td>
+</tr>
+<tr>
+<td>Chlorination</td>
+<td>Cl₂, AlCl₃ or FeCl₃</td>
+<td>Cl⁺ (as Cl–Cl–AlCl₃)</td>
+<td>chlorobenzene</td>
+</tr>
+<tr>
+<td>Nitration</td>
+<td>conc. HNO₃, conc. H₂SO₄</td>
+<td>NO₂⁺</td>
+<td>nitrobenzene</td>
+</tr>
+<tr>
+<td>Sulfonation</td>
+<td>fuming H₂SO₄ (SO₃)</td>
+<td>SO₃ or HSO₃⁺</td>
+<td>benzenesulfonic acid</td>
+</tr>
+<tr>
+<td>Friedel–Crafts alkylation</td>
+<td>R–Cl, AlCl₃</td>
+<td>R⁺</td>
+<td>alkylbenzene (may rearrange)</td>
+</tr>
+<tr>
+<td>Friedel–Crafts acylation</td>
+<td>RCOCl, AlCl₃</td>
+<td>RC≡O⁺</td>
+<td>aryl ketone</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 8.1. Electrophilic aromatic substitution reactions of benzene.</em></p>
+<h2 id="85-substituent-effects-reactivity-and-orientation">8.5 Substituent effects: reactivity and orientation<a class="headerlink" href="#85-substituent-effects-reactivity-and-orientation" title="Permanent link">&para;</a></h2>
+<p>When the ring already carries a substituent, two questions arise. Does the substituent make the ring react faster or slower than benzene? And where does the new group go: <em>ortho</em>, <em>meta</em> or <em>para</em>? The answers come from the arenium ion.</p>
+<h3 id="activating-and-deactivating-groups">Activating and deactivating groups<a class="headerlink" href="#activating-and-deactivating-groups" title="Permanent link">&para;</a></h3>
+<p>A substituent that <strong>donates electrons</strong> to the ring makes it more nucleophilic and stabilises the positively charged arenium ion. It <strong>activates</strong> the ring: methylbenzene (toluene) nitrates about 25 times faster than benzene, and phenol and aniline react extremely fast. A substituent that <strong>withdraws electrons</strong> makes the ring less nucleophilic and destabilises the arenium ion. It <strong>deactivates</strong> the ring: nitrobenzene reacts many orders of magnitude more slowly than benzene.</p>
+<p>Groups donate or withdraw electrons in two ways:</p>
+<ul>
+<li>by the <strong>inductive effect</strong>, through the σ bond, according to electronegativity;</li>
+<li>by <strong>resonance</strong>, through the π system. A group with a lone pair on the atom attached to the ring (–OH, –OR, –NH₂, –halogen) can donate that pair into the ring. A group with a π bond to an electronegative atom (–NO₂, –C=O, –C≡N, –SO₃H) withdraws π electrons from the ring.</li>
+</ul>
+<p>When the two effects conflict, resonance usually wins, with the important exception of the halogens.</p>
+<h3 id="orientation-orthopara-versus-meta">Orientation: ortho/para versus meta<a class="headerlink" href="#orientation-orthopara-versus-meta" title="Permanent link">&para;</a></h3>
+<p>Consider attack at the three positions of methoxybenzene (anisole). For <em>ortho</em> or <em>para</em> attack, one of the three resonance contributors of the arenium ion places the positive charge on the ring carbon that carries the OCH₃ group. The oxygen lone pair can then form a C=O⁺ π bond, giving a <strong>fourth contributor</strong> in which every atom has an octet. That extra contributor makes the <em>ortho</em> and <em>para</em> arenium ions much more stable. For <em>meta</em> attack the positive charge never reaches the carbon bearing the OCH₃ group, so no such contributor is possible.</p>
+<figure class="fig fig-diagram">
+<img src="img/anisole-para.svg" alt="Attack by an electrophile para to a methoxy group. The positive charge of the arenium ion appears at three carbons, one of which is the carbon bonded to oxygen. A lone pair on oxygen then forms a fourth contributor, an oxonium ion in which every atom has a full octet. This extra stabilisation makes ortho and para attack much faster than meta attack." loading="lazy" width="790" height="220">
+<figcaption><strong>Figure 8.4 Why OCH₃ directs ortho and para.</strong> Attack by an electrophile para to a methoxy group. The positive charge of the arenium ion appears at three carbons, one of which is the carbon bonded to oxygen. A lone pair on oxygen then forms a fourth contributor, an oxonium ion in which every atom has a full octet. This extra stabilisation makes ortho and para attack much faster than meta attack.</figcaption>
+</figure>
+<p>The same reasoning, applied to each kind of group, gives three classes:</p>
+<ol>
+<li><strong>Activating, <em>ortho/para</em>-directing.</strong> Groups that donate electrons: –NH₂, –NHR, –NR₂, –OH, –OR, –NHCOR (strongly or moderately, by resonance), and alkyl groups (weakly, by induction and hyperconjugation). Each stabilises the <em>ortho</em> and <em>para</em> arenium ions most.</li>
+<li><strong>Deactivating, <em>ortho/para</em>-directing.</strong> The <strong>halogens</strong>. Their strong inductive withdrawal makes the ring less reactive overall, but their lone pairs can still stabilise the <em>ortho</em> and <em>para</em> arenium ions by resonance. Chlorobenzene reacts more slowly than benzene but gives mainly <em>ortho</em> and <em>para</em> products.</li>
+<li><strong>Deactivating, <em>meta</em>-directing.</strong> Groups whose atom attached to the ring is δ+ or carries a positive charge: –NO₂, –CN, –SO₃H, –CHO, –COR, –COOH, –COOR, –CF₃, –NR₃⁺. For <em>ortho</em> or <em>para</em> attack, one contributor puts the positive charge right next to this electron-poor group, which is especially bad. <em>Meta</em> attack avoids that contributor, so <em>meta</em> is the least disfavoured position.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Groups</th>
+<th>Effect on rate</th>
+<th>Directs to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strongly activating</td>
+<td>–NH₂, –NHR, –NR₂, –OH, –O⁻</td>
+<td>much faster</td>
+<td><em>ortho</em>, <em>para</em></td>
+</tr>
+<tr>
+<td>moderately activating</td>
+<td>–OR, –NHCOR</td>
+<td>faster</td>
+<td><em>ortho</em>, <em>para</em></td>
+</tr>
+<tr>
+<td>weakly activating</td>
+<td>–R (alkyl), –C₆H₅</td>
+<td>slightly faster</td>
+<td><em>ortho</em>, <em>para</em></td>
+</tr>
+<tr>
+<td>weakly deactivating</td>
+<td>–F, –Cl, –Br, –I</td>
+<td>slower</td>
+<td><em>ortho</em>, <em>para</em></td>
+</tr>
+<tr>
+<td>strongly deactivating</td>
+<td>–NO₂, –CN, –SO₃H, –CHO, –COR, –COOH, –COOR, –CF₃, –NR₃⁺</td>
+<td>much slower</td>
+<td><em>meta</em></td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 8.2. Effects of substituents on electrophilic aromatic substitution.</em></p>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>A quick rule: if the atom attached to the ring has a <strong>lone pair</strong> (or is an alkyl carbon), the group directs <em>ortho/para</em>. If it is <strong>δ+</strong>, bonded to a more electronegative atom by a multiple bond, or positively charged, the group directs <em>meta</em>. All <em>meta</em> directors deactivate; all activators direct <em>ortho/para</em>; the halogens are the exception that deactivate yet direct <em>ortho/para</em>.</p>
+</div>
+<p>Of the two <em>ortho/para</em> products, the <em>para</em> isomer often predominates, especially for bulky groups, because the <em>ortho</em> positions are more crowded. Nitration of toluene gives roughly 60% <em>ortho</em>, 40% <em>para</em> and only a few per cent <em>meta</em>; nitration of <em>tert</em>-butylbenzene gives mainly <em>para</em>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: very reactive rings</p>
+<p>Phenol and aniline are so strongly activated that they react with bromine water at room temperature, without a catalyst, and are brominated at every free <em>ortho</em> and <em>para</em> position: phenol gives 2,4,6-tribromophenol as a white precipitate. To get a single substitution on aniline, the amino group is first converted into an amide (–NHCOCH₃), a milder activator, and changed back afterwards.</p>
+</div>
+<h2 id="86-planning-a-synthesis">8.6 Planning a synthesis<a class="headerlink" href="#86-planning-a-synthesis" title="Permanent link">&para;</a></h2>
+<p>Because substituents direct further substitution, the <strong>order</strong> of reactions matters.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 8.2: Ordering the steps</p>
+<p>Make (a) 1-bromo-3-nitrobenzene and (b) 1-bromo-4-nitrobenzene from benzene.</p>
+<p>(a) The two groups are <em>meta</em> to each other. The nitro group is a <em>meta</em> director; bromine is an <em>ortho/para</em> director. So <strong>nitrate first</strong> (HNO₃, H₂SO₄), then <strong>brominate</strong> (Br₂, FeBr₃): the nitro group sends the bromine to the <em>meta</em> position. The deactivated ring brominates slowly, but it does react.</p>
+<p>(b) The groups are <em>para</em>. <strong>Brominate first</strong>, then <strong>nitrate</strong>: bromine directs the incoming nitro group <em>ortho</em> and <em>para</em>. The <em>para</em> isomer is separated from the <em>ortho</em> by crystallisation (the <em>para</em> isomer, being more symmetrical, has a higher melting point and lower solubility).</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 8.3: Where does the third group go?</p>
+<p>Predict the main product of nitrating 4-methylphenol (<em>p</em>-cresol).</p>
+<p>Both groups are <em>ortho/para</em> directors, and the <em>para</em> position of each is occupied by the other. The OH group is a much stronger activator than CH₃, so it controls the orientation: the nitro group enters <em>ortho</em> to OH. Product: <strong>4-methyl-2-nitrophenol</strong>. When groups disagree, the stronger activator wins.</p>
+</div>
+<h3 id="reactions-of-side-chains">Reactions of side chains<a class="headerlink" href="#reactions-of-side-chains" title="Permanent link">&para;</a></h3>
+<p>Groups attached to the ring can also be changed. The carbon directly attached to a benzene ring is the <strong>benzylic</strong> position. Benzylic C–H bonds are weak, because breaking them gives a resonance-stabilised benzylic radical. Consequently:</p>
+<ul>
+<li><strong>Oxidation.</strong> Hot, alkaline potassium manganate(VII) oxidises any alkyl side chain with at least one benzylic hydrogen all the way to –COOH, whatever its length. Methylbenzene gives benzoic acid. This changes an <em>ortho/para</em>-directing alkyl group into a <em>meta</em>-directing carboxyl group, which can be useful in synthesis.</li>
+<li><strong>Radical bromination</strong> occurs selectively at the benzylic position, for example with <em>N</em>-bromosuccinimide (NBS) and light.</li>
+<li><strong>Reduction</strong> of a nitro group gives an amino group, turning a strong <em>meta</em> director and deactivator into a strong <em>ortho/para</em> director and activator.</li>
+</ul>
+<h2 id="87-summary">8.7 Summary<a class="headerlink" href="#87-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>Benzene is a planar regular hexagon with six equal C–C bonds (139 pm) and six delocalised π electrons; its resonance energy is about 150 kJ mol⁻¹.</li>
+<li>Hückel's rule: a cyclic, planar, fully conjugated ring with 4n + 2 π electrons is aromatic; with 4n it is antiaromatic.</li>
+<li>In pyridine the N lone pair is outside the π system (basic); in pyrrole it is part of it (not basic).</li>
+<li>EAS: the ring attacks E⁺ to give a resonance-stabilised arenium ion (slow), which loses H⁺ (fast).</li>
+<li>Electrophiles: Br⁺/Cl⁺ from X₂ and a Lewis acid; NO₂⁺ from HNO₃/H₂SO₄; SO₃ from fuming H₂SO₄; R⁺ and RCO⁺ from RCl or RCOCl with AlCl₃.</li>
+<li>Friedel–Crafts alkylation suffers rearrangement and polyalkylation; acylation does not.</li>
+<li>Electron donors activate and direct <em>ortho/para</em>; electron-withdrawing groups deactivate and direct <em>meta</em>; halogens deactivate but direct <em>ortho/para</em>.</li>
+<li>Plan syntheses so that each group is introduced when the existing groups direct it to the right place.</li>
+</ul>
+</div>
+<h2 id="88-exercises">8.8 Exercises<a class="headerlink" href="#88-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Use heats of hydrogenation to explain why benzene is said to have a resonance energy of about 150 kJ mol⁻¹. Why does this make benzene prefer substitution to addition?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Cyclohexene releases about 120 kJ mol⁻¹ on hydrogenation; three isolated double bonds would release about 360 kJ mol⁻¹. Benzene releases only about 208 kJ mol⁻¹, so it is about 150 kJ mol⁻¹ lower in energy than a ring with three isolated double bonds. Addition would destroy the aromatic π system and lose this stabilisation, while substitution restores it in the final step, so substitution is thermodynamically and kinetically preferred.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Which are aromatic? (a) cyclopropenyl cation, C₃H₃⁺; (b) cyclooctatetraene; (c) thiophene, C₄H₄S; (d) cyclohepta-1,3,5-triene, C₇H₈.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Aromatic: planar, fully conjugated (the cationic carbon has an empty p orbital) and two π electrons (n = 0). (b) Not aromatic: eight π electrons would make it antiaromatic if planar, so it adopts a non-planar tub shape and behaves as a polyene. (c) Aromatic: like furan, sulfur contributes one lone pair, giving six π electrons. (d) Not aromatic: the CH₂ carbon is sp³, so the ring is not fully conjugated.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Write the mechanism of the bromination of benzene with Br₂ and FeBr₃, showing how the catalyst is regenerated.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(1) A lone pair of Br₂ coordinates to FeBr₃, giving Br–Br⁺–FeBr₃⁻ and making the outer bromine electrophilic. (2) The π electrons of the ring attack the outer bromine; the Br–Br bond breaks, releasing FeBr₄⁻, and an arenium ion forms with the charge delocalised over the <em>ortho</em> and <em>para</em> carbons. (3) FeBr₄⁻ acts as a base: a bromide removes the proton from the sp³ carbon, the C–H bonding pair restores the aromatic ring, and HBr and FeBr₃ are formed. The catalyst is regenerated.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Benzene reacts with 1-chlorobutane and AlCl₃. Predict the main product and explain. How could butylbenzene itself be made?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>The primary carbocation (or its complex with AlCl₃) rearranges by a hydride shift to the more stable secondary cation, CH₃CH₂C⁺HCH₃. The main product is therefore (butan-2-yl)benzene, <em>sec</em>-butylbenzene, together with some polyalkylated material. To make butylbenzene, use Friedel–Crafts acylation with butanoyl chloride and AlCl₃ (no rearrangement), giving 1-phenylbutan-1-one, then reduce the C=O to CH₂.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Predict the main mononitration product(s) of: (a) methoxybenzene; (b) benzoic acid; (c) chlorobenzene; (d) nitrobenzene. Say whether each reacts faster or slower than benzene.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) 2- and 4-nitromethoxybenzene (<em>ortho</em> and <em>para</em>), mainly <em>para</em>; faster. (b) 3-nitrobenzoic acid (<em>meta</em>); slower. (c) 1-chloro-2-nitro- and 1-chloro-4-nitrobenzene (<em>ortho</em> and <em>para</em>); slower. (d) 1,3-dinitrobenzene (<em>meta</em>); much slower, needing more forcing conditions.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Explain, by drawing the arenium ions, why the nitro group directs incoming electrophiles to the <em>meta</em> position.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>For <em>ortho</em> or <em>para</em> attack, one of the three contributors of the arenium ion places the positive charge on the ring carbon bonded to the nitro group. The nitrogen of the nitro group already carries a formal positive charge, so this contributor puts two positive charges on adjacent atoms and is very unfavourable; the <em>ortho</em> and <em>para</em> arenium ions are strongly destabilised. In <em>meta</em> attack, the positive charge is placed only on carbons not bonded to the nitro group, so this bad contributor never arises. All three ions are destabilised relative to benzene (hence deactivation), but the <em>meta</em> ion least, so <em>meta</em> substitution is fastest.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Starting from benzene, give a sequence of reactions to make 3-nitrobenzoic acid. Would the order of steps matter?</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>Friedel–Crafts alkylation with chloromethane and AlCl₃ gives methylbenzene. Oxidation with hot alkaline KMnO₄ (then acidification) gives benzoic acid. Nitration then puts the nitro group <em>meta</em> to the <em>meta</em>-directing COOH group: 3-nitrobenzoic acid. The order matters: nitrating methylbenzene first would put the nitro group <em>ortho</em> or <em>para</em> to the methyl, and Friedel–Crafts alkylation of nitrobenzene fails because the ring is too deactivated.</p>
+</details>
+<h2 id="89-quiz">8.9 Quiz<a class="headerlink" href="#89-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="bef520a4fc13">
+<p class="pk-quiz-title">Check your understanding of aromatic chemistry</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;4n&quot;,&quot;4n + 2&quot;,&quot;2n&quot;,&quot;any even number&quot;],&quot;answer&quot;:&quot;4n + 2&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">How many π electrons does an aromatic ring have according to Hückel's rule?</p>
+<ol class="pk-q-opts" type="A"><li>4n</li><li>4n + 2</li><li>2n</li><li>any even number</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>4n + 2</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;pyridine&quot;,&quot;furan&quot;,&quot;cyclohexa-1,3-diene&quot;,&quot;pyrrole&quot;],&quot;answer&quot;:&quot;cyclohexa-1,3-diene&quot;}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Which compound is NOT aromatic?</p>
+<ol class="pk-q-opts" type="A"><li>pyridine</li><li>furan</li><li>cyclohexa-1,3-diene</li><li>pyrrole</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>cyclohexa-1,3-diene</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;NO₂⁻&quot;,&quot;NO₂⁺&quot;,&quot;HNO₃&quot;,&quot;NO⁺&quot;],&quot;answer&quot;:&quot;NO₂⁺&quot;}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">The electrophile in the nitration of benzene is</p>
+<ol class="pk-q-opts" type="A"><li>NO₂⁻</li><li>NO₂⁺</li><li>HNO₃</li><li>NO⁺</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>NO₂⁺</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;-OH&quot;,&quot;-CH₃&quot;,&quot;-Cl&quot;,&quot;-NO₂&quot;],&quot;answer&quot;:&quot;-Cl&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which group is deactivating but ortho/para-directing?</p>
+<ol class="pk-q-opts" type="A"><li>-OH</li><li>-CH₃</li><li>-Cl</li><li>-NO₂</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>-Cl</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;is faster&quot;,&quot;does not suffer rearrangement or polysubstitution&quot;,&quot;needs no catalyst&quot;,&quot;works on nitrobenzene&quot;],&quot;answer&quot;:&quot;does not suffer rearrangement or polysubstitution&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">Friedel-Crafts acylation is preferred over alkylation because acylation</p>
+<ol class="pk-q-opts" type="A"><li>is faster</li><li>does not suffer rearrangement or polysubstitution</li><li>needs no catalyst</li><li>works on nitrobenzene</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>does not suffer rearrangement or polysubstitution</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;2-nitrobenzoic acid&quot;,&quot;3-nitrobenzoic acid&quot;,&quot;4-nitrobenzoic acid&quot;,&quot;nitrobenzene&quot;],&quot;answer&quot;:&quot;3-nitrobenzoic acid&quot;}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">Nitration of benzoic acid gives mainly</p>
+<ol class="pk-q-opts" type="A"><li>2-nitrobenzoic acid</li><li>3-nitrobenzoic acid</li><li>4-nitrobenzoic acid</li><li>nitrobenzene</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>3-nitrobenzoic acid</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;match&quot;,&quot;pairs&quot;:[[&quot;Br₂, FeBr₃&quot;,&quot;-Br&quot;],[&quot;conc. HNO₃, conc. H₂SO₄&quot;,&quot;-NO₂&quot;],[&quot;CH₃COCl, AlCl₃&quot;,&quot;-COCH₃&quot;],[&quot;fuming H₂SO₄&quot;,&quot;-SO₃H&quot;]]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Match each reagent pair to the group it introduces into benzene.</p>
+<table class="pk-q-match"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>Br₂, FeBr₃</td><td>-COCH₃</td></tr><tr><td>conc. HNO₃, conc. H₂SO₄</td><td>-SO₃H</td></tr><tr><td>CH₃COCl, AlCl₃</td><td>-Br</td></tr><tr><td>fuming H₂SO₄</td><td>-NO₂</td></tr></tbody></table>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>Br₂, FeBr₃</strong> — -Br; <strong>conc. HNO₃, conc. H₂SO₄</strong> — -NO₂; <strong>CH₃COCl, AlCl₃</strong> — -COCH₃; <strong>fuming H₂SO₄</strong> — -SO₃H</p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="alkenes-and-alkynes.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Alkenes and Alkynes">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+7. Alkenes and Alkynes
+</div>
+</div>
+</a>
+<a href="alkyl-halides.html" class="md-footer__link md-footer__link--next" aria-label="Next: 9. Alkyl Halides: Substitution and Elimination">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

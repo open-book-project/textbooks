@@ -1,0 +1,1267 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/science-textbooks/organic_chemistry/functional-groups-and-nomenclature.html">
+<link rel="prev" href="structure-and-bonding.html">
+<link rel="next" href="isomerism-and-stereochemistry.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=82e9213945"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>2. Functional Groups and Nomenclature - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#21-functional-groups" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Organic Chemistry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="preface.html" class="md-nav__link">
+<span class="md-ellipsis">
+About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="structure-and-bonding.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Structure and Bonding
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="functional-groups-and-nomenclature.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+2. Functional Groups and Nomenclature
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#21-functional-groups" class="md-nav__link">
+<span class="md-ellipsis">
+2.1 Functional groups
+</span>
+</a>
+<nav class="md-nav" aria-label="2.1 Functional groups">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#primary-secondary-and-tertiary" class="md-nav__link">
+<span class="md-ellipsis">
+Primary, secondary and tertiary
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#22-naming-alkanes" class="md-nav__link">
+<span class="md-ellipsis">
+2.2 Naming alkanes
+</span>
+</a>
+<nav class="md-nav" aria-label="2.2 Naming alkanes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-parent-chains" class="md-nav__link">
+<span class="md-ellipsis">
+The parent chains
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-rules-for-a-branched-alkane" class="md-nav__link">
+<span class="md-ellipsis">
+The rules for a branched alkane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#cycloalkanes" class="md-nav__link">
+<span class="md-ellipsis">
+Cycloalkanes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#23-alkenes-and-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+2.3 Alkenes and alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#24-compounds-with-a-principal-functional-group" class="md-nav__link">
+<span class="md-ellipsis">
+2.4 Compounds with a principal functional group
+</span>
+</a>
+<nav class="md-nav" aria-label="2.4 Compounds with a principal functional group">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+Alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ethers" class="md-nav__link">
+<span class="md-ellipsis">
+Ethers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines" class="md-nav__link">
+<span class="md-ellipsis">
+Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#aldehydes-and-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Aldehydes and ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carboxylic-acids-and-their-derivatives" class="md-nav__link">
+<span class="md-ellipsis">
+Carboxylic acids and their derivatives
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#25-benzene-derivatives" class="md-nav__link">
+<span class="md-ellipsis">
+2.5 Benzene derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#26-molecular-formula-and-degree-of-unsaturation" class="md-nav__link">
+<span class="md-ellipsis">
+2.6 Molecular formula and degree of unsaturation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#27-summary" class="md-nav__link">
+<span class="md-ellipsis">
+2.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#28-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+2.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#29-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+2.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="isomerism-and-stereochemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acids-and-bases.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Acids and Bases in Organic Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reaction-mechanisms-and-curly-arrows.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Reaction Mechanisms and Curly Arrows
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkanes-and-conformations.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Alkanes and Conformations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkenes-and-alkynes.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Alkenes and Alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aromatic-compounds.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Aromatic Compounds and Electrophilic Substitution
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alkyl-halides.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Alkyl Halides: Substitution and Elimination
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="alcohols-ethers-and-epoxides.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Alcohols, Ethers and Epoxides
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="aldehydes-and-ketones.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Aldehydes and Ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="carboxylic-acids-and-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Carboxylic Acids and Their Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="amines.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="spectroscopy.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Spectroscopy: IR, NMR and Mass Spectrometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="polymers-and-biomolecules.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Polymers and Biomolecules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lab-safety-and-green-chemistry.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Laboratory Safety and Green Chemistry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+Glossary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="further-reading.html" class="md-nav__link">
+<span class="md-ellipsis">
+Further Reading
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#21-functional-groups" class="md-nav__link">
+<span class="md-ellipsis">
+2.1 Functional groups
+</span>
+</a>
+<nav class="md-nav" aria-label="2.1 Functional groups">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#primary-secondary-and-tertiary" class="md-nav__link">
+<span class="md-ellipsis">
+Primary, secondary and tertiary
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#22-naming-alkanes" class="md-nav__link">
+<span class="md-ellipsis">
+2.2 Naming alkanes
+</span>
+</a>
+<nav class="md-nav" aria-label="2.2 Naming alkanes">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#the-parent-chains" class="md-nav__link">
+<span class="md-ellipsis">
+The parent chains
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#the-rules-for-a-branched-alkane" class="md-nav__link">
+<span class="md-ellipsis">
+The rules for a branched alkane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#cycloalkanes" class="md-nav__link">
+<span class="md-ellipsis">
+Cycloalkanes
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#23-alkenes-and-alkynes" class="md-nav__link">
+<span class="md-ellipsis">
+2.3 Alkenes and alkynes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#24-compounds-with-a-principal-functional-group" class="md-nav__link">
+<span class="md-ellipsis">
+2.4 Compounds with a principal functional group
+</span>
+</a>
+<nav class="md-nav" aria-label="2.4 Compounds with a principal functional group">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a href="#alcohols" class="md-nav__link">
+<span class="md-ellipsis">
+Alcohols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#ethers" class="md-nav__link">
+<span class="md-ellipsis">
+Ethers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#amines" class="md-nav__link">
+<span class="md-ellipsis">
+Amines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#aldehydes-and-ketones" class="md-nav__link">
+<span class="md-ellipsis">
+Aldehydes and ketones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#carboxylic-acids-and-their-derivatives" class="md-nav__link">
+<span class="md-ellipsis">
+Carboxylic acids and their derivatives
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="#25-benzene-derivatives" class="md-nav__link">
+<span class="md-ellipsis">
+2.5 Benzene derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#26-molecular-formula-and-degree-of-unsaturation" class="md-nav__link">
+<span class="md-ellipsis">
+2.6 Molecular formula and degree of unsaturation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#27-summary" class="md-nav__link">
+<span class="md-ellipsis">
+2.7 Summary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#28-exercises" class="md-nav__link">
+<span class="md-ellipsis">
+2.8 Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#29-quiz" class="md-nav__link">
+<span class="md-ellipsis">
+2.9 Quiz
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-2-functional-groups-and-nomenclature">Chapter 2: Functional Groups and Nomenclature<a class="headerlink" href="#chapter-2-functional-groups-and-nomenclature" title="Permanent link">&para;</a></h1>
+<p><em>Recognising families of compounds and naming them systematically</em></p>
+<p>There are many millions of organic compounds, but they fall into a modest number of families. Every member of a family carries the same <strong>functional group</strong>, a small arrangement of atoms that reacts in the same way wherever it appears. Ethanol, a cholesterol molecule and a sugar all contain O–H groups attached to carbon, and all three show some of the typical reactions of alcohols. This chapter introduces the functional groups you will meet throughout the book and the IUPAC system for naming compounds, so that a name always leads to one structure and a structure to one name.</p>
+<div class="admonition note">
+<p class="admonition-title">Learning outcomes</p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li>recognise the main functional groups in a structure and name the family each belongs to;</li>
+<li>classify carbon atoms, alcohols, haloalkanes and amines as primary, secondary or tertiary;</li>
+<li>name alkanes, cycloalkanes, alkenes and alkynes by the IUPAC rules;</li>
+<li>name compounds that carry one principal functional group, using suffixes and prefixes correctly;</li>
+<li>name simple benzene derivatives, including common names still in use;</li>
+<li>draw a structure from its systematic name;</li>
+<li>calculate the degree of unsaturation from a molecular formula.</li>
+</ul>
+</div>
+<h2 id="21-functional-groups">2.1 Functional groups<a class="headerlink" href="#21-functional-groups" title="Permanent link">&para;</a></h2>
+<p>A molecule can be thought of as a hydrocarbon framework, written R in general formulas, carrying one or more functional groups. The framework is fairly inert: C–C and C–H bonds are strong and nearly non-polar. The functional groups contain polar bonds, lone pairs or π bonds, and they are where reactions happen.</p>
+<figure class="fig fig-diagram">
+<img src="img/functional-groups.svg" alt="The common functional groups. R and R′ stand for carbon frameworks, which may be the same or different. The carbonyl group, C=O, is shared by aldehydes, ketones, carboxylic acids, esters and amides, which differ in what else is attached to the carbonyl carbon." loading="lazy" width="780" height="415">
+<figcaption><strong>Figure 2.1 The main functional groups.</strong> The common functional groups. R and R′ stand for carbon frameworks, which may be the same or different. The carbonyl group, C=O, is shared by aldehydes, ketones, carboxylic acids, esters and amides, which differ in what else is attached to the carbonyl carbon.</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Functional group</th>
+<th>General formula</th>
+<th>Example</th>
+<th>Name of example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alkane</td>
+<td>none (only C–C, C–H)</td>
+<td>R–H</td>
+<td>CH₃CH₃</td>
+<td>ethane</td>
+</tr>
+<tr>
+<td>Alkene</td>
+<td>C=C</td>
+<td>R₂C=CR₂</td>
+<td>CH₂=CH₂</td>
+<td>ethene</td>
+</tr>
+<tr>
+<td>Alkyne</td>
+<td>C≡C</td>
+<td>RC≡CR</td>
+<td>HC≡CH</td>
+<td>ethyne</td>
+</tr>
+<tr>
+<td>Arene</td>
+<td>benzene ring</td>
+<td>Ar–H</td>
+<td>C₆H₆</td>
+<td>benzene</td>
+</tr>
+<tr>
+<td>Haloalkane</td>
+<td>C–X (X = F, Cl, Br, I)</td>
+<td>R–X</td>
+<td>CH₃CH₂Br</td>
+<td>bromoethane</td>
+</tr>
+<tr>
+<td>Alcohol</td>
+<td>C–OH</td>
+<td>R–OH</td>
+<td>CH₃CH₂OH</td>
+<td>ethanol</td>
+</tr>
+<tr>
+<td>Ether</td>
+<td>C–O–C</td>
+<td>R–O–R′</td>
+<td>CH₃OCH₂CH₃</td>
+<td>methoxyethane</td>
+</tr>
+<tr>
+<td>Amine</td>
+<td>C–N</td>
+<td>R–NH₂, R₂NH, R₃N</td>
+<td>CH₃NH₂</td>
+<td>methanamine</td>
+</tr>
+<tr>
+<td>Aldehyde</td>
+<td>–CHO</td>
+<td>RCHO</td>
+<td>CH₃CHO</td>
+<td>ethanal</td>
+</tr>
+<tr>
+<td>Ketone</td>
+<td>C–CO–C</td>
+<td>RCOR′</td>
+<td>CH₃COCH₃</td>
+<td>propanone</td>
+</tr>
+<tr>
+<td>Carboxylic acid</td>
+<td>–COOH</td>
+<td>RCOOH</td>
+<td>CH₃COOH</td>
+<td>ethanoic acid</td>
+</tr>
+<tr>
+<td>Ester</td>
+<td>–COO–C</td>
+<td>RCOOR′</td>
+<td>CH₃COOCH₃</td>
+<td>methyl ethanoate</td>
+</tr>
+<tr>
+<td>Amide</td>
+<td>–CONH₂</td>
+<td>RCONH₂</td>
+<td>CH₃CONH₂</td>
+<td>ethanamide</td>
+</tr>
+<tr>
+<td>Acyl chloride</td>
+<td>–COCl</td>
+<td>RCOCl</td>
+<td>CH₃COCl</td>
+<td>ethanoyl chloride</td>
+</tr>
+<tr>
+<td>Nitrile</td>
+<td>–C≡N</td>
+<td>RCN</td>
+<td>CH₃CN</td>
+<td>ethanenitrile</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 2.1. Functional groups, with one example of each.</em></p>
+<div class="admonition warning">
+<p class="admonition-title">Caution: an ester is not a ketone plus an ether</p>
+<p>The atoms of a functional group act together. In an ester, the oxygen next to the C=O shares its lone pairs with the carbonyl group by resonance, and the ester reacts differently from both a ketone and an ether. Always identify the <strong>largest</strong> recognisable group: C=O with OH on the same carbon is a carboxylic acid, not a ketone and an alcohol.</p>
+</div>
+<h3 id="primary-secondary-and-tertiary">Primary, secondary and tertiary<a class="headerlink" href="#primary-secondary-and-tertiary" title="Permanent link">&para;</a></h3>
+<p>A carbon atom is classified by how many <strong>other carbon atoms</strong> it is bonded to: <strong>primary (1°)</strong> if one, <strong>secondary (2°)</strong> if two, <strong>tertiary (3°)</strong> if three and <strong>quaternary (4°)</strong> if four.</p>
+<ul>
+<li>Alcohols and haloalkanes take the class of the carbon that carries the OH or the halogen. Propan-1-ol, CH₃CH₂CH₂OH, is a primary alcohol; propan-2-ol, (CH₃)₂CHOH, is secondary; 2-methylpropan-2-ol, (CH₃)₃COH, is tertiary.</li>
+<li>Amines are classified differently, by how many carbon groups are attached to the <strong>nitrogen</strong>: RNH₂ is a primary amine, R₂NH secondary and R₃N tertiary. So (CH₃)₃C–NH₂ is a primary amine even though it is attached to a tertiary carbon.</li>
+</ul>
+<p>These classes matter because they decide how a compound reacts. Tertiary alcohols resist oxidation (Chapter 10), and tertiary haloalkanes react by different mechanisms from primary ones (Chapter 9).</p>
+<h2 id="22-naming-alkanes">2.2 Naming alkanes<a class="headerlink" href="#22-naming-alkanes" title="Permanent link">&para;</a></h2>
+<p>IUPAC (the International Union of Pure and Applied Chemistry) names are built from three parts: a <strong>prefix</strong> (substituents), a <strong>parent</strong> (the main chain or ring) and a <strong>suffix</strong> (the principal functional group). For alkanes the suffix is simply <em>-ane</em>.</p>
+<h3 id="the-parent-chains">The parent chains<a class="headerlink" href="#the-parent-chains" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carbons</th>
+<th>Name</th>
+<th style="text-align: center;">Carbons</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>methane</td>
+<td style="text-align: center;">6</td>
+<td>hexane</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>ethane</td>
+<td style="text-align: center;">7</td>
+<td>heptane</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>propane</td>
+<td style="text-align: center;">8</td>
+<td>octane</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>butane</td>
+<td style="text-align: center;">9</td>
+<td>nonane</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>pentane</td>
+<td style="text-align: center;">10</td>
+<td>decane</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 2.2. The first ten unbranched alkanes. The stems meth-, eth-, prop-, but-, pent- and so on are used in every family.</em></p>
+<p>Alkanes have the general formula CₙH₂ₙ₊₂. A group formed by removing one hydrogen from an alkane is an <strong>alkyl group</strong>: methyl (CH₃–), ethyl (CH₃CH₂–), propyl (CH₃CH₂CH₂–) and so on. Four branched alkyl groups have common names that are still accepted:</p>
+<ul>
+<li><strong>isopropyl</strong> (propan-2-yl), (CH₃)₂CH–;</li>
+<li><strong>isobutyl</strong> (2-methylpropyl), (CH₃)₂CHCH₂–;</li>
+<li><strong><em>sec</em>-butyl</strong> (butan-2-yl), CH₃CH₂CH(CH₃)–;</li>
+<li><strong><em>tert</em>-butyl</strong> (2-methylpropan-2-yl), (CH₃)₃C–, often written <em>t</em>-Bu.</li>
+</ul>
+<h3 id="the-rules-for-a-branched-alkane">The rules for a branched alkane<a class="headerlink" href="#the-rules-for-a-branched-alkane" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Find the longest continuous chain of carbons.</strong> It is the parent. The chain need not be straight on paper; follow it round corners. If two chains are equally long, choose the one with more substituents.</li>
+<li><strong>Number the chain</strong> from the end that gives the substituents the <strong>lowest locants</strong> (position numbers). Compare the sets of locants term by term and choose the set that is lower at the first point of difference: 2,3,5 beats 2,4,4.</li>
+<li><strong>Name each substituent</strong> with its locant. If the same group appears more than once, use the multiplying prefixes di-, tri-, tetra- and give every locant: 2,2-dimethyl, not 2-dimethyl.</li>
+<li><strong>List the substituents in alphabetical order</strong>, ignoring the multiplying prefixes (di-, tri-) and the italic prefixes <em>sec</em>- and <em>tert</em>-. So ethyl comes before dimethyl, because e precedes m.</li>
+<li><strong>Write the name as one word</strong>, with commas between numbers and hyphens between numbers and letters.</li>
+</ol>
+<figure class="fig fig-diagram">
+<img src="img/naming-alkane.svg" alt="Naming 4-ethyl-2-methylhexane. The longest chain, highlighted, has six carbons. Numbering from the left gives the branches locants 2 and 4; numbering from the right would give 3 and 5, so the left-hand numbering is used. The substituents are listed alphabetically." loading="lazy" width="760" height="260">
+<figcaption><strong>Figure 2.2 Naming a branched alkane.</strong> Naming 4-ethyl-2-methylhexane. The longest chain, highlighted, has six carbons. Numbering from the left gives the branches locants 2 and 4; numbering from the right would give 3 and 5, so the left-hand numbering is used. The substituents are listed alphabetically.</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example 2.1: Naming an alkane from its condensed formula</p>
+<p>Name (CH₃)₂CHCH₂C(CH₃)₃.</p>
+<p>Write it out: a CH carbon carrying two CH₃ groups, then CH₂, then a carbon carrying three CH₃ groups. The longest chain runs CH₃–CH(CH₃)–CH₂–C(CH₃)₂–CH₃, five carbons: pentane. The branches are one methyl on one carbon and two methyls on another. Numbering from the right end gives 2,2,4; from the left, 2,4,4. At the first point of difference, 2 = 2, and at the second, 2 &lt; 4, so the right-hand numbering wins.</p>
+<p>Name: <strong>2,2,4-trimethylpentane</strong>. (This compound is the reference fuel that defines an octane rating of 100.)</p>
+</div>
+<h3 id="cycloalkanes">Cycloalkanes<a class="headerlink" href="#cycloalkanes" title="Permanent link">&para;</a></h3>
+<p>A ring of carbons takes the prefix <em>cyclo-</em>: cyclopropane, cyclobutane, cyclopentane, cyclohexane. A ring with one substituent needs no locant (methylcyclohexane). With two or more substituents, number round the ring to give the lowest locants, starting at a substituted carbon and, when there is a choice, giving the lower number to the group that comes first in the alphabet: 1-ethyl-3-methylcyclohexane.</p>
+<h2 id="23-alkenes-and-alkynes">2.3 Alkenes and alkynes<a class="headerlink" href="#23-alkenes-and-alkynes" title="Permanent link">&para;</a></h2>
+<p>The suffix for a C=C double bond is <em>-ene</em> and for a C≡C triple bond <em>-yne</em>. The locant of the multiple bond is the lower of the two carbon numbers it joins, and it is placed just before the suffix:</p>
+<ul>
+<li>CH₂=CHCH₂CH₃ is <strong>but-1-ene</strong>; CH₃CH=CHCH₃ is <strong>but-2-ene</strong>.</li>
+<li>HC≡CCH₂CH₃ is <strong>but-1-yne</strong>.</li>
+<li>CH₂=CH–CH=CH₂ is <strong>buta-1,3-diene</strong> (an "a" is added to the stem to make the name easier to say).</li>
+</ul>
+<p>Number the chain from the end nearer the multiple bond, even if this gives a substituent a higher number: CH₂=CHCH(CH₃)CH₃ is <strong>3-methylbut-1-ene</strong>, not 2-methylbut-3-ene. In rings, the carbons of the double bond are C1 and C2: 3-methylcyclohexene has the methyl on the carbon next to one end of the double bond.</p>
+<div class="admonition note">
+<p class="admonition-title">Note: choosing the parent chain of an alkene</p>
+<p>Most school and first-year textbooks choose as parent the longest chain that <strong>contains</strong> the multiple bond. The 2013 IUPAC recommendations instead choose the longest chain first and consider unsaturation only to break ties. For nearly all the molecules in this book the two methods give the same name; where you are examined, follow the convention your course uses.</p>
+</div>
+<p>Alkenes can also show <em>cis–trans</em> (E/Z) isomerism, which is added to the front of the name, as in (<em>E</em>)-but-2-ene. That is the subject of Chapter 3.</p>
+<h2 id="24-compounds-with-a-principal-functional-group">2.4 Compounds with a principal functional group<a class="headerlink" href="#24-compounds-with-a-principal-functional-group" title="Permanent link">&para;</a></h2>
+<p>When a molecule contains a functional group such as an alcohol or a ketone, the name changes in three ways:</p>
+<ol>
+<li>The <strong>parent chain</strong> is the longest chain that contains the carbon carrying the principal group (or, for acids, aldehydes, amides and nitriles, the chain that includes that group's own carbon).</li>
+<li>The <strong>suffix</strong> shows the principal group, and the final <em>-e</em> of the alkane name is dropped before a vowel: propane becomes propan-1-ol, propanal, propanone.</li>
+<li>The chain is <strong>numbered to give the principal group the lowest locant</strong>, then multiple bonds, then the other substituents.</li>
+</ol>
+<p>When a molecule has more than one functional group, only one, the <strong>principal group</strong>, is named as a suffix. The others are named as prefixes. The order of priority, from highest, is:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Priority</th>
+<th>Family</th>
+<th>Suffix</th>
+<th>Prefix (when not principal)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td>carboxylic acid</td>
+<td>-oic acid</td>
+<td>carboxy-</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td>ester</td>
+<td>-oate</td>
+<td>alkoxycarbonyl-</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td>acyl chloride</td>
+<td>-oyl chloride</td>
+<td>chlorocarbonyl-</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td>amide</td>
+<td>-amide</td>
+<td>carbamoyl-</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td>nitrile</td>
+<td>-nitrile</td>
+<td>cyano-</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td>aldehyde</td>
+<td>-al</td>
+<td>oxo- (or formyl-)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td>ketone</td>
+<td>-one</td>
+<td>oxo-</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td>alcohol</td>
+<td>-ol</td>
+<td>hydroxy-</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td>amine</td>
+<td>-amine</td>
+<td>amino-</td>
+</tr>
+<tr>
+<td style="text-align: center;">—</td>
+<td>ether, haloalkane</td>
+<td>(no suffix)</td>
+<td>alkoxy-, fluoro-, chloro-, bromo-, iodo-</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 2.3. Priority of functional groups for naming, with their suffixes and prefixes. Alkenes and alkynes use the endings -ene and -yne together with any suffix.</em></p>
+<h3 id="alcohols">Alcohols<a class="headerlink" href="#alcohols" title="Permanent link">&para;</a></h3>
+<p>Replace the <em>-e</em> of the alkane with <em>-ol</em> and give the position: ethanol, propan-2-ol, butan-2-ol. Two OH groups make a <strong>diol</strong>, and here the <em>-e</em> is kept: ethane-1,2-diol (the antifreeze ethylene glycol). In propane-1,2,3-triol (glycerol) each carbon carries an OH group.</p>
+<h3 id="ethers">Ethers<a class="headerlink" href="#ethers" title="Permanent link">&para;</a></h3>
+<p>Simple ethers are named as <strong>alkoxyalkanes</strong>: the smaller group becomes the alkoxy prefix. CH₃OCH₂CH₃ is methoxyethane, and CH₃CH₂OCH₂CH₃ is ethoxyethane (the "ether" of old anaesthetics, also called diethyl ether).</p>
+<h3 id="amines">Amines<a class="headerlink" href="#amines" title="Permanent link">&para;</a></h3>
+<p>Primary amines take the suffix <em>-amine</em>: CH₃CH₂NH₂ is ethanamine, and (CH₃)₂CHNH₂ is propan-2-amine. In secondary and tertiary amines the largest group is the parent and the others are prefixes with the locant <em>N</em>, to show that they are on the nitrogen: CH₃NHCH₂CH₃ is <em>N</em>-methylethanamine, and (CH₃)₃N is <em>N</em>,<em>N</em>-dimethylmethanamine (trimethylamine).</p>
+<h3 id="aldehydes-and-ketones">Aldehydes and ketones<a class="headerlink" href="#aldehydes-and-ketones" title="Permanent link">&para;</a></h3>
+<p>The aldehyde group, –CHO, is always at the end of a chain, so its carbon is C1 and no locant is needed: CH₃CHO is ethanal, and (CH₃)₂CHCH₂CHO is 3-methylbutanal. Ketones take the suffix <em>-one</em> with a locant where needed: CH₃COCH₃ is propanone (acetone), CH₃COCH₂CH₃ butanone, CH₃COCH₂CH₂CH₃ pentan-2-one and CH₃CH₂COCH₂CH₃ pentan-3-one.</p>
+<h3 id="carboxylic-acids-and-their-derivatives">Carboxylic acids and their derivatives<a class="headerlink" href="#carboxylic-acids-and-their-derivatives" title="Permanent link">&para;</a></h3>
+<p>The carbon of the COOH group is C1 of the chain: CH₃COOH is <strong>ethanoic acid</strong> (acetic acid), CH₃CH₂COOH propanoic acid, and (CH₃)₂CHCOOH 2-methylpropanoic acid. The derivatives are named from the acid:</p>
+<ul>
+<li><strong>Esters</strong>, RCOOR′, are named in two words: the alkyl group R′ on oxygen first, then the acid part with <em>-oic acid</em> changed to <em>-oate</em>. CH₃COOCH₂CH₃ is <strong>ethyl ethanoate</strong> (ethyl acetate); CH₃CH₂COOCH₃ is methyl propanoate. A common slip is to reverse the parts: look for the carbon attached to the C=O; that part is the "-oate".</li>
+<li><strong>Acyl chlorides</strong> change <em>-oic acid</em> to <em>-oyl chloride</em>: CH₃COCl is ethanoyl chloride.</li>
+<li><strong>Amides</strong> change <em>-oic acid</em> to <em>-amide</em>: CH₃CONH₂ is ethanamide, and CH₃CONHCH₃ is <em>N</em>-methylethanamide.</li>
+<li><strong>Nitriles</strong> add <em>-nitrile</em> to the alkane name, counting the nitrile carbon: CH₃CN is ethanenitrile and CH₃CH₂CN propanenitrile.</li>
+<li><strong>Acid anhydrides</strong>, (RCO)₂O, replace <em>acid</em> with <em>anhydride</em>: (CH₃CO)₂O is ethanoic anhydride.</li>
+</ul>
+<figure class="fig fig-diagram">
+<img src="img/named-examples.svg" alt="Three names built by the rules. In 4-methylpentan-2-ol the chain is numbered to give the OH group the lowest locant. In 3-methylbut-1-ene the numbering starts at the end nearer the double bond. In 3-methylcyclohexan-1-ol the carbon carrying the OH group is C1." loading="lazy" width="760" height="230">
+<figcaption><strong>Figure 2.3 Names of three molecules.</strong> Three names built by the rules. In 4-methylpentan-2-ol the chain is numbered to give the OH group the lowest locant. In 3-methylbut-1-ene the numbering starts at the end nearer the double bond. In 3-methylcyclohexan-1-ol the carbon carrying the OH group is C1.</figcaption>
+</figure>
+<div class="admonition example">
+<p class="admonition-title">Example 2.2: A molecule with two functional groups</p>
+<p>Name CH₃COCH₂CH(OH)CH₃.</p>
+<p>Both a ketone and an alcohol are present. The ketone has the higher priority (Table 2.3), so it is the suffix <em>-one</em> and the OH becomes the prefix <em>hydroxy-</em>. The chain has five carbons. Numbering from the left gives the C=O locant 2; from the right, 4. So number from the left: the OH is on C4.</p>
+<p>Name: <strong>4-hydroxypentan-2-one</strong>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example 2.3: From name to structure</p>
+<p>Draw 3-chloro-2-methylbutanoic acid.</p>
+<p>The parent is butanoic acid, four carbons with C1 as the COOH carbon: HOOC–C2–C3–C4. Put a methyl on C2 and a chlorine on C3, then fill in hydrogens so that each carbon has four bonds: HOOC–CH(CH₃)–CHCl–CH₃.</p>
+</div>
+<h2 id="25-benzene-derivatives">2.5 Benzene derivatives<a class="headerlink" href="#25-benzene-derivatives" title="Permanent link">&para;</a></h2>
+<p>Compounds that contain a benzene ring are named as substituted benzenes: chlorobenzene, nitrobenzene, ethylbenzene. Several have common names that IUPAC accepts and that you will meet constantly:</p>
+<table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Common name</th>
+<th>Systematic name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C₆H₅–CH₃</td>
+<td>toluene</td>
+<td>methylbenzene</td>
+</tr>
+<tr>
+<td>C₆H₅–OH</td>
+<td>phenol</td>
+<td>phenol (benzenol)</td>
+</tr>
+<tr>
+<td>C₆H₅–NH₂</td>
+<td>aniline</td>
+<td>aniline (benzenamine)</td>
+</tr>
+<tr>
+<td>C₆H₅–COOH</td>
+<td>benzoic acid</td>
+<td>benzoic acid (benzenecarboxylic acid)</td>
+</tr>
+<tr>
+<td>C₆H₅–CHO</td>
+<td>benzaldehyde</td>
+<td>benzaldehyde (benzenecarbaldehyde)</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 2.4. Common benzene derivatives. In each, C₆H₅– is a benzene ring that has lost one hydrogen.</em></p>
+<p>With two substituents, their positions are given by numbers (1,2-, 1,3-, 1,4-) or by the older prefixes <strong><em>ortho</em>-</strong> (<em>o</em>-, 1,2), <strong><em>meta</em>-</strong> (<em>m</em>-, 1,3) and <strong><em>para</em>-</strong> (<em>p</em>-, 1,4). So 1,4-dimethylbenzene is <em>p</em>-xylene, and 2-nitrophenol is <em>o</em>-nitrophenol. When the ring carries a group with a common name, that carbon is C1: 3-bromotoluene has the bromine <em>meta</em> to the methyl.</p>
+<p>As a substituent, C₆H₅– is the <strong>phenyl</strong> group (often written Ph), and C₆H₅CH₂– is the <strong>benzyl</strong> group. A general aromatic group is written <strong>Ar</strong>.</p>
+<h2 id="26-molecular-formula-and-degree-of-unsaturation">2.6 Molecular formula and degree of unsaturation<a class="headerlink" href="#26-molecular-formula-and-degree-of-unsaturation" title="Permanent link">&para;</a></h2>
+<p>Before you have a structure, the molecular formula already tells you something. An acyclic alkane has the formula CₙH₂ₙ₊₂. Each ring or π bond removes two hydrogens. The number of rings plus π bonds is the <strong>degree of unsaturation</strong> (also called the double-bond equivalent, DBE):</p>
+<div class="arithmatex">\[
+\text{DBE} = \frac{2C + 2 + N - H - X}{2}
+\]</div>
+<p>where <span class="arithmatex">\(C\)</span>, <span class="arithmatex">\(H\)</span>, <span class="arithmatex">\(N\)</span> and <span class="arithmatex">\(X\)</span> are the numbers of carbon, hydrogen, nitrogen and halogen atoms. Oxygen and sulfur do not appear: adding them does not change the number of hydrogens needed.</p>
+<div class="admonition example">
+<p class="admonition-title">Example 2.4: Using the degree of unsaturation</p>
+<p><strong>Benzene, C₆H₆.</strong> DBE = (12 + 2 − 6)/2 = 4: one ring and three π bonds.</p>
+<p><strong>C₄H₈O.</strong> DBE = (8 + 2 − 8)/2 = 1. The molecule has one ring or one π bond. Possible structures include butanal and butanone (a C=O), but-3-en-1-ol (a C=C) and oxolane, the five-membered cyclic ether (a ring).</p>
+<p><strong>C₃H₆Cl₂.</strong> DBE = (6 + 2 − 6 − 2)/2 = 0. No rings and no π bonds: a dichloropropane.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Key idea</p>
+<p>A DBE of 4 or more in a compound with six or more carbons often signals a benzene ring. This is a useful first guess when you meet an unknown compound in spectroscopy (Chapter 14).</p>
+</div>
+<h2 id="27-summary">2.7 Summary<a class="headerlink" href="#27-summary" title="Permanent link">&para;</a></h2>
+<div class="admonition abstract">
+<p class="admonition-title">Summary</p>
+<ul>
+<li>A functional group is the reactive part of a molecule; compounds with the same group form a family with similar chemistry.</li>
+<li>Carbons are 1°, 2°, 3° or 4° according to the number of carbons attached. Alcohols and haloalkanes take the class of the carbon carrying the group; amines are classed by the number of carbons on nitrogen.</li>
+<li>An IUPAC name is prefix (substituents, alphabetical) + parent (longest chain or ring) + suffix (principal group).</li>
+<li>Number the chain to give the lowest locants: first to the principal group, then to multiple bonds, then to substituents.</li>
+<li>Priority for the suffix: acid &gt; ester &gt; acyl chloride &gt; amide &gt; nitrile &gt; aldehyde &gt; ketone &gt; alcohol &gt; amine.</li>
+<li>Esters are named "alkyl alkanoate", with the group on oxygen first.</li>
+<li>Disubstituted benzenes use 1,2-/1,3-/1,4- or <em>ortho</em>/<em>meta</em>/<em>para</em>.</li>
+<li>DBE = (2C + 2 + N − H − X)/2 gives the number of rings plus π bonds.</li>
+</ul>
+</div>
+<h2 id="28-exercises">2.8 Exercises<a class="headerlink" href="#28-exercises" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Exercise 1</p>
+<p>Identify every functional group in the following molecule, written in condensed form: HOCH₂CH₂COOCH₂CH=CH₂.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>An alcohol (the HOCH₂ group at the left), an ester (–COO– linking the two halves) and an alkene (CH=CH₂ at the right). The ester has the highest priority: the compound is prop-2-en-1-yl 3-hydroxypropanoate (allyl 3-hydroxypropanoate).</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 2</p>
+<p>Classify as primary, secondary or tertiary: (a) butan-2-ol; (b) 2-bromo-2-methylpropane; (c) <em>N</em>-methylethanamine; (d) 1-chlorobutane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Secondary alcohol: the OH carbon is bonded to two other carbons. (b) Tertiary haloalkane: the carbon carrying Br is bonded to three carbons. (c) Secondary amine: the nitrogen carries two carbon groups (methyl and ethyl). (d) Primary haloalkane.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 3</p>
+<p>Name: (a) CH₃CH(CH₃)CH(CH₃)CH₂CH₃; (b) CH₃CH₂C(CH₃)₂CH₂CH(CH₂CH₃)CH₃.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) Longest chain: five carbons, with methyls on C2 and C3 (numbering from the left gives 2,3; from the right, 3,4). Name: <strong>2,3-dimethylpentane</strong>.</p>
+<p>(b) Find the longest chain carefully. Starting at the left CH₃, the chain runs CH₃CH₂–C–CH₂–CH–, and the CH carries both an ethyl group and a methyl. Continuing into the ethyl group gives a longer chain: CH₃CH₂–C(CH₃)₂–CH₂–CH(CH₃)–CH₂CH₃, seven carbons, heptane. Substituents: two methyls on one carbon and one methyl on another. Numbering from the left gives 3,3,5; from the right, 3,5,5. So <strong>3,3,5-trimethylheptane</strong>.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 4</p>
+<p>Draw structures for: (a) pent-2-yne; (b) 2-methylbutan-2-ol; (c) 3-methylbutanal; (d) propyl ethanoate; (e) <em>N</em>,<em>N</em>-dimethylethanamide.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) CH₃C≡CCH₂CH₃. (b) CH₃C(OH)(CH₃)CH₂CH₃, a tertiary alcohol. (c) (CH₃)₂CHCH₂CHO. (d) CH₃COOCH₂CH₂CH₃: the ethanoate part is CH₃CO–, the propyl group is on oxygen. (e) CH₃CON(CH₃)₂: both methyls are on the nitrogen of ethanamide.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 5</p>
+<p>Each name below breaks a rule. Say which rule, and give the correct name: (a) 2-ethylpropane; (b) 2-methylbut-3-ene; (c) 1,5-dimethylcyclohexane.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) The parent is not the longest chain. CH₃–CH(CH₂CH₃)–CH₃ contains a chain of four carbons (through the ethyl group) with a methyl on C2. Correct name: <strong>2-methylbutane</strong>.</p>
+<p>(b) The chain is numbered from the wrong end. The structure is CH₃–CH(CH₃)–CH=CH₂; the double bond must have the lowest locant, so C1 is the CH₂= carbon. Correct name: <strong>3-methylbut-1-ene</strong>.</p>
+<p>(c) The locants are not the lowest possible. Starting at one methyl and going the short way round the ring, the other is at position 3. Correct name: <strong>1,3-dimethylcyclohexane</strong>.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 6</p>
+<p>Name: (a) the benzene ring with Cl and NO₂ on adjacent carbons; (b) 4-methylphenol written with <em>o</em>/<em>m</em>/<em>p</em>; (c) C₆H₅CH₂OH.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) 1-chloro-2-nitrobenzene (<em>o</em>-chloronitrobenzene); the substituents are numbered alphabetically, chloro before nitro. (b) <em>p</em>-methylphenol (<em>p</em>-cresol). (c) Phenylmethanol, usually called benzyl alcohol.</p>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Exercise 7</p>
+<p>Calculate the degree of unsaturation of (a) C₅H₈; (b) C₇H₇Br; (c) C₄H₉N; (d) C₈H₁₀. Suggest one possible structure for each.</p>
+</div>
+<details class="note">
+<summary>Answer</summary>
+<p>(a) (10 + 2 − 8)/2 = 2: for example penta-1,3-diene, pent-1-yne or cyclopentene. (b) (14 + 2 − 7 − 1)/2 = 4: for example 4-bromotoluene (a benzene ring). (c) (8 + 2 + 1 − 9)/2 = 1: for example pyrrolidine (a ring) or but-3-en-1-amine. (d) (16 + 2 − 10)/2 = 4: for example ethylbenzene or one of the dimethylbenzenes.</p>
+</details>
+<h2 id="29-quiz">2.9 Quiz<a class="headerlink" href="#29-quiz" title="Permanent link">&para;</a></h2>
+<div class="pk-quiz" data-quiz="c84f2d6305b3">
+<p class="pk-quiz-title">Check your naming skills</p>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;ketone&quot;,&quot;ether&quot;,&quot;ester&quot;,&quot;carboxylic acid&quot;],&quot;answer&quot;:&quot;ester&quot;}">
+<p class="admonition-title">Exercise 1</p>
+<p class="pk-q-prompt">Which family does CH₃CH₂COOCH₃ belong to?</p>
+<ol class="pk-q-opts" type="A"><li>ketone</li><li>ether</li><li>ester</li><li>carboxylic acid</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>ester</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;butanal&quot;]}">
+<p class="admonition-title">Exercise 2</p>
+<p class="pk-q-prompt">Give the IUPAC name of CH₃CH₂CH₂CHO.</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>butanal</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;butanone&quot;,&quot;butan-2-one&quot;]}">
+<p class="admonition-title">Exercise 3</p>
+<p class="pk-q-prompt">Give the IUPAC name of CH₃COCH₂CH₃.</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>butanone / butan-2-one</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;alcohol&quot;,&quot;ketone&quot;,&quot;aldehyde&quot;,&quot;carboxylic acid&quot;],&quot;answer&quot;:&quot;carboxylic acid&quot;}">
+<p class="admonition-title">Exercise 4</p>
+<p class="pk-q-prompt">Which group has the highest priority as the suffix of a name?</p>
+<ol class="pk-q-opts" type="A"><li>alcohol</li><li>ketone</li><li>aldehyde</li><li>carboxylic acid</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>carboxylic acid</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;choice&quot;,&quot;options&quot;:[&quot;a primary alcohol&quot;,&quot;a secondary alcohol&quot;,&quot;a tertiary alcohol&quot;,&quot;an ether&quot;],&quot;answer&quot;:&quot;a tertiary alcohol&quot;}">
+<p class="admonition-title">Exercise 5</p>
+<p class="pk-q-prompt">(CH₃)₃COH is</p>
+<ol class="pk-q-opts" type="A"><li>a primary alcohol</li><li>a secondary alcohol</li><li>a tertiary alcohol</li><li>an ether</li></ol>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>a tertiary alcohol</strong></p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;text&quot;,&quot;answer&quot;:[&quot;1&quot;,&quot;one&quot;]}">
+<p class="admonition-title">Exercise 6</p>
+<p class="pk-q-prompt">What is the degree of unsaturation of C₆H₁₂?</p>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>1 / one</strong></p>
+<p class="pk-q-why">(12 + 2 - 12)/2 = 1: one ring (cyclohexane) or one double bond (a hexene).</p>
+</details>
+<div class="admonition example pk-q" data-q="{&quot;type&quot;:&quot;match&quot;,&quot;pairs&quot;:[[&quot;acetone&quot;,&quot;propanone&quot;],[&quot;acetic acid&quot;,&quot;ethanoic acid&quot;],[&quot;toluene&quot;,&quot;methylbenzene&quot;],[&quot;ethyl acetate&quot;,&quot;ethyl ethanoate&quot;]]}">
+<p class="admonition-title">Exercise 7</p>
+<p class="pk-q-prompt">Match each common name to its systematic name.</p>
+<table class="pk-q-match"><thead><tr><th>A</th><th>B</th></tr></thead><tbody><tr><td>acetone</td><td>methylbenzene</td></tr><tr><td>acetic acid</td><td>ethyl ethanoate</td></tr><tr><td>toluene</td><td>propanone</td></tr><tr><td>ethyl acetate</td><td>ethanoic acid</td></tr></tbody></table>
+</div>
+<details class="note pk-q-ans">
+<summary>Answer</summary>
+<p><strong>acetone</strong> — propanone; <strong>acetic acid</strong> — ethanoic acid; <strong>toluene</strong> — methylbenzene; <strong>ethyl acetate</strong> — ethyl ethanoate</p>
+</details>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="structure-and-bonding.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Structure and Bonding">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+1. Structure and Bonding
+</div>
+</div>
+</a>
+<a href="isomerism-and-stereochemistry.html" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Isomerism and Stereochemistry">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+3. Isomerism and Stereochemistry
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

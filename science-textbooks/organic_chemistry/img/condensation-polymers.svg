@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 230" width="790" height="230" role="img" aria-label="Condensation polymers: nylon-6,6, a polyamide, and poly(ethylene terephthalate), a polyester, shown as repeat units">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<path d="M232.0 58.0 H225.0 V112.0 H232.0" stroke="#1a1a1a" stroke-width="1.60" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M561.0 58.0 H568.0 V112.0 H561.0" stroke="#1a1a1a" stroke-width="1.60" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="368.0" y1="190.0" x2="355.0" y2="212.5" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="360.7" y1="190.6" x2="351.9" y2="205.9" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="355.0" y1="212.5" x2="329.0" y2="212.5" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="329.0" y1="212.5" x2="316.0" y2="190.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="332.1" y1="205.9" x2="323.3" y2="190.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="316.0" y1="190.0" x2="329.0" y2="167.5" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="329.0" y1="167.5" x2="355.0" y2="167.5" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="333.2" y1="173.5" x2="350.8" y2="173.5" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="355.0" y1="167.5" x2="368.0" y2="190.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<path d="M137.0 158.0 H130.0 V222.0 H137.0" stroke="#1a1a1a" stroke-width="1.60" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M443.0 158.0 H450.0 V222.0 H443.0" stroke="#1a1a1a" stroke-width="1.60" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="20.0" y="34.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="bold">nylon-6,6 (from hexanedioic acid and hexane-1,6-diamine)</text>
+<text x="395.0" y="91.7" font-size="19.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">–NH–(CH₂)₆–NH–CO–(CH₂)₄–CO–</text>
+<text x="576.0" y="119.2" font-size="15.0" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="italic">n</text>
+<text x="20.0" y="144.9" font-size="14.0" text-anchor="start" fill="#1a1a1a" font-weight="bold">PET (from benzene-1,4-dicarboxylic acid and ethane-1,2-diol)</text>
+<text x="318.0" y="196.7" font-size="19.0" text-anchor="end" fill="#1a1a1a" font-weight="normal">–O–CH₂CH₂–O–CO–</text>
+<text x="372.0" y="196.7" font-size="19.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">–CO–</text>
+<text x="458.0" y="229.2" font-size="15.0" text-anchor="start" fill="#1a1a1a" font-weight="normal" font-style="italic">n</text>
+<text x="560.0" y="194.6" font-size="13.0" text-anchor="start" fill="#6b6b6b" font-weight="normal">ester links</text>
+<text x="670.0" y="89.5" font-size="13.0" text-anchor="start" fill="#6b6b6b" font-weight="normal">amide links</text>
+</g>
+</svg>

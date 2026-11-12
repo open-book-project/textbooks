@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="760" height="210" role="img" aria-label="Curly arrows for the reaction of hydroxide ion with ethanoic acid: a lone pair takes the proton and the O-H bonding pair stays on oxygen">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="289.8" y1="141.0" x2="250.0" y2="118.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="253.0" y1="118.0" x2="253.0" y2="72.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="247.0" y1="118.0" x2="247.0" y2="72.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="250.0" y1="118.0" x2="210.2" y2="141.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="210.2" y1="141.0" x2="175.5" y2="121.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="460.2" y1="141.0" x2="500.0" y2="118.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="503.0" y1="118.0" x2="503.0" y2="72.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="497.0" y1="118.0" x2="497.0" y2="72.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="500.0" y1="118.0" x2="539.8" y2="141.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<rect x="47.5" y="109.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="60.0" y="126.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">HO</text>
+<circle cx="66.8" cy="101.2" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="62.8" y1="101.2" x2="70.8" y2="101.2" stroke="#1a1a1a" stroke-width="1.4"/>
+<circle cx="80.0" cy="116.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="80.0" cy="124.0" r="1.9" fill="#1a1a1a"/>
+<rect x="242.7" y="61.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="250.0" y="78.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="202.9" y="130.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="210.2" y="146.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="168.3" y="110.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="175.5" y="127.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="492.7" y="61.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="500.0" y="78.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="532.6" y="130.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="539.8" y="146.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<circle cx="556.6" cy="138.0" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="552.6" y1="138.0" x2="560.6" y2="138.0" stroke="#1a1a1a" stroke-width="1.4"/>
+<text x="570.0" y="125.0" font-size="20.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">+</text>
+<text x="640.0" y="124.7" font-size="19.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H₂O</text>
+<text x="60.0" y="194.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">base</text>
+<text x="240.0" y="194.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">acid (pKₐ 4.8)</text>
+<text x="490.0" y="194.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">conjugate base</text>
+<text x="650.0" y="194.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">conjugate acid (pKₐ 15.7)</text>
+<path d="M85.0 114.0 Q120.0 70.0 166.5 115.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="166.5,115.0 156.8,111.4 162.6,105.4" fill="#c0392b"/>
+<path d="M192.8 131.0 Q178.2 167.0 207.2 154.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="207.2,154.0 200.2,161.7 196.8,154.1" fill="#c0392b"/>
+<line x1="345.0" y1="115.0" x2="405.0" y2="115.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<polygon points="405.0,115.0 395.0,119.5 395.0,110.5" fill="#1a1a1a"/>
+</g>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" width="760" height="230" role="img" aria-label="Propan-1-ol drawn as a full structural formula, a condensed formula and a skeletal formula">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="40.0" y1="110.0" x2="92.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="92.0" y1="110.0" x2="144.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="144.0" y1="110.0" x2="196.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="196.0" y1="110.0" x2="248.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="248.0" y1="110.0" x2="300.0" y2="110.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="92.0" y1="110.0" x2="92.0" y2="70.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="92.0" y1="110.0" x2="92.0" y2="150.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="144.0" y1="110.0" x2="144.0" y2="70.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="144.0" y1="110.0" x2="144.0" y2="150.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="196.0" y1="110.0" x2="196.0" y2="70.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="196.0" y1="110.0" x2="196.0" y2="150.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="580.0" y1="125.0" x2="614.6" y2="105.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="614.6" y1="105.0" x2="649.3" y2="125.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="649.3" y1="125.0" x2="683.9" y2="105.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<rect x="84.7" y="53.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="92.0" y="70.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="84.7" y="145.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="92.0" y="161.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="84.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="92.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C</text>
+<rect x="136.7" y="53.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="144.0" y="70.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="136.7" y="145.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="144.0" y="161.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="136.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="144.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C</text>
+<rect x="188.7" y="53.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="196.0" y="70.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="188.7" y="145.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="196.0" y="161.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="188.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="196.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">C</text>
+<rect x="32.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="40.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="292.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="300.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">H</text>
+<rect x="240.7" y="99.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="248.0" y="116.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<circle cx="244.0" cy="96.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="252.0" cy="96.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="252.0" cy="124.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="244.0" cy="124.0" r="1.9" fill="#1a1a1a"/>
+<text x="170.0" y="209.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">full structural (Lewis) formula</text>
+<text x="445.0" y="117.0" font-size="20.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">CH<tspan dy="6.0" font-size="14.4">3</tspan><tspan dy="-6.0">​</tspan>CH<tspan dy="6.0" font-size="14.4">2</tspan><tspan dy="-6.0">​</tspan>CH<tspan dy="6.0" font-size="14.4">2</tspan><tspan dy="-6.0">​</tspan>OH</text>
+<text x="445.0" y="209.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">condensed formula</text>
+<rect x="675.9" y="94.5" width="25.1" height="20.4" fill="#ffffff"/>
+<text x="677.9" y="111.0" font-size="17.0" text-anchor="start" fill="#1a1a1a" font-weight="normal">OH</text>
+<text x="650.0" y="209.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">skeletal formula</text>
+</g>
+</svg>

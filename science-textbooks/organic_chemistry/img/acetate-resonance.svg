@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" width="760" height="220" role="img" aria-label="The two equivalent resonance contributors of the ethanoate ion and the hybrid that describes it">
+<rect width="100%" height="100%" fill="#ffffff" rx="6"/>
+<g font-family="Helvetica, Arial, sans-serif">
+<line x1="76.7" y1="150.0" x2="120.0" y2="125.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="123.0" y1="125.0" x2="123.0" y2="75.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="117.0" y1="125.0" x2="117.0" y2="75.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="120.0" y1="125.0" x2="163.3" y2="150.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="326.7" y1="150.0" x2="370.0" y2="125.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="370.0" y1="125.0" x2="370.0" y2="75.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="368.5" y1="127.6" x2="411.8" y2="152.6" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="371.5" y1="122.4" x2="414.8" y2="147.4" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="566.7" y1="150.0" x2="610.0" y2="125.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="610.0" y1="125.0" x2="610.0" y2="75.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="616.0" y1="117.0" x2="616.0" y2="83.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round" stroke-dasharray="4 3"/>
+<line x1="610.0" y1="125.0" x2="653.3" y2="150.0" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round"/>
+<line x1="619.9" y1="123.8" x2="649.4" y2="140.8" stroke="#1a1a1a" stroke-width="1.80" stroke-linecap="round" stroke-dasharray="4 3"/>
+<rect x="112.7" y="64.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="120.0" y="81.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="156.0" y="139.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="163.3" y="155.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<circle cx="175.6" cy="160.3" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="171.6" y1="160.3" x2="179.6" y2="160.3" stroke="#1a1a1a" stroke-width="1.4"/>
+<circle cx="176.3" cy="146.0" r="1.9" fill="#1a1a1a"/>
+<circle cx="176.3" cy="154.0" r="1.9" fill="#1a1a1a"/>
+<rect x="362.7" y="64.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="370.0" y="81.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="406.0" y="139.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="413.3" y="155.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<circle cx="385.0" cy="69.5" r="6.2" fill="#ffffff" stroke="#1a1a1a" stroke-width="1.1"/>
+<line x1="381.0" y1="69.5" x2="389.0" y2="69.5" stroke="#1a1a1a" stroke-width="1.4"/>
+<text x="490.0" y="134.1" font-size="26.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">≡</text>
+<rect x="602.7" y="64.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="610.0" y="81.0" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<rect x="646.0" y="139.5" width="14.5" height="20.4" fill="#ffffff"/>
+<text x="653.3" y="155.9" font-size="17.0" text-anchor="middle" fill="#1a1a1a" font-weight="normal">O</text>
+<text x="632.0" y="76.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">δ−</text>
+<text x="677.3" y="161.2" font-size="15.0" text-anchor="middle" fill="#1f5fa8" font-weight="normal">δ−</text>
+<text x="120.0" y="204.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">contributor A</text>
+<text x="370.0" y="204.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">contributor B</text>
+<text x="610.0" y="204.6" font-size="13.0" text-anchor="middle" fill="#6b6b6b" font-weight="normal">resonance hybrid</text>
+<path d="M178.3 143.0 Q175.3 110.0 141.7 137.5" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="141.7,137.5 146.3,128.2 151.7,134.7" fill="#c0392b"/>
+<path d="M122.0 99.0 Q150.0 91.0 131.0 79.0" stroke="#c0392b" stroke-width="1.70" fill="none" stroke-linecap="round"/>
+<polygon points="131.0,79.0 141.3,80.5 136.8,87.6" fill="#c0392b"/>
+<line x1="225.0" y1="125.0" x2="275.0" y2="125.0" stroke="#1a1a1a" stroke-width="1.60" stroke-linecap="round"/>
+<polygon points="275.0,125.0 266.0,129.0 266.0,121.0" fill="#1a1a1a"/>
+<polygon points="225.0,125.0 234.0,121.0 234.0,129.0" fill="#1a1a1a"/>
+</g>
+</svg>
