@@ -21,7 +21,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="OB Textbooks">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="application-name" content="OB Textbooks"><script src="assets/library-data.js?v=e040666d37"></script><script>
+<meta name="application-name" content="OB Textbooks"><script src="assets/library-data.js?v=48105f6749"></script><script>
     (function () {
       var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
       if (!X) return;
@@ -823,6 +823,46 @@ HTML books: what the importers add
 <li class="md-nav__item">
 <a href="open-textbooks/wb-statistics/index.html" class="md-nav__link">
 <span class="md-ellipsis">Statistics</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-latin/index.html" class="md-nav__link">
+<span class="md-ellipsis">Latin</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-chinese-mandarin/index.html" class="md-nav__link">
+<span class="md-ellipsis">Chinese (Mandarin)</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-trigonometry/index.html" class="md-nav__link">
+<span class="md-ellipsis">Trigonometry</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-cell-biology/index.html" class="md-nav__link">
+<span class="md-ellipsis">Cell Biology</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-real-analysis/index.html" class="md-nav__link">
+<span class="md-ellipsis">Real Analysis</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-physics-study-guide/index.html" class="md-nav__link">
+<span class="md-ellipsis">Physics Study Guide</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-haskell/index.html" class="md-nav__link">
+<span class="md-ellipsis">Haskell</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-textbooks/wb-engineering-acoustics/index.html" class="md-nav__link">
+<span class="md-ellipsis">Engineering Acoustics</span>
 </a>
 </li>
 </ul>
@@ -2628,9 +2668,10 @@ chapters the entry lists in <code>chapters</code> (<code>title</code>, <code>fro
 <li><strong>Display.</strong> In <code>scans</code> mode a chapter is its pages as images; in <code>text</code> mode it is the OCR text of its pages, cleaned
 lightly (running heads and folios removed, hyphenated words joined, lines made paragraphs) and set in the library's
 typography, with a "View page scan" button on every page. <code>text</code> needs the item's <code>*_hocr_searchtext.txt.gz</code> and
-<code>*_hocr_pageindex.json.gz</code>; by default a book is shown as text when its language is English, it has them and the OCR's
-confidence (<code>*_page_numbers.json</code>) is at least 90, otherwise as scans (Sanskrit and Hindi in Devanagari cannot be read
-by the OCR). <code>display:</code> overrides the choice (for a book whose language is wrongly recorded).</li>
+<code>*_hocr_pageindex.json.gz</code>; by default a book is shown as text when its language is in the Latin script (English, Latin, French, German and the
+like), it has them, and either the OCR's confidence (<code>*_page_numbers.json</code>) is at least 90 or a sample of its text reads
+well (at least 90% clean words: letters with a vowel, no stray digits or signs), otherwise as scans (Sanskrit and Hindi
+in Devanagari cannot be read by the OCR; tables of figures read better as scans). <code>display:</code> overrides the choice (for a book whose language is wrongly recorded).</li>
 <li><strong>The viewer</strong> (<code>assets/scans.js</code>, <code>scans.css</code>) is the library's own: page images come from the image service of the
 Internet Archive (IIIF, which answers pages of another site), at a size that fits the screen and a larger one on zoom,
 with pinch, Ctrl+wheel, button and double-tap zoom, pan, fit to width or to the page, a jump to a page number, a strip of
@@ -3003,7 +3044,7 @@ Material for MkDocs
 <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
 <script src="assets/mathjax.js?v=773adb7420"></script>
 <script src="assets/viz.js?v=97faa5745a"></script>
-<script src="assets/remote.js?v=60e56f8534"></script>
+<script src="assets/remote.js?v=5d7de023c8"></script>
 <script src="assets/scans.js?v=dbf1b7d239"></script>
 <script src="assets/reader.js?v=96514a4aef"></script>
 <script src="assets/app.js?v=29ce824190"></script>

@@ -1,0 +1,771 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-cell-biology/index.html">
+<link rel="prev" href="../wb-trigonometry/hilbert-s-third-problem.html">
+<link rel="next" href="glossary.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Cell Biology</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="glossary.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Glossary Alphabetically
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="glossary-by-lesson.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Glossary By Lesson
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="how-to-edit-this-book.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. How to edit this book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction-to-cell-biology.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Introduction to Cell Biology
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-is-living.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. What is living?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-is-a-cell.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. What is a cell?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cell-size.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Size of cells
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-great-ancestor.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. The Great Ancestor
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cells-under-microscopes.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Cells Under Microscopes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-elements-of-life.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Chemical elements necessary for life
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="prokaryotes.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Prokaryotes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction-to-bacteria.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Bacteria
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="archaea.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Archaea
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="eukaryotes.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Eukaryotes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="nucleus.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Nucleus
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mitochondria.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Mitochondria
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chloroplasts.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Chloroplasts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="membranes.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Membranes
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="organelles.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Other Organelles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="plant-cells.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Unique Properties of Plant Cells
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="actin-filaments.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Actin filaments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="intermediate-filaments.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Intermediate filaments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="microtubules.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Microtubules
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. How do we know how cells function
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="e-coli.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Escherichia coli
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="yeasts.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Yeasts (Saccharomyces cerevisae)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worms.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Worms (Caenorhabditis elegans)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="flies.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Flies (Drosophila melanogaster)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mice.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Mice
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="plant.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Cress (Arabidopsis thaliana)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cell-cycle.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Cell cycle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="meiosis.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Meiosis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mitosis.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Mitosis
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cell-mass-and-growth-rate.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Cell Mass and Growth Rate
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gene-expression.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Expression
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gene-translation.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Translation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="authors.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Authors
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-cell-biology" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="glossary.html" style="--cv-bg:#14532d;--cv-accent:#f59e0b;--cv-fg:#f1f5e9;--cv-n:8;--cv-rot:50deg;--cv-x:22%;--cv-y:59%" aria-label="Start reading Cell Biology"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Cell Biology</span><span class="vol-sub">The structure and working of the cell</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Cell Biology</h1>
+<p class="pk-book-sub">The structure and working of the cell</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">The structure of cells and their parts, membranes, energy and metabolism, the cell cycle, genes and cell signalling.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-intermediate">Intermediate</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/biology.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 3c0 6 8 6 8 9s-8 3-8 9M16 3c0 6-8 6-8 9s8 3 8 9M9.2 6.5h5.6M9.2 17.5h5.6"/></svg><span class="pk-chip-cat">Science &rsaquo;</span> Biology</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="glossary.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-cell-biology"></div></div>
+<p class="pk-book-facts"><span>37 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-cell-biology" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Contents</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="glossary.html">Chapter 1: Glossary Alphabetically</a></li>
+<li class="vc-ch"><details><summary><a href="glossary-by-lesson.html">Chapter 2: Glossary By Lesson</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="glossary-by-lesson.html#21-introduction-to-cell-biology"><span class="vc-n">2.1</span> Introduction to Cell Biology</a></li>
+<li class="vc-l2"><a href="glossary-by-lesson.html#22-what-is-living"><span class="vc-n">2.2</span> What is living</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="how-to-edit-this-book.html">Chapter 3: How to edit this book</a></li>
+</ul>
+<p class="toc-group">Beginning Cell Biology</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="introduction-to-cell-biology.html">Chapter 4: Introduction to Cell Biology</a></li>
+<li class="vc-ch"><details><summary><a href="what-is-living.html">Chapter 5: What is living?</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="what-is-living.html#51-seven-criteria"><span class="vc-n">5.1</span> Seven Criteria</a></li>
+<li class="vc-l2"><a href="what-is-living.html#52-virus-controversy"><span class="vc-n">5.2</span> Virus Controversy</a></li>
+<li class="vc-l2"><a href="what-is-living.html#53-the-cell-is-alive-what-about-parts-of-it"><span class="vc-n">5.3</span> The cell is alive, what about parts of it?</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="what-is-a-cell.html">Chapter 6: What is a cell?</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="what-is-a-cell.html#61-elements"><span class="vc-n">6.1</span> Elements</a></li>
+<li class="vc-l2"><a href="what-is-a-cell.html#62-molecules"><span class="vc-n">6.2</span> Molecules</a></li>
+<li class="vc-l2"><a href="what-is-a-cell.html#63-components-of-cytoplasm"><span class="vc-n">6.3</span> Components of cytoplasm</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cell-size.html">Chapter 7: Size of cells</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cell-size.html#71-size-of-cells"><span class="vc-n">7.1</span> Size of Cells</a></li>
+<li class="vc-l2"><a href="cell-size.html#72-related-reading"><span class="vc-n">7.2</span> Related reading</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-great-ancestor.html">Chapter 8: The Great Ancestor</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-great-ancestor.html#81-introduction-to-gene-expression"><span class="vc-n">8.1</span> Introduction to Gene Expression</a></li>
+<li class="vc-l2"><a href="the-great-ancestor.html#82-the-great-ancestor"><span class="vc-n">8.2</span> The Great Ancestor</a></li>
+<li class="vc-l2"><a href="the-great-ancestor.html#83-evolution"><span class="vc-n">8.3</span> Evolution</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cells-under-microscopes.html">Chapter 9: Cells Under Microscopes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cells-under-microscopes.html#91-unit-conversion"><span class="vc-n">9.1</span> Unit Conversion</a></li>
+<li class="vc-l2"><a href="cells-under-microscopes.html#92-light-microscope"><span class="vc-n">9.2</span> Light Microscope</a></li>
+<li class="vc-l2"><a href="cells-under-microscopes.html#93-electron-microscope"><span class="vc-n">9.3</span> Electron Microscope</a></li>
+<li class="vc-l2"><a href="cells-under-microscopes.html#94-naked-eye"><span class="vc-n">9.4</span> Naked eye</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-elements-of-life.html">Chapter 10: Chemical elements necessary for life</a></li>
+<li class="vc-ch"><details><summary><a href="prokaryotes.html">Chapter 11: Prokaryotes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="prokaryotes.html#111-cell-surface"><span class="vc-n">11.1</span> Cell Surface</a></li>
+<li class="vc-l2"><a href="prokaryotes.html#112-reproduction-and-adaptation"><span class="vc-n">11.2</span> Reproduction and Adaptation</a></li>
+<li class="vc-l2"><a href="prokaryotes.html#113-transformation-and-transduction"><span class="vc-n">11.3</span> Transformation and Transduction</a></li>
+<li class="vc-l2"><a href="prokaryotes.html#114-diverse-nutritional-and-metabolic-adaptations"><span class="vc-n">11.4</span> Diverse nutritional and metabolic adaptations</a></li>
+<li class="vc-l2"><a href="prokaryotes.html#115-the-role-of-oxygen-in-metabolism"><span class="vc-n">11.5</span> The Role of Oxygen In Metabolism</a></li>
+<li class="vc-l2"><a href="prokaryotes.html#116-reference"><span class="vc-n">11.6</span> Reference</a><ul class="vc-subs"><li class="vc-l3"><a href="prokaryotes.html#see-also">See also</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="introduction-to-bacteria.html">Chapter 12: Bacteria</a></li>
+<li class="vc-ch vc-leaf"><a href="archaea.html">Chapter 13: Archaea</a></li>
+<li class="vc-ch"><details><summary><a href="eukaryotes.html">Chapter 14: Eukaryotes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="eukaryotes.html#141-comparing-prokaryotic-and-eukaryotic-cells"><span class="vc-n">14.1</span> Comparing Prokaryotic and Eukaryotic Cells</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#142-animal-cells"><span class="vc-n">14.2</span> Animal Cells</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#143-plant-cell"><span class="vc-n">14.3</span> Plant Cell</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#144-nucleus"><span class="vc-n">14.4</span> Nucleus</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#145-ribosomes"><span class="vc-n">14.5</span> Ribosomes</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#146-the-endomembrane-system"><span class="vc-n">14.6</span> The Endomembrane System</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#147-endoplasmic-reticulum-er"><span class="vc-n">14.7</span> Endoplasmic Reticulum (ER)</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#148-golgi-apparatus"><span class="vc-n">14.8</span> Golgi Apparatus</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#149-lysosomes"><span class="vc-n">14.9</span> Lysosomes</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#1410-vacuoles"><span class="vc-n">14.10</span> Vacuoles</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#1411-mitochondria-and-chloroplasts"><span class="vc-n">14.11</span> Mitochondria and Chloroplasts</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#1412-cytoskeleton"><span class="vc-n">14.12</span> Cytoskeleton</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#1413-cell-wall"><span class="vc-n">14.13</span> Cell Wall</a></li>
+<li class="vc-l2"><a href="eukaryotes.html#1414-references"><span class="vc-n">14.14</span> References</a><ul class="vc-subs"><li class="vc-l3"><a href="eukaryotes.html#see-also">See also</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="nucleus.html">Chapter 15: Nucleus</a></li>
+<li class="vc-ch"><details><summary><a href="mitochondria.html">Chapter 16: Mitochondria</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mitochondria.html#161-mitochondria"><span class="vc-n">16.1</span> Mitochondria</a></li>
+<li class="vc-l2"><a href="mitochondria.html#162-how-scientists-know-its-characteristics"><span class="vc-n">16.2</span> How scientists know its characteristics</a></li>
+<li class="vc-l2"><a href="mitochondria.html#163-secrets-discovered-recently"><span class="vc-n">16.3</span> Secrets discovered recently</a></li>
+<li class="vc-l2"><a href="mitochondria.html#164-the-journey-of-evolution"><span class="vc-n">16.4</span> The journey of evolution</a></li>
+<li class="vc-l2"><a href="mitochondria.html#165-reference"><span class="vc-n">16.5</span> Reference</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="chloroplasts.html">Chapter 17: Chloroplasts</a></li>
+<li class="vc-ch"><details><summary><a href="membranes.html">Chapter 18: Membranes</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="membranes.html#181-the-cell-membrane-is-asymmetric"><span class="vc-n">18.1</span> The Cell Membrane is Asymmetric</a></li>
+<li class="vc-l2"><a href="membranes.html#182-important-aspects-of-membranes"><span class="vc-n">18.2</span> Important aspects of Membranes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="organelles.html">Chapter 19: Other Organelles</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="organelles.html#191-nucleus"><span class="vc-n">19.1</span> Nucleus</a></li>
+<li class="vc-l2"><a href="organelles.html#192-mitochondria"><span class="vc-n">19.2</span> Mitochondria</a></li>
+<li class="vc-l2"><a href="organelles.html#193-ribosomes"><span class="vc-n">19.3</span> Ribosomes</a></li>
+<li class="vc-l2"><a href="organelles.html#194-endoplasmic-reticulum"><span class="vc-n">19.4</span> Endoplasmic Reticulum</a><ul class="vc-subs"><li class="vc-l3"><a href="organelles.html#smooth-er">Smooth ER</a></li><li class="vc-l3"><a href="organelles.html#rough-er">Rough ER</a></li></ul></li>
+<li class="vc-l2"><a href="organelles.html#195-golgi-complexapparatus"><span class="vc-n">19.5</span> Golgi Complex(apparatus)</a></li>
+<li class="vc-l2"><a href="organelles.html#196-vacuole"><span class="vc-n">19.6</span> Vacuole</a></li>
+<li class="vc-l2"><a href="organelles.html#197-peroxisomes"><span class="vc-n">19.7</span> Peroxisomes</a></li>
+<li class="vc-l2"><a href="organelles.html#198-lysosomes"><span class="vc-n">19.8</span> Lysosomes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="plant-cells.html">Chapter 20: Unique Properties of Plant Cells</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="plant-cells.html#201-chloroplasts"><span class="vc-n">20.1</span> Chloroplasts</a></li>
+<li class="vc-l2"><a href="plant-cells.html#202-vacuoles"><span class="vc-n">20.2</span> Vacuoles</a></li>
+<li class="vc-l2"><a href="plant-cells.html#203-cell-walls"><span class="vc-n">20.3</span> Cell walls</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="actin-filaments.html">Chapter 21: Actin filaments</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="actin-filaments.html#211-cytoskeleton"><span class="vc-n">21.1</span> Cytoskeleton</a></li>
+<li class="vc-l2"><a href="actin-filaments.html#212-actin-filaments"><span class="vc-n">21.2</span> Actin filaments</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="intermediate-filaments.html">Chapter 22: Intermediate filaments</a></li>
+<li class="vc-ch vc-leaf"><a href="microtubules.html">Chapter 23: Microtubules</a></li>
+<li class="vc-ch vc-leaf"><a href="introduction.html">Chapter 24: How do we know how cells function</a></li>
+<li class="vc-ch vc-leaf"><a href="e-coli.html">Chapter 25: Escherichia coli</a></li>
+<li class="vc-ch"><details><summary><a href="yeasts.html">Chapter 26: Yeasts (Saccharomyces cerevisae)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="yeasts.html#261-yeasts"><span class="vc-n">26.1</span> Yeasts</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="worms.html">Chapter 27: Worms (Caenorhabditis elegans)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="worms.html#271-worms"><span class="vc-n">27.1</span> Worms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="flies.html">Chapter 28: Flies (Drosophila melanogaster)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="flies.html#281-flies"><span class="vc-n">28.1</span> Flies</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="mice.html">Chapter 29: Mice</a></li>
+<li class="vc-ch"><details><summary><a href="plant.html">Chapter 30: Cress (Arabidopsis thaliana)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="plant.html#301-arabidopsis-thaliana"><span class="vc-n">30.1</span> Arabidopsis thaliana</a></li>
+<li class="vc-l2"><a href="plant.html#302-external-links"><span class="vc-n">30.2</span> External links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cell-cycle.html">Chapter 31: Cell cycle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cell-cycle.html#311-from-wikipedia"><span class="vc-n">31.1</span> From Wikipedia</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#312-background-information"><span class="vc-n">31.2</span> Background Information</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#313-overview"><span class="vc-n">31.3</span> Overview</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#314-mitosis"><span class="vc-n">31.4</span> Mitosis</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#315-details-of-mitosis"><span class="vc-n">31.5</span> Details of mitosis</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#316-cytokinesis"><span class="vc-n">31.6</span> Cytokinesis</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#317-binary-fission"><span class="vc-n">31.7</span> Binary Fission</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#318-the-evolution-of-mitosis"><span class="vc-n">31.8</span> The Evolution of Mitosis</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#319-the-cell-cycle-control-system"><span class="vc-n">31.9</span> The Cell Cycle Control System</a></li>
+<li class="vc-l2"><a href="cell-cycle.html#3110-reference"><span class="vc-n">31.10</span> Reference</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="meiosis.html">Chapter 32: Meiosis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="meiosis.html#321-crossover"><span class="vc-n">32.1</span> Crossover</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mitosis.html">Chapter 33: Mitosis</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mitosis.html#331-prophase"><span class="vc-n">33.1</span> Prophase</a></li>
+<li class="vc-l2"><a href="mitosis.html#332-prometaphase"><span class="vc-n">33.2</span> Prometaphase</a></li>
+<li class="vc-l2"><a href="mitosis.html#333-metaphase"><span class="vc-n">33.3</span> Metaphase</a></li>
+<li class="vc-l2"><a href="mitosis.html#334-anaphase"><span class="vc-n">33.4</span> Anaphase</a></li>
+<li class="vc-l2"><a href="mitosis.html#335-telophase"><span class="vc-n">33.5</span> Telophase</a></li>
+<li class="vc-l2"><a href="mitosis.html#336-cytokinesis"><span class="vc-n">33.6</span> Cytokinesis</a></li>
+<li class="vc-l2"><a href="mitosis.html#337-regulation-of-cell-cycle"><span class="vc-n">33.7</span> Regulation of Cell Cycle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cell-mass-and-growth-rate.html">Chapter 34: Cell Mass and Growth Rate</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cell-mass-and-growth-rate.html#341-references"><span class="vc-n">34.1</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="gene-expression.html">Chapter 35: Expression</a></li>
+<li class="vc-ch vc-leaf"><a href="gene-translation.html">Chapter 36: Translation</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="authors.html">Chapter 37: Authors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="authors.html#371-contributors-to-cell-biology"><span class="vc-n">37.1</span> Contributors to Cell Biology</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A textbook of cell biology: the cell and its organelles, membranes and transport, enzymes and energy, the cell cycle and division, the flow of genetic information and the signals by which cells communicate.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Cell Biology, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Cell_Biology" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-trigonometry/hilbert-s-third-problem.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 133. Hilbert&#39;s third Problem">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+133. Hilbert's third Problem
+</div>
+</div>
+</a>
+<a href="glossary.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Glossary Alphabetically">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Glossary Alphabetically
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

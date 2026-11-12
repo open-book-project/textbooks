@@ -1,0 +1,985 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-real-analysis/index.html">
+<link rel="prev" href="../wb-cell-biology/authors.html">
+<link rel="next" href="foreword.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Real Analysis</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="foreword.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Foreword
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Old Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="manual-of-style.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Manual of Style
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="counting-numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Ordered Sets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rational-numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Ordered Fields
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-real-numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Axioms of The Real Numbers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="properties-of-real-numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Properties of Real Numbers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="section-1-exercises.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="hints.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Hints
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="answers.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Answers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inverse-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Inverse Functions chapter
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="differentiation.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometry.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Trigonometric Functions, as Axioms
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sequences.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Sequences
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="series.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Series
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="constructing-the-real-numbers.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Construction of the Real Numbers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="section-2-exercises.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="hints-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Hints
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="answers-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Answers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="metric-spaces.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Metric Spaces
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="compact-sets.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Compact Sets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="connected-sets.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Connected Sets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="normed-linear-spaces.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Normed Linear Spaces
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="open-and-closed-sets.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Open and Closed Sets
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="limit-points-accumulation-points.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Limit Points (Accumulation Points)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="interior-closure-boundary.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Interior, Closure, Boundary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="limits.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Limits
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="continuity.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Continuity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="topological-continuity.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Topological Continuity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="total-variation.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Total Variation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="arc-length.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Arc Length
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exponential-function.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. The Exponential Function
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="limits-and-continuity-exercises.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="hints-3.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Hints
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="applications-of-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Applications of Derivatives
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercises-on-derivatives.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Exercises
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="darboux-integral.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Darboux Integral
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="riemann-integration.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Riemann integration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fundamental-theorem-of-calculus.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Fundamental Theorem of Calculus
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="applications-of-integration.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Applications of Integration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="generalized-integration.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Generalized Integration
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pointwise-convergence.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Pointwise Convergence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="uniform-convergence.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Uniform Convergence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="power-series.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Power Series
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="differentiation-in-rn.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Differentiation in R<sup>n</sup>
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inverse-function-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Inverse Function Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="symbols.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix A. List of Mathematical Symbols
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="list-of-theorems.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix B. List of Theorems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="bibliography-2.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix C. Bibliography
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-real-analysis" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="foreword.html" style="--cv-bg:#312e81;--cv-accent:#fbbf24;--cv-fg:#eef2ff;--cv-n:20;--cv-rot:2deg;--cv-x:88%;--cv-y:77%" aria-label="Start reading Real Analysis"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Real Analysis</span><span class="vol-sub">The rigorous theory of the real numbers and functions</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Real Analysis</h1>
+<p class="pk-book-sub">The rigorous theory of the real numbers and functions</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">The real numbers, sequences, limits, continuity, differentiation and integration, proved from the axioms.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-advanced">Advanced</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/mathematics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 5H7l5.5 7L7 19h10"/></svg>Mathematics</a><a class="pk-chip" href="../../subjects/calculus.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 5.5c3 9.5 5 12.5 8.5 12.5s5.5-3 8.5-12.5M4 21h16"/><circle cx="12" cy="18" r="1.5"/></svg><span class="pk-chip-cat">Mathematics &rsaquo;</span> Calculus &amp; Analysis</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="foreword.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-real-analysis"></div></div>
+<p class="pk-book-facts"><span>47 chapters</span><span>3 appendices</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-real-analysis" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Introduction</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="foreword.html">Chapter 1: Foreword</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="foreword.html#11-foreword"><span class="vc-n">1.1</span> Foreword</a><ul class="vc-subs"><li class="vc-l3"><a href="foreword.html#what-is-analysis">What is Analysis?</a></li><li class="vc-l3"><a href="foreword.html#analysis-or-calculus">Analysis or Calculus?</a></li><li class="vc-l3"><a href="foreword.html#preliminaries">Preliminaries</a></li><li class="vc-l3"><a href="foreword.html#advice-for-readers">Advice for Readers</a></li></ul></li>
+<li class="vc-l2"><a href="foreword.html#12-authors"><span class="vc-n">1.2</span> Authors</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="introduction.html">Chapter 2: Old Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#21-introduction"><span class="vc-n">2.1</span> Introduction</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="manual-of-style.html">Chapter 3: Manual of Style</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="manual-of-style.html#31-introduction"><span class="vc-n">3.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="manual-of-style.html#32-didactic"><span class="vc-n">3.2</span> Didactic</a><ul class="vc-subs"><li class="vc-l3"><a href="manual-of-style.html#audience">Audience</a></li><li class="vc-l3"><a href="manual-of-style.html#interpretation">Interpretation</a></li><li class="vc-l3"><a href="manual-of-style.html#exercises">Exercises</a></li></ul></li>
+<li class="vc-l2"><a href="manual-of-style.html#33-design"><span class="vc-n">3.3</span> Design</a><ul class="vc-subs"><li class="vc-l3"><a href="manual-of-style.html#templates">Templates</a></li><li class="vc-l3"><a href="manual-of-style.html#linking">Linking</a></li><li class="vc-l3"><a href="manual-of-style.html#references">References</a></li></ul></li>
+<li class="vc-l2"><a href="manual-of-style.html#34-description"><span class="vc-n">3.4</span> Description</a><ul class="vc-subs"><li class="vc-l3"><a href="manual-of-style.html#notation">Notation</a></li><li class="vc-l3"><a href="manual-of-style.html#wikibook-terminology">Wikibook Terminology</a></li><li class="vc-l3"><a href="manual-of-style.html#mathematical-terminology">Mathematical Terminology</a></li><li class="vc-l3"><a href="manual-of-style.html#proofs">Proofs</a></li><li class="vc-l3"><a href="manual-of-style.html#conventions">Conventions</a></li><li class="vc-l3"><a href="manual-of-style.html#appendices">Appendices</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">The real numbers stage|50%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="counting-numbers.html">Chapter 4: Ordered Sets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="counting-numbers.html#41-natural-numbers"><span class="vc-n">4.1</span> Natural Numbers</a></li>
+<li class="vc-l2"><a href="counting-numbers.html#42-multiplication"><span class="vc-n">4.2</span> Multiplication</a></li>
+<li class="vc-l2"><a href="counting-numbers.html#43-peano-axioms"><span class="vc-n">4.3</span> Peano Axioms</a><ul class="vc-subs"><li class="vc-l3"><a href="counting-numbers.html#alternative-constructions-of-addition-and-multiplication">Alternative constructions of addition and multiplication</a></li></ul></li>
+<li class="vc-l2"><a href="counting-numbers.html#44-zermelo-fraenkel-axioms"><span class="vc-n">4.4</span> Zermelo Fraenkel Axioms</a></li>
+<li class="vc-l2"><a href="counting-numbers.html#45-integers"><span class="vc-n">4.5</span> Integers</a></li>
+<li class="vc-l2"><a href="counting-numbers.html#46-absolute-value"><span class="vc-n">4.6</span> Absolute Value</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="rational-numbers.html">Chapter 5: Ordered Fields</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rational-numbers.html#51-groups"><span class="vc-n">5.1</span> Groups</a></li>
+<li class="vc-l2"><a href="rational-numbers.html#52-a-field"><span class="vc-n">5.2</span> A Field</a><ul class="vc-subs"><li class="vc-l3"><a href="rational-numbers.html#rational-numbers">Rational Numbers</a></li></ul></li>
+<li class="vc-l2"><a href="rational-numbers.html#53-see-also"><span class="vc-n">5.3</span> See Also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-real-numbers.html">Chapter 6: Axioms of The Real Numbers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-real-numbers.html#61-why-we-need-the-real-numbers"><span class="vc-n">6.1</span> Why we need the real numbers</a></li>
+<li class="vc-l2"><a href="the-real-numbers.html#62-different-perspectives"><span class="vc-n">6.2</span> Different perspectives</a><ul class="vc-subs"><li class="vc-l3"><a href="the-real-numbers.html#an-axiomatic-approach">An axiomatic approach</a></li><li class="vc-l3"><a href="the-real-numbers.html#a-constructive-approach">A constructive approach</a></li></ul></li>
+<li class="vc-l2"><a href="the-real-numbers.html#63-the-axioms"><span class="vc-n">6.3</span> The axioms</a><ul class="vc-subs"><li class="vc-l3"><a href="the-real-numbers.html#further-notation">Further notation</a></li><li class="vc-l3"><a href="the-real-numbers.html#completeness">Completeness</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="properties-of-real-numbers.html">Chapter 7: Properties of Real Numbers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="properties-of-real-numbers.html#71-some-simple-results"><span class="vc-n">7.1</span> Some simple results</a><ul class="vc-subs"><li class="vc-l3"><a href="properties-of-real-numbers.html#applications">Applications</a></li></ul></li>
+<li class="vc-l2"><a href="properties-of-real-numbers.html#72-properties-of-least-upper-bounds"><span class="vc-n">7.2</span> Properties of Least Upper Bounds</a><ul class="vc-subs"><li class="vc-l3"><a href="properties-of-real-numbers.html#uniqueness-of-least-upper-bounds">Uniqueness of Least Upper Bounds</a></li><li class="vc-l3"><a href="properties-of-real-numbers.html#existence-of-greatest-lower-bounds">Existence of Greatest Lower Bounds</a></li><li class="vc-l3"><a href="properties-of-real-numbers.html#theorem-ordering-of-sups-and-infs">Theorem (Ordering of Sups and Infs)</a></li></ul></li>
+<li class="vc-l2"><a href="properties-of-real-numbers.html#73-sum-and-product-notation"><span class="vc-n">7.3</span> Sum and Product Notation</a><ul class="vc-subs"><li class="vc-l3"><a href="properties-of-real-numbers.html#properties">Properties</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="section-1-exercises.html">Chapter 8: Exercises</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="section-1-exercises.html#81-unsorted"><span class="vc-n">8.1</span> Unsorted</a></li>
+<li class="vc-l2"><a href="section-1-exercises.html#82-algebra"><span class="vc-n">8.2</span> Algebra</a></li>
+<li class="vc-l2"><a href="section-1-exercises.html#83-absolutes"><span class="vc-n">8.3</span> Absolutes</a></li>
+<li class="vc-l2"><a href="section-1-exercises.html#84-number-theory"><span class="vc-n">8.4</span> Number Theory</a></li>
+<li class="vc-l2"><a href="section-1-exercises.html#85-bridge-questions"><span class="vc-n">8.5</span> Bridge Questions</a><ul class="vc-subs"><li class="vc-l3"><a href="section-1-exercises.html#hints-answers">Hints / Answers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="hints.html">Chapter 9: Hints</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="hints.html#91-unsorted"><span class="vc-n">9.1</span> Unsorted</a></li>
+<li class="vc-l2"><a href="hints.html#92-algebra"><span class="vc-n">9.2</span> Algebra</a></li>
+<li class="vc-l2"><a href="hints.html#93-absolutes"><span class="vc-n">9.3</span> Absolutes</a></li>
+<li class="vc-l2"><a href="hints.html#94-number-theory"><span class="vc-n">9.4</span> Number Theory</a></li>
+<li class="vc-l2"><a href="hints.html#95-bridge-questions"><span class="vc-n">9.5</span> Bridge Questions</a><ul class="vc-subs"><li class="vc-l3"><a href="hints.html#hints-answers">Hints / Answers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="answers.html">Chapter 10: Answers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="answers.html#101-unsorted"><span class="vc-n">10.1</span> Unsorted</a><ul class="vc-subs"><li class="vc-l3"><a href="answers.html#problem-4-prove-that-uniq-postmath-00000001-qinu">Problem 4: Prove that &#x27;&quot;`UNIQ--postMath-00000001-QINU`&quot;&#x27;</a></li></ul></li>
+<li class="vc-l2"><a href="answers.html#102-algebra"><span class="vc-n">10.2</span> Algebra</a></li>
+<li class="vc-l2"><a href="answers.html#103-absolutes"><span class="vc-n">10.3</span> Absolutes</a></li>
+<li class="vc-l2"><a href="answers.html#104-number-theory"><span class="vc-n">10.4</span> Number Theory</a><ul class="vc-subs"><li class="vc-l3"><a href="answers.html#problem-1-prove-the-following-properties-on-even-and-odd-numbers">Problem 1: Prove the following properties on even and odd numbers</a></li><li class="vc-l3"><a href="answers.html#problem-2-prove-that-no-consecutive-number-of-a-perfect-square-is-also-a-perfect-square">Problem 2: Prove that no consecutive number of a perfect square is also a perfect square</a></li><li class="vc-l3"><a href="answers.html#problem-6-prove-that-any-square-root-of-a-prime-number-is-irrational">Problem 6: Prove that any square root of a prime number is irrational</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Functions, Trigonometry, and Graphical Analysis stage|25%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="inverse-functions.html">Chapter 11: Inverse Functions chapter</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="inverse-functions.html#111-construction"><span class="vc-n">11.1</span> Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="inverse-functions.html#inverse-operator">Inverse Operator</a></li><li class="vc-l3"><a href="inverse-functions.html#inverse-function-theorem">Inverse Function Theorem</a></li><li class="vc-l3"><a href="inverse-functions.html#notation">Notation</a></li></ul></li>
+<li class="vc-l2"><a href="inverse-functions.html#112-theorems"><span class="vc-n">11.2</span> Theorems</a><ul class="vc-subs"><li class="vc-l3"><a href="inverse-functions.html#basic-properties">Basic Properties</a></li><li class="vc-l3"><a href="inverse-functions.html#algebra">Algebra</a></li><li class="vc-l3"><a href="inverse-functions.html#continuity">Continuity</a></li><li class="vc-l3"><a href="inverse-functions.html#the-reciprocal-definition-property">&quot;The Reciprocal Definition&quot; Property</a></li><li class="vc-l3"><a href="inverse-functions.html#differentiation">Differentiation</a></li></ul></li>
+<li class="vc-l2"><a href="inverse-functions.html#113-exercises"><span class="vc-n">11.3</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="differentiation.html">Chapter 12: Derivatives</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="differentiation.html#121-definition"><span class="vc-n">12.1</span> Definition</a></li>
+<li class="vc-l2"><a href="differentiation.html#122-definition-derived-theorems-differentiability-implies-continuity"><span class="vc-n">12.2</span> Definition-Derived Theorems (Differentiability Implies Continuity)</a></li>
+<li class="vc-l2"><a href="differentiation.html#123-properties-of-differentiation"><span class="vc-n">12.3</span> Properties of Differentiation</a><ul class="vc-subs"><li class="vc-l3"><a href="differentiation.html#basic-properties">Basic Properties</a></li><li class="vc-l3"><a href="differentiation.html#algebraic-properties">Algebraic Properties</a></li><li class="vc-l3"><a href="differentiation.html#chain-rule-function-composition-theorem">Chain Rule (Function Composition Theorem)</a></li></ul></li>
+<li class="vc-l2"><a href="differentiation.html#124-exercises"><span class="vc-n">12.4</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="functions.html">Chapter 13: Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="functions.html#131-construction"><span class="vc-n">13.1</span> Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="functions.html#definitions">Definitions</a></li><li class="vc-l3"><a href="functions.html#notation">Notation</a></li><li class="vc-l3"><a href="functions.html#properties">Properties</a></li><li class="vc-l3"><a href="functions.html#operations">Operations</a></li></ul></li>
+<li class="vc-l2"><a href="functions.html#132-theorems"><span class="vc-n">13.2</span> Theorems</a><ul class="vc-subs"><li class="vc-l3"><a href="functions.html#proof">Proof</a></li><li class="vc-l3"><a href="functions.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="functions.html#133-types-of-functions"><span class="vc-n">13.3</span> Types of Functions</a></li>
+<li class="vc-l2"><a href="functions.html#134-exercises"><span class="vc-n">13.4</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="trigonometry.html">Chapter 14: Trigonometric Functions, as Axioms</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trigonometry.html#141-construction"><span class="vc-n">14.1</span> Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="trigonometry.html#axioms">Axioms</a></li><li class="vc-l3"><a href="trigonometry.html#pi-and-area">Pi, and Area</a></li><li class="vc-l3"><a href="trigonometry.html#cosine-and-sine">Cosine and Sine</a></li><li class="vc-l3"><a href="trigonometry.html#the-inverse">The Inverse</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Sequences and series stage|50%|May 25, 2008</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="sequences.html">Chapter 15: Sequences</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sequences.html#151-definition"><span class="vc-n">15.1</span> Definition</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#sequence-notation">Sequence Notation</a></li><li class="vc-l3"><a href="sequences.html#examples-of-sequences">Examples of Sequences</a></li><li class="vc-l3"><a href="sequences.html#operations-on-sequences">Operations on Sequences</a></li><li class="vc-l3"><a href="sequences.html#classification-of-sequences">Classification of Sequences</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#152-convergence-and-limits"><span class="vc-n">15.2</span> Convergence and Limits</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#theorem-uniqueness-of-limits">Theorem (Uniqueness of limits)</a></li><li class="vc-l3"><a href="sequences.html#theorem-convergent-sequences-bounded">Theorem (Convergent Sequences Bounded)</a></li><li class="vc-l3"><a href="sequences.html#theorem-boundedness-of-cauchy-sequences">Theorem (Boundedness of Cauchy Sequences)</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#153-properties-of-sequences"><span class="vc-n">15.3</span> Properties of Sequences</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#algebraic-operations">Algebraic Operations</a></li><li class="vc-l3"><a href="sequences.html#theorem-squeezesandwich-limit-theorem">Theorem (Squeeze/Sandwich Limit Theorem)</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#154-completeness"><span class="vc-n">15.4</span> Completeness</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#theorem-convergence-of-monotone-sequences">Theorem (Convergence of Monotone sequences)</a></li><li class="vc-l3"><a href="sequences.html#theorem-nested-intervals-property">Theorem (Nested intervals property)</a></li><li class="vc-l3"><a href="sequences.html#theorem-bolzanoweierstrass">Theorem (Bolzano—Weierstrass)</a></li><li class="vc-l3"><a href="sequences.html#theorem-cauchy-criterion">Theorem (Cauchy criterion)</a></li></ul></li>
+<li class="vc-l2"><a href="sequences.html#155-limit-superior-and-limit-inferior"><span class="vc-n">15.5</span> Limit superior and limit inferior</a><ul class="vc-subs"><li class="vc-l3"><a href="sequences.html#theorem-limit-superior-and-inferior">Theorem (Limit Superior and Inferior)</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="series.html">Chapter 16: Series</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="series.html#161-definition"><span class="vc-n">16.1</span> Definition</a></li>
+<li class="vc-l2"><a href="series.html#162-examples"><span class="vc-n">16.2</span> Examples</a></li>
+<li class="vc-l2"><a href="series.html#163-basic-facts"><span class="vc-n">16.3</span> Basic Facts</a><ul class="vc-subs"><li class="vc-l3"><a href="series.html#theorem-algebraic-operations">Theorem (Algebraic Operations)</a></li><li class="vc-l3"><a href="series.html#theorem-cauchys-criterion-for-series">Theorem (Cauchy&#x27;s Criterion for Series)</a></li></ul></li>
+<li class="vc-l2"><a href="series.html#164-absolute-convergence"><span class="vc-n">16.4</span> Absolute Convergence</a><ul class="vc-subs"><li class="vc-l3"><a href="series.html#theorem-absolute-convergence">Theorem (Absolute Convergence)</a></li></ul></li>
+<li class="vc-l2"><a href="series.html#165-tests-for-convergence-and-divergence"><span class="vc-n">16.5</span> Tests for convergence and divergence</a><ul class="vc-subs"><li class="vc-l3"><a href="series.html#theorem-terms-have-limit-0">Theorem (Terms Have Limit 0)</a></li><li class="vc-l3"><a href="series.html#theorem-positive-series-converge">Theorem (Positive Series Converge)</a></li><li class="vc-l3"><a href="series.html#theorem-comparison-test">Theorem (Comparison Test)</a></li><li class="vc-l3"><a href="series.html#theorem-limit-comparison-test">Theorem (Limit Comparison Test)</a></li><li class="vc-l3"><a href="series.html#theorem-ratio-test">Theorem (Ratio Test)</a></li><li class="vc-l3"><a href="series.html#theorem-root-test">Theorem (Root Test)</a></li><li class="vc-l3"><a href="series.html#theorem-dirichlets-test">Theorem (Dirichlet&#x27;s Test)</a></li><li class="vc-l3"><a href="series.html#theorem-abels-test">Theorem (Abel&#x27;s Test)</a></li></ul></li>
+<li class="vc-l2"><a href="series.html#166-examples-with-proof"><span class="vc-n">16.6</span> Examples with Proof</a><ul class="vc-subs"><li class="vc-l3"><a href="series.html#theorem-geometric-series">Theorem (Geometric Series)</a></li><li class="vc-l3"><a href="series.html#theorem-p-series">Theorem (p-series)</a></li><li class="vc-l3"><a href="series.html#theorem-decimal-expansions">Theorem (Decimal Expansions)</a></li></ul></li>
+<li class="vc-l2"><a href="series.html#167-rearrangement-of-terms"><span class="vc-n">16.7</span> Rearrangement of terms</a><ul class="vc-subs"><li class="vc-l3"><a href="series.html#definition">Definition</a></li><li class="vc-l3"><a href="series.html#theorem">Theorem</a></li><li class="vc-l3"><a href="series.html#theorem_1">Theorem</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="constructing-the-real-numbers.html">Chapter 17: Construction of the Real Numbers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="constructing-the-real-numbers.html#171-sequences"><span class="vc-n">17.1</span> Sequences</a><ul class="vc-subs"><li class="vc-l3"><a href="constructing-the-real-numbers.html#special-sequences">Special Sequences</a></li><li class="vc-l3"><a href="constructing-the-real-numbers.html#addition-and-multiplication-of-sequences">Addition and Multiplication of Sequences</a></li><li class="vc-l3"><a href="constructing-the-real-numbers.html#cauchy-sequences">Cauchy Sequences</a></li><li class="vc-l3"><a href="constructing-the-real-numbers.html#equivalence-of-sequences">Equivalence of Sequences</a></li></ul></li>
+<li class="vc-l2"><a href="constructing-the-real-numbers.html#172-the-real-numbers"><span class="vc-n">17.2</span> The Real Numbers</a><ul class="vc-subs"><li class="vc-l3"><a href="constructing-the-real-numbers.html#totally-ordered-field">Totally Ordered Field</a></li><li class="vc-l3"><a href="constructing-the-real-numbers.html#completeness">Completeness</a></li></ul></li>
+<li class="vc-l2"><a href="constructing-the-real-numbers.html#173-remarks"><span class="vc-n">17.3</span> Remarks</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="section-2-exercises.html">Chapter 18: Exercises</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="section-2-exercises.html#181-unsorted"><span class="vc-n">18.1</span> Unsorted</a></li>
+<li class="vc-l2"><a href="section-2-exercises.html#182-on-sequences"><span class="vc-n">18.2</span> On Sequences</a></li>
+<li class="vc-l2"><a href="section-2-exercises.html#183-taylor-polynomials-and-series"><span class="vc-n">18.3</span> Taylor Polynomials and Series</a><ul class="vc-subs"><li class="vc-l3"><a href="section-2-exercises.html#hints-answers">Hints / Answers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="hints-2.html">Chapter 19: Hints</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="hints-2.html#191-unsorted"><span class="vc-n">19.1</span> Unsorted</a></li>
+<li class="vc-l2"><a href="hints-2.html#192-on-sequences"><span class="vc-n">19.2</span> On Sequences</a></li>
+<li class="vc-l2"><a href="hints-2.html#193-taylor-polynomials-and-series"><span class="vc-n">19.3</span> Taylor Polynomials and Series</a><ul class="vc-subs"><li class="vc-l3"><a href="hints-2.html#hints-answers">Hints / Answers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="answers-2.html">Chapter 20: Answers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="answers-2.html#201-on-sequences"><span class="vc-n">20.1</span> On Sequences</a><ul class="vc-subs"><li class="vc-l3"><a href="answers-2.html#problem-1">Problem 1</a></li></ul></li>
+<li class="vc-l2"><a href="answers-2.html#202-general"><span class="vc-n">20.2</span> General</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Metric Spaces stage|00%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="metric-spaces.html">Chapter 21: Metric Spaces</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="metric-spaces.html#211-basic-definitions"><span class="vc-n">21.1</span> Basic definitions</a></li>
+<li class="vc-l2"><a href="metric-spaces.html#212-basic-proofs"><span class="vc-n">21.2</span> Basic proofs</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="compact-sets.html">Chapter 22: Compact Sets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="compact-sets.html#221-definition"><span class="vc-n">22.1</span> Definition</a></li>
+<li class="vc-l2"><a href="compact-sets.html#222-theorems-about-compact-sets"><span class="vc-n">22.2</span> Theorems about compact sets</a><ul class="vc-subs"><li class="vc-l3"><a href="compact-sets.html#theorem">Theorem</a></li><li class="vc-l3"><a href="compact-sets.html#theorem-2">Theorem 2</a></li><li class="vc-l3"><a href="compact-sets.html#theorem-heine-borel">Theorem (Heine-Borel)</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="connected-sets.html">Chapter 23: Connected Sets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="connected-sets.html#231-path-connected"><span class="vc-n">23.1</span> Path-Connected</a></li>
+<li class="vc-l2"><a href="connected-sets.html#232-simply-connected"><span class="vc-n">23.2</span> Simply Connected</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="normed-linear-spaces.html">Chapter 24: Normed Linear Spaces</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="normed-linear-spaces.html#241-linear-space"><span class="vc-n">24.1</span> Linear Space</a><ul class="vc-subs"><li class="vc-l3"><a href="normed-linear-spaces.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="normed-linear-spaces.html#242-subspace"><span class="vc-n">24.2</span> Subspace</a><ul class="vc-subs"><li class="vc-l3"><a href="normed-linear-spaces.html#example_1">Example</a></li></ul></li>
+<li class="vc-l2"><a href="normed-linear-spaces.html#243-basis"><span class="vc-n">24.3</span> Basis</a><ul class="vc-subs"><li class="vc-l3"><a href="normed-linear-spaces.html#example_2">Example</a></li></ul></li>
+<li class="vc-l2"><a href="normed-linear-spaces.html#244-norms"><span class="vc-n">24.4</span> Norms</a><ul class="vc-subs"><li class="vc-l3"><a href="normed-linear-spaces.html#example_3">Example</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Basic Topology of &lt;math&gt;mathbbR^n&lt;/math&gt; stage|00%|March 29, 2009</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="open-and-closed-sets.html">Chapter 25: Open and Closed Sets</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="open-and-closed-sets.html#251-terminology"><span class="vc-n">25.1</span> Terminology</a></li>
+<li class="vc-l2"><a href="open-and-closed-sets.html#252-definition"><span class="vc-n">25.2</span> Definition</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="limit-points-accumulation-points.html">Chapter 26: Limit Points (Accumulation Points)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="limit-points-accumulation-points.html#261-definition"><span class="vc-n">26.1</span> Definition</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="interior-closure-boundary.html">Chapter 27: Interior, Closure, Boundary</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="interior-closure-boundary.html#271-interior-boundary-and-exterior"><span class="vc-n">27.1</span> Interior, Boundary, and Exterior</a></li>
+<li class="vc-l2"><a href="interior-closure-boundary.html#272-theorem"><span class="vc-n">27.2</span> Theorem</a></li>
+<li class="vc-l2"><a href="interior-closure-boundary.html#273-closure"><span class="vc-n">27.3</span> Closure</a></li>
+<li class="vc-l2"><a href="interior-closure-boundary.html#274-theorem"><span class="vc-n">27.4</span> Theorem</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Limits and Continuity stage|50%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="limits.html">Chapter 28: Limits</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="limits.html#281-definition"><span class="vc-n">28.1</span> Definition</a></li>
+<li class="vc-l2"><a href="limits.html#282-corollaries-of-limits"><span class="vc-n">28.2</span> Corollaries of Limits</a></li>
+<li class="vc-l2"><a href="limits.html#283-conceptualization"><span class="vc-n">28.3</span> Conceptualization</a></li>
+<li class="vc-l2"><a href="limits.html#284-properties"><span class="vc-n">28.4</span> Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="limits.html#uniqueness">Uniqueness</a></li><li class="vc-l3"><a href="limits.html#algebraic-operations">Algebraic Operations</a></li><li class="vc-l3"><a href="limits.html#limits-of-functions">Limits of Functions</a></li><li class="vc-l3"><a href="limits.html#limits-of-sequences">Limits of Sequences</a></li><li class="vc-l3"><a href="limits.html#limits-of-discontinuity">Limits of Discontinuity</a></li><li class="vc-l3"><a href="limits.html#limits-of-unusual-functions">Limits of Unusual Functions</a></li></ul></li>
+<li class="vc-l2"><a href="limits.html#285-appendix"><span class="vc-n">28.5</span> Appendix</a><ul class="vc-subs"><li class="vc-l3"><a href="limits.html#sequential-limits">Sequential Limits</a></li><li class="vc-l3"><a href="limits.html#definition-on-an-arbitrary-metric-space">Definition on an Arbitrary Metric Space</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="continuity.html">Chapter 29: Continuity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="continuity.html#291-definition"><span class="vc-n">29.1</span> Definition</a></li>
+<li class="vc-l2"><a href="continuity.html#292-operations"><span class="vc-n">29.2</span> Operations</a><ul class="vc-subs"><li class="vc-l3"><a href="continuity.html#algebraic">Algebraic</a></li><li class="vc-l3"><a href="continuity.html#composition">Composition</a></li></ul></li>
+<li class="vc-l2"><a href="continuity.html#293-the-three-continuity-theorems"><span class="vc-n">29.3</span> The Three Continuity Theorems</a><ul class="vc-subs"><li class="vc-l3"><a href="continuity.html#the-intermediate-value-theorem">The Intermediate Value Theorem</a></li><li class="vc-l3"><a href="continuity.html#minimum-maximum-theorem">Minimum-Maximum Theorem</a></li><li class="vc-l3"><a href="continuity.html#extreme-value-theorem">Extreme Value Theorem</a></li></ul></li>
+<li class="vc-l2"><a href="continuity.html#294-appendix"><span class="vc-n">29.4</span> Appendix</a><ul class="vc-subs"><li class="vc-l3"><a href="continuity.html#uniform-continuity">Uniform Continuity</a></li><li class="vc-l3"><a href="continuity.html#lipschitz-continuity">Lipschitz continuity</a></li><li class="vc-l3"><a href="continuity.html#topological-continuity">Topological Continuity</a></li><li class="vc-l3"><a href="continuity.html#theorem">Theorem</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="topological-continuity.html">Chapter 30: Topological Continuity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="topological-continuity.html#301-theorem"><span class="vc-n">30.1</span> Theorem</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="total-variation.html">Chapter 31: Total Variation</a></li>
+<li class="vc-ch vc-leaf"><a href="arc-length.html">Chapter 32: Arc Length</a></li>
+<li class="vc-ch"><details><summary><a href="exponential-function.html">Chapter 33: The Exponential Function</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="exponential-function.html#331-construction"><span class="vc-n">33.1</span> Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="exponential-function.html#behaviors">Behaviors</a></li><li class="vc-l3"><a href="exponential-function.html#differentiation">Differentiation</a></li><li class="vc-l3"><a href="exponential-function.html#the-logarithm">The Logarithm</a></li><li class="vc-l3"><a href="exponential-function.html#the-exponential">The Exponential</a></li></ul></li>
+<li class="vc-l2"><a href="exponential-function.html#332-appendix"><span class="vc-n">33.2</span> Appendix</a><ul class="vc-subs"><li class="vc-l3"><a href="exponential-function.html#alternate-construction-of-exponentiation">Alternate Construction of Exponentiation</a></li><li class="vc-l3"><a href="exponential-function.html#continuity-of-xn">Continuity of x^n</a></li><li class="vc-l3"><a href="exponential-function.html#construction-of-nth-roots">Construction of nth roots</a></li><li class="vc-l3"><a href="exponential-function.html#definition-and-properties-of-rational-powers">Definition and Properties of Rational Powers</a></li><li class="vc-l3"><a href="exponential-function.html#continuity-of-rational-powers">Continuity of rational powers</a></li></ul></li>
+<li class="vc-l2"><a href="exponential-function.html#333-real-powers"><span class="vc-n">33.3</span> Real Powers</a><ul class="vc-subs"><li class="vc-l3"><a href="exponential-function.html#theorem">Theorem</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="limits-and-continuity-exercises.html">Chapter 34: Exercises</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="limits-and-continuity-exercises.html#341-unsorted-1"><span class="vc-n">34.1</span> Unsorted 1</a></li>
+<li class="vc-l2"><a href="limits-and-continuity-exercises.html#342-unsorted-2"><span class="vc-n">34.2</span> Unsorted 2</a></li>
+<li class="vc-l2"><a href="limits-and-continuity-exercises.html#343-hintsanswers"><span class="vc-n">34.3</span> Hints/Answers</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="hints-3.html">Chapter 35: Hints</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="hints-3.html#351-unsorted-1"><span class="vc-n">35.1</span> Unsorted 1</a></li>
+<li class="vc-l2"><a href="hints-3.html#352-unsorted-2"><span class="vc-n">35.2</span> Unsorted 2</a></li>
+<li class="vc-l2"><a href="hints-3.html#353-hintsanswers"><span class="vc-n">35.3</span> Hints/Answers</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Differentiation stage|75%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="applications-of-derivatives.html">Chapter 36: Applications of Derivatives</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="applications-of-derivatives.html#361-higher-order-derivatives"><span class="vc-n">36.1</span> Higher Order Derivatives</a></li>
+<li class="vc-l2"><a href="applications-of-derivatives.html#362-foundation-theorems"><span class="vc-n">36.2</span> Foundation Theorems</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-of-derivatives.html#minimum-and-maximum-points">Minimum and Maximum Points</a></li><li class="vc-l3"><a href="applications-of-derivatives.html#convexity-and-concavity">Convexity and Concavity</a></li><li class="vc-l3"><a href="applications-of-derivatives.html#tangent-of-a-function">Tangent of a Function</a></li></ul></li>
+<li class="vc-l2"><a href="applications-of-derivatives.html#363-theorems-about-tangents"><span class="vc-n">36.3</span> Theorems about Tangents</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-of-derivatives.html#rolles-theorem">Rolle&#x27;s Theorem</a></li><li class="vc-l3"><a href="applications-of-derivatives.html#mean-value-theorem">Mean Value Theorem</a></li><li class="vc-l3"><a href="applications-of-derivatives.html#cauchy-mean-value-theorem">Cauchy Mean Value Theorem</a></li></ul></li>
+<li class="vc-l2"><a href="applications-of-derivatives.html#364-theorems-about-change"><span class="vc-n">36.4</span> Theorems about Change</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-of-derivatives.html#increasing-functions-have-positive-change-theorem">&quot;Increasing Functions have Positive Change&quot; Theorem</a></li><li class="vc-l3"><a href="applications-of-derivatives.html#second-derivative-indicates-local-minmax-theorem">&quot;Second Derivative Indicates Local Min/Max&quot; Theorem</a></li></ul></li>
+<li class="vc-l2"><a href="applications-of-derivatives.html#365-taylors-theorem"><span class="vc-n">36.5</span> Taylor&#x27;s Theorem</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-of-derivatives.html#proof">Proof</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="exercises-on-derivatives.html">Chapter 37: Exercises</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="exercises-on-derivatives.html#371-on-differentiation"><span class="vc-n">37.1</span> On Differentiation</a></li>
+<li class="vc-l2"><a href="exercises-on-derivatives.html#372-on-derivatives"><span class="vc-n">37.2</span> On Derivatives</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Integration stage|75%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="darboux-integral.html">Chapter 38: Darboux Integral</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="darboux-integral.html#381-construction"><span class="vc-n">38.1</span> Construction</a><ul class="vc-subs"><li class="vc-l3"><a href="darboux-integral.html#partitions">Partitions</a></li><li class="vc-l3"><a href="darboux-integral.html#upper-and-lower-sums">Upper and Lower Sums</a></li><li class="vc-l3"><a href="darboux-integral.html#refinement">Refinement</a></li><li class="vc-l3"><a href="darboux-integral.html#convergence">Convergence</a></li><li class="vc-l3"><a href="darboux-integral.html#conclusion">Conclusion</a></li></ul></li>
+<li class="vc-l2"><a href="darboux-integral.html#382-definition"><span class="vc-n">38.2</span> Definition</a><ul class="vc-subs"><li class="vc-l3"><a href="darboux-integral.html#remarks">Remarks</a></li><li class="vc-l3"><a href="darboux-integral.html#properties">Properties</a></li></ul></li>
+<li class="vc-l2"><a href="darboux-integral.html#383-equivalence-of-riemann-and-darboux-integrals"><span class="vc-n">38.3</span> Equivalence of Riemann and Darboux Integrals</a><ul class="vc-subs"><li class="vc-l3"><a href="darboux-integral.html#lemma">Lemma</a></li><li class="vc-l3"><a href="darboux-integral.html#theorem">Theorem</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="riemann-integration.html">Chapter 39: Riemann integration</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="riemann-integration.html#391-definition"><span class="vc-n">39.1</span> Definition</a></li>
+<li class="vc-l2"><a href="riemann-integration.html#392-partitions"><span class="vc-n">39.2</span> Partitions</a><ul class="vc-subs"><li class="vc-l3"><a href="riemann-integration.html#definition">Definition</a></li><li class="vc-l3"><a href="riemann-integration.html#norm-of-a-partition">Norm of a Partition</a></li><li class="vc-l3"><a href="riemann-integration.html#tagged-partition">Tagged Partition</a></li></ul></li>
+<li class="vc-l2"><a href="riemann-integration.html#393-riemann"><span class="vc-n">39.3</span> Riemann</a><ul class="vc-subs"><li class="vc-l3"><a href="riemann-integration.html#riemann-sums">Riemann Sums</a></li><li class="vc-l3"><a href="riemann-integration.html#riemann-integral">Riemann Integral</a></li></ul></li>
+<li class="vc-l2"><a href="riemann-integration.html#394-properties"><span class="vc-n">39.4</span> Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="riemann-integration.html#theorem-uniqueness">Theorem (Uniqueness)</a></li><li class="vc-l3"><a href="riemann-integration.html#theorem">Theorem</a></li><li class="vc-l3"><a href="riemann-integration.html#theorem-boundedness-theorem">Theorem (Boundedness Theorem)</a></li></ul></li>
+<li class="vc-l2"><a href="riemann-integration.html#395-integrability"><span class="vc-n">39.5</span> Integrability</a><ul class="vc-subs"><li class="vc-l3"><a href="riemann-integration.html#theorem-cauchy-criterion">Theorem (Cauchy Criterion)</a></li><li class="vc-l3"><a href="riemann-integration.html#theorem-squeeze-theorem">Theorem (Squeeze Theorem)</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="fundamental-theorem-of-calculus.html">Chapter 40: Fundamental Theorem of Calculus</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fundamental-theorem-of-calculus.html#401-definition"><span class="vc-n">40.1</span> Definition</a><ul class="vc-subs"><li class="vc-l3"><a href="fundamental-theorem-of-calculus.html#proof">Proof</a></li></ul></li>
+<li class="vc-l2"><a href="fundamental-theorem-of-calculus.html#402-corollaries"><span class="vc-n">40.2</span> Corollaries</a></li>
+<li class="vc-l2"><a href="fundamental-theorem-of-calculus.html#403-extras"><span class="vc-n">40.3</span> Extras</a><ul class="vc-subs"><li class="vc-l3"><a href="fundamental-theorem-of-calculus.html#indefinite-integral">Indefinite Integral</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="applications-of-integration.html">Chapter 41: Applications of Integration</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="applications-of-integration.html#411-theorems-on-computation"><span class="vc-n">41.1</span> Theorems on Computation</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-of-integration.html#the-primitive">The Primitive</a></li><li class="vc-l3"><a href="applications-of-integration.html#the-indefinite-integral">The Indefinite Integral</a></li><li class="vc-l3"><a href="applications-of-integration.html#integration-by-parts">Integration by Parts</a></li><li class="vc-l3"><a href="applications-of-integration.html#integration-by-substitution">Integration by Substitution</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="generalized-integration.html">Chapter 42: Generalized Integration</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="generalized-integration.html#421-riemann-stieltjes-integral"><span class="vc-n">42.1</span> Riemann-Stieltjes integral</a><ul class="vc-subs"><li class="vc-l3"><a href="generalized-integration.html#upper-and-lower-sum">Upper and Lower sum</a></li><li class="vc-l3"><a href="generalized-integration.html#definition">Definition</a></li></ul></li>
+<li class="vc-l2"><a href="generalized-integration.html#422-henstock-kurtzweil-integral"><span class="vc-n">42.2</span> Henstock Kurtzweil integral</a><ul class="vc-subs"><li class="vc-l3"><a href="generalized-integration.html#gauges">Gauges</a></li><li class="vc-l3"><a href="generalized-integration.html#definition_1">Definition</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Sequences of Functions stage|00%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="pointwise-convergence.html">Chapter 43: Pointwise Convergence</a></li>
+<li class="vc-ch"><details><summary><a href="uniform-convergence.html">Chapter 44: Uniform Convergence</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="uniform-convergence.html#441-theorem-uniform-convergence-theorem"><span class="vc-n">44.1</span> Theorem (Uniform Convergence Theorem))</a><ul class="vc-subs"><li class="vc-l3"><a href="uniform-convergence.html#proof">Proof</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="power-series.html">Chapter 45: Power Series</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="power-series.html#451-definition"><span class="vc-n">45.1</span> Definition</a></li>
+<li class="vc-l2"><a href="power-series.html#452-convergence"><span class="vc-n">45.2</span> Convergence</a></li>
+<li class="vc-l2"><a href="power-series.html#453-differentiability"><span class="vc-n">45.3</span> Differentiability</a></li>
+<li class="vc-l2"><a href="power-series.html#454-taylor-series"><span class="vc-n">45.4</span> Taylor Series</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Multivariate analysis stage|25%</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="differentiation-in-rn.html">Chapter 46: Differentiation in R&lt;sup&gt;n&lt;/sup&gt;</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="differentiation-in-rn.html#461-vector-space"><span class="vc-n">46.1</span> Vector Space</a></li>
+<li class="vc-l2"><a href="differentiation-in-rn.html#462-linear-transformations"><span class="vc-n">46.2</span> Linear Transformations</a></li>
+<li class="vc-l2"><a href="differentiation-in-rn.html#463-directional-and-partial-derivatives"><span class="vc-n">46.3</span> Directional and Partial Derivatives</a></li>
+<li class="vc-l2"><a href="differentiation-in-rn.html#464-total-derivatives"><span class="vc-n">46.4</span> Total Derivatives</a><ul class="vc-subs"><li class="vc-l3"><a href="differentiation-in-rn.html#theorem">Theorem</a></li><li class="vc-l3"><a href="differentiation-in-rn.html#theorem_1">Theorem</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="inverse-function-theorem.html">Chapter 47: Inverse Function Theorem</a></li>
+</ul>
+<p class="toc-group">Appendices</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="symbols.html">Appendix A: List of Mathematical Symbols</a></li>
+<li class="vc-ch"><details><summary><a href="list-of-theorems.html">Appendix B: List of Theorems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="list-of-theorems.html#b1-how-to-read"><span class="vc-n">B.1</span> How to Read</a></li>
+<li class="vc-l2"><a href="list-of-theorems.html#b2-list-of-axioms"><span class="vc-n">B.2</span> List of Axioms</a></li>
+<li class="vc-l2"><a href="list-of-theorems.html#b3-list-of-theorems"><span class="vc-n">B.3</span> List of Theorems</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="bibliography-2.html">Appendix C: Bibliography</a></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A textbook of real analysis: the completeness of the real numbers, sequences and series, limits and continuity of functions, differentiation, the Riemann integral and sequences of functions, with proofs and exercises.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Real Analysis, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Real_Analysis" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-cell-biology/authors.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 37. Authors">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+37. Authors
+</div>
+</div>
+</a>
+<a href="foreword.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Foreword">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Foreword
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

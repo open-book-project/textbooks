@@ -1,0 +1,1334 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-trigonometry/degrees-minutes-and-seconds.html">
+<link rel="prev" href="collection-of-problems.html">
+<link rel="next" href="doing-without-sine.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>108. Degrees Minutes and Seconds - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#1081-vocabulary" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+108. Degrees Minutes and Seconds
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Trigonometry</span></li>
+<li class="md-nav__item">
+<a href="index.html" class="md-nav__link">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="about-this-book.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="khan-academy-videos.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. videos at the Khan Academy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introductions.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. For Enthusiasts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="similar-congruent-isosceles-and-equilateral.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Similar,Congruent,Isosceles, and Equilateral
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="angles-of-a-triangle-sum-to-180-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Angles of a triangle sum to 180 Degrees
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-congruent-triangles.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Exercise: Congruent Triangles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-chasing-angles.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Exercise: Chasing Angles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pythagorean-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. The Pythagorean Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-pythagorean-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Proof: Pythagorean Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-a-puzzle-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Exercise: A Puzzle Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="conventions.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Conventions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-angles-sum-to-180.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Proof: Angles sum to 180
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="areas-of-triangles.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Areas of Triangles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="heron-s-formula.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Heron's Formula
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="plotting-cos-t-sin-t.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Plotting (Cos t, Sin t)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosine-and-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Cosine and Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="soh-cah-toa.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Soh-Cah-Toa
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sine-squared-plus-cosine-squared.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Sine Squared plus Cosine Squared
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="radians.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Radians
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-unit-circle.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. The Unit Circle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Law of Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-cosines.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Law of Cosines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-given-asa.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Solving Triangles Given ASA
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-given-sas.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Solving Triangles Given SAS
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-area-of-a-roof.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Worked Example: Area of a Roof
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-oil-tanker-arriving-in-port.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Worked Example: Oil Tanker Arriving in Port
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="angles-of-elevation-and-depression.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Exercises: Angles of Elevation and Depression
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-most-difficult-triangles-to-solve.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. The most Difficult Triangles to Solve
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graphs-of-sine-and-cosine-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Graphs of Sine, Cos and Tan
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="phase-and-frequency.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Phase and Frequency
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graph-of-sine-squared.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Graph of Sine Squared
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-formula-for-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Addition Formula for Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-formula-for-cosines.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Addition Formula for Cosines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="double-angle-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Double Angle Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="waves-in-and-out-of-phase.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Waves in and out of Phase
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="beat-frequencies.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Beat Frequencies
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-ferris-wheel-problem.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Worked Example: Ferris Wheel Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-simplifying-angles.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Worked Example: Simplifying Angles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosecant-secant-cotangent.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Cosecant, Secant, Cotangent
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graphs-of-other-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Graphs of Cosec, Sec and Cot
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inverse-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Inverse Trigonometric Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="simplifying-a-sin-x-b-cos-x.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Simplifying a sin(x) + b cos(x)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="remembering-trig-formulae.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Remembering Trig Formulae
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-formula-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Trigonometric Formula Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-unit-circle-and-graph-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Trigonometric Unit Circle and Graph Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="selected-angles-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Selected Angles Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-tangents.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Law of Tangents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="regular-polygons.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. Regular Polygons
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-tessellations-are-possible-with-regular-polygons.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. What Tessellations are Possible with Regular Polygons?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-heron-s-formula.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Proof: Heron's Formula
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="compass-bearings.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Compass Bearings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transformation-of-products-into-sums.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Transformation of products into sums
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-distance-from-new-york-to-tokyo.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. The Distance from New York to Tokyo
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lissajous-figures.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Lissajous Figures
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-cordic-algorithm.html" class="md-nav__link">
+<span class="md-ellipsis">
+56. The CORDIC Algorithm
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pythagorean-triples.html" class="md-nav__link">
+<span class="md-ellipsis">
+57. Pythagorean Triples
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-brief-history-of-trigonometry.html" class="md-nav__link">
+<span class="md-ellipsis">
+58. A Brief History of Trigonometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="book-2-introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+59. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="geometric-definitions-of-trig-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+60. Geometric Definitions of Trig Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thales-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+61. Thales Theorem: Quick construction of a right angle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="verifying-trigonometric-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+62. Verifying Trigonometric Identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-trigonometric-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+63. Solving Trigonometric Equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sum-into-product.html" class="md-nav__link">
+<span class="md-ellipsis">
+64. Sum into Product
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-sine-of-18-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+65. The sine of 18º
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-sine-of-15-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+66. The sine of 15º
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-summation-of-finite-series.html" class="md-nav__link">
+<span class="md-ellipsis">
+67. The summation of sined or cosined arithmetic sequence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="less-used-trig-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+68. Other Trig Identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="triangles-on-a-sphere.html" class="md-nav__link">
+<span class="md-ellipsis">
+69. Triangles on a Sphere
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-by-half-angle-formulae.html" class="md-nav__link">
+<span class="md-ellipsis">
+70. Solving triangles by half-angle formulae
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-distance-and-dip-of-the-horizon.html" class="md-nav__link">
+<span class="md-ellipsis">
+71. The distance and dip of the horizon
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+72. Cyclic Quadrilaterals and Ptolemy's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="area-of-a-quadrilateral.html" class="md-nav__link">
+<span class="md-ellipsis">
+73. Area of a quadrilateral
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-circumcircle.html" class="md-nav__link">
+<span class="md-ellipsis">
+74. The Circumcircle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-incircle.html" class="md-nav__link">
+<span class="md-ellipsis">
+75. The Incircle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-excircles.html" class="md-nav__link">
+<span class="md-ellipsis">
+76. The Excircles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="other-centres-of-a-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+77. Other Centres of a Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ceva-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+78. Ceva's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="orthocentric-points.html" class="md-nav__link">
+<span class="md-ellipsis">
+79. Orthocentric points
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-excentral-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+80. The Excentral Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pedal-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+81. The Pedal Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-nine-point-circle.html" class="md-nav__link">
+<span class="md-ellipsis">
+82. The Nine-point Circle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="brocard-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+83. Brocard's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-fermat-point.html" class="md-nav__link">
+<span class="md-ellipsis">
+84. The Fermat Point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reflections-in-a-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+85. Reflections in a triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="morley-s-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+86. Morley's Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="viviani-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+87. Viviani's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="napoleon-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+88. Napoleon's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-miquel-point.html" class="md-nav__link">
+<span class="md-ellipsis">
+89. The Miquel Point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="philo-s-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+90. Philo's Line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="menelaus-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+91. Menelaus' theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="area-bisectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+92. Area bisectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pivot-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+93. The Pivot theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-seven-circles-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+94. The Seven circles theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-simson-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+95. The Simson line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thebault-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+96. Thebault's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-solution-of-cubic-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+97. The solution of cubic equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="delaunay-triangulation.html" class="md-nav__link">
+<span class="md-ellipsis">
+98. The Delaunay Triangulation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-little-known-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+99. Some Little-known Trigonometric Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-generalization-of-pythagoras-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+100. A Generalization of Pythagoras' Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-eyeball-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+101. The Eyeball Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+102. Trigonometric identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="concepts.html" class="md-nav__link">
+<span class="md-ellipsis">
+103. Core concepts of trigonometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="prerequisites-and-basics.html" class="md-nav__link">
+<span class="md-ellipsis">
+104. Prerequisites and Basics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-and-subtraction-theorems.html" class="md-nav__link">
+<span class="md-ellipsis">
+105. Addition and Subtraction Theorems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="more-about-addition-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+106. More About Addition Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="collection-of-problems.html" class="md-nav__link">
+<span class="md-ellipsis">
+107. Collection of Problems
+</span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+108. Degrees Minutes and Seconds
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="degrees-minutes-and-seconds.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+108. Degrees Minutes and Seconds
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#1081-vocabulary" class="md-nav__link">
+<span class="md-ellipsis">
+108.1 Vocabulary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1082-angle-addition" class="md-nav__link">
+<span class="md-ellipsis">
+108.2 Angle Addition
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1083-convert-to-decimal" class="md-nav__link">
+<span class="md-ellipsis">
+108.3 Convert To Decimal
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1084-convert-to-degree-minutes-seconds" class="md-nav__link">
+<span class="md-ellipsis">
+108.4 Convert To Degree-Minutes-Seconds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1085-draw-the-angle" class="md-nav__link">
+<span class="md-ellipsis">
+108.5 Draw The Angle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1086-real-world" class="md-nav__link">
+<span class="md-ellipsis">
+108.6 Real World
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="doing-without-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+109. Doing without Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reflections-in-a-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+110. Reflections in a line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-preliminary-results.html" class="md-nav__link">
+<span class="md-ellipsis">
+111. Some preliminary results
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+112. Derivative of Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-cosine.html" class="md-nav__link">
+<span class="md-ellipsis">
+113. Derivative of Cosine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-tangent.html" class="md-nav__link">
+<span class="md-ellipsis">
+114. Derivative of Tangent
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-inverse-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+115. Derivative of Inverse Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="power-series-for-e-to-the-x.html" class="md-nav__link">
+<span class="md-ellipsis">
+116. Power Series for e<sup>x</sup>
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="power-series-for-cosine-and-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+117. Power Series for Cosine and Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="e-to-the-i-pi.html" class="md-nav__link">
+<span class="md-ellipsis">
+118. e<sup>i&pi;</sup>
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosh-sinh-and-tanh.html" class="md-nav__link">
+<span class="md-ellipsis">
+119. Cosh, Sinh and Tanh
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functions-of-complex-variables.html" class="md-nav__link">
+<span class="md-ellipsis">
+120. Functions of complex variables
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-square-wave-in-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+121. A Square Wave in Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-gibbs-overshoot.html" class="md-nav__link">
+<span class="md-ellipsis">
+122. The Gibbs Overshoot
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vectors-in-the-plane.html" class="md-nav__link">
+<span class="md-ellipsis">
+123. Vectors in the Plane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vectors-and-dot-products.html" class="md-nav__link">
+<span class="md-ellipsis">
+124. Vectors and Dot Products
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-form-of-the-complex-number.html" class="md-nav__link">
+<span class="md-ellipsis">
+125. Trigonometric Form of the Complex Number
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="applications-and-models.html" class="md-nav__link">
+<span class="md-ellipsis">
+126. Simple Harmonic Oscillator
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="calculating-pi.html" class="md-nav__link">
+<span class="md-ellipsis">
+127. Calculating &pi;
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-theorems-using-vectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+128. Some theorems using vectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="price-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+129. Price's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chebyshev-polynomials.html" class="md-nav__link">
+<span class="md-ellipsis">
+130. Chebyshev Polynomials
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometry-done-rigorously.html" class="md-nav__link">
+<span class="md-ellipsis">
+131. Trigonometry done Rigorously
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="erdosmordell-inequality.html" class="md-nav__link">
+<span class="md-ellipsis">
+132. Erdős–Mordell inequality
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="hilbert-s-third-problem.html" class="md-nav__link">
+<span class="md-ellipsis">
+133. Hilbert's third Problem
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#1081-vocabulary" class="md-nav__link">
+<span class="md-ellipsis">
+108.1 Vocabulary
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1082-angle-addition" class="md-nav__link">
+<span class="md-ellipsis">
+108.2 Angle Addition
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1083-convert-to-decimal" class="md-nav__link">
+<span class="md-ellipsis">
+108.3 Convert To Decimal
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1084-convert-to-degree-minutes-seconds" class="md-nav__link">
+<span class="md-ellipsis">
+108.4 Convert To Degree-Minutes-Seconds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1085-draw-the-angle" class="md-nav__link">
+<span class="md-ellipsis">
+108.5 Draw The Angle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#1086-real-world" class="md-nav__link">
+<span class="md-ellipsis">
+108.6 Real World
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-108-degrees-minutes-and-seconds">Chapter 108: Degrees Minutes and Seconds<a class="headerlink" href="#chapter-108-degrees-minutes-and-seconds" title="Permanent link">&para;</a></h1>
+<div class="pk-remote" data-book="wb-trigonometry" data-page="Trigonometry/For Enthusiasts/Degrees Minutes and Seconds" lang="en" markdown="0"><span class="arithmatex pk-math-mark"></span></div>
+<h2 id="1081-vocabulary">108.1 Vocabulary<a class="headerlink" href="#1081-vocabulary" title="Permanent link">&para;</a></h2>
+<h2 id="1082-angle-addition">108.2 Angle Addition<a class="headerlink" href="#1082-angle-addition" title="Permanent link">&para;</a></h2>
+<h2 id="1083-convert-to-decimal">108.3 Convert To Decimal<a class="headerlink" href="#1083-convert-to-decimal" title="Permanent link">&para;</a></h2>
+<h2 id="1084-convert-to-degree-minutes-seconds">108.4 Convert To Degree-Minutes-Seconds<a class="headerlink" href="#1084-convert-to-degree-minutes-seconds" title="Permanent link">&para;</a></h2>
+<h2 id="1085-draw-the-angle">108.5 Draw The Angle<a class="headerlink" href="#1085-draw-the-angle" title="Permanent link">&para;</a></h2>
+<h2 id="1086-real-world">108.6 Real World<a class="headerlink" href="#1086-real-world" title="Permanent link">&para;</a></h2>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="collection-of-problems.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 107. Collection of Problems">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+107. Collection of Problems
+</div>
+</div>
+</a>
+<a href="doing-without-sine.html" class="md-footer__link md-footer__link--next" aria-label="Next: 109. Doing without Sine">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+109. Doing without Sine
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

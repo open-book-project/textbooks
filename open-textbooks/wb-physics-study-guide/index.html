@@ -1,0 +1,772 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-physics-study-guide/index.html">
+<link rel="prev" href="../wb-real-analysis/bibliography-2.html">
+<link rel="next" href="cover.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Physics Study Guide</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="cover.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Cover
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="purpose.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Purpose
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="scientific-method.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Scientific Method
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-units.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Basic Units
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="linear-motion.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Linear motion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="force.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Force
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="momentum.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Momentum
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="normal-force-and-friction.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Normal Force and Friction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="work.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Work
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="energy.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Energy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="kinetic-energy.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Kinetic energy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="gravity.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Gravity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="circular-motion.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Circular Motion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="center-of-mass.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Center of Mass
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="torque.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Torque
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="periodic-motion.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Periodic Motion
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="waves.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Waves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="wave-overtones.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Wave overtones
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="standing-waves.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Standing waves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sound.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Sound
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fluids.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Fluids
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="fields.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Fields
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thermodynamics.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Thermodynamics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electricity.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Electricity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="magnetism.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Magnetism
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electronics.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Electronics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="optics.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Optics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="theories-of-electricity.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Theories of Electricity
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="physics-constants.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix A. Physics constants
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="frictional-coefficients.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix B. Frictional coefficients
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="greek-alphabet.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix C. Greek alphabet
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="logs.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix D. Logs
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vectors-and-scalars.html" class="md-nav__link">
+<span class="md-ellipsis">
+Appendix E. Vectors and scalars
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-physics-study-guide" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="cover.html" style="--cv-bg:#1c3d5a;--cv-accent:#f4d35e;--cv-fg:#f3f6f9;--cv-n:20;--cv-rot:22deg;--cv-x:87%;--cv-y:74%" aria-label="Start reading Physics Study Guide"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Physics Study Guide</span><span class="vol-sub">Mechanics, waves, electricity, light and modern physics</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Physics Study Guide</h1>
+<p class="pk-book-sub">Mechanics, waves, electricity, light and modern physics</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">A study guide to physics: motion and forces, energy, waves and sound, optics, electricity and magnetism, and thermal and modern physics.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-beginner">Beginner</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/physics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></svg><span class="pk-chip-cat">Science &rsaquo;</span> Physics</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="cover.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-physics-study-guide"></div></div>
+<p class="pk-book-facts"><span>28 chapters</span><span>5 appendices</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-physics-study-guide" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="cover.html">Chapter 1: Cover</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cover.html#11-dedication"><span class="vc-n">1.1</span> Dedication</a></li>
+<li class="vc-l2"><a href="cover.html#12-physics-study-guide"><span class="vc-n">1.2</span> Physics Study Guide</a></li>
+<li class="vc-l2"><a href="cover.html#13-contributing"><span class="vc-n">1.3</span> Contributing</a></li>
+<li class="vc-l2"><a href="cover.html#14-authors"><span class="vc-n">1.4</span> Authors</a></li>
+<li class="vc-l2"><a href="cover.html#15-reviews"><span class="vc-n">1.5</span> Reviews</a></li>
+<li class="vc-l2"><a href="cover.html#16-interwiki"><span class="vc-n">1.6</span> Interwiki</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Introduction</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="purpose.html">Chapter 2: Purpose</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="purpose.html#21-purpose-of-physics"><span class="vc-n">2.1</span> Purpose of Physics</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="scientific-method.html">Chapter 3: Scientific Method</a></li>
+</ul>
+<p class="toc-group">Section One</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="basic-units.html">Chapter 4: Basic Units</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-units.html#41-the-si-system-of-measurement"><span class="vc-n">4.1</span> The SI System of Measurement</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-units.html#fundamental-units">Fundamental units</a></li><li class="vc-l3"><a href="basic-units.html#derived-units">Derived Units</a></li><li class="vc-l3"><a href="basic-units.html#prefixes">Prefixes</a></li></ul></li>
+<li class="vc-l2"><a href="basic-units.html#42-astronomical-measurements"><span class="vc-n">4.2</span> Astronomical Measurements</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-units.html#julian-year">Julian Year</a></li><li class="vc-l3"><a href="basic-units.html#astronomical-unit">Astronomical Unit</a></li><li class="vc-l3"><a href="basic-units.html#light-year">Light Year</a></li><li class="vc-l3"><a href="basic-units.html#parsec">Parsec</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="linear-motion.html">Chapter 5: Linear motion</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="linear-motion.html#51-position"><span class="vc-n">5.1</span> Position</a></li>
+<li class="vc-l2"><a href="linear-motion.html#52-displacement"><span class="vc-n">5.2</span> Displacement</a></li>
+<li class="vc-l2"><a href="linear-motion.html#53-velocity"><span class="vc-n">5.3</span> Velocity</a></li>
+<li class="vc-l2"><a href="linear-motion.html#54-acceleration"><span class="vc-n">5.4</span> Acceleration</a></li>
+<li class="vc-l2"><a href="linear-motion.html#55-vectors"><span class="vc-n">5.5</span> Vectors</a></li>
+<li class="vc-l2"><a href="linear-motion.html#56-equations-of-motion-constant-acceleration"><span class="vc-n">5.6</span> Equations of motion (constant acceleration)</a><ul class="vc-subs"><li class="vc-l3"><a href="linear-motion.html#acceleration-in-one-dimension">Acceleration in One Dimension</a></li><li class="vc-l3"><a href="linear-motion.html#acceleration-in-two-dimensions">Acceleration in Two Dimensions</a></li><li class="vc-l3"><a href="linear-motion.html#acceleration-in-three-dimensions">Acceleration in Three Dimensions</a></li><li class="vc-l3"><a href="linear-motion.html#what-does-force-in-motion-mean">What does force in motion mean?</a></li><li class="vc-l3"><a href="linear-motion.html#how-do-we-calculate-the-speed">How do we calculate the speed?</a></li><li class="vc-l3"><a href="linear-motion.html#is-velocity-the-same-thing-as-speed">Is velocity the same thing as speed?</a></li><li class="vc-l3"><a href="linear-motion.html#acceleration">Acceleration</a></li><li class="vc-l3"><a href="linear-motion.html#how-do-we-calculate-it">How do we calculate it?</a></li><li class="vc-l3"><a href="linear-motion.html#observing-motion">Observing motion</a></li><li class="vc-l3"><a href="linear-motion.html#measuring-acceleration">Measuring acceleration</a></li></ul></li>
+<li class="vc-l2"><a href="linear-motion.html#57-newton"><span class="vc-n">5.7</span> Newton</a><ul class="vc-subs"><li class="vc-l3"><a href="linear-motion.html#newtons-laws-of-motion">Newton&#x27;s laws of motion</a></li></ul></li>
+<li class="vc-l2"><a href="linear-motion.html#58-symbols"><span class="vc-n">5.8</span> Symbols</a><ul class="vc-subs"><li class="vc-l3"><a href="linear-motion.html#force">Force</a></li><li class="vc-l3"><a href="linear-motion.html#robert-hooke">Robert Hooke</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="force.html">Chapter 6: Force</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="force.html#61-friction"><span class="vc-n">6.1</span> Friction</a></li>
+<li class="vc-l2"><a href="force.html#62-newtons-first-law-of-motion"><span class="vc-n">6.2</span> Newton&#x27;s First Law of Motion</a></li>
+<li class="vc-l2"><a href="force.html#63-newtons-second-law-of-motion"><span class="vc-n">6.3</span> Newton&#x27;s Second Law of Motion</a></li>
+<li class="vc-l2"><a href="force.html#64-newtons-third-law-of-motion"><span class="vc-n">6.4</span> Newton&#x27;s Third Law of Motion</a></li>
+<li class="vc-l2"><a href="force.html#65-equations"><span class="vc-n">6.5</span> Equations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="momentum.html">Chapter 7: Momentum</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="momentum.html#71-linear-momentum"><span class="vc-n">7.1</span> Linear momentum</a></li>
+<li class="vc-l2"><a href="momentum.html#72-angular-momentum"><span class="vc-n">7.2</span> Angular momentum</a></li>
+<li class="vc-l2"><a href="momentum.html#73-force-and-linear-momentum-torque-and-angular-momentum"><span class="vc-n">7.3</span> Force and linear momentum, torque and angular momentum</a></li>
+<li class="vc-l2"><a href="momentum.html#74-conservation-of-momentum"><span class="vc-n">7.4</span> Conservation of momentum</a></li>
+<li class="vc-l2"><a href="momentum.html#75-variables"><span class="vc-n">7.5</span> Variables</a></li>
+<li class="vc-l2"><a href="momentum.html#76-definition-of-terms"><span class="vc-n">7.6</span> Definition of terms</a></li>
+<li class="vc-l2"><a href="momentum.html#77-calculus-based-momentum"><span class="vc-n">7.7</span> Calculus-based Momentum</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="normal-force-and-friction.html">Chapter 8: Normal Force and Friction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="normal-force-and-friction.html#81-the-normal-force"><span class="vc-n">8.1</span> The Normal Force</a></li>
+<li class="vc-l2"><a href="normal-force-and-friction.html#82-friction"><span class="vc-n">8.2</span> Friction</a></li>
+<li class="vc-l2"><a href="normal-force-and-friction.html#83-variables"><span class="vc-n">8.3</span> Variables</a></li>
+<li class="vc-l2"><a href="normal-force-and-friction.html#84-definition-of-terms"><span class="vc-n">8.4</span> Definition of Terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="work.html">Chapter 9: Work</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="work.html#91-variables"><span class="vc-n">9.1</span> Variables</a></li>
+<li class="vc-l2"><a href="work.html#92-definition-of-terms"><span class="vc-n">9.2</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="energy.html">Chapter 10: Energy</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="energy.html#101-variables"><span class="vc-n">10.1</span> Variables</a></li>
+<li class="vc-l2"><a href="energy.html#102-definition-of-terms"><span class="vc-n">10.2</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="kinetic-energy.html">Chapter 11: Kinetic energy</a></li>
+</ul>
+<p class="toc-group">Section Two</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="gravity.html">Chapter 12: Gravity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="gravity.html#121-newtonian-gravity"><span class="vc-n">12.1</span> Newtonian Gravity</a></li>
+<li class="vc-l2"><a href="gravity.html#122-variables"><span class="vc-n">12.2</span> Variables</a></li>
+<li class="vc-l2"><a href="gravity.html#123-definition-of-terms"><span class="vc-n">12.3</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="circular-motion.html">Chapter 13: Circular Motion</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="circular-motion.html#131-uniform-circular-motion"><span class="vc-n">13.1</span> Uniform Circular Motion</a><ul class="vc-subs"><li class="vc-l3"><a href="circular-motion.html#speed-and-frequency">Speed and frequency</a></li><li class="vc-l3"><a href="circular-motion.html#angular-frequency">Angular frequency</a></li><li class="vc-l3"><a href="circular-motion.html#velocity-centripetal-acceleration-and-force">Velocity, centripetal acceleration and force</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="center-of-mass.html">Chapter 14: Center of Mass</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="center-of-mass.html#141-calculating-center-of-mass-for-uniform-objects"><span class="vc-n">14.1</span> Calculating center of mass for uniform objects</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="torque.html">Chapter 15: Torque</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="torque.html#151-torque-and-circular-motion"><span class="vc-n">15.1</span> Torque and Circular Motion</a><ul class="vc-subs"><li class="vc-l3"><a href="torque.html#angular-momentum">Angular momentum</a></li><li class="vc-l3"><a href="torque.html#definition-of-terms">Definition of terms</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="periodic-motion.html">Chapter 16: Periodic Motion</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="periodic-motion.html#161-springs"><span class="vc-n">16.1</span> Springs</a><ul class="vc-subs"><li class="vc-l3"><a href="periodic-motion.html#hookes-law">Hooke&#x27;s law</a></li><li class="vc-l3"><a href="periodic-motion.html#potential-energy">Potential energy</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="waves.html">Chapter 17: Waves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="waves.html#171-variables"><span class="vc-n">17.1</span> Variables</a></li>
+<li class="vc-l2"><a href="waves.html#172-definition-of-terms"><span class="vc-n">17.2</span> Definition of terms</a></li>
+<li class="vc-l2"><a href="waves.html#173-oscillation"><span class="vc-n">17.3</span> Oscillation</a></li>
+<li class="vc-l2"><a href="waves.html#174-interference"><span class="vc-n">17.4</span> Interference</a></li>
+<li class="vc-l2"><a href="waves.html#175-resonance"><span class="vc-n">17.5</span> Resonance</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="wave-overtones.html">Chapter 18: Wave overtones</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="wave-overtones.html#181-definition-of-terms"><span class="vc-n">18.1</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="standing-waves.html">Chapter 19: Standing waves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="standing-waves.html#191-variables"><span class="vc-n">19.1</span> Variables</a></li>
+<li class="vc-l2"><a href="standing-waves.html#192-definition-of-terms"><span class="vc-n">19.2</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sound.html">Chapter 20: Sound</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sound.html#201-intro"><span class="vc-n">20.1</span> Intro</a></li>
+<li class="vc-l2"><a href="sound.html#202-sound"><span class="vc-n">20.2</span> Sound</a><ul class="vc-subs"><li class="vc-l3"><a href="sound.html#the-decibel">The Decibel</a></li><li class="vc-l3"><a href="sound.html#definition-of-terms">Definition of terms</a></li><li class="vc-l3"><a href="sound.html#doppler-effect">Doppler effect</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Section Three</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="fluids.html">Chapter 21: Fluids</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fluids.html#211-buoyancy"><span class="vc-n">21.1</span> Buoyancy</a></li>
+<li class="vc-l2"><a href="fluids.html#212-bernoullis-principle"><span class="vc-n">21.2</span> Bernoulli&#x27;s Principle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="fields.html">Chapter 22: Fields</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="fields.html#221-definition-of-terms"><span class="vc-n">22.1</span> Definition of terms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="thermodynamics.html">Chapter 23: Thermodynamics</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="thermodynamics.html#231-introduction"><span class="vc-n">23.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="thermodynamics.html#232-laws-of-thermodynamics"><span class="vc-n">23.2</span> Laws of Thermodynamics</a><ul class="vc-subs"><li class="vc-l3"><a href="thermodynamics.html#first-law">First Law</a></li><li class="vc-l3"><a href="thermodynamics.html#zero-th-law">Zero-th Law</a></li><li class="vc-l3"><a href="thermodynamics.html#second-law">Second Law</a></li><li class="vc-l3"><a href="thermodynamics.html#third-law">Third Law</a></li></ul></li>
+<li class="vc-l2"><a href="thermodynamics.html#233-temperature-scales"><span class="vc-n">23.3</span> Temperature Scales</a><ul class="vc-subs"><li class="vc-l3"><a href="thermodynamics.html#the-celsius-scale">The Celsius Scale</a></li><li class="vc-l3"><a href="thermodynamics.html#the-kelvin-scale">The Kelvin Scale</a></li></ul></li>
+<li class="vc-l2"><a href="thermodynamics.html#234-specific-latent-heat"><span class="vc-n">23.4</span> Specific Latent Heat</a></li>
+<li class="vc-l2"><a href="thermodynamics.html#235-specific-heat-capacity"><span class="vc-n">23.5</span> Specific Heat Capacity</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electricity.html">Chapter 24: Electricity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electricity.html#241-variables"><span class="vc-n">24.1</span> Variables</a></li>
+<li class="vc-l2"><a href="electricity.html#242-electric-fields"><span class="vc-n">24.2</span> Electric fields</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="magnetism.html">Chapter 25: Magnetism</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="magnetism.html#251-variables"><span class="vc-n">25.1</span> Variables</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electronics.html">Chapter 26: Electronics</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electronics.html#261-introduction"><span class="vc-n">26.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="electronics.html#262-circuits"><span class="vc-n">26.2</span> Circuits</a></li>
+<li class="vc-l2"><a href="electronics.html#263-direct-current-and-alternating-current"><span class="vc-n">26.3</span> Direct current and alternating Current</a></li>
+<li class="vc-l2"><a href="electronics.html#264-basic-components"><span class="vc-n">26.4</span> Basic components</a></li>
+<li class="vc-l2"><a href="electronics.html#265-ohms-law"><span class="vc-n">26.5</span> Ohm&#x27;s law</a></li>
+<li class="vc-l2"><a href="electronics.html#266-kirchoffs-laws"><span class="vc-n">26.6</span> Kirchoff&#x27;s laws</a><ul class="vc-subs"><li class="vc-l3"><a href="electronics.html#kirchoffs-current-law">Kirchoff&#x27;s current law</a></li><li class="vc-l3"><a href="electronics.html#kirchoffs-voltage-law">Kirchoff&#x27;s voltage law</a></li></ul></li>
+<li class="vc-l2"><a href="electronics.html#267-power"><span class="vc-n">26.7</span> Power</a></li>
+<li class="vc-l2"><a href="electronics.html#268-resistors-in-series"><span class="vc-n">26.8</span> Resistors in series</a></li>
+<li class="vc-l2"><a href="electronics.html#269-resistors-in-parallel"><span class="vc-n">26.9</span> Resistors in parallel</a></li>
+<li class="vc-l2"><a href="electronics.html#2610-superposition-of-sources"><span class="vc-n">26.10</span> Superposition of sources</a></li>
+<li class="vc-l2"><a href="electronics.html#2611-capacitors"><span class="vc-n">26.11</span> Capacitors</a></li>
+<li class="vc-l2"><a href="electronics.html#2612-inductances"><span class="vc-n">26.12</span> Inductances</a></li>
+<li class="vc-l2"><a href="electronics.html#2613-frequency-dependent-circuits"><span class="vc-n">26.13</span> Frequency-dependent circuits</a></li>
+<li class="vc-l2"><a href="electronics.html#2614-semiconductors"><span class="vc-n">26.14</span> Semiconductors</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="optics.html">Chapter 27: Optics</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="optics.html#271-light"><span class="vc-n">27.1</span> Light</a><ul class="vc-subs"><li class="vc-l3"><a href="optics.html#refraction">Refraction</a></li></ul></li>
+<li class="vc-l2"><a href="optics.html#272-mirrors-and-lenses"><span class="vc-n">27.2</span> Mirrors and lenses</a><ul class="vc-subs"><li class="vc-l3"><a href="optics.html#focal-length">Focal length</a></li><li class="vc-l3"><a href="optics.html#magnification">Magnification</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="theories-of-electricity.html">Chapter 28: Theories of Electricity</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="theories-of-electricity.html#281-intro"><span class="vc-n">28.1</span> Intro</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#282-charged-particles"><span class="vc-n">28.2</span> Charged Particles</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#283-charge"><span class="vc-n">28.3</span> Charge</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#284-electrostaticcoulomb-force"><span class="vc-n">28.4</span> Electrostatic/Coulomb Force</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#285-electromotive-force"><span class="vc-n">28.5</span> Electromotive Force</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#286-electromagnetic-force"><span class="vc-n">28.6</span> Electromagnetic Force</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#287-electricity-and-conductors"><span class="vc-n">28.7</span> Electricity and Conductors</a></li>
+<li class="vc-l2"><a href="theories-of-electricity.html#288-resistor"><span class="vc-n">28.8</span> Resistor</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Appendices</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="physics-constants.html">Appendix A: Physics constants</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="physics-constants.html#a1-commonly-used-physical-constants"><span class="vc-n">A.1</span> Commonly Used Physical Constants</a><ul class="vc-subs"><li class="vc-l3"><a href="physics-constants.html#to-be-merged-into-table">To Be Merged Into Table</a></li></ul></li>
+<li class="vc-l2"><a href="physics-constants.html#a2-see-also"><span class="vc-n">A.2</span> See Also</a><ul class="vc-subs"><li class="vc-l3"><a href="physics-constants.html#wiki-links">Wiki-links</a></li><li class="vc-l3"><a href="physics-constants.html#external-links">External Links</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="frictional-coefficients.html">Appendix B: Frictional coefficients</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="frictional-coefficients.html#b1-approximate-coefficients-of-friction"><span class="vc-n">B.1</span> Approximate Coefficients of Friction</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="greek-alphabet.html">Appendix C: Greek alphabet</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="greek-alphabet.html#c1-about-the-common-uses-in-physics"><span class="vc-n">C.1</span> About the Common uses in Physics</a></li>
+<li class="vc-l2"><a href="greek-alphabet.html#c2-see-also"><span class="vc-n">C.2</span> See Also</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="logs.html">Appendix D: Logs</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="logs.html#d1-review-of-logs"><span class="vc-n">D.1</span> Review of logs</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="vectors-and-scalars.html">Appendix E: Vectors and scalars</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vectors-and-scalars.html#e1-multiplying-vectors-and-scalars"><span class="vc-n">E.1</span> Multiplying vectors and scalars</a></li>
+<li class="vc-l2"><a href="vectors-and-scalars.html#e2-frequently-asked-questions-about-vectors"><span class="vc-n">E.2</span> Frequently Asked Questions about Vectors</a><ul class="vc-subs"><li class="vc-l3"><a href="vectors-and-scalars.html#when-are-scalar-and-vector-compositions-essentially-the-same">When are scalar and vector compositions essentially the same?</a></li><li class="vc-l3"><a href="vectors-and-scalars.html#what-is-a-dot-product-work-when-force-not-parallel-to-displacement">What is a &quot;dot-product&quot;? (work when force not parallel to displacement)</a></li><li class="vc-l3"><a href="vectors-and-scalars.html#what-is-a-cross-product-force-on-a-charged-particle-in-a-magnetic-field">What is a &quot;cross-product&quot;? (Force on a charged particle in a magnetic field)</a></li><li class="vc-l3"><a href="vectors-and-scalars.html#how-to-draw-vectors-that-are-in-or-out-of-the-plane-of-the-page-or-board">How to draw vectors that are in or out of the plane of the page (or board)</a></li></ul></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A study guide to physics at school and early university level: kinematics and dynamics, energy, momentum and rotation, oscillations and waves, light, electricity and magnetism, heat, and an introduction to atomic and nuclear physics.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Physics Study Guide, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Physics_Study_Guide" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-real-analysis/bibliography-2.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix C. Bibliography">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+Appendix C. Bibliography
+</div>
+</div>
+</a>
+<a href="cover.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Cover">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Cover
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

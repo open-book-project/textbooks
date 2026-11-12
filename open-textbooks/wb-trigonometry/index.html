@@ -1,0 +1,1834 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-trigonometry/index.html">
+<link rel="prev" href="../wb-chinese-mandarin/abbreviations.html">
+<link rel="next" href="about-this-book.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Trigonometry</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="about-this-book.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. About This Book
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="khan-academy-videos.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. videos at the Khan Academy
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introductions.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. For Enthusiasts
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="similar-congruent-isosceles-and-equilateral.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Similar,Congruent,Isosceles, and Equilateral
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="angles-of-a-triangle-sum-to-180-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Angles of a triangle sum to 180 Degrees
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-congruent-triangles.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Exercise: Congruent Triangles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-chasing-angles.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Exercise: Chasing Angles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pythagorean-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. The Pythagorean Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-pythagorean-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Proof: Pythagorean Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="exercise-a-puzzle-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Exercise: A Puzzle Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="conventions.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Conventions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-angles-sum-to-180.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Proof: Angles sum to 180
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="areas-of-triangles.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Areas of Triangles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="heron-s-formula.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Heron's Formula
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="plotting-cos-t-sin-t.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Plotting (Cos t, Sin t)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosine-and-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. Cosine and Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="soh-cah-toa.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Soh-Cah-Toa
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sine-squared-plus-cosine-squared.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Sine Squared plus Cosine Squared
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="radians.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. Radians
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-unit-circle.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. The Unit Circle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Law of Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-cosines.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. Law of Cosines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-given-asa.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Solving Triangles Given ASA
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-given-sas.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Solving Triangles Given SAS
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-area-of-a-roof.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Worked Example: Area of a Roof
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-oil-tanker-arriving-in-port.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Worked Example: Oil Tanker Arriving in Port
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="angles-of-elevation-and-depression.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Exercises: Angles of Elevation and Depression
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-most-difficult-triangles-to-solve.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. The most Difficult Triangles to Solve
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graphs-of-sine-and-cosine-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Graphs of Sine, Cos and Tan
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="phase-and-frequency.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Phase and Frequency
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graph-of-sine-squared.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Graph of Sine Squared
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-formula-for-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Addition Formula for Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-formula-for-cosines.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Addition Formula for Cosines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="double-angle-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Double Angle Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="waves-in-and-out-of-phase.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Waves in and out of Phase
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="beat-frequencies.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Beat Frequencies
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-ferris-wheel-problem.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Worked Example: Ferris Wheel Problem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="worked-example-simplifying-angles.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Worked Example: Simplifying Angles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosecant-secant-cotangent.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Cosecant, Secant, Cotangent
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="graphs-of-other-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Graphs of Cosec, Sec and Cot
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="inverse-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Inverse Trigonometric Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="simplifying-a-sin-x-b-cos-x.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Simplifying a sin(x) + b cos(x)
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="remembering-trig-formulae.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. Remembering Trig Formulae
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-formula-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. Trigonometric Formula Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-unit-circle-and-graph-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+46. Trigonometric Unit Circle and Graph Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="selected-angles-reference.html" class="md-nav__link">
+<span class="md-ellipsis">
+47. Selected Angles Reference
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="law-of-tangents.html" class="md-nav__link">
+<span class="md-ellipsis">
+48. Law of Tangents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="regular-polygons.html" class="md-nav__link">
+<span class="md-ellipsis">
+49. Regular Polygons
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="what-tessellations-are-possible-with-regular-polygons.html" class="md-nav__link">
+<span class="md-ellipsis">
+50. What Tessellations are Possible with Regular Polygons?
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="proof-heron-s-formula.html" class="md-nav__link">
+<span class="md-ellipsis">
+51. Proof: Heron's Formula
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="compass-bearings.html" class="md-nav__link">
+<span class="md-ellipsis">
+52. Compass Bearings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transformation-of-products-into-sums.html" class="md-nav__link">
+<span class="md-ellipsis">
+53. Transformation of products into sums
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-distance-from-new-york-to-tokyo.html" class="md-nav__link">
+<span class="md-ellipsis">
+54. The Distance from New York to Tokyo
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="lissajous-figures.html" class="md-nav__link">
+<span class="md-ellipsis">
+55. Lissajous Figures
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-cordic-algorithm.html" class="md-nav__link">
+<span class="md-ellipsis">
+56. The CORDIC Algorithm
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="pythagorean-triples.html" class="md-nav__link">
+<span class="md-ellipsis">
+57. Pythagorean Triples
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-brief-history-of-trigonometry.html" class="md-nav__link">
+<span class="md-ellipsis">
+58. A Brief History of Trigonometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="book-2-introduction.html" class="md-nav__link">
+<span class="md-ellipsis">
+59. Introduction
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="geometric-definitions-of-trig-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+60. Geometric Definitions of Trig Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thales-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+61. Thales Theorem: Quick construction of a right angle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="verifying-trigonometric-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+62. Verifying Trigonometric Identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-trigonometric-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+63. Solving Trigonometric Equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sum-into-product.html" class="md-nav__link">
+<span class="md-ellipsis">
+64. Sum into Product
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-sine-of-18-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+65. The sine of 18º
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-sine-of-15-degrees.html" class="md-nav__link">
+<span class="md-ellipsis">
+66. The sine of 15º
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-summation-of-finite-series.html" class="md-nav__link">
+<span class="md-ellipsis">
+67. The summation of sined or cosined arithmetic sequence
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="less-used-trig-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+68. Other Trig Identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="triangles-on-a-sphere.html" class="md-nav__link">
+<span class="md-ellipsis">
+69. Triangles on a Sphere
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solving-triangles-by-half-angle-formulae.html" class="md-nav__link">
+<span class="md-ellipsis">
+70. Solving triangles by half-angle formulae
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-distance-and-dip-of-the-horizon.html" class="md-nav__link">
+<span class="md-ellipsis">
+71. The distance and dip of the horizon
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+72. Cyclic Quadrilaterals and Ptolemy's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="area-of-a-quadrilateral.html" class="md-nav__link">
+<span class="md-ellipsis">
+73. Area of a quadrilateral
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-circumcircle.html" class="md-nav__link">
+<span class="md-ellipsis">
+74. The Circumcircle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-incircle.html" class="md-nav__link">
+<span class="md-ellipsis">
+75. The Incircle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-excircles.html" class="md-nav__link">
+<span class="md-ellipsis">
+76. The Excircles
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="other-centres-of-a-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+77. Other Centres of a Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="ceva-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+78. Ceva's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="orthocentric-points.html" class="md-nav__link">
+<span class="md-ellipsis">
+79. Orthocentric points
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-excentral-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+80. The Excentral Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pedal-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+81. The Pedal Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-nine-point-circle.html" class="md-nav__link">
+<span class="md-ellipsis">
+82. The Nine-point Circle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="brocard-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+83. Brocard's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-fermat-point.html" class="md-nav__link">
+<span class="md-ellipsis">
+84. The Fermat Point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reflections-in-a-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+85. Reflections in a triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="morley-s-triangle.html" class="md-nav__link">
+<span class="md-ellipsis">
+86. Morley's Triangle
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="viviani-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+87. Viviani's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="napoleon-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+88. Napoleon's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-miquel-point.html" class="md-nav__link">
+<span class="md-ellipsis">
+89. The Miquel Point
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="philo-s-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+90. Philo's Line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="menelaus-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+91. Menelaus' theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="area-bisectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+92. Area bisectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-pivot-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+93. The Pivot theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-seven-circles-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+94. The Seven circles theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-simson-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+95. The Simson line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thebault-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+96. Thebault's theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-solution-of-cubic-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+97. The solution of cubic equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="delaunay-triangulation.html" class="md-nav__link">
+<span class="md-ellipsis">
+98. The Delaunay Triangulation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-little-known-trigonometric-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+99. Some Little-known Trigonometric Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-generalization-of-pythagoras-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+100. A Generalization of Pythagoras' Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-eyeball-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+101. The Eyeball Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-identities.html" class="md-nav__link">
+<span class="md-ellipsis">
+102. Trigonometric identities
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="concepts.html" class="md-nav__link">
+<span class="md-ellipsis">
+103. Core concepts of trigonometry
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="prerequisites-and-basics.html" class="md-nav__link">
+<span class="md-ellipsis">
+104. Prerequisites and Basics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="addition-and-subtraction-theorems.html" class="md-nav__link">
+<span class="md-ellipsis">
+105. Addition and Subtraction Theorems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="more-about-addition-formulas.html" class="md-nav__link">
+<span class="md-ellipsis">
+106. More About Addition Formulas
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="collection-of-problems.html" class="md-nav__link">
+<span class="md-ellipsis">
+107. Collection of Problems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="degrees-minutes-and-seconds.html" class="md-nav__link">
+<span class="md-ellipsis">
+108. Degrees Minutes and Seconds
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="doing-without-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+109. Doing without Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="reflections-in-a-line.html" class="md-nav__link">
+<span class="md-ellipsis">
+110. Reflections in a line
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-preliminary-results.html" class="md-nav__link">
+<span class="md-ellipsis">
+111. Some preliminary results
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+112. Derivative of Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-cosine.html" class="md-nav__link">
+<span class="md-ellipsis">
+113. Derivative of Cosine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-tangent.html" class="md-nav__link">
+<span class="md-ellipsis">
+114. Derivative of Tangent
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="derivative-of-inverse-functions.html" class="md-nav__link">
+<span class="md-ellipsis">
+115. Derivative of Inverse Functions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="power-series-for-e-to-the-x.html" class="md-nav__link">
+<span class="md-ellipsis">
+116. Power Series for e<sup>x</sup>
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="power-series-for-cosine-and-sine.html" class="md-nav__link">
+<span class="md-ellipsis">
+117. Power Series for Cosine and Sine
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="e-to-the-i-pi.html" class="md-nav__link">
+<span class="md-ellipsis">
+118. e<sup>i&pi;</sup>
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="cosh-sinh-and-tanh.html" class="md-nav__link">
+<span class="md-ellipsis">
+119. Cosh, Sinh and Tanh
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="functions-of-complex-variables.html" class="md-nav__link">
+<span class="md-ellipsis">
+120. Functions of complex variables
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="a-square-wave-in-sines.html" class="md-nav__link">
+<span class="md-ellipsis">
+121. A Square Wave in Sines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-gibbs-overshoot.html" class="md-nav__link">
+<span class="md-ellipsis">
+122. The Gibbs Overshoot
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vectors-in-the-plane.html" class="md-nav__link">
+<span class="md-ellipsis">
+123. Vectors in the Plane
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="vectors-and-dot-products.html" class="md-nav__link">
+<span class="md-ellipsis">
+124. Vectors and Dot Products
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometric-form-of-the-complex-number.html" class="md-nav__link">
+<span class="md-ellipsis">
+125. Trigonometric Form of the Complex Number
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="applications-and-models.html" class="md-nav__link">
+<span class="md-ellipsis">
+126. Simple Harmonic Oscillator
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="calculating-pi.html" class="md-nav__link">
+<span class="md-ellipsis">
+127. Calculating &pi;
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="some-theorems-using-vectors.html" class="md-nav__link">
+<span class="md-ellipsis">
+128. Some theorems using vectors
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="price-s-theorem.html" class="md-nav__link">
+<span class="md-ellipsis">
+129. Price's Theorem
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="chebyshev-polynomials.html" class="md-nav__link">
+<span class="md-ellipsis">
+130. Chebyshev Polynomials
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="trigonometry-done-rigorously.html" class="md-nav__link">
+<span class="md-ellipsis">
+131. Trigonometry done Rigorously
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="erdosmordell-inequality.html" class="md-nav__link">
+<span class="md-ellipsis">
+132. Erdős–Mordell inequality
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="hilbert-s-third-problem.html" class="md-nav__link">
+<span class="md-ellipsis">
+133. Hilbert's third Problem
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-trigonometry" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="about-this-book.html" style="--cv-bg:#1e3a5f;--cv-accent:#f4a261;--cv-fg:#f4f1e8;--cv-n:20;--cv-rot:63deg;--cv-x:29%;--cv-y:82%" aria-label="Start reading Trigonometry"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Trigonometry</span><span class="vol-sub">Angles, triangles and the circular functions</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Trigonometry</h1>
+<p class="pk-book-sub">Angles, triangles and the circular functions</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">Angles and the trigonometric functions, identities, triangles, graphs and the inverse functions, with worked examples and exercises.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-intermediate">Intermediate</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/mathematics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 5H7l5.5 7L7 19h10"/></svg>Mathematics</a><a class="pk-chip" href="../../subjects/algebra-geometry.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9zM4 7.5l8 4.5 8-4.5M12 12v9"/></svg><span class="pk-chip-cat">Mathematics &rsaquo;</span> Algebra &amp; Geometry</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="about-this-book.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-trigonometry"></div></div>
+<p class="pk-book-facts"><span>133 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-trigonometry" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="about-this-book.html">Chapter 1: About This Book</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="about-this-book.html#11-features-of-the-books-at-a-glance"><span class="vc-n">1.1</span> Features of the Books (at a Glance)</a></li>
+<li class="vc-l2"><a href="about-this-book.html#12-trigonometry-book-1"><span class="vc-n">1.2</span> Trigonometry Book 1</a></li>
+<li class="vc-l2"><a href="about-this-book.html#13-trigonometry-book-2"><span class="vc-n">1.3</span> Trigonometry Book 2</a></li>
+<li class="vc-l2"><a href="about-this-book.html#14-trigonometry-book-3"><span class="vc-n">1.4</span> Trigonometry Book 3</a></li>
+<li class="vc-l2"><a href="about-this-book.html#15-sub-chapters-in-each-for-enthusiasts"><span class="vc-n">1.5</span> Sub-chapters in each &#x27;For Enthusiasts&#x27;</a></li>
+<li class="vc-l2"><a href="about-this-book.html#16-trigonometry-book-1-contents"><span class="vc-n">1.6</span> Trigonometry Book 1 Contents</a></li>
+<li class="vc-l2"><a href="about-this-book.html#17-trigonometry-book-1-for-enthusiasts"><span class="vc-n">1.7</span> Trigonometry Book 1: For Enthusiasts</a></li>
+<li class="vc-l2"><a href="about-this-book.html#18-trigonometry-book-2-contents"><span class="vc-n">1.8</span> Trigonometry Book 2 Contents</a></li>
+<li class="vc-l2"><a href="about-this-book.html#19-trigonometry-book-2-for-enthusiasts"><span class="vc-n">1.9</span> Trigonometry Book 2: For Enthusiasts</a></li>
+<li class="vc-l2"><a href="about-this-book.html#110-trigonometry-book-3-contents"><span class="vc-n">1.10</span> Trigonometry Book 3 Contents</a></li>
+<li class="vc-l2"><a href="about-this-book.html#111-trigonometry-book-3-for-enthusiasts"><span class="vc-n">1.11</span> Trigonometry Book 3: For Enthusiasts</a></li>
+<li class="vc-l2"><a href="about-this-book.html#112-teachers-notes"><span class="vc-n">1.12</span> Teacher&#x27;s Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="book-2-introduction.html">Chapter 59: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="book-2-introduction.html#591-starting-with-vectors"><span class="vc-n">59.1</span> Starting with Vectors</a></li>
+<li class="vc-l2"><a href="book-2-introduction.html#592-applications"><span class="vc-n">59.2</span> Applications</a></li>
+<li class="vc-l2"><a href="book-2-introduction.html#593-about-book-2"><span class="vc-n">59.3</span> About Book 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="triangles-on-a-sphere.html">Chapter 69: Triangles on a Sphere</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="triangles-on-a-sphere.html#691-the-sine-theorem"><span class="vc-n">69.1</span> The Sine Theorem</a></li>
+<li class="vc-l2"><a href="triangles-on-a-sphere.html#692-the-cosine-theorem"><span class="vc-n">69.2</span> The Cosine Theorem</a></li>
+<li class="vc-l2"><a href="triangles-on-a-sphere.html#693-half-angle-formulae"><span class="vc-n">69.3</span> Half-angle formulae</a></li>
+<li class="vc-l2"><a href="triangles-on-a-sphere.html#694-the-polar-triangle"><span class="vc-n">69.4</span> The Polar Triangle</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-solution-of-cubic-equations.html">Chapter 97: The solution of cubic equations</a></li>
+<li class="vc-ch"><details><summary><a href="delaunay-triangulation.html">Chapter 98: The Delaunay Triangulation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="delaunay-triangulation.html#981-applications"><span class="vc-n">98.1</span> Applications</a></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#982-formal-definition"><span class="vc-n">98.2</span> Formal Definition</a></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#983-relationship-with-the-voronoi-diagram"><span class="vc-n">98.3</span> Relationship with the Voronoi diagram</a></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#984-properties"><span class="vc-n">98.4</span> Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="delaunay-triangulation.html#convex-hull">Convex Hull</a></li></ul></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#985-visual-delaunay-definition-flipping"><span class="vc-n">98.5</span> Visual Delaunay definition: Flipping</a></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#986-algorithms"><span class="vc-n">98.6</span> Algorithms</a><ul class="vc-subs"><li class="vc-l3"><a href="delaunay-triangulation.html#flip-algorithms">Flip algorithms</a></li><li class="vc-l3"><a href="delaunay-triangulation.html#incremental">Incremental</a></li><li class="vc-l3"><a href="delaunay-triangulation.html#divide-and-conquer">Divide and conquer</a></li><li class="vc-l3"><a href="delaunay-triangulation.html#sweepline">Sweepline</a></li><li class="vc-l3"><a href="delaunay-triangulation.html#sweephull">Sweephull</a></li></ul></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#987-references"><span class="vc-n">98.7</span> References</a></li>
+<li class="vc-l2"><a href="delaunay-triangulation.html#988-credits"><span class="vc-n">98.8</span> Credits</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Trigonometry Book 1</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="khan-academy-videos.html">Chapter 2: videos at the Khan Academy</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="khan-academy-videos.html#21-the-khan-academy-videos"><span class="vc-n">2.1</span> The Khan Academy Videos</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="introductions.html">Chapter 3: For Enthusiasts</a></li>
+<li class="vc-ch"><details><summary><a href="introduction.html">Chapter 4: Introduction</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="introduction.html#41-starting-to-learn-trigonometry"><span class="vc-n">4.1</span> Starting to Learn Trigonometry</a><ul class="vc-subs"><li class="vc-l3"><a href="introduction.html#solving-in-a-right-triangle">Solving in a Right Triangle</a></li><li class="vc-l3"><a href="introduction.html#solving-in-other-shapes">Solving in Other Shapes</a></li></ul></li>
+<li class="vc-l2"><a href="introduction.html#42-applications"><span class="vc-n">4.2</span> Applications</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Lengths, Angles and Areas in Triangles</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="similar-congruent-isosceles-and-equilateral.html">Chapter 5: Similar,Congruent,Isosceles, and Equilateral</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="similar-congruent-isosceles-and-equilateral.html#51-about-exercises"><span class="vc-n">5.1</span> About Exercises</a></li>
+<li class="vc-l2"><a href="similar-congruent-isosceles-and-equilateral.html#52-terminology"><span class="vc-n">5.2</span> Terminology</a><ul class="vc-subs"><li class="vc-l3"><a href="similar-congruent-isosceles-and-equilateral.html#terminology-isosceles">Terminology: Isosceles</a></li><li class="vc-l3"><a href="similar-congruent-isosceles-and-equilateral.html#terminology-equilateral">Terminology: Equilateral</a></li><li class="vc-l3"><a href="similar-congruent-isosceles-and-equilateral.html#terminology-similar-and-congruent">Terminology: Similar and Congruent</a></li></ul></li>
+<li class="vc-l2"><a href="similar-congruent-isosceles-and-equilateral.html#53-exercises"><span class="vc-n">5.3</span> Exercises</a></li>
+<li class="vc-l2"><a href="similar-congruent-isosceles-and-equilateral.html#54-examples"><span class="vc-n">5.4</span> Examples</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="angles-of-a-triangle-sum-to-180-degrees.html">Chapter 6: Angles of a triangle sum to 180 Degrees</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="angles-of-a-triangle-sum-to-180-degrees.html#61-the-sum-of-angles"><span class="vc-n">6.1</span> The Sum of Angles</a><ul class="vc-subs"><li class="vc-l3"><a href="angles-of-a-triangle-sum-to-180-degrees.html#the-examples-suggest-it-is-true-but-they-dont-prove-it">The examples suggest it is true, but they don&#x27;t prove it.</a></li><li class="vc-l3"><a href="angles-of-a-triangle-sum-to-180-degrees.html#proof-will-show-it-works-for-all-triangles">Proof will show it works for all triangles.</a></li></ul></li>
+<li class="vc-l2"><a href="angles-of-a-triangle-sum-to-180-degrees.html#62-exercises"><span class="vc-n">6.2</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="exercise-congruent-triangles.html">Chapter 7: Exercise: Congruent Triangles</a></li>
+<li class="vc-ch"><details><summary><a href="exercise-chasing-angles.html">Chapter 8: Exercise: Chasing Angles</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="exercise-chasing-angles.html#81-video-links"><span class="vc-n">8.1</span> Video Links</a></li>
+<li class="vc-l2"><a href="exercise-chasing-angles.html#82-the-angle-game-1"><span class="vc-n">8.2</span> The Angle Game 1</a></li>
+<li class="vc-l2"><a href="exercise-chasing-angles.html#83-the-angle-game-2"><span class="vc-n">8.3</span> The Angle Game 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-pythagorean-theorem.html">Chapter 9: The Pythagorean Theorem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#91-khan-academy"><span class="vc-n">9.1</span> Khan Academy</a><ul class="vc-subs"><li class="vc-l3"><a href="the-pythagorean-theorem.html#video-links">Video Links</a></li></ul></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#92-the-theorem"><span class="vc-n">9.2</span> The Theorem</a><ul class="vc-subs"><li class="vc-l3"><a href="the-pythagorean-theorem.html#geometrical-interpretation">Geometrical Interpretation</a></li></ul></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#93-history-of-the-theorem"><span class="vc-n">9.3</span> History of the Theorem</a></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#94-three-worked-examples"><span class="vc-n">9.4</span> Three Worked Examples</a><ul class="vc-subs"><li class="vc-l3"><a href="the-pythagorean-theorem.html#does-the-answer-make-sense">Does the answer make sense?</a></li></ul></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#95-in-3d"><span class="vc-n">9.5</span> In 3D</a></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#96-the-pyramid-of-khafre"><span class="vc-n">9.6</span> The Pyramid of Khafre</a></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#97-other-forms"><span class="vc-n">9.7</span> Other forms</a></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#98-exercises"><span class="vc-n">9.8</span> Exercises</a></li>
+<li class="vc-l2"><a href="the-pythagorean-theorem.html#99-references"><span class="vc-n">9.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="proof-pythagorean-theorem.html">Chapter 10: Proof: Pythagorean Theorem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="proof-pythagorean-theorem.html#101-proof-by-subtraction"><span class="vc-n">10.1</span> Proof by Subtraction</a></li>
+<li class="vc-l2"><a href="proof-pythagorean-theorem.html#102-euclids-proof"><span class="vc-n">10.2</span> Euclid&#x27;s Proof</a></li>
+<li class="vc-l2"><a href="proof-pythagorean-theorem.html#103-credits"><span class="vc-n">10.3</span> Credits</a></li>
+<li class="vc-l2"><a href="proof-pythagorean-theorem.html#104-notes"><span class="vc-n">10.4</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="exercise-a-puzzle-triangle.html">Chapter 11: Exercise: A Puzzle Triangle</a></li>
+<li class="vc-ch"><details><summary><a href="conventions.html">Chapter 12: Conventions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="conventions.html#121-conventions"><span class="vc-n">12.1</span> Conventions</a></li>
+<li class="vc-l2"><a href="conventions.html#122-other-letters-and-notation"><span class="vc-n">12.2</span> Other Letters and Notation</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="proof-angles-sum-to-180.html">Chapter 13: Proof: Angles sum to 180</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="proof-angles-sum-to-180.html#131-two-proofs"><span class="vc-n">13.1</span> Two Proofs</a></li>
+<li class="vc-l2"><a href="proof-angles-sum-to-180.html#132-do-you-need-to-learn-the-proofs"><span class="vc-n">13.2</span> Do you need to learn the proofs?</a></li>
+<li class="vc-l2"><a href="proof-angles-sum-to-180.html#133-more-about-proof"><span class="vc-n">13.3</span> More About Proof</a></li>
+<li class="vc-l2"><a href="proof-angles-sum-to-180.html#134-first-proof-that-angles-sum-to-180-degrees"><span class="vc-n">13.4</span> First Proof that angles sum to 180 degrees</a></li>
+<li class="vc-l2"><a href="proof-angles-sum-to-180.html#135-variation-of-euclids-proof-that-the-angles-sum-to-180"><span class="vc-n">13.5</span> Variation of Euclid&#x27;s Proof that the angles sum to 180</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="areas-of-triangles.html">Chapter 14: Areas of Triangles</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="areas-of-triangles.html#141-formula-for-area"><span class="vc-n">14.1</span> Formula for Area</a></li>
+<li class="vc-l2"><a href="areas-of-triangles.html#142-with-right-triangles"><span class="vc-n">14.2</span> With Right-Triangles</a></li>
+<li class="vc-l2"><a href="areas-of-triangles.html#143-dividing-other-triangles-into-right-triangles"><span class="vc-n">14.3</span> Dividing other triangles into Right Triangles</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="heron-s-formula.html">Chapter 15: Heron&#x27;s Formula</a></li>
+</ul>
+<p class="toc-group">Trig Functions for Triangles</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="plotting-cos-t-sin-t.html">Chapter 16: Plotting (Cos t, Sin t)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="plotting-cos-t-sin-t.html#161-exercise-using-sine-and-cosine-on-your-calculator"><span class="vc-n">16.1</span> Exercise: Using Sine and Cosine on Your Calculator</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cosine-and-sine.html">Chapter 17: Cosine and Sine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cosine-and-sine.html#171-two-approaches"><span class="vc-n">17.1</span> Two Approaches</a><ul class="vc-subs"><li class="vc-l3"><a href="cosine-and-sine.html#unit-circle-definition">Unit Circle Definition</a></li><li class="vc-l3"><a href="cosine-and-sine.html#ratios-of-sides-definition">Ratios of Sides Definition</a></li><li class="vc-l3"><a href="cosine-and-sine.html#unit-hypotenuse-definition">&#x27;Unit Hypotenuse&#x27; Definition</a></li><li class="vc-l3"><a href="cosine-and-sine.html#exercises">Exercises</a></li></ul></li>
+<li class="vc-l2"><a href="cosine-and-sine.html#172-tangent"><span class="vc-n">17.2</span> Tangent</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="soh-cah-toa.html">Chapter 18: Soh-Cah-Toa</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="soh-cah-toa.html#181-the-mnemonic"><span class="vc-n">18.1</span> The Mnemonic</a></li>
+<li class="vc-l2"><a href="soh-cah-toa.html#182-trigonometric-definitions"><span class="vc-n">18.2</span> Trigonometric definitions</a><ul class="vc-subs"><li class="vc-l3"><a href="soh-cah-toa.html#video-link">Video Link</a></li><li class="vc-l3"><a href="soh-cah-toa.html#exercises-draw-a-diagram">Exercises: (Draw a diagram!)</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sine-squared-plus-cosine-squared.html">Chapter 19: Sine Squared plus Cosine Squared</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#191-pythagoras-in-disguise"><span class="vc-n">19.1</span> Pythagoras in Disguise</a></li>
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#192-pythagorean-trigonometric-identity"><span class="vc-n">19.2</span> Pythagorean Trigonometric Identity</a></li>
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#193-using-the-formula"><span class="vc-n">19.3</span> Using the Formula</a></li>
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#194-this-formula-and-circles"><span class="vc-n">19.4</span> This formula and Circles</a></li>
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#195-revision"><span class="vc-n">19.5</span> Revision</a></li>
+<li class="vc-l2"><a href="sine-squared-plus-cosine-squared.html#196-references"><span class="vc-n">19.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="radians.html">Chapter 20: Radians</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="radians.html#201-units-of-measure"><span class="vc-n">20.1</span> Units of Measure</a><ul class="vc-subs"><li class="vc-l3"><a href="radians.html#choice-of-units-for-length-and-weight">Choice of Units for Length and Weight</a></li><li class="vc-l3"><a href="radians.html#choice-of-units-for-measuring-time">Choice of Units for Measuring Time</a></li><li class="vc-l3"><a href="radians.html#why-60-why-360">Why 60? Why 360?</a></li></ul></li>
+<li class="vc-l2"><a href="radians.html#202-metric-degrees"><span class="vc-n">20.2</span> Metric Degrees?</a></li>
+<li class="vc-l2"><a href="radians.html#203-choice-of-units-for-radians"><span class="vc-n">20.3</span> Choice of Units for Radians</a></li>
+<li class="vc-l2"><a href="radians.html#204-justifying-choice-of-units-for-radians"><span class="vc-n">20.4</span> Justifying Choice of Units for Radians</a></li>
+<li class="vc-l2"><a href="radians.html#205-the-radian-measure"><span class="vc-n">20.5</span> The Radian Measure</a><ul class="vc-subs"><li class="vc-l3"><a href="radians.html#what-you-need-to-know">What You need to Know</a></li></ul></li>
+<li class="vc-l2"><a href="radians.html#206-converting-between-radians-and-degrees"><span class="vc-n">20.6</span> Converting between Radians and Degrees</a></li>
+<li class="vc-l2"><a href="radians.html#207-exercises"><span class="vc-n">20.7</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-unit-circle.html">Chapter 21: The Unit Circle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-unit-circle.html#211-defining-sine-and-cosine-in-terms-of-the-unit-circle"><span class="vc-n">21.1</span> Defining sine and cosine in terms of the unit circle</a><ul class="vc-subs"><li class="vc-l3"><a href="the-unit-circle.html#alternative-definitions">Alternative definitions</a></li></ul></li>
+<li class="vc-l2"><a href="the-unit-circle.html#212-video-links"><span class="vc-n">21.2</span> Video links</a></li>
+<li class="vc-l2"><a href="the-unit-circle.html#213-some-values-for-sine-and-cosine"><span class="vc-n">21.3</span> Some values for sine and cosine</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="law-of-sines.html">Chapter 22: Law of Sines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="law-of-sines.html#221-proof"><span class="vc-n">22.1</span> Proof</a></li>
+<li class="vc-l2"><a href="law-of-sines.html#222-application"><span class="vc-n">22.2</span> Application</a></li>
+<li class="vc-l2"><a href="law-of-sines.html#223-area-of-a-triangle"><span class="vc-n">22.3</span> Area of a triangle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="law-of-cosines.html">Chapter 23: Law of Cosines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="law-of-cosines.html#231-law-of-cosines"><span class="vc-n">23.1</span> Law of Cosines</a><ul class="vc-subs"><li class="vc-l3"><a href="law-of-cosines.html#does-the-formula-make-sense">Does the formula make sense?</a></li></ul></li>
+<li class="vc-l2"><a href="law-of-cosines.html#232-permutations"><span class="vc-n">23.2</span> Permutations</a><ul class="vc-subs"><li class="vc-l3"><a href="law-of-cosines.html#proof">Proof</a></li></ul></li>
+<li class="vc-l2"><a href="law-of-cosines.html#233-applications"><span class="vc-n">23.3</span> Applications</a></li>
+<li class="vc-l2"><a href="law-of-cosines.html#234-notes"><span class="vc-n">23.4</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="solving-triangles-given-asa.html">Chapter 24: Solving Triangles Given ASA</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="solving-triangles-given-asa.html#241-given-asa-side-and-angles-at-each-end-of-that-side"><span class="vc-n">24.1</span> Given ASA (Side and angles at each end of that side)</a></li>
+<li class="vc-l2"><a href="solving-triangles-given-asa.html#242-given-aas-one-side-and-two-other-angles"><span class="vc-n">24.2</span> Given AAS (one side and two other angles)</a></li>
+<li class="vc-l2"><a href="solving-triangles-given-asa.html#243-exercises"><span class="vc-n">24.3</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="solving-triangles-given-sas.html">Chapter 25: Solving Triangles Given SAS</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="solving-triangles-given-sas.html#251-given-two-sides-and-the-included-angle-sas"><span class="vc-n">25.1</span> Given Two Sides and the Included Angle (SAS)</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="worked-example-area-of-a-roof.html">Chapter 26: Worked Example: Area of a Roof</a></li>
+<li class="vc-ch vc-leaf"><a href="worked-example-oil-tanker-arriving-in-port.html">Chapter 27: Worked Example: Oil Tanker Arriving in Port</a></li>
+<li class="vc-ch vc-leaf"><a href="angles-of-elevation-and-depression.html">Chapter 28: Exercises: Angles of Elevation and Depression</a></li>
+<li class="vc-ch"><details><summary><a href="the-most-difficult-triangles-to-solve.html">Chapter 29: The most Difficult Triangles to Solve</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-most-difficult-triangles-to-solve.html#291-given-ssa-two-sides-and-an-angle-not-included-by-the-two-sides-the-ambiguous-case"><span class="vc-n">29.1</span> Given SSA (Two Sides and an Angle Not Included by the Two Sides - the Ambiguous Case)</a></li>
+<li class="vc-l2"><a href="the-most-difficult-triangles-to-solve.html#292-the-case-uniq-postmath-00000012-qinu"><span class="vc-n">29.2</span> The case &#x27;&quot;`UNIQ--postMath-00000012-QINU`&quot;&#x27;</a><ul class="vc-subs"><li class="vc-l3"><a href="the-most-difficult-triangles-to-solve.html#proof">Proof</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Trig Functions as Functions</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="graphs-of-sine-and-cosine-functions.html">Chapter 30: Graphs of Sine, Cos and Tan</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="graphs-of-sine-and-cosine-functions.html#301-exercises"><span class="vc-n">30.1</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="phase-and-frequency.html">Chapter 31: Phase and Frequency</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="phase-and-frequency.html#311-frequency"><span class="vc-n">31.1</span> Frequency</a></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#312-sine-and-cosine-graphs"><span class="vc-n">31.2</span> Sine and Cosine Graphs</a></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#313-definitions"><span class="vc-n">31.3</span> Definitions</a></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#314-in-more-detail"><span class="vc-n">31.4</span> In More Detail</a><ul class="vc-subs"><li class="vc-l3"><a href="phase-and-frequency.html#amplitude">Amplitude</a></li><li class="vc-l3"><a href="phase-and-frequency.html#frequency">Frequency</a></li><li class="vc-l3"><a href="phase-and-frequency.html#phase-shift">Phase Shift</a></li></ul></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#315-examples"><span class="vc-n">31.5</span> Examples</a></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#316-offset"><span class="vc-n">31.6</span> Offset</a></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#317-the-graphs-and-their-differences"><span class="vc-n">31.7</span> The Graphs and Their Differences</a><ul class="vc-subs"><li class="vc-l3"><a href="phase-and-frequency.html#the-parent-functions">The parent functions</a></li></ul></li>
+<li class="vc-l2"><a href="phase-and-frequency.html#318-modeling-situations"><span class="vc-n">31.8</span> Modeling Situations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="graph-of-sine-squared.html">Chapter 32: Graph of Sine Squared</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="graph-of-sine-squared.html#321-sin-squared"><span class="vc-n">32.1</span> Sin Squared</a></li>
+<li class="vc-l2"><a href="graph-of-sine-squared.html#322-cos-squared"><span class="vc-n">32.2</span> Cos Squared</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="addition-formula-for-sines.html">Chapter 33: Addition Formula for Sines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="addition-formula-for-sines.html#331-sine-formulas"><span class="vc-n">33.1</span> Sine Formulas</a></li>
+<li class="vc-l2"><a href="addition-formula-for-sines.html#332-proof"><span class="vc-n">33.2</span> Proof</a><ul class="vc-subs"><li class="vc-l3"><a href="addition-formula-for-sines.html#about-the-diagram">About the Diagram</a></li><li class="vc-l3"><a href="addition-formula-for-sines.html#video-link">Video Link</a></li><li class="vc-l3"><a href="addition-formula-for-sines.html#the-proof">The Proof</a></li><li class="vc-l3"><a href="addition-formula-for-sines.html#putting-it-all-together">Putting it all Together</a></li></ul></li>
+<li class="vc-l2"><a href="addition-formula-for-sines.html#333-exercises"><span class="vc-n">33.3</span> Exercises</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="addition-formula-for-cosines.html">Chapter 34: Addition Formula for Cosines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="addition-formula-for-cosines.html#341-cosine-formulae"><span class="vc-n">34.1</span> Cosine Formulae</a></li>
+<li class="vc-l2"><a href="addition-formula-for-cosines.html#342-proof"><span class="vc-n">34.2</span> Proof</a><ul class="vc-subs"><li class="vc-l3"><a href="addition-formula-for-cosines.html#video-link">Video Link</a></li><li class="vc-l3"><a href="addition-formula-for-cosines.html#the-proof">The Proof</a></li></ul></li>
+<li class="vc-l2"><a href="addition-formula-for-cosines.html#343-another-way"><span class="vc-n">34.3</span> Another Way</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="double-angle-formulas.html">Chapter 35: Double Angle Formulas</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="double-angle-formulas.html#351-what-are-the-double-angle-formulae"><span class="vc-n">35.1</span> What Are the Double-Angle Formulae?</a></li>
+<li class="vc-l2"><a href="double-angle-formulas.html#352-proofs-for-double-angle-formulae"><span class="vc-n">35.2</span> Proofs for Double Angle Formulae</a><ul class="vc-subs"><li class="vc-l3"><a href="double-angle-formulas.html#in-terms-of-just-cosine-or-just-sine">In terms of just cosine or just sine</a></li></ul></li>
+<li class="vc-l2"><a href="double-angle-formulas.html#353-double-angle-formula-for-sine"><span class="vc-n">35.3</span> Double angle formula for sine</a></li>
+<li class="vc-l2"><a href="double-angle-formulas.html#354-treble-and-higher-angles"><span class="vc-n">35.4</span> Treble and Higher Angles</a></li>
+<li class="vc-l2"><a href="double-angle-formulas.html#355-double-and-treble-angles-for-tangents"><span class="vc-n">35.5</span> Double and Treble Angles for Tangents</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="waves-in-and-out-of-phase.html">Chapter 36: Waves in and out of Phase</a></li>
+<li class="vc-ch"><details><summary><a href="beat-frequencies.html">Chapter 37: Beat Frequencies</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="beat-frequencies.html#371-the-math"><span class="vc-n">37.1</span> The Math</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="worked-example-ferris-wheel-problem.html">Chapter 38: Worked Example: Ferris Wheel Problem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="worked-example-ferris-wheel-problem.html#381-the-problem"><span class="vc-n">38.1</span> The Problem</a><ul class="vc-subs"><li class="vc-l3"><a href="worked-example-ferris-wheel-problem.html#exam-question">Exam Question</a></li><li class="vc-l3"><a href="worked-example-ferris-wheel-problem.html#video-links">Video Links</a></li></ul></li>
+<li class="vc-l2"><a href="worked-example-ferris-wheel-problem.html#382-solution"><span class="vc-n">38.2</span> Solution</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="worked-example-simplifying-angles.html">Chapter 39: Worked Example: Simplifying Angles</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="worked-example-simplifying-angles.html#391-worked-examples-in-simplifying-angles"><span class="vc-n">39.1</span> Worked Examples in Simplifying Angles</a></li>
+<li class="vc-l2"><a href="worked-example-simplifying-angles.html#392-sign-changes"><span class="vc-n">39.2</span> Sign Changes</a></li>
+<li class="vc-l2"><a href="worked-example-simplifying-angles.html#393-cosine-to-sine"><span class="vc-n">39.3</span> Cosine to Sine</a></li>
+<li class="vc-l2"><a href="worked-example-simplifying-angles.html#394-addition-formulas"><span class="vc-n">39.4</span> Addition Formulas</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="cosecant-secant-cotangent.html">Chapter 40: Cosecant, Secant, Cotangent</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cosecant-secant-cotangent.html#401-reciprocal-identities"><span class="vc-n">40.1</span> Reciprocal identities</a></li>
+<li class="vc-l2"><a href="cosecant-secant-cotangent.html#402-ratio-identities"><span class="vc-n">40.2</span> Ratio identities</a></li>
+<li class="vc-l2"><a href="cosecant-secant-cotangent.html#403-triangles-for-reciprocal-trig-functions"><span class="vc-n">40.3</span> Triangles for Reciprocal Trig Functions</a></li>
+<li class="vc-l2"><a href="cosecant-secant-cotangent.html#404-pythagorean-relations"><span class="vc-n">40.4</span> Pythagorean Relations</a><ul class="vc-subs"><li class="vc-l3"><a href="cosecant-secant-cotangent.html#remembering-the-formulae">Remembering the Formulae</a></li><li class="vc-l3"><a href="cosecant-secant-cotangent.html#quick-check-of-algebra">Quick Check of Algebra</a></li></ul></li>
+<li class="vc-l2"><a href="cosecant-secant-cotangent.html#405-changed-angle-relations"><span class="vc-n">40.5</span> Changed Angle Relations</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="graphs-of-other-trigonometric-functions.html">Chapter 41: Graphs of Cosec, Sec and Cot</a></li>
+<li class="vc-ch"><details><summary><a href="inverse-trigonometric-functions.html">Chapter 42: Inverse Trigonometric Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#421-the-basic-idea"><span class="vc-n">42.1</span> The Basic Idea</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#422-arcsin"><span class="vc-n">42.2</span> arcsin</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#423-the-inverse-functions-domain-and-range"><span class="vc-n">42.3</span> The Inverse Functions, Domain and Range</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#424-more-notation"><span class="vc-n">42.4</span> More Notation</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#425-inverses-to-trig-functions"><span class="vc-n">42.5</span> Inverses to Trig functions</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#426-inverses-really"><span class="vc-n">42.6</span> Inverses, Really?</a></li>
+<li class="vc-l2"><a href="inverse-trigonometric-functions.html#427-the-inverse-relations"><span class="vc-n">42.7</span> The Inverse Relations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="simplifying-a-sin-x-b-cos-x.html">Chapter 43: Simplifying a sin(x) + b cos(x)</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="simplifying-a-sin-x-b-cos-x.html#431-geometric-argument"><span class="vc-n">43.1</span> Geometric Argument</a></li>
+<li class="vc-l2"><a href="simplifying-a-sin-x-b-cos-x.html#432-algebraic-argument"><span class="vc-n">43.2</span> Algebraic Argument</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Trigonometry References</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="remembering-trig-formulae.html">Chapter 44: Remembering Trig Formulae</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="remembering-trig-formulae.html#441-remembering-formulae"><span class="vc-n">44.1</span> Remembering Formulae</a></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#442-the-blue-box-formulae"><span class="vc-n">44.2</span> The Blue-Box Formulae</a></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#443-tips-on-checking-and-remembering-formulae"><span class="vc-n">44.3</span> Tips on checking and remembering Formulae</a><ul class="vc-subs"><li class="vc-l3"><a href="remembering-trig-formulae.html#checking-formulae">Checking Formulae</a></li></ul></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#444-identities-based-on-the-pythagorean-theorem"><span class="vc-n">44.4</span> Identities Based on the Pythagorean Theorem</a><ul class="vc-subs"><li class="vc-l3"><a href="remembering-trig-formulae.html#pythagorean-theorem-in-terms-of-sine-and-cosine">Pythagorean Theorem in Terms of sine and cosine</a></li></ul></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#445-identities-based-on-addition-formula"><span class="vc-n">44.5</span> Identities based on Addition Formula</a><ul class="vc-subs"><li class="vc-l3"><a href="remembering-trig-formulae.html#letters-are-arbitrary">Letters are Arbitrary</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#addition-formula">Addition Formula</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#subtraction-formula">&#x27;Subtraction&#x27; Formula</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#double-angle-formula">Double Angle Formula</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#half-angle-formula">Half Angle Formula</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#sum-of-two-shifted-cosines">Sum of two shifted Cosines</a></li></ul></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#446-identities-based-on-sine-and-cosine-rules"><span class="vc-n">44.6</span> Identities based on Sine and Cosine rules</a></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#447-ratio-identities"><span class="vc-n">44.7</span> Ratio identities</a></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#448-identities-based-on-symmetry"><span class="vc-n">44.8</span> Identities based on symmetry</a><ul class="vc-subs"><li class="vc-l3"><a href="remembering-trig-formulae.html#shifting-left">Shifting Left</a></li><li class="vc-l3"><a href="remembering-trig-formulae.html#reflecting-in-uniq-postmath-0000005f-qinu">Reflecting in &#x27;&quot;`UNIQ--postMath-0000005F-QINU`&quot;&#x27;</a></li></ul></li>
+<li class="vc-l2"><a href="remembering-trig-formulae.html#449-co-function-identities"><span class="vc-n">44.9</span> Co-function identities</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="trigonometric-formula-reference.html">Chapter 45: Trigonometric Formula Reference</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trigonometric-formula-reference.html#451-principal-trig-relationships"><span class="vc-n">45.1</span> Principal Trig Relationships</a><ul class="vc-subs"><li class="vc-l3"><a href="trigonometric-formula-reference.html#pythagoras-related">Pythagoras related</a></li><li class="vc-l3"><a href="trigonometric-formula-reference.html#periodicity">Periodicity</a></li><li class="vc-l3"><a href="trigonometric-formula-reference.html#angle-sums">Angle Sums</a></li><li class="vc-l3"><a href="trigonometric-formula-reference.html#multiple-angle-formulae">Multiple Angle Formulae</a></li></ul></li>
+<li class="vc-l2"><a href="trigonometric-formula-reference.html#452-trigonometric-functions-of-some-closely-related-angles"><span class="vc-n">45.2</span> Trigonometric functions of some closely related angles</a><ul class="vc-subs"><li class="vc-l3"><a href="trigonometric-formula-reference.html#sinx">sin(x)</a></li><li class="vc-l3"><a href="trigonometric-formula-reference.html#cosx">cos(x)</a></li><li class="vc-l3"><a href="trigonometric-formula-reference.html#tanx">tan(x)</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="trigonometric-unit-circle-and-graph-reference.html">Chapter 46: Trigonometric Unit Circle and Graph Reference</a></li>
+<li class="vc-ch vc-leaf"><a href="selected-angles-reference.html">Chapter 47: Selected Angles Reference</a></li>
+<li class="vc-ch"><details><summary><a href="law-of-tangents.html">Chapter 48: Law of Tangents</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="law-of-tangents.html#481-when-to-use-it"><span class="vc-n">48.1</span> When to use it</a></li>
+<li class="vc-l2"><a href="law-of-tangents.html#482-proof"><span class="vc-n">48.2</span> Proof</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">For Enthusiasts</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="regular-polygons.html">Chapter 49: Regular Polygons</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="regular-polygons.html#491-interior-angles-of-regular-polygons"><span class="vc-n">49.1</span> Interior Angles of Regular Polygons</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="what-tessellations-are-possible-with-regular-polygons.html">Chapter 50: What Tessellations are Possible with Regular Polygons?</a></li>
+<li class="vc-ch"><details><summary><a href="proof-heron-s-formula.html">Chapter 51: Proof: Heron&#x27;s Formula</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="proof-heron-s-formula.html#511-do-you-need-the-proof"><span class="vc-n">51.1</span> Do you need the proof?</a></li>
+<li class="vc-l2"><a href="proof-heron-s-formula.html#512-proof"><span class="vc-n">51.2</span> Proof</a><ul class="vc-subs"><li class="vc-l3"><a href="proof-heron-s-formula.html#video-link">Video Link</a></li><li class="vc-l3"><a href="proof-heron-s-formula.html#the-proof">The Proof</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="compass-bearings.html">Chapter 52: Compass Bearings</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="compass-bearings.html#521-other-notations"><span class="vc-n">52.1</span> Other Notations</a></li>
+<li class="vc-l2"><a href="compass-bearings.html#522-true-north-and-magnetic-north"><span class="vc-n">52.2</span> True north and magnetic north</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transformation-of-products-into-sums.html">Chapter 53: Transformation of products into sums</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transformation-of-products-into-sums.html#531-product-into-sum"><span class="vc-n">53.1</span> Product into sum</a></li>
+<li class="vc-l2"><a href="transformation-of-products-into-sums.html#532-sum-into-product"><span class="vc-n">53.2</span> Sum into product</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-distance-from-new-york-to-tokyo.html">Chapter 54: The Distance from New York to Tokyo</a></li>
+<li class="vc-ch"><details><summary><a href="lissajous-figures.html">Chapter 55: Lissajous Figures</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="lissajous-figures.html#551-lissajous-curve"><span class="vc-n">55.1</span> Lissajous Curve</a></li>
+<li class="vc-l2"><a href="lissajous-figures.html#552-examples"><span class="vc-n">55.2</span> Examples</a></li>
+<li class="vc-l2"><a href="lissajous-figures.html#553-generation"><span class="vc-n">55.3</span> Generation</a></li>
+<li class="vc-l2"><a href="lissajous-figures.html#554-application-for-the-case-of-a-b"><span class="vc-n">55.4</span> Application for the case of a = b</a></li>
+<li class="vc-l2"><a href="lissajous-figures.html#555-notes"><span class="vc-n">55.5</span> Notes</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-cordic-algorithm.html">Chapter 56: The CORDIC Algorithm</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-cordic-algorithm.html#561-what-it-is"><span class="vc-n">56.1</span> What it is</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#562-applications"><span class="vc-n">56.2</span> Applications</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#563-mode-of-operation"><span class="vc-n">56.3</span> Mode of operation</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#564-hardware-implementation"><span class="vc-n">56.4</span> Hardware implementation</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#565-related-algorithms"><span class="vc-n">56.5</span> Related algorithms</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#566-origins"><span class="vc-n">56.6</span> Origins</a><ul class="vc-subs"><li class="vc-l3"><a href="the-cordic-algorithm.html#hardware">Hardware</a></li><li class="vc-l3"><a href="the-cordic-algorithm.html#software">Software</a></li></ul></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#567-history"><span class="vc-n">56.7</span> History</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#568-notes"><span class="vc-n">56.8</span> Notes</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#569-references"><span class="vc-n">56.9</span> References</a></li>
+<li class="vc-l2"><a href="the-cordic-algorithm.html#5610-credits"><span class="vc-n">56.10</span> Credits</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="pythagorean-triples.html">Chapter 57: Pythagorean Triples</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="pythagorean-triples.html#571-pythagorean-triples"><span class="vc-n">57.1</span> Pythagorean Triples</a></li>
+<li class="vc-l2"><a href="pythagorean-triples.html#572-generating-pythagorean-triples"><span class="vc-n">57.2</span> Generating Pythagorean Triples</a></li>
+<li class="vc-l2"><a href="pythagorean-triples.html#573-examples-of-pythagorean-triples"><span class="vc-n">57.3</span> Examples of Pythagorean Triples</a></li>
+<li class="vc-l2"><a href="pythagorean-triples.html#574-references"><span class="vc-n">57.4</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="a-brief-history-of-trigonometry.html">Chapter 58: A Brief History of Trigonometry</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="a-brief-history-of-trigonometry.html#581-first-tables-of-sines-or-cosines"><span class="vc-n">58.1</span> First Tables of Sines or Cosines</a></li>
+<li class="vc-l2"><a href="a-brief-history-of-trigonometry.html#582-the-pythagorean-theorem"><span class="vc-n">58.2</span> The Pythagorean Theorem</a></li>
+<li class="vc-l2"><a href="a-brief-history-of-trigonometry.html#583-herons-formula"><span class="vc-n">58.3</span> Heron&#x27;s Formula</a></li>
+<li class="vc-l2"><a href="a-brief-history-of-trigonometry.html#584-references"><span class="vc-n">58.4</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">More Geometry</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="geometric-definitions-of-trig-functions.html">Chapter 60: Geometric Definitions of Trig Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="geometric-definitions-of-trig-functions.html#601-geometrically-defining-tangent"><span class="vc-n">60.1</span> Geometrically defining tangent</a></li>
+<li class="vc-l2"><a href="geometric-definitions-of-trig-functions.html#602-domain-and-range-of-circular-functions"><span class="vc-n">60.2</span> Domain and range of circular functions</a></li>
+<li class="vc-l2"><a href="geometric-definitions-of-trig-functions.html#603-applying-the-trigonometric-functions-to-a-right-angled-triangle"><span class="vc-n">60.3</span> Applying the trigonometric functions to a right-angled triangle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="thales-theorem.html">Chapter 61: Thales Theorem: Quick construction of a right angle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="thales-theorem.html#611-construction-of-right-triangles"><span class="vc-n">61.1</span> Construction of Right Triangles</a></li>
+<li class="vc-l2"><a href="thales-theorem.html#612-using-right-triangles-to-find-unknown-sides"><span class="vc-n">61.2</span> Using Right Triangles to find Unknown Sides</a><ul class="vc-subs"><li class="vc-l3"><a href="thales-theorem.html#finding-unknown-sides-from-two-other-sides">Finding unknown sides from two other sides</a></li><li class="vc-l3"><a href="thales-theorem.html#finding-unknown-sides-from-one-side-and-one-non-right-angle">Finding unknown sides from one side and one (non-right) angle</a></li><li class="vc-l3"><a href="thales-theorem.html#cosine-example">Cosine example</a></li></ul></li>
+<li class="vc-l2"><a href="thales-theorem.html#613-properties-of-the-cosine-and-sine-functions"><span class="vc-n">61.3</span> Properties of the cosine and sine functions</a><ul class="vc-subs"><li class="vc-l3"><a href="thales-theorem.html#period">Period</a></li><li class="vc-l3"><a href="thales-theorem.html#half-angle-and-double-angle-formulas">Half Angle and Double Angle Formulas</a></li></ul></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">More on Trigonometric Identities</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="verifying-trigonometric-identities.html">Chapter 62: Verifying Trigonometric Identities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="verifying-trigonometric-identities.html#621-to-verify-an-identity"><span class="vc-n">62.1</span> To verify an identity</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="solving-trigonometric-equations.html">Chapter 63: Solving Trigonometric Equations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="solving-trigonometric-equations.html#631-basic-trigonometric-equations"><span class="vc-n">63.1</span> Basic trigonometric equations</a><ul class="vc-subs"><li class="vc-l3"><a href="solving-trigonometric-equations.html#sinx-n">sin(x) = n</a></li><li class="vc-l3"><a href="solving-trigonometric-equations.html#cosx-n">cos(x) = n</a></li><li class="vc-l3"><a href="solving-trigonometric-equations.html#tanx-n">tan(x) = n</a></li><li class="vc-l3"><a href="solving-trigonometric-equations.html#cotx-n">cot(x) = n</a></li><li class="vc-l3"><a href="solving-trigonometric-equations.html#cscx-n-and-secx-n">csc(x) = n and sec(x) = n</a></li></ul></li>
+<li class="vc-l2"><a href="solving-trigonometric-equations.html#632-further-examples"><span class="vc-n">63.2</span> Further examples</a><ul class="vc-subs"><li class="vc-l3"><a href="solving-trigonometric-equations.html#a-sinxb-cosx-c">a sin(x)+b cos(x) = c</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="sum-into-product.html">Chapter 64: Sum into Product</a></li>
+<li class="vc-ch vc-leaf"><a href="the-sine-of-18-degrees.html">Chapter 65: The sine of 18º</a></li>
+<li class="vc-ch vc-leaf"><a href="the-sine-of-15-degrees.html">Chapter 66: The sine of 15º</a></li>
+<li class="vc-ch"><details><summary><a href="the-summation-of-finite-series.html">Chapter 67: The summation of sined or cosined arithmetic sequence</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-summation-of-finite-series.html#671-problem-statement"><span class="vc-n">67.1</span> Problem Statement</a></li>
+<li class="vc-l2"><a href="the-summation-of-finite-series.html#672-method-1"><span class="vc-n">67.2</span> Method 1</a></li>
+<li class="vc-l2"><a href="the-summation-of-finite-series.html#673-method-2"><span class="vc-n">67.3</span> Method 2</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="less-used-trig-identities.html">Chapter 68: Other Trig Identities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="less-used-trig-identities.html#681-triangle-identities"><span class="vc-n">68.1</span> Triangle Identities</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#682-pythagoras"><span class="vc-n">68.2</span> Pythagoras</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#683-sumdifference-of-angles"><span class="vc-n">68.3</span> Sum/Difference of angles</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#684-product-to-sum"><span class="vc-n">68.4</span> Product to Sum</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#685-sum-and-difference-to-product"><span class="vc-n">68.5</span> Sum and difference to product</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#686-multiple-angle"><span class="vc-n">68.6</span> Multiple angle</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#687-half-angle"><span class="vc-n">68.7</span> Half angle</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#688-power-reduction"><span class="vc-n">68.8</span> Power Reduction</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#689-evenodd"><span class="vc-n">68.9</span> Even/Odd</a></li>
+<li class="vc-l2"><a href="less-used-trig-identities.html#6810-calculus"><span class="vc-n">68.10</span> Calculus</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Applications</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="solving-triangles-by-half-angle-formulae.html">Chapter 70: Solving triangles by half-angle formulae</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="solving-triangles-by-half-angle-formulae.html#701-sina2"><span class="vc-n">70.1</span> Sin(A/2)</a></li>
+<li class="vc-l2"><a href="solving-triangles-by-half-angle-formulae.html#702-cosa2-and-tana2"><span class="vc-n">70.2</span> Cos(A/2) and tan(A/2)</a></li>
+<li class="vc-l2"><a href="solving-triangles-by-half-angle-formulae.html#703-sina-and-herons-formula"><span class="vc-n">70.3</span> Sin(A) and Heron&#x27;s formula</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-distance-and-dip-of-the-horizon.html">Chapter 71: The distance and dip of the horizon</a></li>
+<li class="vc-ch"><details><summary><a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html">Chapter 72: Cyclic Quadrilaterals and Ptolemy&#x27;s Theorem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html#721-ptolemys-theorem"><span class="vc-n">72.1</span> Ptolemy&#x27;s Theorem</a><ul class="vc-subs"><li class="vc-l3"><a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html#special-case">Special case</a></li></ul></li>
+<li class="vc-l2"><a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html#722-maltitudes"><span class="vc-n">72.2</span> Maltitudes</a></li>
+<li class="vc-l2"><a href="cyclic-quadrilaterals-and-ptolemy-s-theorem.html#723-other-theorems"><span class="vc-n">72.3</span> Other theorems</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="area-of-a-quadrilateral.html">Chapter 73: Area of a quadrilateral</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="area-of-a-quadrilateral.html#731-the-diagonals-and-circumradius-of-a-cyclic-quadrilateral"><span class="vc-n">73.1</span> The diagonals and circumradius of a cyclic quadrilateral</a></li>
+<li class="vc-l2"><a href="area-of-a-quadrilateral.html#732-further-results"><span class="vc-n">73.2</span> Further results</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Circles, Points and Triangles Associated with a Triangle</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="the-circumcircle.html">Chapter 74: The Circumcircle</a></li>
+<li class="vc-ch"><details><summary><a href="the-incircle.html">Chapter 75: The Incircle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-incircle.html#751-calculating-the-radius"><span class="vc-n">75.1</span> Calculating the radius</a></li>
+<li class="vc-l2"><a href="the-incircle.html#752-another-formula-for-the-radius"><span class="vc-n">75.2</span> Another formula for the radius</a></li>
+<li class="vc-l2"><a href="the-incircle.html#753-the-equal-incircles-theorem"><span class="vc-n">75.3</span> The Equal Incircles Theorem</a></li>
+<li class="vc-l2"><a href="the-incircle.html#754-another-circle"><span class="vc-n">75.4</span> Another circle</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-excircles.html">Chapter 76: The Excircles</a></li>
+<li class="vc-ch vc-leaf"><a href="other-centres-of-a-triangle.html">Chapter 77: Other Centres of a Triangle</a></li>
+<li class="vc-ch"><details><summary><a href="ceva-s-theorem.html">Chapter 78: Ceva&#x27;s Theorem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="ceva-s-theorem.html#781-some-corollaries-of-cevas-theorem"><span class="vc-n">78.1</span> Some corollaries of Ceva&#x27;s Theorem</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="orthocentric-points.html">Chapter 79: Orthocentric points</a></li>
+<li class="vc-ch"><details><summary><a href="the-excentral-triangle.html">Chapter 80: The Excentral Triangle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-excentral-triangle.html#801-properties-of-the-excentral-triangle"><span class="vc-n">80.1</span> Properties of the Excentral Triangle</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-pedal-triangle.html">Chapter 81: The Pedal Triangle</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-pedal-triangle.html#811-properties-of-the-pedal-triangle"><span class="vc-n">81.1</span> Properties of the pedal triangle</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-nine-point-circle.html">Chapter 82: The Nine-point Circle</a></li>
+<li class="vc-ch vc-leaf"><a href="brocard-s-theorem.html">Chapter 83: Brocard&#x27;s Theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="the-fermat-point.html">Chapter 84: The Fermat Point</a></li>
+<li class="vc-ch vc-leaf"><a href="reflections-in-a-triangle.html">Chapter 85: Reflections in a triangle</a></li>
+<li class="vc-ch vc-leaf"><a href="morley-s-triangle.html">Chapter 86: Morley&#x27;s Triangle</a></li>
+<li class="vc-ch vc-leaf"><a href="viviani-s-theorem.html">Chapter 87: Viviani&#x27;s theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="napoleon-s-theorem.html">Chapter 88: Napoleon&#x27;s theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="the-miquel-point.html">Chapter 89: The Miquel Point</a></li>
+<li class="vc-ch vc-leaf"><a href="philo-s-line.html">Chapter 90: Philo&#x27;s Line</a></li>
+<li class="vc-ch vc-leaf"><a href="menelaus-theorem.html">Chapter 91: Menelaus&#x27; theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="area-bisectors.html">Chapter 92: Area bisectors</a></li>
+<li class="vc-ch vc-leaf"><a href="the-pivot-theorem.html">Chapter 93: The Pivot theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="the-seven-circles-theorem.html">Chapter 94: The Seven circles theorem</a></li>
+<li class="vc-ch vc-leaf"><a href="the-simson-line.html">Chapter 95: The Simson line</a></li>
+<li class="vc-ch vc-leaf"><a href="thebault-s-theorem.html">Chapter 96: Thebault&#x27;s theorem</a></li>
+</ul>
+<p class="toc-group">Where do These Belong?</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="some-little-known-trigonometric-functions.html">Chapter 99: Some Little-known Trigonometric Functions</a></li>
+<li class="vc-ch"><details><summary><a href="vectors-in-the-plane.html">Chapter 123: Vectors in the Plane</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="vectors-in-the-plane.html#1231-rectangular-to-polar-conversion"><span class="vc-n">123.1</span> Rectangular to Polar conversion</a></li>
+<li class="vc-l2"><a href="vectors-in-the-plane.html#1232-polar-to-rectangular-conversion"><span class="vc-n">123.2</span> Polar to Rectangular conversion</a></li>
+<li class="vc-l2"><a href="vectors-in-the-plane.html#1233-review-of-conversions"><span class="vc-n">123.3</span> Review of conversions</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="vectors-and-dot-products.html">Chapter 124: Vectors and Dot Products</a></li>
+<li class="vc-ch vc-leaf"><a href="trigonometric-form-of-the-complex-number.html">Chapter 125: Trigonometric Form of the Complex Number</a></li>
+<li class="vc-ch"><details><summary><a href="applications-and-models.html">Chapter 126: Simple Harmonic Oscillator</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="applications-and-models.html#1261-simple-harmonic-motion"><span class="vc-n">126.1</span> Simple harmonic motion</a><ul class="vc-subs"><li class="vc-l3"><a href="applications-and-models.html#springs-and-hookes-law">Springs and Hooke&#x27;s Law</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="calculating-pi.html">Chapter 127: Calculating π</a></li>
+<li class="vc-ch"><details><summary><a href="some-theorems-using-vectors.html">Chapter 128: Some theorems using vectors</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="some-theorems-using-vectors.html#1281-circumcentre-and-orthocentre"><span class="vc-n">128.1</span> Circumcentre and orthocentre</a></li>
+<li class="vc-l2"><a href="some-theorems-using-vectors.html#1282-centroid"><span class="vc-n">128.2</span> Centroid</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="price-s-theorem.html">Chapter 129: Price&#x27;s Theorem</a></li>
+</ul>
+<p class="toc-group">for Enthusiasts</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="a-generalization-of-pythagoras-theorem.html">Chapter 100: A Generalization of Pythagoras&#x27; Theorem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="a-generalization-of-pythagoras-theorem.html#1001-arbitrary-triangle"><span class="vc-n">100.1</span> Arbitrary triangle</a></li>
+<li class="vc-l2"><a href="a-generalization-of-pythagoras-theorem.html#1002-credits"><span class="vc-n">100.2</span> Credits</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-eyeball-theorem.html">Chapter 101: The Eyeball Theorem</a></li>
+<li class="vc-ch"><details><summary><a href="chebyshev-polynomials.html">Chapter 130: Chebyshev Polynomials</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1301-examples"><span class="vc-n">130.1</span> Examples</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1302-definition-of-uniq-postmath-00000017-qinu"><span class="vc-n">130.2</span> Definition of &#x27;&quot;`UNIQ--postMath-00000017-QINU`&quot;&#x27;</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1303-uses"><span class="vc-n">130.3</span> Uses</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1304-explicit-formulae"><span class="vc-n">130.4</span> Explicit formulae</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1305-uses"><span class="vc-n">130.5</span> Uses</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1306-definition"><span class="vc-n">130.6</span> Definition</a><ul class="vc-subs"><li class="vc-l3"><a href="chebyshev-polynomials.html#trigonometric-definition">Trigonometric definition</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#pell-equation-definition">Pell equation definition</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#relation-between-chebyshev-polynomials-of-the-first-and-second-kinds">Relation between Chebyshev polynomials of the first and second kinds</a></li></ul></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1307-properties"><span class="vc-n">130.7</span> Properties</a><ul class="vc-subs"><li class="vc-l3"><a href="chebyshev-polynomials.html#roots-and-extrema">Roots and extrema</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#differentiation-and-integration">Differentiation and integration</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#orthogonality">Orthogonality</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#minimal-norm">Minimal ∞-norm</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#other-properties">Other properties</a></li></ul></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1308-as-a-basis-set"><span class="vc-n">130.8</span> As a basis set</a><ul class="vc-subs"><li class="vc-l3"><a href="chebyshev-polynomials.html#example-1">Example 1</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#example-2">Example 2</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#partial-sums">Partial sums</a></li><li class="vc-l3"><a href="chebyshev-polynomials.html#polynomial-in-chebyshev-form">Polynomial in Chebyshev form</a></li></ul></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#1309-spread-polynomials"><span class="vc-n">130.9</span> Spread polynomials</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#13010-notes"><span class="vc-n">130.10</span> Notes</a></li>
+<li class="vc-l2"><a href="chebyshev-polynomials.html#13011-credits"><span class="vc-n">130.11</span> Credits</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="trigonometry-done-rigorously.html">Chapter 131: Trigonometry done Rigorously</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trigonometry-done-rigorously.html#1311-introduction-to-angles"><span class="vc-n">131.1</span> Introduction to Angles</a></li>
+<li class="vc-l2"><a href="trigonometry-done-rigorously.html#1312-definition-of-an-angle"><span class="vc-n">131.2</span> Definition of an Angle</a></li>
+<li class="vc-l2"><a href="trigonometry-done-rigorously.html#1313-definition-of-a-triangle"><span class="vc-n">131.3</span> Definition of a Triangle</a><ul class="vc-subs"><li class="vc-l3"><a href="trigonometry-done-rigorously.html#triangle-ratios">Triangle Ratios</a></li><li class="vc-l3"><a href="trigonometry-done-rigorously.html#right-angles">Right Angles</a></li><li class="vc-l3"><a href="trigonometry-done-rigorously.html#right-triangles-and-measurement">Right Triangles and Measurement</a></li></ul></li>
+<li class="vc-l2"><a href="trigonometry-done-rigorously.html#1314-introduction-to-radian-measure"><span class="vc-n">131.4</span> Introduction to Radian Measure</a><ul class="vc-subs"><li class="vc-l3"><a href="trigonometry-done-rigorously.html#understanding-the-three-sides-of-a-radian">Understanding the three sides of a Radian</a></li><li class="vc-l3"><a href="trigonometry-done-rigorously.html#is-a-radian-affected-by-the-size-of-its-circle">Is a radian affected by the size of its circle?</a></li><li class="vc-l3"><a href="trigonometry-done-rigorously.html#using-radians-to-measure-angles">Using Radians to Measure Angles</a></li><li class="vc-l3"><a href="trigonometry-done-rigorously.html#summary-and-extra-notes">Summary and Extra Notes</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="erdosmordell-inequality.html">Chapter 132: Erdős–Mordell inequality</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="erdosmordell-inequality.html#1321-references"><span class="vc-n">132.1</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="hilbert-s-third-problem.html">Chapter 133: Hilbert&#x27;s third Problem</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1331-vector-spaces"><span class="vc-n">133.1</span> Vector Spaces</a><ul class="vc-subs"><li class="vc-l3"><a href="hilbert-s-third-problem.html#vector-space-over-the-reals">Vector Space over the Reals</a></li><li class="vc-l3"><a href="hilbert-s-third-problem.html#vector-space-over-the-rationals">Vector Space over the Rationals</a></li></ul></li>
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1332-quotient-space"><span class="vc-n">133.2</span> Quotient Space</a></li>
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1333-invariant"><span class="vc-n">133.3</span> Invariant</a><ul class="vc-subs"><li class="vc-l3"><a href="hilbert-s-third-problem.html#polyominos">Polyominos</a></li><li class="vc-l3"><a href="hilbert-s-third-problem.html#other-invariants">Other Invariants</a></li></ul></li>
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1334-tensor-product"><span class="vc-n">133.4</span> Tensor Product</a></li>
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1335-dehn-invariant"><span class="vc-n">133.5</span> Dehn Invariant</a></li>
+<li class="vc-l2"><a href="hilbert-s-third-problem.html#1336-it-is-invariant"><span class="vc-n">133.6</span> It is invariant</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Scrap Heap</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="trigonometric-identities.html">Chapter 102: Trigonometric identities</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="trigonometric-identities.html#1021-what-is-an-identity"><span class="vc-n">102.1</span> What is an identity?</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="concepts.html">Chapter 103: Core concepts of trigonometry</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="concepts.html#1031-usage-and-relevance-of-trigonometry"><span class="vc-n">103.1</span> Usage and Relevance of trigonometry</a></li>
+<li class="vc-l2"><a href="concepts.html#1032-further-concepts-and-understanding"><span class="vc-n">103.2</span> Further concepts and understanding</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="prerequisites-and-basics.html">Chapter 104: Prerequisites and Basics</a></li>
+<li class="vc-ch vc-leaf"><a href="addition-and-subtraction-theorems.html">Chapter 105: Addition and Subtraction Theorems</a></li>
+<li class="vc-ch"><details><summary><a href="more-about-addition-formulas.html">Chapter 106: More About Addition Formulas</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="more-about-addition-formulas.html#1061-related-formulae"><span class="vc-n">106.1</span> Related Formulae</a></li>
+<li class="vc-l2"><a href="more-about-addition-formulas.html#1062-tangent-formulae"><span class="vc-n">106.2</span> Tangent Formulae</a></li>
+<li class="vc-l2"><a href="more-about-addition-formulas.html#1063-derivations"><span class="vc-n">106.3</span> Derivations</a></li>
+<li class="vc-l2"><a href="more-about-addition-formulas.html#1064-related-formulae"><span class="vc-n">106.4</span> Related Formulae</a></li>
+<li class="vc-l2"><a href="more-about-addition-formulas.html#1065-derivations"><span class="vc-n">106.5</span> Derivations</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="collection-of-problems.html">Chapter 107: Collection of Problems</a></li>
+<li class="vc-ch"><details><summary><a href="degrees-minutes-and-seconds.html">Chapter 108: Degrees Minutes and Seconds</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1081-vocabulary"><span class="vc-n">108.1</span> Vocabulary</a></li>
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1082-angle-addition"><span class="vc-n">108.2</span> Angle Addition</a></li>
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1083-convert-to-decimal"><span class="vc-n">108.3</span> Convert To Decimal</a></li>
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1084-convert-to-degree-minutes-seconds"><span class="vc-n">108.4</span> Convert To Degree-Minutes-Seconds</a></li>
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1085-draw-the-angle"><span class="vc-n">108.5</span> Draw The Angle</a></li>
+<li class="vc-l2"><a href="degrees-minutes-and-seconds.html#1086-real-world"><span class="vc-n">108.6</span> Real World</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="doing-without-sine.html">Chapter 109: Doing without Sine</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="doing-without-sine.html#1091-the-idea"><span class="vc-n">109.1</span> The Idea</a></li>
+<li class="vc-l2"><a href="doing-without-sine.html#1092-angle-addition-and-subtraction-formulas"><span class="vc-n">109.2</span> Angle Addition and Subtraction formulas</a><ul class="vc-subs"><li class="vc-l3"><a href="doing-without-sine.html#proof-that-angle-sum-formula-and-double-angle-formula-are-consistent">Proof that angle sum formula and double angle formula are consistent</a></li></ul></li>
+<li class="vc-l2"><a href="doing-without-sine.html#1093-pythagorean-identity"><span class="vc-n">109.3</span> Pythagorean identity</a></li>
+<li class="vc-l2"><a href="doing-without-sine.html#1094-sine-formulas"><span class="vc-n">109.4</span> Sine Formulas</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="reflections-in-a-line.html">Chapter 110: Reflections in a line</a></li>
+</ul>
+<p class="toc-group">Calculus and complex numbers</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="some-preliminary-results.html">Chapter 111: Some preliminary results</a></li>
+<li class="vc-ch vc-leaf"><a href="derivative-of-sine.html">Chapter 112: Derivative of Sine</a></li>
+<li class="vc-ch vc-leaf"><a href="derivative-of-cosine.html">Chapter 113: Derivative of Cosine</a></li>
+<li class="vc-ch vc-leaf"><a href="derivative-of-tangent.html">Chapter 114: Derivative of Tangent</a></li>
+<li class="vc-ch"><details><summary><a href="derivative-of-inverse-functions.html">Chapter 115: Derivative of Inverse Functions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="derivative-of-inverse-functions.html#1151-power-series"><span class="vc-n">115.1</span> Power series</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="power-series-for-e-to-the-x.html">Chapter 116: Power Series for e&lt;sup&gt;x&lt;/sup&gt;</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="power-series-for-e-to-the-x.html#1161-compound-interest"><span class="vc-n">116.1</span> Compound interest</a></li>
+<li class="vc-l2"><a href="power-series-for-e-to-the-x.html#1162-power-series"><span class="vc-n">116.2</span> Power Series</a></li>
+<li class="vc-l2"><a href="power-series-for-e-to-the-x.html#1163-convergence"><span class="vc-n">116.3</span> Convergence</a></li>
+<li class="vc-l2"><a href="power-series-for-e-to-the-x.html#1164-does-differentiation-term-by-term-make-sense"><span class="vc-n">116.4</span> Does Differentiation Term by Term Make Sense?</a></li>
+<li class="vc-l2"><a href="power-series-for-e-to-the-x.html#1165-exponential-function"><span class="vc-n">116.5</span> Exponential function</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="power-series-for-cosine-and-sine.html">Chapter 117: Power Series for Cosine and Sine</a></li>
+<li class="vc-ch vc-leaf"><a href="e-to-the-i-pi.html">Chapter 118: e&lt;sup&gt;iπ&lt;/sup&gt;</a></li>
+<li class="vc-ch"><details><summary><a href="cosh-sinh-and-tanh.html">Chapter 119: Cosh, Sinh and Tanh</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1191-definitions"><span class="vc-n">119.1</span> Definitions</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1192-addition-formulae"><span class="vc-n">119.2</span> Addition formulae</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1193-inverse-functions"><span class="vc-n">119.3</span> Inverse functions</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1194-simplifying-a-coshx-b-sinhx"><span class="vc-n">119.4</span> Simplifying a cosh(x) + b sinh(x)</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1195-relations-to-complex-numbers"><span class="vc-n">119.5</span> Relations to complex numbers</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1196-the-gudermannian"><span class="vc-n">119.6</span> The gudermannian</a></li>
+<li class="vc-l2"><a href="cosh-sinh-and-tanh.html#1197-differentiation"><span class="vc-n">119.7</span> Differentiation</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="functions-of-complex-variables.html">Chapter 120: Functions of complex variables</a></li>
+</ul>
+<p class="toc-group">Basis Functions</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="a-square-wave-in-sines.html">Chapter 121: A Square Wave in Sines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="a-square-wave-in-sines.html#1211-trigonometric-polynomials"><span class="vc-n">121.1</span> Trigonometric Polynomials</a></li>
+<li class="vc-l2"><a href="a-square-wave-in-sines.html#1212-revisiting-the-orthogonality-relations"><span class="vc-n">121.2</span> Revisiting the Orthogonality Relations</a></li>
+</ul></details></li>
+<li class="vc-ch vc-leaf"><a href="the-gibbs-overshoot.html">Chapter 122: The Gibbs Overshoot</a></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A textbook of trigonometry: angle measure, the sine, cosine and tangent and their graphs, the identities, the solution of triangles by the laws of sines and cosines, the inverse functions and complex numbers, with examples and exercises.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Trigonometry, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Trigonometry" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-chinese-mandarin/abbreviations.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 17. Abbreviations">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+17. Abbreviations
+</div>
+</div>
+</a>
+<a href="about-this-book.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. About This Book">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. About This Book
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>

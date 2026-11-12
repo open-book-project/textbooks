@@ -1,0 +1,1002 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="The Textbooks shelf of The Open Book Project: complete open university textbooks of the sciences and the social sciences, and textbooks from Wikibooks, read page by page like an e-book, online or offline.">
+<meta name="author" content="The Open Book Project">
+<link rel="canonical" href="https://open-book-project.github.io/textbooks/open-textbooks/wb-engineering-acoustics/index.html">
+<link rel="prev" href="../wb-haskell/practical-monads.html">
+<link rel="next" href="application-websites.html">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"></noscript>
+<link rel="icon" href="../../assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="OB Textbooks">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="application-name" content="OB Textbooks"><script src="../../assets/library-data.js?v=48105f6749"></script><script>
+    (function () {
+      var X = window.XMLHttpRequest, open, gate = new Promise(function (r) { open = r; });
+      if (!X) return;
+      var open0 = X.prototype.open, send0 = X.prototype.send;
+      X.prototype.open = function (method, url) {
+        this.__pkIndex = /\/search\/search_index\.json(\?|#|$)/.test(String(url));
+        return open0.apply(this, arguments);
+      };
+      X.prototype.send = function () {
+        if (!this.__pkIndex) return send0.apply(this, arguments);
+        var xhr = this, args = arguments;
+        gate.then(function () { send0.apply(xhr, args); });
+      };
+      function wake() { open(); }
+      document.addEventListener("focusin", function (e) { if (e.target && e.target.closest && e.target.closest(".md-search")) wake(); });
+      document.addEventListener("click", function (e) { if (e.target && e.target.closest && e.target.closest('label[for="__search"], .md-search')) wake(); }, true);
+      document.addEventListener("keydown", function (e) {
+        var k = e.key;
+        if ((k === "/" || k === "s" || k === "f" || k === "S" || k === "F") && !(e.target && e.target.closest && e.target.closest("input, textarea, [contenteditable]"))) wake();
+      }, true);
+      if (/[?&]q=/.test(location.search)) wake();
+    })();
+  </script><script>
+    try {
+      if ((window.matchMedia && (matchMedia("(display-mode: standalone)").matches || matchMedia("(display-mode: fullscreen)").matches)) || navigator.standalone === true) {
+        document.documentElement.className += " bjp-standalone";
+      }
+    } catch (e) { /* not an installed app */ }
+    /* the books of a subject or of the whole library as covers or as a list (assets/app.js): the reader's choice */
+    try {
+      var bv = localStorage.getItem("bjp.view");
+      if (bv === "list" || (bv !== "grid" && /\/books\.html$/.test(location.pathname))) document.documentElement.className += " bjp-view-list";
+    } catch (e) { /* no storage: covers */ }
+  </script>
+<script>
+    /* a book opened from its cover on the shelf: the page stays blank, in the cover's colour, until the reader is up */
+    try {
+      var cv = sessionStorage.getItem("bjp.reader.cover");
+      if (cv && sessionStorage.getItem("bjp.reader.open") === "1") {
+        var c = JSON.parse(cv), de = document.documentElement;
+        de.className += " bjp-booting";
+        if (c && /^#[0-9a-f]{3,8}$/i.test(c.bg || "")) de.style.background = c.bg;
+        setTimeout(function () { de.classList.remove("bjp-booting"); de.style.background = ""; }, 3000);
+      }
+    } catch (e) { /* no session storage: the page simply opens as usual */ }
+  </script>
+<title>Overview and preface - The Open Book Project: Textbooks</title>
+<link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+<link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+<link rel="stylesheet" href="../../assets/extra.css?v=0a7d6e933a">
+<link rel="stylesheet" href="../../assets/reader.css?v=79d652d5a1">
+<link rel="stylesheet" href="../../assets/viz.css?v=742576ed2d">
+<link rel="stylesheet" href="../../assets/app.css?v=fd7628add8">
+<link rel="stylesheet" href="../../assets/theme.css?v=8cb7797594">
+<link rel="stylesheet" href="../../assets/slides.css?v=f4839c7344">
+<link rel="stylesheet" href="../../assets/remote.css?v=23e01d7108">
+<link rel="stylesheet" href="../../assets/scans.css?v=5d48dd94b1">
+<link rel="stylesheet" href="../../assets/speak.css?v=821c3b787a">
+<link rel="stylesheet" href="../../assets/quiz.css?v=a6581401cc">
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+<input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+<input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a href="#contents" class="md-skip">
+Skip to content
+</a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav class="md-header__inner md-grid" aria-label="Header">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-header__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+The Open Book Project: Textbooks
+</span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</div>
+</div>
+</div><a href="../../index.html" class="bjp-libbtn" aria-label="Library: all books" title="Library: all books">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V5h4v15M8 20V9h4v11M14 20L12.6 6l3.8-.8 3 14.2M3 20h18"/></svg><span>Library</span>
+</a>
+<a href="../../subjects/index.html" class="pk-catbtn" aria-haspopup="true" aria-expanded="false" title="Browse the books by category">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><circle cx="17" cy="7" r="3.6"/><path d="M7 13.4l3.9 6.8H3.1z"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></svg><span>Categories</span>
+</a>
+<form class="md-header__option" data-md-component="palette">
+<input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+<label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+</label>
+<input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+<label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+<label class="md-search__icon md-icon" for="__search">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</label>
+<nav class="md-search__options" aria-label="Search">
+<button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+Initializing search
+</div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--primary bjp-nav bjp-nav--book" aria-label="Navigation" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a href="../../index.html" title="The Open Book Project: Textbooks" class="md-nav__button md-logo" aria-label="The Open Book Project: Textbooks" data-md-component="logo">
+<img src="../../assets/icons/logo.svg" alt="logo">
+</a>
+The Open Book Project: Textbooks
+</label>
+<ul class="md-nav__list" data-md-scrollfix>
+<li class="md-nav__item bjp-nav-all">
+<a href="../../index.html" class="md-nav__link" aria-label="All books: back to the library">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+<span class="md-ellipsis">All books</span>
+</a>
+</li>
+<li class="md-nav__item bjp-nav-book" role="presentation"><span class="bjp-nav-head">Engineering Acoustics</span></li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a href="index.html" class="md-nav__link md-nav__link--active">
+<span class="md-ellipsis">
+Overview and preface
+</span>
+</a>
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a href="application-websites.html" class="md-nav__link">
+<span class="md-ellipsis">
+1. Application Websites
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="simple-oscillation.html" class="md-nav__link">
+<span class="md-ellipsis">
+2. Simple Oscillation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="mechanical-resistance.html" class="md-nav__link">
+<span class="md-ellipsis">
+3. Mechanical Resistance
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="characterizing-damped-mechanical-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+4. Characterizing Damped Mechanical Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electro-mechanical-analogies.html" class="md-nav__link">
+<span class="md-ellipsis">
+5. Electro-Mechanical Analogies
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="solution-methods-electro-mechanical-analogies.html" class="md-nav__link">
+<span class="md-ellipsis">
+6. Solution Methods: Electro-Mechanical Analogies
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="examples.html" class="md-nav__link">
+<span class="md-ellipsis">
+7. Examples
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="primary-variables-of-interest.html" class="md-nav__link">
+<span class="md-ellipsis">
+8. Primary variables of interest
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="electro-acoustic-analogies.html" class="md-nav__link">
+<span class="md-ellipsis">
+9. Electro-acoustic analogies
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transducers-loudspeaker.html" class="md-nav__link">
+<span class="md-ellipsis">
+10. Transducers - Loudspeaker
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="moving-resonators.html" class="md-nav__link">
+<span class="md-ellipsis">
+11. Moving Resonators
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="transverse-vibrations-of-strings.html" class="md-nav__link">
+<span class="md-ellipsis">
+12. Transverse vibrations of strings
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="time-domain-solutions.html" class="md-nav__link">
+<span class="md-ellipsis">
+13. Time-Domain Solutions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="boundary-conditions-and-forced-vibrations.html" class="md-nav__link">
+<span class="md-ellipsis">
+14. Boundary Conditions and Forced Vibrations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html" class="md-nav__link">
+<span class="md-ellipsis">
+15. Sound Propagation in a Cylindrical Duct With Compliant Wall
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="qualitative-description-of-shocks.html" class="md-nav__link">
+<span class="md-ellipsis">
+16. Qualitative Description of Shocks
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="the-rankine-hugoniot-jump-equations.html" class="md-nav__link">
+<span class="md-ellipsis">
+17. The Rankine-Hugoniot Jump Equations
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="room-acoustics-and-concert-halls.html" class="md-nav__link">
+<span class="md-ellipsis">
+18. Room Acoustics and Concert Halls
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="bass-reflex-enclosure-design.html" class="md-nav__link">
+<span class="md-ellipsis">
+19. Bass Reflex Enclosure Design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="new-acoustic-filter-for-ultrasonics-media.html" class="md-nav__link">
+<span class="md-ellipsis">
+20. New Acoustic Filter For Ultrasonics Media
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="noise-in-hydraulic-systems.html" class="md-nav__link">
+<span class="md-ellipsis">
+21. Noise in Hydraulic Systems
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-acoustics-of-the-marimba.html" class="md-nav__link">
+<span class="md-ellipsis">
+22. Basic Acoustics of the Marimba
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="how-an-acoustic-guitar-works.html" class="md-nav__link">
+<span class="md-ellipsis">
+23. How an Acoustic Guitar works
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="specific-application-automobile-muffler.html" class="md-nav__link">
+<span class="md-ellipsis">
+24. Specific application-automobile muffler
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="bessel-functions-and-the-kettledrum.html" class="md-nav__link">
+<span class="md-ellipsis">
+25. Bessel Functions and the Kettledrum
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="filter-design-and-implementation.html" class="md-nav__link">
+<span class="md-ellipsis">
+26. Filter Design and Implementation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html" class="md-nav__link">
+<span class="md-ellipsis">
+27. Flow-induced oscillations of a Helmholtz resonator and applications
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acoustics-in-violins.html" class="md-nav__link">
+<span class="md-ellipsis">
+28. Acoustics in Violins
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="moving-coil-loudspeaker.html" class="md-nav__link">
+<span class="md-ellipsis">
+29. Moving Coil Loudspeaker
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="attenuation-of-sound-waves.html" class="md-nav__link">
+<span class="md-ellipsis">
+30. Attenuation of Sound Waves
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="car-mufflers.html" class="md-nav__link">
+<span class="md-ellipsis">
+31. Car Mufflers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="noise-from-cooling-fans.html" class="md-nav__link">
+<span class="md-ellipsis">
+32. Noise from cooling fans
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="human-vocal-fold.html" class="md-nav__link">
+<span class="md-ellipsis">
+33. Human Vocal Fold
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="microphone-design-and-operation.html" class="md-nav__link">
+<span class="md-ellipsis">
+34. Microphone Design and Operation
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="piezoelectric-transducers.html" class="md-nav__link">
+<span class="md-ellipsis">
+35. Piezoelectric Transducers
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="microphone-technique.html" class="md-nav__link">
+<span class="md-ellipsis">
+36. Microphone Technique
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sealed-box-subwoofer-design.html" class="md-nav__link">
+<span class="md-ellipsis">
+37. Sealed Box Subwoofer Design
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="acoustic-guitars.html" class="md-nav__link">
+<span class="md-ellipsis">
+38. Acoustic Guitars
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="basic-room-acoustic-treatments.html" class="md-nav__link">
+<span class="md-ellipsis">
+39. Basic Room Acoustic Treatments
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="boundary-conditions-and-wave-properties.html" class="md-nav__link">
+<span class="md-ellipsis">
+40. Boundary Conditions and Wave Properties
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="rotor-stator-interactions.html" class="md-nav__link">
+<span class="md-ellipsis">
+41. Rotor Stator Interactions
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="sonic-supercharging-of-2-stroke-engines.html" class="md-nav__link">
+<span class="md-ellipsis">
+42. Sonic Supercharging of 2 Stroke Engines
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="thermoacoustics.html" class="md-nav__link">
+<span class="md-ellipsis">
+43. Thermoacoustics
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="source-filter-theory.html" class="md-nav__link">
+<span class="md-ellipsis">
+44. source-filter theory
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="international-space-station-acoustics-challenges.html" class="md-nav__link">
+<span class="md-ellipsis">
+45. International Space Station Acoustics Challenges
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+Table of contents
+</label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+<li class="md-nav__item">
+<a href="#contents" class="md-nav__link">
+<span class="md-ellipsis">
+Contents
+</span>
+</a>
+</li>
+<li class="md-nav__item">
+<a href="#about-this-book" class="md-nav__link">
+<span class="md-ellipsis">
+About this book
+</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<div class="pk-book" data-vol="wb-engineering-acoustics" markdown="0">
+<div class="pk-book-cover"><a class="vol-card pk-book-open" href="application-websites.html" style="--cv-bg:#1f3a4d;--cv-accent:#f4a261;--cv-fg:#f3f1ea;--cv-n:20;--cv-rot:8deg;--cv-x:72%;--cv-y:89%" aria-label="Start reading Engineering Acoustics"><span class="book-cover cv-modern"><span class="cv-art" aria-hidden="true"></span><span class="cv-series">Open Textbooks</span><span class="cv-rule"></span><span class="vol-title">Engineering Acoustics</span><span class="vol-sub">Sound, vibration and the design of acoustic devices</span><span class="cv-author">Wikibooks contributors</span></span></a></div>
+<div class="pk-book-info">
+<p class="pk-book-kicker"><span>Open Textbooks</span></p>
+<h1 class="pk-book-title"><span class="bjp-sr"></span>Engineering Acoustics</h1>
+<p class="pk-book-sub">Sound, vibration and the design of acoustic devices</p>
+<p class="pk-book-by">Wikibooks contributors</p>
+<p class="pk-book-desc">The physics of sound and vibration applied to loudspeakers, microphones, mufflers, hearing and noise control.</p>
+<p class="pk-book-tags"><span class="pk-badge lv-advanced">Advanced</span><span class="pk-badge">Textbook</span><a class="pk-chip" href="../../subjects/engineering.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.3"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M5.5 18.5l2.1-2.1M16.4 7.6l2.1-2.1"/></svg>Engineering</a><a class="pk-chip" href="../../subjects/physics.html"><svg class="pk-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></svg><span class="pk-chip-cat">Science &rsaquo;</span> Physics</a></p><div class="pk-book-actions"><a class="pk-btn pk-btn-primary pk-read" href="application-websites.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.6-1.3-3.9-2-8-2v13c4.1 0 6.4.7 8 2 1.6-1.3 3.9-2 8-2V5c-4.1 0-6.4.7-8 2zM12 7v13"/></svg><span>Start reading</span></a>
+<div class="bjp-offline" data-vol="wb-engineering-acoustics"></div></div>
+<p class="pk-book-facts"><span>45 chapters</span></p>
+</div>
+</div>
+<h2 id="contents">Contents<a class="headerlink" href="#contents" title="Permanent link">&para;</a></h2>
+<nav class="vol-contents" data-vol="wb-engineering-acoustics" aria-label="Contents of this book" markdown="0">
+<p class="toc-group">Front matter</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch vc-leaf"><a href="index.html#about-this-book">About this book</a></li>
+</ul>
+<p class="toc-group">Chapters</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="application-websites.html">Chapter 1: Application Websites</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="application-websites.html#11-engineering-acoustics-application-websites"><span class="vc-n">1.1</span> Engineering Acoustics Application Websites</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Lumped Acoustical Systems</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="simple-oscillation.html">Chapter 2: Simple Oscillation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="simple-oscillation.html#21-the-position-equation"><span class="vc-n">2.1</span> The Position Equation</a></li>
+<li class="vc-l2"><a href="simple-oscillation.html#22-alternate-position-equation-forms"><span class="vc-n">2.2</span> Alternate Position Equation Forms</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="mechanical-resistance.html">Chapter 3: Mechanical Resistance</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="mechanical-resistance.html#31-mechanical-resistance"><span class="vc-n">3.1</span> Mechanical Resistance</a></li>
+<li class="vc-l2"><a href="mechanical-resistance.html#32-dashpots"><span class="vc-n">3.2</span> Dashpots</a></li>
+<li class="vc-l2"><a href="mechanical-resistance.html#33-modeling-the-damped-oscillator"><span class="vc-n">3.3</span> Modeling the Damped Oscillator</a></li>
+<li class="vc-l2"><a href="mechanical-resistance.html#34-mechanical-impedance-for-damped-oscillator"><span class="vc-n">3.4</span> Mechanical Impedance for Damped Oscillator</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="characterizing-damped-mechanical-systems.html">Chapter 4: Characterizing Damped Mechanical Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="characterizing-damped-mechanical-systems.html#41-characterizing-damped-mechanical-systems"><span class="vc-n">4.1</span> Characterizing Damped Mechanical Systems</a></li>
+<li class="vc-l2"><a href="characterizing-damped-mechanical-systems.html#42-calculating-the-mechanical-resistance"><span class="vc-n">4.2</span> Calculating the Mechanical Resistance</a></li>
+<li class="vc-l2"><a href="characterizing-damped-mechanical-systems.html#43-critical-damping"><span class="vc-n">4.3</span> Critical Damping</a></li>
+<li class="vc-l2"><a href="characterizing-damped-mechanical-systems.html#44-damping-ratio"><span class="vc-n">4.4</span> Damping Ratio</a></li>
+<li class="vc-l2"><a href="characterizing-damped-mechanical-systems.html#45-quality-factor"><span class="vc-n">4.5</span> Quality Factor</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electro-mechanical-analogies.html">Chapter 5: Electro-Mechanical Analogies</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#51-why-circuit-analogs"><span class="vc-n">5.1</span> Why Circuit Analogs?</a></li>
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#52-how-electro-mechanical-analogies-work"><span class="vc-n">5.2</span> How Electro-Mechanical Analogies Work</a></li>
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#53-the-basic-elements-of-an-oscillating-mechanical-system"><span class="vc-n">5.3</span> The Basic Elements of an Oscillating Mechanical System</a></li>
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#54-the-impedance-analog"><span class="vc-n">5.4</span> The Impedance Analog</a></li>
+<li class="vc-l2"><a href="electro-mechanical-analogies.html#55-the-mobility-analog"><span class="vc-n">5.5</span> The Mobility Analog</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="solution-methods-electro-mechanical-analogies.html">Chapter 6: Solution Methods: Electro-Mechanical Analogies</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="solution-methods-electro-mechanical-analogies.html#61-review-of-circuit-solving-methods"><span class="vc-n">6.1</span> Review of Circuit Solving Methods</a></li>
+<li class="vc-l2"><a href="solution-methods-electro-mechanical-analogies.html#62-dot-method-valid-only-for-planar-network"><span class="vc-n">6.2</span> Dot Method: (Valid only for planar network)</a></li>
+<li class="vc-l2"><a href="solution-methods-electro-mechanical-analogies.html#63-low-frequency-limits"><span class="vc-n">6.3</span> Low-Frequency Limits</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="examples.html">Chapter 7: Examples</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="examples.html#71-example-of-electro-mechanical-analogies"><span class="vc-n">7.1</span> Example of Electro-Mechanical Analogies</a></li>
+<li class="vc-l2"><a href="examples.html#72-impedance-analog-solution"><span class="vc-n">7.2</span> Impedance Analog Solution</a></li>
+<li class="vc-l2"><a href="examples.html#73-mobility-analog-solution"><span class="vc-n">7.3</span> Mobility Analog Solution</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="primary-variables-of-interest.html">Chapter 8: Primary variables of interest</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="primary-variables-of-interest.html#81-basic-assumptions"><span class="vc-n">8.1</span> Basic Assumptions</a><ul class="vc-subs"><li class="vc-l3"><a href="primary-variables-of-interest.html#assumptions">Assumptions</a></li></ul></li>
+<li class="vc-l2"><a href="primary-variables-of-interest.html#82-variables-of-interest"><span class="vc-n">8.2</span> Variables of interest</a><ul class="vc-subs"><li class="vc-l3"><a href="primary-variables-of-interest.html#pressure-force-unit-area">Pressure (force / unit area)</a></li><li class="vc-l3"><a href="primary-variables-of-interest.html#density">Density</a></li><li class="vc-l3"><a href="primary-variables-of-interest.html#acoustic-volume-velocity">Acoustic volume velocity</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="electro-acoustic-analogies.html">Chapter 9: Electro-acoustic analogies</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="electro-acoustic-analogies.html#91-electro-acoustical-analogies"><span class="vc-n">9.1</span> Electro-acoustical Analogies</a><ul class="vc-subs"><li class="vc-l3"><a href="electro-acoustic-analogies.html#acoustical-mass">Acoustical Mass</a></li><li class="vc-l3"><a href="electro-acoustic-analogies.html#acoustical-generators">Acoustical Generators</a></li><li class="vc-l3"><a href="electro-acoustic-analogies.html#acoustical-compliance">Acoustical Compliance</a></li><li class="vc-l3"><a href="electro-acoustic-analogies.html#examples-of-electro-acoustical-analogies">Examples of Electro-Acoustical Analogies</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="transducers-loudspeaker.html">Chapter 10: Transducers - Loudspeaker</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transducers-loudspeaker.html#101-acoustic-transducer"><span class="vc-n">10.1</span> Acoustic transducer</a></li>
+<li class="vc-l2"><a href="transducers-loudspeaker.html#102-moving-coil-loudspeaker-construction-and-principle"><span class="vc-n">10.2</span> Moving-coil loudspeaker construction and principle</a></li>
+<li class="vc-l2"><a href="transducers-loudspeaker.html#103-electro-mechano-acoustical-equivalent-circuit"><span class="vc-n">10.3</span> Electro-mechano-acoustical equivalent circuit</a><ul class="vc-subs"><li class="vc-l3"><a href="transducers-loudspeaker.html#electrical-subsystem">Electrical subsystem</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#electrical-to-mechanical-subsystem">Electrical to mechanical subsystem</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#mechanical-subsystem">Mechanical subsystem</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#mechanical-to-acoustical-subsystem">Mechanical to acoustical subsystem</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#acoustical-subsystem">Acoustical subsystem</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#complete-electro-mechano-acoustical-equivalent-circuit">Complete electro-mechano-acoustical equivalent circuit</a></li></ul></li>
+<li class="vc-l2"><a href="transducers-loudspeaker.html#104-thiele-small-parameters"><span class="vc-n">10.4</span> Thiele-Small Parameters</a><ul class="vc-subs"><li class="vc-l3"><a href="transducers-loudspeaker.html#theory">Theory</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#measurement">Measurement</a></li><li class="vc-l3"><a href="transducers-loudspeaker.html#numerical-example">Numerical example</a></li></ul></li>
+<li class="vc-l2"><a href="transducers-loudspeaker.html#105-references"><span class="vc-n">10.5</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="moving-resonators.html">Chapter 11: Moving Resonators</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="moving-resonators.html#111-moving-resonators"><span class="vc-n">11.1</span> Moving Resonators</a></li>
+<li class="vc-l2"><a href="moving-resonators.html#112-example"><span class="vc-n">11.2</span> Example</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">One-Dimensional Wave Motion</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="transverse-vibrations-of-strings.html">Chapter 12: Transverse vibrations of strings</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="transverse-vibrations-of-strings.html#121-introduction"><span class="vc-n">12.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="transverse-vibrations-of-strings.html#122-what-is-a-wave-equation"><span class="vc-n">12.2</span> What is a wave equation?</a></li>
+<li class="vc-l2"><a href="transverse-vibrations-of-strings.html#123-one-dimensional-case"><span class="vc-n">12.3</span> One dimensional Case</a></li>
+<li class="vc-l2"><a href="transverse-vibrations-of-strings.html#124-characterization-of-the-mechanical-system"><span class="vc-n">12.4</span> Characterization of the mechanical system</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="time-domain-solutions.html">Chapter 13: Time-Domain Solutions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="time-domain-solutions.html#131-dalembert-solutions"><span class="vc-n">13.1</span> d&#x27;Alembert Solutions</a></li>
+<li class="vc-l2"><a href="time-domain-solutions.html#132-example-of-time-domain-solution"><span class="vc-n">13.2</span> Example of Time Domain Solution</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="boundary-conditions-and-forced-vibrations.html">Chapter 14: Boundary Conditions and Forced Vibrations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="boundary-conditions-and-forced-vibrations.html#141-boundary-conditions"><span class="vc-n">14.1</span> Boundary Conditions</a><ul class="vc-subs"><li class="vc-l3"><a href="boundary-conditions-and-forced-vibrations.html#for-a-fixed-support">For a Fixed Support</a></li><li class="vc-l3"><a href="boundary-conditions-and-forced-vibrations.html#for-a-free-support">For a Free Support</a></li><li class="vc-l3"><a href="boundary-conditions-and-forced-vibrations.html#other-boundary-conditions">Other Boundary Conditions</a></li></ul></li>
+<li class="vc-l2"><a href="boundary-conditions-and-forced-vibrations.html#142-wave-properties"><span class="vc-n">14.2</span> Wave Properties</a></li>
+<li class="vc-l2"><a href="boundary-conditions-and-forced-vibrations.html#143-forced-vibrations"><span class="vc-n">14.3</span> Forced Vibrations</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html">Chapter 15: Sound Propagation in a Cylindrical Duct With Compliant Wall</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html#151-analysis"><span class="vc-n">15.1</span> Analysis</a><ul class="vc-subs"><li class="vc-l3"><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html#fluid">Fluid</a></li><li class="vc-l3"><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html#structure">Structure</a></li></ul></li>
+<li class="vc-l2"><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html#152-discussions"><span class="vc-n">15.2</span> Discussions</a></li>
+<li class="vc-l2"><a href="sound-propagation-in-a-cylindrical-duct-with-compliant-wall.html#153-references"><span class="vc-n">15.3</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Non-Linear Waves</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="qualitative-description-of-shocks.html">Chapter 16: Qualitative Description of Shocks</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="qualitative-description-of-shocks.html#161-defining-a-shock-wave"><span class="vc-n">16.1</span> Defining a Shock-Wave</a></li>
+<li class="vc-l2"><a href="qualitative-description-of-shocks.html#162-shock-formation-and-attenuation"><span class="vc-n">16.2</span> Shock Formation and Attenuation</a><ul class="vc-subs"><li class="vc-l3"><a href="qualitative-description-of-shocks.html#shocking-up">&quot;Shocking Up&quot;</a></li><li class="vc-l3"><a href="qualitative-description-of-shocks.html#shock-rarefaction">Shock Rarefaction</a></li></ul></li>
+<li class="vc-l2"><a href="qualitative-description-of-shocks.html#163-shock-description-via-the-method-of-characteristics"><span class="vc-n">16.3</span> Shock Description via the Method of Characteristics</a><ul class="vc-subs"><li class="vc-l3"><a href="qualitative-description-of-shocks.html#simple-wave-solution">Simple Wave Solution</a></li><li class="vc-l3"><a href="qualitative-description-of-shocks.html#shocks-from-waves">Shocks From Waves</a></li><li class="vc-l3"><a href="qualitative-description-of-shocks.html#strong-and-weak-shocks">Strong and Weak Shocks</a></li></ul></li>
+<li class="vc-l2"><a href="qualitative-description-of-shocks.html#164-references"><span class="vc-n">16.4</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="the-rankine-hugoniot-jump-equations.html">Chapter 17: The Rankine-Hugoniot Jump Equations</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="the-rankine-hugoniot-jump-equations.html#171-conservation-equations-and-derivation"><span class="vc-n">17.1</span> Conservation Equations and Derivation</a></li>
+<li class="vc-l2"><a href="the-rankine-hugoniot-jump-equations.html#172-paths-and-jump-conditions"><span class="vc-n">17.2</span> Paths and Jump Conditions</a></li>
+<li class="vc-l2"><a href="the-rankine-hugoniot-jump-equations.html#173-references"><span class="vc-n">17.3</span> References</a></li>
+</ul></details></li>
+</ul>
+<p class="toc-group">Applications</p>
+<ul class="vol-toc vol-toc-full">
+<li class="vc-ch"><details><summary><a href="room-acoustics-and-concert-halls.html">Chapter 18: Room Acoustics and Concert Halls</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#181-introduction"><span class="vc-n">18.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#182-sound-fields"><span class="vc-n">18.2</span> Sound Fields</a><ul class="vc-subs"><li class="vc-l3"><a href="room-acoustics-and-concert-halls.html#direct-sound">Direct Sound</a></li><li class="vc-l3"><a href="room-acoustics-and-concert-halls.html#reverberant-sound">Reverberant Sound</a></li></ul></li>
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#183-room-coefficients"><span class="vc-n">18.3</span> Room Coefficients</a><ul class="vc-subs"><li class="vc-l3"><a href="room-acoustics-and-concert-halls.html#absorption-transmission-coefficients">Absorption &amp; Transmission Coefficients</a></li><li class="vc-l3"><a href="room-acoustics-and-concert-halls.html#room-averaged-sound-absorption-coefficient">Room Averaged Sound Absorption Coefficient</a></li><li class="vc-l3"><a href="room-acoustics-and-concert-halls.html#absorption-coefficients-for-specific-materials">Absorption Coefficients for Specific Materials</a></li></ul></li>
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#184-sound-decay-and-reverberation-time"><span class="vc-n">18.4</span> Sound Decay and Reverberation Time</a></li>
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#185-great-halls-in-the-world"><span class="vc-n">18.5</span> Great Halls in the World</a></li>
+<li class="vc-l2"><a href="room-acoustics-and-concert-halls.html#186-references"><span class="vc-n">18.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="bass-reflex-enclosure-design.html">Chapter 19: Bass Reflex Enclosure Design</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#191-introduction"><span class="vc-n">19.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#192-effects-of-the-port-on-the-enclosure-response"><span class="vc-n">19.2</span> Effects of the Port on the Enclosure Response</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#193-quantitative-analysis-of-port-on-enclosure"><span class="vc-n">19.3</span> Quantitative Analysis of Port on Enclosure</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#194-development-of-low-frequency-pressure-response"><span class="vc-n">19.4</span> Development of Low-Frequency Pressure Response</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#195-alignments"><span class="vc-n">19.5</span> Alignments</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#196-butterworth-alignment"><span class="vc-n">19.6</span> Butterworth Alignment</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#197-quasi-butterworth-alignment"><span class="vc-n">19.7</span> Quasi-Butterworth Alignment</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#198-chebyshev-alignment"><span class="vc-n">19.8</span> Chebyshev Alignment</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#199-choosing-the-correct-alignment"><span class="vc-n">19.9</span> Choosing the Correct Alignment</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#1910-references"><span class="vc-n">19.10</span> References</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#1911-appendix-a-equivalent-circuit-parameters"><span class="vc-n">19.11</span> Appendix A: Equivalent Circuit Parameters</a></li>
+<li class="vc-l2"><a href="bass-reflex-enclosure-design.html#1912-appendix-b-enclosure-parameter-formulas"><span class="vc-n">19.12</span> Appendix B: Enclosure Parameter Formulas</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="new-acoustic-filter-for-ultrasonics-media.html">Chapter 20: New Acoustic Filter For Ultrasonics Media</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#201-introduction"><span class="vc-n">20.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#202-changes-in-media-properties-due-to-sound-wave-characteristics"><span class="vc-n">20.2</span> Changes in Media Properties Due to Sound Wave Characteristics</a></li>
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#203-why-coupled-acoustic-media-in-acoustic-filters"><span class="vc-n">20.3</span> Why Coupled Acoustic Media in Acoustic Filters?</a></li>
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#204-effects-of-high-intensity-ultrasonic-waves-in-acoustic-media-in-audio-frequency-spectrum"><span class="vc-n">20.4</span> Effects of High-Intensity, Ultrasonic Waves in Acoustic Media in Audio Frequency Spectrum</a></li>
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#205-an-application-of-coupled-media-in-acoustic-filters"><span class="vc-n">20.5</span> An Application of Coupled Media in Acoustic Filters</a></li>
+<li class="vc-l2"><a href="new-acoustic-filter-for-ultrasonics-media.html#206-references"><span class="vc-n">20.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="noise-in-hydraulic-systems.html">Chapter 21: Noise in Hydraulic Systems</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#211-noise-in-hydraulic-systems"><span class="vc-n">21.1</span> Noise in Hydraulic Systems</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#212-sound-in-fluids"><span class="vc-n">21.2</span> Sound in fluids</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#213-source-of-noise"><span class="vc-n">21.3</span> Source of Noise</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#214-fluidborne-noise-fbn"><span class="vc-n">21.4</span> Fluidborne Noise (FBN)</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#215-structureborne-noise-sbn"><span class="vc-n">21.5</span> Structureborne Noise (SBN)</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#216-transmission"><span class="vc-n">21.6</span> Transmission</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-in-hydraulic-systems.html#fbn">FBN</a></li><li class="vc-l3"><a href="noise-in-hydraulic-systems.html#sbn">SBN</a></li></ul></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#217-airborne-noise-abn"><span class="vc-n">21.7</span> Airborne noise (ABN)</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#218-noise-reduction"><span class="vc-n">21.8</span> Noise reduction</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#219-hydraulic-system-noise"><span class="vc-n">21.9</span> Hydraulic System noise</a></li>
+<li class="vc-l2"><a href="noise-in-hydraulic-systems.html#2110-references"><span class="vc-n">21.10</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="basic-acoustics-of-the-marimba.html">Chapter 22: Basic Acoustics of the Marimba</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#221-introduction"><span class="vc-n">22.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#222-components-of-sound"><span class="vc-n">22.2</span> Components of Sound</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-acoustics-of-the-marimba.html#example-rosewood-bar-middle-c-1-cm-thick">Example: Rosewood bar, middle C, 1 cm thick</a></li><li class="vc-l3"><a href="basic-acoustics-of-the-marimba.html#example-aluminum-resonator-middle-c">Example: Aluminum resonator, middle C</a></li><li class="vc-l3"><a href="basic-acoustics-of-the-marimba.html#resonator-shape">Resonator Shape</a></li></ul></li>
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#223-why-would-the-marimba-need-tuning"><span class="vc-n">22.3</span> Why would the marimba need tuning?</a></li>
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#224-tuning-myths"><span class="vc-n">22.4</span> Tuning Myths</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-acoustics-of-the-marimba.html#example-middle-c-resonator-lengthened-by-1-cm">Example: Middle C Resonator lengthened by 1 cm</a></li></ul></li>
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#225-conclusions"><span class="vc-n">22.5</span> Conclusions</a></li>
+<li class="vc-l2"><a href="basic-acoustics-of-the-marimba.html#226-links-and-references"><span class="vc-n">22.6</span> Links and References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="how-an-acoustic-guitar-works.html">Chapter 23: How an Acoustic Guitar works</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="how-an-acoustic-guitar-works.html#231-introduction"><span class="vc-n">23.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="how-an-acoustic-guitar-works.html#232-the-strings"><span class="vc-n">23.2</span> The Strings</a></li>
+<li class="vc-l2"><a href="how-an-acoustic-guitar-works.html#233-the-body"><span class="vc-n">23.3</span> The Body</a></li>
+<li class="vc-l2"><a href="how-an-acoustic-guitar-works.html#234-the-air"><span class="vc-n">23.4</span> The Air</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="specific-application-automobile-muffler.html">Chapter 24: Specific application-automobile muffler</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="specific-application-automobile-muffler.html#241-introduction"><span class="vc-n">24.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="specific-application-automobile-muffler.html#242-the-configuration-of-a-automobile-muffler"><span class="vc-n">24.2</span> The Configuration of A automobile muffler</a></li>
+<li class="vc-l2"><a href="specific-application-automobile-muffler.html#243-how-does-automobile-muffler-function"><span class="vc-n">24.3</span> How Does automobile muffler function?</a><ul class="vc-subs"><li class="vc-l3"><a href="specific-application-automobile-muffler.html#general-concept">General Concept</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#low-pass-filter">Low-Pass Filter</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#human-ear-sound-reaction-feature">Human ear sound reaction feature</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#description-of-the-muffler-to-cancel-the-noise">Description of the muffler to cancel the noise</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#benefits-of-an-active-noise-canceling-muffler">Benefits of an Active Noise-Canceling Muffler</a></li></ul></li>
+<li class="vc-l2"><a href="specific-application-automobile-muffler.html#244-absorptive-muffler"><span class="vc-n">24.4</span> Absorptive muffler</a><ul class="vc-subs"><li class="vc-l3"><a href="specific-application-automobile-muffler.html#lined-ducts">Lined ducts</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#parallel-and-block-line-of-sight-baffles">Parallel and block-line-of-sight baffles</a></li><li class="vc-l3"><a href="specific-application-automobile-muffler.html#plenum-chambers">Plenum chambers</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="bessel-functions-and-the-kettledrum.html">Chapter 25: Bessel Functions and the Kettledrum</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#251-abstract"><span class="vc-n">25.1</span> Abstract</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#252-what-is-a-kettledrum"><span class="vc-n">25.2</span> What is a kettledrum</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#253-the-math-behind-the-kettledrumthe-brief-version"><span class="vc-n">25.3</span> The math behind the kettledrum:the brief version</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#254-the-math-behind-the-kettledrumthe-derivation"><span class="vc-n">25.4</span> The math behind the kettledrum:the derivation</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#255-the-math-behind-the-kettledrumthe-entire-drum"><span class="vc-n">25.5</span> The math behind the kettledrum:the entire drum</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#256-sites-of-interest"><span class="vc-n">25.6</span> Sites of interest</a></li>
+<li class="vc-l2"><a href="bessel-functions-and-the-kettledrum.html#257-references"><span class="vc-n">25.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="filter-design-and-implementation.html">Chapter 26: Filter Design and Implementation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="filter-design-and-implementation.html#261-introduction"><span class="vc-n">26.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="filter-design-and-implementation.html#262-basic-wave-theory"><span class="vc-n">26.2</span> Basic Wave Theory</a><ul class="vc-subs"><li class="vc-l3"><a href="filter-design-and-implementation.html#plane-wave-pressure-distribution-in-pipes">Plane-Wave Pressure Distribution in Pipes</a></li></ul></li>
+<li class="vc-l2"><a href="filter-design-and-implementation.html#263-basic-filter-design"><span class="vc-n">26.3</span> Basic Filter Design</a><ul class="vc-subs"><li class="vc-l3"><a href="filter-design-and-implementation.html#low-pass-filter">Low-Pass Filter</a></li><li class="vc-l3"><a href="filter-design-and-implementation.html#high-pass-filter">High-Pass Filter</a></li><li class="vc-l3"><a href="filter-design-and-implementation.html#band-stop-filter">Band-Stop Filter</a></li><li class="vc-l3"><a href="filter-design-and-implementation.html#design">Design</a></li></ul></li>
+<li class="vc-l2"><a href="filter-design-and-implementation.html#264-actual-filter-design"><span class="vc-n">26.4</span> Actual Filter Design</a><ul class="vc-subs"><li class="vc-l3"><a href="filter-design-and-implementation.html#absorptive">Absorptive</a></li><li class="vc-l3"><a href="filter-design-and-implementation.html#reactive">Reactive</a></li><li class="vc-l3"><a href="filter-design-and-implementation.html#performance">Performance</a></li></ul></li>
+<li class="vc-l2"><a href="filter-design-and-implementation.html#265-links"><span class="vc-n">26.5</span> Links</a></li>
+<li class="vc-l2"><a href="filter-design-and-implementation.html#266-references"><span class="vc-n">26.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html">Chapter 27: Flow-induced oscillations of a Helmholtz resonator and applications</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#271-introduction"><span class="vc-n">27.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#272-feedback-loop-analysis"><span class="vc-n">27.2</span> Feedback loop analysis</a></li>
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#273-acoustical-characteristics-of-the-resonator"><span class="vc-n">27.3</span> Acoustical characteristics of the resonator</a><ul class="vc-subs"><li class="vc-l3"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#lumped-parameter-model">Lumped parameter model</a></li><li class="vc-l3"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#production-of-self-sustained-oscillations">Production of self-sustained oscillations</a></li></ul></li>
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#274-applications-to-sunroof-buffeting"><span class="vc-n">27.4</span> Applications to Sunroof Buffeting</a><ul class="vc-subs"><li class="vc-l3"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#how-are-vortices-formed-during-buffeting">How are vortices formed during buffeting?</a></li><li class="vc-l3"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#how-to-identify-buffeting">How to identify buffeting</a></li></ul></li>
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#275-useful-websites"><span class="vc-n">27.5</span> Useful Websites</a></li>
+<li class="vc-l2"><a href="flow-induced-oscillations-of-a-helmholtz-resonator-and-applications.html#276-references"><span class="vc-n">27.6</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="acoustics-in-violins.html">Chapter 28: Acoustics in Violins</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="acoustics-in-violins.html#281-how-does-a-violin-make-sound"><span class="vc-n">28.1</span> How Does A Violin Make Sound?</a><ul class="vc-subs"><li class="vc-l3"><a href="acoustics-in-violins.html#general-concept">General Concept</a></li><li class="vc-l3"><a href="acoustics-in-violins.html#string">String</a></li><li class="vc-l3"><a href="acoustics-in-violins.html#bridge">Bridge</a></li><li class="vc-l3"><a href="acoustics-in-violins.html#body">Body</a></li><li class="vc-l3"><a href="acoustics-in-violins.html#sound-radiation">Sound Radiation</a></li></ul></li>
+<li class="vc-l2"><a href="acoustics-in-violins.html#282-references-and-other-links"><span class="vc-n">28.2</span> References And Other Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="moving-coil-loudspeaker.html">Chapter 29: Moving Coil Loudspeaker</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="moving-coil-loudspeaker.html#291-the-magnet-motor-drive-system"><span class="vc-n">29.1</span> The Magnet Motor Drive System</a></li>
+<li class="vc-l2"><a href="moving-coil-loudspeaker.html#292-the-loudspeaker-cone-system"><span class="vc-n">29.2</span> The Loudspeaker Cone System</a></li>
+<li class="vc-l2"><a href="moving-coil-loudspeaker.html#293-the-loudspeaker-suspension"><span class="vc-n">29.3</span> The Loudspeaker Suspension</a></li>
+<li class="vc-l2"><a href="moving-coil-loudspeaker.html#294-modeling-the-loudspeaker-as-a-lumped-system"><span class="vc-n">29.4</span> Modeling the Loudspeaker as a Lumped System</a></li>
+<li class="vc-l2"><a href="moving-coil-loudspeaker.html#295-references"><span class="vc-n">29.5</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="attenuation-of-sound-waves.html">Chapter 30: Attenuation of Sound Waves</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="attenuation-of-sound-waves.html#301-introduction"><span class="vc-n">30.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="attenuation-of-sound-waves.html#302-types-of-attenuation"><span class="vc-n">30.2</span> Types of Attenuation</a><ul class="vc-subs"><li class="vc-l3"><a href="attenuation-of-sound-waves.html#viscosity-and-heat-conduction">Viscosity and Heat conduction</a></li><li class="vc-l3"><a href="attenuation-of-sound-waves.html#boundary-layer-losses">Boundary Layer Losses</a></li><li class="vc-l3"><a href="attenuation-of-sound-waves.html#relaxation">Relaxation</a></li></ul></li>
+<li class="vc-l2"><a href="attenuation-of-sound-waves.html#303-modeling-of-losses"><span class="vc-n">30.3</span> Modeling of losses</a></li>
+<li class="vc-l2"><a href="attenuation-of-sound-waves.html#304-references"><span class="vc-n">30.4</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="car-mufflers.html">Chapter 31: Car Mufflers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="car-mufflers.html#311-introduction"><span class="vc-n">31.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="car-mufflers.html#312-the-absorber-muffler"><span class="vc-n">31.2</span> The absorber muffler</a></li>
+<li class="vc-l2"><a href="car-mufflers.html#313-the-reflector-muffler"><span class="vc-n">31.3</span> The reflector muffler</a><ul class="vc-subs"><li class="vc-l3"><a href="car-mufflers.html#definition-of-destructive-interferences">Definition of destructive interferences</a></li><li class="vc-l3"><a href="car-mufflers.html#definition-of-the-reflection">Definition of the reflection</a></li><li class="vc-l3"><a href="car-mufflers.html#example">Example</a></li></ul></li>
+<li class="vc-l2"><a href="car-mufflers.html#314-back-pressure"><span class="vc-n">31.4</span> Back pressure</a></li>
+<li class="vc-l2"><a href="car-mufflers.html#315-muffler-modeling-by-transfer-matrix-method"><span class="vc-n">31.5</span> Muffler Modeling by Transfer Matrix Method</a><ul class="vc-subs"><li class="vc-l3"><a href="car-mufflers.html#example_1">Example</a></li><li class="vc-l3"><a href="car-mufflers.html#results">Results</a></li><li class="vc-l3"><a href="car-mufflers.html#comments">Comments</a></li></ul></li>
+<li class="vc-l2"><a href="car-mufflers.html#316-links"><span class="vc-n">31.6</span> Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="noise-from-cooling-fans.html">Chapter 32: Noise from cooling fans</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#321-proposal"><span class="vc-n">32.1</span> Proposal</a></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#322-introduction"><span class="vc-n">32.2</span> Introduction</a></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#323-noise-generation-mechanisms"><span class="vc-n">32.3</span> Noise Generation Mechanisms</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-from-cooling-fans.html#blade-thickness-noise-monopole-but-very-weak">Blade Thickness Noise - Monopole (But very weak)</a></li><li class="vc-l3"><a href="noise-from-cooling-fans.html#tonal-noise-by-aerodynamic-forces-dipole">Tonal Noise by Aerodynamic Forces - Dipole</a></li><li class="vc-l3"><a href="noise-from-cooling-fans.html#random-noise-by-unsteady-aerodynamic-forces">Random Noise by Unsteady Aerodynamic Forces</a></li></ul></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#324-installation-effects"><span class="vc-n">32.4</span> Installation Effects</a><ul class="vc-subs"><li class="vc-l3"><a href="noise-from-cooling-fans.html#effect-of-inlet-flow-conditions">Effect of Inlet Flow Conditions</a></li><li class="vc-l3"><a href="noise-from-cooling-fans.html#acoustic-loading-effect">Acoustic Loading Effect</a></li></ul></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#325-closing-comment"><span class="vc-n">32.5</span> Closing Comment</a></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#326-links-to-interesting-sites-about-fan-noise"><span class="vc-n">32.6</span> Links to Interesting Sites about Fan Noise</a></li>
+<li class="vc-l2"><a href="noise-from-cooling-fans.html#327-references"><span class="vc-n">32.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="human-vocal-fold.html">Chapter 33: Human Vocal Fold</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="human-vocal-fold.html#331-physiology-of-vocal-fold"><span class="vc-n">33.1</span> Physiology of Vocal Fold</a></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#332-voice-production"><span class="vc-n">33.2</span> Voice Production</a></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#333-model"><span class="vc-n">33.3</span> Model</a><ul class="vc-subs"><li class="vc-l3"><a href="human-vocal-fold.html#the-pressure-force">The Pressure Force</a></li><li class="vc-l3"><a href="human-vocal-fold.html#the-collision-force">The Collision Force</a></li></ul></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#334-simulation-of-the-model"><span class="vc-n">33.4</span> Simulation of the Model</a></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#335-the-acoustic-output"><span class="vc-n">33.5</span> The Acoustic Output</a></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#336-related-links"><span class="vc-n">33.6</span> Related Links</a></li>
+<li class="vc-l2"><a href="human-vocal-fold.html#337-references"><span class="vc-n">33.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="microphone-design-and-operation.html">Chapter 34: Microphone Design and Operation</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="microphone-design-and-operation.html#341-introduction"><span class="vc-n">34.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="microphone-design-and-operation.html#342-dynamic-microphones"><span class="vc-n">34.2</span> Dynamic microphones</a></li>
+<li class="vc-l2"><a href="microphone-design-and-operation.html#343-condenser-microphones"><span class="vc-n">34.3</span> Condenser Microphones</a><ul class="vc-subs"><li class="vc-l3"><a href="microphone-design-and-operation.html#48v-phantom-powering">48V Phantom Powering</a></li><li class="vc-l3"><a href="microphone-design-and-operation.html#12v-t-powering">12V T-Powering</a></li><li class="vc-l3"><a href="microphone-design-and-operation.html#electret-condenser-microphones">Electret Condenser Microphones</a></li></ul></li>
+<li class="vc-l2"><a href="microphone-design-and-operation.html#344-conclusion"><span class="vc-n">34.4</span> Conclusion</a></li>
+<li class="vc-l2"><a href="microphone-design-and-operation.html#345-references"><span class="vc-n">34.5</span> References</a></li>
+<li class="vc-l2"><a href="microphone-design-and-operation.html#346-microphone-manufactures-links"><span class="vc-n">34.6</span> Microphone Manufactures Links</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="piezoelectric-transducers.html">Chapter 35: Piezoelectric Transducers</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="piezoelectric-transducers.html#351-introduction"><span class="vc-n">35.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="piezoelectric-transducers.html#352-vibrations-displacements"><span class="vc-n">35.2</span> Vibrations &amp; Displacements</a></li>
+<li class="vc-l2"><a href="piezoelectric-transducers.html#353-dynamic-performance"><span class="vc-n">35.3</span> Dynamic Performance</a><ul class="vc-subs"><li class="vc-l3"><a href="piezoelectric-transducers.html#equivalent-electric-circuit">Equivalent Electric Circuit</a></li><li class="vc-l3"><a href="piezoelectric-transducers.html#frequency-response">Frequency Response</a></li></ul></li>
+<li class="vc-l2"><a href="piezoelectric-transducers.html#354-resonant-devices"><span class="vc-n">35.4</span> Resonant Devices</a></li>
+<li class="vc-l2"><a href="piezoelectric-transducers.html#355-applications"><span class="vc-n">35.5</span> Applications</a><ul class="vc-subs"><li class="vc-l3"><a href="piezoelectric-transducers.html#mechanical-measurement">Mechanical Measurement</a></li><li class="vc-l3"><a href="piezoelectric-transducers.html#ultrasonic">Ultrasonic</a></li></ul></li>
+<li class="vc-l2"><a href="piezoelectric-transducers.html#356-more-information-and-source-of-information"><span class="vc-n">35.6</span> More Information and Source of Information</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="microphone-technique.html">Chapter 36: Microphone Technique</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="microphone-technique.html#361-general-technique"><span class="vc-n">36.1</span> General Technique</a></li>
+<li class="vc-l2"><a href="microphone-technique.html#362-working-distance"><span class="vc-n">36.2</span> Working Distance</a><ul class="vc-subs"><li class="vc-l3"><a href="microphone-technique.html#close-miking">Close Miking</a></li><li class="vc-l3"><a href="microphone-technique.html#distant-miking">Distant Miking</a></li><li class="vc-l3"><a href="microphone-technique.html#accent-miking">Accent Miking</a></li><li class="vc-l3"><a href="microphone-technique.html#ambient-miking">Ambient Miking</a></li></ul></li>
+<li class="vc-l2"><a href="microphone-technique.html#363-stereo-and-surround-technique"><span class="vc-n">36.3</span> Stereo and Surround Technique</a><ul class="vc-subs"><li class="vc-l3"><a href="microphone-technique.html#stereo">Stereo</a></li><li class="vc-l3"><a href="microphone-technique.html#surround">Surround</a></li></ul></li>
+<li class="vc-l2"><a href="microphone-technique.html#364-placement-for-varying-instruments"><span class="vc-n">36.4</span> Placement for Varying Instruments</a><ul class="vc-subs"><li class="vc-l3"><a href="microphone-technique.html#amplifiers">Amplifiers</a></li><li class="vc-l3"><a href="microphone-technique.html#brass-instruments">Brass Instruments</a></li><li class="vc-l3"><a href="microphone-technique.html#guitars">Guitars</a></li><li class="vc-l3"><a href="microphone-technique.html#pianos">Pianos</a></li><li class="vc-l3"><a href="microphone-technique.html#percussion">Percussion</a></li><li class="vc-l3"><a href="microphone-technique.html#voice">Voice</a></li><li class="vc-l3"><a href="microphone-technique.html#woodwinds">Woodwinds</a></li></ul></li>
+<li class="vc-l2"><a href="microphone-technique.html#365-sound-propagation"><span class="vc-n">36.5</span> Sound Propagation</a><ul class="vc-subs"><li class="vc-l3"><a href="microphone-technique.html#reflection">Reflection</a></li><li class="vc-l3"><a href="microphone-technique.html#absorption">Absorption</a></li><li class="vc-l3"><a href="microphone-technique.html#diffraction">Diffraction</a></li><li class="vc-l3"><a href="microphone-technique.html#refraction">Refraction</a></li></ul></li>
+<li class="vc-l2"><a href="microphone-technique.html#366-sources"><span class="vc-n">36.6</span> Sources</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sealed-box-subwoofer-design.html">Chapter 37: Sealed Box Subwoofer Design</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sealed-box-subwoofer-design.html#371-introduction"><span class="vc-n">37.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="sealed-box-subwoofer-design.html#372-closed-baffle-circuit"><span class="vc-n">37.2</span> Closed Baffle Circuit</a></li>
+<li class="vc-l2"><a href="sealed-box-subwoofer-design.html#373-driver-parameters"><span class="vc-n">37.3</span> Driver Parameters</a><ul class="vc-subs"><li class="vc-l3"><a href="sealed-box-subwoofer-design.html#resonance-of-the-driver">Resonance of the Driver</a></li><li class="vc-l3"><a href="sealed-box-subwoofer-design.html#mechanical-compliance">Mechanical Compliance</a></li><li class="vc-l3"><a href="sealed-box-subwoofer-design.html#effective-area-of-the-driver">Effective Area of the Driver</a></li></ul></li>
+<li class="vc-l2"><a href="sealed-box-subwoofer-design.html#374-acoustic-compliance"><span class="vc-n">37.4</span> Acoustic Compliance</a></li>
+<li class="vc-l2"><a href="sealed-box-subwoofer-design.html#375-sealed-box-design"><span class="vc-n">37.5</span> Sealed Box Design</a><ul class="vc-subs"><li class="vc-l3"><a href="sealed-box-subwoofer-design.html#volume-of-box">Volume of Box</a></li><li class="vc-l3"><a href="sealed-box-subwoofer-design.html#box-dimensions">Box Dimensions</a></li></ul></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="acoustic-guitars.html">Chapter 38: Acoustic Guitars</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="acoustic-guitars.html#381-introduction"><span class="vc-n">38.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="acoustic-guitars.html#382-strings-neck-and-head"><span class="vc-n">38.2</span> Strings, Neck, and Head</a></li>
+<li class="vc-l2"><a href="acoustic-guitars.html#383-bridge"><span class="vc-n">38.3</span> Bridge</a></li>
+<li class="vc-l2"><a href="acoustic-guitars.html#384-soundboard"><span class="vc-n">38.4</span> Soundboard</a></li>
+<li class="vc-l2"><a href="acoustic-guitars.html#385-internal-cavity"><span class="vc-n">38.5</span> Internal Cavity</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="basic-room-acoustic-treatments.html">Chapter 39: Basic Room Acoustic Treatments</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="basic-room-acoustic-treatments.html#391-introduction"><span class="vc-n">39.1</span> Introduction</a></li>
+<li class="vc-l2"><a href="basic-room-acoustic-treatments.html#392-room-sound-combinations"><span class="vc-n">39.2</span> Room Sound Combinations</a></li>
+<li class="vc-l2"><a href="basic-room-acoustic-treatments.html#393-good-and-bad-reflected-sound"><span class="vc-n">39.3</span> Good and Bad Reflected Sound</a><ul class="vc-subs"><li class="vc-l3"><a href="basic-room-acoustic-treatments.html#reflected-sound">Reflected Sound</a></li><li class="vc-l3"><a href="basic-room-acoustic-treatments.html#absorbed">Absorbed</a></li><li class="vc-l3"><a href="basic-room-acoustic-treatments.html#diffused-sound">Diffused Sound</a></li></ul></li>
+<li class="vc-l2"><a href="basic-room-acoustic-treatments.html#394-how-to-find-overall-trouble-spots-in-a-room"><span class="vc-n">39.4</span> How to Find Overall Trouble Spots In a Room</a></li>
+<li class="vc-l2"><a href="basic-room-acoustic-treatments.html#395-references-sound"><span class="vc-n">39.5</span> References Sound</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="boundary-conditions-and-wave-properties.html">Chapter 40: Boundary Conditions and Wave Properties</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="boundary-conditions-and-wave-properties.html#401-boundary-conditions"><span class="vc-n">40.1</span> Boundary Conditions</a></li>
+<li class="vc-l2"><a href="boundary-conditions-and-wave-properties.html#402-wave-properties"><span class="vc-n">40.2</span> Wave Properties</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="rotor-stator-interactions.html">Chapter 41: Rotor Stator Interactions</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="rotor-stator-interactions.html#411-noise-emission-of-a-rotor-stator-mechanism"><span class="vc-n">41.1</span> Noise emission of a Rotor-Stator mechanism</a></li>
+<li class="vc-l2"><a href="rotor-stator-interactions.html#412-optimization-of-the-number-of-blades"><span class="vc-n">41.2</span> Optimization of the number of blades</a></li>
+<li class="vc-l2"><a href="rotor-stator-interactions.html#413-determination-of-source-levels"><span class="vc-n">41.3</span> Determination of source levels</a></li>
+<li class="vc-l2"><a href="rotor-stator-interactions.html#414-directivity"><span class="vc-n">41.4</span> Directivity</a></li>
+<li class="vc-l2"><a href="rotor-stator-interactions.html#415-external-references"><span class="vc-n">41.5</span> External references</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="sonic-supercharging-of-2-stroke-engines.html">Chapter 42: Sonic Supercharging of 2 Stroke Engines</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#421-sonic-supercharging-of-2-stroke-engines"><span class="vc-n">42.1</span> Sonic Supercharging of 2 Stroke Engines</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#422-introduction"><span class="vc-n">42.2</span> Introduction</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#423-straight-pipe"><span class="vc-n">42.3</span> Straight Pipe</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#424-tune-pipe"><span class="vc-n">42.4</span> Tune Pipe</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#425-tune-pipe-design-geometry"><span class="vc-n">42.5</span> Tune Pipe Design Geometry</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#426-further-investigation"><span class="vc-n">42.6</span> Further Investigation</a></li>
+<li class="vc-l2"><a href="sonic-supercharging-of-2-stroke-engines.html#427-references"><span class="vc-n">42.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="thermoacoustics.html">Chapter 43: Thermoacoustics</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="thermoacoustics.html#431-history"><span class="vc-n">43.1</span> History</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#432-principle-of-operation"><span class="vc-n">43.2</span> Principle of operation</a><ul class="vc-subs"><li class="vc-l3"><a href="thermoacoustics.html#standing-wave-systems">Standing-wave systems</a></li><li class="vc-l3"><a href="thermoacoustics.html#travelling-wave-systems">Travelling-wave systems</a></li></ul></li>
+<li class="vc-l2"><a href="thermoacoustics.html#433-thermoacoustic-machines"><span class="vc-n">43.3</span> Thermoacoustic machines</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#434-basic-components-of-a-thermoacoustic-system"><span class="vc-n">43.4</span> Basic components of a thermoacoustic system</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#435-acoustic-driver"><span class="vc-n">43.5</span> Acoustic driver</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#436-stack"><span class="vc-n">43.6</span> Stack</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#437-heat-exchanger"><span class="vc-n">43.7</span> Heat exchanger</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#438-resonator"><span class="vc-n">43.8</span> Resonator</a></li>
+<li class="vc-l2"><a href="thermoacoustics.html#439-references"><span class="vc-n">43.9</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="source-filter-theory.html">Chapter 44: source-filter theory</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="source-filter-theory.html#441-vocal-tract-transfer-function"><span class="vc-n">44.1</span> vocal tract transfer function</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#442-acoustic-interpretation-of-transfer-function"><span class="vc-n">44.2</span> Acoustic interpretation of transfer function</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#443-effects-of-vocal-tract-wall-and-other-losses"><span class="vc-n">44.3</span> Effects of vocal tract wall and other losses</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#444-resonant-frequencies-of-air-in-a-tube"><span class="vc-n">44.4</span> Resonant frequencies of air in a tube</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#445-two-tube-vocal-tract-models-of-vowels"><span class="vc-n">44.5</span> Two Tube Vocal Tract Models of Vowels</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#446-four-tube-vocal-tract-models-of-vowels"><span class="vc-n">44.6</span> Four Tube Vocal Tract Models of Vowels</a></li>
+<li class="vc-l2"><a href="source-filter-theory.html#447-references"><span class="vc-n">44.7</span> References</a></li>
+</ul></details></li>
+<li class="vc-ch"><details><summary><a href="international-space-station-acoustics-challenges.html">Chapter 45: International Space Station Acoustics Challenges</a></summary><ul class="vc-secs">
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#451-normal-hearing-response-and-hearing-threshold"><span class="vc-n">45.1</span> Normal Hearing Response and Hearing Threshold</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#452-dba"><span class="vc-n">45.2</span> dBA</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#453-noise-exposures"><span class="vc-n">45.3</span> Noise Exposures</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#454-intelligibility"><span class="vc-n">45.4</span> Intelligibility</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#455-noise-detection-and-protection-on-board-the-iss"><span class="vc-n">45.5</span> Noise detection and protection on board the ISS</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#456-further-research"><span class="vc-n">45.6</span> Further Research</a></li>
+<li class="vc-l2"><a href="international-space-station-acoustics-challenges.html#457-references"><span class="vc-n">45.7</span> References</a></li>
+</ul></details></li>
+</ul>
+</nav>
+<h2 id="about-this-book">About this book<a class="headerlink" href="#about-this-book" title="Permanent link">&para;</a></h2>
+<p>A textbook of engineering acoustics: the basics of waves and vibration, lumped-element and electro-acoustic models, transducers such as loudspeakers and microphones, ducts and mufflers, room acoustics and noise.</p>
+<div class="pk-linked-about" markdown="0"><p class="pk-linked-badge">From Wikibooks · CC BY-SA 4.0</p><p>Engineering Acoustics, a Wikibooks textbook, by its contributors. This book is not stored in this library: each chapter is read from <a href="https://en.wikibooks.org/wiki/Engineering_Acoustics" target="_blank" rel="noopener">Wikibooks</a> when it is opened, shown in this library's format, and ends with its own attribution. Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Modified: converted to this format.</p></div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button type="button" class="md-top md-icon" data-md-component="top" hidden>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav class="md-footer__inner md-grid" aria-label="Footer" >
+<a href="../wb-haskell/practical-monads.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: 34. Practical monads">
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Previous
+</span>
+<div class="md-ellipsis">
+34. Practical monads
+</div>
+</div>
+</a>
+<a href="application-websites.html" class="md-footer__link md-footer__link--next" aria-label="Next: 1. Application Websites">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+Next
+</span>
+<div class="md-ellipsis">
+1. Application Websites
+</div>
+</div>
+<div class="md-footer__button md-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+The Open Book Project: Textbooks &middot;
+<a href="../../about.html">About this library</a> &middot;
+<a href="../../publish.html">Publish your book</a> &middot;
+© The authors of the books
+</div>
+Made with
+<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+Material for MkDocs
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.prune", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../assets/mathjax.js?v=773adb7420"></script>
+<script src="../../assets/viz.js?v=97faa5745a"></script>
+<script src="../../assets/remote.js?v=5d7de023c8"></script>
+<script src="../../assets/scans.js?v=dbf1b7d239"></script>
+<script src="../../assets/reader.js?v=96514a4aef"></script>
+<script src="../../assets/app.js?v=29ce824190"></script>
+<script src="../../assets/slides.js?v=dca590e2bf"></script>
+<script src="../../assets/speak.js?v=c93b47b712"></script>
+<script src="../../assets/quiz.js?v=6eeef75b6d"></script>
+<script>
+    /* offline reading: the service worker at the site root (its scope is the whole site) */
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register(new URL("../../sw.js", location.href).href).catch(function () {});
+      });
+    }
+  </script>
+</body>
+</html>
